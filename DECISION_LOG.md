@@ -133,3 +133,29 @@ Premature certainty would weaken trust and make later correction look like failu
 ### Rationale
 
 The first boundary stratum showed that design contribution can exist without live athletic performance, embodiment cannot define every recognized sport, consequence adds little independent discrimination, and operational space appears through multiple roles. A reference system gains authority by preserving the evidence trail of correction rather than rewriting its history.
+
+---
+
+## DEC-007 — Corpus Schema Evolution and Open Dataset Licensing
+
+**Status:** Ratified  
+**Version:** 1.0  
+**Date:** 2026-07-24  
+**Applies to:** Boundary-case schemas, datasets, migrations, and validation artifacts
+
+### Decision
+
+1. `BOUNDARY_CASE_SCHEMA.json` and `boundary-cases-001-010.json` remain immutable historical v0.1 artifacts.
+2. Theory-driven schema change must use a new versioned schema and a separate derived dataset rather than overwrite the historical record.
+3. Every schema migration must publish its field mapping, assumptions, review requirements, and executable migration path.
+4. Automated migration may establish structural compatibility but may not present inferred semantic fields as human-reviewed findings.
+5. The v0.2 corpus must remain profile-based and must not introduce total scores, maturity levels, spatiality levels, certification, or conformance claims.
+6. Dataset validation must be deterministic, locally executable, and blocking: a failed migration or validation result may not be committed as a completed sprint.
+7. Original AltisSports boundary-case data, schema descriptions, controlled vocabularies, and Altis-authored analytical text are released under **CC BY 4.0**, subject to the exclusions in `DATASET_LICENSE.md`.
+8. Citations, external documents, trademarks, logos, and other third-party materials are not relicensed merely because they appear in or are linked from an AltisSports record.
+9. BC-011–BC-020 must be authored natively against schema v0.2; migrated BC-001–BC-010 records must retain visible migration status.
+10. `ASR-001` remains unauthorized after corpus infrastructure completion; a second evidence stratum and a separate standardization gate are still required.
+
+### Rationale
+
+A reference dataset must evolve without erasing the conditions under which earlier findings were produced. Versioned schemas, explicit migrations, deterministic validation, and clear reuse rights convert conceptual correction into durable public infrastructure while preserving attribution, uncertainty, and third-party boundaries.

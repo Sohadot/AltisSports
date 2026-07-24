@@ -1,0 +1,36 @@
+{
+  "asset": "AltisSports",
+  "sprint": "Sprint 4 — Corpus Infrastructure and Second-Stratum Readiness",
+  "version": "0.4",
+  "date": "2026-07-24",
+  "target": "main/root",
+  "commit_message": "Establish corpus schema v0.2 and second-stratum readiness",
+  "historical_inputs_must_remain_unchanged": [
+    "BOUNDARY_CASE_SCHEMA.json",
+    "boundary-cases-001-010.json",
+    "BOUNDARY_CASE_METHOD.md",
+    "BOUNDARY_CASES_001_010.md",
+    "INVARIANCE_FINDINGS_V0.1.md",
+    "SPRINT_2_GATE_RESULT.md"
+  ],
+  "authored_files": [
+    "BOUNDARY_CASE_SCHEMA_V0.2.json",
+    "SCHEMA_MIGRATION_V0.1_TO_V0.2.md",
+    "migrate_boundary_cases_v0_1_to_v0_2.py",
+    "validate_boundary_cases.py",
+    "run_sprint4.py",
+    "DATASET_LICENSE.md",
+    "SECOND_STRATUM_DESIGN.md",
+    "README.md",
+    "DECISION_LOG.md",
+    "SPRINT_4_EXECUTION.md",
+    "SPRINT_4_MANIFEST.json"
+  ],
+  "generated_files": [
+    "boundary-cases-001-010.v0.2.json",
+    "SPRINT_4_VALIDATION_RESULT.md",
+    "SPRINT_4_GATE_RESULT.md"
+  ],
+  "next_sprint": "Sprint 5 — Second Antagonistic Stratum BC-011–BC-020",
+  "asr_001_status": "unauthorized"
+}
