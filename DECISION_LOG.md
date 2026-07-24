@@ -367,3 +367,29 @@ Internal implementation exposed representational and verification defects that s
 ### Rationale
 
 The internal Working Draft now has sufficient structure, trial evidence, question coverage, comment intake, issue classification, conflict disclosure, and change control for a bounded operator review. Readiness does not justify automatic outreach. Owner activation is retained as a separate governance act so that reviewer selection, written-only mode, baseline integrity, and non-endorsement boundaries remain deliberate.
+
+---
+
+## DEC-016 — ASR-001 Wave RW-001 Apparatus Activation and Named-Outreach Hold
+
+**Status:** Ratified upon Sprint 13 PASS  
+**Version:** 1.0  
+**Date:** 2026-07-24  
+**Evidence basis:** `ASR_001_REVIEW_ACTIVATION_RECORD_RW001.md`, `ASR_001_REVIEWER_COHORT_ROSTER_V0.1.json`, and `ASR_001_REVIEW_ACTIVATION_GATE_RESULT.md`
+
+### Decision
+
+1. Wave RW-001 limited-written-review apparatus is activated for preparation under ASR-001 Working Draft v0.2 and baseline manifest `ASR001-OPERATOR-REVIEW-BASELINE`.
+2. The first-wave cohort is defined as seven role slots `RWS-01` through `RWS-07` covering RC-01 through RC-07 and satisfying the four required class groups.
+3. Named persons are not assigned in Sprint 13. Fabricated personal identities are prohibited.
+4. Conflict-declaration identifiers are reserved in pending status for each slot.
+5. The written intake channel `review-intake/` is prepared and remains closed to external submission.
+6. The issue-intake procedure is confirmed and remains disabled until invitation-linked enablement.
+7. All invitation statuses remain `not_sent`. The invitation template remains prepared and inactive.
+8. Named assignment and invitation sending remain held and require a separate owner outreach decision.
+9. Public repository visibility still does not create Public Review Draft status or open comment rights.
+10. Public Review Draft status, ASR-001 publication, certification, public conformance claims, scores, rankings, unsupported remote-synchronous tolerances, final BCI athletic classification, federation-recognition claims, and industry-adoption claims remain unauthorized.
+
+### Rationale
+
+Sprint 12 made the package review-ready. Sprint 13 converts readiness into a governed wave apparatus and class-covered cohort without collapsing preparation into outreach. Keeping named assignment and invitation sending under an explicit hold preserves non-endorsement boundaries and prevents identity fabrication or premature public comment.

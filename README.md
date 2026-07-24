@@ -10,68 +10,47 @@ The ancient Altis contained sport in physical space. AltisSports defines how spo
 
 ## Current Status
 
-**ASR-001 Operator Review Package prepared and review-ready; explicit owner activation remains required.**
+**ASR-001 Wave RW-001 apparatus activated; named outreach and invitation sending remain held.**
 
-ASR-001 remains an unpublished Working Draft. The package has not been sent, no reviewer has been contacted, and no Public Review channel exists.
+ASR-001 remains an unpublished Working Draft. No named reviewer has been assigned, no invitation has been sent, and no public comment channel exists.
 
 ## Review Baseline
 
-The prepared package freezes:
+Frozen under `ASR001-OPERATOR-REVIEW-BASELINE`:
 
 - ASR-001 Working Draft v0.2;
-- the thirty-clause catalog and clause-to-field map;
+- thirty-clause catalog and clause-to-field map;
 - profile model and schema v0.2;
 - internal-trial results and friction register;
-- reviewer-package artifacts.
+- operator-review package artifacts.
 
-A SHA-256 baseline manifest identifies the exact review reference.
+## Wave RW-001
 
-## Review Package
+Sprint 13 established:
 
-The package contains:
-
-- an operator brief;
-- a reviewer guide;
-- seven reviewer classes;
-- 43 questions: eight core and five for each reviewer class;
-- a clause-comment template and JSON Schema;
-- issue taxonomy;
-- evidence and conflict declaration;
-- comment disposition and change control;
-- selected trial profiles and research excerpt;
-- an inactive invitation template;
-- an owner activation record template.
-
-## Review Mode
-
-A future first wave is limited, asynchronous, and written only.
-
-It does not require:
-
-- calls;
-- interviews;
-- public comment;
-- endorsement;
-- adoption;
-- partnership;
-- organizational approval.
-
-## Repository Visibility
-
-Public repository visibility does not activate review and does not make ASR-001 a Public Review Draft.
+- reviewer selection criteria;
+- seven role slots covering RC-01 through RC-07;
+- an activation record for the limited written-review apparatus;
+- a prepared, externally closed written intake channel;
+- an issue-intake procedure that remains disabled until invitation-linked enablement;
+- explicit holds on named assignment and invitation sending.
 
 ## Current Authorization
 
-The owner can prepare a reviewer roster and decide whether to activate a limited written review.
+Authorized now:
 
-Still unauthorized without explicit owner activation:
+- owner-controlled named assignment into existing slots;
+- preparation of invitation text against the inactive template;
+- maintenance of closed written intake.
 
+Still held:
+
+- inventing personal identities;
 - sending invitations;
-- contacting reviewers;
-- collecting external comments;
-- representing anyone as a reviewer, adopter, or endorser.
+- enabling external comment intake;
+- representing any person or organization as a reviewer, adopter, or endorser.
 
-Still prohibited regardless of package readiness:
+Still prohibited:
 
 - Public Review Draft status;
 - ASR-001 publication;
@@ -85,9 +64,9 @@ Still prohibited regardless of package readiness:
 
 ## Next Governed Move
 
-**Sprint 13 — Reviewer Cohort Selection and Limited Written Review Activation**
+**Sprint 14 — Named Reviewer Assignment and Controlled Invitation Release**
 
-Sprint 13 begins only after an explicit owner decision. It will document the roster, class coverage, conflict declarations, written channel, frozen baseline, invitation status, and issue-intake procedure.
+Begins only after an explicit owner decision to assign named persons and authorize sending. Sprint 13 does not perform outreach.
 
 ## Governing Rule
 

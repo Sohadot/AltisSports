@@ -1,0 +1,54 @@
+{
+  "asset": "AltisSports",
+  "sprint": "Sprint 13 — Reviewer Cohort Selection and Limited Written Review Activation",
+  "version": "0.1",
+  "date": "2026-07-24",
+  "target": "main/root",
+  "authored_files": [
+    "ASR_001_REVIEWER_SELECTION_CRITERIA.md",
+    "ASR_001_REVIEWER_COHORT_ROSTER_V0.1.json",
+    "ASR_001_REVIEW_WAVE_RW001_PLAN.md",
+    "ASR_001_REVIEW_ACTIVATION_RECORD_RW001.md",
+    "ASR_001_WRITTEN_INTAKE_CHANNEL.md",
+    "ASR_001_ISSUE_INTAKE_PROCEDURE.md",
+    "ASR_001_REVIEW_ACTIVATION_GATE.md",
+    "review-intake/README.md",
+    "validate_asr001_review_activation.py",
+    "run_sprint13.py",
+    "README.md",
+    "SPRINT_13_EXECUTION.md",
+    "SPRINT_13_MANIFEST.json"
+  ],
+  "generated_files": [
+    "ASR_001_REVIEW_COHORT_COVERAGE_REPORT.md",
+    "SPRINT_13_VALIDATION_RESULT.md",
+    "ASR_001_REVIEW_ACTIVATION_GATE_RESULT.md",
+    "ASR_001_NAMED_OUTREACH_HOLD.md"
+  ],
+  "modified_on_pass": [
+    "DECISION_LOG.md"
+  ],
+  "review_wave_id": "RW-001",
+  "slot_count": 7,
+  "named_persons_assigned": 0,
+  "invitations_sent": 0,
+  "outreach_status": "held",
+  "gate_target": "PASS — WAVE APPARATUS ACTIVATED; NAMED OUTREACH AND INVITATION SENDING REMAIN HELD",
+  "next_sprint": "Sprint 14 — Named Reviewer Assignment and Controlled Invitation Release",
+  "still_held": [
+    "named reviewer assignment",
+    "invitation sending",
+    "external comment intake enablement"
+  ],
+  "still_prohibited": [
+    "Public Review Draft",
+    "ASR-001 publication",
+    "certification",
+    "public conformance claims",
+    "scores and rankings",
+    "unsupported technical tolerances",
+    "final BCI athletic classification",
+    "industry adoption claims",
+    "fabricated reviewer identities"
+  ]
+}
