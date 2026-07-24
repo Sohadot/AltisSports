@@ -235,3 +235,29 @@ The second stratum did not primarily expose missing cases; it exposed missing re
 ### Rationale
 
 Twenty adversarial cases now provide enough conceptual and representational stability to define one bounded standardization problem. They do not provide enough evidence to issue technical tolerances or certify systems. Authorizing scope drafting captures the value of the research without converting research adequacy into premature normative authority.
+
+---
+
+## DEC-011 — ASR-001 Scope Approval and Requirements-Drafting Boundary
+
+**Status:** Ratified upon Sprint 8 PASS  
+**Version:** 1.0  
+**Date:** 2026-07-24  
+**Evidence basis:** `ASR_001_SCOPE_DRAFT.md`, `ASR_001_SCOPE_TRACEABILITY.md`, and the reviewed BC-001–BC-020 v0.3 corpus
+
+### Decision
+
+1. The scope of `ASR-001 — Spatial Athletic System Evidence Profile` is approved.
+2. The profiled subject is one bounded, versioned system configuration. Findings about an activity, product, platform, event, organization, or deployment may not be silently generalized across objects.
+3. The approved scope contains fifteen descriptive domains covering object identity, context, agency, interface, arena, rules, sensing, measurement, officiation, spatial functions, participation, safety/accessibility disclosure, evidence, governance, and machine-readable metadata.
+4. ASR-001 is an evidence-profile project. It is not a universal sport definition, product-rating system, federation-recognition mechanism, safety or clinical certification, or category-ownership claim.
+5. Any future conformance model is bounded to the evidence-profile document or machine-readable profile instance. It may not certify the underlying sport, system, product quality, safety, clinical efficacy, or market superiority.
+6. Requirements drafting is authorized for a governed Working Draft only.
+7. Every future candidate clause must map to an approved scope domain, a defined problem, evidence or governance dependency, applicability condition, verification approach, rationale, and affected exclusions or uncertainty.
+8. The research corpus schema is not automatically the ASR-001 implementation schema. A separate implementation decision is required.
+9. Publication as a standard, Public Review Draft status, certification, product or sport conformance claims, scoring, maturity levels, vendor rankings, and claims of industry adoption remain unauthorized.
+10. External operator review and hosted validation remain conditions before a normative public release can be considered.
+
+### Rationale
+
+The approved scope converts twenty adversarial cases into one bounded standardization problem: how to disclose and support evidence about a spatial-athletic system configuration without converting documentation into product judgment or category certification. This is sufficient to begin a controlled Working Draft, but not to claim a standard, adoption, or conformance program.

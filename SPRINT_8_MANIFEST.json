@@ -1,0 +1,38 @@
+{
+  "asset": "AltisSports",
+  "sprint": "Sprint 8 \u2014 ASR-001 Scope Draft and Scope-Approval Gate",
+  "version": "1.0",
+  "date": "2026-07-24",
+  "target": "main/root",
+  "authored_files": [
+    "ASR_001_SCOPE_DRAFT.md",
+    "ASR_001_SCOPE_MODEL.json",
+    "ASR_001_SCOPE_TRACEABILITY.md",
+    "ASR_001_DEFERRED_ISSUES.md",
+    "ASR_001_SCOPE_GATE.md",
+    "validate_asr001_scope.py",
+    "run_sprint8.py",
+    "README.md",
+    "SPRINT_8_EXECUTION.md",
+    "SPRINT_8_MANIFEST.json"
+  ],
+  "generated_files": [
+    "SPRINT_8_VALIDATION_RESULT.md",
+    "ASR_001_SCOPE_GATE_RESULT.md",
+    "ASR_001_REQUIREMENTS_DRAFTING_AUTHORIZATION.md"
+  ],
+  "modified_on_pass": [
+    "DECISION_LOG.md"
+  ],
+  "decision_target": "APPROVE SCOPE \u2014 AUTHORIZE REQUIREMENTS DRAFTING ONLY",
+  "still_unauthorized": [
+    "ASR-001 publication",
+    "public review draft",
+    "certification",
+    "underlying system conformance",
+    "scoring",
+    "maturity levels",
+    "vendor ranking",
+    "industry adoption claims"
+  ]
+}

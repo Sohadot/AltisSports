@@ -1,0 +1,161 @@
+{
+  "asr_id": "ASR-001",
+  "working_title": "Spatial Athletic System Evidence Profile",
+  "scope_version": "1.0",
+  "document_state": "scope_approved_upon_sprint_8_gate_pass",
+  "normative_status": "descriptive_scope_only_no_standard_issued",
+  "profile_subject": {
+    "unit": "one bounded versioned system configuration",
+    "allowed_contexts": [
+      "product_deployment",
+      "contest_configuration",
+      "training_or_support_configuration",
+      "event_implementation",
+      "research_setup"
+    ],
+    "object_lock_required_for_future_profile_design": true,
+    "generic_activity_or_company_profiled_by_default": false
+  },
+  "intended_users": [
+    "sport_governance_and_integrity",
+    "competition_operations",
+    "xr_spatial_product_engineering",
+    "performance_measurement",
+    "procurement_due_diligence",
+    "accessibility_adaptive_sport",
+    "research_evaluation",
+    "technical_integration",
+    "machine_readable_consumers"
+  ],
+  "intended_uses": [
+    "system_documentation",
+    "procurement_review",
+    "research_comparability",
+    "integrity_planning",
+    "integration_review",
+    "evidence_gap_identification",
+    "version_tracking",
+    "correction_and_supersession",
+    "machine_readable_exchange",
+    "condition_comparison_without_ranking"
+  ],
+  "in_scope_domains": [
+    {
+      "id": "D01",
+      "name": "Subject Identity and Object Lock"
+    },
+    {
+      "id": "D02",
+      "name": "Operating Context and System Roles"
+    },
+    {
+      "id": "D03",
+      "name": "Performance Window and Performance Agency"
+    },
+    {
+      "id": "D04",
+      "name": "Performance Interface and Embodied Demand"
+    },
+    {
+      "id": "D05",
+      "name": "Arena and Distributed-Arena Relation"
+    },
+    {
+      "id": "D06",
+      "name": "Constraints and Rule Execution"
+    },
+    {
+      "id": "D07",
+      "name": "Sensing, Tracking, and State Estimation"
+    },
+    {
+      "id": "D08",
+      "name": "Measurement and Comparability Conditions"
+    },
+    {
+      "id": "D09",
+      "name": "Officiation, Outcome, and Consequence Structure"
+    },
+    {
+      "id": "D10",
+      "name": "Operational Spatial Integration Functions"
+    },
+    {
+      "id": "D11",
+      "name": "Presence, Participation, and External Actors"
+    },
+    {
+      "id": "D12",
+      "name": "Safety, Accessibility, and Human-Limit Disclosures"
+    },
+    {
+      "id": "D13",
+      "name": "Evidence, Claims, and Uncertainty"
+    },
+    {
+      "id": "D14",
+      "name": "Governance, Change, and Correction"
+    },
+    {
+      "id": "D15",
+      "name": "Profile Metadata and Machine Readability"
+    }
+  ],
+  "state_vocabulary": [
+    "supported",
+    "partial",
+    "absent",
+    "disputed",
+    "unknown",
+    "not_applicable",
+    "not_evidenced"
+  ],
+  "excluded_outcomes": [
+    "universal_sport_definition",
+    "minimum_embodiment_threshold",
+    "total_score",
+    "spatiality_level",
+    "maturity_level",
+    "quality_grade",
+    "vendor_ranking",
+    "product_ranking",
+    "automatic_category_certification",
+    "federation_recognition",
+    "safety_certification",
+    "clinical_efficacy_requirements",
+    "remote_synchronous_technical_tolerances",
+    "final_bci_athletic_membership",
+    "causal_attribution_scoring",
+    "anti_cheat_certification",
+    "commercial_endorsement",
+    "paid_favorable_classification",
+    "ownership_of_spatial_sport_term"
+  ],
+  "future_conformance_boundary": {
+    "profile_document_or_instance_only": true,
+    "underlying_system_certification": false,
+    "sport_certification": false,
+    "product_quality_endorsement": false,
+    "safety_or_clinical_certification": false
+  },
+  "dependencies": [
+    "FIRST_PRINCIPLES.md",
+    "CATEGORY_THESIS.md",
+    "ONTOLOGY.md",
+    "AS3_STACK.md",
+    "SOURCE_AND_CLAIM_POLICY.md",
+    "QUALITY_GATE.md",
+    "ASR_DRAFTING_GOVERNANCE.md",
+    "BOUNDARY_CASE_SCHEMA_V0.3.json",
+    "boundary-cases-001-020.v0.3.json",
+    "CORPUS_APPLICATION_FINDINGS_V0.3.md",
+    "DECISION_LOG.md"
+  ],
+  "evidence_baseline": {
+    "dataset": "boundary-cases-001-020.v0.3.json",
+    "case_count": 20,
+    "first_case_id": "BC-001",
+    "last_case_id": "BC-020"
+  },
+  "next_state_after_scope_gate_pass": "requirements_drafting_authorized_working_draft_only"
+}

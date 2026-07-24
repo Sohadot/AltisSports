@@ -10,62 +10,67 @@ The ancient Altis contained sport in physical space. AltisSports defines how spo
 
 ## Current Status
 
-**Twenty-case v0.3 corpus application and ASR scope-drafting readiness.**
+**ASR-001 scope approved; requirements drafting authorized for a non-public Working Draft only.**
 
-The project is not yet a standard, certification system, scoring authority, commercial directory, or product recommendation platform.
+No standard, certification system, scoring authority, commercial directory, or product recommendation platform has been issued.
 
-## Current Research Baseline
+## Research Baseline
 
-### Theory and architecture
+- twenty human-reviewed boundary cases under schema v0.3;
+- corrected First Principles, ontology, and AS³ architecture;
+- source, claim, correction, licensing, and quality controls;
+- explicit schema migrations preserving v0.1 and v0.2 history;
+- corpus application findings showing no current need for schema v0.4.
 
-- `FIRST_PRINCIPLES.md`
-- `CATEGORY_THESIS.md`
-- `ONTOLOGY.md`
-- `AS3_STACK.md`
-- `DECISION_LOG.md`
-
-### Historical strata and schemas
-
-All v0.1 and v0.2 schemas and datasets remain preserved.
-
-### Current corpus infrastructure
-
-- `BOUNDARY_CASE_SCHEMA_V0.3.json`
-- `boundary-cases-001-010.reviewed.v0.3.json`
-- `boundary-cases-011-020.reviewed.v0.3.json`
-- `boundary-cases-001-020.v0.3.json`
-- `CORPUS_APPLICATION_METHOD_V0.3.md`
-- `CORPUS_APPLICATION_FINDINGS_V0.3.md`
-
-## Current Findings
-
-- Performance Agency, Constraint Integrity, Comparability, and Outcome Openness survive twenty cases.
-- Consequence remains derived.
-- Embodied Performance remains channel-based with no universal threshold.
-- Spatial Athletic System, Spatial Athletic Contest, Computational Contest, and Spatial Support System remain useful distinctions.
-- Agency Segments are useful only where control changes.
-- Remote control, remote synchronous competition, co-location, and remote supervision are distinct arena relations.
-- Participatory actors can alter information, resources, or constraints without becoming performers.
-- Intentional Biological Control supports agency analysis without settling athletic embodiment.
-- No schema v0.4 is justified by the current corpus.
-
-## Standardization Decision
-
-**ASR-001 scope drafting is authorized.**
-
-The working subject is:
+## ASR-001 Approved Scope
 
 > **ASR-001 — Spatial Athletic System Evidence Profile**
 
-This authorization is limited to a descriptive scope document.
+The approved scope concerns an evidence and disclosure profile for one bounded, versioned system configuration.
 
-Normative requirements, conformance, certification, scoring, vendor ranking, and publication of ASR-001 remain unauthorized.
+The profile keeps visible:
+
+- object identity and configuration;
+- system roles and operating context;
+- Performance Agency and phase-level handoff;
+- interface and Embodied Demand;
+- arena topology and Operational Spatial Integration functions;
+- constraints, sensing, measurement, comparability, and officiation;
+- participation, safety, accessibility, evidence, uncertainty, and governance;
+- profile versioning and machine-readable metadata.
+
+See:
+
+- `ASR_001_SCOPE_DRAFT.md`
+- `ASR_001_SCOPE_MODEL.json`
+- `ASR_001_SCOPE_TRACEABILITY.md`
+- `ASR_001_DEFERRED_ISSUES.md`
+- `ASR_001_SCOPE_GATE_RESULT.md`
+
+## Scope Boundary
+
+ASR-001 is not scoped to define all sport, certify an underlying system, rank products, establish an embodiment threshold, validate clinical efficacy, certify safety, grant federation recognition, settle BCI athletic membership, or create technical remote-synchronous tolerances without further evidence.
+
+Future conformance, if later approved, is bounded to the evidence-profile document or machine-readable profile instance.
+
+## Current Authorization
+
+Requirements drafting is authorized only for a governed Working Draft.
+
+Still unauthorized:
+
+- publication of ASR-001 as a standard;
+- a Public Review Draft;
+- certification marks;
+- product or sport conformance claims;
+- scoring, maturity levels, or vendor rankings;
+- claims of industry adoption.
 
 ## Next Governed Move
 
-**Sprint 8 — ASR-001 Scope Draft and Scope-Approval Gate**
+**Sprint 9 — ASR-001 Working Draft Architecture and Evidence-to-Clause Mapping**
 
-The next sprint must define the problem, object, users, inclusions, exclusions, dependencies, non-goals, and evidence basis without writing normative requirements.
+The next sprint can establish the Working Draft structure and candidate profile obligations, with every clause mapped to the approved scope and evidence. It cannot ratify or publicly release ASR-001.
 
 ## Governing Rule
 
