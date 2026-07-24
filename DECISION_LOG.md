@@ -261,3 +261,29 @@ Twenty adversarial cases now provide enough conceptual and representational stab
 ### Rationale
 
 The approved scope converts twenty adversarial cases into one bounded standardization problem: how to disclose and support evidence about a spatial-athletic system configuration without converting documentation into product judgment or category certification. This is sufficient to begin a controlled Working Draft, but not to claim a standard, adoption, or conformance program.
+
+---
+
+## DEC-012 — ASR-001 Working Draft Architecture and Clause-Authoring Boundary
+
+**Status:** Ratified upon Sprint 9 PASS  
+**Version:** 1.0  
+**Date:** 2026-07-24  
+**Evidence basis:** `ASR_001_WORKING_DRAFT_ARCHITECTURE.md`, `ASR_001_CLAUSE_CATALOG_V0.1.json`, and `ASR_001_EVIDENCE_TO_CLAUSE_MAP.md`
+
+### Decision
+
+1. The ASR-001 Working Draft architecture is accepted as the governing structure for clause authoring.
+2. Candidate requirement identifiers use the stable form `ASR001-DNN-CNN`, with every candidate mapped to one approved scope domain D01–D15.
+3. The Sprint 9 baseline contains thirty candidate obligation records, exactly two for each approved domain.
+4. Candidate records are not normative clauses. They define obligation intent, applicability, evidence, governance dependencies, verification, rationale, uncertainty, and exclusion guards.
+5. Every future clause must retain traceability to its candidate record or record an explicit replacement decision.
+6. Applicability is conditional and evidence-aware. A non-triggered clause is not a failed clause, and missing evidence does not become an underlying-system score.
+7. Verification concerns the evidence-profile document or instance. It does not validate the underlying sport, product quality, safety, clinical efficacy, federation recognition, or market superiority.
+8. The boundary-case research schema is not adopted as the ASR-001 implementation schema. A separate implementation-profile decision is required.
+9. Candidate clause authoring is authorized for a governed non-public Working Draft only.
+10. Publication, Public Review Draft status, certification, product or sport conformance claims, scores, levels, rankings, unsupported technical tolerances, final BCI athletic classification, and claims of industry adoption remain unauthorized.
+
+### Rationale
+
+The approved scope is now decomposed into uniquely identified, evidence-linked, conditionally applicable, and verifiable candidate obligations. This is enough to begin clause-level drafting without losing the exclusions and uncertainty that made the research credible. It is not enough to release a standard or conformance program.

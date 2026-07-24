@@ -10,67 +10,78 @@ The ancient Altis contained sport in physical space. AltisSports defines how spo
 
 ## Current Status
 
-**ASR-001 scope approved; requirements drafting authorized for a non-public Working Draft only.**
+**ASR-001 Working Draft architecture established; candidate clause authoring authorized only.**
 
-No standard, certification system, scoring authority, commercial directory, or product recommendation platform has been issued.
+ASR-001 has not been published as a standard. No certification, score, vendor ranking, sport conformance, product endorsement, or industry-adoption claim exists.
 
-## Research Baseline
+## Research and Scope Baseline
 
 - twenty human-reviewed boundary cases under schema v0.3;
-- corrected First Principles, ontology, and AS³ architecture;
-- source, claim, correction, licensing, and quality controls;
-- explicit schema migrations preserving v0.1 and v0.2 history;
-- corpus application findings showing no current need for schema v0.4.
+- approved ASR-001 scope for one bounded, versioned system configuration;
+- fifteen profile domains D01–D15;
+- source, claim, uncertainty, correction, and licensing controls;
+- profile-only future conformance boundary;
+- preserved historical schemas and datasets.
 
-## ASR-001 Approved Scope
+## Working Draft Architecture
 
-> **ASR-001 — Spatial Athletic System Evidence Profile**
+The architecture separates:
 
-The approved scope concerns an evidence and disclosure profile for one bounded, versioned system configuration.
+- status and interpretation;
+- subject identity and applicability;
+- candidate profile requirements;
+- evidence and verification;
+- informative examples.
 
-The profile keeps visible:
+Candidate clauses use stable identifiers such as:
 
-- object identity and configuration;
-- system roles and operating context;
-- Performance Agency and phase-level handoff;
-- interface and Embodied Demand;
-- arena topology and Operational Spatial Integration functions;
-- constraints, sensing, measurement, comparability, and officiation;
-- participation, safety, accessibility, evidence, uncertainty, and governance;
-- profile versioning and machine-readable metadata.
+```text
+ASR001-D03-C02
+```
+
+## Candidate Clause Baseline
+
+Sprint 9 establishes:
+
+- 30 candidate obligation records;
+- exactly two candidates for every domain D01–D15;
+- evidence and governance traceability;
+- applicability classes;
+- verification modes;
+- rationale, uncertainty handling, and exclusion guards;
+- no finalized normative prose.
 
 See:
 
-- `ASR_001_SCOPE_DRAFT.md`
-- `ASR_001_SCOPE_MODEL.json`
-- `ASR_001_SCOPE_TRACEABILITY.md`
-- `ASR_001_DEFERRED_ISSUES.md`
-- `ASR_001_SCOPE_GATE_RESULT.md`
-
-## Scope Boundary
-
-ASR-001 is not scoped to define all sport, certify an underlying system, rank products, establish an embodiment threshold, validate clinical efficacy, certify safety, grant federation recognition, settle BCI athletic membership, or create technical remote-synchronous tolerances without further evidence.
-
-Future conformance, if later approved, is bounded to the evidence-profile document or machine-readable profile instance.
+- `ASR_001_WORKING_DRAFT_ARCHITECTURE.md`
+- `ASR_001_CLAUSE_CATALOG_V0.1.json`
+- `ASR_001_EVIDENCE_TO_CLAUSE_MAP.md`
+- `ASR_001_CLAUSE_COVERAGE_REPORT.md`
+- `ASR_001_APPLICABILITY_MODEL.md`
+- `ASR_001_VERIFICATION_MODEL_DRAFT.md`
+- `ASR_001_IMPLEMENTATION_MODEL_BOUNDARY.md`
 
 ## Current Authorization
 
-Requirements drafting is authorized only for a governed Working Draft.
+The next sprint can convert approved candidate intents into clause-level Working Draft text.
 
 Still unauthorized:
 
-- publication of ASR-001 as a standard;
-- a Public Review Draft;
-- certification marks;
-- product or sport conformance claims;
-- scoring, maturity levels, or vendor rankings;
-- claims of industry adoption.
+- publication of ASR-001;
+- Public Review Draft status;
+- certification or a certification mark;
+- product, sport, or category conformance claims;
+- safety or clinical certification;
+- scores, maturity levels, or rankings;
+- unsupported technical tolerances;
+- final BCI athletic classification;
+- claims of federation recognition or industry adoption.
 
 ## Next Governed Move
 
-**Sprint 9 — ASR-001 Working Draft Architecture and Evidence-to-Clause Mapping**
+**Sprint 10 — ASR-001 Candidate Normative Core and Implementation Profile Model v0.1**
 
-The next sprint can establish the Working Draft structure and candidate profile obligations, with every clause mapped to the approved scope and evidence. It cannot ratify or publicly release ASR-001.
+Every candidate clause will remain traceable to the approved scope, evidence, applicability, verification, rationale, uncertainty, and exclusions.
 
 ## Governing Rule
 

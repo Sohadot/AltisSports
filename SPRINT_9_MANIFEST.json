@@ -1,0 +1,44 @@
+{
+  "asset": "AltisSports",
+  "sprint": "Sprint 9 \u2014 ASR-001 Working Draft Architecture and Evidence-to-Clause Mapping",
+  "version": "0.1",
+  "date": "2026-07-24",
+  "target": "main/root",
+  "authored_files": [
+    "ASR_001_WORKING_DRAFT_ARCHITECTURE.md",
+    "ASR_001_CLAUSE_CATALOG_V0.1.json",
+    "ASR_001_APPLICABILITY_MODEL.md",
+    "ASR_001_VERIFICATION_MODEL_DRAFT.md",
+    "ASR_001_IMPLEMENTATION_MODEL_BOUNDARY.md",
+    "ASR_001_INFORMATIVE_EXAMPLES_BOUNDARY.md",
+    "ASR_001_WORKING_DRAFT_GATE.md",
+    "build_asr001_clause_map.py",
+    "validate_asr001_working_architecture.py",
+    "run_sprint9.py",
+    "README.md",
+    "SPRINT_9_EXECUTION.md",
+    "SPRINT_9_MANIFEST.json"
+  ],
+  "generated_files": [
+    "ASR_001_EVIDENCE_TO_CLAUSE_MAP.md",
+    "ASR_001_CLAUSE_COVERAGE_REPORT.md",
+    "SPRINT_9_VALIDATION_RESULT.md",
+    "ASR_001_WORKING_DRAFT_GATE_RESULT.md",
+    "ASR_001_CLAUSE_AUTHORING_AUTHORIZATION.md"
+  ],
+  "modified_on_pass": [
+    "DECISION_LOG.md"
+  ],
+  "candidate_clause_count": 30,
+  "domain_coverage": "D01-D15, exactly two candidates per domain",
+  "gate_target": "PASS \u2014 AUTHORIZE CANDIDATE CLAUSE AUTHORING ONLY",
+  "still_unauthorized": [
+    "ASR-001 publication",
+    "Public Review Draft",
+    "certification",
+    "underlying product or sport conformance",
+    "scores and maturity levels",
+    "vendor ranking",
+    "industry adoption claims"
+  ]
+}
