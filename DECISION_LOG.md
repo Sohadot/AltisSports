@@ -107,3 +107,29 @@ AltisSports may publish research questions, candidate models, and provisional cl
 ### Rationale
 
 Premature certainty would weaken trust and make later correction look like failure rather than disciplined refinement.
+
+---
+
+## DEC-006 — Evidence-Driven Theory Revision
+
+**Status:** Ratified  
+**Version:** 1.0  
+**Date:** 2026-07-24  
+**Evidence basis:** `INVARIANCE_FINDINGS_V0.1.md`, BC-001–BC-010
+
+### Decision
+
+1. **Performance Agency** replaces **Human Agency** as the candidate contest invariant. Human contribution outside the performance window is not sufficient by itself.
+2. Live, remote, and assisted Performance Agency may preserve human performance; Design or Engineering Agency and Autonomous Execution must be distinguished from it.
+3. Embodied Performance is not a universal condition for all sport. It remains a candidate-defining property of the provisional Spatial Athletic System class.
+4. Consequence is demoted from an independent candidate invariant to a derived **Consequence Structure**, pending contrary evidence.
+5. Operational Spatial Integration must be represented through a multi-dimensional evidence profile rather than a binary badge, total score, or maturity level.
+6. A computational arena, visual immersion, telemetry, or mediation is not sufficient by itself to establish Spatial Athletic System membership.
+7. The classified object must be locked before judgment. Activity, contest, system, product, experience, event, organization, and support system may not be silently collapsed.
+8. Sprint 2 method and schema artifacts remain immutable historical records of the v0.1 test. They will not be rewritten retroactively to conceal terminology correction.
+9. Any migration from `human_agency` to `performance_agency` in machine-readable records must occur through a new schema version with an explicit migration record.
+10. `ASR-001` remains unauthorized until the revised theory is tested against additional antagonistic cases and the evidence infrastructure conditions are satisfied.
+
+### Rationale
+
+The first boundary stratum showed that design contribution can exist without live athletic performance, embodiment cannot define every recognized sport, consequence adds little independent discrimination, and operational space appears through multiple roles. A reference system gains authority by preserving the evidence trail of correction rather than rewriting its history.

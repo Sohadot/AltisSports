@@ -1,120 +1,221 @@
 # Spatial Sport Category Thesis
 
 **Asset:** AltisSports  
-**Version:** 0.1  
-**Status:** Foundation Draft — Open to Boundary-Case Revision
+**Version:** 0.2  
+**Status:** Provisional Category Thesis — Revised after BC-001–BC-010  
+**Revision basis:** `INVARIANCE_FINDINGS_V0.1.md`
 
 ## 1. Thesis
 
-Spatial Sport is the field concerned with athletic systems in which human performance and computationally mediated space become structurally interdependent.
+Spatial Sport is the reference field concerned with the relationship between sport, athletic systems, and computationally mediated space.
 
-The category is not defined by the presence of a headset, a virtual image, a digital twin, an avatar, or three-dimensional graphics. A system becomes spatially significant when space itself participates in enabling, constraining, measuring, comparing, or officiating performance.
+Its core problem is not whether a product uses XR, three-dimensional graphics, sensors, or digital representation. The core problem is whether computationally mediated space has an evidenced operational relationship to human performance, training, measurement, comparison, officiation, or participation—and what type of object that relationship creates.
 
-AltisSports exists to develop the reference architecture required to describe and evaluate that transition.
+AltisSports develops the language, evidence structures, reference architecture, and intelligence required to describe and govern that field.
 
-## 2. The Category Gap
+## 2. Why a Field and a Core System Class Are Separated
 
-Existing language fragments the field:
+Sprint 2 showed that “Spatial Sport” cannot safely name every product or experience touching sport and spatial technology.
 
-- **sport** often assumes a physical arena;
-- **esports** does not require embodied athletic performance;
-- **virtual sport** may refer to simulation, betting products, automated contests, or digitally represented sport;
-- **immersive sport** describes perceptual presence but not rule integrity or comparability;
-- **mixed-reality sport** identifies coexistence of physical and digital elements but not their integration into one governed contest;
-- **sports technology** is too broad to isolate spatial systems.
+The field contains several object types:
 
-The gap is not merely terminological. Institutions lack a shared way to determine what kind of system they are examining, what must be measured, and where integrity can fail.
+- athletic contests;
+- training and simulation systems;
+- measurement and officiation systems;
+- computational contests;
+- spectator and broadcasting systems;
+- products, platforms, events, and organizations.
 
-## 3. Working Category Definition
+The primary core class is therefore more precise:
 
-> **Spatial Sport is the field of athletic activity and athletic-system design in which human performance is operationally integrated with computationally mediated space through interaction, constraint, measurement, comparison, or officiation.**
+> **A Spatial Athletic System is a system in which live human Performance Agency and an evidenced embodied performance channel are operationally connected to computationally mediated space.**
 
-This definition is provisional. Each component must survive testing against the Boundary Cases Corpus.
+This is a provisional research definition. The minimum embodiment threshold and normative integration requirements remain unresolved.
 
-## 4. Necessary Distinctions
+## 3. Category Classes
+
+### 3.1 Spatial Sport
+
+The public descriptive name of the overall field.
+
+### 3.2 Spatial Athletic System
+
+The core system class defined above.
+
+### 3.3 Spatial Athletic Contest
+
+A Spatial Athletic System operating under identifiable constraints, comparison conditions, and a performance-dependent open outcome.
+
+### 3.4 Spatial Support System
+
+A system that supports training, assessment, rehabilitation, measurement, officiation, spectatorship, broadcasting, social participation, or research.
+
+A support system may be strategically important within Spatial Sport without itself being a sport.
+
+### 3.5 Computational Contest
+
+A skilled competition whose decisive environment is computational but whose athletic embodiment or Spatial Athletic System membership is absent, insufficiently evidenced, or unresolved.
+
+This is a sibling analytical class, not a statement of inferiority.
+
+## 4. Performance Agency
+
+Human involvement is too broad to define the category.
+
+AltisSports requires analysis of **Performance Agency**: meaningful in-performance influence by a human performer through skill exercised during the relevant contest or performance window.
+
+- Pre-contest design and engineering do not establish Performance Agency.
+- Remote control can preserve Performance Agency.
+- Declared assistance can preserve Performance Agency.
+- Autonomous execution can produce an open competition without live human Performance Agency.
+
+The classified object and the performance window must be stated before judgment.
+
+## 5. Embodiment
+
+Embodiment is not imposed as a universal definition of sport. Chess and other recognized mind sports make that position indefensible without an artificially narrow scope.
+
+Embodied Performance is instead treated as a candidate-defining property of the Spatial Athletic System class.
+
+The framework must accommodate:
+
+- body variation;
+- para and adaptive sport;
+- assistive equipment;
+- vehicle mediation;
+- remote control;
+- tracked XR movement;
+- physiological and sensorimotor demands.
+
+No single normative body model is permitted.
+
+## 6. Operational Spatial Integration
+
+Operational Spatial Integration is graded and profiled rather than binary or scored.
+
+Computationally mediated space may:
+
+- represent;
+- enable;
+- mediate;
+- constrain;
+- measure;
+- compare;
+- officiate.
+
+A profile must identify the mechanism, evidence, dependency, and failure effect for the classified object.
+
+A computational arena is not sufficient by itself. BC-006 demonstrates that a rule-bearing digital map may constitute a computational contest without establishing Spatial Athletic System membership.
+
+## 7. Necessary Distinctions
 
 ### Spatial is not synonymous with immersive
 
-Immersion concerns perceptual presence. Spatiality concerns whether computational space has operational consequences.
+Immersion concerns perceptual presence. Spatiality concerns operational function. High presence may coexist with weak spatial-athletic integration.
 
 ### Spatial is not synonymous with virtual
 
-A virtual environment can remain representational. Spatial Sport requires that environment, tracking, or computational geometry participate in the athletic system.
+A virtual environment may remain representational or may host a computational contest without an evidenced athletic performance channel.
 
-### Spatial is not synonymous with mixed reality
+### Mediation is not spatiality
 
-Physical and digital elements may coexist without forming a unified contest. Spatial classification requires a documented relationship between those elements and performance.
+Vehicles, prostheses, controllers, ECUs, sensors, and remote interfaces can mediate performance without making the arena computationally constituted.
 
-### Spatial Sport is not automatically a new sport
+### Technology is not category membership
 
-A spatial system may be a representation of an existing sport, a training system, an officiating or measurement layer, a spectator system, a hybrid competition, or a new athletic form.
+A product, platform, headset, trainer, tracking system, or visual overlay does not inherit Spatial Sport status from branding.
 
-## 5. Scope
+### Training is not automatically sport
 
-AltisSports studies systems involving one or more of the following:
+The same technical stack may support training, rehabilitation, simulation, or championship competition. Classification depends on the object and event structure, not scenery.
 
-- embodied or performance-dependent input;
-- computationally mediated arenas;
-- motion tracking;
+## 8. Scope
+
+AltisSports studies:
+
+- embodied and performance-dependent interfaces;
+- computational and unified arenas;
+- remote embodied control;
 - rule-bearing geometry;
-- remote embodied competition;
-- cross-device performance comparison;
-- sensor-mediated officiation;
-- mixed physical-digital constraints;
-- spatial training and simulation;
-- spatial spectatorship;
-- integrity, safety, accessibility, and governance.
+- sensing and state estimation;
+- calibration and comparison;
+- computational and hybrid officiation;
+- safety and accessibility;
+- operational failure modes;
+- governance and version change;
+- spatial training, simulation, and rehabilitation;
+- spatial spectatorship and broadcasting;
+- institutional, product, and market structures around these systems.
 
-## 6. Exclusions and Non-Automatic Inclusion
+## 9. Non-Automatic Inclusion
 
-The following are not automatically Spatial Sport:
+The following are not automatically Spatial Athletic Systems or Spatial Athletic Contests:
 
-- any game rendered in 3D;
-- conventional esports solely because they occur digitally;
-- passive 360-degree sports video;
-- fitness applications with decorative virtual scenery;
-- betting products labeled “virtual sports”;
-- a physical sport with unrelated augmented graphics;
-- a simulation whose outcome is principally automated;
-- a product marketed as spatial without inspectable spatial functions.
+- a game rendered in 3D;
+- a competitive computational arena;
+- conventional esports solely because they are digital;
+- passive immersive sports video;
+- decorative virtual scenery;
+- a betting product labeled “virtual sports”;
+- a physical sport with unrelated overlays;
+- telemetry or measurement assistance alone;
+- a simulation with no contest structure;
+- an autonomous contest with no live human Performance Agency;
+- a provider’s unsupported “spatial” claim.
 
-Exclusion does not imply inferiority. It means the system belongs to another class or evidence is insufficient.
+## 10. Object-Lock Rule
 
-## 7. Primary Category Questions
+Every classification must state whether it concerns an:
 
-1. What is the performing human agent?
-2. How does human skill affect the outcome?
-3. Which parts of the arena are physical, computational, or jointly constituted?
-4. Where do the rules reside?
-5. How are actions tracked and interpreted?
-6. What makes performances comparable?
-7. How are device, space, latency, and calibration differences handled?
-8. Who or what officiates?
-9. What evidence supports claimed effects?
-10. What happens when the system fails?
-11. How are safety and accessibility governed?
-12. Is the system training, simulation, spectacle, sport, or a hybrid?
+- activity;
+- athletic system;
+- spatial athletic system;
+- experience;
+- product;
+- event or contest;
+- organization;
+- support system.
 
-## 8. Category Architecture
+A finding about one object must not be silently generalized to another.
+
+## 11. Category Architecture
 
 1. **First Principles**
 2. **Ontology**
 3. **AS³**
-4. **ASR**
-5. **Altis Atlas**
+4. **Boundary Cases Corpus**
+5. **ASR**
+6. **Altis Atlas**
+7. **Operational intelligence products**
 
-No layer may be treated as independent of the others.
+Theory, evidence, architecture, data, and future requirements must remain traceable to one another.
 
-## 9. AltisSports Position
+## 12. AltisSports Position
 
-AltisSports does not claim to own the words “Spatial Sport.”
+AltisSports does not claim ownership of the words “Spatial Sport.”
 
-Its strategic position is to become the most disciplined source for the category’s definitions, evidence structures, reference architecture, and operational intelligence.
+Its defensible position will come from:
 
-The category name remains common. The architecture becomes attributable.
+- category distinctions;
+- attributed terminology;
+- evidence-linked cases;
+- machine-readable data;
+- AS³;
+- future ASR documents;
+- Altis Atlas;
+- trusted institutional use.
 
-## 10. Falsifiability
+The category name remains descriptive. The architecture and accumulated intelligence become attributable.
 
-This thesis must be revised if boundary-case testing shows that operational space is not a useful differentiator, the definition systematically excludes relevant systems, it includes ordinary digital systems without meaningful spatial integration, or its distinctions cannot be supported with observable evidence.
+## 13. Falsifiability
+
+Revise this thesis if later strata show that:
+
+- Performance Agency does not distinguish athletic contest from autonomous competition;
+- embodied performance adds no useful distinction to the spatial-athletic subclass;
+- operational spatial profiles cannot be tied to observable mechanisms;
+- computational contests and Spatial Athletic Systems have indistinguishable integrity requirements;
+- object-lock discipline does not reduce classification error;
+- an existing category already performs the same function with greater precision.
 
 A category thesis that cannot be corrected cannot become a reference.

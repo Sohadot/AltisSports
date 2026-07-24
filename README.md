@@ -2,7 +2,7 @@
 
 **The Reference Architecture for Spatial Sport**
 
-AltisSports is being developed as a governed category intelligence source for Spatial Sport: the systems through which athletic activity is embodied, measured, compared, officiated, experienced, and trusted across physical, virtual, mixed, and spatial environments.
+AltisSports is being developed as a governed category intelligence source for Spatial Sport: the field concerned with the relationship between sport, athletic systems, and computationally mediated space.
 
 ## Core Thesis
 
@@ -10,31 +10,44 @@ The ancient Altis contained sport in physical space. AltisSports defines how spo
 
 ## Current Status
 
-Foundation phase — v0.1.
+**Foundation research — theory revision v0.2 completed after boundary cases BC-001–BC-010.**
 
-The project is not yet a standard, certification system, scoring authority, commercial directory, or product recommendation platform. Its present purpose is to establish the conceptual, methodological, and governance foundations required before public classification, measurement, or tooling.
+The project is not yet a standard, certification system, scoring authority, commercial directory, or product recommendation platform.
 
-## Foundational Sequence
+Sprint 2 produced the first evidence-linked boundary stratum and machine-readable dataset. Sprint 3 revises the governing theory from those findings without rewriting the historical Sprint 2 method or schema.
 
-1. Category and measurement doctrine
-2. First-principles inquiry
-3. Boundary-case corpus
-4. Category thesis
-5. Ontology
-6. Altis Spatial Sport Stack (AS³)
-7. Altis Spatial Reference family (ASR)
-8. Altis Atlas
-9. Operational tools
-10. Licensed intelligence and institutional products
+## Current Research Baseline
 
-## Initial Documents
+- `FIRST_PRINCIPLES.md` — revised contest invariants and category-scoped properties
+- `CATEGORY_THESIS.md` — field, core class, sibling classes, and boundaries
+- `ONTOLOGY.md` — v0.2 vocabulary and object-lock model
+- `AS3_STACK.md` — v0.2 inspection architecture
+- `BOUNDARY_CASE_METHOD.md` — historical v0.1 method used for BC-001–BC-010
+- `BOUNDARY_CASES_001_010.md` — human-readable analysis
+- `boundary-cases-001-010.json` — structured boundary dataset
+- `INVARIANCE_FINDINGS_V0.1.md` — theory correction evidence
+- `DECISION_LOG.md` — append-only governing decisions
 
-- `DECISION_LOG.md`
-- `ASSET_THESIS.md`
-- `FIRST_PRINCIPLES.md`
-- `BOUNDARY_CASES_CORPUS.md`
-- `MONETIZATION_BOUNDARY.md`
-- `INTERFACE_THESIS.md`
+## Current Findings
+
+- Performance Agency is more precise than Human Agency.
+- Embodiment is not universal for all sport but remains category-relevant for Spatial Athletic Systems.
+- Consequence is treated as a derived contest property.
+- Operational Spatial Integration is profiled, not reduced to a score.
+- A computational arena is not sufficient for Spatial Athletic System membership.
+- Activity, contest, system, product, experience, event, and organization must remain separate classified objects.
+
+## Standardization Hold
+
+`ASR-001` is not authorized.
+
+Before ASR scope is reconsidered, AltisSports must:
+
+1. migrate the boundary schema to v0.2 without rewriting the v0.1 record;
+2. add schema validation;
+3. declare dataset licensing;
+4. test a second antagonistic case stratum;
+5. preserve the prohibition on total scoring and premature certification.
 
 ## Governing Rule
 

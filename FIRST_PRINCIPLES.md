@@ -1,161 +1,238 @@
 # First Principles of Spatial Sport
 
-**Version:** 0.1  
-**Status:** Research Foundation — Not a Standard
+**Version:** 0.2  
+**Status:** Research Foundation — Not a Standard  
+**Revision basis:** `INVARIANCE_FINDINGS_V0.1.md` from BC-001–BC-010
 
-## 1. Foundational Question
+## 1. Foundational Questions
 
-> What properties must remain invariant for an activity to continue being classified as sport when its arena, medium, or computational environment changes?
+AltisSports now separates two questions that v0.1 treated too closely:
 
-This question precedes classification, scoring, certification, and product evaluation.
+1. **Sport continuity:** What properties must remain for an activity to retain a coherent sport or contest structure when its arena, medium, or computational environment changes?
+2. **Spatial-athletic differentiation:** What additional properties distinguish a Spatial Athletic System from an ordinary physical sport, a computational contest, a simulation, or a support system?
 
-## 2. The Invariance Proposition
+These questions precede scoring, certification, conformance, and product evaluation.
 
-The working proposition is:
+## 2. Revised Invariance Proposition
 
-> Sport is not defined solely by the place in which it occurs. It remains sport only to the extent that the properties constitutive of athletic contest survive the transition of medium.
+> A change of medium does not preserve sport merely by preserving its appearance. It must preserve meaningful human performance agency, inspectable constraints, valid conditions of comparison, and performance-dependent outcome openness.
 
-This proposition does not assume that physical, virtual, mixed, and spatial systems are equivalent. It asks what must be preserved, transformed, or made newly explicit when the arena itself becomes computational.
+Spatial classification requires a second inquiry:
 
-## 3. Candidate Invariants v0.1
+> Computationally mediated space must have an evidenced operational relationship to performance. Visual representation, immersion, telemetry, or digital competition alone is insufficient.
 
-The following are research candidates. They are not yet ratified standards.
+## 3. Proposition Types
 
-### 3.1 Human Agency
+Sprint 2 showed that the framework must not treat every important property as the same kind of invariant.
 
-The meaningful outcome must depend on human performance rather than on predetermined automation alone.
+### 3.1 Candidate contest invariants
 
-Open questions:
+- Performance Agency
+- Constraint Integrity
+- Comparability
+- Outcome Openness
 
-- Must the agency be bodily?
-- How much physical expression is required?
-- Can remote control, assistive technology, or vehicle mediation preserve athletic agency?
-- At what point does automation become the principal performer?
+### 3.2 Category-scoped properties
 
-### 3.2 Constraint Integrity
+- Embodied Performance
+- Operational Spatial Integration
 
-The activity must operate under identifiable constraints that are applied with sufficient consistency to preserve the contest.
+These may distinguish a spatial-athletic subclass without defining all sport.
 
-This includes:
+### 3.3 Derived property
 
-- rules;
-- boundaries;
-- permitted and prohibited actions;
-- timing;
-- equipment constraints;
-- enforcement;
-- computational rule execution.
+- Consequence Structure
 
-A spatial system may move part of the rule structure from written regulation into code, sensors, geometry, or platform behavior. These rule-bearing mechanisms must therefore be inspectable.
+Consequence remains analytically important but is no longer treated as an independent candidate invariant.
 
-### 3.3 Comparability
+## 4. Candidate Contest Invariants v0.2
 
-Performances must be comparable under conditions that are sufficiently known and controlled for the intended judgment.
+### 4.1 Performance Agency
 
-Comparability does not imply perfect sameness. It requires explicit treatment of:
+The result must depend materially on skill exercised by a human performer during the relevant performance or contest window.
 
-- device differences;
-- tracking accuracy;
-- latency;
-- physical space;
+Performance Agency is narrower than Human Agency. Humans may design, engineer, train, program, fund, or operate a system without performing during the contest.
+
+#### Agency distinctions
+
+- **Live Performance Agency:** human skill is exercised during the performance window and materially affects the result.
+- **Remote Performance Agency:** live performance agency is exercised through a remote interface.
+- **Assisted Performance Agency:** live human performance remains necessary while declared assistance modifies or supports execution.
+- **Design or Engineering Agency:** human contribution occurs before the performance window; it is not sufficient by itself to establish athletic performance agency.
+- **Autonomous Execution:** the competitive agent acts without live human performance agency during the contest window.
+
+Remote or assisted mediation does not automatically remove Performance Agency. The decisive question is whether live human skill remains causally necessary to the performance under review.
+
+### 4.2 Constraint Integrity
+
+The activity must operate under identifiable constraints applied with sufficient consistency to preserve the contest.
+
+Constraints may reside in:
+
+- written rules;
+- physical boundaries;
+- equipment limitations;
+- timing systems;
+- classification systems;
+- software;
+- sensors;
+- computational geometry;
+- automated state transitions;
+- human officiation.
+
+When rules migrate into code, sensors, or geometry, the operative implementation must be inspectable enough for its intended integrity claim.
+
+### 4.3 Comparability
+
+Performances must be comparable under conditions sufficiently known and controlled for the intended judgment.
+
+Comparability is often engineered rather than naturally present. It may require:
+
+- equipment classes;
 - calibration;
+- patch or version locks;
+- latency controls;
+- environmental bounds;
+- standardized resistance;
 - accessibility adaptations;
-- software versions;
-- environmental effects.
+- classification rules;
+- uncertainty disclosure.
 
-### 3.4 Outcome Openness
+Missing comparability evidence produces an unresolved condition, not an automatic negative score.
+
+### 4.4 Outcome Openness
 
 The result must emerge through performance within the constraints rather than be fixed by a predetermined script.
 
-Randomness may influence a contest, but the participant must retain meaningful performance-dependent influence over the outcome.
+Randomness may influence the result, but the performer must retain meaningful performance-dependent influence. Autonomous systems may produce open outcomes without human Performance Agency; Outcome Openness therefore cannot substitute for agency.
 
-### 3.5 Consequence
+## 5. Consequence Structure
 
-Performance must produce a non-trivial consequence within the activity's structure.
+Consequence is retained as a derived contest property.
 
-Candidate forms include:
+It may appear as:
 
-- fatigue or exertion;
-- loss;
 - ranking;
 - elimination;
+- loss;
+- qualification;
+- resource expenditure;
 - strategic exposure;
-- risk;
-- resource cost;
-- reputational or competitive consequence.
+- physical cost;
+- reputational or competitive effect.
 
-Consequence is not yet confirmed as an independent invariant. It may prove derivative of contest structure, outcome openness, or constraint integrity.
+Sprint 2 found that consequence usually follows from contest structure, Constraint Integrity, and Outcome Openness. It will be reconsidered as an independent invariant only if later cases show clear discriminatory value after those factors are controlled.
 
-## 4. Spatial Unification Proposition
+## 6. Embodied Performance
 
-A system should not be classified as fully spatial merely because it is visually immersive.
+Embodiment is not a necessary condition for every institutionally recognized sport. BC-002 prevents AltisSports from defining sport generally through gross motor activity alone.
 
-A stronger working proposition is:
+For the provisional Spatial Athletic System class, however, an embodied performance channel remains a leading candidate property.
 
-> A spatial athletic system exists when physical and computational space jointly participate in enabling, constraining, measuring, or officiating performance.
+Embodied Performance may involve:
 
-Under this proposition, space is not only displayed. It becomes operational.
+- locomotion;
+- force;
+- balance;
+- endurance;
+- sensorimotor coordination;
+- physiological effort;
+- adaptive equipment;
+- vehicle control;
+- tracked movement;
+- other bodily demands materially connected to the result.
 
-## 5. Provisional Distinctions
+No minimum embodiment threshold is ratified by this version.
 
-These distinctions are research aids, not final ontology.
+## 7. Operational Spatial Integration
 
-### Virtual Sport
+Operational Spatial Integration is a profile, not a binary badge and not a total score.
 
-A digitally represented athletic or sport-like activity whose primary contest environment is virtual. The degree of embodied human agency remains variable and must be examined rather than assumed.
+A profile records which roles computationally mediated space performs:
 
-### Immersive Sport
+- represents;
+- enables;
+- mediates;
+- constrains;
+- measures;
+- compares;
+- officiates.
 
-An activity in which perceptual presence is intensified through immersive media. Immersion alone does not establish athletic integrity or spatial rule-bearing.
+For each role, the analysis should state:
 
-### Mixed-Reality Sport
+- the classified object;
+- the observable mechanism;
+- the evidence;
+- whether the role is incidental, supportive, or constitutive in that case;
+- what failure of the role would change.
 
-An activity in which physical and digital elements coexist during performance. Coexistence does not necessarily mean that the two spaces form one coherent officiated system.
+The labels above are descriptive research fields, not maturity levels.
+
+## 8. Dual-Axis Discipline
+
+Every relevant case must keep separate:
+
+1. **sport or contest structure**; and
+2. **spatial-athletic integration**.
+
+A case may have:
+
+- coherent sport structure without spatial integration;
+- computational spatial integration without established athletic embodiment;
+- spatial training value without being a sport;
+- live performance agency without a computational arena;
+- both axes;
+- neither axis;
+- an unresolved position.
+
+Institutional recognition is evidence about governance and social status. It does not automatically settle Altis classification.
+
+## 9. Provisional Distinctions
 
 ### Spatial Sport
 
-A candidate category for athletic systems in which human performance and computationally mediated space are structurally integrated through rules, measurement, interaction, or officiation.
+The reference field concerned with the relationship between sport, athletic systems, and computationally mediated space.
 
-## 6. Boundary Conditions
+### Spatial Athletic System
 
-The framework must explicitly test cases that resist simple bodily definitions:
+A provisional core system class in which live human Performance Agency and an evidenced embodied performance channel are operationally connected to computationally mediated space.
 
-- chess and other recognized mind sports;
-- motorsport;
-- drone racing;
-- shooting;
-- adaptive and para sport;
-- rehabilitation systems;
-- rhythm games;
-- esports;
-- flight simulation;
-- robotic assistance;
-- AI-mediated competition.
+### Spatial Athletic Contest
 
-The purpose of these cases is not to exclude them automatically. It is to expose which candidate invariants are necessary, insufficient, overlapping, or incorrectly defined.
+A Spatial Athletic System operating as a contest with identifiable constraints, comparison conditions, and an open performance-dependent outcome.
 
-## 7. Methodological Rule
+### Computational Contest
 
-No candidate invariant becomes normative until it has been:
+A skilled competition whose decisive arena is computational but whose athletic embodiment or spatial-athletic membership is absent, insufficiently evidenced, or unresolved.
 
-1. defined precisely;
-2. tested across ordinary cases;
-3. tested across boundary cases;
-4. tested against counterexamples;
-5. mapped to observable evidence;
-6. scoped with explicit exclusions;
-7. versioned under change control.
+### Spatial Support System
 
-## 8. Implications
+A system for training, assessment, rehabilitation, measurement, officiation, spectatorship, broadcasting, or research. It may belong within the Spatial Sport field without itself constituting a sport or contest.
 
-If the invariance approach survives testing, it should generate:
+## 10. Methodological Rule
 
-- the ontology;
-- AS³ layers;
-- ASR requirements;
-- evidence profiles;
-- comparison methods;
-- integrity reviews;
-- readiness tools.
+No candidate becomes normative until it has been:
 
-The theory must generate the system. The system must not be retrofitted to protect the theory.
+1. precisely defined;
+2. tested across ordinary and boundary cases;
+3. tested against counterexamples;
+4. mapped to observable evidence;
+5. scoped by classified object;
+6. given explicit exclusions;
+7. versioned under change control;
+8. shown to add discriminatory or governance value.
+
+## 11. Unresolved Questions
+
+This revision does not settle:
+
+- the minimum embodied demand for a Spatial Athletic System;
+- the final status of drone racing;
+- the complete relation between esports and Spatial Sport;
+- normative Operational Spatial Integration profiles;
+- conformance requirements;
+- any total score, level, scale, or certification.
+
+## 12. Governing Principle
+
+The theory must generate the architecture. Boundary evidence may correct the theory. Neither the interface nor a future tool may silently redefine it.
