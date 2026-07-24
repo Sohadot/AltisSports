@@ -1,0 +1,14 @@
+{
+  "asset": "AltisSports",
+  "sprint": "Sprint 1 \u2014 Category Definition",
+  "version": "0.2",
+  "date": "2026-07-24",
+  "target": "main/root",
+  "files": [
+    "CATEGORY_THESIS.md",
+    "SOURCE_AND_CLAIM_POLICY.md",
+    "ONTOLOGY.md",
+    "AS3_STACK.md",
+    "QUALITY_GATE.md"
+  ]
+}
