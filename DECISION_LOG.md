@@ -159,3 +159,29 @@ The first boundary stratum showed that design contribution can exist without liv
 ### Rationale
 
 A reference dataset must evolve without erasing the conditions under which earlier findings were produced. Versioned schemas, explicit migrations, deterministic validation, and clear reuse rights convert conceptual correction into durable public infrastructure while preserving attribution, uncertainty, and third-party boundaries.
+
+---
+
+## DEC-008 — Second-Stratum Refinement Hold
+
+**Status:** Ratified  
+**Version:** 1.0  
+**Date:** 2026-07-24  
+**Evidence basis:** BC-011–BC-020 and `SECOND_STRATUM_FINDINGS_V0.2.md`
+
+### Decision
+
+1. BC-011–BC-020 are accepted as the first **native v0.2** research stratum, distinct from migrated BC-001–BC-010 records.
+2. Embodied Performance remains a channel-based profile. No minimum quantity, level, or universal threshold is authorized.
+3. Fine-motor, balance, sensorimotor, adaptive, cognitive, and intentional physiological channels may be material evidence; none establishes Spatial Athletic System membership by itself.
+4. `Spatial Athletic System`, `Spatial Athletic Contest`, and `Spatial Support System` remain separate objects; system membership may exist without mature contest governance.
+5. Summary-level agency modes are insufficient for cases with time-varying control. A phase-level `agency_segments` design must be evaluated before normative agency attribution.
+6. The remote-distributed hypothesis in BC-015 remains unresolved. Global availability, product aspiration, or co-located championship evidence may not be presented as proof of remote arena integrity.
+7. Spectators who alter resources or constraints without executing the performance are participatory rule/resource actors, not Performance Agents by default.
+8. Consequence remains a derived property. The second stratum does not restore it as an independent invariant.
+9. Operational Spatial Integration remains qualitative and profile-based. No total score, maturity level, or binary certification badge is authorized.
+10. `ASR-001` remains unauthorized. The next move is targeted boundary deepening and a schema v0.3 decision, not standard issuance.
+
+### Rationale
+
+The second stratum validates the main v0.2 separations while exposing two unresolved structures: agency that changes by phase and arenas distributed across physical locations. Preserving these uncertainties increases reference integrity and prevents a premature standard from encoding a convenient but incomplete theory.

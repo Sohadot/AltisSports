@@ -10,78 +10,70 @@ The ancient Altis contained sport in physical space. AltisSports defines how spo
 
 ## Current Status
 
-**Corpus infrastructure v0.2 and second-stratum readiness.**
+**Two boundary strata completed: BC-001–BC-010 historical/migrated and BC-011–BC-020 native v0.2.**
 
 The project is not yet a standard, certification system, scoring authority, commercial directory, or product recommendation platform.
 
-Sprint 2 produced the first evidence-linked boundary stratum. Sprint 3 revised the governing theory from that evidence. Sprint 4 converts the revision into a versioned schema, an explicit migration, local validation, dataset licensing, and a fixed design for BC-011–BC-020.
+Sprint 5 applies the v0.2 schema natively to a second antagonistic stratum. The main category architecture survives, while agency handoff and distributed-arena relations remain unresolved.
 
 ## Current Research Baseline
 
 ### Theory and architecture
 
-- `FIRST_PRINCIPLES.md` — revised contest invariants and category-scoped properties
-- `CATEGORY_THESIS.md` — field, core class, sibling classes, and boundaries
-- `ONTOLOGY.md` — v0.2 vocabulary and object-lock model
-- `AS3_STACK.md` — v0.2 inspection architecture
-- `DECISION_LOG.md` — append-only governing decisions
+- `FIRST_PRINCIPLES.md`
+- `CATEGORY_THESIS.md`
+- `ONTOLOGY.md`
+- `AS3_STACK.md`
+- `DECISION_LOG.md`
 
-### Historical first stratum
+### First stratum and migration
 
-- `BOUNDARY_CASE_METHOD.md` — v0.1 method used for BC-001–BC-010
-- `BOUNDARY_CASE_SCHEMA.json` — historical v0.1 case schema
-- `BOUNDARY_CASES_001_010.md` — human-readable case analysis
-- `boundary-cases-001-010.json` — historical structured dataset
-- `INVARIANCE_FINDINGS_V0.1.md` — evidence-driven theory findings
-- `SPRINT_2_GATE_RESULT.md` — conditional research gate
+- `BOUNDARY_CASES_001_010.md`
+- `boundary-cases-001-010.json` — historical v0.1
+- `boundary-cases-001-010.v0.2.json` — migrated, review-required derivative
+- `INVARIANCE_FINDINGS_V0.1.md`
 
-### Corpus infrastructure v0.2
+### Native second stratum
 
-- `BOUNDARY_CASE_SCHEMA_V0.2.json` — revised case schema
-- `SCHEMA_MIGRATION_V0.1_TO_V0.2.md` — governed field mapping
-- `migrate_boundary_cases_v0_1_to_v0_2.py` — deterministic migration
-- `validate_boundary_cases.py` — dependency-free structural validator
-- `run_sprint4.py` — local migration, validation, and gate runner
-- `boundary-cases-001-010.v0.2.json` — migrated derivative; review-required
-- `SPRINT_4_VALIDATION_RESULT.md` — hashes and validation result
-- `DATASET_LICENSE.md` — CC BY 4.0 dataset notice
-- `SECOND_STRATUM_DESIGN.md` — fixed BC-011–BC-020 research design
-- `SPRINT_4_GATE_RESULT.md` — infrastructure gate
+- `SECOND_STRATUM_DESIGN.md`
+- `BOUNDARY_CASES_011_020.md`
+- `boundary-cases-011-020.v0.2.json`
+- `SECOND_STRATUM_FINDINGS_V0.2.md`
+- `validate_second_stratum.py`
+- `run_sprint5.py`
+- `SPRINT_5_VALIDATION_RESULT.md`
+- `SPRINT_5_GATE_RESULT.md`
 
 ## Current Findings
 
-- Performance Agency is more precise than Human Agency.
-- Embodiment is not universal for all sport but remains category-relevant for Spatial Athletic Systems.
-- Consequence is a derived contest property.
-- Operational Spatial Integration is profiled through qualitative functions, not reduced to a score.
-- A computational arena is not sufficient for Spatial Athletic System membership.
-- Activity, contest, system, product, experience, event, organization, and support system remain separate classified objects.
-- Historical v0.1 records remain intact while v0.2 derivatives retain migration status.
+- Performance Agency survives, but time-varying handoff needs phase-level representation.
+- Embodied Performance remains channel-based; no minimum threshold is authorized.
+- Physical spatial skill is not Operational Spatial Integration.
+- Spatial Athletic System membership and contest governance remain separate.
+- Spatial Support System is a necessary sibling class.
+- BCI competition keeps intentional physiological embodiment unresolved.
+- The remote-distributed martial competition hypothesis remains unproven.
+- Spectator resource intervention does not automatically become Performance Agency.
+- Consequence remains a derived property.
+- Qualitative Spatial Functions continue to discriminate without a score.
 
 ## Next Governed Move
 
-**Sprint 5 — Second Antagonistic Stratum BC-011–BC-020**
+**Sprint 6 — Targeted Boundary Deepening and Schema v0.3 Decision**
 
-The next research stratum will test:
+Focus:
 
-- low-locomotion embodied performance;
-- distributed physical–computational arenas;
-- Spatial Support Systems;
-- assisted and alternative performance channels;
-- human–AI agency handoff;
-- spectator influence on outcome structure.
+1. remote distributed arena evidence;
+2. intentional physiological embodiment;
+3. phase-level agency segments;
+4. participatory rule/resource actors;
+5. a possible distributed-arena relation.
 
 ## Standardization Hold
 
 `ASR-001` is not authorized.
 
-Before ASR scope is reconsidered, AltisSports must:
-
-1. complete native v0.2 research for BC-011–BC-020;
-2. review migration-derived fields in BC-001–BC-010;
-3. determine whether the revised theory survives the second stratum;
-4. define a separate standardization gate;
-5. preserve the prohibition on total scoring and premature certification.
+A standardization scope may not be drafted until the targeted gaps above are resolved or explicitly bounded by a separate gate.
 
 ## Governing Rule
 

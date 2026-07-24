@@ -1,0 +1,29 @@
+{
+  "asset": "AltisSports",
+  "sprint": "Sprint 5 \u2014 Second Antagonistic Stratum BC-011\u2013BC-020",
+  "date": "2026-07-24",
+  "target": "main/root",
+  "decision": "CONDITIONAL PASS FOR RESEARCH BASELINE",
+  "authored_files": [
+    ".gitignore",
+    "BOUNDARY_CASES_011_020.md",
+    "boundary-cases-011-020.v0.2.json",
+    "SECOND_STRATUM_FINDINGS_V0.2.md",
+    "validate_second_stratum.py",
+    "run_sprint5.py",
+    "SPRINT_5_GATE_RESULT.md",
+    "SPRINT_5_EXECUTION.md",
+    "DECISION_LOG.md",
+    "README.md"
+  ],
+  "generated_on_run": [
+    "SPRINT_5_VALIDATION_RESULT.md"
+  ],
+  "preserve_unchanged": [
+    "BOUNDARY_CASES_001_010.md",
+    "boundary-cases-001-010.json",
+    "boundary-cases-001-010.v0.2.json",
+    "BOUNDARY_CASE_SCHEMA.json"
+  ],
+  "standardization_status": "ASR-001 unauthorized"
+}
