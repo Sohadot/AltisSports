@@ -210,4 +210,28 @@ The second stratum validates the main v0.2 separations while exposing two unreso
 ### Rationale
 
 The second stratum did not primarily expose missing cases; it exposed missing representational relations. A reference system must record when control changes, how sites connect, how bodily-origin signals become task actions, and how external participants alter contest conditions without collapsing those distinctions into one label.
+---
 
+## DEC-010 — ASR-001 Scope Drafting Authorization
+
+**Status:** Ratified upon Sprint 7 PASS  
+**Version:** 1.0  
+**Date:** 2026-07-24  
+**Evidence basis:** Reviewed BC-001–BC-020 v0.3 corpus and `CORPUS_APPLICATION_FINDINGS_V0.3.md`
+
+### Decision
+
+1. The human-reviewed BC-001–BC-020 v0.3 corpus is accepted as the current research baseline for scope definition.
+2. Schema v0.3 is adequate for the current corpus. No schema v0.4 is authorized without a repeated representational failure.
+3. AltisSports authorizes drafting the **scope only** of a candidate `ASR-001`.
+4. The working subject is a **Spatial Athletic System Evidence Profile**: a minimum disclosure and evidence structure, not a category-certification system.
+5. Scope drafting may use object lock, Performance Agency, Embodied Performance, AS³, Operational Spatial Integration functions, comparability, evidence, uncertainty, versioning, and governance.
+6. Scope drafting must exclude total scores, maturity levels, vendor rankings, federation recognition, universal sport definitions, clinical efficacy, safety certification, final BCI membership, and unresearched remote-synchronous tolerances.
+7. Normative requirements, conformance clauses, certification, and publication of `ASR-001` remain unauthorized.
+8. The scope draft must follow `ASR_DRAFTING_GOVERNANCE.md` and pass a separate scope-approval gate.
+9. Hosted CI and external review are not required to write the scope draft, but remain conditions before a normative public release can be considered.
+10. Commercial participation may not alter evidence boundaries or buy favorable inclusion.
+
+### Rationale
+
+Twenty adversarial cases now provide enough conceptual and representational stability to define one bounded standardization problem. They do not provide enough evidence to issue technical tolerances or certify systems. Authorizing scope drafting captures the value of the research without converting research adequacy into premature normative authority.

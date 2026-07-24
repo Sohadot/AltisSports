@@ -10,69 +10,62 @@ The ancient Altis contained sport in physical space. AltisSports defines how spo
 
 ## Current Status
 
-**Targeted boundary deepening and corpus schema v0.3.**
+**Twenty-case v0.3 corpus application and ASR scope-drafting readiness.**
 
 The project is not yet a standard, certification system, scoring authority, commercial directory, or product recommendation platform.
-
-Sprint 6 resolves representational gaps exposed by BC-011–BC-020 without beginning a third broad corpus wave.
 
 ## Current Research Baseline
 
 ### Theory and architecture
 
-- `FIRST_PRINCIPLES.md` — v0.3 targeted principles
+- `FIRST_PRINCIPLES.md`
 - `CATEGORY_THESIS.md`
-- `ONTOLOGY.md` — v0.3 agency, arena, biological-control, and participatory-actor terms
-- `AS3_STACK.md` — v0.3 cross-layer inspection relations
-- `DECISION_LOG.md` — append-only decisions through DEC-009
+- `ONTOLOGY.md`
+- `AS3_STACK.md`
+- `DECISION_LOG.md`
 
-### Historical and native evidence
+### Historical strata and schemas
 
-- `BOUNDARY_CASES_001_010.md`
-- `boundary-cases-001-010.json` — historical v0.1
-- `boundary-cases-001-010.v0.2.json` — migrated, review-required
-- `BOUNDARY_CASES_011_020.md`
-- `boundary-cases-011-020.v0.2.json` — immutable native v0.2 baseline
-- `SECOND_STRATUM_FINDINGS_V0.2.md`
+All v0.1 and v0.2 schemas and datasets remain preserved.
 
-### Sprint 6 targeted infrastructure
+### Current corpus infrastructure
 
-- `TARGETED_BOUNDARY_DEEPENING.md`
-- `SCHEMA_V0.3_DECISION.md`
 - `BOUNDARY_CASE_SCHEMA_V0.3.json`
-- `SCHEMA_MIGRATION_V0.2_TO_V0.3.md`
-- `TARGETED_DEEPENING_PATCHES_V0.3.json`
-- `build_boundary_case_schema_v0_3.py`
-- `migrate_boundary_cases_v0_2_to_v0_3.py`
-- `validate_boundary_cases_v0_3.py`
-- `boundary-cases-011-020.v0.3.json`
-- `SPRINT_6_VALIDATION_RESULT.md`
-- `SPRINT_6_GATE_RESULT.md`
+- `boundary-cases-001-010.reviewed.v0.3.json`
+- `boundary-cases-011-020.reviewed.v0.3.json`
+- `boundary-cases-001-020.v0.3.json`
+- `CORPUS_APPLICATION_METHOD_V0.3.md`
+- `CORPUS_APPLICATION_FINDINGS_V0.3.md`
 
 ## Current Findings
 
-- Performance Agency survives, but time-varying control requires phase- or regime-level Agency Segments.
-- A declared control mode is not proof of an observed transition.
-- Distributed arenas require explicit topology, synchronization, latency, calibration, officiation, and safety relations.
-- Examined Virtual Taekwondo evidence supports co-located competition; remote synchronous integrity is not evidenced.
-- Intentional biological control can establish live Performance Agency without settling athletic embodiment.
-- Participatory Rule/Resource Actors can alter contest conditions without becoming performers or officials.
+- Performance Agency, Constraint Integrity, Comparability, and Outcome Openness survive twenty cases.
 - Consequence remains derived.
-- No embodiment threshold or total score is authorized.
+- Embodied Performance remains channel-based with no universal threshold.
+- Spatial Athletic System, Spatial Athletic Contest, Computational Contest, and Spatial Support System remain useful distinctions.
+- Agency Segments are useful only where control changes.
+- Remote control, remote synchronous competition, co-location, and remote supervision are distinct arena relations.
+- Participatory actors can alter information, resources, or constraints without becoming performers.
+- Intentional Biological Control supports agency analysis without settling athletic embodiment.
+- No schema v0.4 is justified by the current corpus.
+
+## Standardization Decision
+
+**ASR-001 scope drafting is authorized.**
+
+The working subject is:
+
+> **ASR-001 — Spatial Athletic System Evidence Profile**
+
+This authorization is limited to a descriptive scope document.
+
+Normative requirements, conformance, certification, scoring, vendor ranking, and publication of ASR-001 remain unauthorized.
 
 ## Next Governed Move
 
-After Sprint 6 validation, the next move is:
+**Sprint 8 — ASR-001 Scope Draft and Scope-Approval Gate**
 
-**Sprint 7 — v0.3 Corpus Application and Standardization-Readiness Gate**
-
-Sprint 7 must test whether the new structures work beyond their motivating cases and decide whether ASR scope drafting may begin. It must not issue ASR-001 automatically.
-
-## Standardization Hold
-
-`ASR-001` remains unauthorized.
-
-Schema adequacy and corpus depth are prerequisites for standards work, not substitutes for it.
+The next sprint must define the problem, object, users, inclusions, exclusions, dependencies, non-goals, and evidence basis without writing normative requirements.
 
 ## Governing Rule
 

@@ -1,0 +1,536 @@
+{
+  "asset": "AltisSports",
+  "schema_version": "0.3",
+  "sprint": "Sprint 7 — v0.3 Corpus Application and Standardization-Readiness Gate",
+  "access_date": "2026-07-24",
+  "cases": {
+    "BC-001": {
+      "performance_window": "From match start to the final whistle, including stoppage and any authorized extra time.",
+      "agency_modes": [
+        "live_performance"
+      ],
+      "human_skill_causally_necessary": true,
+      "agency_segments": [
+        {
+          "segment_id": "AS-001-01",
+          "phase_or_regime": "match play",
+          "segment_basis": "observed_phase",
+          "boundary_description": "The governed match interval in which player actions change the result.",
+          "active_agents": [
+            "players and teams"
+          ],
+          "agency_modes": [
+            "live_performance"
+          ],
+          "primary_control": "human_team",
+          "transition_trigger": "match start",
+          "allowed_assistance": "Declared equipment and lawful team coordination.",
+          "causal_attribution": "Players and teams remain the primary causal performers.",
+          "evidence_refs": [
+            0
+          ],
+          "uncertainty": "No material phase ambiguity remains at this level of analysis.",
+          "review_status": "human_reviewed_v0_3"
+        }
+      ],
+      "distributed_arena_relation": {
+        "status": "supported",
+        "topology": "co_located_single_site",
+        "physical_site_relation": "Competing teams share one governed physical pitch.",
+        "shared_computational_state": "partial",
+        "synchronization_mechanism": "Human and optional officiating systems share match time and event state.",
+        "latency_governance": "Not a remote competition issue for the locked baseline object.",
+        "calibration_equivalence": "Pitch and equipment conditions are governed by the Laws.",
+        "officiation_relation": "Officials operate in the same contest environment.",
+        "safety_relation": "One event safety authority governs the venue.",
+        "evidence_refs": [
+          0
+        ],
+        "uncertainty": "Optional technology deployments vary and do not create a remote distributed arena.",
+        "review_status": "human_reviewed_v0_3"
+      },
+      "participatory_actor_relations": [],
+      "intentional_biological_control": null
+    },
+    "BC-002": {
+      "performance_window": "From the first legal move until checkmate, resignation, draw, forfeit, or time-based termination.",
+      "agency_modes": [
+        "live_performance"
+      ],
+      "human_skill_causally_necessary": true,
+      "agency_segments": [
+        {
+          "segment_id": "AS-002-01",
+          "phase_or_regime": "competitive play",
+          "segment_basis": "observed_phase",
+          "boundary_description": "The move-and-clock sequence during which player decisions determine the result.",
+          "active_agents": [
+            "players"
+          ],
+          "agency_modes": [
+            "live_performance"
+          ],
+          "primary_control": "human_pilot",
+          "transition_trigger": "first legal move",
+          "allowed_assistance": "Standard interfaces and lawful assistance constraints.",
+          "causal_attribution": "Human cognitive decisions remain causally necessary.",
+          "evidence_refs": [
+            0
+          ],
+          "uncertainty": "No material phase ambiguity remains at this level of analysis.",
+          "review_status": "human_reviewed_v0_3"
+        }
+      ],
+      "distributed_arena_relation": {
+        "status": "unknown",
+        "topology": "unknown",
+        "physical_site_relation": "The activity may be over-the-board or online; the locked activity object does not select one deployment.",
+        "shared_computational_state": "unknown",
+        "synchronization_mechanism": "Deployment-specific.",
+        "latency_governance": "Deployment-specific.",
+        "calibration_equivalence": "Time control and platform conditions are deployment-specific.",
+        "officiation_relation": "Arbiter or platform relation varies.",
+        "safety_relation": "Not material to category classification in this record.",
+        "evidence_refs": [
+          0
+        ],
+        "uncertainty": "A product- or event-locked record is required for a stronger arena relation.",
+        "review_status": "human_reviewed_v0_3"
+      },
+      "participatory_actor_relations": [],
+      "intentional_biological_control": null
+    },
+    "BC-003": {
+      "performance_window": "From the race start procedure through classified finish or retirement.",
+      "agency_modes": [
+        "live_performance",
+        "assisted_performance"
+      ],
+      "human_skill_causally_necessary": true,
+      "agency_segments": [
+        {
+          "segment_id": "AS-003-01",
+          "phase_or_regime": "race execution",
+          "segment_basis": "observed_phase",
+          "boundary_description": "The timed race interval during which the driver controls the car.",
+          "active_agents": [
+            "driver"
+          ],
+          "agency_modes": [
+            "live_performance",
+            "assisted_performance"
+          ],
+          "primary_control": "human_pilot",
+          "transition_trigger": "race start",
+          "allowed_assistance": "Regulated vehicle systems, lawful controls, and team information.",
+          "causal_attribution": "Driver execution is causally necessary while engineering and strategy co-determine competitive capacity.",
+          "evidence_refs": [
+            0
+          ],
+          "uncertainty": "No material phase ambiguity remains at this level of analysis.",
+          "review_status": "human_reviewed_v0_3"
+        }
+      ],
+      "distributed_arena_relation": {
+        "status": "supported",
+        "topology": "co_located_single_site",
+        "physical_site_relation": "Drivers compete on one physical circuit while teams and control functions occupy coordinated venue zones.",
+        "shared_computational_state": "partial",
+        "synchronization_mechanism": "Timing, marshalling, telemetry, and race-control systems synchronize contest state.",
+        "latency_governance": "Communications and telemetry matter operationally but do not create remote athletic performance.",
+        "calibration_equivalence": "Technical regulations and timing systems define comparison conditions.",
+        "officiation_relation": "Race control and stewards govern the shared event.",
+        "safety_relation": "Circuit-wide safety responsibility is centrally governed.",
+        "evidence_refs": [
+          0
+        ],
+        "uncertainty": "This is a co-located event relation, not a remote synchronous athletic arena.",
+        "review_status": "human_reviewed_v0_3"
+      },
+      "participatory_actor_relations": [
+        {
+          "relation_id": "PAR-003-01",
+          "actor_type": "team_engineer",
+          "relation_type": "information_supplier",
+          "action_window": "During authorized team communications and strategy windows.",
+          "mechanism": "Team radio and pit-wall analysis provide information to the driver.",
+          "performance_agency_relation": "indirect_no_execution",
+          "rule_authority_relation": "participatory",
+          "resource_or_constraint_effect": "Information may alter strategy or resource use, but the engineer does not execute vehicle control.",
+          "evidence_refs": [
+            0
+          ],
+          "uncertainty": "The exact causal weight of team information varies by event phase.",
+          "review_status": "human_reviewed_v0_3"
+        }
+      ],
+      "intentional_biological_control": null
+    },
+    "BC-004": {
+      "performance_window": "The governed event interval from authorized start through measured completion.",
+      "agency_modes": [
+        "live_performance",
+        "assisted_performance"
+      ],
+      "human_skill_causally_necessary": true,
+      "agency_segments": [
+        {
+          "segment_id": "AS-004-01",
+          "phase_or_regime": "classified athletic performance",
+          "segment_basis": "observed_phase",
+          "boundary_description": "The event interval in which the athlete performs within classification and equipment rules.",
+          "active_agents": [
+            "athlete"
+          ],
+          "agency_modes": [
+            "live_performance",
+            "assisted_performance"
+          ],
+          "primary_control": "human_pilot",
+          "transition_trigger": "event start",
+          "allowed_assistance": "Adaptive or assistive equipment permitted by class and event rules.",
+          "causal_attribution": "Athlete performance remains causally necessary within the governed class.",
+          "evidence_refs": [
+            0
+          ],
+          "uncertainty": "No material phase ambiguity remains at this level of analysis.",
+          "review_status": "human_reviewed_v0_3"
+        }
+      ],
+      "distributed_arena_relation": {
+        "status": "supported",
+        "topology": "co_located_single_site",
+        "physical_site_relation": "Athletes share a governed track or field event site.",
+        "shared_computational_state": "partial",
+        "synchronization_mechanism": "Timing, measurement, and officiating systems coordinate event state.",
+        "latency_governance": "Not a remote synchronous issue for the locked case.",
+        "calibration_equivalence": "Classification, equipment, and measurement controls support comparison.",
+        "officiation_relation": "Officials and classification governance apply to the event.",
+        "safety_relation": "Venue and event safety responsibility is defined.",
+        "evidence_refs": [
+          0
+        ],
+        "uncertainty": "Future hybrid para events require separate records.",
+        "review_status": "human_reviewed_v0_3"
+      },
+      "participatory_actor_relations": [],
+      "intentional_biological_control": null
+    },
+    "BC-005": {
+      "performance_window": "From race start through course completion, disqualification, or loss of controlled flight.",
+      "agency_modes": [
+        "remote_performance"
+      ],
+      "human_skill_causally_necessary": true,
+      "agency_segments": [
+        {
+          "segment_id": "AS-005-01",
+          "phase_or_regime": "remote piloting",
+          "segment_basis": "observed_phase",
+          "boundary_description": "The race interval in which the pilot controls the aircraft through radio and FPV.",
+          "active_agents": [
+            "pilot"
+          ],
+          "agency_modes": [
+            "remote_performance"
+          ],
+          "primary_control": "human_pilot",
+          "transition_trigger": "race start",
+          "allowed_assistance": "Regulated radio control, FPV display, and aircraft systems.",
+          "causal_attribution": "Pilot control, line choice, and risk management are causally necessary.",
+          "evidence_refs": [
+            0
+          ],
+          "uncertainty": "The pilot and aircraft are spatially separated, but the degree of computational arena constitution remains disputed.",
+          "review_status": "human_reviewed_v0_3"
+        }
+      ],
+      "distributed_arena_relation": {
+        "status": "supported",
+        "topology": "remote_supervision_physical_arena",
+        "physical_site_relation": "The pilot operates from a protected control position while the aircraft traverses a separate physical course.",
+        "shared_computational_state": "partial",
+        "synchronization_mechanism": "Radio command, FPV video, timing, and course state connect pilot and aircraft.",
+        "latency_governance": "Video and control-link latency are material but event-specific.",
+        "calibration_equivalence": "Equipment classes, frequencies, timing, and course configuration bound comparison.",
+        "officiation_relation": "Officials observe the physical course and results systems.",
+        "safety_relation": "Pilot zones, spectator separation, frequency control, and flyaway procedures govern risk.",
+        "evidence_refs": [
+          0
+        ],
+        "uncertainty": "Remote control of a physical craft is represented; this does not by itself prove a computationally constituted arena.",
+        "review_status": "human_reviewed_v0_3"
+      },
+      "participatory_actor_relations": [],
+      "intentional_biological_control": null
+    },
+    "BC-006": {
+      "performance_window": "From round start through the governed end condition of each match.",
+      "agency_modes": [
+        "live_performance"
+      ],
+      "human_skill_causally_necessary": true,
+      "agency_segments": [
+        {
+          "segment_id": "AS-006-01",
+          "phase_or_regime": "digital match play",
+          "segment_basis": "observed_phase",
+          "boundary_description": "The round and match intervals in which player input changes authoritative game state.",
+          "active_agents": [
+            "players and teams"
+          ],
+          "agency_modes": [
+            "live_performance"
+          ],
+          "primary_control": "human_team",
+          "transition_trigger": "round start",
+          "allowed_assistance": "Approved hardware, software, communications, and tournament settings.",
+          "causal_attribution": "Player aim, tactics, coordination, and decisions are causally necessary.",
+          "evidence_refs": [
+            0
+          ],
+          "uncertainty": "No material phase ambiguity remains at this level of analysis.",
+          "review_status": "human_reviewed_v0_3"
+        }
+      ],
+      "distributed_arena_relation": {
+        "status": "partial",
+        "topology": "unknown",
+        "physical_site_relation": "Tournament deployments may be LAN, co-located, or online; the activity-cluster object does not fix one physical topology.",
+        "shared_computational_state": "supported",
+        "synchronization_mechanism": "The authoritative game server synchronizes computational contest state.",
+        "latency_governance": "Tournament-specific network and server rules govern latency.",
+        "calibration_equivalence": "Patch, hardware, settings, and anti-cheat controls are event-specific.",
+        "officiation_relation": "Game code and tournament administrators share authority.",
+        "safety_relation": "Physical-site and online participation risks differ by deployment.",
+        "evidence_refs": [
+          0
+        ],
+        "uncertainty": "A locked event record is required before selecting co-located or remote-synchronous topology.",
+        "review_status": "human_reviewed_v0_3"
+      },
+      "participatory_actor_relations": [],
+      "intentional_biological_control": null
+    },
+    "BC-007": {
+      "performance_window": "The active session or governed PvP match interval during which tracked actions affect game state.",
+      "agency_modes": [
+        "live_performance"
+      ],
+      "human_skill_causally_necessary": true,
+      "agency_segments": [
+        {
+          "segment_id": "AS-007-01",
+          "phase_or_regime": "tracked VR performance",
+          "segment_basis": "observed_phase",
+          "boundary_description": "The session interval in which tracked upper-body actions produce in-game attacks and defense.",
+          "active_agents": [
+            "player"
+          ],
+          "agency_modes": [
+            "live_performance"
+          ],
+          "primary_control": "human_pilot",
+          "transition_trigger": "session or match start",
+          "allowed_assistance": "Headset, controllers, tracking, and product-defined assistance.",
+          "causal_attribution": "Player timing and movement are causally necessary at the product configuration examined.",
+          "evidence_refs": [
+            0
+          ],
+          "uncertainty": "No material phase ambiguity remains at this level of analysis.",
+          "review_status": "human_reviewed_v0_3"
+        }
+      ],
+      "distributed_arena_relation": {
+        "status": "unknown",
+        "topology": "unknown",
+        "physical_site_relation": "The product family may support local or remote PvP; the locked product-centered hybrid does not establish a single governed topology.",
+        "shared_computational_state": "unknown",
+        "synchronization_mechanism": "Product- and mode-specific.",
+        "latency_governance": "Not sufficiently evidenced for a general claim.",
+        "calibration_equivalence": "Cross-device equivalence remains uncertain.",
+        "officiation_relation": "Software resolves events; formal contest authority is weak or mode-specific.",
+        "safety_relation": "Each participant's physical play space has local safety constraints.",
+        "evidence_refs": [
+          0
+        ],
+        "uncertainty": "A specific league or event configuration is required.",
+        "review_status": "human_reviewed_v0_3"
+      },
+      "participatory_actor_relations": [],
+      "intentional_biological_control": null
+    },
+    "BC-008": {
+      "performance_window": "From race start through classified finish in the governed virtual cycling event.",
+      "agency_modes": [
+        "live_performance",
+        "remote_performance",
+        "assisted_performance"
+      ],
+      "human_skill_causally_necessary": true,
+      "agency_segments": [
+        {
+          "segment_id": "AS-008-01",
+          "phase_or_regime": "remote virtual race",
+          "segment_basis": "observed_phase",
+          "boundary_description": "The synchronized race interval in which rider power, tactics, and platform state determine outcome.",
+          "active_agents": [
+            "riders"
+          ],
+          "agency_modes": [
+            "live_performance",
+            "remote_performance",
+            "assisted_performance"
+          ],
+          "primary_control": "human_team",
+          "transition_trigger": "race start",
+          "allowed_assistance": "Smart trainers, regulated sensors, platform physics, and declared equipment controls.",
+          "causal_attribution": "Human physiological and tactical performance remains causally necessary.",
+          "evidence_refs": [
+            0
+          ],
+          "uncertainty": "No material phase ambiguity remains at this level of analysis.",
+          "review_status": "human_reviewed_v0_3"
+        }
+      ],
+      "distributed_arena_relation": {
+        "status": "supported",
+        "topology": "remote_synchronous",
+        "physical_site_relation": "Riders occupy separate physical sites while sharing one computational race state.",
+        "shared_computational_state": "supported",
+        "synchronization_mechanism": "Platform position, course state, power input, and event timing synchronize the race.",
+        "latency_governance": "Network conditions are material and require event governance, even where public detail is incomplete.",
+        "calibration_equivalence": "Trainer standardization, power-source rules, and sensor controls support equivalence.",
+        "officiation_relation": "Platform state and event officials jointly administer the race.",
+        "safety_relation": "Each rider's local physical setup remains locally managed while contest governance is centralized.",
+        "evidence_refs": [
+          0
+        ],
+        "uncertainty": "Public evidence supports remote distributed participation, but detailed network tolerances may remain non-public.",
+        "review_status": "human_reviewed_v0_3"
+      },
+      "participatory_actor_relations": [],
+      "intentional_biological_control": null
+    },
+    "BC-009": {
+      "performance_window": "The defined simulated flight task, race, or contest interval.",
+      "agency_modes": [
+        "live_performance"
+      ],
+      "human_skill_causally_necessary": true,
+      "agency_segments": [
+        {
+          "segment_id": "AS-009-01",
+          "phase_or_regime": "simulated piloting",
+          "segment_basis": "observed_phase",
+          "boundary_description": "The contest interval in which human control changes simulated aircraft state.",
+          "active_agents": [
+            "pilot"
+          ],
+          "agency_modes": [
+            "live_performance"
+          ],
+          "primary_control": "human_pilot",
+          "transition_trigger": "task or race start",
+          "allowed_assistance": "Simulation controls and any declared motion or assistance systems.",
+          "causal_attribution": "Human piloting skill is causally necessary in the contest configurations examined.",
+          "evidence_refs": [
+            0
+          ],
+          "uncertainty": "No material phase ambiguity remains at this level of analysis.",
+          "review_status": "human_reviewed_v0_3"
+        }
+      ],
+      "distributed_arena_relation": {
+        "status": "unknown",
+        "topology": "unknown",
+        "physical_site_relation": "The hybrid case includes product contests and network operations with different topologies.",
+        "shared_computational_state": "supported",
+        "synchronization_mechanism": "Simulator or network state can be shared computationally.",
+        "latency_governance": "Deployment-specific.",
+        "calibration_equivalence": "Hardware and software variance remain material.",
+        "officiation_relation": "Publisher, software, or community administration varies by contest.",
+        "safety_relation": "Physical consequences are limited; local setup and fatigue remain relevant.",
+        "evidence_refs": [
+          0
+        ],
+        "uncertainty": "Object heterogeneity prevents one arena relation from representing every flight-simulation use.",
+        "review_status": "human_reviewed_v0_3"
+      },
+      "participatory_actor_relations": [],
+      "intentional_biological_control": null
+    },
+    "BC-010": {
+      "performance_window": "The complete governed contest lifecycle, with pre-match engineering separated from autonomous match execution.",
+      "agency_modes": [
+        "design_engineering",
+        "autonomous_execution",
+        "agency_handoff"
+      ],
+      "human_skill_causally_necessary": false,
+      "agency_segments": [
+        {
+          "segment_id": "AS-010-01",
+          "phase_or_regime": "pre-match design and configuration",
+          "segment_basis": "observed_phase",
+          "boundary_description": "Before the match, human teams design, train, configure, and prepare the robots.",
+          "active_agents": [
+            "engineering team"
+          ],
+          "agency_modes": [
+            "design_engineering"
+          ],
+          "primary_control": "human_team",
+          "transition_trigger": "competition preparation period",
+          "allowed_assistance": "Permitted software, hardware, and training processes.",
+          "causal_attribution": "Human engineering determines system capability but is not live athletic performance.",
+          "evidence_refs": [
+            0
+          ],
+          "uncertainty": "Team development processes differ and may not be fully public.",
+          "review_status": "human_reviewed_v0_3"
+        },
+        {
+          "segment_id": "AS-010-02",
+          "phase_or_regime": "autonomous match execution",
+          "segment_basis": "observed_phase",
+          "boundary_description": "During governed play, robots sense, decide, and act without teleoperation.",
+          "active_agents": [
+            "autonomous robots"
+          ],
+          "agency_modes": [
+            "autonomous_execution",
+            "agency_handoff"
+          ],
+          "primary_control": "automated_system",
+          "transition_trigger": "match start or release to autonomous play",
+          "allowed_assistance": "Only rule-permitted handler interventions and service exceptions.",
+          "causal_attribution": "Robots are the executing agents during the match; human design remains prior causal contribution.",
+          "evidence_refs": [
+            0
+          ],
+          "uncertainty": "Internal autonomy architectures vary by team.",
+          "review_status": "human_reviewed_v0_3"
+        }
+      ],
+      "distributed_arena_relation": {
+        "status": "supported",
+        "topology": "co_located_single_site",
+        "physical_site_relation": "Robots compete on one physical field while human teams remain outside direct live control.",
+        "shared_computational_state": "partial",
+        "synchronization_mechanism": "Onboard sensing and game-control systems coordinate match state.",
+        "latency_governance": "No remote human performance claim is made.",
+        "calibration_equivalence": "Technical and league rules bound platform conditions.",
+        "officiation_relation": "Human referees and game controllers govern the field.",
+        "safety_relation": "Robot and human safety procedures apply at the venue.",
+        "evidence_refs": [
+          0
+        ],
+        "uncertainty": "Computational perception is extensive but does not create human athletic agency.",
+        "review_status": "human_reviewed_v0_3"
+      },
+      "participatory_actor_relations": [],
+      "intentional_biological_control": null
+    }
+  }
+}

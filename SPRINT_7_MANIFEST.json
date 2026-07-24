@@ -1,0 +1,38 @@
+{
+  "asset": "AltisSports",
+  "sprint": "Sprint 7 — v0.3 Corpus Application and Standardization-Readiness Gate",
+  "date": "2026-07-24",
+  "target": "main/root",
+  "authored_files": [
+    "ASR_001_SCOPE_DRAFTING_AUTHORIZATION.md",
+    "ASR_DRAFTING_GOVERNANCE.md",
+    "CORPUS_APPLICATION_FINDINGS_V0.3.md",
+    "CORPUS_APPLICATION_METHOD_V0.3.md",
+    "DECISION_LOG.md",
+    "FIRST_STRATUM_REVIEW_PATCHES_V0.3.json",
+    "README.md",
+    "SECOND_STRATUM_APPLICATION_PATCHES_V0.3.json",
+    "SPRINT_7_EXECUTION.md",
+    "STANDARDIZATION_READINESS_GATE.md",
+    "apply_corpus_review_v0_3.py",
+    "assemble_corpus_v0_3.py",
+    "run_sprint7.py",
+    "validate_corpus_application_v0_3.py"
+  ],
+  "generated_files": [
+    "boundary-cases-001-010.reviewed.v0.3.json",
+    "boundary-cases-011-020.reviewed.v0.3.json",
+    "boundary-cases-001-020.v0.3.json",
+    "SPRINT_7_VALIDATION_RESULT.md",
+    "STANDARDIZATION_READINESS_RESULT.md",
+    "SPRINT_7_GATE_RESULT.md"
+  ],
+  "decision": "Authorize ASR-001 scope drafting only after PASS",
+  "prohibitions": [
+    "total score",
+    "maturity level",
+    "certification",
+    "conformance",
+    "vendor ranking"
+  ]
+}

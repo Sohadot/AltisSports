@@ -1,0 +1,240 @@
+{
+  "asset": "AltisSports",
+  "schema_version": "0.3",
+  "sprint": "Sprint 7 — v0.3 Corpus Application and Standardization-Readiness Gate",
+  "access_date": "2026-07-24",
+  "cases": {
+    "BC-011": {
+      "agency_segments": [
+        {
+          "segment_id": "AS-011-01",
+          "phase_or_regime": "shot execution",
+          "segment_basis": "observed_phase",
+          "boundary_description": "The authorized firing sequence from preparation through scored release.",
+          "active_agents": [
+            "athlete"
+          ],
+          "agency_modes": [
+            "live_performance"
+          ],
+          "primary_control": "human_pilot",
+          "transition_trigger": "authorized start",
+          "allowed_assistance": "Regulated firearm, sights, clothing, and event controls.",
+          "causal_attribution": "Athlete stability, timing, and fine-motor execution are causally necessary.",
+          "evidence_refs": [
+            0
+          ],
+          "uncertainty": "No material phase ambiguity remains at this level of analysis.",
+          "review_status": "human_reviewed_v0_3"
+        }
+      ],
+      "distributed_arena_relation": {
+        "status": "supported",
+        "topology": "co_located_single_site",
+        "physical_site_relation": "Athletes compete at one governed range.",
+        "shared_computational_state": "partial",
+        "synchronization_mechanism": "Timing, electronic targets, and result systems coordinate event state.",
+        "latency_governance": "Not a remote synchronous performance issue.",
+        "calibration_equivalence": "Target, equipment, and event-class controls support comparison.",
+        "officiation_relation": "Officials and electronic scoring operate at the range.",
+        "safety_relation": "Range command and safety authority are centralized.",
+        "evidence_refs": [
+          0
+        ],
+        "uncertainty": "Electronic scoring does not convert the physical range into a remote arena.",
+        "review_status": "human_reviewed_v0_3"
+      },
+      "participatory_actor_relations": [],
+      "intentional_biological_control": null
+    },
+    "BC-012": {
+      "agency_segments": [
+        {
+          "segment_id": "AS-012-01",
+          "phase_or_regime": "turn execution",
+          "segment_basis": "observed_phase",
+          "boundary_description": "The player's inning or turn from address through resulting table state.",
+          "active_agents": [
+            "player"
+          ],
+          "agency_modes": [
+            "live_performance"
+          ],
+          "primary_control": "human_pilot",
+          "transition_trigger": "start of turn",
+          "allowed_assistance": "Regulated cue and table equipment.",
+          "causal_attribution": "Aiming, stroke, spin, and speed control are causally necessary.",
+          "evidence_refs": [
+            0
+          ],
+          "uncertainty": "No material phase ambiguity remains at this level of analysis.",
+          "review_status": "human_reviewed_v0_3"
+        }
+      ],
+      "distributed_arena_relation": {
+        "status": "supported",
+        "topology": "co_located_single_site",
+        "physical_site_relation": "Players share one physical table and venue.",
+        "shared_computational_state": "absent",
+        "synchronization_mechanism": "The physical table state is directly shared.",
+        "latency_governance": "Not applicable.",
+        "calibration_equivalence": "Table, ball, cue, and match specifications support comparison.",
+        "officiation_relation": "Referee authority is venue-local.",
+        "safety_relation": "Local venue responsibility applies.",
+        "evidence_refs": [
+          0
+        ],
+        "uncertainty": "Physical spatial reasoning is not a computational distributed-arena relation.",
+        "review_status": "human_reviewed_v0_3"
+      },
+      "participatory_actor_relations": [],
+      "intentional_biological_control": null
+    },
+    "BC-013": {
+      "agency_segments": [
+        {
+          "segment_id": "AS-013-01",
+          "phase_or_regime": "tracked map performance",
+          "segment_basis": "observed_phase",
+          "boundary_description": "From map start to score submission in the governed match.",
+          "active_agents": [
+            "player"
+          ],
+          "agency_modes": [
+            "live_performance"
+          ],
+          "primary_control": "human_pilot",
+          "transition_trigger": "map start",
+          "allowed_assistance": "Tracked controllers, headset, tournament maps, and permitted software.",
+          "causal_attribution": "Player timing and tracked movement are causally necessary.",
+          "evidence_refs": [
+            0
+          ],
+          "uncertainty": "No material phase ambiguity remains at this level of analysis.",
+          "review_status": "human_reviewed_v0_3"
+        }
+      ],
+      "distributed_arena_relation": {
+        "status": "partial",
+        "topology": "remote_synchronous",
+        "physical_site_relation": "Competitors may perform from separate physical sites while sharing scheduled maps and match state.",
+        "shared_computational_state": "supported",
+        "synchronization_mechanism": "Tournament software, map timing, score submission, and communications coordinate the contest.",
+        "latency_governance": "Network and stream conditions are governed operationally but public tolerances are incomplete.",
+        "calibration_equivalence": "Hardware and tracking equivalence remain imperfect.",
+        "officiation_relation": "Software and tournament staff administer results and disputes.",
+        "safety_relation": "Physical play-space safety remains local to each competitor.",
+        "evidence_refs": [
+          0
+        ],
+        "uncertainty": "The examined tournament evidence supports remote competition structure but not full federation-grade cross-site controls.",
+        "review_status": "human_reviewed_v0_3"
+      },
+      "participatory_actor_relations": [],
+      "intentional_biological_control": null
+    },
+    "BC-014": {
+      "agency_segments": [
+        {
+          "segment_id": "AS-014-01",
+          "phase_or_regime": "free-roam competitive session",
+          "segment_basis": "observed_phase",
+          "boundary_description": "The venue session during which tracked movement, aiming, and tactics produce score.",
+          "active_agents": [
+            "players"
+          ],
+          "agency_modes": [
+            "live_performance"
+          ],
+          "primary_control": "human_team",
+          "transition_trigger": "session start",
+          "allowed_assistance": "Venue tracking, wireless equipment, controllers, and safety monitoring.",
+          "causal_attribution": "Player movement and tactical action are causally necessary.",
+          "evidence_refs": [
+            0
+          ],
+          "uncertainty": "No material phase ambiguity remains at this level of analysis.",
+          "review_status": "human_reviewed_v0_3"
+        }
+      ],
+      "distributed_arena_relation": {
+        "status": "supported",
+        "topology": "co_located_single_site",
+        "physical_site_relation": "Players share one physical free-roam venue coupled to one computational arena.",
+        "shared_computational_state": "supported",
+        "synchronization_mechanism": "Venue tracking and game state synchronize all participants.",
+        "latency_governance": "Local wireless and tracking latency are operational safety and integrity concerns.",
+        "calibration_equivalence": "Venue mapping and tracking calibration must align physical and virtual boundaries.",
+        "officiation_relation": "Software and venue operators administer the session.",
+        "safety_relation": "Venue operator controls collision avoidance, boundaries, and emergency response.",
+        "evidence_refs": [
+          0
+        ],
+        "uncertainty": "Cross-venue equivalence remains outside this product-level record.",
+        "review_status": "human_reviewed_v0_3"
+      },
+      "participatory_actor_relations": [],
+      "intentional_biological_control": null
+    },
+    "BC-016": {
+      "agency_segments": [
+        {
+          "segment_id": "AS-016-01",
+          "phase_or_regime": "supervised therapeutic exercise",
+          "segment_basis": "observed_phase",
+          "boundary_description": "The patient exercise and feedback cycle defined by the therapeutic protocol.",
+          "active_agents": [
+            "patient"
+          ],
+          "agency_modes": [
+            "live_performance",
+            "assisted_performance"
+          ],
+          "primary_control": "human_pilot",
+          "transition_trigger": "exercise start",
+          "allowed_assistance": "Motion capture, adaptive task parameters, and therapist-selected protocol.",
+          "causal_attribution": "Patient movement is causally necessary; clinical supervision does not execute the movement.",
+          "evidence_refs": [
+            0
+          ],
+          "uncertainty": "No material phase ambiguity remains at this level of analysis.",
+          "review_status": "human_reviewed_v0_3"
+        }
+      ],
+      "distributed_arena_relation": {
+        "status": "supported",
+        "topology": "co_located_single_site",
+        "physical_site_relation": "Patient and supervising clinician operate within one treatment environment.",
+        "shared_computational_state": "supported",
+        "synchronization_mechanism": "Motion capture and therapeutic software synchronize movement and feedback.",
+        "latency_governance": "Local sensing latency may affect feedback but no remote contest claim is made.",
+        "calibration_equivalence": "Clinical setup and patient-specific calibration govern the exercise.",
+        "officiation_relation": "No sport officiation; clinical supervision governs protocol.",
+        "safety_relation": "Clinical responsibility and patient suitability are central.",
+        "evidence_refs": [
+          0
+        ],
+        "uncertainty": "Remote rehabilitation configurations require separate product and protocol evidence.",
+        "review_status": "human_reviewed_v0_3"
+      },
+      "participatory_actor_relations": [
+        {
+          "relation_id": "PAR-016-01",
+          "actor_type": "operator",
+          "relation_type": "supervisor",
+          "action_window": "Before and during the therapeutic exercise.",
+          "mechanism": "The clinician selects or adjusts protocol parameters and supervises safe execution.",
+          "performance_agency_relation": "indirect_no_execution",
+          "rule_authority_relation": "participatory",
+          "resource_or_constraint_effect": "The supervisor changes task conditions without performing the patient's movement.",
+          "evidence_refs": [
+            0
+          ],
+          "uncertainty": "Clinical roles and software permissions may vary by deployment.",
+          "review_status": "human_reviewed_v0_3"
+        }
+      ],
+      "intentional_biological_control": null
+    }
+  }
+}
