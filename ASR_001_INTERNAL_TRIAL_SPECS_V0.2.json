@@ -1,0 +1,1036 @@
+{
+  "trial_set_id": "ASR001-INTERNAL-TRIALS-S11",
+  "version": "0.2",
+  "status": "case_derived_synthetic_internal_trials",
+  "not_market_records": true,
+  "profiles": [
+    {
+      "trial_id": "TRIAL-01-AUTONOMOUS",
+      "profile_id": "ASR001-TRIAL-AUTO-001",
+      "profile_version": "0.2",
+      "subject_id": "TRIAL-AUTO-CONTEST-001",
+      "name": "Case-Derived Autonomous Robot Contest Configuration",
+      "object_type": "contest_configuration",
+      "configuration": "human-designed robots execute a bounded contest autonomously during the contest window",
+      "source_case_ids": [
+        "BC-010"
+      ],
+      "feature_flags": {
+        "human_performance_claimed": "absent",
+        "agency_modes_or_handoff_present": "present",
+        "embodiment_or_biological_control_claimed": "absent",
+        "distributed_operation_claimed": "absent",
+        "rules_or_constraints_present": "present",
+        "sensing_or_tracking_present": "present",
+        "measurement_or_comparison_claimed": "present",
+        "contest_or_outcome_present": "present",
+        "spatial_function_claimed": "present",
+        "participatory_actor_present": "absent",
+        "operational_responsibility_material": "present",
+        "machine_readable_distribution_provided": "present"
+      },
+      "system_roles": [
+        "competition",
+        "measurement",
+        "officiation"
+      ],
+      "performance": {
+        "performance_window": {
+          "start": "official autonomous start",
+          "end": "official contest termination",
+          "basis": "robot actions affect the result; no live human performance is claimed"
+        },
+        "agency_segments": [
+          {
+            "segment": "pre_contest_design",
+            "human_role": "design_engineering_agency",
+            "automation": "not executing contest",
+            "evidence_state": "supported"
+          },
+          {
+            "segment": "contest_execution",
+            "human_role": "none",
+            "automation": "autonomous_execution",
+            "evidence_state": "supported"
+          }
+        ],
+        "interface_channels": [],
+        "embodied_demand": {
+          "state": "not_applicable",
+          "reason": "No live human performance claim."
+        }
+      },
+      "arena": {
+        "configuration": {
+          "physical_arena": "bounded robot contest field",
+          "computational_arena": "onboard control and sensed state",
+          "unified_relation": "robot sensing and control affect physical contest execution"
+        },
+        "distributed_relation": {
+          "state": "not_applicable",
+          "reason": "The trial does not claim remote synchronous competition."
+        }
+      },
+      "constraints": {
+        "authoritative_sources": [
+          "EV-TRIAL-SPEC"
+        ],
+        "execution": {
+          "modes": [
+            "physical",
+            "software",
+            "human_official"
+          ]
+        }
+      },
+      "sensing": {
+        "observation_estimation_boundary": {
+          "direct": [
+            "robot sensors"
+          ],
+          "estimated": [
+            "localization",
+            "opponent state"
+          ]
+        },
+        "failure_and_uncertainty": [
+          "sensor failure can alter autonomous behavior"
+        ]
+      },
+      "measurement": {
+        "metrics": [
+          {
+            "name": "contest result",
+            "unit": "ordinal",
+            "intended_use": "ranking"
+          }
+        ],
+        "comparability_conditions": [
+          "same ruleset",
+          "same field",
+          "declared robot class"
+        ]
+      },
+      "outcome": {
+        "officiation_and_authority": {
+          "software_authority": "robot execution",
+          "human_authority": "contest official"
+        },
+        "outcome_and_consequence": {
+          "outcome_openness": "supported",
+          "result": "ranked contest finish",
+          "consequence_structure": [
+            "ranking",
+            "elimination"
+          ]
+        }
+      },
+      "spatial_integration": {
+        "functions": [
+          {
+            "function": "mediate",
+            "mechanism": "onboard computation drives physical action"
+          },
+          {
+            "function": "measure",
+            "mechanism": "sensed contest state"
+          }
+        ],
+        "failure_effects": [
+          "loss of sensing changes or terminates autonomous execution"
+        ]
+      },
+      "actors": {
+        "roles": [
+          {
+            "role": "designer",
+            "performance_agent": false
+          },
+          {
+            "role": "official",
+            "performance_agent": false
+          }
+        ],
+        "participatory_relations": []
+      },
+      "human_factors": {
+        "disclosures": [
+          "operator and spectator separation from the robot field"
+        ],
+        "operational_responsibility": {
+          "event_operator": "field control and emergency stop"
+        }
+      },
+      "evidence_state_overrides": {
+        "ASR001-D03-C01": "not_applicable",
+        "ASR001-D04-C01": "not_applicable",
+        "ASR001-D04-C02": "not_applicable"
+      }
+    },
+    {
+      "trial_id": "TRIAL-02-REHAB-V1",
+      "profile_id": "ASR001-TRIAL-REHAB-001-V1",
+      "profile_version": "0.1",
+      "subject_id": "TRIAL-REHAB-SUPPORT-001",
+      "name": "Case-Derived Spatial Rehabilitation Support Configuration",
+      "object_type": "training_or_support_configuration",
+      "configuration": "therapist-supervised spatial rehabilitation task with adaptive assistance",
+      "source_case_ids": [
+        "BC-016"
+      ],
+      "superseded_by_profile_id": "ASR001-TRIAL-REHAB-001-V2",
+      "feature_flags": {
+        "human_performance_claimed": "present",
+        "agency_modes_or_handoff_present": "present",
+        "embodiment_or_biological_control_claimed": "present",
+        "distributed_operation_claimed": "absent",
+        "rules_or_constraints_present": "present",
+        "sensing_or_tracking_present": "present",
+        "measurement_or_comparison_claimed": "present",
+        "contest_or_outcome_present": "absent",
+        "spatial_function_claimed": "present",
+        "participatory_actor_present": "present",
+        "operational_responsibility_material": "present",
+        "machine_readable_distribution_provided": "present"
+      },
+      "system_roles": [
+        "rehabilitation",
+        "assessment",
+        "training"
+      ],
+      "performance": {
+        "performance_window": {
+          "start": "therapy task start",
+          "end": "therapy task end",
+          "basis": "participant actions affect task completion and support feedback"
+        },
+        "agency_segments": [
+          {
+            "segment": "participant_task",
+            "human_role": "assisted_performance",
+            "automation": "adaptive_assistance",
+            "evidence_state": "supported"
+          }
+        ],
+        "interface_channels": [
+          "tracked_upper_limb_movement",
+          "adaptive_feedback"
+        ],
+        "embodied_demand": {
+          "types": [
+            "range_of_motion",
+            "sensorimotor_coordination"
+          ],
+          "minimum_threshold_claimed": false
+        }
+      },
+      "arena": {
+        "configuration": {
+          "physical_arena": "supervised therapy area",
+          "computational_arena": "adaptive task environment",
+          "unified_relation": "tracked movement changes task state"
+        },
+        "distributed_relation": {
+          "state": "not_applicable",
+          "reason": "Single supervised site."
+        }
+      },
+      "constraints": {
+        "authoritative_sources": [
+          "EV-TRIAL-SPEC"
+        ],
+        "execution": {
+          "modes": [
+            "therapy_protocol",
+            "software",
+            "therapist_supervision"
+          ]
+        }
+      },
+      "sensing": {
+        "observation_estimation_boundary": {
+          "direct": [
+            "controller position"
+          ],
+          "estimated": [
+            "upper-limb pose"
+          ]
+        },
+        "failure_and_uncertainty": [
+          "tracking loss can interrupt feedback"
+        ]
+      },
+      "measurement": {
+        "metrics": [
+          {
+            "name": "range score",
+            "unit": "synthetic units",
+            "intended_use": "session assessment"
+          }
+        ],
+        "comparability_conditions": [
+          "same configuration",
+          "same assistance setting"
+        ]
+      },
+      "outcome": {
+        "officiation_and_authority": {
+          "state": "not_applicable",
+          "reason": "No contest."
+        },
+        "outcome_and_consequence": {
+          "state": "not_applicable",
+          "reason": "Support outcome only."
+        }
+      },
+      "spatial_integration": {
+        "functions": [
+          {
+            "function": "enable",
+            "mechanism": "adaptive task environment"
+          },
+          {
+            "function": "measure",
+            "mechanism": "tracked movement"
+          }
+        ],
+        "failure_effects": [
+          "tracking failure invalidates task feedback"
+        ]
+      },
+      "actors": {
+        "roles": [
+          {
+            "role": "participant",
+            "performance_agent": true
+          },
+          {
+            "role": "therapist",
+            "performance_agent": false
+          }
+        ],
+        "participatory_relations": [
+          {
+            "actor": "therapist",
+            "relation": "supervision",
+            "material_effect": "adjusts assistance and stops task",
+            "performance_agent": false
+          }
+        ]
+      },
+      "human_factors": {
+        "disclosures": [
+          "clinical context is declared",
+          "no clinical efficacy claim is made",
+          "adaptive access is configuration-specific"
+        ],
+        "operational_responsibility": {
+          "therapist": "task supervision",
+          "operator": "equipment and environment"
+        }
+      },
+      "evidence_state_overrides": {
+        "ASR001-D09-C01": "not_applicable",
+        "ASR001-D09-C02": "not_applicable"
+      }
+    },
+    {
+      "trial_id": "TRIAL-02-REHAB-V2",
+      "profile_id": "ASR001-TRIAL-REHAB-001-V2",
+      "profile_version": "0.2",
+      "subject_id": "TRIAL-REHAB-SUPPORT-001",
+      "name": "Case-Derived Spatial Rehabilitation Support Configuration",
+      "object_type": "training_or_support_configuration",
+      "configuration": "therapist-supervised spatial rehabilitation task with adaptive assistance",
+      "source_case_ids": [
+        "BC-016"
+      ],
+      "supersedes_profile_id": "ASR001-TRIAL-REHAB-001-V1",
+      "feature_flags": {
+        "human_performance_claimed": "present",
+        "agency_modes_or_handoff_present": "present",
+        "embodiment_or_biological_control_claimed": "present",
+        "distributed_operation_claimed": "absent",
+        "rules_or_constraints_present": "present",
+        "sensing_or_tracking_present": "present",
+        "measurement_or_comparison_claimed": "present",
+        "contest_or_outcome_present": "absent",
+        "spatial_function_claimed": "present",
+        "participatory_actor_present": "present",
+        "operational_responsibility_material": "present",
+        "machine_readable_distribution_provided": "present"
+      },
+      "system_roles": [
+        "rehabilitation",
+        "assessment",
+        "training"
+      ],
+      "copy_from_trial_id": "TRIAL-02-REHAB-V1",
+      "measurement_override": {
+        "metrics": [
+          {
+            "name": "completed target count",
+            "unit": "count",
+            "intended_use": "session assessment"
+          }
+        ],
+        "comparability_conditions": [
+          "same configuration",
+          "same assistance setting"
+        ]
+      },
+      "corrections": [
+        {
+          "correction_id": "CORR-REHAB-001",
+          "affected_clause_ids": [
+            "ASR001-D08-C01",
+            "ASR001-D14-C02"
+          ],
+          "affected_field_paths": [
+            "measurement.metrics",
+            "governance.corrections_and_supersession"
+          ],
+          "reason": "The v0.1 synthetic metric name was ambiguous and lacked a stable unit definition.",
+          "evidence_refs": [
+            "EV-CORRECTION-001"
+          ],
+          "revision_date": "2026-07-24"
+        }
+      ],
+      "evidence_state_overrides": {
+        "ASR001-D09-C01": "not_applicable",
+        "ASR001-D09-C02": "not_applicable"
+      }
+    },
+    {
+      "trial_id": "TRIAL-03-BCI",
+      "profile_id": "ASR001-TRIAL-BCI-001",
+      "profile_version": "0.2",
+      "subject_id": "TRIAL-BCI-CONTEST-001",
+      "name": "Case-Derived Intentional Biological Control Contest Configuration",
+      "object_type": "contest_configuration",
+      "configuration": "intentional brain-signal control of a computational task under contest rules",
+      "source_case_ids": [
+        "BC-018"
+      ],
+      "feature_flags": {
+        "human_performance_claimed": "present",
+        "agency_modes_or_handoff_present": "absent",
+        "embodiment_or_biological_control_claimed": "present",
+        "distributed_operation_claimed": "unknown",
+        "rules_or_constraints_present": "present",
+        "sensing_or_tracking_present": "present",
+        "measurement_or_comparison_claimed": "present",
+        "contest_or_outcome_present": "present",
+        "spatial_function_claimed": "present",
+        "participatory_actor_present": "absent",
+        "operational_responsibility_material": "present",
+        "machine_readable_distribution_provided": "present"
+      },
+      "system_roles": [
+        "competition",
+        "measurement",
+        "research"
+      ],
+      "performance": {
+        "performance_window": {
+          "start": "task activation",
+          "end": "task completion or timeout",
+          "basis": "intentional biological control affects task execution"
+        },
+        "agency_segments": [],
+        "interface_channels": [
+          "intentional_brain_signal",
+          "decoder",
+          "computational_control"
+        ],
+        "embodied_demand": {
+          "intentional_biological_control": "supported",
+          "athletic_embodiment_relation": "unresolved",
+          "minimum_threshold_claimed": false
+        }
+      },
+      "arena": {
+        "configuration": {
+          "physical_arena": "participant station",
+          "computational_arena": "controlled task environment",
+          "unified_relation": "decoded signal changes task state"
+        },
+        "distributed_relation": {
+          "state": "unknown",
+          "reason": "The trial does not assert a verified cross-site topology."
+        }
+      },
+      "constraints": {
+        "authoritative_sources": [
+          "EV-TRIAL-SPEC"
+        ],
+        "execution": {
+          "modes": [
+            "software",
+            "decoder",
+            "contest_rules"
+          ]
+        }
+      },
+      "sensing": {
+        "observation_estimation_boundary": {
+          "direct": [
+            "recorded biological signal"
+          ],
+          "estimated": [
+            "decoded command intention"
+          ]
+        },
+        "failure_and_uncertainty": [
+          "decoder error",
+          "incidental-signal exclusion uncertainty"
+        ]
+      },
+      "measurement": {
+        "metrics": [
+          {
+            "name": "task completion",
+            "unit": "binary",
+            "intended_use": "contest result"
+          }
+        ],
+        "comparability_conditions": [
+          "same decoder protocol",
+          "same task version"
+        ]
+      },
+      "outcome": {
+        "officiation_and_authority": {
+          "software_authority": "task state",
+          "human_authority": "contest official"
+        },
+        "outcome_and_consequence": {
+          "outcome_openness": "supported",
+          "result": "task completion or timeout",
+          "consequence_structure": [
+            "ranking"
+          ]
+        }
+      },
+      "spatial_integration": {
+        "functions": [
+          {
+            "function": "mediate",
+            "mechanism": "decoder maps intentional signal to task command"
+          },
+          {
+            "function": "measure",
+            "mechanism": "task state and completion"
+          }
+        ],
+        "failure_effects": [
+          "decoder failure breaks task control"
+        ]
+      },
+      "actors": {
+        "roles": [
+          {
+            "role": "participant",
+            "performance_agent": true
+          },
+          {
+            "role": "official",
+            "performance_agent": false
+          }
+        ],
+        "participatory_relations": []
+      },
+      "human_factors": {
+        "disclosures": [
+          "biological data privacy",
+          "fatigue",
+          "decoder uncertainty"
+        ],
+        "operational_responsibility": {
+          "operator": "equipment and data handling"
+        }
+      },
+      "evidence_state_overrides": {
+        "ASR001-D04-C02": "partial",
+        "ASR001-D05-C02": "unknown"
+      }
+    },
+    {
+      "trial_id": "TRIAL-04-HUMAN-AI",
+      "profile_id": "ASR001-TRIAL-HUMANAI-001",
+      "profile_version": "0.2",
+      "subject_id": "TRIAL-HUMANAI-CONTEST-001",
+      "name": "Case-Derived Human–AI Team Contest Configuration",
+      "object_type": "contest_configuration",
+      "configuration": "human performer and AI component share task control across declared phases",
+      "source_case_ids": [
+        "BC-019"
+      ],
+      "feature_flags": {
+        "human_performance_claimed": "present",
+        "agency_modes_or_handoff_present": "present",
+        "embodiment_or_biological_control_claimed": "present",
+        "distributed_operation_claimed": "disputed",
+        "rules_or_constraints_present": "present",
+        "sensing_or_tracking_present": "present",
+        "measurement_or_comparison_claimed": "present",
+        "contest_or_outcome_present": "present",
+        "spatial_function_claimed": "present",
+        "participatory_actor_present": "absent",
+        "operational_responsibility_material": "present",
+        "machine_readable_distribution_provided": "present"
+      },
+      "system_roles": [
+        "competition",
+        "measurement",
+        "research"
+      ],
+      "performance": {
+        "performance_window": {
+          "start": "contest start",
+          "end": "contest end",
+          "basis": "human and AI actions affect result"
+        },
+        "agency_segments": [
+          {
+            "segment": "human_control",
+            "human_role": "live_performance",
+            "automation": "assistive",
+            "evidence_state": "supported"
+          },
+          {
+            "segment": "ai_control",
+            "human_role": "supervisory",
+            "automation": "active_control",
+            "evidence_state": "partial"
+          }
+        ],
+        "interface_channels": [
+          "tracked_control_interface",
+          "AI_assistance"
+        ],
+        "embodied_demand": {
+          "types": [
+            "sensorimotor_coordination"
+          ],
+          "minimum_threshold_claimed": false
+        }
+      },
+      "arena": {
+        "configuration": {
+          "physical_arena": "participant station",
+          "computational_arena": "shared task environment",
+          "unified_relation": "control state changes task state"
+        },
+        "distributed_relation": {
+          "state": "disputed",
+          "reason": "Remote topology is not material to the internal trial conclusion."
+        }
+      },
+      "constraints": {
+        "authoritative_sources": [
+          "EV-TRIAL-SPEC"
+        ],
+        "execution": {
+          "modes": [
+            "software",
+            "human_control",
+            "AI_control"
+          ]
+        }
+      },
+      "sensing": {
+        "observation_estimation_boundary": {
+          "direct": [
+            "control input"
+          ],
+          "estimated": [
+            "AI state"
+          ]
+        },
+        "failure_and_uncertainty": [
+          "handoff attribution can be ambiguous"
+        ]
+      },
+      "measurement": {
+        "metrics": [
+          {
+            "name": "task score",
+            "unit": "points",
+            "intended_use": "contest result"
+          }
+        ],
+        "comparability_conditions": [
+          "same AI version",
+          "same assistance policy",
+          "same task version"
+        ]
+      },
+      "outcome": {
+        "officiation_and_authority": {
+          "software_authority": "task scoring",
+          "human_authority": "review"
+        },
+        "outcome_and_consequence": {
+          "outcome_openness": "supported",
+          "result": "ranked score",
+          "consequence_structure": [
+            "ranking"
+          ]
+        }
+      },
+      "spatial_integration": {
+        "functions": [
+          {
+            "function": "constrain",
+            "mechanism": "task environment"
+          },
+          {
+            "function": "measure",
+            "mechanism": "task state"
+          }
+        ],
+        "failure_effects": [
+          "AI version mismatch invalidates comparison"
+        ]
+      },
+      "actors": {
+        "roles": [
+          {
+            "role": "human_performer",
+            "performance_agent": true
+          },
+          {
+            "role": "AI_component",
+            "performance_agent": "phase_dependent"
+          }
+        ],
+        "participatory_relations": []
+      },
+      "human_factors": {
+        "disclosures": [
+          "agency attribution uncertainty",
+          "cognitive load"
+        ],
+        "operational_responsibility": {
+          "operator": "AI version and handoff policy"
+        }
+      },
+      "evidence_state_overrides": {
+        "ASR001-D03-C02": "partial",
+        "ASR001-D05-C02": "partial"
+      }
+    },
+    {
+      "trial_id": "TRIAL-05-AUDIENCE",
+      "profile_id": "ASR001-TRIAL-AUDIENCE-001",
+      "profile_version": "0.2",
+      "subject_id": "TRIAL-AUDIENCE-CONTEST-001",
+      "name": "Case-Derived Participatory Audience Contest Configuration",
+      "object_type": "contest_configuration",
+      "configuration": "audience input changes a rule-authorized resource without executing performance",
+      "source_case_ids": [
+        "BC-020"
+      ],
+      "feature_flags": {
+        "human_performance_claimed": "present",
+        "agency_modes_or_handoff_present": "absent",
+        "embodiment_or_biological_control_claimed": "present",
+        "distributed_operation_claimed": "absent",
+        "rules_or_constraints_present": "present",
+        "sensing_or_tracking_present": "present",
+        "measurement_or_comparison_claimed": "present",
+        "contest_or_outcome_present": "present",
+        "spatial_function_claimed": "present",
+        "participatory_actor_present": "present",
+        "operational_responsibility_material": "present",
+        "machine_readable_distribution_provided": "present"
+      },
+      "system_roles": [
+        "competition",
+        "spectatorship",
+        "participation",
+        "officiation"
+      ],
+      "performance": {
+        "performance_window": {
+          "start": "contest start",
+          "end": "contest end",
+          "basis": "performer actions affect result"
+        },
+        "agency_segments": [],
+        "interface_channels": [
+          "tracked_performer_input"
+        ],
+        "embodied_demand": {
+          "types": [
+            "sensorimotor_coordination"
+          ],
+          "minimum_threshold_claimed": false
+        }
+      },
+      "arena": {
+        "configuration": {
+          "physical_arena": "co-located contest space",
+          "computational_arena": "resource and event state",
+          "unified_relation": "audience-authorized resource changes contest conditions"
+        },
+        "distributed_relation": {
+          "state": "not_applicable",
+          "reason": "No distributed claim."
+        }
+      },
+      "constraints": {
+        "authoritative_sources": [
+          "EV-TRIAL-SPEC"
+        ],
+        "execution": {
+          "modes": [
+            "software",
+            "human_official",
+            "audience_trigger"
+          ]
+        }
+      },
+      "sensing": {
+        "observation_estimation_boundary": {
+          "direct": [
+            "performer action",
+            "audience input"
+          ],
+          "estimated": []
+        },
+        "failure_and_uncertainty": [
+          "audience input aggregation error"
+        ]
+      },
+      "measurement": {
+        "metrics": [
+          {
+            "name": "contest score",
+            "unit": "points",
+            "intended_use": "ranking"
+          }
+        ],
+        "comparability_conditions": [
+          "same audience rule",
+          "same resource limits"
+        ]
+      },
+      "outcome": {
+        "officiation_and_authority": {
+          "software_authority": "resource update",
+          "human_authority": "official review"
+        },
+        "outcome_and_consequence": {
+          "outcome_openness": "supported",
+          "result": "ranked score",
+          "consequence_structure": [
+            "ranking"
+          ]
+        }
+      },
+      "spatial_integration": {
+        "functions": [
+          {
+            "function": "constrain",
+            "mechanism": "resource state"
+          },
+          {
+            "function": "officiate",
+            "mechanism": "rule-authorized trigger"
+          }
+        ],
+        "failure_effects": [
+          "audience resource update failure changes contest conditions"
+        ]
+      },
+      "actors": {
+        "roles": [
+          {
+            "role": "performer",
+            "performance_agent": true
+          },
+          {
+            "role": "audience",
+            "performance_agent": false
+          }
+        ],
+        "participatory_relations": [
+          {
+            "actor": "audience",
+            "relation": "rule_resource",
+            "material_effect": "changes a bounded contest resource",
+            "performance_agent": false
+          }
+        ]
+      },
+      "human_factors": {
+        "disclosures": [
+          "audience influence can alter performer conditions"
+        ],
+        "operational_responsibility": {
+          "event_operator": "audience input integrity"
+        }
+      }
+    },
+    {
+      "trial_id": "TRIAL-06-DRONE",
+      "profile_id": "ASR001-TRIAL-DRONE-001",
+      "profile_version": "0.2",
+      "subject_id": "TRIAL-DRONE-CONTEST-001",
+      "name": "Case-Derived Remote-Controlled Physical Craft Contest",
+      "object_type": "contest_configuration",
+      "configuration": "human pilot remotely controls a physical craft in a co-located contest arena",
+      "source_case_ids": [
+        "BC-005"
+      ],
+      "feature_flags": {
+        "human_performance_claimed": "present",
+        "agency_modes_or_handoff_present": "absent",
+        "embodiment_or_biological_control_claimed": "disputed",
+        "distributed_operation_claimed": "absent",
+        "rules_or_constraints_present": "present",
+        "sensing_or_tracking_present": "present",
+        "measurement_or_comparison_claimed": "present",
+        "contest_or_outcome_present": "present",
+        "spatial_function_claimed": "present",
+        "participatory_actor_present": "absent",
+        "operational_responsibility_material": "present",
+        "machine_readable_distribution_provided": "present"
+      },
+      "system_roles": [
+        "competition",
+        "measurement",
+        "officiation"
+      ],
+      "performance": {
+        "performance_window": {
+          "start": "race start",
+          "end": "race finish",
+          "basis": "live remote pilot control affects result"
+        },
+        "agency_segments": [],
+        "interface_channels": [
+          "remote_control",
+          "video_feedback"
+        ],
+        "embodied_demand": {
+          "types": [
+            "fine_motor_control",
+            "sensorimotor_coordination"
+          ],
+          "athletic_membership_relation": "disputed",
+          "minimum_threshold_claimed": false
+        }
+      },
+      "arena": {
+        "configuration": {
+          "physical_arena": "co-located craft course",
+          "computational_arena": "control and telemetry channel",
+          "unified_relation": "remote pilot input controls physical craft"
+        },
+        "distributed_relation": {
+          "state": "not_applicable",
+          "reason": "Remote control of the craft is not a claim of remote synchronous competition across sites."
+        }
+      },
+      "constraints": {
+        "authoritative_sources": [
+          "EV-TRIAL-SPEC"
+        ],
+        "execution": {
+          "modes": [
+            "physical_course",
+            "equipment",
+            "human_official"
+          ]
+        }
+      },
+      "sensing": {
+        "observation_estimation_boundary": {
+          "direct": [
+            "timing gate",
+            "control input"
+          ],
+          "estimated": [
+            "telemetry state"
+          ]
+        },
+        "failure_and_uncertainty": [
+          "video loss",
+          "control-link loss"
+        ]
+      },
+      "measurement": {
+        "metrics": [
+          {
+            "name": "finish time",
+            "unit": "seconds",
+            "intended_use": "ranking"
+          }
+        ],
+        "comparability_conditions": [
+          "same course",
+          "same equipment class",
+          "same ruleset"
+        ]
+      },
+      "outcome": {
+        "officiation_and_authority": {
+          "human_authority": "race official",
+          "software_authority": "timing"
+        },
+        "outcome_and_consequence": {
+          "outcome_openness": "supported",
+          "result": "ranked finish",
+          "consequence_structure": [
+            "ranking"
+          ]
+        }
+      },
+      "spatial_integration": {
+        "functions": [
+          {
+            "function": "mediate",
+            "mechanism": "remote control channel"
+          },
+          {
+            "function": "measure",
+            "mechanism": "timing and telemetry"
+          }
+        ],
+        "failure_effects": [
+          "control loss ends or invalidates the run"
+        ]
+      },
+      "actors": {
+        "roles": [
+          {
+            "role": "pilot",
+            "performance_agent": true
+          },
+          {
+            "role": "official",
+            "performance_agent": false
+          }
+        ],
+        "participatory_relations": []
+      },
+      "human_factors": {
+        "disclosures": [
+          "craft collision risk",
+          "control-link failure"
+        ],
+        "operational_responsibility": {
+          "event_operator": "course safety",
+          "pilot": "declared equipment control"
+        }
+      },
+      "evidence_state_overrides": {
+        "ASR001-D04-C02": "partial"
+      }
+    }
+  ]
+}

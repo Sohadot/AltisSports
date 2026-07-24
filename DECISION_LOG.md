@@ -313,3 +313,29 @@ The approved scope is now decomposed into uniquely identified, evidence-linked, 
 ### Rationale
 
 The approved scope and candidate architecture now have clause-level expression and a separate operational profile model. Internal implementation is the next reliable test: it can expose clauses that are ambiguous, untestable, overbroad, duplicative, or poorly represented before any external review or publication posture is considered.
+
+---
+
+## DEC-014 — ASR-001 Internal Trial Refinement and Operator-Review Preparation Boundary
+
+**Status:** Ratified upon Sprint 11 PASS  
+**Version:** 1.0  
+**Date:** 2026-07-24  
+**Evidence basis:** `ASR_001_INTERNAL_TRIAL_RESULTS.md`, `ASR_001_CLAUSE_FRICTION_REGISTER_V0.1.json`, and `ASR_001_REFINEMENT_RESULT.md`
+
+### Decision
+
+1. The seven Sprint 11 internal profile artifacts are accepted as the current implementation-trial baseline.
+2. The ASR-001 Working Draft advances internally from v0.1 to v0.2 without changing the approved D01–D15 scope or any clause identifier.
+3. Applicability and evidence sufficiency are separate states. An applicable clause may remain `not_evidenced`, `unknown`, or `partial` without becoming non-applicable or producing a score.
+4. `ASR001-D03-C02` applies when agency modes, control regimes, or handoff are present, including autonomous contest execution after human design.
+5. `ASR001-D04-C02` applies when embodied demand or intentional biological control is claimed, without settling athletic membership or establishing an embodiment threshold.
+6. A JSON ASR-001 profile instance declares machine-readable distribution as present.
+7. Clause records distinguish declarative, supporting-evidence, lifecycle, and distribution-manifest evidence requirements.
+8. Profile correction and supersession are explicit and append-only; the rehabilitation revision pair is accepted as the lifecycle test.
+9. Internal trials confirm the profile-only conformance boundary across autonomous, support, BCI, human–AI, participatory-audience, and remote-control configurations.
+10. Preparation of an operator-review package is authorized. Outreach, external review execution, Public Review Draft status, ASR-001 publication, certification, public conformance claims, scores, rankings, unsupported technical tolerances, final BCI athletic classification, and claims of adoption remain unauthorized.
+
+### Rationale
+
+Internal implementation exposed representational and verification defects that syntax-only validation could not reveal. The bounded v0.2 refinement resolves those defects while preserving all identifiers, exclusions, uncertainty, and historical artifacts. The next useful step is to prepare a review package that lets relevant operators challenge the Working Draft without prematurely opening Public Review or claiming adoption.

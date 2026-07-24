@@ -1,0 +1,63 @@
+{
+  "trial_set_id": "ASR001-INTERNAL-TRIALS-S11",
+  "version": "0.2",
+  "profile_count": 7,
+  "profiles": [
+    {
+      "trial_id": "TRIAL-01-AUTONOMOUS",
+      "profile_id": "ASR001-TRIAL-AUTO-001",
+      "filename": "ASR_001_TRIAL_PROFILE_TRIAL_01_AUTONOMOUS_V0.2.json",
+      "source_case_ids": [
+        "BC-010"
+      ]
+    },
+    {
+      "trial_id": "TRIAL-02-REHAB-V1",
+      "profile_id": "ASR001-TRIAL-REHAB-001-V1",
+      "filename": "ASR_001_TRIAL_PROFILE_TRIAL_02_REHAB_V1_V0.2.json",
+      "source_case_ids": [
+        "BC-016"
+      ]
+    },
+    {
+      "trial_id": "TRIAL-02-REHAB-V2",
+      "profile_id": "ASR001-TRIAL-REHAB-001-V2",
+      "filename": "ASR_001_TRIAL_PROFILE_TRIAL_02_REHAB_V2_V0.2.json",
+      "source_case_ids": [
+        "BC-016"
+      ]
+    },
+    {
+      "trial_id": "TRIAL-03-BCI",
+      "profile_id": "ASR001-TRIAL-BCI-001",
+      "filename": "ASR_001_TRIAL_PROFILE_TRIAL_03_BCI_V0.2.json",
+      "source_case_ids": [
+        "BC-018"
+      ]
+    },
+    {
+      "trial_id": "TRIAL-04-HUMAN-AI",
+      "profile_id": "ASR001-TRIAL-HUMANAI-001",
+      "filename": "ASR_001_TRIAL_PROFILE_TRIAL_04_HUMAN_AI_V0.2.json",
+      "source_case_ids": [
+        "BC-019"
+      ]
+    },
+    {
+      "trial_id": "TRIAL-05-AUDIENCE",
+      "profile_id": "ASR001-TRIAL-AUDIENCE-001",
+      "filename": "ASR_001_TRIAL_PROFILE_TRIAL_05_AUDIENCE_V0.2.json",
+      "source_case_ids": [
+        "BC-020"
+      ]
+    },
+    {
+      "trial_id": "TRIAL-06-DRONE",
+      "profile_id": "ASR001-TRIAL-DRONE-001",
+      "filename": "ASR_001_TRIAL_PROFILE_TRIAL_06_DRONE_V0.2.json",
+      "source_case_ids": [
+        "BC-005"
+      ]
+    }
+  ]
+}

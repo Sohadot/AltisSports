@@ -1,0 +1,849 @@
+{
+  "profile_metadata": {
+    "profile_id": "ASR001-TRIAL-HUMANAI-001",
+    "profile_version": "0.2",
+    "status": "reviewed_draft",
+    "created_date": "2026-07-24",
+    "revised_date": "2026-07-24",
+    "language": "en",
+    "asr_working_draft_version": "0.2",
+    "subject_id": "TRIAL-HUMANAI-CONTEST-001",
+    "license_notice": "Internal case-derived synthetic trial; no claim about a real provider or deployment.",
+    "supersedes_profile_id": null,
+    "superseded_by_profile_id": null
+  },
+  "subject": {
+    "canonical_subject": {
+      "subject_id": "TRIAL-HUMANAI-CONTEST-001",
+      "object_type": "contest_configuration",
+      "name": "Case-Derived Human–AI Team Contest Configuration",
+      "configuration": "human performer and AI component share task control across declared phases",
+      "version": "0.2",
+      "temporal_status": "current"
+    },
+    "related_objects": [
+      {
+        "object_type": "boundary_case",
+        "identifier": "BC-019",
+        "transfer_boundary": "Research anchor only; trial configuration is not a market record."
+      }
+    ]
+  },
+  "operating_context": {
+    "deployment_type": "contest_configuration",
+    "locations": [
+      "internal synthetic trial environment"
+    ],
+    "participant_setting": "case-derived controlled profile trial",
+    "intended_use": "ASR-001 Working Draft internal implementation testing",
+    "temporal_status": "current"
+  },
+  "system_roles_and_dependencies": {
+    "system_roles": [
+      "competition",
+      "measurement",
+      "research"
+    ],
+    "technical_dependencies": [
+      "declared synthetic configuration"
+    ],
+    "institutional_dependencies": [
+      "AltisSports internal trial governance"
+    ],
+    "equipment_dependencies": [],
+    "organizational_dependencies": []
+  },
+  "feature_flags": {
+    "human_performance_claimed": "present",
+    "agency_modes_or_handoff_present": "present",
+    "embodiment_or_biological_control_claimed": "present",
+    "distributed_operation_claimed": "disputed",
+    "rules_or_constraints_present": "present",
+    "sensing_or_tracking_present": "present",
+    "measurement_or_comparison_claimed": "present",
+    "contest_or_outcome_present": "present",
+    "spatial_function_claimed": "present",
+    "participatory_actor_present": "absent",
+    "operational_responsibility_material": "present",
+    "machine_readable_distribution_provided": "present"
+  },
+  "performance": {
+    "performance_window": {
+      "start": "contest start",
+      "end": "contest end",
+      "basis": "human and AI actions affect result"
+    },
+    "agency_segments": [
+      {
+        "segment": "human_control",
+        "human_role": "live_performance",
+        "automation": "assistive",
+        "evidence_state": "supported"
+      },
+      {
+        "segment": "ai_control",
+        "human_role": "supervisory",
+        "automation": "active_control",
+        "evidence_state": "partial"
+      }
+    ],
+    "interface_channels": [
+      "tracked_control_interface",
+      "AI_assistance"
+    ],
+    "embodied_demand": {
+      "types": [
+        "sensorimotor_coordination"
+      ],
+      "minimum_threshold_claimed": false
+    }
+  },
+  "arena": {
+    "configuration": {
+      "physical_arena": "participant station",
+      "computational_arena": "shared task environment",
+      "unified_relation": "control state changes task state"
+    },
+    "distributed_relation": {
+      "state": "disputed",
+      "reason": "Remote topology is not material to the internal trial conclusion."
+    }
+  },
+  "constraints": {
+    "authoritative_sources": [
+      "EV-TRIAL-SPEC"
+    ],
+    "execution": {
+      "modes": [
+        "software",
+        "human_control",
+        "AI_control"
+      ]
+    }
+  },
+  "sensing": {
+    "observation_estimation_boundary": {
+      "direct": [
+        "control input"
+      ],
+      "estimated": [
+        "AI state"
+      ]
+    },
+    "failure_and_uncertainty": [
+      "handoff attribution can be ambiguous"
+    ]
+  },
+  "measurement": {
+    "metrics": [
+      {
+        "name": "task score",
+        "unit": "points",
+        "intended_use": "contest result"
+      }
+    ],
+    "comparability_conditions": [
+      "same AI version",
+      "same assistance policy",
+      "same task version"
+    ]
+  },
+  "outcome": {
+    "officiation_and_authority": {
+      "software_authority": "task scoring",
+      "human_authority": "review"
+    },
+    "outcome_and_consequence": {
+      "outcome_openness": "supported",
+      "result": "ranked score",
+      "consequence_structure": [
+        "ranking"
+      ]
+    }
+  },
+  "spatial_integration": {
+    "functions": [
+      {
+        "function": "constrain",
+        "mechanism": "task environment"
+      },
+      {
+        "function": "measure",
+        "mechanism": "task state"
+      }
+    ],
+    "failure_effects": [
+      "AI version mismatch invalidates comparison"
+    ]
+  },
+  "actors": {
+    "roles": [
+      {
+        "role": "human_performer",
+        "performance_agent": true
+      },
+      {
+        "role": "AI_component",
+        "performance_agent": "phase_dependent"
+      }
+    ],
+    "participatory_relations": []
+  },
+  "human_factors": {
+    "disclosures": [
+      "agency attribution uncertainty",
+      "cognitive load"
+    ],
+    "operational_responsibility": {
+      "operator": "AI version and handoff policy"
+    }
+  },
+  "evidence": {
+    "claims": [
+      {
+        "claim_id": "CLAIM-TRIAL-04-HUMAN-AI",
+        "claim_class": "C2",
+        "statement": "This profile is a case-derived synthetic implementation trial.",
+        "evidence_refs": [
+          "EV-CORPUS-BC-019"
+        ],
+        "limitations": [
+          "Not a real product profile.",
+          "Does not establish external conformance."
+        ]
+      }
+    ],
+    "uncertainty_states": [
+      "partial",
+      "unknown",
+      "not_evidenced",
+      "not_applicable"
+    ],
+    "records": [
+      {
+        "evidence_id": "EV-DECL",
+        "claim_class": "C1",
+        "source_type": "profile_declaration",
+        "title": "TRIAL-04-HUMAN-AI profile declaration",
+        "publisher": "AltisSports Internal Trial",
+        "canonical_url": null,
+        "publication_date": "2026-07-24",
+        "access_date": "2026-07-24",
+        "temporal_status": "current",
+        "supports": [
+          "profile_metadata",
+          "subject",
+          "operating_context",
+          "actors"
+        ],
+        "limitations": [
+          "Internal case-derived synthetic implementation trial.",
+          "Not evidence about a real provider or deployment."
+        ],
+        "attribution_required": true
+      },
+      {
+        "evidence_id": "EV-TRIAL-SPEC",
+        "claim_class": "C1",
+        "source_type": "synthetic_specification",
+        "title": "TRIAL-04-HUMAN-AI bounded configuration specification",
+        "publisher": "AltisSports Internal Trial",
+        "canonical_url": null,
+        "publication_date": "2026-07-24",
+        "access_date": "2026-07-24",
+        "temporal_status": "current",
+        "supports": [
+          "performance",
+          "arena",
+          "constraints",
+          "sensing",
+          "measurement",
+          "outcome",
+          "spatial_integration",
+          "human_factors"
+        ],
+        "limitations": [
+          "Synthetic operational detail used to exercise ASR-001 structure.",
+          "No market, safety, clinical, or product-quality claim."
+        ],
+        "attribution_required": true
+      },
+      {
+        "evidence_id": "EV-GOV",
+        "claim_class": "C1",
+        "source_type": "profile_declaration",
+        "title": "TRIAL-04-HUMAN-AI lifecycle and governance record",
+        "publisher": "AltisSports Internal Trial",
+        "canonical_url": null,
+        "publication_date": "2026-07-24",
+        "access_date": "2026-07-24",
+        "temporal_status": "current",
+        "supports": [
+          "governance"
+        ],
+        "limitations": [
+          "Internal lifecycle record."
+        ],
+        "attribution_required": true
+      },
+      {
+        "evidence_id": "EV-DIST",
+        "claim_class": "C1",
+        "source_type": "profile_declaration",
+        "title": "TRIAL-04-HUMAN-AI JSON distribution manifest",
+        "publisher": "AltisSports Internal Trial",
+        "canonical_url": null,
+        "publication_date": "2026-07-24",
+        "access_date": "2026-07-24",
+        "temporal_status": "current",
+        "supports": [
+          "profile_metadata",
+          "distributions"
+        ],
+        "limitations": [
+          "Local internal-trial artifact; no production endpoint."
+        ],
+        "attribution_required": true
+      },
+      {
+        "evidence_id": "EV-CORPUS-BC-019",
+        "claim_class": "C2",
+        "source_type": "altis_research_corpus",
+        "title": "AltisSports reviewed boundary case BC-019",
+        "publisher": "AltisSports",
+        "canonical_url": null,
+        "publication_date": "2026-07-24",
+        "access_date": "2026-07-24",
+        "temporal_status": "current",
+        "supports": [
+          "trial_configuration",
+          "clause_traceability"
+        ],
+        "limitations": [
+          "Research-case anchor, not operational verification of a real deployment.",
+          "Trial details may be synthetic where the case record is not implementation-complete."
+        ],
+        "attribution_required": true
+      }
+    ]
+  },
+  "governance": {
+    "authority_and_versions": {
+      "profile_publisher": "AltisSports Internal Trial",
+      "working_draft_version": "0.2",
+      "trial_id": "TRIAL-04-HUMAN-AI"
+    },
+    "corrections_and_supersession": []
+  },
+  "distributions": [
+    {
+      "format": "JSON",
+      "location": "ASR_001_TRIAL_PROFILE_TRIAL_04_HUMAN_AI_V0.2.json",
+      "serialization_version": "0.2",
+      "validation_status": "internal_trial",
+      "license": "Internal test fixture",
+      "extensions": []
+    }
+  ],
+  "clause_records": [
+    {
+      "clause_id": "ASR001-D01-C01",
+      "applicability": "applicable",
+      "applicability_basis": "Unconditional Working Draft clause.",
+      "disclosure": "Internal-trial disclosure for Canonical profile subject.",
+      "field_path": "subject.canonical_subject",
+      "evidence_requirement": "declaration_required",
+      "evidence_state": "supported",
+      "evidence_refs": [
+        "EV-DECL"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Checked against the case-derived synthetic trial fixture and declared evidence state.",
+      "review_required": true,
+      "friction_notes": []
+    },
+    {
+      "clause_id": "ASR001-D01-C02",
+      "applicability": "applicable",
+      "applicability_basis": "Unconditional Working Draft clause.",
+      "disclosure": "Internal-trial disclosure for Related-object boundary.",
+      "field_path": "subject.related_objects",
+      "evidence_requirement": "declaration_required",
+      "evidence_state": "supported",
+      "evidence_refs": [
+        "EV-DECL"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Checked against the case-derived synthetic trial fixture and declared evidence state.",
+      "review_required": true,
+      "friction_notes": []
+    },
+    {
+      "clause_id": "ASR001-D02-C01",
+      "applicability": "applicable",
+      "applicability_basis": "Unconditional Working Draft clause.",
+      "disclosure": "Internal-trial disclosure for Operating context.",
+      "field_path": "operating_context",
+      "evidence_requirement": "declaration_required",
+      "evidence_state": "supported",
+      "evidence_refs": [
+        "EV-DECL"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Checked against the case-derived synthetic trial fixture and declared evidence state.",
+      "review_required": false,
+      "friction_notes": []
+    },
+    {
+      "clause_id": "ASR001-D02-C02",
+      "applicability": "applicable",
+      "applicability_basis": "Unconditional Working Draft clause.",
+      "disclosure": "Internal-trial disclosure for System roles and dependencies.",
+      "field_path": "system_roles_and_dependencies",
+      "evidence_requirement": "declaration_required",
+      "evidence_state": "supported",
+      "evidence_refs": [
+        "EV-DECL"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Checked against the case-derived synthetic trial fixture and declared evidence state.",
+      "review_required": true,
+      "friction_notes": []
+    },
+    {
+      "clause_id": "ASR001-D03-C01",
+      "applicability": "applicable",
+      "applicability_basis": "Feature flag `human_performance_claimed` is `present`.",
+      "disclosure": "Internal-trial disclosure for Performance window.",
+      "field_path": "performance.performance_window",
+      "evidence_requirement": "supporting_evidence_or_unresolved_state",
+      "evidence_state": "supported",
+      "evidence_refs": [
+        "EV-CORPUS-BC-019",
+        "EV-TRIAL-SPEC"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Checked against the case-derived synthetic trial fixture and declared evidence state.",
+      "review_required": true,
+      "friction_notes": []
+    },
+    {
+      "clause_id": "ASR001-D03-C02",
+      "applicability": "applicable",
+      "applicability_basis": "Feature flag `agency_modes_or_handoff_present` is `present`.",
+      "disclosure": "Internal-trial disclosure for Agency modes and segments.",
+      "field_path": "performance.agency_segments",
+      "evidence_requirement": "supporting_evidence_or_unresolved_state",
+      "evidence_state": "partial",
+      "evidence_refs": [
+        "EV-CORPUS-BC-019",
+        "EV-TRIAL-SPEC"
+      ],
+      "verification_status": "partially_verified",
+      "verification_notes": "Checked against the case-derived synthetic trial fixture and declared evidence state.",
+      "review_required": true,
+      "friction_notes": []
+    },
+    {
+      "clause_id": "ASR001-D04-C01",
+      "applicability": "applicable",
+      "applicability_basis": "Feature flag `human_performance_claimed` is `present`.",
+      "disclosure": "Internal-trial disclosure for Performance interface channels.",
+      "field_path": "performance.interface_channels",
+      "evidence_requirement": "supporting_evidence_or_unresolved_state",
+      "evidence_state": "supported",
+      "evidence_refs": [
+        "EV-CORPUS-BC-019",
+        "EV-TRIAL-SPEC"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Checked against the case-derived synthetic trial fixture and declared evidence state.",
+      "review_required": true,
+      "friction_notes": []
+    },
+    {
+      "clause_id": "ASR001-D04-C02",
+      "applicability": "applicable",
+      "applicability_basis": "Feature flag `embodiment_or_biological_control_claimed` is `present`.",
+      "disclosure": "Internal-trial disclosure for Embodied demand and biological control.",
+      "field_path": "performance.embodied_demand",
+      "evidence_requirement": "supporting_evidence_or_unresolved_state",
+      "evidence_state": "supported",
+      "evidence_refs": [
+        "EV-CORPUS-BC-019",
+        "EV-TRIAL-SPEC"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Checked against the case-derived synthetic trial fixture and declared evidence state.",
+      "review_required": true,
+      "friction_notes": []
+    },
+    {
+      "clause_id": "ASR001-D05-C01",
+      "applicability": "applicable",
+      "applicability_basis": "Unconditional Working Draft clause.",
+      "disclosure": "Internal-trial disclosure for Arena configuration.",
+      "field_path": "arena.configuration",
+      "evidence_requirement": "declaration_required",
+      "evidence_state": "supported",
+      "evidence_refs": [
+        "EV-DECL"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Checked against the case-derived synthetic trial fixture and declared evidence state.",
+      "review_required": true,
+      "friction_notes": []
+    },
+    {
+      "clause_id": "ASR001-D05-C02",
+      "applicability": "disputed",
+      "applicability_basis": "Feature flag `distributed_operation_claimed` is `disputed`.",
+      "disclosure": "Clause applicability is `disputed`; no underlying-system judgment is implied.",
+      "field_path": "arena.distributed_relation",
+      "evidence_requirement": "supporting_evidence_or_unresolved_state",
+      "evidence_state": "partial",
+      "evidence_refs": [
+        "EV-CORPUS-BC-019",
+        "EV-TRIAL-SPEC"
+      ],
+      "verification_status": "requires_human_review",
+      "verification_notes": "Checked against the case-derived synthetic trial fixture and declared evidence state.",
+      "review_required": true,
+      "friction_notes": [
+        "Remote or distributed relation preserves unknown, disputed, or not-applicable state without invented tolerances."
+      ]
+    },
+    {
+      "clause_id": "ASR001-D06-C01",
+      "applicability": "applicable",
+      "applicability_basis": "Feature flag `rules_or_constraints_present` is `present`.",
+      "disclosure": "Internal-trial disclosure for Rule and constraint sources.",
+      "field_path": "constraints.authoritative_sources",
+      "evidence_requirement": "supporting_evidence_or_unresolved_state",
+      "evidence_state": "supported",
+      "evidence_refs": [
+        "EV-CORPUS-BC-019",
+        "EV-TRIAL-SPEC"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Checked against the case-derived synthetic trial fixture and declared evidence state.",
+      "review_required": false,
+      "friction_notes": []
+    },
+    {
+      "clause_id": "ASR001-D06-C02",
+      "applicability": "applicable",
+      "applicability_basis": "Feature flag `rules_or_constraints_present` is `present`.",
+      "disclosure": "Internal-trial disclosure for Operative rule execution.",
+      "field_path": "constraints.execution",
+      "evidence_requirement": "supporting_evidence_or_unresolved_state",
+      "evidence_state": "supported",
+      "evidence_refs": [
+        "EV-CORPUS-BC-019",
+        "EV-TRIAL-SPEC"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Checked against the case-derived synthetic trial fixture and declared evidence state.",
+      "review_required": true,
+      "friction_notes": []
+    },
+    {
+      "clause_id": "ASR001-D07-C01",
+      "applicability": "applicable",
+      "applicability_basis": "Feature flag `sensing_or_tracking_present` is `present`.",
+      "disclosure": "Internal-trial disclosure for Observation and estimation boundary.",
+      "field_path": "sensing.observation_estimation_boundary",
+      "evidence_requirement": "supporting_evidence_or_unresolved_state",
+      "evidence_state": "supported",
+      "evidence_refs": [
+        "EV-CORPUS-BC-019",
+        "EV-TRIAL-SPEC"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Checked against the case-derived synthetic trial fixture and declared evidence state.",
+      "review_required": true,
+      "friction_notes": []
+    },
+    {
+      "clause_id": "ASR001-D07-C02",
+      "applicability": "applicable",
+      "applicability_basis": "Feature flag `sensing_or_tracking_present` is `present`.",
+      "disclosure": "Internal-trial disclosure for Sensing failure and uncertainty.",
+      "field_path": "sensing.failure_and_uncertainty",
+      "evidence_requirement": "supporting_evidence_or_unresolved_state",
+      "evidence_state": "supported",
+      "evidence_refs": [
+        "EV-CORPUS-BC-019",
+        "EV-TRIAL-SPEC"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Checked against the case-derived synthetic trial fixture and declared evidence state.",
+      "review_required": true,
+      "friction_notes": []
+    },
+    {
+      "clause_id": "ASR001-D08-C01",
+      "applicability": "applicable",
+      "applicability_basis": "Feature flag `measurement_or_comparison_claimed` is `present`.",
+      "disclosure": "Internal-trial disclosure for Metric and calibration disclosure.",
+      "field_path": "measurement.metrics",
+      "evidence_requirement": "supporting_evidence_or_unresolved_state",
+      "evidence_state": "supported",
+      "evidence_refs": [
+        "EV-CORPUS-BC-019",
+        "EV-TRIAL-SPEC"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Checked against the case-derived synthetic trial fixture and declared evidence state.",
+      "review_required": false,
+      "friction_notes": []
+    },
+    {
+      "clause_id": "ASR001-D08-C02",
+      "applicability": "applicable",
+      "applicability_basis": "Feature flag `measurement_or_comparison_claimed` is `present`.",
+      "disclosure": "Internal-trial disclosure for Comparability conditions.",
+      "field_path": "measurement.comparability_conditions",
+      "evidence_requirement": "supporting_evidence_or_unresolved_state",
+      "evidence_state": "supported",
+      "evidence_refs": [
+        "EV-CORPUS-BC-019",
+        "EV-TRIAL-SPEC"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Checked against the case-derived synthetic trial fixture and declared evidence state.",
+      "review_required": true,
+      "friction_notes": []
+    },
+    {
+      "clause_id": "ASR001-D09-C01",
+      "applicability": "applicable",
+      "applicability_basis": "Feature flag `contest_or_outcome_present` is `present`.",
+      "disclosure": "Internal-trial disclosure for Officiation and decision authority.",
+      "field_path": "outcome.officiation_and_authority",
+      "evidence_requirement": "lifecycle_record_required",
+      "evidence_state": "supported",
+      "evidence_refs": [
+        "EV-GOV"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Checked against the case-derived synthetic trial fixture and declared evidence state.",
+      "review_required": true,
+      "friction_notes": []
+    },
+    {
+      "clause_id": "ASR001-D09-C02",
+      "applicability": "applicable",
+      "applicability_basis": "Feature flag `contest_or_outcome_present` is `present`.",
+      "disclosure": "Internal-trial disclosure for Outcome and consequence structure.",
+      "field_path": "outcome.outcome_and_consequence",
+      "evidence_requirement": "supporting_evidence_or_unresolved_state",
+      "evidence_state": "supported",
+      "evidence_refs": [
+        "EV-CORPUS-BC-019",
+        "EV-TRIAL-SPEC"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Checked against the case-derived synthetic trial fixture and declared evidence state.",
+      "review_required": true,
+      "friction_notes": []
+    },
+    {
+      "clause_id": "ASR001-D10-C01",
+      "applicability": "applicable",
+      "applicability_basis": "Feature flag `spatial_function_claimed` is `present`.",
+      "disclosure": "Internal-trial disclosure for Spatial function claims.",
+      "field_path": "spatial_integration.functions",
+      "evidence_requirement": "supporting_evidence_or_unresolved_state",
+      "evidence_state": "supported",
+      "evidence_refs": [
+        "EV-CORPUS-BC-019",
+        "EV-TRIAL-SPEC"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Checked against the case-derived synthetic trial fixture and declared evidence state.",
+      "review_required": true,
+      "friction_notes": []
+    },
+    {
+      "clause_id": "ASR001-D10-C02",
+      "applicability": "applicable",
+      "applicability_basis": "Feature flag `spatial_function_claimed` is `present`.",
+      "disclosure": "Internal-trial disclosure for Spatial function failure effects.",
+      "field_path": "spatial_integration.failure_effects",
+      "evidence_requirement": "supporting_evidence_or_unresolved_state",
+      "evidence_state": "supported",
+      "evidence_refs": [
+        "EV-CORPUS-BC-019",
+        "EV-TRIAL-SPEC"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Checked against the case-derived synthetic trial fixture and declared evidence state.",
+      "review_required": true,
+      "friction_notes": []
+    },
+    {
+      "clause_id": "ASR001-D11-C01",
+      "applicability": "applicable",
+      "applicability_basis": "Unconditional Working Draft clause.",
+      "disclosure": "Internal-trial disclosure for Actor-role disclosure.",
+      "field_path": "actors.roles",
+      "evidence_requirement": "declaration_required",
+      "evidence_state": "supported",
+      "evidence_refs": [
+        "EV-DECL"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Checked against the case-derived synthetic trial fixture and declared evidence state.",
+      "review_required": true,
+      "friction_notes": []
+    },
+    {
+      "clause_id": "ASR001-D11-C02",
+      "applicability": "not_applicable",
+      "applicability_basis": "Feature flag `participatory_actor_present` is `absent`.",
+      "disclosure": "Clause applicability is `not_applicable`; no underlying-system judgment is implied.",
+      "field_path": "actors.participatory_relations",
+      "evidence_requirement": "supporting_evidence_or_unresolved_state",
+      "evidence_state": "not_applicable",
+      "evidence_refs": [],
+      "verification_status": "not_applicable",
+      "verification_notes": "Checked against the case-derived synthetic trial fixture and declared evidence state.",
+      "review_required": true,
+      "friction_notes": []
+    },
+    {
+      "clause_id": "ASR001-D12-C01",
+      "applicability": "applicable",
+      "applicability_basis": "Unconditional Working Draft clause.",
+      "disclosure": "Internal-trial disclosure for Safety, accessibility, and human-limit disclosure.",
+      "field_path": "human_factors.disclosures",
+      "evidence_requirement": "supporting_evidence_or_unresolved_state",
+      "evidence_state": "supported",
+      "evidence_refs": [
+        "EV-CORPUS-BC-019",
+        "EV-TRIAL-SPEC"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Checked against the case-derived synthetic trial fixture and declared evidence state.",
+      "review_required": true,
+      "friction_notes": []
+    },
+    {
+      "clause_id": "ASR001-D12-C02",
+      "applicability": "applicable",
+      "applicability_basis": "Feature flag `operational_responsibility_material` is `present`.",
+      "disclosure": "Internal-trial disclosure for Operational responsibility and limitations.",
+      "field_path": "human_factors.operational_responsibility",
+      "evidence_requirement": "lifecycle_record_required",
+      "evidence_state": "supported",
+      "evidence_refs": [
+        "EV-GOV"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Checked against the case-derived synthetic trial fixture and declared evidence state.",
+      "review_required": true,
+      "friction_notes": []
+    },
+    {
+      "clause_id": "ASR001-D13-C01",
+      "applicability": "applicable",
+      "applicability_basis": "Unconditional Working Draft clause.",
+      "disclosure": "Internal-trial disclosure for Claim classification and source linkage.",
+      "field_path": "evidence.claims",
+      "evidence_requirement": "supporting_evidence_or_unresolved_state",
+      "evidence_state": "supported",
+      "evidence_refs": [
+        "EV-CORPUS-BC-019",
+        "EV-TRIAL-SPEC"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Checked against the case-derived synthetic trial fixture and declared evidence state.",
+      "review_required": true,
+      "friction_notes": []
+    },
+    {
+      "clause_id": "ASR001-D13-C02",
+      "applicability": "applicable",
+      "applicability_basis": "Unconditional Working Draft clause.",
+      "disclosure": "Internal-trial disclosure for Uncertainty and limitation states.",
+      "field_path": "evidence.uncertainty_states",
+      "evidence_requirement": "supporting_evidence_or_unresolved_state",
+      "evidence_state": "supported",
+      "evidence_refs": [
+        "EV-CORPUS-BC-019",
+        "EV-TRIAL-SPEC"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Checked against the case-derived synthetic trial fixture and declared evidence state.",
+      "review_required": true,
+      "friction_notes": []
+    },
+    {
+      "clause_id": "ASR001-D14-C01",
+      "applicability": "applicable",
+      "applicability_basis": "Unconditional Working Draft clause.",
+      "disclosure": "Internal-trial disclosure for Governance, version, and responsible authority.",
+      "field_path": "governance.authority_and_versions",
+      "evidence_requirement": "lifecycle_record_required",
+      "evidence_state": "supported",
+      "evidence_refs": [
+        "EV-GOV"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Checked against the case-derived synthetic trial fixture and declared evidence state.",
+      "review_required": false,
+      "friction_notes": []
+    },
+    {
+      "clause_id": "ASR001-D14-C02",
+      "applicability": "applicable",
+      "applicability_basis": "Unconditional Working Draft clause.",
+      "disclosure": "Internal-trial disclosure for Correction and supersession.",
+      "field_path": "governance.corrections_and_supersession",
+      "evidence_requirement": "lifecycle_record_required",
+      "evidence_state": "supported",
+      "evidence_refs": [
+        "EV-GOV"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Checked against the case-derived synthetic trial fixture and declared evidence state.",
+      "review_required": false,
+      "friction_notes": []
+    },
+    {
+      "clause_id": "ASR001-D15-C01",
+      "applicability": "applicable",
+      "applicability_basis": "Unconditional Working Draft clause.",
+      "disclosure": "Internal-trial disclosure for Profile identity and metadata.",
+      "field_path": "profile_metadata",
+      "evidence_requirement": "declaration_or_manifest_required",
+      "evidence_state": "supported",
+      "evidence_refs": [
+        "EV-DIST"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Checked against the case-derived synthetic trial fixture and declared evidence state.",
+      "review_required": false,
+      "friction_notes": []
+    },
+    {
+      "clause_id": "ASR001-D15-C02",
+      "applicability": "applicable",
+      "applicability_basis": "Feature flag `machine_readable_distribution_provided` is `present`.",
+      "disclosure": "Internal-trial disclosure for Machine-readable distribution and licensing.",
+      "field_path": "distributions",
+      "evidence_requirement": "declaration_or_manifest_required",
+      "evidence_state": "supported",
+      "evidence_refs": [
+        "EV-DIST"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Checked against the case-derived synthetic trial fixture and declared evidence state.",
+      "review_required": false,
+      "friction_notes": [
+        "JSON profile instance makes the machine-readable distribution trigger present."
+      ]
+    }
+  ]
+}

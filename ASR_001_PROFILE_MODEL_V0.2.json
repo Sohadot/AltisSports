@@ -1,0 +1,230 @@
+{
+  "model_id": "ASR-001-PROFILE-MODEL",
+  "version": "0.2",
+  "status": "candidate_non_public_internal_trial_refined",
+  "purpose": "Operational evidence-profile model derived from the ASR-001 candidate normative core.",
+  "conformance_boundary": {
+    "profile_document_or_instance_only": true,
+    "underlying_system_certification": false,
+    "sport_certification": false,
+    "product_quality_endorsement": false,
+    "safety_or_clinical_certification": false
+  },
+  "root_fields": [
+    "profile_metadata",
+    "subject",
+    "operating_context",
+    "system_roles_and_dependencies",
+    "feature_flags",
+    "performance",
+    "arena",
+    "constraints",
+    "sensing",
+    "measurement",
+    "outcome",
+    "spatial_integration",
+    "actors",
+    "human_factors",
+    "evidence",
+    "governance",
+    "distributions",
+    "clause_records"
+  ],
+  "state_vocabularies": {
+    "evidence_state": [
+      "supported",
+      "partial",
+      "absent",
+      "unknown",
+      "not_evidenced",
+      "not_applicable"
+    ],
+    "applicability_state": [
+      "applicable",
+      "not_applicable",
+      "unknown",
+      "disputed"
+    ],
+    "verification_state": [
+      "verified",
+      "partially_verified",
+      "not_verified",
+      "not_applicable",
+      "requires_human_review",
+      "blocked_by_missing_evidence"
+    ],
+    "temporal_status": [
+      "current",
+      "announced",
+      "pilot",
+      "beta",
+      "discontinued",
+      "superseded",
+      "unverified_current_status",
+      "historical"
+    ],
+    "claim_class": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "feature_state": [
+      "present",
+      "absent",
+      "unknown",
+      "disputed"
+    ],
+    "evidence_requirement": [
+      "declaration_required",
+      "supporting_evidence_or_unresolved_state",
+      "lifecycle_record_required",
+      "declaration_or_manifest_required"
+    ]
+  },
+  "feature_flags": {
+    "human_performance_claimed": "present | absent | unknown | disputed",
+    "agency_modes_or_handoff_present": "present | absent | unknown | disputed",
+    "embodiment_or_biological_control_claimed": "present | absent | unknown | disputed",
+    "distributed_operation_claimed": "present | absent | unknown | disputed",
+    "rules_or_constraints_present": "present | absent | unknown | disputed",
+    "sensing_or_tracking_present": "present | absent | unknown | disputed",
+    "measurement_or_comparison_claimed": "present | absent | unknown | disputed",
+    "contest_or_outcome_present": "present | absent | unknown | disputed",
+    "spatial_function_claimed": "present | absent | unknown | disputed",
+    "participatory_actor_present": "present | absent | unknown | disputed",
+    "operational_responsibility_material": "present | absent | unknown | disputed",
+    "machine_readable_distribution_provided": "present"
+  },
+  "clause_record": {
+    "clause_id": "stable ASR001-DNN-CNN identifier",
+    "applicability": "one applicability_state",
+    "applicability_basis": "human-readable basis",
+    "disclosure": "human-readable disclosure or reason for unresolved state",
+    "field_path": "canonical model field path",
+    "evidence_requirement": "one evidence_requirement",
+    "evidence_state": "one evidence_state",
+    "evidence_refs": "array of evidence_record identifiers",
+    "verification_status": "one verification_state",
+    "verification_notes": "human-readable notes",
+    "review_required": "boolean",
+    "friction_notes": "array of internal-trial notes"
+  },
+  "evidence_record": {
+    "evidence_id": "stable local identifier",
+    "claim_class": "C1-C6",
+    "source_type": "official_record | standard | research | first_party_technical | company_announcement | industry_research | professional_reporting | profile_declaration | synthetic_specification",
+    "title": "source title",
+    "publisher": "publisher or responsible entity",
+    "canonical_url": "URL or null",
+    "publication_date": "YYYY-MM-DD or null",
+    "access_date": "YYYY-MM-DD",
+    "temporal_status": "one temporal_status",
+    "supports": "array of clause ids or field paths",
+    "limitations": "array of limitation statements",
+    "attribution_required": "boolean"
+  },
+  "domain_objects": {
+    "subject": [
+      "canonical_subject",
+      "related_objects"
+    ],
+    "operating_context": [
+      "deployment_type",
+      "locations",
+      "participant_setting",
+      "intended_use",
+      "temporal_status"
+    ],
+    "system_roles_and_dependencies": [
+      "system_roles",
+      "technical_dependencies",
+      "institutional_dependencies",
+      "equipment_dependencies",
+      "organizational_dependencies"
+    ],
+    "performance": [
+      "performance_window",
+      "agency_segments",
+      "interface_channels",
+      "embodied_demand"
+    ],
+    "arena": [
+      "configuration",
+      "distributed_relation"
+    ],
+    "constraints": [
+      "authoritative_sources",
+      "execution"
+    ],
+    "sensing": [
+      "observation_estimation_boundary",
+      "failure_and_uncertainty"
+    ],
+    "measurement": [
+      "metrics",
+      "comparability_conditions"
+    ],
+    "outcome": [
+      "officiation_and_authority",
+      "outcome_and_consequence"
+    ],
+    "spatial_integration": [
+      "functions",
+      "failure_effects"
+    ],
+    "actors": [
+      "roles",
+      "participatory_relations"
+    ],
+    "human_factors": [
+      "disclosures",
+      "operational_responsibility"
+    ],
+    "evidence": [
+      "claims",
+      "uncertainty_states",
+      "records"
+    ],
+    "governance": [
+      "authority_and_versions",
+      "corrections_and_supersession"
+    ],
+    "distributions": [
+      "format",
+      "location",
+      "serialization_version",
+      "validation_status",
+      "license",
+      "extensions"
+    ]
+  },
+  "implementation_rule": "The research boundary-case schema is not inherited automatically. This model is clause-derived and separates applicability from evidence sufficiency.",
+  "publication_status": "unpublished",
+  "source_version": "ASR_001_PROFILE_MODEL_V0.1.json",
+  "refinement_basis": [
+    "separate applicability from evidence state",
+    "support autonomous agency-regime disclosure without live human performance",
+    "make JSON distribution applicability structural",
+    "make correction and supersession explicit",
+    "avoid mandatory external evidence duplication for declarative and lifecycle clauses"
+  ],
+  "profile_lifecycle": {
+    "profile_id": "stable profile identifier",
+    "profile_version": "version string",
+    "supersedes_profile_id": "string or null",
+    "superseded_by_profile_id": "string or null",
+    "correction_records": [
+      {
+        "correction_id": "stable correction identifier",
+        "affected_clause_ids": "array",
+        "affected_field_paths": "array",
+        "reason": "string",
+        "evidence_refs": "array",
+        "revision_date": "YYYY-MM-DD"
+      }
+    ]
+  }
+}

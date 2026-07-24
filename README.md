@@ -10,69 +10,68 @@ The ancient Altis contained sport in physical space. AltisSports defines how spo
 
 ## Current Status
 
-**ASR-001 Candidate Normative Core and implementation profile model v0.1 established for internal trial.**
+**ASR-001 Working Draft v0.2 has passed internal implementation trials. Operator-review package preparation is authorized only.**
 
-ASR-001 remains unpublished. No certification, public conformance, score, vendor ranking, safety approval, clinical validation, federation recognition, or industry-adoption claim exists.
+ASR-001 remains unpublished. No outreach, Public Review, certification, public conformance, score, ranking, safety approval, clinical validation, federation recognition, or industry-adoption claim is authorized.
 
-## Current Working Draft
+## Working Draft v0.2
 
-> **ASR-001 — Spatial Athletic System Evidence Profile**
+Sprint 11 preserves all thirty clause identifiers and the approved D01–D15 scope.
 
-Sprint 10 converts the thirty candidate obligation records into clause-level Working Draft text with stable identifiers from D01 through D15.
+The controlled refinement:
 
-The Working Draft:
+- separates clause applicability from evidence sufficiency;
+- allows agency-regime disclosure in autonomous execution without claiming live human performance;
+- allows embodied-demand and biological-control disclosure without settling athletic membership;
+- makes JSON distribution applicability structural;
+- introduces evidence-requirement classes;
+- adds explicit correction and supersession metadata.
 
-- uses candidate normative language;
-- distinguishes unconditional and conditional obligations;
-- maps every clause to one profile field;
-- preserves evidence, applicability, verification, rationale, uncertainty, and exclusion guards;
-- limits candidate conformance to the profile document or machine-readable profile instance.
+## Internal Trial Set
 
-## Candidate Implementation Model
+Seven profile artifacts test:
 
-The operational profile model contains:
+- autonomous robot contest execution;
+- rehabilitation support before and after correction;
+- intentional biological control;
+- human–AI agency handoff;
+- participatory audience influence;
+- remote control of a physical craft.
 
-- profile and subject metadata;
-- operating context and system roles;
-- feature triggers;
-- performance, arena, rule, sensing, measurement, outcome, spatial-function, actor, and human-factor disclosures;
-- evidence and uncertainty records;
-- governance and correction history;
-- machine-readable distributions;
-- exactly thirty clause records.
+All trials are case-derived synthetic fixtures. They are not provider records and do not establish real-product conformance.
 
-The implementation model is clause-derived. It is not the Boundary Case Schema and does not modify the research corpus.
+## Trial Result
 
-## Internal Test Fixtures
-
-Two synthetic profiles exercise the model:
-
-- a local spatial training/support configuration;
-- a remote synchronous distributed contest configuration.
-
-They are structural fixtures only and make no claim about a real product.
+- all seven profiles validate;
+- all thirty clauses are present in every profile;
+- six distinct configuration classes are exercised;
+- correction and supersession validate;
+- eight friction findings are dispositioned;
+- no blocking implementation friction remains;
+- no scope expansion occurred.
 
 ## Current Authorization
 
-Internal implementation trials are the next governed move.
+The next sprint can prepare a written operator-review package.
 
 Still unauthorized:
 
-- ASR-001 publication;
-- Public Review Draft status;
+- sending the package or conducting outreach;
+- opening Public Review;
+- publishing ASR-001;
 - certification or certification marks;
 - public product, sport, or category conformance claims;
 - safety or clinical certification;
-- scores, maturity levels, quality grades, or rankings;
-- unsupported remote-synchronous technical tolerances;
+- scores, grades, maturity levels, or rankings;
+- unsupported remote-synchronous tolerances;
 - final BCI athletic classification;
 - claims of federation recognition or industry adoption.
 
 ## Next Governed Move
 
-**Sprint 11 — ASR-001 Internal Implementation Trials and Clause Refinement**
+**Sprint 12 — ASR-001 Operator Review Package and Review-Readiness Gate**
 
-The next sprint will apply the candidate model to distinct configurations, record implementation friction, revise clauses only where evidence or implementation exposes a defect, and decide whether an operator-review package can be prepared.
+The next sprint will prepare review materials, operator-class questions, issue taxonomy, evidence boundaries, and comment-disposition procedures. It will not initiate external review.
 
 ## Governing Rule
 
