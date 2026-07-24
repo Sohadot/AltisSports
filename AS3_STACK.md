@@ -1,8 +1,8 @@
 # AS³ — Altis Spatial Sport Stack
 
-**Version:** 0.2  
+**Version:** 0.3  
 **Status:** Provisional Reference Architecture — Not a Standard  
-**Revision basis:** `INVARIANCE_FINDINGS_V0.1.md`
+**Revision basis:** `INVARIANCE_FINDINGS_V0.1.md` and `SECOND_STRATUM_FINDINGS_V0.2.md`
 
 ## 1. Purpose
 
@@ -28,8 +28,11 @@ Inspect:
 - design or engineering agency;
 - autonomous execution;
 - agency handoffs;
+- phase- or regime-level control;
 - the causal necessity of human skill;
 - undeclared automation.
+
+When control varies, use Agency Segments. Distinguish an observed phase from a rule-permitted manual, semi-autonomous, or autonomous regime.
 
 Design contribution must not be confused with in-performance agency.
 
@@ -47,9 +50,12 @@ Interface types may include:
 - controllers;
 - resistance equipment;
 - physiological sensing;
+- intentional biological control;
 - other declared assistance.
 
-Mediation does not by itself establish Spatiality. No normative body model or minimum embodiment threshold is authorized by v0.2.
+For biological control, inspect intentional generation, task coupling, decoder mediation, trainability, and incidental-signal exclusion. Bodily origin may support Performance Agency without settling athletic embodiment.
+
+Mediation does not by itself establish Spatiality. No normative body model or minimum embodiment threshold is authorized by v0.3.
 
 ### L3 — Arena and Spatial State
 
@@ -62,8 +68,14 @@ Inspect:
 - rule-bearing zones;
 - tracking volumes;
 - local and remote arena relationships;
+- distributed-arena topology;
+- shared state and synchronization;
+- latency and calibration equivalence;
+- cross-site officiation and safety responsibility;
 - spatial state changes;
 - failure when physical and computational boundaries diverge.
+
+Global participation or a co-located network does not establish a remote synchronous arena.
 
 ### L4 — Constraint and Rule Execution
 
@@ -143,8 +155,13 @@ Inspect:
 - remote presence;
 - communication;
 - spectator influence;
+- participatory rule/resource actors;
+- resource or constraint modification;
+- information asymmetry;
 - harassment and access;
 - social participation.
+
+A spectator or external participant may alter a resource or constraint without becoming a Performance Agent or official.
 
 Presence and immersion are not evidence of Spatial Athletic System membership.
 
@@ -218,6 +235,20 @@ Whether the intended relationship among agency, interface, rules, sensing, measu
 
 Where control or decision authority moves between humans and automated components.
 
+Use phase-level Agency Segments where control is time-varying. Record segment basis, active agents, primary control, transition trigger, assistance, causal attribution, evidence, and uncertainty.
+
+### Distributed Arena Relation
+
+How physical sites, local hubs, remote operators, or performers connect to shared computational state. The relation spans arena, sensing, measurement, comparison, officiation, safety, and governance.
+
+### Participatory Actor Relation
+
+How a non-performing actor changes a resource, constraint, information state, or modifier. This relation must not be silently converted into Performance Agency.
+
+### Intentional Biological Control
+
+How an intentional bodily-origin signal becomes task action through sensing or decoding. Inspect agency and embodiment separately.
+
 ### Comparability
 
 A coordinated condition spanning interface, arena, tracking, calibration, rules, versions, and accessibility.
@@ -242,7 +273,7 @@ AS³ may support:
 - readiness research;
 - future ASR requirement mapping.
 
-## 7. Prohibited Outputs in v0.2
+## 7. Prohibited Outputs in v0.3
 
 AS³ does not authorize:
 
@@ -270,5 +301,9 @@ Revise AS³ when:
 - layers cannot be distinguished operationally;
 - a layer cannot be tied to observable evidence;
 - the Operational Spatial Integration Profile fails to capture recurring mechanisms;
+- phase-level agency cannot represent control changes;
+- distributed-arena relations cannot represent cross-site integrity;
+- participatory actors are confused with performers or officials;
+- intentional biological control is reduced either to visible movement or to any incidental biosignal;
 - real systems violate the assumed relationships;
 - the architecture encourages misleading scoring or object collapse.

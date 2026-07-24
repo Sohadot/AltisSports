@@ -1,0 +1,1211 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://altissports.com/schemas/boundary-case-v0.3.json",
+  "title": "AltisSports Boundary Case Record v0.3",
+  "description": "Machine-readable schema for evidence-linked Spatial Sport boundary cases, including phase-level agency, distributed-arena relations, participatory actors, and intentional biological control. Not a scoring or certification standard.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "case_id",
+    "activity",
+    "classified_object",
+    "performance_agency",
+    "performance_interface",
+    "embodied_performance",
+    "arena",
+    "rules",
+    "tracking",
+    "measurement",
+    "comparability",
+    "officiation",
+    "outcome_openness",
+    "consequence_structure",
+    "operational_spatial_integration_profile",
+    "as3_layer_notes",
+    "candidate_invariants",
+    "evidence",
+    "provisional_finding",
+    "confidence",
+    "access_date",
+    "revision",
+    "migration",
+    "agency_segments",
+    "distributed_arena_relation",
+    "participatory_actor_relations",
+    "intentional_biological_control"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "0.3"
+    },
+    "case_id": {
+      "type": "string",
+      "pattern": "^BC-[0-9]{3}$"
+    },
+    "activity": {
+      "type": "string",
+      "minLength": 1
+    },
+    "activity_aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "corpus_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "classified_object": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "primary",
+        "notes"
+      ],
+      "properties": {
+        "primary": {
+          "type": "string",
+          "enum": [
+            "activity",
+            "contest",
+            "athletic_system",
+            "spatial_athletic_system",
+            "spatial_athletic_contest",
+            "computational_contest",
+            "spatial_support_system",
+            "experience",
+            "product",
+            "event",
+            "organization",
+            "hybrid_unresolved"
+          ]
+        },
+        "secondary": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "activity",
+              "contest",
+              "athletic_system",
+              "spatial_athletic_system",
+              "spatial_athletic_contest",
+              "computational_contest",
+              "spatial_support_system",
+              "experience",
+              "product",
+              "event",
+              "organization"
+            ]
+          }
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "institutional_recognition": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "widely_recognized_sport",
+            "ioc_recognized_federation",
+            "international_federation_governed",
+            "league_governed_competition",
+            "platform_governed_competition",
+            "research_competition",
+            "mixed_or_disputed",
+            "not_generally_recognized_as_sport",
+            "unknown"
+          ]
+        },
+        "notes": {
+          "type": "string"
+        },
+        "claim_class": {
+          "$ref": "#/$defs/claim_class"
+        }
+      }
+    },
+    "performance_agency": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "summary",
+        "claim_class",
+        "agency_modes",
+        "human_skill_causally_necessary",
+        "performance_window"
+      ],
+      "properties": {
+        "status": {
+          "$ref": "#/$defs/presence_status"
+        },
+        "summary": {
+          "type": "string"
+        },
+        "observables": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "claim_class": {
+          "$ref": "#/$defs/claim_class"
+        },
+        "agency_modes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "enum": [
+              "live_performance",
+              "remote_performance",
+              "assisted_performance",
+              "design_engineering",
+              "autonomous_execution",
+              "agency_handoff",
+              "unknown"
+            ]
+          }
+        },
+        "human_skill_causally_necessary": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "performance_window": {
+          "type": "string"
+        },
+        "migration_review_required": {
+          "type": "boolean"
+        }
+      }
+    },
+    "performance_interface": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "summary",
+        "claim_class",
+        "interface_types"
+      ],
+      "properties": {
+        "status": {
+          "$ref": "#/$defs/presence_status"
+        },
+        "summary": {
+          "type": "string"
+        },
+        "observables": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "claim_class": {
+          "$ref": "#/$defs/claim_class"
+        },
+        "interface_types": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "direct_bodily_action",
+              "conventional_equipment",
+              "adaptive_or_assistive_equipment",
+              "vehicle_control",
+              "remote_control",
+              "tracked_xr_input",
+              "controller_or_discrete_input",
+              "resistance_equipment",
+              "physiological_sensing",
+              "simulation_controls",
+              "autonomous_agent",
+              "unknown",
+              "intentional_biological_control"
+            ]
+          }
+        }
+      }
+    },
+    "embodied_performance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "summary",
+        "claim_class",
+        "demand_types"
+      ],
+      "properties": {
+        "status": {
+          "$ref": "#/$defs/presence_status"
+        },
+        "summary": {
+          "type": "string"
+        },
+        "observables": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "claim_class": {
+          "$ref": "#/$defs/claim_class"
+        },
+        "demand_types": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "locomotion",
+              "force",
+              "balance",
+              "endurance",
+              "fine_motor",
+              "cognitive",
+              "sensorimotor_coordination",
+              "physiological_effort",
+              "tracked_movement",
+              "adaptive_bodily_performance",
+              "vehicle_control",
+              "remote_control",
+              "none_live_human",
+              "unknown",
+              "intentional_biosignal_control"
+            ]
+          }
+        }
+      }
+    },
+    "arena": {
+      "$ref": "#/$defs/dimension_block"
+    },
+    "rules": {
+      "$ref": "#/$defs/dimension_block"
+    },
+    "tracking": {
+      "$ref": "#/$defs/dimension_block"
+    },
+    "measurement": {
+      "$ref": "#/$defs/dimension_block"
+    },
+    "comparability": {
+      "$ref": "#/$defs/dimension_block"
+    },
+    "officiation": {
+      "$ref": "#/$defs/dimension_block"
+    },
+    "outcome_openness": {
+      "$ref": "#/$defs/dimension_block"
+    },
+    "consequence_structure": {
+      "$ref": "#/$defs/dimension_block"
+    },
+    "operational_spatial_integration_profile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "overall_status",
+        "summary",
+        "functions",
+        "immersion_present",
+        "claim_class",
+        "profile_status"
+      ],
+      "properties": {
+        "overall_status": {
+          "$ref": "#/$defs/presence_status"
+        },
+        "summary": {
+          "type": "string"
+        },
+        "functions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/spatial_function"
+          }
+        },
+        "immersion_present": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "claim_class": {
+          "$ref": "#/$defs/claim_class"
+        },
+        "profile_status": {
+          "type": "string",
+          "enum": [
+            "native_v0_2",
+            "migrated_provisional",
+            "reviewed_migration",
+            "carried_forward_v0_3",
+            "human_reviewed_v0_3"
+          ]
+        },
+        "no_function_observed": {
+          "type": "boolean"
+        }
+      }
+    },
+    "as3_layer_notes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "L1_performance_agency",
+        "L2_performance_interface_embodied_demand",
+        "L3_arena_spatial_state",
+        "L4_constraint_rule_execution",
+        "L5_sensing_tracking",
+        "L6_measurement_comparability",
+        "L7_officiation_outcome",
+        "L8_presence_participation",
+        "L9_safety_accessibility",
+        "L10_governance_evidence"
+      ],
+      "properties": {
+        "L1_performance_agency": {
+          "type": "string"
+        },
+        "L2_performance_interface_embodied_demand": {
+          "type": "string"
+        },
+        "L3_arena_spatial_state": {
+          "type": "string"
+        },
+        "L4_constraint_rule_execution": {
+          "type": "string"
+        },
+        "L5_sensing_tracking": {
+          "type": "string"
+        },
+        "L6_measurement_comparability": {
+          "type": "string"
+        },
+        "L7_officiation_outcome": {
+          "type": "string"
+        },
+        "L8_presence_participation": {
+          "type": "string"
+        },
+        "L9_safety_accessibility": {
+          "type": "string"
+        },
+        "L10_governance_evidence": {
+          "type": "string"
+        }
+      }
+    },
+    "candidate_invariants": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "performance_agency",
+        "constraint_integrity",
+        "comparability",
+        "outcome_openness"
+      ],
+      "properties": {
+        "performance_agency": {
+          "$ref": "#/$defs/invariant_assessment"
+        },
+        "constraint_integrity": {
+          "$ref": "#/$defs/invariant_assessment"
+        },
+        "comparability": {
+          "$ref": "#/$defs/invariant_assessment"
+        },
+        "outcome_openness": {
+          "$ref": "#/$defs/invariant_assessment"
+        }
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/evidence_record"
+      }
+    },
+    "objections": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "what_would_change_judgment": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "provisional_finding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sport_contest_axis",
+        "category_relation",
+        "summary",
+        "claim_class"
+      ],
+      "properties": {
+        "sport_contest_axis": {
+          "type": "string",
+          "enum": [
+            "sport",
+            "sport_like_contest",
+            "training_or_simulation",
+            "digital_competition_not_settled_as_sport",
+            "research_or_engineering_contest",
+            "hybrid",
+            "not_sport",
+            "unresolved"
+          ]
+        },
+        "category_relation": {
+          "type": "string",
+          "enum": [
+            "spatial_athletic_system",
+            "spatial_athletic_contest",
+            "computational_contest",
+            "spatial_support_system",
+            "partial_spatial_integration",
+            "outside_core_spatial_athletic_class",
+            "unresolved"
+          ]
+        },
+        "summary": {
+          "type": "string"
+        },
+        "claim_class": {
+          "$ref": "#/$defs/claim_class"
+        }
+      }
+    },
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ]
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "access_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "revision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "version",
+        "notes"
+      ],
+      "properties": {
+        "version": {
+          "type": "string",
+          "const": "0.3"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "migration": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_schema_version",
+        "migration_script_version",
+        "review_status",
+        "notes"
+      ],
+      "properties": {
+        "source_schema_version": {
+          "type": "string",
+          "enum": [
+            "0.1",
+            "native",
+            "0.2"
+          ]
+        },
+        "migration_script_version": {
+          "type": "string"
+        },
+        "review_status": {
+          "type": "string",
+          "enum": [
+            "automated_review_required",
+            "human_reviewed",
+            "native_v0_2",
+            "structural_migration_reviewed",
+            "human_reviewed_v0_3"
+          ]
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "agency_segments": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/agency_segment"
+      }
+    },
+    "distributed_arena_relation": {
+      "$ref": "#/$defs/distributed_arena_relation"
+    },
+    "participatory_actor_relations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/participatory_actor_relation"
+      }
+    },
+    "intentional_biological_control": {
+      "$ref": "#/$defs/intentional_biological_control"
+    }
+  },
+  "$defs": {
+    "claim_class": {
+      "type": "string",
+      "enum": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6"
+      ]
+    },
+    "presence_status": {
+      "type": "string",
+      "enum": [
+        "supported",
+        "partial",
+        "absent",
+        "disputed",
+        "unknown",
+        "not_applicable"
+      ]
+    },
+    "dimension_block": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "summary",
+        "claim_class"
+      ],
+      "properties": {
+        "status": {
+          "$ref": "#/$defs/presence_status"
+        },
+        "summary": {
+          "type": "string"
+        },
+        "observables": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "claim_class": {
+          "$ref": "#/$defs/claim_class"
+        }
+      }
+    },
+    "invariant_assessment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "notes"
+      ],
+      "properties": {
+        "status": {
+          "$ref": "#/$defs/presence_status"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "spatial_function": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "role",
+        "status",
+        "significance",
+        "mechanism",
+        "affected_layers",
+        "failure_effect",
+        "evidence_refs",
+        "uncertainty",
+        "review_status"
+      ],
+      "properties": {
+        "role": {
+          "type": "string",
+          "enum": [
+            "represent",
+            "enable",
+            "mediate",
+            "constrain",
+            "measure",
+            "compare",
+            "officiate"
+          ]
+        },
+        "status": {
+          "$ref": "#/$defs/presence_status"
+        },
+        "significance": {
+          "type": "string",
+          "enum": [
+            "incidental",
+            "supportive",
+            "constitutive",
+            "unknown"
+          ]
+        },
+        "mechanism": {
+          "type": "string"
+        },
+        "affected_layers": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "pattern": "^L(10|[1-9])$"
+          }
+        },
+        "failure_effect": {
+          "type": "string"
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "uncertainty": {
+          "type": "string"
+        },
+        "review_status": {
+          "type": "string",
+          "enum": [
+            "migrated_inference_review_required",
+            "human_reviewed",
+            "native_v0_2",
+            "carried_forward_v0_3",
+            "human_reviewed_v0_3"
+          ]
+        }
+      }
+    },
+    "evidence_record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_title",
+        "publisher",
+        "url",
+        "source_type",
+        "claim_class",
+        "supported_fields",
+        "access_date"
+      ],
+      "properties": {
+        "source_title": {
+          "type": "string"
+        },
+        "publisher": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "publication_or_update_date": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "access_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "source_type": {
+          "type": "string",
+          "enum": [
+            "law_or_regulation",
+            "standard_or_sporting_code",
+            "peer_reviewed",
+            "first_party_technical",
+            "official_announcement",
+            "federation_or_league_rules",
+            "reputable_research",
+            "professional_reporting",
+            "secondary_commentary"
+          ]
+        },
+        "claim_class": {
+          "$ref": "#/$defs/claim_class"
+        },
+        "supported_fields": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "limitations": {
+          "type": "string"
+        },
+        "temporal_status": {
+          "type": "string",
+          "enum": [
+            "current",
+            "announced",
+            "pilot",
+            "beta",
+            "discontinued",
+            "superseded",
+            "unverified_current_status",
+            "historical"
+          ]
+        }
+      }
+    },
+    "agency_segment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "segment_id",
+        "phase_or_regime",
+        "segment_basis",
+        "boundary_description",
+        "active_agents",
+        "agency_modes",
+        "primary_control",
+        "transition_trigger",
+        "allowed_assistance",
+        "causal_attribution",
+        "evidence_refs",
+        "uncertainty",
+        "review_status"
+      ],
+      "properties": {
+        "segment_id": {
+          "type": "string",
+          "pattern": "^AS-[0-9]{3}-[0-9]{2}$"
+        },
+        "phase_or_regime": {
+          "type": "string",
+          "minLength": 1
+        },
+        "segment_basis": {
+          "type": "string",
+          "enum": [
+            "observed_phase",
+            "declared_rule_regime",
+            "inferred_phase",
+            "unknown"
+          ]
+        },
+        "boundary_description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "active_agents": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "agency_modes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "enum": [
+              "live_performance",
+              "remote_performance",
+              "assisted_performance",
+              "design_engineering",
+              "autonomous_execution",
+              "agency_handoff",
+              "unknown"
+            ]
+          }
+        },
+        "primary_control": {
+          "type": "string",
+          "enum": [
+            "human_pilot",
+            "human_team",
+            "human_intention_decoder_mediated",
+            "shared_or_variable",
+            "automated_system",
+            "external_participants",
+            "unknown"
+          ]
+        },
+        "transition_trigger": {
+          "type": "string"
+        },
+        "allowed_assistance": {
+          "type": "string"
+        },
+        "causal_attribution": {
+          "type": "string"
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "uncertainty": {
+          "type": "string"
+        },
+        "review_status": {
+          "type": "string",
+          "enum": [
+            "human_reviewed_v0_3",
+            "review_required"
+          ]
+        }
+      }
+    },
+    "distributed_arena_relation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "topology",
+        "physical_site_relation",
+        "shared_computational_state",
+        "synchronization_mechanism",
+        "latency_governance",
+        "calibration_equivalence",
+        "officiation_relation",
+        "safety_relation",
+        "evidence_refs",
+        "uncertainty",
+        "review_status"
+      ],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "supported",
+            "partial",
+            "not_evidenced",
+            "not_applicable",
+            "disputed",
+            "unknown"
+          ]
+        },
+        "topology": {
+          "type": "string",
+          "enum": [
+            "co_located_single_site",
+            "co_located_multi_station",
+            "remote_synchronous",
+            "multi_hub_synchronous",
+            "remote_asynchronous",
+            "remote_supervision_physical_arena",
+            "hybrid",
+            "unknown",
+            "not_applicable"
+          ]
+        },
+        "physical_site_relation": {
+          "type": "string"
+        },
+        "shared_computational_state": {
+          "type": "string",
+          "enum": [
+            "supported",
+            "partial",
+            "absent",
+            "not_applicable",
+            "unknown"
+          ]
+        },
+        "synchronization_mechanism": {
+          "type": "string"
+        },
+        "latency_governance": {
+          "type": "string"
+        },
+        "calibration_equivalence": {
+          "type": "string"
+        },
+        "officiation_relation": {
+          "type": "string"
+        },
+        "safety_relation": {
+          "type": "string"
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "uncertainty": {
+          "type": "string"
+        },
+        "review_status": {
+          "type": "string",
+          "enum": [
+            "human_reviewed_v0_3",
+            "review_required"
+          ]
+        }
+      }
+    },
+    "participatory_actor_relation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "relation_id",
+        "actor_type",
+        "relation_type",
+        "action_window",
+        "mechanism",
+        "performance_agency_relation",
+        "rule_authority_relation",
+        "resource_or_constraint_effect",
+        "evidence_refs",
+        "uncertainty",
+        "review_status"
+      ],
+      "properties": {
+        "relation_id": {
+          "type": "string",
+          "pattern": "^PAR-[0-9]{3}-[0-9]{2}$"
+        },
+        "actor_type": {
+          "type": "string",
+          "enum": [
+            "spectator_public",
+            "crowd",
+            "coach",
+            "team_engineer",
+            "operator",
+            "external_public",
+            "team_member_nonperformer",
+            "unknown"
+          ]
+        },
+        "relation_type": {
+          "type": "string",
+          "enum": [
+            "resource_allocator",
+            "constraint_modifier",
+            "information_supplier",
+            "vote_actor",
+            "trigger_actor",
+            "supervisor",
+            "other"
+          ]
+        },
+        "action_window": {
+          "type": "string"
+        },
+        "mechanism": {
+          "type": "string"
+        },
+        "performance_agency_relation": {
+          "type": "string",
+          "enum": [
+            "none",
+            "indirect_no_execution",
+            "shared",
+            "disputed",
+            "unknown"
+          ]
+        },
+        "rule_authority_relation": {
+          "type": "string",
+          "enum": [
+            "none",
+            "participatory",
+            "officiating",
+            "disputed",
+            "unknown"
+          ]
+        },
+        "resource_or_constraint_effect": {
+          "type": "string"
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "uncertainty": {
+          "type": "string"
+        },
+        "review_status": {
+          "type": "string",
+          "enum": [
+            "human_reviewed_v0_3",
+            "review_required"
+          ]
+        }
+      }
+    },
+    "intentional_biological_control": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "signal_origin",
+        "intentional_generation",
+        "task_coupling",
+        "decoder_mediation",
+        "human_skill_causally_necessary",
+        "trainability_or_control_evidence",
+        "incidental_signal_exclusion",
+        "athletic_embodiment_relation",
+        "summary",
+        "evidence_refs",
+        "uncertainty",
+        "review_status"
+      ],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "supported",
+            "partial",
+            "disputed",
+            "unknown",
+            "not_applicable"
+          ]
+        },
+        "signal_origin": {
+          "type": "string",
+          "enum": [
+            "brain_activity",
+            "muscle_activity",
+            "neural_activity",
+            "other_physiological_signal",
+            "unknown"
+          ]
+        },
+        "intentional_generation": {
+          "type": "string",
+          "enum": [
+            "supported",
+            "partial",
+            "disputed",
+            "unknown"
+          ]
+        },
+        "task_coupling": {
+          "type": "string",
+          "enum": [
+            "incidental",
+            "supportive",
+            "constitutive",
+            "unknown"
+          ]
+        },
+        "decoder_mediation": {
+          "type": "string",
+          "enum": [
+            "absent",
+            "supportive",
+            "constitutive",
+            "unknown"
+          ]
+        },
+        "human_skill_causally_necessary": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "trainability_or_control_evidence": {
+          "type": "string",
+          "enum": [
+            "supported",
+            "partial",
+            "absent",
+            "unknown"
+          ]
+        },
+        "incidental_signal_exclusion": {
+          "type": "string",
+          "enum": [
+            "supported",
+            "partial",
+            "disputed",
+            "unknown"
+          ]
+        },
+        "athletic_embodiment_relation": {
+          "type": "string",
+          "enum": [
+            "supported",
+            "outside_scope",
+            "disputed",
+            "unresolved"
+          ]
+        },
+        "summary": {
+          "type": "string"
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "uncertainty": {
+          "type": "string"
+        },
+        "review_status": {
+          "type": "string",
+          "enum": [
+            "human_reviewed_v0_3",
+            "review_required"
+          ]
+        }
+      }
+    }
+  }
+}

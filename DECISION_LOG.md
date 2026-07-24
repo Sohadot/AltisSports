@@ -185,3 +185,29 @@ A reference dataset must evolve without erasing the conditions under which earli
 ### Rationale
 
 The second stratum validates the main v0.2 separations while exposing two unresolved structures: agency that changes by phase and arenas distributed across physical locations. Preserving these uncertainties increases reference integrity and prevents a premature standard from encoding a convenient but incomplete theory.
+---
+
+## DEC-009 — Targeted Representation and Schema v0.3
+
+**Status:** Ratified  
+**Version:** 1.0  
+**Date:** 2026-07-24  
+**Evidence basis:** `SECOND_STRATUM_FINDINGS_V0.2.md`, `TARGETED_BOUNDARY_DEEPENING.md`
+
+### Decision
+
+1. `BOUNDARY_CASE_SCHEMA_V0.3.json` is authorized because v0.2 cannot faithfully represent phase-varying agency, distributed-arena relations, participatory rule/resource actors, or intentional biological control.
+2. Phase-varying or regime-varying control must use `agency_segments`. A rule-permitted manual, semi-autonomous, or autonomous regime may not be presented as an observed transition without evidence.
+3. Distributed-arena claims must state topology, shared computational state, synchronization, latency governance, calibration equivalence, officiation, safety responsibility, evidence, and uncertainty.
+4. BC-015 remains a co-located Spatial Athletic Contest in the examined evidence. Geographically distributed synchronous Virtual Taekwondo is **not evidenced**, not declared impossible.
+5. Intentional biological control may establish live Performance Agency when intentionality, task coupling, causal necessity, and incidental-signal exclusion are supported.
+6. Intentional biological control does not by itself establish athletic embodiment or Spatial Athletic System membership. BC-018 remains unresolved on that relation.
+7. A non-performing actor who changes a rule-authorized resource or constraint is a **Participatory Rule/Resource Actor** and does not become a Performance Agent or official by default.
+8. v0.2 schemas and datasets remain immutable. v0.3 is a separate derivative with explicit migration and review status.
+9. No score, spatiality level, embodiment level, maturity ladder, certification, conformance claim, or paid ranking is authorized.
+10. `ASR-001` remains unauthorized. Schema v0.3 must first be validated and the targeted structures must survive further corpus use.
+
+### Rationale
+
+The second stratum did not primarily expose missing cases; it exposed missing representational relations. A reference system must record when control changes, how sites connect, how bodily-origin signals become task actions, and how external participants alter contest conditions without collapsing those distinctions into one label.
+

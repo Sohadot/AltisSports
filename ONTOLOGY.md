@@ -1,8 +1,8 @@
 # AltisSports Ontology
 
-**Version:** 0.2  
+**Version:** 0.3  
 **Status:** Provisional Category Model — Not a Standard  
-**Revision basis:** `INVARIANCE_FINDINGS_V0.1.md`
+**Revision basis:** `INVARIANCE_FINDINGS_V0.1.md` and `SECOND_STRATUM_FINDINGS_V0.2.md`
 
 ## 1. Purpose
 
@@ -92,9 +92,29 @@ Execution during the contest window without live human Performance Agency.
 
 A transition of control or decision authority between human and automated components during a performance.
 
+### Agency Segment
+
+A bounded phase or declared control regime used to describe which agents are active, who holds primary control, what assistance is permitted, and how causal contribution is attributed.
+
+An Agency Segment may describe an observed phase, a declared rule regime, or an explicitly marked inference. These bases must not be collapsed.
+
+### Control Transition
+
+The event or condition through which primary control moves among human, assisted, and autonomous components.
+
+### Control Regime
+
+A rule-permitted or system-configured mode such as manual, semi-autonomous, or autonomous operation. A permitted regime is not proof that it occurred in a specific performance.
+
 ## 4. Human and Institutional Roles
 
 Participant, Athlete, Coach, Official, Spectator, Operator, Developer, Governing Body, Rights Holder, and Researcher.
+
+### Participatory Rule/Resource Actor
+
+A non-performing actor who changes a rule-authorized resource, constraint, information state, or modifier without directly executing the athletic performance.
+
+Spectator voting, crowd-triggered modifiers, and external resource allocation may create this relation. It does not establish Performance Agency or officiating authority by default.
 
 The term “athlete” does not by itself establish category membership.
 
@@ -126,7 +146,13 @@ Embodied Demand is descriptive in v0.2; no universal threshold is defined.
 
 The mechanism through which human skill enters the system.
 
-Interface modes may include direct bodily action, adaptive equipment, vehicle control, remote control, tracked XR input, resistance equipment, physiological sensing, or other mediated channels.
+Interface modes may include direct bodily action, adaptive equipment, vehicle control, remote control, tracked XR input, resistance equipment, physiological sensing, intentional biological control, or other mediated channels.
+
+### Intentional Biological Control
+
+Deliberate generation of a bodily-origin signal that is sensed or decoded into task action.
+
+Intentional Biological Control may establish live Performance Agency. It does not automatically establish athletic embodiment; incidental biosignal measurement and task-coupled control must remain separate.
 
 ## 6. Space and Integration Terms
 
@@ -169,6 +195,14 @@ Controlled provisional roles:
 A structured description of Spatial Functions for a classified object, including observable mechanism, evidence, dependency, and failure effect.
 
 It is not a score or maturity level.
+
+### Distributed Arena Relation
+
+A structured relation describing how two or more physical sites, remote operators, devices, or local hubs connect to a shared contest or system state.
+
+It records topology, synchronization, latency governance, calibration equivalence, officiation, safety responsibility, evidence, and uncertainty.
+
+A co-located multi-station setup, a remote synchronous contest, a multi-hub event, and remote supervision of a physical arena are distinct topologies.
 
 ## 7. Contest and Integrity Terms
 
@@ -252,8 +286,12 @@ Modality describes environment configuration. It does not prove Operational Spat
 - an Event contains Activities or Contests;
 - a Contest occurs during a Performance Window;
 - a human performer exercises Performance Agency;
+- an Agency Segment bounds a phase or declared Control Regime;
+- a Control Transition changes the primary control relation;
+- a Participatory Rule/Resource Actor alters an authorized resource or constraint without necessarily performing;
 - a Product implements one or more System Roles;
 - an Athletic System operates within Arenas;
+- a Distributed Arena Relation connects physical sites or remote supervisory locations;
 - a Spatial Function connects computationally mediated space to a classified object;
 - a Rule constrains an Action;
 - Officiation interprets rule-relevant events;
@@ -291,6 +329,9 @@ Classification requires evidence appropriate to the object and the claimed class
 The following remain deferred:
 
 - minimum embodiment threshold;
+- normative status of Intentional Biological Control as athletic embodiment;
+- normative causal attribution across Agency Segments;
+- remote synchronous arena integrity requirements;
 - normative Operational Spatial Integration vocabulary;
 - sport threshold;
 - spatiality level;

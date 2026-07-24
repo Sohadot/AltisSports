@@ -1,0 +1,35 @@
+{
+  "asset": "AltisSports",
+  "sprint": "Sprint 6 \u2014 Targeted Boundary Deepening and Schema v0.3 Decision",
+  "version": "0.3",
+  "date": "2026-07-24",
+  "target": "main/root",
+  "authored_files": [
+    "FIRST_PRINCIPLES.md",
+    "ONTOLOGY.md",
+    "AS3_STACK.md",
+    "DECISION_LOG.md",
+    "README.md",
+    "TARGETED_BOUNDARY_DEEPENING.md",
+    "SCHEMA_V0.3_DECISION.md",
+    "SCHEMA_MIGRATION_V0.2_TO_V0.3.md",
+    "TARGETED_DEEPENING_PATCHES_V0.3.json",
+    "build_boundary_case_schema_v0_3.py",
+    "migrate_boundary_cases_v0_2_to_v0_3.py",
+    "validate_boundary_cases_v0_3.py",
+    "run_sprint6.py",
+    "SPRINT_6_EXECUTION.md",
+    "SPRINT_6_MANIFEST.json"
+  ],
+  "generated_files": [
+    "BOUNDARY_CASE_SCHEMA_V0.3.json",
+    "boundary-cases-011-020.v0.3.json",
+    "SPRINT_6_VALIDATION_RESULT.md",
+    "SPRINT_6_GATE_RESULT.md"
+  ],
+  "immutable_inputs": [
+    "BOUNDARY_CASE_SCHEMA_V0.2.json",
+    "boundary-cases-011-020.v0.2.json"
+  ],
+  "standardization_status": "ASR-001 unauthorized"
+}

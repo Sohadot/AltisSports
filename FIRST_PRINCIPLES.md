@@ -1,8 +1,8 @@
 # First Principles of Spatial Sport
 
-**Version:** 0.2  
+**Version:** 0.3  
 **Status:** Research Foundation — Not a Standard  
-**Revision basis:** `INVARIANCE_FINDINGS_V0.1.md` from BC-001–BC-010
+**Revision basis:** `INVARIANCE_FINDINGS_V0.1.md` and `SECOND_STRATUM_FINDINGS_V0.2.md`
 
 ## 1. Foundational Questions
 
@@ -45,7 +45,7 @@ These may distinguish a spatial-athletic subclass without defining all sport.
 
 Consequence remains analytically important but is no longer treated as an independent candidate invariant.
 
-## 4. Candidate Contest Invariants v0.2
+## 4. Candidate Contest Invariants v0.3
 
 ### 4.1 Performance Agency
 
@@ -62,6 +62,20 @@ Performance Agency is narrower than Human Agency. Humans may design, engineer, t
 - **Autonomous Execution:** the competitive agent acts without live human performance agency during the contest window.
 
 Remote or assisted mediation does not automatically remove Performance Agency. The decisive question is whether live human skill remains causally necessary to the performance under review.
+
+#### Phase-level agency representation
+
+Where control changes during a performance, a summary list of agency modes is insufficient. Analysis must separate **Agency Segments** by phase or declared control regime and record:
+
+- the segment boundary;
+- active human and automated agents;
+- the primary control relation;
+- the trigger for any handoff;
+- permitted assistance;
+- causal attribution;
+- evidence and uncertainty.
+
+A declared manual, semi-autonomous, or autonomous regime is not proof that a specific transition occurred. Permitted regimes and observed phases must remain distinguishable.
 
 ### 4.2 Constraint Integrity
 
@@ -144,6 +158,22 @@ Embodied Performance may involve:
 
 No minimum embodiment threshold is ratified by this version.
 
+### Intentional Biological Control
+
+An intentional biological control channel exists when a performer deliberately generates a bodily-origin signal that is causally coupled to the task through sensing or decoding.
+
+This may establish live Performance Agency even when visible movement is minimal. It does **not** by itself establish athletic embodiment or Spatial Athletic System membership.
+
+The analysis must distinguish:
+
+- intentional signal generation from incidental biosignal measurement;
+- task-coupled control from passive monitoring;
+- human control from decoder or classifier mediation;
+- trainable performance from one-off signal detection;
+- bodily origin from a normative claim that the activity is athletic.
+
+BC-018 therefore remains category-unresolved while its live Performance Agency is supported.
+
 ## 7. Operational Spatial Integration
 
 Operational Spatial Integration is a profile, not a binary badge and not a total score.
@@ -167,6 +197,20 @@ For each role, the analysis should state:
 - what failure of the role would change.
 
 The labels above are descriptive research fields, not maturity levels.
+
+### Distributed Arena Relation
+
+Operational Spatial Integration may connect participants, devices, or operators across more than one physical site. A distributed-arena claim must therefore state:
+
+- the topology of the sites;
+- whether computational state is genuinely shared;
+- synchronization and latency controls;
+- calibration equivalence;
+- officiation across sites;
+- safety responsibility at each site;
+- the evidence supporting the configuration.
+
+Global availability, multi-hub event branding, or a co-located networked contest does not prove a remote synchronous arena.
 
 ## 8. Dual-Axis Discipline
 
@@ -230,6 +274,9 @@ This revision does not settle:
 - the final status of drone racing;
 - the complete relation between esports and Spatial Sport;
 - normative Operational Spatial Integration profiles;
+- a minimum embodiment threshold for intentional biological control;
+- remote synchronous arena integrity requirements;
+- a normative causal-attribution method for agency segments;
 - conformance requirements;
 - any total score, level, scale, or certification.
 

@@ -10,70 +10,69 @@ The ancient Altis contained sport in physical space. AltisSports defines how spo
 
 ## Current Status
 
-**Two boundary strata completed: BC-001–BC-010 historical/migrated and BC-011–BC-020 native v0.2.**
+**Targeted boundary deepening and corpus schema v0.3.**
 
 The project is not yet a standard, certification system, scoring authority, commercial directory, or product recommendation platform.
 
-Sprint 5 applies the v0.2 schema natively to a second antagonistic stratum. The main category architecture survives, while agency handoff and distributed-arena relations remain unresolved.
+Sprint 6 resolves representational gaps exposed by BC-011–BC-020 without beginning a third broad corpus wave.
 
 ## Current Research Baseline
 
 ### Theory and architecture
 
-- `FIRST_PRINCIPLES.md`
+- `FIRST_PRINCIPLES.md` — v0.3 targeted principles
 - `CATEGORY_THESIS.md`
-- `ONTOLOGY.md`
-- `AS3_STACK.md`
-- `DECISION_LOG.md`
+- `ONTOLOGY.md` — v0.3 agency, arena, biological-control, and participatory-actor terms
+- `AS3_STACK.md` — v0.3 cross-layer inspection relations
+- `DECISION_LOG.md` — append-only decisions through DEC-009
 
-### First stratum and migration
+### Historical and native evidence
 
 - `BOUNDARY_CASES_001_010.md`
 - `boundary-cases-001-010.json` — historical v0.1
-- `boundary-cases-001-010.v0.2.json` — migrated, review-required derivative
-- `INVARIANCE_FINDINGS_V0.1.md`
-
-### Native second stratum
-
-- `SECOND_STRATUM_DESIGN.md`
+- `boundary-cases-001-010.v0.2.json` — migrated, review-required
 - `BOUNDARY_CASES_011_020.md`
-- `boundary-cases-011-020.v0.2.json`
+- `boundary-cases-011-020.v0.2.json` — immutable native v0.2 baseline
 - `SECOND_STRATUM_FINDINGS_V0.2.md`
-- `validate_second_stratum.py`
-- `run_sprint5.py`
-- `SPRINT_5_VALIDATION_RESULT.md`
-- `SPRINT_5_GATE_RESULT.md`
+
+### Sprint 6 targeted infrastructure
+
+- `TARGETED_BOUNDARY_DEEPENING.md`
+- `SCHEMA_V0.3_DECISION.md`
+- `BOUNDARY_CASE_SCHEMA_V0.3.json`
+- `SCHEMA_MIGRATION_V0.2_TO_V0.3.md`
+- `TARGETED_DEEPENING_PATCHES_V0.3.json`
+- `build_boundary_case_schema_v0_3.py`
+- `migrate_boundary_cases_v0_2_to_v0_3.py`
+- `validate_boundary_cases_v0_3.py`
+- `boundary-cases-011-020.v0.3.json`
+- `SPRINT_6_VALIDATION_RESULT.md`
+- `SPRINT_6_GATE_RESULT.md`
 
 ## Current Findings
 
-- Performance Agency survives, but time-varying handoff needs phase-level representation.
-- Embodied Performance remains channel-based; no minimum threshold is authorized.
-- Physical spatial skill is not Operational Spatial Integration.
-- Spatial Athletic System membership and contest governance remain separate.
-- Spatial Support System is a necessary sibling class.
-- BCI competition keeps intentional physiological embodiment unresolved.
-- The remote-distributed martial competition hypothesis remains unproven.
-- Spectator resource intervention does not automatically become Performance Agency.
-- Consequence remains a derived property.
-- Qualitative Spatial Functions continue to discriminate without a score.
+- Performance Agency survives, but time-varying control requires phase- or regime-level Agency Segments.
+- A declared control mode is not proof of an observed transition.
+- Distributed arenas require explicit topology, synchronization, latency, calibration, officiation, and safety relations.
+- Examined Virtual Taekwondo evidence supports co-located competition; remote synchronous integrity is not evidenced.
+- Intentional biological control can establish live Performance Agency without settling athletic embodiment.
+- Participatory Rule/Resource Actors can alter contest conditions without becoming performers or officials.
+- Consequence remains derived.
+- No embodiment threshold or total score is authorized.
 
 ## Next Governed Move
 
-**Sprint 6 — Targeted Boundary Deepening and Schema v0.3 Decision**
+After Sprint 6 validation, the next move is:
 
-Focus:
+**Sprint 7 — v0.3 Corpus Application and Standardization-Readiness Gate**
 
-1. remote distributed arena evidence;
-2. intentional physiological embodiment;
-3. phase-level agency segments;
-4. participatory rule/resource actors;
-5. a possible distributed-arena relation.
+Sprint 7 must test whether the new structures work beyond their motivating cases and decide whether ASR scope drafting may begin. It must not issue ASR-001 automatically.
 
 ## Standardization Hold
 
-`ASR-001` is not authorized.
+`ASR-001` remains unauthorized.
 
-A standardization scope may not be drafted until the targeted gaps above are resolved or explicitly bounded by a separate gate.
+Schema adequacy and corpus depth are prerequisites for standards work, not substitutes for it.
 
 ## Governing Rule
 

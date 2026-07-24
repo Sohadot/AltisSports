@@ -1,0 +1,446 @@
+{
+  "patch_version": "0.3",
+  "access_date": "2026-07-24",
+  "cases": {
+    "BC-015": {
+      "append_evidence": [
+        {
+          "source_title": "VTKD Rule Book Archive — WT Virtual Taekwondo Rules and Regulations (April 2026)",
+          "publisher": "Virtual Taekwondo / World Taekwondo",
+          "url": "https://virtualtkd.gg/rulebooks/",
+          "publication_or_update_date": "2026-04-11",
+          "access_date": "2026-07-24",
+          "source_type": "standard_or_sporting_code",
+          "claim_class": "C1",
+          "supported_fields": [
+            "distributed_arena_relation",
+            "rules",
+            "arena",
+            "comparability"
+          ],
+          "limitations": "Provider-hosted rules archive. It documents official event setup but does not establish geographically separated synchronous competition.",
+          "temporal_status": "current"
+        },
+        {
+          "source_title": "VTKD User Manual 1.2.34",
+          "publisher": "Virtual Taekwondo",
+          "url": "https://virtualtkd.gg/manuals/vtkd-user-manual-1-2-34/",
+          "publication_or_update_date": null,
+          "access_date": "2026-07-24",
+          "source_type": "first_party_technical",
+          "claim_class": "C3",
+          "supported_fields": [
+            "distributed_arena_relation",
+            "tracking",
+            "comparability",
+            "arena"
+          ],
+          "limitations": "First-party operational documentation. Same-network and Game Master setup support the examined event architecture, not every possible deployment.",
+          "temporal_status": "current"
+        },
+        {
+          "source_title": "Virtual Taekwondo Patch Notes",
+          "publisher": "Virtual Taekwondo",
+          "url": "https://virtualtkd.gg/patch-notes/",
+          "publication_or_update_date": "2026-01-13",
+          "access_date": "2026-07-24",
+          "source_type": "first_party_technical",
+          "claim_class": "C3",
+          "supported_fields": [
+            "distributed_arena_relation",
+            "tracking",
+            "comparability"
+          ],
+          "limitations": "Patch notes document calibration and match-system changes but do not provide a remote latency or multi-site integrity specification.",
+          "temporal_status": "current"
+        }
+      ],
+      "agency_segments": [],
+      "distributed_arena_relation": {
+        "status": "not_evidenced",
+        "topology": "co_located_multi_station",
+        "physical_site_relation": "The examined official competition and setup materials describe players at event stations joined through a shared Game Master and local network architecture.",
+        "shared_computational_state": "supported",
+        "synchronization_mechanism": "Shared match room and Game Master within the documented event setup.",
+        "latency_governance": "No public specification examined establishes latency budgets or remediation for geographically separated synchronous opponents.",
+        "calibration_equivalence": "Event calibration procedures are documented; cross-site equivalence is not established.",
+        "officiation_relation": "Software, referees, and event operators administer one shared match state.",
+        "safety_relation": "Local mat, boundary, display, and calibration requirements are documented; remote-site safety equivalence is not.",
+        "evidence_refs": [
+          0,
+          3,
+          4,
+          5
+        ],
+        "uncertainty": "This conclusion is limited to examined public materials. A private or future remote mode may exist without being evidenced here.",
+        "review_status": "human_reviewed_v0_3"
+      },
+      "participatory_actor_relations": [],
+      "intentional_biological_control": null
+    },
+    "BC-017": {
+      "append_evidence": [],
+      "agency_segments": [
+        {
+          "segment_id": "AS-017-01",
+          "phase_or_regime": "manual control regime",
+          "segment_basis": "declared_rule_regime",
+          "boundary_description": "A permitted task-execution regime in which pilot input directly controls the exoskeleton.",
+          "active_agents": [
+            "human_pilot",
+            "exoskeleton_control_system"
+          ],
+          "agency_modes": [
+            "live_performance",
+            "assisted_performance"
+          ],
+          "primary_control": "human_pilot",
+          "transition_trigger": "Team- and device-specific; public discipline material does not identify an observed transition sequence.",
+          "allowed_assistance": "Manual exoskeleton operation and permitted sensing/actuation.",
+          "causal_attribution": "Pilot performance is primary while the device mediates and amplifies execution.",
+          "evidence_refs": [
+            0
+          ],
+          "uncertainty": "This is a permitted regime, not proof that every team used it or used it for a specific task.",
+          "review_status": "human_reviewed_v0_3"
+        },
+        {
+          "segment_id": "AS-017-02",
+          "phase_or_regime": "semi-autonomous control regime",
+          "segment_basis": "declared_rule_regime",
+          "boundary_description": "A permitted regime in which pilot input and automated control jointly determine task execution.",
+          "active_agents": [
+            "human_pilot",
+            "exoskeleton_control_system"
+          ],
+          "agency_modes": [
+            "live_performance",
+            "assisted_performance",
+            "agency_handoff"
+          ],
+          "primary_control": "shared_or_variable",
+          "transition_trigger": "Input device, intention detection, or device logic depending on implementation.",
+          "allowed_assistance": "Semi-autonomous operation is explicitly permitted.",
+          "causal_attribution": "Shared and not resolvable without task-level control logs.",
+          "evidence_refs": [
+            0
+          ],
+          "uncertainty": "Public sources do not expose per-team mode transitions or causal percentages.",
+          "review_status": "human_reviewed_v0_3"
+        },
+        {
+          "segment_id": "AS-017-03",
+          "phase_or_regime": "autonomous control regime",
+          "segment_basis": "declared_rule_regime",
+          "boundary_description": "A permitted regime in which autonomous device functions may execute part of a task.",
+          "active_agents": [
+            "exoskeleton_control_system",
+            "human_pilot"
+          ],
+          "agency_modes": [
+            "autonomous_execution",
+            "agency_handoff"
+          ],
+          "primary_control": "automated_system",
+          "transition_trigger": "Device-specific automated mode or detected state.",
+          "allowed_assistance": "Autonomous operation is explicitly permitted by the discipline description.",
+          "causal_attribution": "Automation may become primary for the segment; pilot contribution before, after, or through triggering remains implementation-specific.",
+          "evidence_refs": [
+            0
+          ],
+          "uncertainty": "The source establishes permission, not the exact autonomous behavior of each team.",
+          "review_status": "human_reviewed_v0_3"
+        }
+      ],
+      "distributed_arena_relation": {
+        "status": "not_applicable",
+        "topology": "co_located_single_site",
+        "physical_site_relation": "The classified EXO contest is evaluated as a physical task course, not a distributed shared arena.",
+        "shared_computational_state": "not_applicable",
+        "synchronization_mechanism": "Not applicable.",
+        "latency_governance": "Not applicable.",
+        "calibration_equivalence": "Device-specific control and assistance remain relevant to comparability, but not as a distributed-arena relation.",
+        "officiation_relation": "Officials evaluate task completion and time on the physical course.",
+        "safety_relation": "Pilot, assistive device, and course safety are local and constitutive.",
+        "evidence_refs": [
+          0,
+          1
+        ],
+        "uncertainty": "None material for arena topology.",
+        "review_status": "human_reviewed_v0_3"
+      },
+      "participatory_actor_relations": [],
+      "intentional_biological_control": null
+    },
+    "BC-018": {
+      "append_evidence": [
+        {
+          "source_title": "Brain-Computer Interface Race Tasks",
+          "publisher": "CYBATHLON / ETH Zurich",
+          "url": "https://cybathlon.com/en/events/challenges/challenges-2024/bci-tasks",
+          "publication_or_update_date": null,
+          "access_date": "2026-07-24",
+          "source_type": "first_party_technical",
+          "claim_class": "C1",
+          "supported_fields": [
+            "intentional_biological_control",
+            "performance_agency",
+            "performance_interface",
+            "arena"
+          ],
+          "limitations": "Official task description establishes command timing and animated task structure, not a general philosophical definition of athletic embodiment.",
+          "temporal_status": "current"
+        }
+      ],
+      "agency_segments": [
+        {
+          "segment_id": "AS-018-01",
+          "phase_or_regime": "intentional command generation and decoder-mediated execution",
+          "segment_basis": "observed_phase",
+          "boundary_description": "Each command opportunity or continuous-control interval in the animated race.",
+          "active_agents": [
+            "human_pilot",
+            "bci_decoder",
+            "computational_task_system"
+          ],
+          "agency_modes": [
+            "live_performance",
+            "assisted_performance"
+          ],
+          "primary_control": "human_intention_decoder_mediated",
+          "transition_trigger": "Task prompt, pilot-generated brain activity, and decoder classification.",
+          "allowed_assistance": "Participant-specific signal acquisition, calibration, and decoding.",
+          "causal_attribution": "Human intention is causally necessary, while the decoder mediates whether and how it becomes a valid command.",
+          "evidence_refs": [
+            0,
+            2,
+            3
+          ],
+          "uncertainty": "Decoder performance and participant-specific calibration materially affect attribution and comparability.",
+          "review_status": "human_reviewed_v0_3"
+        }
+      ],
+      "distributed_arena_relation": {
+        "status": "not_applicable",
+        "topology": "co_located_single_site",
+        "physical_site_relation": "The examined BCI race uses a computational task environment and does not depend on geographically distributed opponents.",
+        "shared_computational_state": "supported",
+        "synchronization_mechanism": "Common task software and event timing.",
+        "latency_governance": "Decoder latency is a performance and measurement issue, not a multi-site network relation in this case.",
+        "calibration_equivalence": "Participant-specific calibration is material and remains only partially comparable.",
+        "officiation_relation": "Software and officials determine task completion and ranking.",
+        "safety_relation": "Participant fatigue and signal burden are local human limits.",
+        "evidence_refs": [
+          0,
+          1,
+          3
+        ],
+        "uncertainty": "None material for distributed topology.",
+        "review_status": "human_reviewed_v0_3"
+      },
+      "participatory_actor_relations": [],
+      "intentional_biological_control": {
+        "status": "supported",
+        "signal_origin": "brain_activity",
+        "intentional_generation": "supported",
+        "task_coupling": "constitutive",
+        "decoder_mediation": "constitutive",
+        "human_skill_causally_necessary": true,
+        "trainability_or_control_evidence": "partial",
+        "incidental_signal_exclusion": "supported",
+        "athletic_embodiment_relation": "unresolved",
+        "summary": "The pilot intentionally generates brain-activity patterns that are decoded into task commands. This establishes a live bodily-origin performance channel but does not by itself settle Spatial Athletic System membership.",
+        "evidence_refs": [
+          0,
+          2,
+          3
+        ],
+        "uncertainty": "The boundary between intentional physiological performance and athletic embodiment remains theoretical and participant-specific.",
+        "review_status": "human_reviewed_v0_3"
+      }
+    },
+    "BC-019": {
+      "append_evidence": [],
+      "agency_segments": [
+        {
+          "segment_id": "AS-019-01",
+          "phase_or_regime": "pre-run design and configuration",
+          "segment_basis": "inferred_phase",
+          "boundary_description": "Before the timed course run, teams design, program, configure, and test the robotic system.",
+          "active_agents": [
+            "engineering_team"
+          ],
+          "agency_modes": [
+            "design_engineering"
+          ],
+          "primary_control": "human_team",
+          "transition_trigger": "Start of the competition run.",
+          "allowed_assistance": "All eligible pre-run engineering within challenge rules.",
+          "causal_attribution": "Human design contribution is substantial but occurs outside the live course-execution segment.",
+          "evidence_refs": [
+            0,
+            1
+          ],
+          "uncertainty": "The public overview does not expose every configuration action or team workflow.",
+          "review_status": "human_reviewed_v0_3"
+        },
+        {
+          "segment_id": "AS-019-02",
+          "phase_or_regime": "command-post supervision",
+          "segment_basis": "inferred_phase",
+          "boundary_description": "During the timed run, human operators supervise systems from the command post and may issue permitted commands.",
+          "active_agents": [
+            "human_supervisors",
+            "autonomous_robot_team"
+          ],
+          "agency_modes": [
+            "assisted_performance",
+            "agency_handoff",
+            "autonomous_execution"
+          ],
+          "primary_control": "shared_or_variable",
+          "transition_trigger": "Operator intervention, communications state, or autonomous system behavior.",
+          "allowed_assistance": "Supervision and permitted command interaction under event rules.",
+          "causal_attribution": "Human contribution is live but may be intermittent; exact causal allocation requires command logs.",
+          "evidence_refs": [
+            0,
+            1
+          ],
+          "uncertainty": "The examined sources do not provide a universal per-team intervention timeline.",
+          "review_status": "human_reviewed_v0_3"
+        },
+        {
+          "segment_id": "AS-019-03",
+          "phase_or_regime": "autonomous subterranean execution",
+          "segment_basis": "observed_phase",
+          "boundary_description": "Robots map, navigate, search, and report within the subterranean course during autonomous operation.",
+          "active_agents": [
+            "autonomous_robot_team"
+          ],
+          "agency_modes": [
+            "autonomous_execution"
+          ],
+          "primary_control": "automated_system",
+          "transition_trigger": "Autonomous mission execution and loss or restoration of operator intervention.",
+          "allowed_assistance": "Autonomy, perception, networking, and robot coordination permitted by the challenge.",
+          "causal_attribution": "Autonomous system performance is primary in the course; human design remains an upstream cause.",
+          "evidence_refs": [
+            0,
+            1,
+            2
+          ],
+          "uncertainty": "Systems teams differed in autonomy and intervention patterns.",
+          "review_status": "human_reviewed_v0_3"
+        }
+      ],
+      "distributed_arena_relation": {
+        "status": "partial",
+        "topology": "remote_supervision_physical_arena",
+        "physical_site_relation": "Human supervisors occupy a command post while robots perform in a separate hazardous physical course.",
+        "shared_computational_state": "supported",
+        "synchronization_mechanism": "Robot telemetry, maps, networking, and command systems connect the command post to the course.",
+        "latency_governance": "Communications degradation is part of the technical challenge rather than a normalized athlete-to-athlete fairness condition.",
+        "calibration_equivalence": "Not intended as identical-system calibration; heterogeneous systems are compared through common tasks and scoring.",
+        "officiation_relation": "DARPA validates spatial reports, timing, and ranking from the shared competition infrastructure.",
+        "safety_relation": "Physical separation reduces direct human exposure while robot and course safety remain governed.",
+        "evidence_refs": [
+          0,
+          1,
+          2
+        ],
+        "uncertainty": "This is distributed supervision, not a remote human-versus-human athletic arena.",
+        "review_status": "human_reviewed_v0_3"
+      },
+      "participatory_actor_relations": [],
+      "intentional_biological_control": null
+    },
+    "BC-020": {
+      "append_evidence": [],
+      "agency_segments": [
+        {
+          "segment_id": "AS-020-01",
+          "phase_or_regime": "fan resource allocation",
+          "segment_basis": "declared_rule_regime",
+          "boundary_description": "The rule-defined voting process allocates an optional power resource to selected drivers.",
+          "active_agents": [
+            "spectator_voters",
+            "competition_system"
+          ],
+          "agency_modes": [
+            "design_engineering"
+          ],
+          "primary_control": "external_participants",
+          "transition_trigger": "Completion of the official vote and award of the resource.",
+          "allowed_assistance": "The awarded boost is permitted by the historical championship rule.",
+          "causal_attribution": "Spectators affect available resources but do not execute vehicle performance.",
+          "evidence_refs": [
+            0,
+            1
+          ],
+          "uncertainty": "The source does not quantify the resource's causal effect on any specific result.",
+          "review_status": "human_reviewed_v0_3"
+        },
+        {
+          "segment_id": "AS-020-02",
+          "phase_or_regime": "driver deployment and race execution",
+          "segment_basis": "declared_rule_regime",
+          "boundary_description": "During the race, the driver decides whether and when to deploy the awarded boost while retaining vehicle control.",
+          "active_agents": [
+            "driver",
+            "vehicle_control_system"
+          ],
+          "agency_modes": [
+            "live_performance",
+            "assisted_performance"
+          ],
+          "primary_control": "human_pilot",
+          "transition_trigger": "Driver deployment decision under the rule.",
+          "allowed_assistance": "Optional awarded power resource.",
+          "causal_attribution": "Driver execution remains the live performance channel; the spectator contribution is upstream and indirect.",
+          "evidence_refs": [
+            0,
+            1
+          ],
+          "uncertainty": "Competitive effect varies by race context and is not quantified here.",
+          "review_status": "human_reviewed_v0_3"
+        }
+      ],
+      "distributed_arena_relation": {
+        "status": "not_applicable",
+        "topology": "co_located_single_site",
+        "physical_site_relation": "The race is a physical circuit contest; fan voting occurs externally and does not create a distributed performance arena.",
+        "shared_computational_state": "partial",
+        "synchronization_mechanism": "Voting and vehicle systems communicate resource eligibility and deployment.",
+        "latency_governance": "Not a remote performance-equivalence condition.",
+        "calibration_equivalence": "Not applicable to arena distribution.",
+        "officiation_relation": "Officials and vehicle systems administer eligibility and deployment under the rule.",
+        "safety_relation": "Motorsport safety remains separate from the voting mechanism.",
+        "evidence_refs": [
+          0,
+          1
+        ],
+        "uncertainty": "None material for distributed topology.",
+        "review_status": "human_reviewed_v0_3"
+      },
+      "participatory_actor_relations": [
+        {
+          "relation_id": "PAR-020-01",
+          "actor_type": "spectator_public",
+          "relation_type": "resource_allocator",
+          "action_window": "Official FANBOOST voting period before resource deployment.",
+          "mechanism": "Public votes determine which eligible drivers receive an optional power resource.",
+          "performance_agency_relation": "indirect_no_execution",
+          "rule_authority_relation": "participatory",
+          "resource_or_constraint_effect": "Allocates an optional rule-authorized power resource; the driver retains deployment and driving control.",
+          "evidence_refs": [
+            0,
+            1
+          ],
+          "uncertainty": "The effect on a specific race result is not quantified.",
+          "review_status": "human_reviewed_v0_3"
+        }
+      ],
+      "intentional_biological_control": null
+    }
+  }
+}
