@@ -10,78 +10,69 @@ The ancient Altis contained sport in physical space. AltisSports defines how spo
 
 ## Current Status
 
-**ASR-001 Working Draft architecture established; candidate clause authoring authorized only.**
+**ASR-001 Candidate Normative Core and implementation profile model v0.1 established for internal trial.**
 
-ASR-001 has not been published as a standard. No certification, score, vendor ranking, sport conformance, product endorsement, or industry-adoption claim exists.
+ASR-001 remains unpublished. No certification, public conformance, score, vendor ranking, safety approval, clinical validation, federation recognition, or industry-adoption claim exists.
 
-## Research and Scope Baseline
+## Current Working Draft
 
-- twenty human-reviewed boundary cases under schema v0.3;
-- approved ASR-001 scope for one bounded, versioned system configuration;
-- fifteen profile domains D01–D15;
-- source, claim, uncertainty, correction, and licensing controls;
-- profile-only future conformance boundary;
-- preserved historical schemas and datasets.
+> **ASR-001 — Spatial Athletic System Evidence Profile**
 
-## Working Draft Architecture
+Sprint 10 converts the thirty candidate obligation records into clause-level Working Draft text with stable identifiers from D01 through D15.
 
-The architecture separates:
+The Working Draft:
 
-- status and interpretation;
-- subject identity and applicability;
-- candidate profile requirements;
-- evidence and verification;
-- informative examples.
+- uses candidate normative language;
+- distinguishes unconditional and conditional obligations;
+- maps every clause to one profile field;
+- preserves evidence, applicability, verification, rationale, uncertainty, and exclusion guards;
+- limits candidate conformance to the profile document or machine-readable profile instance.
 
-Candidate clauses use stable identifiers such as:
+## Candidate Implementation Model
 
-```text
-ASR001-D03-C02
-```
+The operational profile model contains:
 
-## Candidate Clause Baseline
+- profile and subject metadata;
+- operating context and system roles;
+- feature triggers;
+- performance, arena, rule, sensing, measurement, outcome, spatial-function, actor, and human-factor disclosures;
+- evidence and uncertainty records;
+- governance and correction history;
+- machine-readable distributions;
+- exactly thirty clause records.
 
-Sprint 9 establishes:
+The implementation model is clause-derived. It is not the Boundary Case Schema and does not modify the research corpus.
 
-- 30 candidate obligation records;
-- exactly two candidates for every domain D01–D15;
-- evidence and governance traceability;
-- applicability classes;
-- verification modes;
-- rationale, uncertainty handling, and exclusion guards;
-- no finalized normative prose.
+## Internal Test Fixtures
 
-See:
+Two synthetic profiles exercise the model:
 
-- `ASR_001_WORKING_DRAFT_ARCHITECTURE.md`
-- `ASR_001_CLAUSE_CATALOG_V0.1.json`
-- `ASR_001_EVIDENCE_TO_CLAUSE_MAP.md`
-- `ASR_001_CLAUSE_COVERAGE_REPORT.md`
-- `ASR_001_APPLICABILITY_MODEL.md`
-- `ASR_001_VERIFICATION_MODEL_DRAFT.md`
-- `ASR_001_IMPLEMENTATION_MODEL_BOUNDARY.md`
+- a local spatial training/support configuration;
+- a remote synchronous distributed contest configuration.
+
+They are structural fixtures only and make no claim about a real product.
 
 ## Current Authorization
 
-The next sprint can convert approved candidate intents into clause-level Working Draft text.
+Internal implementation trials are the next governed move.
 
 Still unauthorized:
 
-- publication of ASR-001;
+- ASR-001 publication;
 - Public Review Draft status;
-- certification or a certification mark;
-- product, sport, or category conformance claims;
+- certification or certification marks;
+- public product, sport, or category conformance claims;
 - safety or clinical certification;
-- scores, maturity levels, or rankings;
-- unsupported technical tolerances;
+- scores, maturity levels, quality grades, or rankings;
+- unsupported remote-synchronous technical tolerances;
 - final BCI athletic classification;
 - claims of federation recognition or industry adoption.
 
 ## Next Governed Move
 
-**Sprint 10 — ASR-001 Candidate Normative Core and Implementation Profile Model v0.1**
+**Sprint 11 — ASR-001 Internal Implementation Trials and Clause Refinement**
 
-Every candidate clause will remain traceable to the approved scope, evidence, applicability, verification, rationale, uncertainty, and exclusions.
+The next sprint will apply the candidate model to distinct configurations, record implementation friction, revise clauses only where evidence or implementation exposes a defect, and decide whether an operator-review package can be prepared.
 
 ## Governing Rule
 

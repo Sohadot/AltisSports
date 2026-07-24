@@ -1,0 +1,48 @@
+{
+  "asset": "AltisSports",
+  "sprint": "Sprint 10 — ASR-001 Candidate Normative Core and Implementation Profile Model v0.1",
+  "version": "0.1",
+  "date": "2026-07-24",
+  "target": "main/root",
+  "authored_files": [
+    "ASR_001_NORMATIVE_CLAUSE_CATALOG_V0.1.json",
+    "ASR_001_PROFILE_MODEL_V0.1.json",
+    "ASR_001_PROFILE_SCHEMA_V0.1.json",
+    "ASR_001_SYNTHETIC_PROFILE_LOCAL_V0.1.json",
+    "ASR_001_SYNTHETIC_PROFILE_DISTRIBUTED_V0.1.json",
+    "ASR_001_CONFORMANCE_BOUNDARY_DRAFT.md",
+    "ASR_001_NORMATIVE_CORE_GATE.md",
+    "build_asr001_working_draft_v0_1.py",
+    "validate_asr001_profile.py",
+    "validate_asr001_working_draft_v0_1.py",
+    "run_sprint10.py",
+    "README.md",
+    "SPRINT_10_EXECUTION.md",
+    "SPRINT_10_MANIFEST.json"
+  ],
+  "generated_files": [
+    "ASR_001_WORKING_DRAFT_V0.1.md",
+    "ASR_001_CLAUSE_TO_FIELD_MAP_V0.1.json",
+    "ASR_001_PROFILE_VALIDATION_RESULT.md",
+    "SPRINT_10_VALIDATION_RESULT.md",
+    "ASR_001_NORMATIVE_CORE_GATE_RESULT.md",
+    "ASR_001_INTERNAL_IMPLEMENTATION_TRIAL_AUTHORIZATION.md"
+  ],
+  "modified_on_pass": [
+    "DECISION_LOG.md"
+  ],
+  "candidate_normative_clause_count": 30,
+  "synthetic_profile_count": 2,
+  "gate_target": "PASS — AUTHORIZE INTERNAL IMPLEMENTATION TRIALS ONLY",
+  "publication_status": "unpublished",
+  "still_unauthorized": [
+    "ASR-001 publication",
+    "Public Review Draft",
+    "certification",
+    "public conformance claims",
+    "scores and rankings",
+    "unsupported technical tolerances",
+    "final BCI athletic classification",
+    "industry adoption claims"
+  ]
+}

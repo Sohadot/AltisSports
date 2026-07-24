@@ -1,0 +1,795 @@
+{
+  "asr_id": "ASR-001",
+  "working_draft_version": "0.1",
+  "status": "candidate_non_public",
+  "mapping_count": 30,
+  "mappings": [
+    {
+      "clause_id": "ASR001-D01-C01",
+      "domain_id": "D01",
+      "profile_field_path": "subject.canonical_subject",
+      "trigger_key": null,
+      "applicability_class": "always",
+      "verification_modes": [
+        "document_presence",
+        "field_presence",
+        "human_review"
+      ],
+      "evidence_case_refs": [
+        "BC-007",
+        "BC-009",
+        "BC-014",
+        "BC-016"
+      ],
+      "governance_dependencies": [
+        "ASR_001_SCOPE_DRAFT.md",
+        "ONTOLOGY.md"
+      ],
+      "exclusions_guarded": [
+        "automatic_category_certification",
+        "product_ranking"
+      ]
+    },
+    {
+      "clause_id": "ASR001-D01-C02",
+      "domain_id": "D01",
+      "profile_field_path": "subject.related_objects",
+      "trigger_key": null,
+      "applicability_class": "always",
+      "verification_modes": [
+        "cross_reference_integrity",
+        "human_review"
+      ],
+      "evidence_case_refs": [
+        "BC-007",
+        "BC-009",
+        "BC-014"
+      ],
+      "governance_dependencies": [
+        "CATEGORY_THESIS.md",
+        "ASR_001_SCOPE_DRAFT.md"
+      ],
+      "exclusions_guarded": [
+        "universal_sport_definition",
+        "automatic_category_certification"
+      ]
+    },
+    {
+      "clause_id": "ASR001-D02-C01",
+      "domain_id": "D02",
+      "profile_field_path": "operating_context",
+      "trigger_key": null,
+      "applicability_class": "always",
+      "verification_modes": [
+        "document_presence",
+        "field_presence",
+        "temporal_consistency"
+      ],
+      "evidence_case_refs": [
+        "BC-009",
+        "BC-014",
+        "BC-016",
+        "BC-019"
+      ],
+      "governance_dependencies": [
+        "ONTOLOGY.md"
+      ],
+      "exclusions_guarded": [
+        "clinical_efficacy_requirements",
+        "product_ranking"
+      ]
+    },
+    {
+      "clause_id": "ASR001-D02-C02",
+      "domain_id": "D02",
+      "profile_field_path": "system_roles_and_dependencies",
+      "trigger_key": null,
+      "applicability_class": "always",
+      "verification_modes": [
+        "field_presence",
+        "cross_reference_integrity",
+        "human_review"
+      ],
+      "evidence_case_refs": [
+        "BC-008",
+        "BC-013",
+        "BC-015",
+        "BC-016"
+      ],
+      "governance_dependencies": [
+        "AS3_STACK.md",
+        "ASR_001_SCOPE_DRAFT.md"
+      ],
+      "exclusions_guarded": [
+        "commercial_endorsement",
+        "federation_recognition"
+      ]
+    },
+    {
+      "clause_id": "ASR001-D03-C01",
+      "domain_id": "D03",
+      "profile_field_path": "performance.performance_window",
+      "trigger_key": "human_performance_claimed",
+      "applicability_class": "when_human_performance_claimed",
+      "verification_modes": [
+        "field_presence",
+        "evidence_traceability",
+        "human_review"
+      ],
+      "evidence_case_refs": [
+        "BC-010",
+        "BC-017",
+        "BC-018",
+        "BC-019"
+      ],
+      "governance_dependencies": [
+        "FIRST_PRINCIPLES.md",
+        "DECISION_LOG.md"
+      ],
+      "exclusions_guarded": [
+        "causal_attribution_scoring",
+        "final_bci_athletic_membership"
+      ]
+    },
+    {
+      "clause_id": "ASR001-D03-C02",
+      "domain_id": "D03",
+      "profile_field_path": "performance.agency_segments",
+      "trigger_key": "agency_modes_or_handoff_present",
+      "applicability_class": "when_human_performance_claimed",
+      "verification_modes": [
+        "conditional_logic",
+        "evidence_traceability",
+        "human_review"
+      ],
+      "evidence_case_refs": [
+        "BC-010",
+        "BC-017",
+        "BC-019"
+      ],
+      "governance_dependencies": [
+        "FIRST_PRINCIPLES.md",
+        "AS3_STACK.md",
+        "DEC-009"
+      ],
+      "exclusions_guarded": [
+        "causal_attribution_scoring",
+        "automatic_category_certification"
+      ]
+    },
+    {
+      "clause_id": "ASR001-D04-C01",
+      "domain_id": "D04",
+      "profile_field_path": "performance.interface_channels",
+      "trigger_key": "human_performance_claimed",
+      "applicability_class": "when_human_performance_claimed",
+      "verification_modes": [
+        "field_presence",
+        "controlled_vocabulary",
+        "human_review"
+      ],
+      "evidence_case_refs": [
+        "BC-004",
+        "BC-005",
+        "BC-013",
+        "BC-017",
+        "BC-018"
+      ],
+      "governance_dependencies": [
+        "ONTOLOGY.md",
+        "AS3_STACK.md"
+      ],
+      "exclusions_guarded": [
+        "minimum_embodiment_threshold",
+        "final_bci_athletic_membership"
+      ]
+    },
+    {
+      "clause_id": "ASR001-D04-C02",
+      "domain_id": "D04",
+      "profile_field_path": "performance.embodied_demand",
+      "trigger_key": "embodiment_or_biological_control_claimed",
+      "applicability_class": "when_human_performance_claimed",
+      "verification_modes": [
+        "evidence_traceability",
+        "human_review"
+      ],
+      "evidence_case_refs": [
+        "BC-002",
+        "BC-011",
+        "BC-012",
+        "BC-018"
+      ],
+      "governance_dependencies": [
+        "FIRST_PRINCIPLES.md",
+        "DEC-008",
+        "DEC-009"
+      ],
+      "exclusions_guarded": [
+        "minimum_embodiment_threshold",
+        "final_bci_athletic_membership",
+        "spatiality_level"
+      ]
+    },
+    {
+      "clause_id": "ASR001-D05-C01",
+      "domain_id": "D05",
+      "profile_field_path": "arena.configuration",
+      "trigger_key": null,
+      "applicability_class": "always",
+      "verification_modes": [
+        "field_presence",
+        "evidence_traceability",
+        "human_review"
+      ],
+      "evidence_case_refs": [
+        "BC-005",
+        "BC-011",
+        "BC-012",
+        "BC-014"
+      ],
+      "governance_dependencies": [
+        "ONTOLOGY.md",
+        "AS3_STACK.md"
+      ],
+      "exclusions_guarded": [
+        "spatiality_level",
+        "automatic_category_certification"
+      ]
+    },
+    {
+      "clause_id": "ASR001-D05-C02",
+      "domain_id": "D05",
+      "profile_field_path": "arena.distributed_relation",
+      "trigger_key": "distributed_operation_claimed",
+      "applicability_class": "when_distributed_operation_claimed",
+      "verification_modes": [
+        "conditional_logic",
+        "evidence_traceability",
+        "human_review"
+      ],
+      "evidence_case_refs": [
+        "BC-005",
+        "BC-008",
+        "BC-013",
+        "BC-015",
+        "BC-019"
+      ],
+      "governance_dependencies": [
+        "AS3_STACK.md",
+        "DEC-009"
+      ],
+      "exclusions_guarded": [
+        "remote_synchronous_technical_tolerances",
+        "automatic_category_certification"
+      ]
+    },
+    {
+      "clause_id": "ASR001-D06-C01",
+      "domain_id": "D06",
+      "profile_field_path": "constraints.authoritative_sources",
+      "trigger_key": "rules_or_constraints_present",
+      "applicability_class": "when_feature_present",
+      "verification_modes": [
+        "cross_reference_integrity",
+        "temporal_consistency",
+        "evidence_traceability"
+      ],
+      "evidence_case_refs": [
+        "BC-001",
+        "BC-003",
+        "BC-013",
+        "BC-015",
+        "BC-017"
+      ],
+      "governance_dependencies": [
+        "AS3_STACK.md",
+        "SOURCE_AND_CLAIM_POLICY.md"
+      ],
+      "exclusions_guarded": [
+        "federation_recognition",
+        "commercial_endorsement"
+      ]
+    },
+    {
+      "clause_id": "ASR001-D06-C02",
+      "domain_id": "D06",
+      "profile_field_path": "constraints.execution",
+      "trigger_key": "rules_or_constraints_present",
+      "applicability_class": "when_feature_present",
+      "verification_modes": [
+        "field_presence",
+        "evidence_traceability",
+        "human_review"
+      ],
+      "evidence_case_refs": [
+        "BC-013",
+        "BC-015",
+        "BC-017",
+        "BC-020"
+      ],
+      "governance_dependencies": [
+        "AS3_STACK.md",
+        "ONTOLOGY.md"
+      ],
+      "exclusions_guarded": [
+        "automatic_category_certification",
+        "quality_grade"
+      ]
+    },
+    {
+      "clause_id": "ASR001-D07-C01",
+      "domain_id": "D07",
+      "profile_field_path": "sensing.observation_estimation_boundary",
+      "trigger_key": "sensing_or_tracking_present",
+      "applicability_class": "when_feature_present",
+      "verification_modes": [
+        "field_presence",
+        "evidence_traceability",
+        "human_review"
+      ],
+      "evidence_case_refs": [
+        "BC-008",
+        "BC-013",
+        "BC-015",
+        "BC-018",
+        "BC-019"
+      ],
+      "governance_dependencies": [
+        "AS3_STACK.md",
+        "SOURCE_AND_CLAIM_POLICY.md"
+      ],
+      "exclusions_guarded": [
+        "quality_grade",
+        "clinical_efficacy_requirements"
+      ]
+    },
+    {
+      "clause_id": "ASR001-D07-C02",
+      "domain_id": "D07",
+      "profile_field_path": "sensing.failure_and_uncertainty",
+      "trigger_key": "sensing_or_tracking_present",
+      "applicability_class": "when_feature_present",
+      "verification_modes": [
+        "evidence_traceability",
+        "human_review"
+      ],
+      "evidence_case_refs": [
+        "BC-013",
+        "BC-014",
+        "BC-015",
+        "BC-018"
+      ],
+      "governance_dependencies": [
+        "AS3_STACK.md",
+        "QUALITY_GATE.md"
+      ],
+      "exclusions_guarded": [
+        "safety_certification",
+        "remote_synchronous_technical_tolerances"
+      ]
+    },
+    {
+      "clause_id": "ASR001-D08-C01",
+      "domain_id": "D08",
+      "profile_field_path": "measurement.metrics",
+      "trigger_key": "measurement_or_comparison_claimed",
+      "applicability_class": "when_measurement_or_comparison_claimed",
+      "verification_modes": [
+        "field_presence",
+        "evidence_traceability",
+        "temporal_consistency"
+      ],
+      "evidence_case_refs": [
+        "BC-008",
+        "BC-011",
+        "BC-013",
+        "BC-015",
+        "BC-018"
+      ],
+      "governance_dependencies": [
+        "AS3_STACK.md",
+        "SOURCE_AND_CLAIM_POLICY.md"
+      ],
+      "exclusions_guarded": [
+        "total_score",
+        "quality_grade",
+        "clinical_efficacy_requirements"
+      ]
+    },
+    {
+      "clause_id": "ASR001-D08-C02",
+      "domain_id": "D08",
+      "profile_field_path": "measurement.comparability_conditions",
+      "trigger_key": "measurement_or_comparison_claimed",
+      "applicability_class": "when_measurement_or_comparison_claimed",
+      "verification_modes": [
+        "conditional_logic",
+        "evidence_traceability",
+        "human_review"
+      ],
+      "evidence_case_refs": [
+        "BC-003",
+        "BC-004",
+        "BC-008",
+        "BC-013",
+        "BC-015",
+        "BC-017"
+      ],
+      "governance_dependencies": [
+        "FIRST_PRINCIPLES.md",
+        "AS3_STACK.md"
+      ],
+      "exclusions_guarded": [
+        "vendor_ranking",
+        "product_ranking",
+        "remote_synchronous_technical_tolerances"
+      ]
+    },
+    {
+      "clause_id": "ASR001-D09-C01",
+      "domain_id": "D09",
+      "profile_field_path": "outcome.officiation_and_authority",
+      "trigger_key": "contest_or_outcome_present",
+      "applicability_class": "when_contest_or_outcome_present",
+      "verification_modes": [
+        "field_presence",
+        "cross_reference_integrity",
+        "human_review"
+      ],
+      "evidence_case_refs": [
+        "BC-001",
+        "BC-013",
+        "BC-015",
+        "BC-016",
+        "BC-019"
+      ],
+      "governance_dependencies": [
+        "AS3_STACK.md",
+        "ONTOLOGY.md"
+      ],
+      "exclusions_guarded": [
+        "federation_recognition",
+        "safety_certification"
+      ]
+    },
+    {
+      "clause_id": "ASR001-D09-C02",
+      "domain_id": "D09",
+      "profile_field_path": "outcome.outcome_and_consequence",
+      "trigger_key": "contest_or_outcome_present",
+      "applicability_class": "when_contest_or_outcome_present",
+      "verification_modes": [
+        "field_presence",
+        "human_review"
+      ],
+      "evidence_case_refs": [
+        "BC-010",
+        "BC-016",
+        "BC-017",
+        "BC-020"
+      ],
+      "governance_dependencies": [
+        "FIRST_PRINCIPLES.md",
+        "DEC-008"
+      ],
+      "exclusions_guarded": [
+        "total_score",
+        "clinical_efficacy_requirements"
+      ]
+    },
+    {
+      "clause_id": "ASR001-D10-C01",
+      "domain_id": "D10",
+      "profile_field_path": "spatial_integration.functions",
+      "trigger_key": "spatial_function_claimed",
+      "applicability_class": "when_claim_made",
+      "verification_modes": [
+        "controlled_vocabulary",
+        "evidence_traceability",
+        "human_review"
+      ],
+      "evidence_case_refs": [
+        "BC-005",
+        "BC-006",
+        "BC-008",
+        "BC-013",
+        "BC-014",
+        "BC-019"
+      ],
+      "governance_dependencies": [
+        "CATEGORY_THESIS.md",
+        "AS3_STACK.md"
+      ],
+      "exclusions_guarded": [
+        "spatiality_level",
+        "automatic_category_certification"
+      ]
+    },
+    {
+      "clause_id": "ASR001-D10-C02",
+      "domain_id": "D10",
+      "profile_field_path": "spatial_integration.failure_effects",
+      "trigger_key": "spatial_function_claimed",
+      "applicability_class": "when_claim_made",
+      "verification_modes": [
+        "evidence_traceability",
+        "human_review"
+      ],
+      "evidence_case_refs": [
+        "BC-008",
+        "BC-013",
+        "BC-014",
+        "BC-015",
+        "BC-018"
+      ],
+      "governance_dependencies": [
+        "AS3_STACK.md"
+      ],
+      "exclusions_guarded": [
+        "quality_grade",
+        "automatic_category_certification"
+      ]
+    },
+    {
+      "clause_id": "ASR001-D11-C01",
+      "domain_id": "D11",
+      "profile_field_path": "actors.roles",
+      "trigger_key": null,
+      "applicability_class": "always",
+      "verification_modes": [
+        "field_presence",
+        "controlled_vocabulary",
+        "human_review"
+      ],
+      "evidence_case_refs": [
+        "BC-003",
+        "BC-016",
+        "BC-019",
+        "BC-020"
+      ],
+      "governance_dependencies": [
+        "ONTOLOGY.md",
+        "AS3_STACK.md"
+      ],
+      "exclusions_guarded": [
+        "federation_recognition",
+        "automatic_category_certification"
+      ]
+    },
+    {
+      "clause_id": "ASR001-D11-C02",
+      "domain_id": "D11",
+      "profile_field_path": "actors.participatory_relations",
+      "trigger_key": "participatory_actor_present",
+      "applicability_class": "when_feature_present",
+      "verification_modes": [
+        "conditional_logic",
+        "evidence_traceability",
+        "human_review"
+      ],
+      "evidence_case_refs": [
+        "BC-003",
+        "BC-016",
+        "BC-020"
+      ],
+      "governance_dependencies": [
+        "DEC-009",
+        "CORPUS_APPLICATION_FINDINGS_V0.3.md"
+      ],
+      "exclusions_guarded": [
+        "causal_attribution_scoring",
+        "automatic_category_certification"
+      ]
+    },
+    {
+      "clause_id": "ASR001-D12-C01",
+      "domain_id": "D12",
+      "profile_field_path": "human_factors.disclosures",
+      "trigger_key": null,
+      "applicability_class": "always",
+      "verification_modes": [
+        "document_presence",
+        "evidence_traceability",
+        "human_review"
+      ],
+      "evidence_case_refs": [
+        "BC-004",
+        "BC-014",
+        "BC-015",
+        "BC-016",
+        "BC-017",
+        "BC-018"
+      ],
+      "governance_dependencies": [
+        "AS3_STACK.md",
+        "QUALITY_GATE.md"
+      ],
+      "exclusions_guarded": [
+        "safety_certification",
+        "clinical_efficacy_requirements",
+        "quality_grade"
+      ]
+    },
+    {
+      "clause_id": "ASR001-D12-C02",
+      "domain_id": "D12",
+      "profile_field_path": "human_factors.operational_responsibility",
+      "trigger_key": "operational_responsibility_material",
+      "applicability_class": "when_feature_present",
+      "verification_modes": [
+        "cross_reference_integrity",
+        "evidence_traceability",
+        "human_review"
+      ],
+      "evidence_case_refs": [
+        "BC-014",
+        "BC-015",
+        "BC-016",
+        "BC-017"
+      ],
+      "governance_dependencies": [
+        "AS3_STACK.md",
+        "SOURCE_AND_CLAIM_POLICY.md"
+      ],
+      "exclusions_guarded": [
+        "safety_certification",
+        "clinical_efficacy_requirements"
+      ]
+    },
+    {
+      "clause_id": "ASR001-D13-C01",
+      "domain_id": "D13",
+      "profile_field_path": "evidence.claims",
+      "trigger_key": null,
+      "applicability_class": "always",
+      "verification_modes": [
+        "evidence_traceability",
+        "cross_reference_integrity",
+        "human_review"
+      ],
+      "evidence_case_refs": [
+        "BC-014",
+        "BC-015",
+        "BC-016",
+        "BC-018"
+      ],
+      "governance_dependencies": [
+        "SOURCE_AND_CLAIM_POLICY.md"
+      ],
+      "exclusions_guarded": [
+        "commercial_endorsement",
+        "paid_favorable_classification"
+      ]
+    },
+    {
+      "clause_id": "ASR001-D13-C02",
+      "domain_id": "D13",
+      "profile_field_path": "evidence.uncertainty_states",
+      "trigger_key": null,
+      "applicability_class": "always",
+      "verification_modes": [
+        "controlled_vocabulary",
+        "conditional_logic",
+        "human_review"
+      ],
+      "evidence_case_refs": [
+        "BC-005",
+        "BC-007",
+        "BC-009",
+        "BC-015",
+        "BC-018"
+      ],
+      "governance_dependencies": [
+        "ASR_001_SCOPE_DRAFT.md",
+        "SOURCE_AND_CLAIM_POLICY.md"
+      ],
+      "exclusions_guarded": [
+        "total_score",
+        "maturity_level",
+        "quality_grade"
+      ]
+    },
+    {
+      "clause_id": "ASR001-D14-C01",
+      "domain_id": "D14",
+      "profile_field_path": "governance.authority_and_versions",
+      "trigger_key": null,
+      "applicability_class": "always",
+      "verification_modes": [
+        "field_presence",
+        "temporal_consistency",
+        "cross_reference_integrity"
+      ],
+      "evidence_case_refs": [
+        "BC-001",
+        "BC-013",
+        "BC-015",
+        "BC-016",
+        "BC-020"
+      ],
+      "governance_dependencies": [
+        "SOURCE_AND_CLAIM_POLICY.md",
+        "ASR_DRAFTING_GOVERNANCE.md"
+      ],
+      "exclusions_guarded": [
+        "paid_favorable_classification",
+        "commercial_endorsement",
+        "federation_recognition"
+      ]
+    },
+    {
+      "clause_id": "ASR001-D14-C02",
+      "domain_id": "D14",
+      "profile_field_path": "governance.corrections_and_supersession",
+      "trigger_key": null,
+      "applicability_class": "always",
+      "verification_modes": [
+        "document_presence",
+        "cross_reference_integrity",
+        "temporal_consistency"
+      ],
+      "evidence_case_refs": [
+        "BC-020"
+      ],
+      "governance_dependencies": [
+        "SOURCE_AND_CLAIM_POLICY.md",
+        "ASR_DRAFTING_GOVERNANCE.md",
+        "DECISION_LOG.md"
+      ],
+      "exclusions_guarded": [
+        "commercial_endorsement",
+        "quality_grade"
+      ]
+    },
+    {
+      "clause_id": "ASR001-D15-C01",
+      "domain_id": "D15",
+      "profile_field_path": "profile_metadata",
+      "trigger_key": null,
+      "applicability_class": "always",
+      "verification_modes": [
+        "field_presence",
+        "controlled_vocabulary",
+        "temporal_consistency"
+      ],
+      "evidence_case_refs": [
+        "BC-001",
+        "BC-020"
+      ],
+      "governance_dependencies": [
+        "ASR_001_SCOPE_MODEL.json",
+        "ASR_DRAFTING_GOVERNANCE.md"
+      ],
+      "exclusions_guarded": [
+        "industry_adoption_claim",
+        "automatic_category_certification"
+      ]
+    },
+    {
+      "clause_id": "ASR001-D15-C02",
+      "domain_id": "D15",
+      "profile_field_path": "distributions",
+      "trigger_key": "machine_readable_distribution_provided",
+      "applicability_class": "when_machine_readable_distribution_provided",
+      "verification_modes": [
+        "machine_validation",
+        "cross_reference_integrity",
+        "field_presence"
+      ],
+      "evidence_case_refs": [
+        "BC-001",
+        "BC-020"
+      ],
+      "governance_dependencies": [
+        "DATASET_LICENSE.md",
+        "DEC-007",
+        "ASR_001_IMPLEMENTATION_MODEL_BOUNDARY.md"
+      ],
+      "exclusions_guarded": [
+        "commercial_endorsement",
+        "automatic_category_certification"
+      ]
+    }
+  ]
+}

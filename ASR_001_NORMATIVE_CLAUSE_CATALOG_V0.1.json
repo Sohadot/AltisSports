@@ -1,0 +1,1136 @@
+{
+  "asr_id": "ASR-001",
+  "title": "Spatial Athletic System Evidence Profile",
+  "working_draft_version": "0.1",
+  "status": "candidate_normative_non_public",
+  "normative_language": {
+    "MUST": "candidate mandatory obligation when applicable",
+    "MUST_NOT": "candidate prohibition",
+    "SHOULD": "candidate recommendation requiring recorded rationale when not followed",
+    "MAY": "candidate permission"
+  },
+  "scope_reference": "ASR_001_SCOPE_DRAFT.md",
+  "source_catalog": "ASR_001_CLAUSE_CATALOG_V0.1.json",
+  "clause_count": 30,
+  "clauses": [
+    {
+      "clause_id": "ASR001-D01-C01",
+      "domain_id": "D01",
+      "domain_name": "Subject Identity and Object Lock",
+      "title": "Canonical profile subject",
+      "candidate_obligation_intent": "The profile identifies one bounded, versioned configuration as its canonical subject.",
+      "clause_family": "core_disclosure",
+      "applicability_class": "always",
+      "applicability_condition": "Every ASR-001 profile.",
+      "problem_addressed": "Findings become misleading when an activity, product, event, company, and deployment are collapsed.",
+      "evidence_case_refs": [
+        "BC-007",
+        "BC-009",
+        "BC-014",
+        "BC-016"
+      ],
+      "governance_dependencies": [
+        "ASR_001_SCOPE_DRAFT.md",
+        "ONTOLOGY.md"
+      ],
+      "verification_modes": [
+        "document_presence",
+        "field_presence",
+        "human_review"
+      ],
+      "rationale": "Object lock is the precondition for interpreting every other disclosure.",
+      "uncertainty_handling": "Ambiguity is recorded as unresolved rather than broadened silently.",
+      "exclusions_guarded": [
+        "automatic_category_certification",
+        "product_ranking"
+      ],
+      "drafting_status": "candidate_normative_working_draft",
+      "normative_text": "The profile MUST identify one bounded, versioned configuration as its canonical subject.",
+      "profile_field_path": "subject.canonical_subject",
+      "trigger_key": null,
+      "verification_statement": "Verify `subject.canonical_subject` through document_presence, field_presence, human_review."
+    },
+    {
+      "clause_id": "ASR001-D01-C02",
+      "domain_id": "D01",
+      "domain_name": "Subject Identity and Object Lock",
+      "title": "Related-object boundary",
+      "candidate_obligation_intent": "The profile identifies secondary related objects and states which findings do not transfer to them.",
+      "clause_family": "core_disclosure",
+      "applicability_class": "always",
+      "applicability_condition": "Whenever secondary objects, organizations, platforms, activities, or events are referenced.",
+      "problem_addressed": "Evidence about one configuration is often generalized to an entire platform or sport.",
+      "evidence_case_refs": [
+        "BC-007",
+        "BC-009",
+        "BC-014"
+      ],
+      "governance_dependencies": [
+        "CATEGORY_THESIS.md",
+        "ASR_001_SCOPE_DRAFT.md"
+      ],
+      "verification_modes": [
+        "cross_reference_integrity",
+        "human_review"
+      ],
+      "rationale": "Explicit boundaries prevent scope inflation.",
+      "uncertainty_handling": "Unknown relationships remain unknown.",
+      "exclusions_guarded": [
+        "universal_sport_definition",
+        "automatic_category_certification"
+      ],
+      "drafting_status": "candidate_normative_working_draft",
+      "normative_text": "The profile MUST identify secondary related objects and states which findings do not transfer to them.",
+      "profile_field_path": "subject.related_objects",
+      "trigger_key": null,
+      "verification_statement": "Verify `subject.related_objects` through cross_reference_integrity, human_review."
+    },
+    {
+      "clause_id": "ASR001-D02-C01",
+      "domain_id": "D02",
+      "domain_name": "Operating Context and System Roles",
+      "title": "Operating context",
+      "candidate_obligation_intent": "The profile describes the deployment context, location, participant setting, temporal state, and intended use.",
+      "clause_family": "core_disclosure",
+      "applicability_class": "always",
+      "applicability_condition": "Every profile.",
+      "problem_addressed": "The same technical system can operate as contest, training, rehabilitation, research, or entertainment.",
+      "evidence_case_refs": [
+        "BC-009",
+        "BC-014",
+        "BC-016",
+        "BC-019"
+      ],
+      "governance_dependencies": [
+        "ONTOLOGY.md"
+      ],
+      "verification_modes": [
+        "document_presence",
+        "field_presence",
+        "temporal_consistency"
+      ],
+      "rationale": "Context determines applicability and interpretation.",
+      "uncertainty_handling": "Unpublished configuration details are marked not evidenced.",
+      "exclusions_guarded": [
+        "clinical_efficacy_requirements",
+        "product_ranking"
+      ],
+      "drafting_status": "candidate_normative_working_draft",
+      "normative_text": "The profile MUST describe the deployment context, location, participant setting, temporal state, and intended use.",
+      "profile_field_path": "operating_context",
+      "trigger_key": null,
+      "verification_statement": "Verify `operating_context` through document_presence, field_presence, temporal_consistency."
+    },
+    {
+      "clause_id": "ASR001-D02-C02",
+      "domain_id": "D02",
+      "domain_name": "Operating Context and System Roles",
+      "title": "System roles and dependencies",
+      "candidate_obligation_intent": "The profile lists system roles and material technical, institutional, equipment, and organizational dependencies.",
+      "clause_family": "core_disclosure",
+      "applicability_class": "always",
+      "applicability_condition": "Every profile; empty roles are not permitted.",
+      "problem_addressed": "Role and dependency changes can alter the meaning of a profile.",
+      "evidence_case_refs": [
+        "BC-008",
+        "BC-013",
+        "BC-015",
+        "BC-016"
+      ],
+      "governance_dependencies": [
+        "AS3_STACK.md",
+        "ASR_001_SCOPE_DRAFT.md"
+      ],
+      "verification_modes": [
+        "field_presence",
+        "cross_reference_integrity",
+        "human_review"
+      ],
+      "rationale": "Profiles remain configuration-specific only when dependencies are visible.",
+      "uncertainty_handling": "Dependency availability can be unknown or version-limited.",
+      "exclusions_guarded": [
+        "commercial_endorsement",
+        "federation_recognition"
+      ],
+      "drafting_status": "candidate_normative_working_draft",
+      "normative_text": "The profile MUST list system roles and material technical, institutional, equipment, and organizational dependencies.",
+      "profile_field_path": "system_roles_and_dependencies",
+      "trigger_key": null,
+      "verification_statement": "Verify `system_roles_and_dependencies` through field_presence, cross_reference_integrity, human_review."
+    },
+    {
+      "clause_id": "ASR001-D03-C01",
+      "domain_id": "D03",
+      "domain_name": "Performance Window and Performance Agency",
+      "title": "Performance window",
+      "candidate_obligation_intent": "The profile defines the interval during which actions can materially affect the evaluated result or support outcome.",
+      "clause_family": "conditional_disclosure",
+      "applicability_class": "when_human_performance_claimed",
+      "applicability_condition": "Human Performance Agency or performance-dependent result is claimed.",
+      "problem_addressed": "Agency cannot be attributed without defining when performance occurs.",
+      "evidence_case_refs": [
+        "BC-010",
+        "BC-017",
+        "BC-018",
+        "BC-019"
+      ],
+      "governance_dependencies": [
+        "FIRST_PRINCIPLES.md",
+        "DECISION_LOG.md"
+      ],
+      "verification_modes": [
+        "field_presence",
+        "evidence_traceability",
+        "human_review"
+      ],
+      "rationale": "The performance window separates live performance from prior design or later analysis.",
+      "uncertainty_handling": "If the window cannot be bounded, the agency finding remains disputed or unknown.",
+      "exclusions_guarded": [
+        "causal_attribution_scoring",
+        "final_bci_athletic_membership"
+      ],
+      "drafting_status": "candidate_normative_working_draft",
+      "normative_text": "When human Performance Agency or performance-dependent result is claimed, the profile MUST define the interval during which actions can materially affect the evaluated result or support outcome.",
+      "profile_field_path": "performance.performance_window",
+      "trigger_key": "human_performance_claimed",
+      "verification_statement": "Verify `performance.performance_window` through field_presence, evidence_traceability, human_review."
+    },
+    {
+      "clause_id": "ASR001-D03-C02",
+      "domain_id": "D03",
+      "domain_name": "Performance Window and Performance Agency",
+      "title": "Agency modes and segments",
+      "candidate_obligation_intent": "The profile describes active agents, assistance, autonomy, and phase-level handoff when control changes.",
+      "clause_family": "conditional_disclosure",
+      "applicability_class": "when_human_performance_claimed",
+      "applicability_condition": "More than one agency mode exists or control varies by phase or regime.",
+      "problem_addressed": "Summary labels conceal human-machine handoff and causal contribution.",
+      "evidence_case_refs": [
+        "BC-010",
+        "BC-017",
+        "BC-019"
+      ],
+      "governance_dependencies": [
+        "FIRST_PRINCIPLES.md",
+        "AS3_STACK.md",
+        "DEC-009"
+      ],
+      "verification_modes": [
+        "conditional_logic",
+        "evidence_traceability",
+        "human_review"
+      ],
+      "rationale": "Agency Segments preserve observed control without pretending to solve causal attribution.",
+      "uncertainty_handling": "Permitted control modes are not presented as observed transitions without evidence.",
+      "exclusions_guarded": [
+        "causal_attribution_scoring",
+        "automatic_category_certification"
+      ],
+      "drafting_status": "candidate_normative_working_draft",
+      "normative_text": "When more than one agency mode exists or control varies by phase or regime, the profile MUST describe active agents, assistance, autonomy, and phase-level handoff when control changes.",
+      "profile_field_path": "performance.agency_segments",
+      "trigger_key": "agency_modes_or_handoff_present",
+      "verification_statement": "Verify `performance.agency_segments` through conditional_logic, evidence_traceability, human_review."
+    },
+    {
+      "clause_id": "ASR001-D04-C01",
+      "domain_id": "D04",
+      "domain_name": "Performance Interface and Embodied Demand",
+      "title": "Performance interface channels",
+      "candidate_obligation_intent": "The profile describes the channels through which human action or intention enters the system.",
+      "clause_family": "conditional_disclosure",
+      "applicability_class": "when_human_performance_claimed",
+      "applicability_condition": "Human performance is part of the profiled configuration.",
+      "problem_addressed": "Interface mediation changes what counts as observable performance and failure.",
+      "evidence_case_refs": [
+        "BC-004",
+        "BC-005",
+        "BC-013",
+        "BC-017",
+        "BC-018"
+      ],
+      "governance_dependencies": [
+        "ONTOLOGY.md",
+        "AS3_STACK.md"
+      ],
+      "verification_modes": [
+        "field_presence",
+        "controlled_vocabulary",
+        "human_review"
+      ],
+      "rationale": "Interface description prevents remote, assisted, tracked, and biological channels from being collapsed.",
+      "uncertainty_handling": "Unclear or proprietary interface behavior is marked not evidenced.",
+      "exclusions_guarded": [
+        "minimum_embodiment_threshold",
+        "final_bci_athletic_membership"
+      ],
+      "drafting_status": "candidate_normative_working_draft",
+      "normative_text": "When human performance is part of the profiled configuration, the profile MUST describe the channels through which human action or intention enters the system.",
+      "profile_field_path": "performance.interface_channels",
+      "trigger_key": "human_performance_claimed",
+      "verification_statement": "Verify `performance.interface_channels` through field_presence, controlled_vocabulary, human_review."
+    },
+    {
+      "clause_id": "ASR001-D04-C02",
+      "domain_id": "D04",
+      "domain_name": "Performance Interface and Embodied Demand",
+      "title": "Embodied demand and biological control",
+      "candidate_obligation_intent": "The profile describes evidenced bodily, physiological, sensorimotor, cognitive, or adaptive demands without assigning an embodiment score.",
+      "clause_family": "evidence_integrity",
+      "applicability_class": "when_human_performance_claimed",
+      "applicability_condition": "The profile makes an embodiment, athletic, physiological, or biological-control claim.",
+      "problem_addressed": "Visible movement is not the only performance channel, while any biosignal is not automatically athletic embodiment.",
+      "evidence_case_refs": [
+        "BC-002",
+        "BC-011",
+        "BC-012",
+        "BC-018"
+      ],
+      "governance_dependencies": [
+        "FIRST_PRINCIPLES.md",
+        "DEC-008",
+        "DEC-009"
+      ],
+      "verification_modes": [
+        "evidence_traceability",
+        "human_review"
+      ],
+      "rationale": "Channel-based disclosure preserves diversity without inventing a universal threshold.",
+      "uncertainty_handling": "BCI and other disputed channels retain unresolved category relation.",
+      "exclusions_guarded": [
+        "minimum_embodiment_threshold",
+        "final_bci_athletic_membership",
+        "spatiality_level"
+      ],
+      "drafting_status": "candidate_normative_working_draft",
+      "normative_text": "When the profile makes an embodiment, athletic, physiological, or biological-control claim, the profile MUST describe evidenced bodily, physiological, sensorimotor, cognitive, or adaptive demands without assigning an embodiment score.",
+      "profile_field_path": "performance.embodied_demand",
+      "trigger_key": "embodiment_or_biological_control_claimed",
+      "verification_statement": "Verify `performance.embodied_demand` through evidence_traceability, human_review."
+    },
+    {
+      "clause_id": "ASR001-D05-C01",
+      "domain_id": "D05",
+      "domain_name": "Arena and Distributed-Arena Relation",
+      "title": "Arena configuration",
+      "candidate_obligation_intent": "The profile describes physical, computational, and unified arenas, rule-bearing zones, and tracking volumes relevant to the configuration.",
+      "clause_family": "core_disclosure",
+      "applicability_class": "always",
+      "applicability_condition": "Every profile; non-spatial support contexts can state not applicable for specific arena elements.",
+      "problem_addressed": "Physical spatial skill, display mediation, and computationally constituted space are often confused.",
+      "evidence_case_refs": [
+        "BC-005",
+        "BC-011",
+        "BC-012",
+        "BC-014"
+      ],
+      "governance_dependencies": [
+        "ONTOLOGY.md",
+        "AS3_STACK.md"
+      ],
+      "verification_modes": [
+        "field_presence",
+        "evidence_traceability",
+        "human_review"
+      ],
+      "rationale": "Arena disclosure anchors Operational Spatial Integration claims.",
+      "uncertainty_handling": "Absent public technical detail is preserved as not evidenced.",
+      "exclusions_guarded": [
+        "spatiality_level",
+        "automatic_category_certification"
+      ],
+      "drafting_status": "candidate_normative_working_draft",
+      "normative_text": "The profile MUST describe physical, computational, and unified arenas, rule-bearing zones, and tracking volumes relevant to the configuration.",
+      "profile_field_path": "arena.configuration",
+      "trigger_key": null,
+      "verification_statement": "Verify `arena.configuration` through field_presence, evidence_traceability, human_review."
+    },
+    {
+      "clause_id": "ASR001-D05-C02",
+      "domain_id": "D05",
+      "domain_name": "Arena and Distributed-Arena Relation",
+      "title": "Distributed-arena relation",
+      "candidate_obligation_intent": "The profile describes topology, shared state, synchronization, sites, remote operators, calibration relation, officiation, and responsibility when distributed operation is claimed.",
+      "clause_family": "conditional_disclosure",
+      "applicability_class": "when_distributed_operation_claimed",
+      "applicability_condition": "More than one physical site or remote-control relation is material.",
+      "problem_addressed": "Remote control, remote synchronous competition, co-location, and remote supervision are different integrity conditions.",
+      "evidence_case_refs": [
+        "BC-005",
+        "BC-008",
+        "BC-013",
+        "BC-015",
+        "BC-019"
+      ],
+      "governance_dependencies": [
+        "AS3_STACK.md",
+        "DEC-009"
+      ],
+      "verification_modes": [
+        "conditional_logic",
+        "evidence_traceability",
+        "human_review"
+      ],
+      "rationale": "Explicit topology prevents global availability from being mistaken for remote synchronous integrity.",
+      "uncertainty_handling": "Technical values remain not evidenced when no authoritative source exists.",
+      "exclusions_guarded": [
+        "remote_synchronous_technical_tolerances",
+        "automatic_category_certification"
+      ],
+      "drafting_status": "candidate_normative_working_draft",
+      "normative_text": "When more than one physical site or remote-control relation is material, the profile MUST describe topology, shared state, synchronization, sites, remote operators, calibration relation, officiation, and responsibility when distributed operation is claimed.",
+      "profile_field_path": "arena.distributed_relation",
+      "trigger_key": "distributed_operation_claimed",
+      "verification_statement": "Verify `arena.distributed_relation` through conditional_logic, evidence_traceability, human_review."
+    },
+    {
+      "clause_id": "ASR001-D06-C01",
+      "domain_id": "D06",
+      "domain_name": "Constraints and Rule Execution",
+      "title": "Rule and constraint sources",
+      "candidate_obligation_intent": "The profile identifies the authoritative rules, constraints, versions, and responsible bodies used by the configuration.",
+      "clause_family": "evidence_integrity",
+      "applicability_class": "when_feature_present",
+      "applicability_condition": "Rules, eligibility, task constraints, or contest procedures govern the configuration.",
+      "problem_addressed": "Declared rules can diverge from the operative software or deployment.",
+      "evidence_case_refs": [
+        "BC-001",
+        "BC-003",
+        "BC-013",
+        "BC-015",
+        "BC-017"
+      ],
+      "governance_dependencies": [
+        "AS3_STACK.md",
+        "SOURCE_AND_CLAIM_POLICY.md"
+      ],
+      "verification_modes": [
+        "cross_reference_integrity",
+        "temporal_consistency",
+        "evidence_traceability"
+      ],
+      "rationale": "Rule provenance supports integrity and correction.",
+      "uncertainty_handling": "Unavailable operative rules are disclosed rather than inferred from marketing.",
+      "exclusions_guarded": [
+        "federation_recognition",
+        "commercial_endorsement"
+      ],
+      "drafting_status": "candidate_normative_working_draft",
+      "normative_text": "When rules, eligibility, task constraints, or contest procedures govern the configuration, the profile MUST identify the authoritative rules, constraints, versions, and responsible bodies used by the configuration.",
+      "profile_field_path": "constraints.authoritative_sources",
+      "trigger_key": "rules_or_constraints_present",
+      "verification_statement": "Verify `constraints.authoritative_sources` through cross_reference_integrity, temporal_consistency, evidence_traceability."
+    },
+    {
+      "clause_id": "ASR001-D06-C02",
+      "domain_id": "D06",
+      "domain_name": "Constraints and Rule Execution",
+      "title": "Operative rule execution",
+      "candidate_obligation_intent": "The profile describes whether constraints are applied through people, equipment, sensors, geometry, software, or combinations.",
+      "clause_family": "conditional_disclosure",
+      "applicability_class": "when_feature_present",
+      "applicability_condition": "A rule-bearing or constraint-bearing mechanism exists.",
+      "problem_addressed": "Textual rules alone do not reveal how the contest or task actually operates.",
+      "evidence_case_refs": [
+        "BC-013",
+        "BC-015",
+        "BC-017",
+        "BC-020"
+      ],
+      "governance_dependencies": [
+        "AS3_STACK.md",
+        "ONTOLOGY.md"
+      ],
+      "verification_modes": [
+        "field_presence",
+        "evidence_traceability",
+        "human_review"
+      ],
+      "rationale": "Implementation disclosure exposes divergence and failure paths.",
+      "uncertainty_handling": "Opaque code can be recorded as partially evidenced.",
+      "exclusions_guarded": [
+        "automatic_category_certification",
+        "quality_grade"
+      ],
+      "drafting_status": "candidate_normative_working_draft",
+      "normative_text": "When a rule-bearing or constraint-bearing mechanism exists, the profile MUST describe whether constraints are applied through people, equipment, sensors, geometry, software, or combinations.",
+      "profile_field_path": "constraints.execution",
+      "trigger_key": "rules_or_constraints_present",
+      "verification_statement": "Verify `constraints.execution` through field_presence, evidence_traceability, human_review."
+    },
+    {
+      "clause_id": "ASR001-D07-C01",
+      "domain_id": "D07",
+      "domain_name": "Sensing, Tracking, and State Estimation",
+      "title": "Observation and estimation boundary",
+      "candidate_obligation_intent": "The profile distinguishes directly measured state, inferred state, calculated state, and provider-declared state.",
+      "clause_family": "evidence_integrity",
+      "applicability_class": "when_feature_present",
+      "applicability_condition": "Sensing, tracking, physiological measurement, or state estimation is used.",
+      "problem_addressed": "Inference is frequently presented as direct measurement.",
+      "evidence_case_refs": [
+        "BC-008",
+        "BC-013",
+        "BC-015",
+        "BC-018",
+        "BC-019"
+      ],
+      "governance_dependencies": [
+        "AS3_STACK.md",
+        "SOURCE_AND_CLAIM_POLICY.md"
+      ],
+      "verification_modes": [
+        "field_presence",
+        "evidence_traceability",
+        "human_review"
+      ],
+      "rationale": "The distinction is necessary for interpreting measurement and failure.",
+      "uncertainty_handling": "Undisclosed algorithms remain not evidenced.",
+      "exclusions_guarded": [
+        "quality_grade",
+        "clinical_efficacy_requirements"
+      ],
+      "drafting_status": "candidate_normative_working_draft",
+      "normative_text": "When sensing, tracking, physiological measurement, or state estimation is used, the profile MUST the profile distinguishes directly measured state, inferred state, calculated state, and provider-declared state.",
+      "profile_field_path": "sensing.observation_estimation_boundary",
+      "trigger_key": "sensing_or_tracking_present",
+      "verification_statement": "Verify `sensing.observation_estimation_boundary` through field_presence, evidence_traceability, human_review."
+    },
+    {
+      "clause_id": "ASR001-D07-C02",
+      "domain_id": "D07",
+      "domain_name": "Sensing, Tracking, and State Estimation",
+      "title": "Sensing failure and uncertainty",
+      "candidate_obligation_intent": "The profile describes known loss, drift, occlusion, latency, decoder, or state-estimation limitations and their effect on the profile subject.",
+      "clause_family": "conditional_disclosure",
+      "applicability_class": "when_feature_present",
+      "applicability_condition": "Sensing, tracking, or state estimation is material.",
+      "problem_addressed": "Profiles that list sensors without failure behavior overstate certainty.",
+      "evidence_case_refs": [
+        "BC-013",
+        "BC-014",
+        "BC-015",
+        "BC-018"
+      ],
+      "governance_dependencies": [
+        "AS3_STACK.md",
+        "QUALITY_GATE.md"
+      ],
+      "verification_modes": [
+        "evidence_traceability",
+        "human_review"
+      ],
+      "rationale": "Failure disclosure connects technical conditions to integrity without creating a score.",
+      "uncertainty_handling": "Unknown failure characteristics remain unknown.",
+      "exclusions_guarded": [
+        "safety_certification",
+        "remote_synchronous_technical_tolerances"
+      ],
+      "drafting_status": "candidate_normative_working_draft",
+      "normative_text": "When sensing, tracking, or state estimation is material, the profile MUST describe known loss, drift, occlusion, latency, decoder, or state-estimation limitations and their effect on the profile subject.",
+      "profile_field_path": "sensing.failure_and_uncertainty",
+      "trigger_key": "sensing_or_tracking_present",
+      "verification_statement": "Verify `sensing.failure_and_uncertainty` through evidence_traceability, human_review."
+    },
+    {
+      "clause_id": "ASR001-D08-C01",
+      "domain_id": "D08",
+      "domain_name": "Measurement and Comparability Conditions",
+      "title": "Metric and calibration disclosure",
+      "candidate_obligation_intent": "The profile identifies each material metric, unit, source, calibration basis, uncertainty, and intended use.",
+      "clause_family": "evidence_integrity",
+      "applicability_class": "when_measurement_or_comparison_claimed",
+      "applicability_condition": "A metric, measurement, ranking, assessment, or quantitative claim is presented.",
+      "problem_addressed": "Identically named metrics can be produced under incompatible conditions.",
+      "evidence_case_refs": [
+        "BC-008",
+        "BC-011",
+        "BC-013",
+        "BC-015",
+        "BC-018"
+      ],
+      "governance_dependencies": [
+        "AS3_STACK.md",
+        "SOURCE_AND_CLAIM_POLICY.md"
+      ],
+      "verification_modes": [
+        "field_presence",
+        "evidence_traceability",
+        "temporal_consistency"
+      ],
+      "rationale": "Metric provenance is necessary before comparison.",
+      "uncertainty_handling": "Unavailable calibration information is not converted into zero quality.",
+      "exclusions_guarded": [
+        "total_score",
+        "quality_grade",
+        "clinical_efficacy_requirements"
+      ],
+      "drafting_status": "candidate_normative_working_draft",
+      "normative_text": "When a metric, measurement, ranking, assessment, or quantitative claim is presented, the profile MUST identify each material metric, unit, source, calibration basis, uncertainty, and intended use.",
+      "profile_field_path": "measurement.metrics",
+      "trigger_key": "measurement_or_comparison_claimed",
+      "verification_statement": "Verify `measurement.metrics` through field_presence, evidence_traceability, temporal_consistency."
+    },
+    {
+      "clause_id": "ASR001-D08-C02",
+      "domain_id": "D08",
+      "domain_name": "Measurement and Comparability Conditions",
+      "title": "Comparability conditions",
+      "candidate_obligation_intent": "The profile states the equipment, version, environment, classification, adaptation, network, and procedural conditions under which a comparison is intended.",
+      "clause_family": "conditional_disclosure",
+      "applicability_class": "when_measurement_or_comparison_claimed",
+      "applicability_condition": "Two or more performances, systems, sessions, or results are compared.",
+      "problem_addressed": "Comparability is engineered and object-specific.",
+      "evidence_case_refs": [
+        "BC-003",
+        "BC-004",
+        "BC-008",
+        "BC-013",
+        "BC-015",
+        "BC-017"
+      ],
+      "governance_dependencies": [
+        "FIRST_PRINCIPLES.md",
+        "AS3_STACK.md"
+      ],
+      "verification_modes": [
+        "conditional_logic",
+        "evidence_traceability",
+        "human_review"
+      ],
+      "rationale": "Explicit conditions prevent unqualified equivalence claims.",
+      "uncertainty_handling": "Partial comparability remains a valid state.",
+      "exclusions_guarded": [
+        "vendor_ranking",
+        "product_ranking",
+        "remote_synchronous_technical_tolerances"
+      ],
+      "drafting_status": "candidate_normative_working_draft",
+      "normative_text": "When two or more performances, systems, sessions, or results are compared, the profile MUST state the equipment, version, environment, classification, adaptation, network, and procedural conditions under which a comparison is intended.",
+      "profile_field_path": "measurement.comparability_conditions",
+      "trigger_key": "measurement_or_comparison_claimed",
+      "verification_statement": "Verify `measurement.comparability_conditions` through conditional_logic, evidence_traceability, human_review."
+    },
+    {
+      "clause_id": "ASR001-D09-C01",
+      "domain_id": "D09",
+      "domain_name": "Officiation, Outcome, and Consequence Structure",
+      "title": "Officiation and decision authority",
+      "candidate_obligation_intent": "The profile identifies human, automated, operator, and hybrid decision authorities, including correction or appeal paths where they exist.",
+      "clause_family": "governance_lifecycle",
+      "applicability_class": "when_contest_or_outcome_present",
+      "applicability_condition": "A contest, result, penalty, therapeutic decision, or formal outcome is present.",
+      "problem_addressed": "Software decisions and human authority are often conflated.",
+      "evidence_case_refs": [
+        "BC-001",
+        "BC-013",
+        "BC-015",
+        "BC-016",
+        "BC-019"
+      ],
+      "governance_dependencies": [
+        "AS3_STACK.md",
+        "ONTOLOGY.md"
+      ],
+      "verification_modes": [
+        "field_presence",
+        "cross_reference_integrity",
+        "human_review"
+      ],
+      "rationale": "Authority disclosure supports accountability.",
+      "uncertainty_handling": "No appeal process is recorded as absent or not evidenced, not invented.",
+      "exclusions_guarded": [
+        "federation_recognition",
+        "safety_certification"
+      ],
+      "drafting_status": "candidate_normative_working_draft",
+      "normative_text": "When a contest, result, penalty, therapeutic decision, or formal outcome is present, the profile MUST identify human, automated, operator, and hybrid decision authorities, including correction or appeal paths where they exist.",
+      "profile_field_path": "outcome.officiation_and_authority",
+      "trigger_key": "contest_or_outcome_present",
+      "verification_statement": "Verify `outcome.officiation_and_authority` through field_presence, cross_reference_integrity, human_review."
+    },
+    {
+      "clause_id": "ASR001-D09-C02",
+      "domain_id": "D09",
+      "domain_name": "Officiation, Outcome, and Consequence Structure",
+      "title": "Outcome and consequence structure",
+      "candidate_obligation_intent": "The profile describes the evaluated outcome, openness, ranking or support result, and derived consequence structure.",
+      "clause_family": "conditional_disclosure",
+      "applicability_class": "when_contest_or_outcome_present",
+      "applicability_condition": "A result or consequential support process exists.",
+      "problem_addressed": "Contest consequence and clinical or training consequence are different.",
+      "evidence_case_refs": [
+        "BC-010",
+        "BC-016",
+        "BC-017",
+        "BC-020"
+      ],
+      "governance_dependencies": [
+        "FIRST_PRINCIPLES.md",
+        "DEC-008"
+      ],
+      "verification_modes": [
+        "field_presence",
+        "human_review"
+      ],
+      "rationale": "Consequence remains descriptive and derived rather than a score.",
+      "uncertainty_handling": "Non-contest systems can mark outcome openness not applicable.",
+      "exclusions_guarded": [
+        "total_score",
+        "clinical_efficacy_requirements"
+      ],
+      "drafting_status": "candidate_normative_working_draft",
+      "normative_text": "When a result or consequential support process exists, the profile MUST describe the evaluated outcome, openness, ranking or support result, and derived consequence structure.",
+      "profile_field_path": "outcome.outcome_and_consequence",
+      "trigger_key": "contest_or_outcome_present",
+      "verification_statement": "Verify `outcome.outcome_and_consequence` through field_presence, human_review."
+    },
+    {
+      "clause_id": "ASR001-D10-C01",
+      "domain_id": "D10",
+      "domain_name": "Operational Spatial Integration Functions",
+      "title": "Spatial function claims",
+      "candidate_obligation_intent": "The profile identifies each claimed Operational Spatial Integration function and links it to a mechanism, affected object, evidence, and significance.",
+      "clause_family": "evidence_integrity",
+      "applicability_class": "when_claim_made",
+      "applicability_condition": "The profile claims computationally mediated space represents, enables, mediates, constrains, measures, compares, or officiates.",
+      "problem_addressed": "Use of XR, 3D, telemetry, or immersion does not establish operational spatial integration by itself.",
+      "evidence_case_refs": [
+        "BC-005",
+        "BC-006",
+        "BC-008",
+        "BC-013",
+        "BC-014",
+        "BC-019"
+      ],
+      "governance_dependencies": [
+        "CATEGORY_THESIS.md",
+        "AS3_STACK.md"
+      ],
+      "verification_modes": [
+        "controlled_vocabulary",
+        "evidence_traceability",
+        "human_review"
+      ],
+      "rationale": "Function-level claims preserve discrimination without a spatiality score.",
+      "uncertainty_handling": "Disputed or partial functions remain explicit.",
+      "exclusions_guarded": [
+        "spatiality_level",
+        "automatic_category_certification"
+      ],
+      "drafting_status": "candidate_normative_working_draft",
+      "normative_text": "When the profile claims computationally mediated space represents, enables, mediates, constrains, measures, compares, or officiates, the profile MUST identify each claimed Operational Spatial Integration function and links it to a mechanism, affected object, evidence, and significance.",
+      "profile_field_path": "spatial_integration.functions",
+      "trigger_key": "spatial_function_claimed",
+      "verification_statement": "Verify `spatial_integration.functions` through controlled_vocabulary, evidence_traceability, human_review."
+    },
+    {
+      "clause_id": "ASR001-D10-C02",
+      "domain_id": "D10",
+      "domain_name": "Operational Spatial Integration Functions",
+      "title": "Spatial function failure effects",
+      "candidate_obligation_intent": "The profile describes how failure or removal of each constitutive or supportive spatial function changes the configured activity or result.",
+      "clause_family": "conditional_disclosure",
+      "applicability_class": "when_claim_made",
+      "applicability_condition": "An Operational Spatial Integration function is claimed.",
+      "problem_addressed": "Feature lists do not show whether the function is incidental, supportive, or constitutive.",
+      "evidence_case_refs": [
+        "BC-008",
+        "BC-013",
+        "BC-014",
+        "BC-015",
+        "BC-018"
+      ],
+      "governance_dependencies": [
+        "AS3_STACK.md"
+      ],
+      "verification_modes": [
+        "evidence_traceability",
+        "human_review"
+      ],
+      "rationale": "Failure effects test the operational nature of the claim.",
+      "uncertainty_handling": "When failure effects are unknown, the claim remains limited.",
+      "exclusions_guarded": [
+        "quality_grade",
+        "automatic_category_certification"
+      ],
+      "drafting_status": "candidate_normative_working_draft",
+      "normative_text": "When an Operational Spatial Integration function is claimed, the profile MUST describe how failure or removal of each constitutive or supportive spatial function changes the configured activity or result.",
+      "profile_field_path": "spatial_integration.failure_effects",
+      "trigger_key": "spatial_function_claimed",
+      "verification_statement": "Verify `spatial_integration.failure_effects` through evidence_traceability, human_review."
+    },
+    {
+      "clause_id": "ASR001-D11-C01",
+      "domain_id": "D11",
+      "domain_name": "Presence, Participation, and External Actors",
+      "title": "Actor-role disclosure",
+      "candidate_obligation_intent": "The profile identifies performers, coaches, officials, operators, supervisors, spectators, developers, and other material actors.",
+      "clause_family": "core_disclosure",
+      "applicability_class": "always",
+      "applicability_condition": "Every profile.",
+      "problem_addressed": "Actor presence does not establish Performance Agency or authority.",
+      "evidence_case_refs": [
+        "BC-003",
+        "BC-016",
+        "BC-019",
+        "BC-020"
+      ],
+      "governance_dependencies": [
+        "ONTOLOGY.md",
+        "AS3_STACK.md"
+      ],
+      "verification_modes": [
+        "field_presence",
+        "controlled_vocabulary",
+        "human_review"
+      ],
+      "rationale": "Role separation prevents attribution errors.",
+      "uncertainty_handling": "Unclear roles remain unresolved.",
+      "exclusions_guarded": [
+        "federation_recognition",
+        "automatic_category_certification"
+      ],
+      "drafting_status": "candidate_normative_working_draft",
+      "normative_text": "The profile MUST identify performers, coaches, officials, operators, supervisors, spectators, developers, and other material actors.",
+      "profile_field_path": "actors.roles",
+      "trigger_key": null,
+      "verification_statement": "Verify `actors.roles` through field_presence, controlled_vocabulary, human_review."
+    },
+    {
+      "clause_id": "ASR001-D11-C02",
+      "domain_id": "D11",
+      "domain_name": "Presence, Participation, and External Actors",
+      "title": "Participatory actor relation",
+      "candidate_obligation_intent": "The profile describes external actors who materially alter resources, constraints, information, triggers, or supervision without performing.",
+      "clause_family": "conditional_disclosure",
+      "applicability_class": "when_feature_present",
+      "applicability_condition": "A non-performing actor materially affects the configured process.",
+      "problem_addressed": "Spectator, engineer, or therapist influence can be constitutive without becoming Performance Agency.",
+      "evidence_case_refs": [
+        "BC-003",
+        "BC-016",
+        "BC-020"
+      ],
+      "governance_dependencies": [
+        "DEC-009",
+        "CORPUS_APPLICATION_FINDINGS_V0.3.md"
+      ],
+      "verification_modes": [
+        "conditional_logic",
+        "evidence_traceability",
+        "human_review"
+      ],
+      "rationale": "The relation preserves agency and governance boundaries.",
+      "uncertainty_handling": "Materiality can remain disputed.",
+      "exclusions_guarded": [
+        "causal_attribution_scoring",
+        "automatic_category_certification"
+      ],
+      "drafting_status": "candidate_normative_working_draft",
+      "normative_text": "When a non-performing actor materially affects the configured process, the profile MUST describe external actors who materially alter resources, constraints, information, triggers, or supervision without performing.",
+      "profile_field_path": "actors.participatory_relations",
+      "trigger_key": "participatory_actor_present",
+      "verification_statement": "Verify `actors.participatory_relations` through conditional_logic, evidence_traceability, human_review."
+    },
+    {
+      "clause_id": "ASR001-D12-C01",
+      "domain_id": "D12",
+      "domain_name": "Safety, Accessibility, and Human-Limit Disclosures",
+      "title": "Safety, accessibility, and human-limit disclosure",
+      "candidate_obligation_intent": "The profile records known hazards, accessibility conditions, body variation, adaptive equipment, fatigue, collision, cybersickness, cognitive demand, and relevant limitations.",
+      "clause_family": "evidence_integrity",
+      "applicability_class": "always",
+      "applicability_condition": "Every profile records applicable disclosures or a justified not-applicable state.",
+      "problem_addressed": "Silence about safety or access can be mistaken for absence of risk or universal usability.",
+      "evidence_case_refs": [
+        "BC-004",
+        "BC-014",
+        "BC-015",
+        "BC-016",
+        "BC-017",
+        "BC-018"
+      ],
+      "governance_dependencies": [
+        "AS3_STACK.md",
+        "QUALITY_GATE.md"
+      ],
+      "verification_modes": [
+        "document_presence",
+        "evidence_traceability",
+        "human_review"
+      ],
+      "rationale": "Disclosure supports responsible interpretation without certifying safety.",
+      "uncertainty_handling": "Unknown hazards remain unknown and clinical claims retain their evidence class.",
+      "exclusions_guarded": [
+        "safety_certification",
+        "clinical_efficacy_requirements",
+        "quality_grade"
+      ],
+      "drafting_status": "candidate_normative_working_draft",
+      "normative_text": "The profile MUST record known hazards, accessibility conditions, body variation, adaptive equipment, fatigue, collision, cybersickness, cognitive demand, and relevant limitations.",
+      "profile_field_path": "human_factors.disclosures",
+      "trigger_key": null,
+      "verification_statement": "Verify `human_factors.disclosures` through document_presence, evidence_traceability, human_review."
+    },
+    {
+      "clause_id": "ASR001-D12-C02",
+      "domain_id": "D12",
+      "domain_name": "Safety, Accessibility, and Human-Limit Disclosures",
+      "title": "Operational responsibility and limitations",
+      "candidate_obligation_intent": "The profile identifies responsible parties for deployment, safety controls, access decisions, supervision, and known limitation management.",
+      "clause_family": "governance_lifecycle",
+      "applicability_class": "when_feature_present",
+      "applicability_condition": "Operational responsibility is material to participation or support use.",
+      "problem_addressed": "Technical capability descriptions often omit who manages human risk and access.",
+      "evidence_case_refs": [
+        "BC-014",
+        "BC-015",
+        "BC-016",
+        "BC-017"
+      ],
+      "governance_dependencies": [
+        "AS3_STACK.md",
+        "SOURCE_AND_CLAIM_POLICY.md"
+      ],
+      "verification_modes": [
+        "cross_reference_integrity",
+        "evidence_traceability",
+        "human_review"
+      ],
+      "rationale": "Responsibility disclosure separates documentation from approval.",
+      "uncertainty_handling": "Unassigned responsibility is recorded explicitly.",
+      "exclusions_guarded": [
+        "safety_certification",
+        "clinical_efficacy_requirements"
+      ],
+      "drafting_status": "candidate_normative_working_draft",
+      "normative_text": "When operational responsibility is material to participation or support use, the profile MUST identify responsible parties for deployment, safety controls, access decisions, supervision, and known limitation management.",
+      "profile_field_path": "human_factors.operational_responsibility",
+      "trigger_key": "operational_responsibility_material",
+      "verification_statement": "Verify `human_factors.operational_responsibility` through cross_reference_integrity, evidence_traceability, human_review."
+    },
+    {
+      "clause_id": "ASR001-D13-C01",
+      "domain_id": "D13",
+      "domain_name": "Evidence, Claims, and Uncertainty",
+      "title": "Claim classification and source linkage",
+      "candidate_obligation_intent": "The profile assigns a claim class and traceable evidence record to each material factual or analytical claim.",
+      "clause_family": "evidence_integrity",
+      "applicability_class": "always",
+      "applicability_condition": "Every material claim in the profile.",
+      "problem_addressed": "Provider claims, sourced facts, synthesis, and interpretation are routinely mixed.",
+      "evidence_case_refs": [
+        "BC-014",
+        "BC-015",
+        "BC-016",
+        "BC-018"
+      ],
+      "governance_dependencies": [
+        "SOURCE_AND_CLAIM_POLICY.md"
+      ],
+      "verification_modes": [
+        "evidence_traceability",
+        "cross_reference_integrity",
+        "human_review"
+      ],
+      "rationale": "Claim separation is the core trust function of the profile.",
+      "uncertainty_handling": "Unsupported claims remain attributed or not evidenced.",
+      "exclusions_guarded": [
+        "commercial_endorsement",
+        "paid_favorable_classification"
+      ],
+      "drafting_status": "candidate_normative_working_draft",
+      "normative_text": "The profile MUST assign a claim class and traceable evidence record to each material factual or analytical claim.",
+      "profile_field_path": "evidence.claims",
+      "trigger_key": null,
+      "verification_statement": "Verify `evidence.claims` through evidence_traceability, cross_reference_integrity, human_review."
+    },
+    {
+      "clause_id": "ASR001-D13-C02",
+      "domain_id": "D13",
+      "domain_name": "Evidence, Claims, and Uncertainty",
+      "title": "Uncertainty and limitation states",
+      "candidate_obligation_intent": "The profile preserves supported, partial, absent, disputed, unknown, not applicable, and not evidenced states with a stated basis.",
+      "clause_family": "evidence_integrity",
+      "applicability_class": "always",
+      "applicability_condition": "Every profile.",
+      "problem_addressed": "Binary completeness encourages false certainty.",
+      "evidence_case_refs": [
+        "BC-005",
+        "BC-007",
+        "BC-009",
+        "BC-015",
+        "BC-018"
+      ],
+      "governance_dependencies": [
+        "ASR_001_SCOPE_DRAFT.md",
+        "SOURCE_AND_CLAIM_POLICY.md"
+      ],
+      "verification_modes": [
+        "controlled_vocabulary",
+        "conditional_logic",
+        "human_review"
+      ],
+      "rationale": "Uncertainty is a valid output rather than a failed score.",
+      "uncertainty_handling": "Unknown is never inferred as absence.",
+      "exclusions_guarded": [
+        "total_score",
+        "maturity_level",
+        "quality_grade"
+      ],
+      "drafting_status": "candidate_normative_working_draft",
+      "normative_text": "The profile MUST the profile preserves supported, partial, absent, disputed, unknown, not applicable, and not evidenced states with a stated basis.",
+      "profile_field_path": "evidence.uncertainty_states",
+      "trigger_key": null,
+      "verification_statement": "Verify `evidence.uncertainty_states` through controlled_vocabulary, conditional_logic, human_review."
+    },
+    {
+      "clause_id": "ASR001-D14-C01",
+      "domain_id": "D14",
+      "domain_name": "Governance, Change, and Correction",
+      "title": "Governance, version, and responsible authority",
+      "candidate_obligation_intent": "The profile identifies the responsible profile publisher, system authority, rule or software versions, review date, and material commercial relationships.",
+      "clause_family": "governance_lifecycle",
+      "applicability_class": "always",
+      "applicability_condition": "Every profile.",
+      "problem_addressed": "Profiles become stale or conflicted when ownership and versions are hidden.",
+      "evidence_case_refs": [
+        "BC-001",
+        "BC-013",
+        "BC-015",
+        "BC-016",
+        "BC-020"
+      ],
+      "governance_dependencies": [
+        "SOURCE_AND_CLAIM_POLICY.md",
+        "ASR_DRAFTING_GOVERNANCE.md"
+      ],
+      "verification_modes": [
+        "field_presence",
+        "temporal_consistency",
+        "cross_reference_integrity"
+      ],
+      "rationale": "Governance metadata supports accountability and independence.",
+      "uncertainty_handling": "Unknown authority is disclosed.",
+      "exclusions_guarded": [
+        "paid_favorable_classification",
+        "commercial_endorsement",
+        "federation_recognition"
+      ],
+      "drafting_status": "candidate_normative_working_draft",
+      "normative_text": "The profile MUST identify the responsible profile publisher, system authority, rule or software versions, review date, and material commercial relationships.",
+      "profile_field_path": "governance.authority_and_versions",
+      "trigger_key": null,
+      "verification_statement": "Verify `governance.authority_and_versions` through field_presence, temporal_consistency, cross_reference_integrity."
+    },
+    {
+      "clause_id": "ASR001-D14-C02",
+      "domain_id": "D14",
+      "domain_name": "Governance, Change, and Correction",
+      "title": "Correction and supersession",
+      "candidate_obligation_intent": "The profile records substantive corrections, affected fields or clauses, reason, evidence, date, and supersession relation.",
+      "clause_family": "governance_lifecycle",
+      "applicability_class": "always",
+      "applicability_condition": "Every profile supports lifecycle correction, even when no correction has occurred.",
+      "problem_addressed": "Silent overwrite destroys the evidence trail.",
+      "evidence_case_refs": [
+        "BC-020"
+      ],
+      "governance_dependencies": [
+        "SOURCE_AND_CLAIM_POLICY.md",
+        "ASR_DRAFTING_GOVERNANCE.md",
+        "DECISION_LOG.md"
+      ],
+      "verification_modes": [
+        "document_presence",
+        "cross_reference_integrity",
+        "temporal_consistency"
+      ],
+      "rationale": "Append-only correction strengthens reference trust.",
+      "uncertainty_handling": "No-correction history is distinguishable from unavailable history.",
+      "exclusions_guarded": [
+        "commercial_endorsement",
+        "quality_grade"
+      ],
+      "drafting_status": "candidate_normative_working_draft",
+      "normative_text": "The profile MUST record substantive corrections, affected fields or clauses, reason, evidence, date, and supersession relation.",
+      "profile_field_path": "governance.corrections_and_supersession",
+      "trigger_key": null,
+      "verification_statement": "Verify `governance.corrections_and_supersession` through document_presence, cross_reference_integrity, temporal_consistency."
+    },
+    {
+      "clause_id": "ASR001-D15-C01",
+      "domain_id": "D15",
+      "domain_name": "Profile Metadata and Machine Readability",
+      "title": "Profile identity and metadata",
+      "candidate_obligation_intent": "The profile has a stable identifier, profile version, creation and revision dates, language, status, subject identifier, and applicable ASR Working Draft version.",
+      "clause_family": "machine_readable_exchange",
+      "applicability_class": "always",
+      "applicability_condition": "Every profile.",
+      "problem_addressed": "Machine and human consumers cannot reliably compare unidentified profile instances.",
+      "evidence_case_refs": [
+        "BC-001",
+        "BC-020"
+      ],
+      "governance_dependencies": [
+        "ASR_001_SCOPE_MODEL.json",
+        "ASR_DRAFTING_GOVERNANCE.md"
+      ],
+      "verification_modes": [
+        "field_presence",
+        "controlled_vocabulary",
+        "temporal_consistency"
+      ],
+      "rationale": "Stable metadata enables citation, correction, and exchange.",
+      "uncertainty_handling": "Draft status remains visible.",
+      "exclusions_guarded": [
+        "industry_adoption_claim",
+        "automatic_category_certification"
+      ],
+      "drafting_status": "candidate_normative_working_draft",
+      "normative_text": "The profile MUST have a stable identifier, profile version, creation and revision dates, language, status, subject identifier, and applicable ASR Working Draft version.",
+      "profile_field_path": "profile_metadata",
+      "trigger_key": null,
+      "verification_statement": "Verify `profile_metadata` through field_presence, controlled_vocabulary, temporal_consistency."
+    },
+    {
+      "clause_id": "ASR001-D15-C02",
+      "domain_id": "D15",
+      "domain_name": "Profile Metadata and Machine Readability",
+      "title": "Machine-readable distribution and licensing",
+      "candidate_obligation_intent": "The profile identifies machine-readable distributions, serialization version, validation status, license or reuse notice, and extension namespaces when provided.",
+      "clause_family": "machine_readable_exchange",
+      "applicability_class": "when_machine_readable_distribution_provided",
+      "applicability_condition": "A structured distribution, API, JSON, RDF, CSV, or equivalent is supplied.",
+      "problem_addressed": "Structured data can become ambiguous or legally unclear without version and reuse metadata.",
+      "evidence_case_refs": [
+        "BC-001",
+        "BC-020"
+      ],
+      "governance_dependencies": [
+        "DATASET_LICENSE.md",
+        "DEC-007",
+        "ASR_001_IMPLEMENTATION_MODEL_BOUNDARY.md"
+      ],
+      "verification_modes": [
+        "machine_validation",
+        "cross_reference_integrity",
+        "field_presence"
+      ],
+      "rationale": "Distribution metadata supports reliable reuse without converting research licensing into third-party relicensing.",
+      "uncertainty_handling": "Absent structured distribution is not a profile-quality score.",
+      "exclusions_guarded": [
+        "commercial_endorsement",
+        "automatic_category_certification"
+      ],
+      "drafting_status": "candidate_normative_working_draft",
+      "normative_text": "When a structured distribution, API, JSON, RDF, CSV, or equivalent is supplied, the profile MUST identify machine-readable distributions, serialization version, validation status, license or reuse notice, and extension namespaces when provided.",
+      "profile_field_path": "distributions",
+      "trigger_key": "machine_readable_distribution_provided",
+      "verification_statement": "Verify `distributions` through machine_validation, cross_reference_integrity, field_presence."
+    }
+  ],
+  "publication_status": "unpublished",
+  "conformance_boundary": "profile_document_or_instance_only"
+}

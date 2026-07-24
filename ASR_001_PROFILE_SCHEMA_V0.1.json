@@ -1,0 +1,501 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://altissports.com/schemas/asr-001-profile-v0.1.schema.json",
+  "title": "ASR-001 Candidate Evidence Profile v0.1",
+  "description": "Non-public Working Draft schema. Validation concerns the profile instance only.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "profile_metadata",
+    "subject",
+    "operating_context",
+    "system_roles_and_dependencies",
+    "feature_flags",
+    "performance",
+    "arena",
+    "constraints",
+    "sensing",
+    "measurement",
+    "outcome",
+    "spatial_integration",
+    "actors",
+    "human_factors",
+    "evidence",
+    "governance",
+    "distributions",
+    "clause_records"
+  ],
+  "properties": {
+    "profile_metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "profile_id",
+        "profile_version",
+        "status",
+        "created_date",
+        "revised_date",
+        "language",
+        "asr_working_draft_version",
+        "subject_id",
+        "license_notice"
+      ],
+      "properties": {
+        "profile_id": {
+          "type": "string",
+          "minLength": 3
+        },
+        "profile_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "enum": [
+            "draft",
+            "reviewed_draft",
+            "superseded"
+          ]
+        },
+        "created_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "revised_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "language": {
+          "type": "string",
+          "minLength": 2
+        },
+        "asr_working_draft_version": {
+          "const": "0.1"
+        },
+        "subject_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "license_notice": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "subject": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "canonical_subject",
+        "related_objects"
+      ],
+      "properties": {
+        "canonical_subject": {
+          "type": "object",
+          "additionalProperties": true,
+          "required": [
+            "subject_id",
+            "object_type",
+            "name",
+            "configuration",
+            "version",
+            "temporal_status"
+          ],
+          "properties": {
+            "subject_id": {
+              "type": "string"
+            },
+            "object_type": {
+              "enum": [
+                "product_deployment",
+                "contest_configuration",
+                "training_or_support_configuration",
+                "event_implementation",
+                "research_setup"
+              ]
+            },
+            "name": {
+              "type": "string"
+            },
+            "configuration": {
+              "type": "string"
+            },
+            "version": {
+              "type": "string"
+            },
+            "temporal_status": {
+              "enum": [
+                "current",
+                "announced",
+                "pilot",
+                "beta",
+                "discontinued",
+                "superseded",
+                "unverified_current_status",
+                "historical"
+              ]
+            }
+          }
+        },
+        "related_objects": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "operating_context": {
+      "type": "object"
+    },
+    "system_roles_and_dependencies": {
+      "type": "object"
+    },
+    "feature_flags": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "human_performance_claimed",
+        "agency_modes_or_handoff_present",
+        "embodiment_or_biological_control_claimed",
+        "distributed_operation_claimed",
+        "rules_or_constraints_present",
+        "sensing_or_tracking_present",
+        "measurement_or_comparison_claimed",
+        "contest_or_outcome_present",
+        "spatial_function_claimed",
+        "participatory_actor_present",
+        "operational_responsibility_material",
+        "machine_readable_distribution_provided"
+      ],
+      "properties": {
+        "human_performance_claimed": {
+          "enum": [
+            true,
+            false,
+            "unknown",
+            "disputed",
+            "not_evidenced"
+          ]
+        },
+        "agency_modes_or_handoff_present": {
+          "enum": [
+            true,
+            false,
+            "unknown",
+            "disputed",
+            "not_evidenced"
+          ]
+        },
+        "embodiment_or_biological_control_claimed": {
+          "enum": [
+            true,
+            false,
+            "unknown",
+            "disputed",
+            "not_evidenced"
+          ]
+        },
+        "distributed_operation_claimed": {
+          "enum": [
+            true,
+            false,
+            "unknown",
+            "disputed",
+            "not_evidenced"
+          ]
+        },
+        "rules_or_constraints_present": {
+          "enum": [
+            true,
+            false,
+            "unknown",
+            "disputed",
+            "not_evidenced"
+          ]
+        },
+        "sensing_or_tracking_present": {
+          "enum": [
+            true,
+            false,
+            "unknown",
+            "disputed",
+            "not_evidenced"
+          ]
+        },
+        "measurement_or_comparison_claimed": {
+          "enum": [
+            true,
+            false,
+            "unknown",
+            "disputed",
+            "not_evidenced"
+          ]
+        },
+        "contest_or_outcome_present": {
+          "enum": [
+            true,
+            false,
+            "unknown",
+            "disputed",
+            "not_evidenced"
+          ]
+        },
+        "spatial_function_claimed": {
+          "enum": [
+            true,
+            false,
+            "unknown",
+            "disputed",
+            "not_evidenced"
+          ]
+        },
+        "participatory_actor_present": {
+          "enum": [
+            true,
+            false,
+            "unknown",
+            "disputed",
+            "not_evidenced"
+          ]
+        },
+        "operational_responsibility_material": {
+          "enum": [
+            true,
+            false,
+            "unknown",
+            "disputed",
+            "not_evidenced"
+          ]
+        },
+        "machine_readable_distribution_provided": {
+          "enum": [
+            true,
+            false,
+            "unknown",
+            "disputed",
+            "not_evidenced"
+          ]
+        }
+      }
+    },
+    "performance": {
+      "type": "object"
+    },
+    "arena": {
+      "type": "object"
+    },
+    "constraints": {
+      "type": "object"
+    },
+    "sensing": {
+      "type": "object"
+    },
+    "measurement": {
+      "type": "object"
+    },
+    "outcome": {
+      "type": "object"
+    },
+    "spatial_integration": {
+      "type": "object"
+    },
+    "actors": {
+      "type": "object"
+    },
+    "human_factors": {
+      "type": "object"
+    },
+    "evidence": {
+      "type": "object",
+      "required": [
+        "claims",
+        "uncertainty_states",
+        "records"
+      ],
+      "properties": {
+        "claims": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "uncertainty_states": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "supported",
+              "partial",
+              "absent",
+              "disputed",
+              "unknown",
+              "not_applicable",
+              "not_evidenced"
+            ]
+          }
+        },
+        "records": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "evidence_id",
+              "claim_class",
+              "source_type",
+              "title",
+              "publisher",
+              "access_date",
+              "temporal_status",
+              "supports",
+              "limitations",
+              "attribution_required"
+            ],
+            "properties": {
+              "evidence_id": {
+                "type": "string"
+              },
+              "claim_class": {
+                "enum": [
+                  "C1",
+                  "C2",
+                  "C3",
+                  "C4",
+                  "C5",
+                  "C6"
+                ]
+              },
+              "source_type": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "publisher": {
+                "type": "string"
+              },
+              "canonical_url": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "publication_date": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "access_date": {
+                "type": "string"
+              },
+              "temporal_status": {
+                "enum": [
+                  "current",
+                  "announced",
+                  "pilot",
+                  "beta",
+                  "discontinued",
+                  "superseded",
+                  "unverified_current_status",
+                  "historical"
+                ]
+              },
+              "supports": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "limitations": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "attribution_required": {
+                "type": "boolean"
+              }
+            }
+          }
+        }
+      }
+    },
+    "governance": {
+      "type": "object"
+    },
+    "distributions": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "clause_records": {
+      "type": "array",
+      "minItems": 30,
+      "maxItems": 30,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "clause_id",
+          "applicability",
+          "applicability_basis",
+          "disclosure",
+          "field_path",
+          "evidence_refs",
+          "verification_status",
+          "verification_notes",
+          "review_required"
+        ],
+        "properties": {
+          "clause_id": {
+            "type": "string",
+            "pattern": "^ASR001-D(0[1-9]|1[0-5])-C[0-9]{2}$"
+          },
+          "applicability": {
+            "enum": [
+              "applicable",
+              "not_applicable",
+              "unknown",
+              "disputed",
+              "not_evidenced"
+            ]
+          },
+          "applicability_basis": {
+            "type": "string",
+            "minLength": 1
+          },
+          "disclosure": {
+            "type": "string",
+            "minLength": 1
+          },
+          "field_path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "verification_status": {
+            "enum": [
+              "verified",
+              "partially_verified",
+              "not_verified",
+              "not_applicable",
+              "requires_human_review",
+              "blocked_by_missing_evidence"
+            ]
+          },
+          "verification_notes": {
+            "type": "string"
+          },
+          "review_required": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  }
+}

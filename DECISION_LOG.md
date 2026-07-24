@@ -287,3 +287,29 @@ The approved scope converts twenty adversarial cases into one bounded standardiz
 ### Rationale
 
 The approved scope is now decomposed into uniquely identified, evidence-linked, conditionally applicable, and verifiable candidate obligations. This is enough to begin clause-level drafting without losing the exclusions and uncertainty that made the research credible. It is not enough to release a standard or conformance program.
+
+---
+
+## DEC-013 — ASR-001 Candidate Normative Core and Internal-Trial Boundary
+
+**Status:** Ratified upon Sprint 10 PASS  
+**Version:** 1.0  
+**Date:** 2026-07-24  
+**Evidence basis:** `ASR_001_WORKING_DRAFT_V0.1.md`, `ASR_001_NORMATIVE_CLAUSE_CATALOG_V0.1.json`, and `ASR_001_PROFILE_MODEL_V0.1.json`
+
+### Decision
+
+1. The ASR-001 Candidate Normative Core v0.1 is accepted as a non-public Working Draft.
+2. The core contains exactly thirty clause-level candidate obligations using the stable identifiers authorized by DEC-012.
+3. Candidate normative language is permitted only inside the governed Working Draft and does not establish publication, recognition, adoption, or a certification program.
+4. Every clause retains its approved domain, applicability, evidence or governance dependency, verification approach, rationale, uncertainty handling, exclusion guards, and profile field path.
+5. The candidate implementation profile model v0.1 is clause-derived and is distinct from the Boundary Case Schema.
+6. Candidate profile validation checks the profile document or machine-readable instance only. It does not validate or certify the underlying sport, product, safety, clinical efficacy, quality, federation recognition, category membership, or market superiority.
+7. Conditional applicability is explicit. A non-triggered clause is not a failure, and missing evidence is not converted into a zero, score, grade, or ranking.
+8. Two synthetic profiles are accepted as deterministic structural fixtures. They are not market records and create no provider claims.
+9. Internal implementation trials are authorized. Clause changes during those trials require recorded implementation evidence or a governance issue.
+10. ASR-001 publication, Public Review Draft status, certification, public conformance claims, scores, maturity levels, vendor rankings, unsupported technical tolerances, final BCI athletic classification, and claims of industry adoption remain unauthorized.
+
+### Rationale
+
+The approved scope and candidate architecture now have clause-level expression and a separate operational profile model. Internal implementation is the next reliable test: it can expose clauses that are ambiguous, untestable, overbroad, duplicative, or poorly represented before any external review or publication posture is considered.

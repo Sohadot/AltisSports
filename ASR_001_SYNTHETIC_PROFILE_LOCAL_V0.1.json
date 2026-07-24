@@ -1,0 +1,719 @@
+{
+  "profile_metadata": {
+    "profile_id": "ASR001-SYN-LOCAL-001",
+    "profile_version": "0.1",
+    "status": "draft",
+    "created_date": "2026-07-24",
+    "revised_date": "2026-07-24",
+    "language": "en",
+    "asr_working_draft_version": "0.1",
+    "subject_id": "SYN-LOCAL-TRAIN-001",
+    "license_notice": "Synthetic fixture for testing; no claim about a real product."
+  },
+  "subject": {
+    "canonical_subject": {
+      "subject_id": "SYN-LOCAL-TRAIN-001",
+      "object_type": "training_or_support_configuration",
+      "name": "Synthetic Local Spatial Training Configuration",
+      "configuration": "single-site tracked movement training with non-competitive feedback",
+      "version": "synthetic-0.1",
+      "temporal_status": "current"
+    },
+    "related_objects": []
+  },
+  "operating_context": {
+    "deployment_type": "training_or_support_configuration",
+    "locations": [
+      "synthetic test environment"
+    ],
+    "participant_setting": "controlled",
+    "intended_use": "ASR-001 implementation-model validation",
+    "temporal_status": "current"
+  },
+  "system_roles_and_dependencies": {
+    "system_roles": [
+      "training",
+      "assessment"
+    ],
+    "technical_dependencies": [],
+    "institutional_dependencies": [],
+    "equipment_dependencies": [],
+    "organizational_dependencies": []
+  },
+  "feature_flags": {
+    "human_performance_claimed": true,
+    "agency_modes_or_handoff_present": false,
+    "embodiment_or_biological_control_claimed": true,
+    "distributed_operation_claimed": false,
+    "rules_or_constraints_present": true,
+    "sensing_or_tracking_present": true,
+    "measurement_or_comparison_claimed": true,
+    "contest_or_outcome_present": false,
+    "spatial_function_claimed": true,
+    "participatory_actor_present": false,
+    "operational_responsibility_material": true,
+    "machine_readable_distribution_provided": true
+  },
+  "performance": {
+    "performance_window": {
+      "start": "session_start",
+      "end": "session_end",
+      "basis": "tracked actions affect feedback during the session"
+    },
+    "agency_segments": [],
+    "interface_channels": [
+      "tracked_body_movement",
+      "hand_controllers"
+    ],
+    "embodied_demand": {
+      "types": [
+        "sensorimotor_coordination",
+        "balance"
+      ],
+      "minimum_threshold_claimed": false
+    }
+  },
+  "arena": {
+    "configuration": {
+      "physical_arena": "bounded room-scale area",
+      "computational_arena": "generated training environment",
+      "unified_relation": "tracked movement changes task state"
+    },
+    "distributed_relation": {}
+  },
+  "constraints": {
+    "authoritative_sources": [
+      "EV-RULE-001"
+    ],
+    "execution": {
+      "modes": [
+        "software",
+        "geometry"
+      ]
+    }
+  },
+  "sensing": {
+    "observation_estimation_boundary": {
+      "direct": [
+        "controller pose"
+      ],
+      "estimated": [
+        "body pose"
+      ]
+    },
+    "failure_and_uncertainty": [
+      "occlusion can interrupt tracking"
+    ]
+  },
+  "measurement": {
+    "metrics": [
+      {
+        "name": "task completion time",
+        "unit": "seconds",
+        "calibration_basis": "synthetic protocol",
+        "intended_use": "session feedback"
+      }
+    ],
+    "comparability_conditions": [
+      "same software version",
+      "same tracked area",
+      "same device class"
+    ]
+  },
+  "outcome": {
+    "officiation_and_authority": {},
+    "outcome_and_consequence": {}
+  },
+  "spatial_integration": {
+    "functions": [
+      {
+        "function": "constrain",
+        "mechanism": "virtual task zones"
+      },
+      {
+        "function": "measure",
+        "mechanism": "tracked pose and task state"
+      }
+    ],
+    "failure_effects": [
+      "loss of tracking prevents valid task-state update"
+    ]
+  },
+  "actors": {
+    "roles": [
+      {
+        "role": "participant",
+        "performance_agent": true
+      },
+      {
+        "role": "operator",
+        "performance_agent": false
+      }
+    ],
+    "participatory_relations": []
+  },
+  "human_factors": {
+    "disclosures": [
+      "room-scale collision risk",
+      "balance demand",
+      "seated mode not tested"
+    ],
+    "operational_responsibility": {
+      "operator": "synthetic site operator",
+      "participant_screening": "declared but not certified"
+    }
+  },
+  "evidence": {
+    "claims": [],
+    "uncertainty_states": [
+      "unknown",
+      "not_evidenced",
+      "not_applicable"
+    ],
+    "records": [
+      {
+        "evidence_id": "EV-DECL-001",
+        "claim_class": "C1",
+        "source_type": "synthetic_specification",
+        "title": "Local training configuration declaration",
+        "publisher": "AltisSports Synthetic Test Fixture",
+        "canonical_url": null,
+        "publication_date": "2026-07-24",
+        "access_date": "2026-07-24",
+        "temporal_status": "current",
+        "supports": [
+          "subject",
+          "operating_context",
+          "actors"
+        ],
+        "limitations": [
+          "Synthetic fixture; not evidence about a real product."
+        ],
+        "attribution_required": true
+      },
+      {
+        "evidence_id": "EV-TECH-001",
+        "claim_class": "C1",
+        "source_type": "synthetic_specification",
+        "title": "Local training technical architecture",
+        "publisher": "AltisSports Synthetic Test Fixture",
+        "canonical_url": null,
+        "publication_date": "2026-07-24",
+        "access_date": "2026-07-24",
+        "temporal_status": "current",
+        "supports": [
+          "performance",
+          "arena",
+          "sensing",
+          "spatial_integration"
+        ],
+        "limitations": [
+          "Synthetic technical description; no independent performance validation."
+        ],
+        "attribution_required": true
+      },
+      {
+        "evidence_id": "EV-RULE-001",
+        "claim_class": "C1",
+        "source_type": "synthetic_specification",
+        "title": "Local training rule and task specification",
+        "publisher": "AltisSports Synthetic Test Fixture",
+        "canonical_url": null,
+        "publication_date": "2026-07-24",
+        "access_date": "2026-07-24",
+        "temporal_status": "current",
+        "supports": [
+          "constraints",
+          "outcome"
+        ],
+        "limitations": [
+          "Synthetic rules used only to test profile structure."
+        ],
+        "attribution_required": true
+      },
+      {
+        "evidence_id": "EV-DATA-001",
+        "claim_class": "C1",
+        "source_type": "synthetic_specification",
+        "title": "Local training measurement and comparability protocol",
+        "publisher": "AltisSports Synthetic Test Fixture",
+        "canonical_url": null,
+        "publication_date": "2026-07-24",
+        "access_date": "2026-07-24",
+        "temporal_status": "current",
+        "supports": [
+          "measurement"
+        ],
+        "limitations": [
+          "No claim of real-world validity or clinical efficacy."
+        ],
+        "attribution_required": true
+      },
+      {
+        "evidence_id": "EV-SAFE-001",
+        "claim_class": "C1",
+        "source_type": "synthetic_specification",
+        "title": "Local training safety and accessibility disclosure",
+        "publisher": "AltisSports Synthetic Test Fixture",
+        "canonical_url": null,
+        "publication_date": "2026-07-24",
+        "access_date": "2026-07-24",
+        "temporal_status": "current",
+        "supports": [
+          "human_factors"
+        ],
+        "limitations": [
+          "Disclosure test only; not safety certification."
+        ],
+        "attribution_required": true
+      },
+      {
+        "evidence_id": "EV-GOV-001",
+        "claim_class": "C1",
+        "source_type": "synthetic_specification",
+        "title": "Local training governance and correction procedure",
+        "publisher": "AltisSports Synthetic Test Fixture",
+        "canonical_url": null,
+        "publication_date": "2026-07-24",
+        "access_date": "2026-07-24",
+        "temporal_status": "current",
+        "supports": [
+          "governance",
+          "evidence"
+        ],
+        "limitations": [
+          "Synthetic governance record."
+        ],
+        "attribution_required": true
+      },
+      {
+        "evidence_id": "EV-DIST-001",
+        "claim_class": "C1",
+        "source_type": "profile_declaration",
+        "title": "Local training machine-readable distribution manifest",
+        "publisher": "AltisSports Synthetic Test Fixture",
+        "canonical_url": null,
+        "publication_date": "2026-07-24",
+        "access_date": "2026-07-24",
+        "temporal_status": "current",
+        "supports": [
+          "profile_metadata",
+          "distributions"
+        ],
+        "limitations": [
+          "Local test artifact; no production endpoint."
+        ],
+        "attribution_required": true
+      }
+    ]
+  },
+  "governance": {
+    "authority_and_versions": {
+      "profile_publisher": "AltisSports Synthetic Test Fixture",
+      "system_authority": "Synthetic Operator",
+      "ruleset_version": "synthetic-0.1"
+    },
+    "corrections_and_supersession": []
+  },
+  "distributions": [
+    {
+      "format": "JSON",
+      "location": "local synthetic fixture",
+      "serialization_version": "0.1",
+      "validation_status": "candidate",
+      "license": "Synthetic test fixture",
+      "extensions": []
+    }
+  ],
+  "clause_records": [
+    {
+      "clause_id": "ASR001-D01-C01",
+      "applicability": "applicable",
+      "applicability_basis": "Unconditional candidate clause.",
+      "disclosure": "Synthetic disclosure for Canonical profile subject.",
+      "field_path": "subject.canonical_subject",
+      "evidence_refs": [
+        "EV-DECL-001"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Validated against the synthetic fixture structure.",
+      "review_required": true
+    },
+    {
+      "clause_id": "ASR001-D01-C02",
+      "applicability": "applicable",
+      "applicability_basis": "Unconditional candidate clause.",
+      "disclosure": "Synthetic disclosure for Related-object boundary.",
+      "field_path": "subject.related_objects",
+      "evidence_refs": [
+        "EV-DECL-001"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Validated against the synthetic fixture structure.",
+      "review_required": true
+    },
+    {
+      "clause_id": "ASR001-D02-C01",
+      "applicability": "applicable",
+      "applicability_basis": "Unconditional candidate clause.",
+      "disclosure": "Synthetic disclosure for Operating context.",
+      "field_path": "operating_context",
+      "evidence_refs": [
+        "EV-DECL-001",
+        "EV-TECH-001"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Validated against the synthetic fixture structure.",
+      "review_required": false
+    },
+    {
+      "clause_id": "ASR001-D02-C02",
+      "applicability": "applicable",
+      "applicability_basis": "Unconditional candidate clause.",
+      "disclosure": "Synthetic disclosure for System roles and dependencies.",
+      "field_path": "system_roles_and_dependencies",
+      "evidence_refs": [
+        "EV-DECL-001",
+        "EV-TECH-001"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Validated against the synthetic fixture structure.",
+      "review_required": true
+    },
+    {
+      "clause_id": "ASR001-D03-C01",
+      "applicability": "applicable",
+      "applicability_basis": "Feature flag `human_performance_claimed` is `True`.",
+      "disclosure": "Synthetic disclosure for Performance window.",
+      "field_path": "performance.performance_window",
+      "evidence_refs": [
+        "EV-TECH-001"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Validated against the synthetic fixture structure.",
+      "review_required": true
+    },
+    {
+      "clause_id": "ASR001-D03-C02",
+      "applicability": "not_applicable",
+      "applicability_basis": "Feature flag `agency_modes_or_handoff_present` is `False`.",
+      "disclosure": "Clause trigger is not_applicable; no underlying-system judgment is implied.",
+      "field_path": "performance.agency_segments",
+      "evidence_refs": [],
+      "verification_status": "not_applicable",
+      "verification_notes": "Validated against the synthetic fixture structure.",
+      "review_required": true
+    },
+    {
+      "clause_id": "ASR001-D04-C01",
+      "applicability": "applicable",
+      "applicability_basis": "Feature flag `human_performance_claimed` is `True`.",
+      "disclosure": "Synthetic disclosure for Performance interface channels.",
+      "field_path": "performance.interface_channels",
+      "evidence_refs": [
+        "EV-TECH-001",
+        "EV-SAFE-001"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Validated against the synthetic fixture structure.",
+      "review_required": true
+    },
+    {
+      "clause_id": "ASR001-D04-C02",
+      "applicability": "applicable",
+      "applicability_basis": "Feature flag `embodiment_or_biological_control_claimed` is `True`.",
+      "disclosure": "Synthetic disclosure for Embodied demand and biological control.",
+      "field_path": "performance.embodied_demand",
+      "evidence_refs": [
+        "EV-TECH-001",
+        "EV-SAFE-001"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Validated against the synthetic fixture structure.",
+      "review_required": true
+    },
+    {
+      "clause_id": "ASR001-D05-C01",
+      "applicability": "applicable",
+      "applicability_basis": "Unconditional candidate clause.",
+      "disclosure": "Synthetic disclosure for Arena configuration.",
+      "field_path": "arena.configuration",
+      "evidence_refs": [
+        "EV-TECH-001"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Validated against the synthetic fixture structure.",
+      "review_required": true
+    },
+    {
+      "clause_id": "ASR001-D05-C02",
+      "applicability": "not_applicable",
+      "applicability_basis": "Feature flag `distributed_operation_claimed` is `False`.",
+      "disclosure": "Clause trigger is not_applicable; no underlying-system judgment is implied.",
+      "field_path": "arena.distributed_relation",
+      "evidence_refs": [],
+      "verification_status": "not_applicable",
+      "verification_notes": "Validated against the synthetic fixture structure.",
+      "review_required": true
+    },
+    {
+      "clause_id": "ASR001-D06-C01",
+      "applicability": "applicable",
+      "applicability_basis": "Feature flag `rules_or_constraints_present` is `True`.",
+      "disclosure": "Synthetic disclosure for Rule and constraint sources.",
+      "field_path": "constraints.authoritative_sources",
+      "evidence_refs": [
+        "EV-RULE-001"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Validated against the synthetic fixture structure.",
+      "review_required": false
+    },
+    {
+      "clause_id": "ASR001-D06-C02",
+      "applicability": "applicable",
+      "applicability_basis": "Feature flag `rules_or_constraints_present` is `True`.",
+      "disclosure": "Synthetic disclosure for Operative rule execution.",
+      "field_path": "constraints.execution",
+      "evidence_refs": [
+        "EV-RULE-001"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Validated against the synthetic fixture structure.",
+      "review_required": true
+    },
+    {
+      "clause_id": "ASR001-D07-C01",
+      "applicability": "applicable",
+      "applicability_basis": "Feature flag `sensing_or_tracking_present` is `True`.",
+      "disclosure": "Synthetic disclosure for Observation and estimation boundary.",
+      "field_path": "sensing.observation_estimation_boundary",
+      "evidence_refs": [
+        "EV-TECH-001"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Validated against the synthetic fixture structure.",
+      "review_required": true
+    },
+    {
+      "clause_id": "ASR001-D07-C02",
+      "applicability": "applicable",
+      "applicability_basis": "Feature flag `sensing_or_tracking_present` is `True`.",
+      "disclosure": "Synthetic disclosure for Sensing failure and uncertainty.",
+      "field_path": "sensing.failure_and_uncertainty",
+      "evidence_refs": [
+        "EV-TECH-001"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Validated against the synthetic fixture structure.",
+      "review_required": true
+    },
+    {
+      "clause_id": "ASR001-D08-C01",
+      "applicability": "applicable",
+      "applicability_basis": "Feature flag `measurement_or_comparison_claimed` is `True`.",
+      "disclosure": "Synthetic disclosure for Metric and calibration disclosure.",
+      "field_path": "measurement.metrics",
+      "evidence_refs": [
+        "EV-DATA-001"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Validated against the synthetic fixture structure.",
+      "review_required": false
+    },
+    {
+      "clause_id": "ASR001-D08-C02",
+      "applicability": "applicable",
+      "applicability_basis": "Feature flag `measurement_or_comparison_claimed` is `True`.",
+      "disclosure": "Synthetic disclosure for Comparability conditions.",
+      "field_path": "measurement.comparability_conditions",
+      "evidence_refs": [
+        "EV-DATA-001"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Validated against the synthetic fixture structure.",
+      "review_required": true
+    },
+    {
+      "clause_id": "ASR001-D09-C01",
+      "applicability": "not_applicable",
+      "applicability_basis": "Feature flag `contest_or_outcome_present` is `False`.",
+      "disclosure": "Clause trigger is not_applicable; no underlying-system judgment is implied.",
+      "field_path": "outcome.officiation_and_authority",
+      "evidence_refs": [],
+      "verification_status": "not_applicable",
+      "verification_notes": "Validated against the synthetic fixture structure.",
+      "review_required": true
+    },
+    {
+      "clause_id": "ASR001-D09-C02",
+      "applicability": "not_applicable",
+      "applicability_basis": "Feature flag `contest_or_outcome_present` is `False`.",
+      "disclosure": "Clause trigger is not_applicable; no underlying-system judgment is implied.",
+      "field_path": "outcome.outcome_and_consequence",
+      "evidence_refs": [],
+      "verification_status": "not_applicable",
+      "verification_notes": "Validated against the synthetic fixture structure.",
+      "review_required": true
+    },
+    {
+      "clause_id": "ASR001-D10-C01",
+      "applicability": "applicable",
+      "applicability_basis": "Feature flag `spatial_function_claimed` is `True`.",
+      "disclosure": "Synthetic disclosure for Spatial function claims.",
+      "field_path": "spatial_integration.functions",
+      "evidence_refs": [
+        "EV-TECH-001"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Validated against the synthetic fixture structure.",
+      "review_required": true
+    },
+    {
+      "clause_id": "ASR001-D10-C02",
+      "applicability": "applicable",
+      "applicability_basis": "Feature flag `spatial_function_claimed` is `True`.",
+      "disclosure": "Synthetic disclosure for Spatial function failure effects.",
+      "field_path": "spatial_integration.failure_effects",
+      "evidence_refs": [
+        "EV-TECH-001"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Validated against the synthetic fixture structure.",
+      "review_required": true
+    },
+    {
+      "clause_id": "ASR001-D11-C01",
+      "applicability": "applicable",
+      "applicability_basis": "Unconditional candidate clause.",
+      "disclosure": "Synthetic disclosure for Actor-role disclosure.",
+      "field_path": "actors.roles",
+      "evidence_refs": [
+        "EV-DECL-001",
+        "EV-GOV-001"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Validated against the synthetic fixture structure.",
+      "review_required": true
+    },
+    {
+      "clause_id": "ASR001-D11-C02",
+      "applicability": "not_applicable",
+      "applicability_basis": "Feature flag `participatory_actor_present` is `False`.",
+      "disclosure": "Clause trigger is not_applicable; no underlying-system judgment is implied.",
+      "field_path": "actors.participatory_relations",
+      "evidence_refs": [],
+      "verification_status": "not_applicable",
+      "verification_notes": "Validated against the synthetic fixture structure.",
+      "review_required": true
+    },
+    {
+      "clause_id": "ASR001-D12-C01",
+      "applicability": "applicable",
+      "applicability_basis": "Unconditional candidate clause.",
+      "disclosure": "Synthetic disclosure for Safety, accessibility, and human-limit disclosure.",
+      "field_path": "human_factors.disclosures",
+      "evidence_refs": [
+        "EV-SAFE-001"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Validated against the synthetic fixture structure.",
+      "review_required": true
+    },
+    {
+      "clause_id": "ASR001-D12-C02",
+      "applicability": "applicable",
+      "applicability_basis": "Feature flag `operational_responsibility_material` is `True`.",
+      "disclosure": "Synthetic disclosure for Operational responsibility and limitations.",
+      "field_path": "human_factors.operational_responsibility",
+      "evidence_refs": [
+        "EV-SAFE-001"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Validated against the synthetic fixture structure.",
+      "review_required": true
+    },
+    {
+      "clause_id": "ASR001-D13-C01",
+      "applicability": "applicable",
+      "applicability_basis": "Unconditional candidate clause.",
+      "disclosure": "Synthetic disclosure for Claim classification and source linkage.",
+      "field_path": "evidence.claims",
+      "evidence_refs": [
+        "EV-DECL-001",
+        "EV-GOV-001"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Validated against the synthetic fixture structure.",
+      "review_required": true
+    },
+    {
+      "clause_id": "ASR001-D13-C02",
+      "applicability": "applicable",
+      "applicability_basis": "Unconditional candidate clause.",
+      "disclosure": "Synthetic disclosure for Uncertainty and limitation states.",
+      "field_path": "evidence.uncertainty_states",
+      "evidence_refs": [
+        "EV-DECL-001",
+        "EV-GOV-001"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Validated against the synthetic fixture structure.",
+      "review_required": true
+    },
+    {
+      "clause_id": "ASR001-D14-C01",
+      "applicability": "applicable",
+      "applicability_basis": "Unconditional candidate clause.",
+      "disclosure": "Synthetic disclosure for Governance, version, and responsible authority.",
+      "field_path": "governance.authority_and_versions",
+      "evidence_refs": [
+        "EV-GOV-001"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Validated against the synthetic fixture structure.",
+      "review_required": false
+    },
+    {
+      "clause_id": "ASR001-D14-C02",
+      "applicability": "applicable",
+      "applicability_basis": "Unconditional candidate clause.",
+      "disclosure": "Synthetic disclosure for Correction and supersession.",
+      "field_path": "governance.corrections_and_supersession",
+      "evidence_refs": [
+        "EV-GOV-001"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Validated against the synthetic fixture structure.",
+      "review_required": false
+    },
+    {
+      "clause_id": "ASR001-D15-C01",
+      "applicability": "applicable",
+      "applicability_basis": "Unconditional candidate clause.",
+      "disclosure": "Synthetic disclosure for Profile identity and metadata.",
+      "field_path": "profile_metadata",
+      "evidence_refs": [
+        "EV-DIST-001",
+        "EV-GOV-001"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Validated against the synthetic fixture structure.",
+      "review_required": false
+    },
+    {
+      "clause_id": "ASR001-D15-C02",
+      "applicability": "applicable",
+      "applicability_basis": "Feature flag `machine_readable_distribution_provided` is `True`.",
+      "disclosure": "Synthetic disclosure for Machine-readable distribution and licensing.",
+      "field_path": "distributions",
+      "evidence_refs": [
+        "EV-DIST-001",
+        "EV-GOV-001"
+      ],
+      "verification_status": "verified",
+      "verification_notes": "Validated against the synthetic fixture structure.",
+      "review_required": false
+    }
+  ]
+}
