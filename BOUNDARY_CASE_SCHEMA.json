@@ -1,0 +1,397 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://altissports.local/schemas/boundary-case-v0.1.json",
+  "title": "AltisSports Boundary Case Record",
+  "description": "Machine-readable schema for Sprint 2 boundary-case validation. Supports Altis Atlas and future API exports. Not a scoring standard.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "case_id",
+    "activity",
+    "classified_object",
+    "human_agency",
+    "embodied_interface",
+    "arena",
+    "rules",
+    "tracking",
+    "measurement",
+    "comparability",
+    "officiation",
+    "outcome_openness",
+    "consequence",
+    "spatial_integration",
+    "as3_layer_notes",
+    "evidence",
+    "provisional_finding",
+    "confidence",
+    "access_date"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "0.1"
+    },
+    "case_id": {
+      "type": "string",
+      "pattern": "^BC-[0-9]{3}$"
+    },
+    "activity": {
+      "type": "string",
+      "minLength": 1
+    },
+    "activity_aliases": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "corpus_refs": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Cross-references to BOUNDARY_CASES_CORPUS.md identifiers or labels."
+    },
+    "classified_object": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["primary", "notes"],
+      "properties": {
+        "primary": {
+          "type": "string",
+          "enum": [
+            "activity",
+            "athletic_system",
+            "spatial_athletic_system",
+            "experience",
+            "product",
+            "event",
+            "organization",
+            "hybrid_unresolved"
+          ]
+        },
+        "secondary": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "activity",
+              "athletic_system",
+              "spatial_athletic_system",
+              "experience",
+              "product",
+              "event",
+              "organization"
+            ]
+          }
+        },
+        "notes": { "type": "string" }
+      }
+    },
+    "institutional_recognition": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "widely_recognized_sport",
+            "ioc_recognized_federation",
+            "international_federation_governed",
+            "league_governed_competition",
+            "platform_governed_competition",
+            "research_competition",
+            "mixed_or_disputed",
+            "not_generally_recognized_as_sport",
+            "unknown"
+          ]
+        },
+        "notes": { "type": "string" },
+        "claim_class": {
+          "$ref": "#/$defs/claim_class"
+        }
+      }
+    },
+    "human_agency": {
+      "$ref": "#/$defs/dimension_block"
+    },
+    "embodied_interface": {
+      "$ref": "#/$defs/dimension_block"
+    },
+    "arena": {
+      "$ref": "#/$defs/dimension_block"
+    },
+    "rules": {
+      "$ref": "#/$defs/dimension_block"
+    },
+    "tracking": {
+      "$ref": "#/$defs/dimension_block"
+    },
+    "measurement": {
+      "$ref": "#/$defs/dimension_block"
+    },
+    "comparability": {
+      "$ref": "#/$defs/dimension_block"
+    },
+    "officiation": {
+      "$ref": "#/$defs/dimension_block"
+    },
+    "outcome_openness": {
+      "$ref": "#/$defs/dimension_block"
+    },
+    "consequence": {
+      "$ref": "#/$defs/dimension_block"
+    },
+    "spatial_integration": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "summary", "operational_roles", "claim_class"],
+      "properties": {
+        "status": {
+          "$ref": "#/$defs/presence_status"
+        },
+        "summary": { "type": "string" },
+        "operational_roles": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "enable_performance",
+              "constrain_performance",
+              "measure_performance",
+              "compare_performance",
+              "officiate_performance",
+              "represent_only",
+              "none_observed",
+              "unknown"
+            ]
+          }
+        },
+        "immersion_present": {
+          "type": ["boolean", "null"],
+          "description": "Perceptual immersion may be present without operational spatial integration."
+        },
+        "claim_class": {
+          "$ref": "#/$defs/claim_class"
+        }
+      }
+    },
+    "as3_layer_notes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "L1_human_agency",
+        "L2_embodied_interface",
+        "L3_arena_spatial_state",
+        "L4_constraint_rule_execution",
+        "L5_sensing_tracking",
+        "L6_measurement_comparability",
+        "L7_officiation_outcome",
+        "L8_presence_participation",
+        "L9_safety_accessibility",
+        "L10_governance_evidence"
+      ],
+      "properties": {
+        "L1_human_agency": { "type": "string" },
+        "L2_embodied_interface": { "type": "string" },
+        "L3_arena_spatial_state": { "type": "string" },
+        "L4_constraint_rule_execution": { "type": "string" },
+        "L5_sensing_tracking": { "type": "string" },
+        "L6_measurement_comparability": { "type": "string" },
+        "L7_officiation_outcome": { "type": "string" },
+        "L8_presence_participation": { "type": "string" },
+        "L9_safety_accessibility": { "type": "string" },
+        "L10_governance_evidence": { "type": "string" }
+      }
+    },
+    "candidate_invariants": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "human_agency": { "$ref": "#/$defs/invariant_assessment" },
+        "constraint_integrity": { "$ref": "#/$defs/invariant_assessment" },
+        "comparability": { "$ref": "#/$defs/invariant_assessment" },
+        "outcome_openness": { "$ref": "#/$defs/invariant_assessment" },
+        "consequence": { "$ref": "#/$defs/invariant_assessment" }
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/evidence_record"
+      }
+    },
+    "objections": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "what_would_change_judgment": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "provisional_finding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sport_axis",
+        "spatial_sport_axis",
+        "summary",
+        "claim_class"
+      ],
+      "properties": {
+        "sport_axis": {
+          "type": "string",
+          "enum": [
+            "sport",
+            "sport_like_contest",
+            "training_or_simulation",
+            "digital_competition_not_settled_as_sport",
+            "research_or_engineering_contest",
+            "hybrid",
+            "not_sport",
+            "unresolved"
+          ]
+        },
+        "spatial_sport_axis": {
+          "type": "string",
+          "enum": [
+            "spatial_athletic_system",
+            "partial_spatial_integration",
+            "computational_arena_without_athletic_embodiment_claim",
+            "not_spatial_sport",
+            "unresolved"
+          ]
+        },
+        "summary": { "type": "string" },
+        "claim_class": {
+          "$ref": "#/$defs/claim_class"
+        }
+      }
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["low", "medium", "high"]
+    },
+    "limitations": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "access_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "revision": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "version": { "type": "string" },
+        "notes": { "type": "string" }
+      }
+    }
+  },
+  "$defs": {
+    "claim_class": {
+      "type": "string",
+      "enum": ["C1", "C2", "C3", "C4", "C5", "C6"]
+    },
+    "presence_status": {
+      "type": "string",
+      "enum": [
+        "supported",
+        "partial",
+        "absent",
+        "disputed",
+        "unknown",
+        "not_applicable"
+      ]
+    },
+    "dimension_block": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "summary", "claim_class"],
+      "properties": {
+        "status": {
+          "$ref": "#/$defs/presence_status"
+        },
+        "summary": { "type": "string" },
+        "observables": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "claim_class": {
+          "$ref": "#/$defs/claim_class"
+        }
+      }
+    },
+    "invariant_assessment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "notes"],
+      "properties": {
+        "status": {
+          "$ref": "#/$defs/presence_status"
+        },
+        "notes": { "type": "string" }
+      }
+    },
+    "evidence_record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_title",
+        "publisher",
+        "url",
+        "source_type",
+        "claim_class",
+        "supported_fields",
+        "access_date"
+      ],
+      "properties": {
+        "source_title": { "type": "string" },
+        "publisher": { "type": "string" },
+        "url": { "type": "string" },
+        "publication_or_update_date": {
+          "type": ["string", "null"]
+        },
+        "access_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "source_type": {
+          "type": "string",
+          "enum": [
+            "law_or_regulation",
+            "standard_or_sporting_code",
+            "peer_reviewed",
+            "first_party_technical",
+            "official_announcement",
+            "federation_or_league_rules",
+            "reputable_research",
+            "professional_reporting",
+            "secondary_commentary"
+          ]
+        },
+        "claim_class": {
+          "$ref": "#/$defs/claim_class"
+        },
+        "supported_fields": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1
+        },
+        "limitations": { "type": "string" },
+        "temporal_status": {
+          "type": "string",
+          "enum": [
+            "current",
+            "announced",
+            "pilot",
+            "beta",
+            "discontinued",
+            "superseded",
+            "unverified_current_status",
+            "historical"
+          ]
+        }
+      }
+    }
+  }
+}
