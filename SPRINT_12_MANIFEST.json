@@ -1,0 +1,68 @@
+{
+  "asset": "AltisSports",
+  "sprint": "Sprint 12 — ASR-001 Operator Review Package and Review-Readiness Gate",
+  "version": "0.1",
+  "date": "2026-07-24",
+  "target": "main/root",
+  "authored_files": [
+    "ASR_001_OPERATOR_REVIEW_BRIEF.md",
+    "ASR_001_REVIEWER_GUIDE.md",
+    "ASR_001_REVIEWER_CLASS_MATRIX.md",
+    "ASR_001_REVIEW_QUESTION_BANK_V0.1.json",
+    "ASR_001_CLAUSE_COMMENT_TEMPLATE.md",
+    "ASR_001_REVIEW_COMMENT_SCHEMA_V0.1.json",
+    "ASR_001_REVIEW_ISSUE_TAXONOMY.md",
+    "ASR_001_REVIEWER_EVIDENCE_AND_CONFLICT_DECLARATION.md",
+    "ASR_001_COMMENT_DISPOSITION_PROCEDURE.md",
+    "ASR_001_REVIEW_CHANGE_CONTROL.md",
+    "ASR_001_REVIEW_SAMPLE_SET.md",
+    "ASR_001_REVIEW_EVIDENCE_EXCERPT.md",
+    "ASR_001_REVIEW_INVITATION_TEMPLATE.md",
+    "ASR_001_REVIEW_ACTIVATION_RECORD_TEMPLATE.md",
+    "ASR_001_OPERATOR_REVIEW_READINESS_GATE.md",
+    "build_asr001_operator_review_package.py",
+    "validate_asr001_operator_review_package.py",
+    "run_sprint12.py",
+    "README.md",
+    "SPRINT_12_EXECUTION.md",
+    "SPRINT_12_MANIFEST.json"
+  ],
+  "generated_files": [
+    "ASR_001_OPERATOR_REVIEW_PACKAGE.md",
+    "ASR_001_REVIEW_QUESTION_MATRIX.md",
+    "ASR_001_REVIEW_PACKAGE_INDEX.json",
+    "ASR_001_REVIEW_BASELINE_MANIFEST.json",
+    "SPRINT_12_VALIDATION_RESULT.md",
+    "ASR_001_OPERATOR_REVIEW_READINESS_RESULT.md",
+    "ASR_001_LIMITED_WRITTEN_OPERATOR_REVIEW_ACTIVATION_AUTHORIZATION.md"
+  ],
+  "modified_on_pass": [
+    "DECISION_LOG.md"
+  ],
+  "working_draft_baseline": "ASR-001 v0.2",
+  "reviewer_class_count": 7,
+  "question_count": 43,
+  "core_question_count": 8,
+  "role_specific_question_count_per_class": 5,
+  "review_mode": "limited_asynchronous_written_only",
+  "outreach_performed": false,
+  "public_review": false,
+  "gate_target": "PASS — PACKAGE READY; OWNER ACTIVATION REQUIRED FOR LIMITED WRITTEN OPERATOR REVIEW",
+  "next_sprint": "Sprint 13 — Reviewer Cohort Selection and Limited Written Review Activation",
+  "still_unauthorized_without_owner_activation": [
+    "reviewer contact",
+    "invitation sending",
+    "external comment intake",
+    "reviewer representation"
+  ],
+  "still_prohibited": [
+    "Public Review Draft",
+    "ASR-001 publication",
+    "certification",
+    "public conformance claims",
+    "scores and rankings",
+    "unsupported technical tolerances",
+    "final BCI athletic classification",
+    "industry adoption claims"
+  ]
+}

@@ -10,55 +10,71 @@ The ancient Altis contained sport in physical space. AltisSports defines how spo
 
 ## Current Status
 
-**ASR-001 Working Draft v0.2 has passed internal implementation trials. Operator-review package preparation is authorized only.**
+**ASR-001 Operator Review Package prepared and review-ready; explicit owner activation remains required.**
 
-ASR-001 remains unpublished. No outreach, Public Review, certification, public conformance, score, ranking, safety approval, clinical validation, federation recognition, or industry-adoption claim is authorized.
+ASR-001 remains an unpublished Working Draft. The package has not been sent, no reviewer has been contacted, and no Public Review channel exists.
 
-## Working Draft v0.2
+## Review Baseline
 
-Sprint 11 preserves all thirty clause identifiers and the approved D01–D15 scope.
+The prepared package freezes:
 
-The controlled refinement:
+- ASR-001 Working Draft v0.2;
+- the thirty-clause catalog and clause-to-field map;
+- profile model and schema v0.2;
+- internal-trial results and friction register;
+- reviewer-package artifacts.
 
-- separates clause applicability from evidence sufficiency;
-- allows agency-regime disclosure in autonomous execution without claiming live human performance;
-- allows embodied-demand and biological-control disclosure without settling athletic membership;
-- makes JSON distribution applicability structural;
-- introduces evidence-requirement classes;
-- adds explicit correction and supersession metadata.
+A SHA-256 baseline manifest identifies the exact review reference.
 
-## Internal Trial Set
+## Review Package
 
-Seven profile artifacts test:
+The package contains:
 
-- autonomous robot contest execution;
-- rehabilitation support before and after correction;
-- intentional biological control;
-- human–AI agency handoff;
-- participatory audience influence;
-- remote control of a physical craft.
+- an operator brief;
+- a reviewer guide;
+- seven reviewer classes;
+- 43 questions: eight core and five for each reviewer class;
+- a clause-comment template and JSON Schema;
+- issue taxonomy;
+- evidence and conflict declaration;
+- comment disposition and change control;
+- selected trial profiles and research excerpt;
+- an inactive invitation template;
+- an owner activation record template.
 
-All trials are case-derived synthetic fixtures. They are not provider records and do not establish real-product conformance.
+## Review Mode
 
-## Trial Result
+A future first wave is limited, asynchronous, and written only.
 
-- all seven profiles validate;
-- all thirty clauses are present in every profile;
-- six distinct configuration classes are exercised;
-- correction and supersession validate;
-- eight friction findings are dispositioned;
-- no blocking implementation friction remains;
-- no scope expansion occurred.
+It does not require:
+
+- calls;
+- interviews;
+- public comment;
+- endorsement;
+- adoption;
+- partnership;
+- organizational approval.
+
+## Repository Visibility
+
+Public repository visibility does not activate review and does not make ASR-001 a Public Review Draft.
 
 ## Current Authorization
 
-The next sprint can prepare a written operator-review package.
+The owner can prepare a reviewer roster and decide whether to activate a limited written review.
 
-Still unauthorized:
+Still unauthorized without explicit owner activation:
 
-- sending the package or conducting outreach;
-- opening Public Review;
-- publishing ASR-001;
+- sending invitations;
+- contacting reviewers;
+- collecting external comments;
+- representing anyone as a reviewer, adopter, or endorser.
+
+Still prohibited regardless of package readiness:
+
+- Public Review Draft status;
+- ASR-001 publication;
 - certification or certification marks;
 - public product, sport, or category conformance claims;
 - safety or clinical certification;
@@ -69,9 +85,9 @@ Still unauthorized:
 
 ## Next Governed Move
 
-**Sprint 12 — ASR-001 Operator Review Package and Review-Readiness Gate**
+**Sprint 13 — Reviewer Cohort Selection and Limited Written Review Activation**
 
-The next sprint will prepare review materials, operator-class questions, issue taxonomy, evidence boundaries, and comment-disposition procedures. It will not initiate external review.
+Sprint 13 begins only after an explicit owner decision. It will document the roster, class coverage, conflict declarations, written channel, frozen baseline, invitation status, and issue-intake procedure.
 
 ## Governing Rule
 

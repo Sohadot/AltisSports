@@ -1,0 +1,127 @@
+{
+  "manifest_id": "ASR001-OPERATOR-REVIEW-BASELINE",
+  "version": "0.1",
+  "created_date": "2026-07-24",
+  "working_draft": "ASR-001 v0.2",
+  "review_status": "prepared_not_activated",
+  "public_review_status": "not_public_review",
+  "file_count": 23,
+  "files": [
+    {
+      "path": "ASR_001_WORKING_DRAFT_V0.2.md",
+      "sha256": "f85fced6304f686c004e66c574de95c0f9ec6bc7a43225dfdcb6e2320bae9cb2",
+      "role": "working_draft_baseline"
+    },
+    {
+      "path": "ASR_001_NORMATIVE_CLAUSE_CATALOG_V0.2.json",
+      "sha256": "058ee5a299a674c3cd246210f93d22471d9e13600b0d24aa20c05cff8bea0d0c",
+      "role": "working_draft_baseline"
+    },
+    {
+      "path": "ASR_001_CLAUSE_TO_FIELD_MAP_V0.2.json",
+      "sha256": "540c16e04b24bea713ad91307b612bf0435f2e9b081669df1958478cd049de13",
+      "role": "working_draft_baseline"
+    },
+    {
+      "path": "ASR_001_PROFILE_MODEL_V0.2.json",
+      "sha256": "bd02655409694655ff81411af9df1ebe7be68759b05349072bc17a70047d9b15",
+      "role": "working_draft_baseline"
+    },
+    {
+      "path": "ASR_001_PROFILE_SCHEMA_V0.2.json",
+      "sha256": "f32e792c2730ceaf9b1dbaf6fc86093ce66eb076cd79fa05ca6cc36cfa095910",
+      "role": "working_draft_baseline"
+    },
+    {
+      "path": "ASR_001_INTERNAL_TRIAL_RESULTS.md",
+      "sha256": "90c18d7342b966abf389dcf0713eb2af861b037d2c3ca559f50f81856adf518e",
+      "role": "working_draft_baseline"
+    },
+    {
+      "path": "ASR_001_CLAUSE_FRICTION_REGISTER_V0.1.json",
+      "sha256": "7087c2ab32ea3a65b4323faca8c72154eaaa094956e026f775fc9bcd9c54b5ea",
+      "role": "working_draft_baseline"
+    },
+    {
+      "path": "ASR_001_INTERNAL_TRIAL_INDEX_V0.2.json",
+      "sha256": "42a88a161c6efc74468039897266ad452b1f875dcedad3f10f4e9e4281eeb19f",
+      "role": "working_draft_baseline"
+    },
+    {
+      "path": "ASR_001_OPERATOR_REVIEW_BRIEF.md",
+      "sha256": "cdc049a525fd35047ed5957e77960cfec891077a8f3be5547fdb08d31e69190c",
+      "role": "review_package_source"
+    },
+    {
+      "path": "ASR_001_REVIEWER_GUIDE.md",
+      "sha256": "4bda5dc943de7fcc1d4e5cc74831388034eccbf50bee0c12f9fe039f9fdd273e",
+      "role": "review_package_source"
+    },
+    {
+      "path": "ASR_001_REVIEWER_CLASS_MATRIX.md",
+      "sha256": "3dce4f33b91e1bf98b8d3f7e6865b7e17307efed107ea3d3bc63e33efa2ad68d",
+      "role": "review_package_source"
+    },
+    {
+      "path": "ASR_001_REVIEW_QUESTION_BANK_V0.1.json",
+      "sha256": "3d7cca4e44c9f5d3dec6e3290dc1f5c504885b42dceebcc91bf884a46fc133d5",
+      "role": "review_package_source"
+    },
+    {
+      "path": "ASR_001_CLAUSE_COMMENT_TEMPLATE.md",
+      "sha256": "cba2a9499ac33688b4a6298820753746f40158e6a6173aa08a87e439bedcd365",
+      "role": "review_package_source"
+    },
+    {
+      "path": "ASR_001_REVIEW_COMMENT_SCHEMA_V0.1.json",
+      "sha256": "9ba167aa5c61e0f80bb2a663671daff7748c3bf94556760e479c4d0bd557148c",
+      "role": "review_package_source"
+    },
+    {
+      "path": "ASR_001_REVIEW_ISSUE_TAXONOMY.md",
+      "sha256": "d26a933188e6bf470e3bc963a923bf0a285118864a7bc58da65ceed099f69b93",
+      "role": "review_package_source"
+    },
+    {
+      "path": "ASR_001_REVIEWER_EVIDENCE_AND_CONFLICT_DECLARATION.md",
+      "sha256": "344250d2f38df4aae747e70dd46d8fbecc4784cff487d037d2ee3d47d91b121d",
+      "role": "review_package_source"
+    },
+    {
+      "path": "ASR_001_COMMENT_DISPOSITION_PROCEDURE.md",
+      "sha256": "48481ff1cce242646b8c3cd8a9efe3508dc880971c6201bc99f3e2157117eea2",
+      "role": "review_package_source"
+    },
+    {
+      "path": "ASR_001_REVIEW_CHANGE_CONTROL.md",
+      "sha256": "22a73561f75f4b85d80b9cc39998f620b91ef0c716120355e0b5187be88e5408",
+      "role": "review_package_source"
+    },
+    {
+      "path": "ASR_001_REVIEW_SAMPLE_SET.md",
+      "sha256": "b78ff2cec343e94fdf26cb9b2b088fc5ea4a23ceb62f02f05ef16c9dda826553",
+      "role": "review_package_source"
+    },
+    {
+      "path": "ASR_001_REVIEW_EVIDENCE_EXCERPT.md",
+      "sha256": "d7e587443f67250b04929fce040779d5e47143bc12830db96128e9842d81b3c0",
+      "role": "review_package_source"
+    },
+    {
+      "path": "ASR_001_REVIEW_INVITATION_TEMPLATE.md",
+      "sha256": "751c4e6b538a0393d4124a06234c900c2128809e98e9885c50af01ac4a68bf45",
+      "role": "review_package_source"
+    },
+    {
+      "path": "ASR_001_REVIEW_ACTIVATION_RECORD_TEMPLATE.md",
+      "sha256": "4a32098e4f65f1461f2ba510812f8733a2904abd451edd0cdf92701b4cff8729",
+      "role": "review_package_source"
+    },
+    {
+      "path": "ASR_001_OPERATOR_REVIEW_READINESS_GATE.md",
+      "sha256": "884308009ef9f2334e4f6e20fc144188d9054d97432b1f90ceccb5d228c36dea",
+      "role": "review_package_source"
+    }
+  ],
+  "interpretation": "Hashes freeze the review reference. Repository visibility does not activate review or create Public Review Draft status."
+}

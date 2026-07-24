@@ -339,3 +339,31 @@ The approved scope and candidate architecture now have clause-level expression a
 ### Rationale
 
 Internal implementation exposed representational and verification defects that syntax-only validation could not reveal. The bounded v0.2 refinement resolves those defects while preserving all identifiers, exclusions, uncertainty, and historical artifacts. The next useful step is to prepare a review package that lets relevant operators challenge the Working Draft without prematurely opening Public Review or claiming adoption.
+
+---
+
+## DEC-015 — ASR-001 Operator Review Readiness and Owner-Activation Boundary
+
+**Status:** Ratified upon Sprint 12 PASS  
+**Version:** 1.0  
+**Date:** 2026-07-24  
+**Evidence basis:** `ASR_001_OPERATOR_REVIEW_PACKAGE.md`, `ASR_001_REVIEW_BASELINE_MANIFEST.json`, and `ASR_001_OPERATOR_REVIEW_READINESS_RESULT.md`
+
+### Decision
+
+1. The ASR-001 Operator Review Package v0.1 is accepted as complete and review-ready.
+2. The review baseline is ASR-001 Working Draft v0.2 together with its thirty-clause catalog, clause-to-field map, profile model, schema, internal-trial results, and frozen SHA-256 manifest.
+3. The prepared package contains seven reviewer classes and forty-three questions: eight core questions and five role-specific questions for each class.
+4. The permitted review mode is limited, asynchronous, and written only.
+5. Calls, interviews, open public-comment channels, and implied endorsement or adoption are outside the permitted first-wave mode.
+6. Public repository visibility does not activate review, create Public Review Draft status, invite unrestricted comment, or establish adoption.
+7. Review comments are clause-addressable, conflict-disclosed, evidence-classified, and dispositioned through written change control.
+8. Review participation does not constitute endorsement, adoption, partnership, federation recognition, certification, or approval of the category thesis.
+9. No reviewer contact or invitation has occurred through Sprint 12.
+10. A limited written review can begin only after the owner records an explicit activation decision, reviewer roster, class coverage, conflict-declaration identifiers, written channel, and frozen baseline.
+11. The first-wave coverage design includes at least four reviewer classes: an operational class, a technical or measurement class, a human-impact or methodology class, and evidence/data governance.
+12. Public Review Draft status, ASR-001 publication, certification, public conformance claims, scores, rankings, unsupported remote-synchronous tolerances, final BCI athletic classification, federation-recognition claims, and industry-adoption claims remain unauthorized.
+
+### Rationale
+
+The internal Working Draft now has sufficient structure, trial evidence, question coverage, comment intake, issue classification, conflict disclosure, and change control for a bounded operator review. Readiness does not justify automatic outreach. Owner activation is retained as a separate governance act so that reviewer selection, written-only mode, baseline integrity, and non-endorsement boundaries remain deliberate.

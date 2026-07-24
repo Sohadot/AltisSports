@@ -1,0 +1,104 @@
+{
+  "package_id": "ASR001-OPERATOR-REVIEW-PACKAGE",
+  "version": "0.1",
+  "status": "ready_subject_to_gate_owner_activation_required",
+  "working_draft_baseline": "ASR-001 v0.2",
+  "review_mode": "limited_asynchronous_written_only",
+  "public_review": false,
+  "outreach_performed": false,
+  "reviewer_classes": [
+    {
+      "class_id": "RC-01",
+      "name": "Sport governance and integrity"
+    },
+    {
+      "class_id": "RC-02",
+      "name": "Competition operations"
+    },
+    {
+      "class_id": "RC-03",
+      "name": "XR and spatial-system engineering"
+    },
+    {
+      "class_id": "RC-04",
+      "name": "Performance measurement"
+    },
+    {
+      "class_id": "RC-05",
+      "name": "Accessibility and adaptive sport"
+    },
+    {
+      "class_id": "RC-06",
+      "name": "Research methodology"
+    },
+    {
+      "class_id": "RC-07",
+      "name": "Evidence and data governance"
+    }
+  ],
+  "question_summary": {
+    "total": 43,
+    "core": 8,
+    "per_class": {
+      "RC-01": 5,
+      "RC-02": 5,
+      "RC-03": 5,
+      "RC-04": 5,
+      "RC-05": 5,
+      "RC-06": 5,
+      "RC-07": 5
+    },
+    "domain_coverage": [
+      "D01",
+      "D02",
+      "D03",
+      "D04",
+      "D05",
+      "D06",
+      "D07",
+      "D08",
+      "D09",
+      "D10",
+      "D11",
+      "D12",
+      "D13",
+      "D14",
+      "D15"
+    ]
+  },
+  "package_documents": [
+    "ASR_001_OPERATOR_REVIEW_BRIEF.md",
+    "ASR_001_REVIEWER_GUIDE.md",
+    "ASR_001_REVIEWER_CLASS_MATRIX.md",
+    "ASR_001_REVIEW_QUESTION_BANK_V0.1.json",
+    "ASR_001_CLAUSE_COMMENT_TEMPLATE.md",
+    "ASR_001_REVIEW_COMMENT_SCHEMA_V0.1.json",
+    "ASR_001_REVIEW_ISSUE_TAXONOMY.md",
+    "ASR_001_REVIEWER_EVIDENCE_AND_CONFLICT_DECLARATION.md",
+    "ASR_001_COMMENT_DISPOSITION_PROCEDURE.md",
+    "ASR_001_REVIEW_CHANGE_CONTROL.md",
+    "ASR_001_REVIEW_SAMPLE_SET.md",
+    "ASR_001_REVIEW_EVIDENCE_EXCERPT.md",
+    "ASR_001_REVIEW_INVITATION_TEMPLATE.md",
+    "ASR_001_REVIEW_ACTIVATION_RECORD_TEMPLATE.md",
+    "ASR_001_OPERATOR_REVIEW_READINESS_GATE.md",
+    "ASR_001_REVIEW_QUESTION_MATRIX.md",
+    "ASR_001_REVIEW_BASELINE_MANIFEST.json",
+    "ASR_001_OPERATOR_REVIEW_PACKAGE.md"
+  ],
+  "baseline_manifest": "ASR001-OPERATOR-REVIEW-BASELINE",
+  "activation_condition": "Explicit owner decision after reviewer roster, coverage, conflict declarations, and written-only channel are documented.",
+  "prohibited_claims": [
+    "endorsement",
+    "adoption",
+    "partnership",
+    "federation_recognition",
+    "certification",
+    "public_conformance",
+    "safety_approval",
+    "clinical_validation",
+    "score",
+    "ranking",
+    "industry_adoption"
+  ]
+}

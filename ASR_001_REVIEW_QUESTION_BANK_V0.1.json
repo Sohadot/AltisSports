@@ -1,0 +1,836 @@
+{
+  "bank_id": "ASR001-OPERATOR-REVIEW-QUESTIONS",
+  "version": "0.1",
+  "status": "prepared_not_activated",
+  "working_draft_baseline": "ASR-001 v0.2",
+  "reviewer_classes": [
+    "RC-01",
+    "RC-02",
+    "RC-03",
+    "RC-04",
+    "RC-05",
+    "RC-06",
+    "RC-07"
+  ],
+  "question_count": 43,
+  "questions": [
+    {
+      "question_id": "RQ-CORE-01",
+      "audience": "all",
+      "question": "Is the bounded profile subject identifiable without silently generalizing from one configuration to a product family, organization, activity, or sport?",
+      "target_domains": [
+        "D01"
+      ],
+      "target_clauses": [
+        "ASR001-D01-C01",
+        "ASR001-D01-C02"
+      ],
+      "expected_issue_types": [
+        "object_lock_failure",
+        "scope_violation"
+      ],
+      "response_type": "yes_no_with_rationale",
+      "criticality": "blocking"
+    },
+    {
+      "question_id": "RQ-CORE-02",
+      "audience": "all",
+      "question": "Can you distinguish clause applicability from missing, partial, disputed, or unavailable evidence in the reviewed examples?",
+      "target_domains": [
+        "D02",
+        "D13"
+      ],
+      "target_clauses": [
+        "ASR001-D02-C01",
+        "ASR001-D13-C02"
+      ],
+      "expected_issue_types": [
+        "applicability_defect",
+        "evidence_state_defect"
+      ],
+      "response_type": "yes_no_with_example",
+      "criticality": "blocking"
+    },
+    {
+      "question_id": "RQ-CORE-03",
+      "audience": "all",
+      "question": "Does any candidate clause imply certification, endorsement, quality ranking, safety approval, clinical validation, or category membership beyond the evidence profile?",
+      "target_domains": [
+        "D09",
+        "D12",
+        "D13",
+        "D14"
+      ],
+      "target_clauses": [],
+      "expected_issue_types": [
+        "conformance_boundary_leak",
+        "safety_boundary_leak",
+        "scope_violation"
+      ],
+      "response_type": "clause_list_with_rationale",
+      "criticality": "blocking"
+    },
+    {
+      "question_id": "RQ-CORE-04",
+      "audience": "all",
+      "question": "Is each assigned clause specific enough to verify without requiring undisclosed assumptions or private organizational knowledge?",
+      "target_domains": [
+        "D01",
+        "D02",
+        "D03",
+        "D04",
+        "D05",
+        "D06",
+        "D07",
+        "D08",
+        "D09",
+        "D10",
+        "D11",
+        "D12",
+        "D13",
+        "D14",
+        "D15"
+      ],
+      "target_clauses": [],
+      "expected_issue_types": [
+        "unverifiable_requirement",
+        "ambiguity"
+      ],
+      "response_type": "clause_list_with_proposed_text",
+      "criticality": "major"
+    },
+    {
+      "question_id": "RQ-CORE-05",
+      "audience": "all",
+      "question": "Do the uncertainty states preserve genuine unknowns and disputes without converting them into failure, absence, or a numerical judgment?",
+      "target_domains": [
+        "D13"
+      ],
+      "target_clauses": [
+        "ASR001-D13-C02"
+      ],
+      "expected_issue_types": [
+        "evidence_state_defect",
+        "conformance_boundary_leak"
+      ],
+      "response_type": "yes_no_with_rationale",
+      "criticality": "blocking"
+    },
+    {
+      "question_id": "RQ-CORE-06",
+      "audience": "all",
+      "question": "Are any two clauses duplicative enough to create inconsistent disclosures or unnecessary review burden?",
+      "target_domains": [
+        "D01",
+        "D02",
+        "D03",
+        "D04",
+        "D05",
+        "D06",
+        "D07",
+        "D08",
+        "D09",
+        "D10",
+        "D11",
+        "D12",
+        "D13",
+        "D14",
+        "D15"
+      ],
+      "target_clauses": [],
+      "expected_issue_types": [
+        "duplicate_obligation",
+        "implementation_burden"
+      ],
+      "response_type": "clause_pairs_with_rationale",
+      "criticality": "major"
+    },
+    {
+      "question_id": "RQ-CORE-07",
+      "audience": "all",
+      "question": "Does the current profile model contain every field needed to satisfy the assigned clauses, without inheriting research-only concepts from the boundary corpus?",
+      "target_domains": [
+        "D15"
+      ],
+      "target_clauses": [
+        "ASR001-D15-C01",
+        "ASR001-D15-C02"
+      ],
+      "expected_issue_types": [
+        "missing_field",
+        "implementation_schema_defect"
+      ],
+      "response_type": "field_list_with_mapping",
+      "criticality": "major"
+    },
+    {
+      "question_id": "RQ-CORE-08",
+      "audience": "all",
+      "question": "Would the correction and supersession mechanism preserve a trustworthy history in your operational setting?",
+      "target_domains": [
+        "D14"
+      ],
+      "target_clauses": [
+        "ASR001-D14-C02"
+      ],
+      "expected_issue_types": [
+        "lifecycle_gap",
+        "implementation_burden"
+      ],
+      "response_type": "yes_no_with_operational_scenario",
+      "criticality": "major"
+    },
+    {
+      "question_id": "RQ-RC01-01",
+      "audience": "RC-01",
+      "question": "Do D01 object-lock clauses prevent federation, event, platform, and activity findings from being conflated?",
+      "target_domains": [
+        "D01"
+      ],
+      "target_clauses": [
+        "ASR001-D01-C01",
+        "ASR001-D01-C02"
+      ],
+      "expected_issue_types": [
+        "object_lock_failure",
+        "terminology_collision"
+      ],
+      "response_type": "yes_no_with_case",
+      "criticality": "blocking"
+    },
+    {
+      "question_id": "RQ-RC01-02",
+      "audience": "RC-01",
+      "question": "Are rule authority and operative rule execution sufficiently separated for integrity review?",
+      "target_domains": [
+        "D06"
+      ],
+      "target_clauses": [
+        "ASR001-D06-C01",
+        "ASR001-D06-C02"
+      ],
+      "expected_issue_types": [
+        "missing_disclosure",
+        "verification_gap"
+      ],
+      "response_type": "yes_no_with_proposed_text",
+      "criticality": "major"
+    },
+    {
+      "question_id": "RQ-RC01-03",
+      "audience": "RC-01",
+      "question": "Can human, software, operator, and hybrid officiation authority be reconstructed from D09 disclosures?",
+      "target_domains": [
+        "D09"
+      ],
+      "target_clauses": [
+        "ASR001-D09-C01"
+      ],
+      "expected_issue_types": [
+        "missing_disclosure",
+        "ambiguity"
+      ],
+      "response_type": "yes_no_with_operational_example",
+      "criticality": "major"
+    },
+    {
+      "question_id": "RQ-RC01-04",
+      "audience": "RC-01",
+      "question": "Does the audience-participation example preserve the distinction between rule influence and Performance Agency?",
+      "target_domains": [
+        "D11"
+      ],
+      "target_clauses": [
+        "ASR001-D11-C02"
+      ],
+      "expected_issue_types": [
+        "agency_boundary_defect",
+        "terminology_collision"
+      ],
+      "response_type": "yes_no_with_rationale",
+      "criticality": "blocking"
+    },
+    {
+      "question_id": "RQ-RC01-05",
+      "audience": "RC-01",
+      "question": "Do governance and claim-classification clauses prevent review participation from being represented as recognition or endorsement?",
+      "target_domains": [
+        "D13",
+        "D14"
+      ],
+      "target_clauses": [
+        "ASR001-D13-C01",
+        "ASR001-D14-C01"
+      ],
+      "expected_issue_types": [
+        "conformance_boundary_leak",
+        "conflict_disclosure_gap"
+      ],
+      "response_type": "yes_no_with_rationale",
+      "criticality": "blocking"
+    },
+    {
+      "question_id": "RQ-RC02-01",
+      "audience": "RC-02",
+      "question": "Are operating context, site roles, dependencies, and responsibility assignments sufficient to run an event review?",
+      "target_domains": [
+        "D02",
+        "D12"
+      ],
+      "target_clauses": [
+        "ASR001-D02-C01",
+        "ASR001-D02-C02",
+        "ASR001-D12-C02"
+      ],
+      "expected_issue_types": [
+        "missing_disclosure",
+        "implementation_burden"
+      ],
+      "response_type": "gap_list",
+      "criticality": "major"
+    },
+    {
+      "question_id": "RQ-RC02-02",
+      "audience": "RC-02",
+      "question": "Does D05 distinguish co-location, remote control, remote supervision, and remote synchronous competition in operationally useful terms?",
+      "target_domains": [
+        "D05"
+      ],
+      "target_clauses": [
+        "ASR001-D05-C01",
+        "ASR001-D05-C02"
+      ],
+      "expected_issue_types": [
+        "terminology_collision",
+        "applicability_defect"
+      ],
+      "response_type": "yes_no_with_scenario",
+      "criticality": "blocking"
+    },
+    {
+      "question_id": "RQ-RC02-03",
+      "audience": "RC-02",
+      "question": "Can failure paths across sensing, network, equipment, and officiation be recorded without inventing technical tolerances?",
+      "target_domains": [
+        "D07",
+        "D09"
+      ],
+      "target_clauses": [
+        "ASR001-D07-C02",
+        "ASR001-D09-C01"
+      ],
+      "expected_issue_types": [
+        "missing_disclosure",
+        "scope_violation"
+      ],
+      "response_type": "yes_no_with_gap_list",
+      "criticality": "major"
+    },
+    {
+      "question_id": "RQ-RC02-04",
+      "audience": "RC-02",
+      "question": "Are appeal, correction, and emergency-responsibility disclosures separated clearly enough for event operations?",
+      "target_domains": [
+        "D09",
+        "D12",
+        "D14"
+      ],
+      "target_clauses": [
+        "ASR001-D09-C01",
+        "ASR001-D12-C02",
+        "ASR001-D14-C02"
+      ],
+      "expected_issue_types": [
+        "lifecycle_gap",
+        "missing_disclosure"
+      ],
+      "response_type": "clause_comment",
+      "criticality": "major"
+    },
+    {
+      "question_id": "RQ-RC02-05",
+      "audience": "RC-02",
+      "question": "Would applying all relevant clauses create operational burden disproportionate to the profile's evidence purpose?",
+      "target_domains": [
+        "D02",
+        "D05",
+        "D06",
+        "D07",
+        "D09",
+        "D12",
+        "D14"
+      ],
+      "target_clauses": [],
+      "expected_issue_types": [
+        "implementation_burden",
+        "duplicate_obligation"
+      ],
+      "response_type": "burden_description_with_reduction",
+      "criticality": "major"
+    },
+    {
+      "question_id": "RQ-RC03-01",
+      "audience": "RC-03",
+      "question": "Are performance-interface channels and embodied-demand disclosures technically distinguishable in real XR or spatial systems?",
+      "target_domains": [
+        "D04"
+      ],
+      "target_clauses": [
+        "ASR001-D04-C01",
+        "ASR001-D04-C02"
+      ],
+      "expected_issue_types": [
+        "terminology_collision",
+        "missing_field"
+      ],
+      "response_type": "yes_no_with_field_proposal",
+      "criticality": "major"
+    },
+    {
+      "question_id": "RQ-RC03-02",
+      "audience": "RC-03",
+      "question": "Does the arena model capture physical, computational, unified, and distributed topology without forcing one architecture?",
+      "target_domains": [
+        "D05"
+      ],
+      "target_clauses": [
+        "ASR001-D05-C01",
+        "ASR001-D05-C02"
+      ],
+      "expected_issue_types": [
+        "implementation_schema_defect",
+        "scope_violation"
+      ],
+      "response_type": "yes_no_with_architecture_example",
+      "criticality": "major"
+    },
+    {
+      "question_id": "RQ-RC03-03",
+      "audience": "RC-03",
+      "question": "Is the distinction between direct observation, inferred state, and provider-declared state implementable?",
+      "target_domains": [
+        "D07"
+      ],
+      "target_clauses": [
+        "ASR001-D07-C01"
+      ],
+      "expected_issue_types": [
+        "verification_gap",
+        "missing_field"
+      ],
+      "response_type": "yes_no_with_data_flow",
+      "criticality": "major"
+    },
+    {
+      "question_id": "RQ-RC03-04",
+      "audience": "RC-03",
+      "question": "Can every claimed spatial-integration function be linked to a mechanism and failure effect without creating a hidden spatiality score?",
+      "target_domains": [
+        "D10"
+      ],
+      "target_clauses": [
+        "ASR001-D10-C01",
+        "ASR001-D10-C02"
+      ],
+      "expected_issue_types": [
+        "conformance_boundary_leak",
+        "unverifiable_requirement"
+      ],
+      "response_type": "yes_no_with_counterexample",
+      "criticality": "blocking"
+    },
+    {
+      "question_id": "RQ-RC03-05",
+      "audience": "RC-03",
+      "question": "Is the v0.2 JSON model extensible without allowing extensions to redefine core semantics?",
+      "target_domains": [
+        "D15"
+      ],
+      "target_clauses": [
+        "ASR001-D15-C02"
+      ],
+      "expected_issue_types": [
+        "machine_readability_gap",
+        "implementation_schema_defect"
+      ],
+      "response_type": "schema_comment",
+      "criticality": "major"
+    },
+    {
+      "question_id": "RQ-RC04-01",
+      "audience": "RC-04",
+      "question": "Does the performance-window clause support valid attribution without claiming a causal score?",
+      "target_domains": [
+        "D03"
+      ],
+      "target_clauses": [
+        "ASR001-D03-C01"
+      ],
+      "expected_issue_types": [
+        "causal_attribution_leak",
+        "ambiguity"
+      ],
+      "response_type": "yes_no_with_measurement_example",
+      "criticality": "blocking"
+    },
+    {
+      "question_id": "RQ-RC04-02",
+      "audience": "RC-04",
+      "question": "Are Agency Segments sufficient to describe changing control while preserving uncertainty about contribution?",
+      "target_domains": [
+        "D03"
+      ],
+      "target_clauses": [
+        "ASR001-D03-C02"
+      ],
+      "expected_issue_types": [
+        "missing_field",
+        "causal_attribution_leak"
+      ],
+      "response_type": "yes_no_with_segment_example",
+      "criticality": "major"
+    },
+    {
+      "question_id": "RQ-RC04-03",
+      "audience": "RC-04",
+      "question": "Do metric records require enough information about units, calibration, uncertainty, and intended use?",
+      "target_domains": [
+        "D08"
+      ],
+      "target_clauses": [
+        "ASR001-D08-C01"
+      ],
+      "expected_issue_types": [
+        "missing_disclosure",
+        "verification_gap"
+      ],
+      "response_type": "field_gap_list",
+      "criticality": "blocking"
+    },
+    {
+      "question_id": "RQ-RC04-04",
+      "audience": "RC-04",
+      "question": "Are comparability conditions specific enough to prevent unsupported equivalence across versions, equipment, sites, or participant classes?",
+      "target_domains": [
+        "D08"
+      ],
+      "target_clauses": [
+        "ASR001-D08-C02"
+      ],
+      "expected_issue_types": [
+        "comparability_defect",
+        "scope_violation"
+      ],
+      "response_type": "yes_no_with_counterexample",
+      "criticality": "blocking"
+    },
+    {
+      "question_id": "RQ-RC04-05",
+      "audience": "RC-04",
+      "question": "Can outcome and consequence disclosures distinguish contest results from training, assessment, or rehabilitation outcomes?",
+      "target_domains": [
+        "D09"
+      ],
+      "target_clauses": [
+        "ASR001-D09-C02"
+      ],
+      "expected_issue_types": [
+        "terminology_collision",
+        "clinical_boundary_leak"
+      ],
+      "response_type": "yes_no_with_proposed_text",
+      "criticality": "major"
+    },
+    {
+      "question_id": "RQ-RC05-01",
+      "audience": "RC-05",
+      "question": "Do the clauses treat adaptive equipment and classification context as first-class conditions rather than exceptions?",
+      "target_domains": [
+        "D02",
+        "D08",
+        "D12"
+      ],
+      "target_clauses": [
+        "ASR001-D02-C01",
+        "ASR001-D08-C02",
+        "ASR001-D12-C01"
+      ],
+      "expected_issue_types": [
+        "accessibility_gap",
+        "missing_disclosure"
+      ],
+      "response_type": "yes_no_with_gap_list",
+      "criticality": "blocking"
+    },
+    {
+      "question_id": "RQ-RC05-02",
+      "audience": "RC-05",
+      "question": "Can a rehabilitation support configuration be profiled without implying sport status or clinical efficacy?",
+      "target_domains": [
+        "D02",
+        "D09",
+        "D12"
+      ],
+      "target_clauses": [
+        "ASR001-D02-C01",
+        "ASR001-D09-C02",
+        "ASR001-D12-C01"
+      ],
+      "expected_issue_types": [
+        "clinical_boundary_leak",
+        "scope_violation"
+      ],
+      "response_type": "yes_no_with_rationale",
+      "criticality": "blocking"
+    },
+    {
+      "question_id": "RQ-RC05-03",
+      "audience": "RC-05",
+      "question": "Does D04 support diverse bodily and biological-control channels without imposing a universal embodiment threshold?",
+      "target_domains": [
+        "D04"
+      ],
+      "target_clauses": [
+        "ASR001-D04-C02"
+      ],
+      "expected_issue_types": [
+        "accessibility_gap",
+        "conformance_boundary_leak"
+      ],
+      "response_type": "yes_no_with_counterexample",
+      "criticality": "blocking"
+    },
+    {
+      "question_id": "RQ-RC05-04",
+      "audience": "RC-05",
+      "question": "Are responsibility and limitation disclosures sufficient for supervised, assisted, and adaptive participation?",
+      "target_domains": [
+        "D11",
+        "D12"
+      ],
+      "target_clauses": [
+        "ASR001-D11-C01",
+        "ASR001-D12-C02"
+      ],
+      "expected_issue_types": [
+        "missing_disclosure",
+        "safety_boundary_leak"
+      ],
+      "response_type": "gap_list",
+      "criticality": "major"
+    },
+    {
+      "question_id": "RQ-RC05-05",
+      "audience": "RC-05",
+      "question": "Could any wording be interpreted as universal usability, accessibility certification, or medical advice?",
+      "target_domains": [
+        "D12",
+        "D13"
+      ],
+      "target_clauses": [
+        "ASR001-D12-C01",
+        "ASR001-D13-C01"
+      ],
+      "expected_issue_types": [
+        "accessibility_gap",
+        "safety_boundary_leak",
+        "clinical_boundary_leak"
+      ],
+      "response_type": "clause_list_with_rationale",
+      "criticality": "blocking"
+    },
+    {
+      "question_id": "RQ-RC06-01",
+      "audience": "RC-06",
+      "question": "Are the constructs Performance Agency, Embodied Demand, Operational Spatial Integration, and Consequence sufficiently discriminant?",
+      "target_domains": [
+        "D03",
+        "D04",
+        "D09",
+        "D10"
+      ],
+      "target_clauses": [],
+      "expected_issue_types": [
+        "construct_validity_gap",
+        "terminology_collision"
+      ],
+      "response_type": "construct_review",
+      "criticality": "blocking"
+    },
+    {
+      "question_id": "RQ-RC06-02",
+      "audience": "RC-06",
+      "question": "Does the evidence model distinguish direct fact, attributed claim, synthesis, interpretation, proposition, and forecast clearly enough?",
+      "target_domains": [
+        "D13"
+      ],
+      "target_clauses": [
+        "ASR001-D13-C01"
+      ],
+      "expected_issue_types": [
+        "evidence_classification_gap",
+        "ambiguity"
+      ],
+      "response_type": "yes_no_with_reclassification_example",
+      "criticality": "major"
+    },
+    {
+      "question_id": "RQ-RC06-03",
+      "audience": "RC-06",
+      "question": "Do internal trial examples risk becoming hidden precedents or weights for category membership?",
+      "target_domains": [
+        "D10",
+        "D13"
+      ],
+      "target_clauses": [
+        "ASR001-D10-C01",
+        "ASR001-D13-C02"
+      ],
+      "expected_issue_types": [
+        "hidden_scoring_risk",
+        "conformance_boundary_leak"
+      ],
+      "response_type": "yes_no_with_rationale",
+      "criticality": "blocking"
+    },
+    {
+      "question_id": "RQ-RC06-04",
+      "audience": "RC-06",
+      "question": "Are unknown, disputed, partial, absent, and not-evidenced states epistemically distinct in the current model?",
+      "target_domains": [
+        "D13"
+      ],
+      "target_clauses": [
+        "ASR001-D13-C02"
+      ],
+      "expected_issue_types": [
+        "evidence_state_defect",
+        "terminology_collision"
+      ],
+      "response_type": "state_review",
+      "criticality": "blocking"
+    },
+    {
+      "question_id": "RQ-RC06-05",
+      "audience": "RC-06",
+      "question": "Is any clause broader than the evidence base represented by BC-001–BC-020 and the internal trials?",
+      "target_domains": [
+        "D01",
+        "D02",
+        "D03",
+        "D04",
+        "D05",
+        "D06",
+        "D07",
+        "D08",
+        "D09",
+        "D10",
+        "D11",
+        "D12",
+        "D13",
+        "D14",
+        "D15"
+      ],
+      "target_clauses": [],
+      "expected_issue_types": [
+        "scope_violation",
+        "evidence_burden_defect"
+      ],
+      "response_type": "clause_list_with_evidence_gap",
+      "criticality": "blocking"
+    },
+    {
+      "question_id": "RQ-RC07-01",
+      "audience": "RC-07",
+      "question": "Are source provenance, temporal status, access date, limitation, and claim class sufficient for audit and reuse?",
+      "target_domains": [
+        "D13",
+        "D15"
+      ],
+      "target_clauses": [
+        "ASR001-D13-C01",
+        "ASR001-D15-C01"
+      ],
+      "expected_issue_types": [
+        "evidence_classification_gap",
+        "machine_readability_gap"
+      ],
+      "response_type": "field_gap_list",
+      "criticality": "blocking"
+    },
+    {
+      "question_id": "RQ-RC07-02",
+      "audience": "RC-07",
+      "question": "Does correction and supersession preserve a complete audit trail without silently overwriting material changes?",
+      "target_domains": [
+        "D14"
+      ],
+      "target_clauses": [
+        "ASR001-D14-C02"
+      ],
+      "expected_issue_types": [
+        "lifecycle_gap",
+        "verification_gap"
+      ],
+      "response_type": "yes_no_with_audit_scenario",
+      "criticality": "blocking"
+    },
+    {
+      "question_id": "RQ-RC07-03",
+      "audience": "RC-07",
+      "question": "Are biometric, physiological, identity, telemetry, and reviewer data governance concerns visible without pretending ASR-001 is a privacy standard?",
+      "target_domains": [
+        "D07",
+        "D12",
+        "D14"
+      ],
+      "target_clauses": [
+        "ASR001-D07-C01",
+        "ASR001-D12-C01",
+        "ASR001-D14-C01"
+      ],
+      "expected_issue_types": [
+        "privacy_security_gap",
+        "scope_violation"
+      ],
+      "response_type": "gap_list_with_boundary",
+      "criticality": "blocking"
+    },
+    {
+      "question_id": "RQ-RC07-04",
+      "audience": "RC-07",
+      "question": "Can machine validation distinguish structural validity from evidence truth, reviewer judgment, and underlying-system quality?",
+      "target_domains": [
+        "D13",
+        "D15"
+      ],
+      "target_clauses": [
+        "ASR001-D13-C01",
+        "ASR001-D15-C02"
+      ],
+      "expected_issue_types": [
+        "conformance_boundary_leak",
+        "verification_gap"
+      ],
+      "response_type": "yes_no_with_failure_example",
+      "criticality": "blocking"
+    },
+    {
+      "question_id": "RQ-RC07-05",
+      "audience": "RC-07",
+      "question": "Are extension namespaces, licensing notices, and reuse boundaries sufficient for machine-readable distributions?",
+      "target_domains": [
+        "D15"
+      ],
+      "target_clauses": [
+        "ASR001-D15-C02"
+      ],
+      "expected_issue_types": [
+        "machine_readability_gap",
+        "licensing_gap"
+      ],
+      "response_type": "schema_and_policy_comment",
+      "criticality": "major"
+    }
+  ]
+}
