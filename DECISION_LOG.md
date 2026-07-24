@@ -393,3 +393,29 @@ The internal Working Draft now has sufficient structure, trial evidence, questio
 ### Rationale
 
 Sprint 12 made the package review-ready. Sprint 13 converts readiness into a governed wave apparatus and class-covered cohort without collapsing preparation into outreach. Keeping named assignment and invitation sending under an explicit hold preserves non-endorsement boundaries and prevents identity fabrication or premature public comment.
+
+---
+
+## DEC-017 — ASR-001 First-Wave Named Candidate Assignment and Controlled Invitation Release
+
+**Status:** Ratified upon Sprint 14 PASS  
+**Version:** 1.0  
+**Date:** 2026-07-24  
+**Evidence basis:** `ASR_001_OWNER_DECISION_SPRINT_14.md`, `ASR_001_REVIEWER_COHORT_ROSTER_V0.2.json`, and `ASR_001_NAMED_ASSIGNMENT_GATE_RESULT.md`
+
+### Decision
+
+1. The owner authorizes first-wave named candidate assignment for Wave RW-001 to B. David Ridpath (RWS-01/RC-01), Mallesham Dasari (RWS-03/RC-03), Stephanie Tow, MD (RWS-05/RC-05), and Emma Drake (RWS-07/RC-07) only.
+2. Before written acceptance, each assigned person is classified solely as `named_candidate_assignee` with candidate_status `selected_not_contacted` until private dispatch occurs.
+3. Controlled individual written invitation release is authorized for those four slots only.
+4. Invitation drafts are prepared for private owner dispatch. Sprint 14 does not transmit messages and does not store personal contact addresses in the public repository.
+5. RWS-02, RWS-04, and RWS-06 remain reserve-closed with invitation_status `not_authorized`.
+6. Global `review-intake/` remains closed. Per-candidate intake may be enabled only after that candidate's invitation is privately dispatched.
+7. No `ORC` identifier may be issued before written acceptance and a later accepted comment.
+8. No person may be labeled `reviewer` before written acceptance.
+9. Participation must not be represented as endorsement, adoption, partnership, federation recognition, or organizational approval.
+10. Public Review Draft status, ASR-001 publication, certification, public conformance claims, scores, rankings, unsupported remote-synchronous tolerances, final BCI athletic classification, and industry-adoption claims remain unauthorized.
+
+### Rationale
+
+A four-candidate first wave satisfies the required coverage groups while remaining operationally bounded. Separating named-candidate assignment from reviewer status, and authorization-to-send from actual private dispatch, preserves non-endorsement boundaries and prevents contact-data leakage or premature intake opening.

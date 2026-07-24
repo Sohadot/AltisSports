@@ -1,0 +1,41 @@
+{
+  "asset": "AltisSports",
+  "sprint": "Sprint 14 — Named Candidate Assignment and Controlled Invitation Release",
+  "version": "0.1",
+  "date": "2026-07-24",
+  "target": "main/root",
+  "authored_files": [
+    "ASR_001_OWNER_DECISION_SPRINT_14.md",
+    "ASR_001_REVIEWER_COHORT_ROSTER_V0.2.json",
+    "ASR_001_NAMED_CANDIDATE_EVIDENCE_V0.1.md",
+    "ASR_001_CONTROLLED_INVITATION_PACKAGE.md",
+    "ASR_001_INVITATION_DISPATCH_LOG_V0.1.json",
+    "ASR_001_PER_CANDIDATE_INTAKE_POLICY.md",
+    "ASR_001_NAMED_ASSIGNMENT_GATE.md",
+    "ASR_001_REVIEW_ACTIVATION_RECORD_RW001_S14_SUPPLEMENT.md",
+    "invitations/INV-RW001-RWS-01.md",
+    "invitations/INV-RW001-RWS-03.md",
+    "invitations/INV-RW001-RWS-05.md",
+    "invitations/INV-RW001-RWS-07.md",
+    "validate_asr001_named_assignment.py",
+    "run_sprint14.py",
+    "README.md",
+    "SPRINT_14_EXECUTION.md",
+    "SPRINT_14_MANIFEST.json"
+  ],
+  "generated_files": [
+    "ASR_001_FIRST_WAVE_NAMED_CANDIDATE_SUMMARY.md",
+    "SPRINT_14_VALIDATION_RESULT.md",
+    "ASR_001_NAMED_ASSIGNMENT_GATE_RESULT.md",
+    "ASR_001_PRIVATE_INVITATION_DISPATCH_AUTHORIZATION.md"
+  ],
+  "modified_on_pass": [
+    "DECISION_LOG.md"
+  ],
+  "first_wave_slots": ["RWS-01", "RWS-03", "RWS-05", "RWS-07"],
+  "reserve_slots": ["RWS-02", "RWS-04", "RWS-06"],
+  "role_before_acceptance": "named_candidate_assignee",
+  "invitations_dispatched_by_sprint": 0,
+  "gate_target": "PASS — NAMED CANDIDATE ASSIGNMENT AND CONTROLLED INVITATION RELEASE AUTHORIZED FOR FOUR SLOTS; PRIVATE DISPATCH REMAINS OWNER-EXECUTED",
+  "next_sprint": "Sprint 15 — Invitation Dispatch Recording, Acceptance Intake, and First Comment Window"
+}
