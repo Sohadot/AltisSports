@@ -173,6 +173,14 @@
       "invocations": [ { "args": [] } ]
     },
     {
+      "id": "public-asset-profile",
+      "script": "validate_public_asset_profile.py",
+      "required": true,
+      "category": "public-surface",
+      "runtime": "stdlib",
+      "invocations": [ { "args": [] } ]
+    },
+    {
       "id": "asr-operator-review-package",
       "script": "validate_asr001_operator_review_package.py",
       "required": true,
