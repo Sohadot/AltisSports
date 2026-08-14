@@ -1,0 +1,3375 @@
+{
+  "atlas": "AltisSports Descriptive Atlas",
+  "version": "0.1",
+  "status": "Foundation Draft — Not Ratified",
+  "schema": "ATLAS_DESCRIPTIVE_SCHEMA_V0.1.json",
+  "source_dataset": "boundary-cases-001-020.v0.3.json",
+  "source_version": "0.3",
+  "license": "CC-BY-4.0",
+  "license_ref": "DATASET_LICENSE.md",
+  "nature": "descriptive_reference_layer_only",
+  "not": [
+    "ranking",
+    "scoring",
+    "recommendation",
+    "conformance",
+    "certification",
+    "new_sport_not_sport_verdict"
+  ],
+  "record_count": 20,
+  "records": [
+    {
+      "atlas_record_id": "ATL-D-001",
+      "source_case_id": "BC-001",
+      "citation_id": "BC-001",
+      "source_dataset": "boundary-cases-001-020.v0.3.json",
+      "source_version": "0.3",
+      "license": "CC-BY-4.0",
+      "license_ref": "DATASET_LICENSE.md",
+      "temporal_status": "provisional",
+      "activity": "Association Football",
+      "activity_aliases": [
+        "Soccer",
+        "Association football"
+      ],
+      "classified_object": {
+        "primary": "activity",
+        "secondary": [
+          "athletic_system"
+        ],
+        "notes": "Governed match under IFAB Laws; optional VAR treated as adjunct, not definitional."
+      },
+      "dimensions": {
+        "performance_agency": {
+          "status": "supported",
+          "claim_class": "C2",
+          "summary": "Player skill and team performance materially determine match outcomes.",
+          "agency_modes": [
+            "live_performance"
+          ],
+          "human_skill_causally_necessary": true
+        },
+        "performance_interface": {
+          "status": "supported",
+          "claim_class": "C2",
+          "summary": "Primary interface is the human body with conventional equipment mediation.",
+          "interface_types": [
+            "direct_bodily_action",
+            "conventional_equipment"
+          ]
+        },
+        "embodied_performance": {
+          "status": "supported",
+          "claim_class": "C2",
+          "summary": "Primary interface is the human body with conventional equipment mediation. Migrated as Embodied Performance; demand types are provisional.",
+          "demand_types": [
+            "locomotion",
+            "force",
+            "balance",
+            "endurance",
+            "sensorimotor_coordination"
+          ]
+        },
+        "arena": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Physical pitch with rule-bearing lines and goal geometry."
+        },
+        "distributed_arena_relation": {
+          "status": "supported",
+          "topology": "co_located_single_site",
+          "shared_computational_state": "partial",
+          "synchronization_mechanism": "Human and optional officiating systems share match time and event state.",
+          "calibration_equivalence": "Pitch and equipment conditions are governed by the Laws.",
+          "officiation_relation": "Officials operate in the same contest environment.",
+          "safety_relation": "One event safety authority governs the venue."
+        },
+        "sensing_tracking": {
+          "status": "partial",
+          "claim_class": "C2",
+          "summary": "Primarily human perception; optional video/tracking systems in some competitions."
+        },
+        "measurement": {
+          "status": "supported",
+          "claim_class": "C2",
+          "summary": "Goals, time, cards, and competition standings are standardized."
+        },
+        "comparability": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Comparability within competition frameworks; pitch and condition variation bounded by Laws."
+        },
+        "officiation": {
+          "status": "supported",
+          "claim_class": "C2",
+          "summary": "Human refereeing central; technology may assist in some competitions."
+        },
+        "outcome_openness": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Result emerges through performance within Laws, not a fixed script."
+        },
+        "consequence_structure": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Competitive result, ranking effects, and physical cost are non-trivial."
+        },
+        "operational_spatial_integration": {
+          "overall_status": "absent",
+          "profile_status": "human_reviewed_v0_3",
+          "immersion_present": false,
+          "claim_class": "C4",
+          "summary": "Computational systems may assist officiation but do not make the contest a Spatial Athletic System by default.",
+          "functions": []
+        },
+        "participatory_actor_relations": [],
+        "human_limits_accessibility": {
+          "source_field": "as3_layer_notes.L9_safety_accessibility",
+          "note": "Contact, fatigue, medical protocols."
+        }
+      },
+      "source_provisional_finding": {
+        "sport_contest_axis": "sport",
+        "category_relation": "outside_core_spatial_athletic_class",
+        "claim_class": "C4",
+        "summary": "Baseline conventional athletic contest; reference positive for sport invariants and negative for Spatial Sport by default."
+      },
+      "confidence": "high",
+      "falsifiability": {
+        "source_field": "what_would_change_judgment",
+        "content": [
+          "Competitions where computational geometry jointly constrains or officiates a unified physical-computational contest."
+        ]
+      },
+      "evidence_sources": [
+        {
+          "source_title": "Laws of the Game (IFAB portal)",
+          "publisher": "International Football Association Board",
+          "url": "https://theifab.com/",
+          "source_type": "federation_or_league_rules",
+          "claim_class": "C1",
+          "temporal_status": "current",
+          "publication_or_update_date": null
+        },
+        {
+          "source_title": "Laws of the Game application materials",
+          "publisher": "FIFA / IFAB",
+          "url": "https://digitalhub.fifa.com/m/5371a6dcc42fbb44/original/d6g1medsi8jrrd3e4imp-pdf.pdf",
+          "source_type": "federation_or_league_rules",
+          "claim_class": "C1",
+          "temporal_status": "historical",
+          "publication_or_update_date": null
+        }
+      ],
+      "provenance_note": "Per-field claim_class and status preserved verbatim from the source case. source_provisional_finding is the corpus's own attributed reading, not a new Atlas verdict. Provider claims live in evidence_sources; Altis interpretation carries C4/C5."
+    },
+    {
+      "atlas_record_id": "ATL-D-002",
+      "source_case_id": "BC-002",
+      "citation_id": "BC-002",
+      "source_dataset": "boundary-cases-001-020.v0.3.json",
+      "source_version": "0.3",
+      "license": "CC-BY-4.0",
+      "license_ref": "DATASET_LICENSE.md",
+      "temporal_status": "provisional",
+      "activity": "Chess",
+      "activity_aliases": [
+        "Competitive chess",
+        "Mind sport chess"
+      ],
+      "classified_object": {
+        "primary": "activity",
+        "secondary": [
+          "organization"
+        ],
+        "notes": "Classical competitive chess; online platforms are secondary products."
+      },
+      "dimensions": {
+        "performance_agency": {
+          "status": "supported",
+          "claim_class": "C2",
+          "summary": "Outcomes depend on human cognitive performance under time controls.",
+          "agency_modes": [
+            "live_performance"
+          ],
+          "human_skill_causally_necessary": true
+        },
+        "performance_interface": {
+          "status": "partial",
+          "claim_class": "C4",
+          "summary": "Motor expression is minimal; embodiment is not the primary performance channel.",
+          "interface_types": [
+            "controller_or_discrete_input"
+          ]
+        },
+        "embodied_performance": {
+          "status": "partial",
+          "claim_class": "C4",
+          "summary": "Motor expression is minimal; embodiment is not the primary performance channel. Migrated as Embodied Performance; demand types are provisional.",
+          "demand_types": [
+            "cognitive",
+            "fine_motor"
+          ]
+        },
+        "arena": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Discrete board state is rule-bearing; may be physical or digital."
+        },
+        "distributed_arena_relation": {
+          "status": "unknown",
+          "topology": "unknown",
+          "shared_computational_state": "unknown",
+          "synchronization_mechanism": "Deployment-specific.",
+          "calibration_equivalence": "Time control and platform conditions are deployment-specific.",
+          "officiation_relation": "Arbiter or platform relation varies.",
+          "safety_relation": "Not material to category classification in this record."
+        },
+        "sensing_tracking": {
+          "status": "partial",
+          "claim_class": "C4",
+          "summary": "Full state observability in standard play; platforms add logging and anti-cheat."
+        },
+        "measurement": {
+          "status": "supported",
+          "claim_class": "C2",
+          "summary": "Ratings, results, and pairings provide formal metrics."
+        },
+        "comparability": {
+          "status": "supported",
+          "claim_class": "C2",
+          "summary": "Rating systems and standardized time controls support comparison."
+        },
+        "officiation": {
+          "status": "supported",
+          "claim_class": "C2",
+          "summary": "Arbiters over the board; platform enforcement online."
+        },
+        "outcome_openness": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Result determined by play unless integrity fails."
+        },
+        "consequence_structure": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Rating, title, and elimination consequences; bodily exertion not required."
+        },
+        "operational_spatial_integration": {
+          "overall_status": "absent",
+          "profile_status": "human_reviewed_v0_3",
+          "immersion_present": false,
+          "claim_class": "C4",
+          "summary": "Digital boards represent a discrete state machine; not operational athletic-spatial integration.",
+          "functions": [
+            {
+              "role": "represent",
+              "status": "absent",
+              "significance": "incidental"
+            }
+          ]
+        },
+        "participatory_actor_relations": [],
+        "human_limits_accessibility": {
+          "source_field": "as3_layer_notes.L9_safety_accessibility",
+          "note": "Cognitive fatigue; accessibility differs from contact sport."
+        }
+      },
+      "source_provisional_finding": {
+        "sport_contest_axis": "sport",
+        "category_relation": "outside_core_spatial_athletic_class",
+        "claim_class": "C4",
+        "summary": "Forces separation of sport recognition from embodiment and from Spatial Sport."
+      },
+      "confidence": "high",
+      "falsifiability": {
+        "source_field": "what_would_change_judgment",
+        "content": [
+          "Altis adopts embodiment as necessary for all sport.",
+          "A chess variant where continuous tracked bodily movement in computational space is the performance channel."
+        ]
+      },
+      "evidence_sources": [
+        {
+          "source_title": "About FIDE",
+          "publisher": "International Chess Federation (FIDE)",
+          "url": "https://www.fide.com/about-fide/",
+          "source_type": "official_announcement",
+          "claim_class": "C1",
+          "temporal_status": "current",
+          "publication_or_update_date": null
+        },
+        {
+          "source_title": "Certificate of recognition of FIDE by IOC",
+          "publisher": "FIDE Museum / Open Chess Museum",
+          "url": "https://museum.fide.com/exhibits/certificate-of-recognition-of-fide-by-ioc",
+          "source_type": "official_announcement",
+          "claim_class": "C1",
+          "temporal_status": "current",
+          "publication_or_update_date": null
+        }
+      ],
+      "provenance_note": "Per-field claim_class and status preserved verbatim from the source case. source_provisional_finding is the corpus's own attributed reading, not a new Atlas verdict. Provider claims live in evidence_sources; Altis interpretation carries C4/C5."
+    },
+    {
+      "atlas_record_id": "ATL-D-003",
+      "source_case_id": "BC-003",
+      "citation_id": "BC-003",
+      "source_dataset": "boundary-cases-001-020.v0.3.json",
+      "source_version": "0.3",
+      "license": "CC-BY-4.0",
+      "license_ref": "DATASET_LICENSE.md",
+      "temporal_status": "provisional",
+      "activity": "Formula One",
+      "activity_aliases": [
+        "F1",
+        "FIA Formula One World Championship"
+      ],
+      "classified_object": {
+        "primary": "athletic_system",
+        "secondary": [
+          "activity",
+          "organization"
+        ],
+        "notes": "Championship competition under FIA regulations."
+      },
+      "dimensions": {
+        "performance_agency": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Driver must drive alone and unaided; skill materially affects outcomes alongside car/team factors.",
+          "agency_modes": [
+            "live_performance",
+            "assisted_performance"
+          ],
+          "human_skill_causally_necessary": true
+        },
+        "performance_interface": {
+          "status": "supported",
+          "claim_class": "C2",
+          "summary": "Heavily mediated cockpit/vehicle interface with extreme physical load.",
+          "interface_types": [
+            "vehicle_control"
+          ]
+        },
+        "embodied_performance": {
+          "status": "supported",
+          "claim_class": "C2",
+          "summary": "Heavily mediated cockpit/vehicle interface with extreme physical load. Migrated as Embodied Performance; demand types are provisional.",
+          "demand_types": [
+            "vehicle_control",
+            "endurance",
+            "sensorimotor_coordination"
+          ]
+        },
+        "arena": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Physical circuit with track limits, sectors, and marshalling signals."
+        },
+        "distributed_arena_relation": {
+          "status": "supported",
+          "topology": "co_located_single_site",
+          "shared_computational_state": "partial",
+          "synchronization_mechanism": "Timing, marshalling, telemetry, and race-control systems synchronize contest state.",
+          "calibration_equivalence": "Technical regulations and timing systems define comparison conditions.",
+          "officiation_relation": "Race control and stewards govern the shared event.",
+          "safety_relation": "Circuit-wide safety responsibility is centrally governed."
+        },
+        "sensing_tracking": {
+          "status": "supported",
+          "claim_class": "C2",
+          "summary": "Timing, ECU, and marshalling systems provide dense sensing."
+        },
+        "measurement": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Lap times, classification, penalties."
+        },
+        "comparability": {
+          "status": "partial",
+          "claim_class": "C4",
+          "summary": "Within regulated championship; cross-era comparison limited by regulation change."
+        },
+        "officiation": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Race Director, stewards, technical scrutineering."
+        },
+        "outcome_openness": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Race results emerge under uncertainty and performance."
+        },
+        "consequence_structure": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Championship points, risk, and physical demand."
+        },
+        "operational_spatial_integration": {
+          "overall_status": "absent",
+          "profile_status": "human_reviewed_v0_3",
+          "immersion_present": false,
+          "claim_class": "C4",
+          "summary": "Deep computation inside car/timing does not relocate the athletic arena into computationally constituted space.",
+          "functions": [
+            {
+              "role": "measure",
+              "status": "absent",
+              "significance": "incidental"
+            }
+          ]
+        },
+        "participatory_actor_relations": [
+          {
+            "relation_id": "PAR-003-01",
+            "actor_type": "team_engineer",
+            "relation_type": "information_supplier",
+            "action_window": "During authorized team communications and strategy windows.",
+            "mechanism": "Team radio and pit-wall analysis provide information to the driver.",
+            "performance_agency_relation": "indirect_no_execution",
+            "rule_authority_relation": "participatory",
+            "resource_or_constraint_effect": "Information may alter strategy or resource use, but the engineer does not execute vehicle control.",
+            "evidence_refs": [
+              0
+            ],
+            "uncertainty": "The exact causal weight of team information varies by event phase.",
+            "review_status": "human_reviewed_v0_3"
+          }
+        ],
+        "human_limits_accessibility": {
+          "source_field": "as3_layer_notes.L9_safety_accessibility",
+          "note": "Extreme safety regime."
+        }
+      },
+      "source_provisional_finding": {
+        "sport_contest_axis": "sport",
+        "category_relation": "outside_core_spatial_athletic_class",
+        "claim_class": "C4",
+        "summary": "Mediated embodiment preserves sport agency; mediation is not itself Spatial Sport."
+      },
+      "confidence": "high",
+      "falsifiability": {
+        "source_field": "what_would_change_judgment",
+        "content": [
+          "A format where shared computational arena state jointly constrains wheel-to-wheel performance as unified physical-computational contest."
+        ]
+      },
+      "evidence_sources": [
+        {
+          "source_title": "FIA 2026 F1 Regulations - Section B [Sporting]",
+          "publisher": "Federation Internationale de l'Automobile (FIA)",
+          "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf",
+          "source_type": "federation_or_league_rules",
+          "claim_class": "C1",
+          "temporal_status": "current",
+          "publication_or_update_date": null
+        },
+        {
+          "source_title": "The beginner's guide to the 2026 Formula 1 regulations",
+          "publisher": "Formula 1",
+          "url": "https://www.formula1.com/en/latest/article/the-beginners-guide-to-the-2026-regulations.6j0tS0hrHG2T01tpmK6XYz",
+          "source_type": "professional_reporting",
+          "claim_class": "C3",
+          "temporal_status": "current",
+          "publication_or_update_date": null
+        }
+      ],
+      "provenance_note": "Per-field claim_class and status preserved verbatim from the source case. source_provisional_finding is the corpus's own attributed reading, not a new Atlas verdict. Provider claims live in evidence_sources; Altis interpretation carries C4/C5."
+    },
+    {
+      "atlas_record_id": "ATL-D-004",
+      "source_case_id": "BC-004",
+      "citation_id": "BC-004",
+      "source_dataset": "boundary-cases-001-020.v0.3.json",
+      "source_version": "0.3",
+      "license": "CC-BY-4.0",
+      "license_ref": "DATASET_LICENSE.md",
+      "temporal_status": "provisional",
+      "activity": "Para Athletics",
+      "activity_aliases": [
+        "World Para Athletics",
+        "Paralympic athletics"
+      ],
+      "classified_object": {
+        "primary": "activity",
+        "secondary": [
+          "athletic_system",
+          "organization"
+        ],
+        "notes": "Track and field competition under World Para Athletics classification and rules."
+      },
+      "dimensions": {
+        "performance_agency": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Athlete performance remains decisive within sport class.",
+          "agency_modes": [
+            "live_performance",
+            "assisted_performance"
+          ],
+          "human_skill_causally_necessary": true
+        },
+        "performance_interface": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Includes prostheses, racing chairs, throwing frames, guides; adaptive interfaces preserve athletic agency.",
+          "interface_types": [
+            "direct_bodily_action",
+            "adaptive_or_assistive_equipment"
+          ]
+        },
+        "embodied_performance": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Includes prostheses, racing chairs, throwing frames, guides; adaptive interfaces preserve athletic agency. Migrated as Embodied Performance; demand types are provisional.",
+          "demand_types": [
+            "adaptive_bodily_performance",
+            "locomotion",
+            "force",
+            "sensorimotor_coordination"
+          ]
+        },
+        "arena": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Physical track/field with class-specific equipment constraints."
+        },
+        "distributed_arena_relation": {
+          "status": "supported",
+          "topology": "co_located_single_site",
+          "shared_computational_state": "partial",
+          "synchronization_mechanism": "Timing, measurement, and officiating systems coordinate event state.",
+          "calibration_equivalence": "Classification, equipment, and measurement controls support comparison.",
+          "officiation_relation": "Officials and classification governance apply to the event.",
+          "safety_relation": "Venue and event safety responsibility is defined."
+        },
+        "sensing_tracking": {
+          "status": "supported",
+          "claim_class": "C2",
+          "summary": "Standard athletics measurement plus classification evaluation processes."
+        },
+        "measurement": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Times, distances, and placings within class."
+        },
+        "comparability": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Explicitly class-relative comparability; not a defect."
+        },
+        "officiation": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Athletics officiation plus classification governance."
+        },
+        "outcome_openness": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Outcomes depend on performance within class constraints."
+        },
+        "consequence_structure": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Championship results and physical performance costs."
+        },
+        "operational_spatial_integration": {
+          "overall_status": "absent",
+          "profile_status": "human_reviewed_v0_3",
+          "immersion_present": false,
+          "claim_class": "C4",
+          "summary": "Classification is integrity/comparability infrastructure, not computational arena unification.",
+          "functions": []
+        },
+        "participatory_actor_relations": [],
+        "human_limits_accessibility": {
+          "source_field": "as3_layer_notes.L9_safety_accessibility",
+          "note": "Body variation is constitutive."
+        }
+      },
+      "source_provisional_finding": {
+        "sport_contest_axis": "sport",
+        "category_relation": "outside_core_spatial_athletic_class",
+        "claim_class": "C4",
+        "summary": "Preserves sport under body variation; rejects single normative body assumption."
+      },
+      "confidence": "high",
+      "falsifiability": {
+        "source_field": "what_would_change_judgment",
+        "content": [
+          "Hybrid para events whose decisive constraints are computationally constituted shared arenas, evaluated separately from classification."
+        ]
+      },
+      "evidence_sources": [
+        {
+          "source_title": "World Para Athletics Classification & Categories",
+          "publisher": "International Paralympic Committee / World Para Athletics",
+          "url": "https://www.paralympic.org/athletics/classification",
+          "source_type": "federation_or_league_rules",
+          "claim_class": "C1",
+          "temporal_status": "current",
+          "publication_or_update_date": null
+        },
+        {
+          "source_title": "International Standard for Athlete Evaluation",
+          "publisher": "International Paralympic Committee",
+          "url": "https://www.paralympic.org/sites/default/files/2024-04/International%20Standard%20for%20Athlete%20Evaluation_2016.pdf",
+          "source_type": "standard_or_sporting_code",
+          "claim_class": "C1",
+          "temporal_status": "current",
+          "publication_or_update_date": null
+        }
+      ],
+      "provenance_note": "Per-field claim_class and status preserved verbatim from the source case. source_provisional_finding is the corpus's own attributed reading, not a new Atlas verdict. Provider claims live in evidence_sources; Altis interpretation carries C4/C5."
+    },
+    {
+      "atlas_record_id": "ATL-D-005",
+      "source_case_id": "BC-005",
+      "citation_id": "BC-005",
+      "source_dataset": "boundary-cases-001-020.v0.3.json",
+      "source_version": "0.3",
+      "license": "CC-BY-4.0",
+      "license_ref": "DATASET_LICENSE.md",
+      "temporal_status": "provisional",
+      "activity": "Drone Racing",
+      "activity_aliases": [
+        "FAI F9U Drone Racing",
+        "Multicopter racing"
+      ],
+      "classified_object": {
+        "primary": "activity",
+        "secondary": [
+          "athletic_system",
+          "product"
+        ],
+        "notes": "FAI F9U-class racing; craft and FPV stack are products within the athletic system."
+      },
+      "dimensions": {
+        "performance_agency": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Pilot skill during the race is decisive under remote control.",
+          "agency_modes": [
+            "remote_performance"
+          ],
+          "human_skill_causally_necessary": true
+        },
+        "performance_interface": {
+          "status": "partial",
+          "claim_class": "C4",
+          "summary": "Radio control and FPV; human body not co-located with craft.",
+          "interface_types": [
+            "remote_control"
+          ]
+        },
+        "embodied_performance": {
+          "status": "partial",
+          "claim_class": "C4",
+          "summary": "Radio control and FPV; human body not co-located with craft. Migrated as Embodied Performance; demand types are provisional.",
+          "demand_types": [
+            "remote_control",
+            "fine_motor",
+            "sensorimotor_coordination"
+          ]
+        },
+        "arena": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Physical course gates/obstacles; FPV provides mediated sensing of that arena."
+        },
+        "distributed_arena_relation": {
+          "status": "supported",
+          "topology": "remote_supervision_physical_arena",
+          "shared_computational_state": "partial",
+          "synchronization_mechanism": "Radio command, FPV video, timing, and course state connect pilot and aircraft.",
+          "calibration_equivalence": "Equipment classes, frequencies, timing, and course configuration bound comparison.",
+          "officiation_relation": "Officials observe the physical course and results systems.",
+          "safety_relation": "Pilot zones, spectator separation, frequency control, and flyaway procedures govern risk."
+        },
+        "sensing_tracking": {
+          "status": "supported",
+          "claim_class": "C2",
+          "summary": "FPV video, timing, and fail-safe systems."
+        },
+        "measurement": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Lap/race timing and World Cup points."
+        },
+        "comparability": {
+          "status": "partial",
+          "claim_class": "C4",
+          "summary": "Depends on class limits and course setup across events."
+        },
+        "officiation": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Event officiation under FAI sporting structures."
+        },
+        "outcome_openness": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Race outcomes depend on pilot performance and reliability."
+        },
+        "consequence_structure": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Ranking, elimination, crash risk to equipment, safety zones."
+        },
+        "operational_spatial_integration": {
+          "overall_status": "partial",
+          "profile_status": "human_reviewed_v0_3",
+          "immersion_present": true,
+          "claim_class": "C4",
+          "summary": "Remote control coupled to physical course via computational sensing/display; not automatically a computationally constituted arena.",
+          "functions": [
+            {
+              "role": "enable",
+              "status": "partial",
+              "significance": "supportive"
+            },
+            {
+              "role": "constrain",
+              "status": "partial",
+              "significance": "supportive"
+            },
+            {
+              "role": "measure",
+              "status": "partial",
+              "significance": "supportive"
+            }
+          ]
+        },
+        "participatory_actor_relations": [],
+        "human_limits_accessibility": {
+          "source_field": "as3_layer_notes.L9_safety_accessibility",
+          "note": "Flyaway and crowd safety controls."
+        }
+      },
+      "source_provisional_finding": {
+        "sport_contest_axis": "sport_like_contest",
+        "category_relation": "partial_spatial_integration",
+        "claim_class": "C5",
+        "summary": "Remote performance agency over physical course; spatial membership unresolved pending sharper operational-space criteria."
+      },
+      "confidence": "medium",
+      "falsifiability": {
+        "source_field": "what_would_change_judgment",
+        "content": [
+          "Clearer Altis criteria distinguishing remote physical-craft control from computationally constituted arenas.",
+          "Events where digital overlays become rule-bearing in the same contest state."
+        ]
+      },
+      "evidence_sources": [
+        {
+          "source_title": "FAI Drone Racing World Cup documents and rules",
+          "publisher": "World Air Sports Federation (FAI)",
+          "url": "https://www.fai.org/droneracingworldcup-documents-rules",
+          "source_type": "federation_or_league_rules",
+          "claim_class": "C1",
+          "temporal_status": "current",
+          "publication_or_update_date": null
+        },
+        {
+          "source_title": "FAI Sporting Code Volume F9 Drone Sports",
+          "publisher": "FAI / CIAM",
+          "url": "https://www.fai.org/sites/default/files/document/file/SC4_volume_CIAM_F9_Drone_sports_2026.pdf",
+          "source_type": "standard_or_sporting_code",
+          "claim_class": "C1",
+          "temporal_status": "current",
+          "publication_or_update_date": null
+        }
+      ],
+      "provenance_note": "Per-field claim_class and status preserved verbatim from the source case. source_provisional_finding is the corpus's own attributed reading, not a new Atlas verdict. Provider claims live in evidence_sources; Altis interpretation carries C4/C5."
+    },
+    {
+      "atlas_record_id": "ATL-D-006",
+      "source_case_id": "BC-006",
+      "citation_id": "BC-006",
+      "source_dataset": "boundary-cases-001-020.v0.3.json",
+      "source_version": "0.3",
+      "license": "CC-BY-4.0",
+      "license_ref": "DATASET_LICENSE.md",
+      "temporal_status": "provisional",
+      "activity": "Tactical Shooter Esport",
+      "activity_aliases": [
+        "Counter-Strike competitive",
+        "CS2 Majors",
+        "tactical FPS esports"
+      ],
+      "classified_object": {
+        "primary": "event",
+        "secondary": [
+          "activity",
+          "product",
+          "organization"
+        ],
+        "notes": "Elite tournament competition (e.g., Valve Majors / ESL Pro Tour); game title is product layer."
+      },
+      "dimensions": {
+        "performance_agency": {
+          "status": "supported",
+          "claim_class": "C2",
+          "summary": "Aim, utility usage, economy, and team tactics materially determine outcomes.",
+          "agency_modes": [
+            "live_performance"
+          ],
+          "human_skill_causally_necessary": true
+        },
+        "performance_interface": {
+          "status": "partial",
+          "claim_class": "C4",
+          "summary": "Hands/eyes via mouse-keyboard or controller; gross athletic locomotion is not the performance channel.",
+          "interface_types": [
+            "controller_or_discrete_input"
+          ]
+        },
+        "embodied_performance": {
+          "status": "partial",
+          "claim_class": "C4",
+          "summary": "Hands/eyes via mouse-keyboard or controller; gross athletic locomotion is not the performance channel. Migrated as Embodied Performance; demand types are provisional.",
+          "demand_types": [
+            "cognitive",
+            "fine_motor",
+            "sensorimotor_coordination"
+          ]
+        },
+        "arena": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Computational maps with rule-bearing zones and line-of-sight geometry."
+        },
+        "distributed_arena_relation": {
+          "status": "partial",
+          "topology": "unknown",
+          "shared_computational_state": "supported",
+          "synchronization_mechanism": "The authoritative game server synchronizes computational contest state.",
+          "calibration_equivalence": "Patch, hardware, settings, and anti-cheat controls are event-specific.",
+          "officiation_relation": "Game code and tournament administrators share authority.",
+          "safety_relation": "Physical-site and online participation risks differ by deployment."
+        },
+        "sensing_tracking": {
+          "status": "supported",
+          "claim_class": "C2",
+          "summary": "Engine state is authoritative; anti-cheat is integrity-critical."
+        },
+        "measurement": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Rounds, series scores, standings, VRS seeding inputs."
+        },
+        "comparability": {
+          "status": "partial",
+          "claim_class": "C4",
+          "summary": "Requires patch version, settings, hardware, and latency controls."
+        },
+        "officiation": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "In-engine enforcement plus tournament admins/referees."
+        },
+        "outcome_openness": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Open competitive outcomes under rules."
+        },
+        "consequence_structure": {
+          "status": "supported",
+          "claim_class": "C2",
+          "summary": "Elimination, ranking, prize, reputation."
+        },
+        "operational_spatial_integration": {
+          "overall_status": "partial",
+          "profile_status": "human_reviewed_v0_3",
+          "immersion_present": false,
+          "claim_class": "C4",
+          "summary": "Computational arena is decisive, but athletic embodiment claim for Spatial Athletic Sport is weak.",
+          "functions": [
+            {
+              "role": "constrain",
+              "status": "partial",
+              "significance": "supportive"
+            },
+            {
+              "role": "measure",
+              "status": "partial",
+              "significance": "supportive"
+            },
+            {
+              "role": "officiate",
+              "status": "partial",
+              "significance": "supportive"
+            }
+          ]
+        },
+        "participatory_actor_relations": [],
+        "human_limits_accessibility": {
+          "source_field": "as3_layer_notes.L9_safety_accessibility",
+          "note": "Ergonomic/health issues; not collision sport."
+        }
+      },
+      "source_provisional_finding": {
+        "sport_contest_axis": "digital_competition_not_settled_as_sport",
+        "category_relation": "computational_contest",
+        "claim_class": "C5",
+        "summary": "Skill contest in computational space without athletic embodiment channel claimed by Spatial Athletic Sport."
+      },
+      "confidence": "medium",
+      "falsifiability": {
+        "source_field": "what_would_change_judgment",
+        "content": [
+          "Ratified Altis split between computational contests and Spatial Athletic Sport.",
+          "Or explicit acceptance of non-embodied computational contests as Spatial Sport."
+        ]
+      },
+      "evidence_sources": [
+        {
+          "source_title": "Counter-Strike Major Supplemental Rulebook",
+          "publisher": "Valve Software",
+          "url": "https://github.com/ValveSoftware/counter-strike_rules_and_regs/blob/main/major-supplemental-rulebook.md",
+          "source_type": "federation_or_league_rules",
+          "claim_class": "C1",
+          "temporal_status": "current",
+          "publication_or_update_date": null
+        },
+        {
+          "source_title": "ESL Pro Tour Counter-Strike Rulebook 2026 Update #2 Changelog",
+          "publisher": "ESL Pro Tour",
+          "url": "https://pro.eslgaming.com/tour/2026/07/esl-pro-tour-counter-strike-rulebook-2026-update-2-changelog/",
+          "source_type": "federation_or_league_rules",
+          "claim_class": "C1",
+          "temporal_status": "current",
+          "publication_or_update_date": null
+        }
+      ],
+      "provenance_note": "Per-field claim_class and status preserved verbatim from the source case. source_provisional_finding is the corpus's own attributed reading, not a new Atlas verdict. Provider claims live in evidence_sources; Altis interpretation carries C4/C5."
+    },
+    {
+      "atlas_record_id": "ATL-D-007",
+      "source_case_id": "BC-007",
+      "citation_id": "BC-007",
+      "source_dataset": "boundary-cases-001-020.v0.3.json",
+      "source_version": "0.3",
+      "license": "CC-BY-4.0",
+      "license_ref": "DATASET_LICENSE.md",
+      "temporal_status": "provisional",
+      "activity": "VR Boxing",
+      "activity_aliases": [
+        "Creed: Rise to Glory",
+        "VR boxing product family"
+      ],
+      "classified_object": {
+        "primary": "product",
+        "secondary": [
+          "experience",
+          "athletic_system"
+        ],
+        "notes": "Product-centered hybrid; must not silently classify boxing the sport."
+      },
+      "dimensions": {
+        "performance_agency": {
+          "status": "supported",
+          "claim_class": "C3",
+          "summary": "Player motor skill and timing affect in-game outcomes.",
+          "agency_modes": [
+            "live_performance"
+          ],
+          "human_skill_causally_necessary": true
+        },
+        "performance_interface": {
+          "status": "supported",
+          "claim_class": "C3",
+          "summary": "Headset and motion controllers track upper-body actions; legs often weakly represented.",
+          "interface_types": [
+            "direct_bodily_action",
+            "tracked_xr_input"
+          ]
+        },
+        "embodied_performance": {
+          "status": "supported",
+          "claim_class": "C3",
+          "summary": "Headset and motion controllers track upper-body actions; legs often weakly represented. Migrated as Embodied Performance; demand types are provisional.",
+          "demand_types": [
+            "locomotion",
+            "force",
+            "balance",
+            "endurance",
+            "tracked_movement"
+          ]
+        },
+        "arena": {
+          "status": "partial",
+          "claim_class": "C4",
+          "summary": "Virtual ring constrains interaction; physical play space required for safe movement."
+        },
+        "distributed_arena_relation": {
+          "status": "unknown",
+          "topology": "unknown",
+          "shared_computational_state": "unknown",
+          "synchronization_mechanism": "Product- and mode-specific.",
+          "calibration_equivalence": "Cross-device equivalence remains uncertain.",
+          "officiation_relation": "Software resolves events; formal contest authority is weak or mode-specific.",
+          "safety_relation": "Each participant's physical play space has local safety constraints."
+        },
+        "sensing_tracking": {
+          "status": "partial",
+          "claim_class": "C3",
+          "summary": "Controller/headset tracking claimed; independent athletic validation limited in this record."
+        },
+        "measurement": {
+          "status": "partial",
+          "claim_class": "C3",
+          "summary": "In-game hits, stamina, knockouts, fitness targets; cross-device metrics unclear."
+        },
+        "comparability": {
+          "status": "absent",
+          "claim_class": "C4",
+          "summary": "Cross-headset/protocol comparability generally unspecified."
+        },
+        "officiation": {
+          "status": "partial",
+          "claim_class": "C4",
+          "summary": "Software determines outcomes; limited formal athletic officiation."
+        },
+        "outcome_openness": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "PvP modes can produce open contested outcomes."
+        },
+        "consequence_structure": {
+          "status": "partial",
+          "claim_class": "C4",
+          "summary": "Variable: entertainment, fitness, informal ranking."
+        },
+        "operational_spatial_integration": {
+          "overall_status": "partial",
+          "profile_status": "human_reviewed_v0_3",
+          "immersion_present": true,
+          "claim_class": "C4",
+          "summary": "Embodied tracking and computational arena jointly affect performance; immersion alone is insufficient.",
+          "functions": [
+            {
+              "role": "enable",
+              "status": "partial",
+              "significance": "supportive"
+            },
+            {
+              "role": "constrain",
+              "status": "partial",
+              "significance": "supportive"
+            },
+            {
+              "role": "measure",
+              "status": "partial",
+              "significance": "supportive"
+            }
+          ]
+        },
+        "participatory_actor_relations": [],
+        "human_limits_accessibility": {
+          "source_field": "as3_layer_notes.L9_safety_accessibility",
+          "note": "Cybersickness and real-world collision risk."
+        }
+      },
+      "source_provisional_finding": {
+        "sport_contest_axis": "hybrid",
+        "category_relation": "partial_spatial_integration",
+        "claim_class": "C4",
+        "summary": "Spatial athletic system candidate at product level; sport status requires governed contest evidence."
+      },
+      "confidence": "medium",
+      "falsifiability": {
+        "source_field": "what_would_change_judgment",
+        "content": [
+          "Independent tracking validation.",
+          "Published cross-device comparability protocol.",
+          "League/federation-governed VR boxing rules with integrity model."
+        ]
+      },
+      "evidence_sources": [
+        {
+          "source_title": "Creed: Rise to Glory product page",
+          "publisher": "Survios",
+          "url": "https://survios.com/studio/game/creed-rise-to-glory/",
+          "source_type": "first_party_technical",
+          "claim_class": "C3",
+          "temporal_status": "current",
+          "publication_or_update_date": null
+        },
+        {
+          "source_title": "Creed: Rise to Glory Championship Edition site",
+          "publisher": "Survios / Creed Rise to Glory",
+          "url": "https://creedrisetoglory.com/",
+          "source_type": "official_announcement",
+          "claim_class": "C3",
+          "temporal_status": "current",
+          "publication_or_update_date": null
+        }
+      ],
+      "provenance_note": "Per-field claim_class and status preserved verbatim from the source case. source_provisional_finding is the corpus's own attributed reading, not a new Atlas verdict. Provider claims live in evidence_sources; Altis interpretation carries C4/C5."
+    },
+    {
+      "atlas_record_id": "ATL-D-008",
+      "source_case_id": "BC-008",
+      "citation_id": "BC-008",
+      "source_dataset": "boundary-cases-001-020.v0.3.json",
+      "source_version": "0.3",
+      "license": "CC-BY-4.0",
+      "license_ref": "DATASET_LICENSE.md",
+      "temporal_status": "provisional",
+      "activity": "Virtual Cycling with Physical Resistance",
+      "activity_aliases": [
+        "UCI Cycling Esports",
+        "Zwift racing with smart trainer",
+        "Indoor virtual cycling competition"
+      ],
+      "classified_object": {
+        "primary": "athletic_system",
+        "secondary": [
+          "activity",
+          "product"
+        ],
+        "notes": "Championship-style events coupling physiological power to computational course state. Platform is noted narratively, not as a separate classified_object enum value in v0.1."
+      },
+      "dimensions": {
+        "performance_agency": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Human power, pacing, and tactics determine race outcomes.",
+          "agency_modes": [
+            "live_performance",
+            "remote_performance",
+            "assisted_performance"
+          ],
+          "human_skill_causally_necessary": true
+        },
+        "performance_interface": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Bicycle and smart trainer resistance form an embodied machine interface.",
+          "interface_types": [
+            "direct_bodily_action",
+            "resistance_equipment",
+            "tracked_xr_input"
+          ]
+        },
+        "embodied_performance": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Bicycle and smart trainer resistance form an embodied machine interface. Migrated as Embodied Performance; demand types are provisional.",
+          "demand_types": [
+            "endurance",
+            "force",
+            "physiological_effort",
+            "tracked_movement"
+          ]
+        },
+        "arena": {
+          "status": "supported",
+          "claim_class": "C2",
+          "summary": "Computational course geometry (gradients, drafting, position) constrains performance."
+        },
+        "distributed_arena_relation": {
+          "status": "supported",
+          "topology": "remote_synchronous",
+          "shared_computational_state": "supported",
+          "synchronization_mechanism": "Platform position, course state, power input, and event timing synchronize the race.",
+          "calibration_equivalence": "Trainer standardization, power-source rules, and sensor controls support equivalence.",
+          "officiation_relation": "Platform state and event officials jointly administer the race.",
+          "safety_relation": "Each rider's local physical setup remains locally managed while contest governance is centralized."
+        },
+        "sensing_tracking": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Power, cadence, and HR sensing; anti-cheat/data integrity critical."
+        },
+        "measurement": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Power-derived virtual speed/position and race results."
+        },
+        "comparability": {
+          "status": "partial",
+          "claim_class": "C1",
+          "summary": "Explicit trainer standardization used because comparability is fragile."
+        },
+        "officiation": {
+          "status": "supported",
+          "claim_class": "C2",
+          "summary": "Platform adjudication plus event officials."
+        },
+        "outcome_openness": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Race outcomes emerge from performance under constraints."
+        },
+        "consequence_structure": {
+          "status": "supported",
+          "claim_class": "C2",
+          "summary": "World championship stakes and real physiological load."
+        },
+        "operational_spatial_integration": {
+          "overall_status": "supported",
+          "profile_status": "human_reviewed_v0_3",
+          "immersion_present": true,
+          "claim_class": "C4",
+          "summary": "Physical performance and computationally mediated course state are structurally interdependent.",
+          "functions": [
+            {
+              "role": "enable",
+              "status": "supported",
+              "significance": "constitutive"
+            },
+            {
+              "role": "constrain",
+              "status": "supported",
+              "significance": "constitutive"
+            },
+            {
+              "role": "measure",
+              "status": "supported",
+              "significance": "constitutive"
+            },
+            {
+              "role": "compare",
+              "status": "supported",
+              "significance": "constitutive"
+            },
+            {
+              "role": "officiate",
+              "status": "supported",
+              "significance": "constitutive"
+            }
+          ]
+        },
+        "participatory_actor_relations": [],
+        "human_limits_accessibility": {
+          "source_field": "as3_layer_notes.L9_safety_accessibility",
+          "note": "Real load; different crash profile than road."
+        }
+      },
+      "source_provisional_finding": {
+        "sport_contest_axis": "sport_like_contest",
+        "category_relation": "spatial_athletic_system",
+        "claim_class": "C5",
+        "summary": "Best positive Spatial Athletic System candidate in the Sprint 2 sample."
+      },
+      "confidence": "medium",
+      "falsifiability": {
+        "source_field": "what_would_change_judgment",
+        "content": [
+          "Evidence that virtual gradients/drafting are cosmetic only.",
+          "Unresolved systemic incomparability despite hardware controls."
+        ]
+      },
+      "evidence_sources": [
+        {
+          "source_title": "Official partners of the inaugural 2020 UCI Cycling Esports World Championships",
+          "publisher": "Zwift Newsroom",
+          "url": "https://news.zwift.com/en-WW/192755-official-partners-of-the-inaugural-2020-uci-cycling-esports-world-championships-confirmed/",
+          "source_type": "official_announcement",
+          "claim_class": "C1",
+          "temporal_status": "current",
+          "publication_or_update_date": null
+        },
+        {
+          "source_title": "Wahoo becomes Official Smart Trainer Partner of the 2023 UCI Cycling Esports World Championships",
+          "publisher": "Union Cycliste Internationale (UCI)",
+          "url": "https://www.uci.org/pressrelease/wahoo-becomes-official-smart-trainer-partner-of-the-2023-uci-cycling-esports/6LYSgnXJW7De6WAe5fwwGl",
+          "source_type": "official_announcement",
+          "claim_class": "C1",
+          "temporal_status": "current",
+          "publication_or_update_date": null
+        }
+      ],
+      "provenance_note": "Per-field claim_class and status preserved verbatim from the source case. source_provisional_finding is the corpus's own attributed reading, not a new Atlas verdict. Provider claims live in evidence_sources; Altis interpretation carries C4/C5."
+    },
+    {
+      "atlas_record_id": "ATL-D-009",
+      "source_case_id": "BC-009",
+      "citation_id": "BC-009",
+      "source_dataset": "boundary-cases-001-020.v0.3.json",
+      "source_version": "0.3",
+      "license": "CC-BY-4.0",
+      "license_ref": "DATASET_LICENSE.md",
+      "temporal_status": "provisional",
+      "activity": "Flight Simulation Competition",
+      "activity_aliases": [
+        "Microsoft Flight Simulator racing contests",
+        "Desktop flight-sim skill contests"
+      ],
+      "classified_object": {
+        "primary": "hybrid_unresolved",
+        "secondary": [
+          "product",
+          "event",
+          "experience"
+        ],
+        "notes": "Must separate training simulation, online network flying, and skill contests."
+      },
+      "dimensions": {
+        "performance_agency": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Piloting skill can determine contest outcomes in race formats.",
+          "agency_modes": [
+            "live_performance"
+          ],
+          "human_skill_causally_necessary": true
+        },
+        "performance_interface": {
+          "status": "partial",
+          "claim_class": "C4",
+          "summary": "Typically HOTAS/controller; motion rigs optional and uncommon as requirement.",
+          "interface_types": [
+            "simulation_controls"
+          ]
+        },
+        "embodied_performance": {
+          "status": "partial",
+          "claim_class": "C4",
+          "summary": "Typically HOTAS/controller; motion rigs optional and uncommon as requirement. Migrated as Embodied Performance; demand types are provisional.",
+          "demand_types": [
+            "cognitive",
+            "fine_motor",
+            "sensorimotor_coordination"
+          ]
+        },
+        "arena": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Computational airspace/course is the contest arena."
+        },
+        "distributed_arena_relation": {
+          "status": "unknown",
+          "topology": "unknown",
+          "shared_computational_state": "supported",
+          "synchronization_mechanism": "Simulator or network state can be shared computationally.",
+          "calibration_equivalence": "Hardware and software variance remain material.",
+          "officiation_relation": "Publisher, software, or community administration varies by contest.",
+          "safety_relation": "Physical consequences are limited; local setup and fatigue remain relevant."
+        },
+        "sensing_tracking": {
+          "status": "supported",
+          "claim_class": "C2",
+          "summary": "Simulator state is authoritative for the contest."
+        },
+        "measurement": {
+          "status": "partial",
+          "claim_class": "C4",
+          "summary": "Race times/scores in contest modes; variance across setups."
+        },
+        "comparability": {
+          "status": "absent",
+          "claim_class": "C4",
+          "summary": "Hardware/software variance often large and weakly controlled."
+        },
+        "officiation": {
+          "status": "partial",
+          "claim_class": "C4",
+          "summary": "Contest admins or automatic scoring depending on event."
+        },
+        "outcome_openness": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Skill contests can be open; training flights need not be contests."
+        },
+        "consequence_structure": {
+          "status": "partial",
+          "claim_class": "C3",
+          "summary": "Prizes/reputation in contests; often low outside promotional events."
+        },
+        "operational_spatial_integration": {
+          "overall_status": "partial",
+          "profile_status": "human_reviewed_v0_3",
+          "immersion_present": true,
+          "claim_class": "C4",
+          "summary": "Computational arena operational for contests; athletic embodiment typically weak.",
+          "functions": [
+            {
+              "role": "constrain",
+              "status": "partial",
+              "significance": "supportive"
+            },
+            {
+              "role": "measure",
+              "status": "partial",
+              "significance": "supportive"
+            }
+          ]
+        },
+        "participatory_actor_relations": [],
+        "human_limits_accessibility": {
+          "source_field": "as3_layer_notes.L9_safety_accessibility",
+          "note": "Low physical risk; cognitive load."
+        }
+      },
+      "source_provisional_finding": {
+        "sport_contest_axis": "training_or_simulation",
+        "category_relation": "computational_contest",
+        "claim_class": "C4",
+        "summary": "Function before imagery: simulation/contest hybrid with weak athletic embodiment and governance."
+      },
+      "confidence": "medium",
+      "falsifiability": {
+        "source_field": "what_would_change_judgment",
+        "content": [
+          "Federation-governed championship with athletic-performance claims, comparability protocol, and embodied interface requirements."
+        ]
+      },
+      "evidence_sources": [
+        {
+          "source_title": "Reno Air Racing Series / Microsoft Reno Air Racing Contest rules",
+          "publisher": "Microsoft Flight Simulator",
+          "url": "https://www.flightsimulator.com/reno-air-racing-series/",
+          "source_type": "official_announcement",
+          "claim_class": "C1",
+          "temporal_status": "current",
+          "publication_or_update_date": null
+        },
+        {
+          "source_title": "IVAO - International Virtual Aviation Organisation",
+          "publisher": "IVAO",
+          "url": "https://ivao.aero/",
+          "source_type": "official_announcement",
+          "claim_class": "C3",
+          "temporal_status": "current",
+          "publication_or_update_date": null
+        }
+      ],
+      "provenance_note": "Per-field claim_class and status preserved verbatim from the source case. source_provisional_finding is the corpus's own attributed reading, not a new Atlas verdict. Provider claims live in evidence_sources; Altis interpretation carries C4/C5."
+    },
+    {
+      "atlas_record_id": "ATL-D-010",
+      "source_case_id": "BC-010",
+      "citation_id": "BC-010",
+      "source_dataset": "boundary-cases-001-020.v0.3.json",
+      "source_version": "0.3",
+      "license": "CC-BY-4.0",
+      "license_ref": "DATASET_LICENSE.md",
+      "temporal_status": "provisional",
+      "activity": "Autonomous Robot Competition",
+      "activity_aliases": [
+        "RoboCup Humanoid League",
+        "Autonomous robot soccer"
+      ],
+      "classified_object": {
+        "primary": "event",
+        "secondary": [
+          "organization"
+        ],
+        "notes": "Research/engineering contest; robots are performing agents during play."
+      },
+      "dimensions": {
+        "performance_agency": {
+          "status": "absent",
+          "claim_class": "C1",
+          "summary": "During match play robots act autonomously; human contribution is primarily prior design/engineering.",
+          "agency_modes": [
+            "design_engineering",
+            "autonomous_execution",
+            "agency_handoff"
+          ],
+          "human_skill_causally_necessary": false
+        },
+        "performance_interface": {
+          "status": "absent",
+          "claim_class": "C1",
+          "summary": "No human embodied performance interface during play; handlers are restricted service roles.",
+          "interface_types": [
+            "autonomous_agent"
+          ]
+        },
+        "embodied_performance": {
+          "status": "absent",
+          "claim_class": "C1",
+          "summary": "No human embodied performance interface during play; handlers are restricted service roles. Migrated as Embodied Performance; demand types are provisional.",
+          "demand_types": [
+            "none_live_human"
+          ]
+        },
+        "arena": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Physical field with robot perception/computation stacks."
+        },
+        "distributed_arena_relation": {
+          "status": "supported",
+          "topology": "co_located_single_site",
+          "shared_computational_state": "partial",
+          "synchronization_mechanism": "Onboard sensing and game-control systems coordinate match state.",
+          "calibration_equivalence": "Technical and league rules bound platform conditions.",
+          "officiation_relation": "Human referees and game controllers govern the field.",
+          "safety_relation": "Robot and human safety procedures apply at the venue."
+        },
+        "sensing_tracking": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Onboard sensing is the robots' perception channel; game controller systems support officiation."
+        },
+        "measurement": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Goals, cards, and match records under competition rules."
+        },
+        "comparability": {
+          "status": "partial",
+          "claim_class": "C4",
+          "summary": "Heterogeneous robots across teams except standard-platform leagues."
+        },
+        "officiation": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Human referees and game controller infrastructure."
+        },
+        "outcome_openness": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Match outcomes open among robot policies/hardware under rules."
+        },
+        "consequence_structure": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Competition ranking and research prestige; not athletic human stakes."
+        },
+        "operational_spatial_integration": {
+          "overall_status": "partial",
+          "profile_status": "human_reviewed_v0_3",
+          "immersion_present": false,
+          "claim_class": "C4",
+          "summary": "Operational physical/computational robot space exists, but without live human athletic performance Spatial Sport does not attach.",
+          "functions": [
+            {
+              "role": "constrain",
+              "status": "partial",
+              "significance": "supportive"
+            },
+            {
+              "role": "measure",
+              "status": "partial",
+              "significance": "supportive"
+            },
+            {
+              "role": "officiate",
+              "status": "partial",
+              "significance": "supportive"
+            }
+          ]
+        },
+        "participatory_actor_relations": [],
+        "human_limits_accessibility": {
+          "source_field": "as3_layer_notes.L9_safety_accessibility",
+          "note": "Robot and human safety procedures."
+        }
+      },
+      "source_provisional_finding": {
+        "sport_contest_axis": "research_or_engineering_contest",
+        "category_relation": "outside_core_spatial_athletic_class",
+        "claim_class": "C5",
+        "summary": "Negative control: competitive outcome without live human performance agency."
+      },
+      "confidence": "high",
+      "falsifiability": {
+        "source_field": "what_would_change_judgment",
+        "content": [
+          "Rule sets restoring live human teleoperation as decisive in-match skill channel.",
+          "An explicit Altis subclass for autonomous spectacles that does not claim sport invariants."
+        ]
+      },
+      "evidence_sources": [
+        {
+          "source_title": "RoboCup Soccer Humanoid League Rules 2025",
+          "publisher": "RoboCup Humanoid League",
+          "url": "https://humanoid.robocup.org/wp-content/uploads/RC-HL-2025-Rules.pdf",
+          "source_type": "federation_or_league_rules",
+          "claim_class": "C1",
+          "temporal_status": "current",
+          "publication_or_update_date": null
+        }
+      ],
+      "provenance_note": "Per-field claim_class and status preserved verbatim from the source case. source_provisional_finding is the corpus's own attributed reading, not a new Atlas verdict. Provider claims live in evidence_sources; Altis interpretation carries C4/C5."
+    },
+    {
+      "atlas_record_id": "ATL-D-011",
+      "source_case_id": "BC-011",
+      "citation_id": "BC-011",
+      "source_dataset": "boundary-cases-001-020.v0.3.json",
+      "source_version": "0.3",
+      "license": "CC-BY-4.0",
+      "license_ref": "DATASET_LICENSE.md",
+      "temporal_status": "provisional",
+      "activity": "ISSF competitive shooting",
+      "activity_aliases": [
+        "Competitive shooting",
+        "Sport shooting"
+      ],
+      "classified_object": {
+        "primary": "activity",
+        "secondary": [
+          "athletic_system",
+          "event"
+        ],
+        "notes": "ISSF-governed rifle, pistol, and shotgun competition is used as a low-locomotion embodied sport reference; no single discipline is generalized beyond common structural features."
+      },
+      "dimensions": {
+        "performance_agency": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Athlete precision, timing, posture, and trigger execution materially determine the shot during the firing sequence.",
+          "agency_modes": [
+            "live_performance"
+          ],
+          "human_skill_causally_necessary": true
+        },
+        "performance_interface": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "The body acts through a regulated firearm and shooting position; mediation is conventional equipment rather than a computational arena.",
+          "interface_types": [
+            "direct_bodily_action",
+            "conventional_equipment"
+          ]
+        },
+        "embodied_performance": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Embodiment is fine-motor, balance, respiratory, and sensorimotor rather than locomotor.",
+          "demand_types": [
+            "balance",
+            "fine_motor",
+            "cognitive",
+            "sensorimotor_coordination"
+          ]
+        },
+        "arena": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "A physical range, firing line, target distance, and safety zones structure performance."
+        },
+        "distributed_arena_relation": {
+          "status": "supported",
+          "topology": "co_located_single_site",
+          "shared_computational_state": "partial",
+          "synchronization_mechanism": "Timing, electronic targets, and result systems coordinate event state.",
+          "calibration_equivalence": "Target, equipment, and event-class controls support comparison.",
+          "officiation_relation": "Officials and electronic scoring operate at the range.",
+          "safety_relation": "Range command and safety authority are centralized."
+        },
+        "sensing_tracking": {
+          "status": "partial",
+          "claim_class": "C2",
+          "summary": "Electronic targets and result systems may sense impacts and timing, but computational tracking is not the athlete’s arena."
+        },
+        "measurement": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Shot value and series totals are precisely measured under declared target and timing rules."
+        },
+        "comparability": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Comparability is engineered through event classes, equipment control, target specifications, timing, and officiating."
+        },
+        "officiation": {
+          "status": "supported",
+          "claim_class": "C2",
+          "summary": "Officials and electronic scoring systems jointly administer results and protests."
+        },
+        "outcome_openness": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Scores emerge from athlete execution under constraints."
+        },
+        "consequence_structure": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Ranking, qualification, elimination, and medal outcomes follow from contest structure."
+        },
+        "operational_spatial_integration": {
+          "overall_status": "partial",
+          "profile_status": "human_reviewed_v0_3",
+          "immersion_present": false,
+          "claim_class": "C4",
+          "summary": "Computational systems may support measurement and officiation, but the performance arena remains physical and the spatial-athletic core is not established.",
+          "functions": [
+            {
+              "role": "measure",
+              "status": "supported",
+              "significance": "supportive"
+            },
+            {
+              "role": "officiate",
+              "status": "partial",
+              "significance": "supportive"
+            }
+          ]
+        },
+        "participatory_actor_relations": [],
+        "human_limits_accessibility": {
+          "source_field": "as3_layer_notes.L9_safety_accessibility",
+          "note": "Range safety and equipment governance are central."
+        }
+      },
+      "source_provisional_finding": {
+        "sport_contest_axis": "sport",
+        "category_relation": "outside_core_spatial_athletic_class",
+        "claim_class": "C5",
+        "summary": "A strong embodied sport with little locomotion; it confirms that Embodied Performance must include fine motor, balance, and sensorimotor control without treating physical spatial skill as computational Spatiality."
+      },
+      "confidence": "high",
+      "falsifiability": {
+        "source_field": "what_would_change_judgment",
+        "content": [
+          "A competition in which shared computational geometry directly constrains athlete targeting or movement as a constitutive arena."
+        ]
+      },
+      "evidence_sources": [
+        {
+          "source_title": "ISSF Rules — 2026 Rule Book",
+          "publisher": "International Shooting Sport Federation",
+          "url": "https://www.issf-sports.org/rules",
+          "source_type": "federation_or_league_rules",
+          "claim_class": "C1",
+          "temporal_status": "current",
+          "publication_or_update_date": null
+        },
+        {
+          "source_title": "ISSF announces changes with 2026 Rulebook",
+          "publisher": "International Shooting Sport Federation",
+          "url": "https://www.issf-sports.org/news/4878",
+          "source_type": "official_announcement",
+          "claim_class": "C1",
+          "temporal_status": "current",
+          "publication_or_update_date": "2025-12-10"
+        }
+      ],
+      "provenance_note": "Per-field claim_class and status preserved verbatim from the source case. source_provisional_finding is the corpus's own attributed reading, not a new Atlas verdict. Provider claims live in evidence_sources; Altis interpretation carries C4/C5."
+    },
+    {
+      "atlas_record_id": "ATL-D-012",
+      "source_case_id": "BC-012",
+      "citation_id": "BC-012",
+      "source_dataset": "boundary-cases-001-020.v0.3.json",
+      "source_version": "0.3",
+      "license": "CC-BY-4.0",
+      "license_ref": "DATASET_LICENSE.md",
+      "temporal_status": "provisional",
+      "activity": "WPA cue sports",
+      "activity_aliases": [
+        "Pool billiards",
+        "Pocket billiards"
+      ],
+      "classified_object": {
+        "primary": "activity",
+        "secondary": [
+          "athletic_system"
+        ],
+        "notes": "Pocket billiards under WPA rules is used as a fine-motor physical-geometry case; the analysis does not generalize to every cue-sport discipline."
+      },
+      "dimensions": {
+        "performance_agency": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Players exercise live aiming, stroke, speed, spin, and positional judgment during each inning.",
+          "agency_modes": [
+            "live_performance"
+          ],
+          "human_skill_causally_necessary": true
+        },
+        "performance_interface": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Direct bodily action is mediated by cue, balls, cloth, rails, and table geometry.",
+          "interface_types": [
+            "direct_bodily_action",
+            "conventional_equipment"
+          ]
+        },
+        "embodied_performance": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Embodiment is predominantly fine-motor and sensorimotor with modest locomotor and physiological demand.",
+          "demand_types": [
+            "fine_motor",
+            "cognitive",
+            "sensorimotor_coordination"
+          ]
+        },
+        "arena": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "A physical table with pockets, rails, spots, and ball positions is rule-bearing space."
+        },
+        "distributed_arena_relation": {
+          "status": "supported",
+          "topology": "co_located_single_site",
+          "shared_computational_state": "absent",
+          "synchronization_mechanism": "The physical table state is directly shared.",
+          "calibration_equivalence": "Table, ball, cue, and match specifications support comparison.",
+          "officiation_relation": "Referee authority is venue-local.",
+          "safety_relation": "Local venue responsibility applies."
+        },
+        "sensing_tracking": {
+          "status": "absent",
+          "claim_class": "C2",
+          "summary": "Standard play does not require computational tracking; human observation is primary."
+        },
+        "measurement": {
+          "status": "supported",
+          "claim_class": "C2",
+          "summary": "Ball state, legally pocketed balls, racks, and match scores are observable and recorded."
+        },
+        "comparability": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Table and equipment specifications plus common rules support comparison, subject to venue conditions."
+        },
+        "officiation": {
+          "status": "supported",
+          "claim_class": "C2",
+          "summary": "Referees apply fouls and resolve disputes in governed events."
+        },
+        "outcome_openness": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "The table state and match result emerge through player execution."
+        },
+        "consequence_structure": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Rack, match, ranking, and elimination effects derive from contest structure."
+        },
+        "operational_spatial_integration": {
+          "overall_status": "absent",
+          "profile_status": "human_reviewed_v0_3",
+          "immersion_present": false,
+          "claim_class": "C4",
+          "summary": "The activity demands sophisticated physical spatial reasoning, but no computationally mediated space is operationally integrated by default.",
+          "functions": []
+        },
+        "participatory_actor_relations": [],
+        "human_limits_accessibility": {
+          "source_field": "as3_layer_notes.L9_safety_accessibility",
+          "note": "Low-contact but posture and accessibility still matter."
+        }
+      },
+      "source_provisional_finding": {
+        "sport_contest_axis": "sport",
+        "category_relation": "outside_core_spatial_athletic_class",
+        "claim_class": "C5",
+        "summary": "Cue sports confirm that spatial skill and rule-bearing physical geometry are not Operational Spatial Integration. “Spatial” in everyday skill language must not be confused with the Altis category term."
+      },
+      "confidence": "high",
+      "falsifiability": {
+        "source_field": "what_would_change_judgment",
+        "content": [
+          "A contest where computational geometry jointly changes legal positions, measurement, or officiation as a constitutive arena."
+        ]
+      },
+      "evidence_sources": [
+        {
+          "source_title": "World Pool Rules",
+          "publisher": "World Pool-Billiard Association",
+          "url": "https://wpapool.com/rules/",
+          "source_type": "federation_or_league_rules",
+          "claim_class": "C1",
+          "temporal_status": "current",
+          "publication_or_update_date": null
+        },
+        {
+          "source_title": "About the WPA",
+          "publisher": "World Pool-Billiard Association",
+          "url": "https://wpapool.com/about/",
+          "source_type": "official_announcement",
+          "claim_class": "C1",
+          "temporal_status": "current",
+          "publication_or_update_date": null
+        }
+      ],
+      "provenance_note": "Per-field claim_class and status preserved verbatim from the source case. source_provisional_finding is the corpus's own attributed reading, not a new Atlas verdict. Provider claims live in evidence_sources; Altis interpretation carries C4/C5."
+    },
+    {
+      "atlas_record_id": "ATL-D-013",
+      "source_case_id": "BC-013",
+      "citation_id": "BC-013",
+      "source_dataset": "boundary-cases-001-020.v0.3.json",
+      "source_version": "0.3",
+      "license": "CC-BY-4.0",
+      "license_ref": "DATASET_LICENSE.md",
+      "temporal_status": "provisional",
+      "activity": "Beat Saber World Cup competition",
+      "activity_aliases": [
+        "VR rhythm competition",
+        "Beat Saber esports"
+      ],
+      "classified_object": {
+        "primary": "contest",
+        "secondary": [
+          "spatial_athletic_contest",
+          "computational_contest",
+          "event"
+        ],
+        "notes": "The classified object is the Cube Community Beat Saber World Cup contest format, not Beat Saber as an entire product category or all rhythm games."
+      },
+      "dimensions": {
+        "performance_agency": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Players execute tracked hand and upper-body movements live; in-game score depends on timing and motion during each map.",
+          "agency_modes": [
+            "live_performance"
+          ],
+          "human_skill_causally_necessary": true
+        },
+        "performance_interface": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Headset and tracked controllers translate bodily movement into the game.",
+          "interface_types": [
+            "tracked_xr_input"
+          ]
+        },
+        "embodied_performance": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Tracked movement, sensorimotor coordination, fine motor control, and sustained effort materially affect score.",
+          "demand_types": [
+            "fine_motor",
+            "endurance",
+            "sensorimotor_coordination",
+            "physiological_effort",
+            "tracked_movement"
+          ]
+        },
+        "arena": {
+          "status": "supported",
+          "claim_class": "C3",
+          "summary": "A computational map presents timed targets and obstacles that structure action."
+        },
+        "distributed_arena_relation": {
+          "status": "partial",
+          "topology": "remote_synchronous",
+          "shared_computational_state": "supported",
+          "synchronization_mechanism": "Tournament software, map timing, score submission, and communications coordinate the contest.",
+          "calibration_equivalence": "Hardware and tracking equivalence remain imperfect.",
+          "officiation_relation": "Software and tournament staff administer results and disputes.",
+          "safety_relation": "Physical play-space safety remains local to each competitor."
+        },
+        "sensing_tracking": {
+          "status": "supported",
+          "claim_class": "C3",
+          "summary": "Headset and controller tracking are constitutive inputs."
+        },
+        "measurement": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "The in-game scoring system and tournament aggregation determine map and match results."
+        },
+        "comparability": {
+          "status": "partial",
+          "claim_class": "C4",
+          "summary": "Tournament rules constrain versions and prohibited mods, but hardware, tracking, latency, and map differences remain active comparability risks."
+        },
+        "officiation": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Tournament staff, Tournament Assistant, streams, and published procedures administer matches."
+        },
+        "outcome_openness": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Scores emerge through live performance under map constraints."
+        },
+        "consequence_structure": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Map wins, match progression, placement, and prizes derive from the contest."
+        },
+        "operational_spatial_integration": {
+          "overall_status": "supported",
+          "profile_status": "human_reviewed_v0_3",
+          "immersion_present": true,
+          "claim_class": "C4",
+          "summary": "Embodied live performance and a rule-bearing computational arena are jointly constitutive. Contest governance exists, although it is community- rather than federation-based.",
+          "functions": [
+            {
+              "role": "represent",
+              "status": "supported",
+              "significance": "constitutive"
+            },
+            {
+              "role": "enable",
+              "status": "supported",
+              "significance": "constitutive"
+            },
+            {
+              "role": "constrain",
+              "status": "supported",
+              "significance": "constitutive"
+            },
+            {
+              "role": "measure",
+              "status": "supported",
+              "significance": "constitutive"
+            },
+            {
+              "role": "compare",
+              "status": "partial",
+              "significance": "supportive"
+            },
+            {
+              "role": "officiate",
+              "status": "partial",
+              "significance": "supportive"
+            }
+          ]
+        },
+        "participatory_actor_relations": [],
+        "human_limits_accessibility": {
+          "source_field": "as3_layer_notes.L9_safety_accessibility",
+          "note": "Fatigue, room safety, and hardware access matter."
+        }
+      },
+      "source_provisional_finding": {
+        "sport_contest_axis": "digital_competition_not_settled_as_sport",
+        "category_relation": "spatial_athletic_contest",
+        "claim_class": "C5",
+        "summary": "The contest provisionally satisfies the Spatial Athletic Contest structure even though broader sport recognition remains unsettled. System membership and institutional sport status are separate questions."
+      },
+      "confidence": "medium",
+      "falsifiability": {
+        "source_field": "what_would_change_judgment",
+        "content": [
+          "Evidence that tracked bodily input is incidental rather than causally necessary.",
+          "Rules showing uncontrolled or non-comparable scoring across participants."
+        ]
+      },
+      "evidence_sources": [
+        {
+          "source_title": "Beat Saber World Cup 2026 Rulebook",
+          "publisher": "Cube Community",
+          "url": "https://bs-announcements.vercel.app/",
+          "source_type": "standard_or_sporting_code",
+          "claim_class": "C1",
+          "temporal_status": "current",
+          "publication_or_update_date": "2026-06-06"
+        },
+        {
+          "source_title": "Beat Saber World Cup 2022 — Rules and Match Flow",
+          "publisher": "Cube Community",
+          "url": "https://old.cube.community/main/tournament/bswc2022/info",
+          "source_type": "standard_or_sporting_code",
+          "claim_class": "C1",
+          "temporal_status": "historical",
+          "publication_or_update_date": "2022"
+        },
+        {
+          "source_title": "Beat Saber — official product site",
+          "publisher": "Beat Games",
+          "url": "https://beatsaber.com/",
+          "source_type": "first_party_technical",
+          "claim_class": "C3",
+          "temporal_status": "current",
+          "publication_or_update_date": null
+        }
+      ],
+      "provenance_note": "Per-field claim_class and status preserved verbatim from the source case. source_provisional_finding is the corpus's own attributed reading, not a new Atlas verdict. Provider claims live in evidence_sources; Altis interpretation carries C4/C5."
+    },
+    {
+      "atlas_record_id": "ATL-D-014",
+      "source_case_id": "BC-014",
+      "citation_id": "BC-014",
+      "source_dataset": "boundary-cases-001-020.v0.3.json",
+      "source_version": "0.3",
+      "license": "CC-BY-4.0",
+      "license_ref": "DATASET_LICENSE.md",
+      "temporal_status": "provisional",
+      "activity": "Zero Latency Sol Raiders free-roam competitive experience",
+      "activity_aliases": [
+        "Location-based free-roam VR competition",
+        "Sol Raiders"
+      ],
+      "classified_object": {
+        "primary": "product",
+        "secondary": [
+          "spatial_athletic_system",
+          "experience"
+        ],
+        "notes": "The classified object is the Sol Raiders-enabled free-roam product/experience configuration, not a formal league or all location-based VR."
+      },
+      "dimensions": {
+        "performance_agency": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Players move, aim, coordinate, and make tactical decisions live inside the shared session.",
+          "agency_modes": [
+            "live_performance"
+          ],
+          "human_skill_causally_necessary": true
+        },
+        "performance_interface": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Wireless headset, controllers, and arena tracking translate full-space movement into the experience.",
+          "interface_types": [
+            "tracked_xr_input",
+            "controller_or_discrete_input"
+          ]
+        },
+        "embodied_performance": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Locomotion, balance, sensorimotor coordination, tracked movement, and exertion materially affect play.",
+          "demand_types": [
+            "locomotion",
+            "balance",
+            "endurance",
+            "sensorimotor_coordination",
+            "physiological_effort",
+            "tracked_movement"
+          ]
+        },
+        "arena": {
+          "status": "supported",
+          "claim_class": "C3",
+          "summary": "A large physical arena is aligned with a shared computational environment for multiple players."
+        },
+        "distributed_arena_relation": {
+          "status": "supported",
+          "topology": "co_located_single_site",
+          "shared_computational_state": "supported",
+          "synchronization_mechanism": "Venue tracking and game state synchronize all participants.",
+          "calibration_equivalence": "Venue mapping and tracking calibration must align physical and virtual boundaries.",
+          "officiation_relation": "Software and venue operators administer the session.",
+          "safety_relation": "Venue operator controls collision avoidance, boundaries, and emergency response."
+        },
+        "sensing_tracking": {
+          "status": "supported",
+          "claim_class": "C3",
+          "summary": "Advanced motion tracking and real-time proximity systems are central provider-stated functions."
+        },
+        "measurement": {
+          "status": "partial",
+          "claim_class": "C3",
+          "summary": "The product records competitive performance, but public metric definitions and comparability controls are limited."
+        },
+        "comparability": {
+          "status": "unknown",
+          "claim_class": "C4",
+          "summary": "Cross-venue hardware, calibration, map version, and operational consistency are not sufficiently documented."
+        },
+        "officiation": {
+          "status": "partial",
+          "claim_class": "C3",
+          "summary": "Game code resolves events while venue staff monitor sessions and safety."
+        },
+        "outcome_openness": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "The in-game competitive result is performance-dependent."
+        },
+        "consequence_structure": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Winning, losing, tactical resource use, and session results provide in-game consequence."
+        },
+        "operational_spatial_integration": {
+          "overall_status": "supported",
+          "profile_status": "human_reviewed_v0_3",
+          "immersion_present": true,
+          "claim_class": "C4",
+          "summary": "Physical and computational arenas are jointly operational and safety-coupled. Evidence supports a Spatial Athletic System more strongly than a mature Spatial Athletic Contest.",
+          "functions": [
+            {
+              "role": "represent",
+              "status": "supported",
+              "significance": "constitutive"
+            },
+            {
+              "role": "enable",
+              "status": "supported",
+              "significance": "constitutive"
+            },
+            {
+              "role": "constrain",
+              "status": "supported",
+              "significance": "constitutive"
+            },
+            {
+              "role": "measure",
+              "status": "partial",
+              "significance": "supportive"
+            },
+            {
+              "role": "officiate",
+              "status": "partial",
+              "significance": "supportive"
+            }
+          ]
+        },
+        "participatory_actor_relations": [],
+        "human_limits_accessibility": {
+          "source_field": "as3_layer_notes.L9_safety_accessibility",
+          "note": "Boundary alignment and collision systems are central."
+        }
+      },
+      "source_provisional_finding": {
+        "sport_contest_axis": "digital_competition_not_settled_as_sport",
+        "category_relation": "spatial_athletic_system",
+        "claim_class": "C5",
+        "summary": "The product is a strong Spatial Athletic System candidate because physical and virtual arenas are constitutively coupled, but published evidence is insufficient to establish a mature governed contest class."
+      },
+      "confidence": "medium",
+      "falsifiability": {
+        "source_field": "what_would_change_judgment",
+        "content": [
+          "Public competition rules, metric definitions, cross-venue calibration controls, and appeals procedures."
+        ]
+      },
+      "evidence_sources": [
+        {
+          "source_title": "Zero Latency launches the first truly wireless free-roam VR system",
+          "publisher": "Zero Latency VR",
+          "url": "https://invest.zerolatencyvr.com/news-and-events/next-gen-launch-announcement",
+          "source_type": "official_announcement",
+          "claim_class": "C3",
+          "temporal_status": "current",
+          "publication_or_update_date": "2022-05-19"
+        },
+        {
+          "source_title": "Zero Latency VR FAQ",
+          "publisher": "Zero Latency VR",
+          "url": "https://invest.zerolatencyvr.com/zero-latency-vr-faq",
+          "source_type": "first_party_technical",
+          "claim_class": "C3",
+          "temporal_status": "current",
+          "publication_or_update_date": null
+        }
+      ],
+      "provenance_note": "Per-field claim_class and status preserved verbatim from the source case. source_provisional_finding is the corpus's own attributed reading, not a new Atlas verdict. Provider claims live in evidence_sources; Altis interpretation carries C4/C5."
+    },
+    {
+      "atlas_record_id": "ATL-D-015",
+      "source_case_id": "BC-015",
+      "citation_id": "BC-015",
+      "source_dataset": "boundary-cases-001-020.v0.3.json",
+      "source_version": "0.3",
+      "license": "CC-BY-4.0",
+      "license_ref": "DATASET_LICENSE.md",
+      "temporal_status": "provisional",
+      "activity": "World Taekwondo Virtual Taekwondo competition",
+      "activity_aliases": [
+        "Remote motion-tracked martial competition",
+        "Virtual Taekwondo"
+      ],
+      "classified_object": {
+        "primary": "contest",
+        "secondary": [
+          "spatial_athletic_contest",
+          "event",
+          "organization"
+        ],
+        "notes": "The object is the World Taekwondo-governed Virtual Taekwondo contest configuration. The preselected remote-distributed hypothesis is retained but marked unresolved because the cited championships were co-located."
+      },
+      "dimensions": {
+        "performance_agency": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Competitors execute kicks and body movement live; tracked speed, timing, and tactical choice affect the virtual opponent state.",
+          "agency_modes": [
+            "live_performance"
+          ],
+          "human_skill_causally_necessary": true
+        },
+        "performance_interface": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "A headset and full-body AXIS motion-tracking nodes convert movement into avatar action.",
+          "interface_types": [
+            "tracked_xr_input"
+          ]
+        },
+        "embodied_performance": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Balance, endurance, sensorimotor coordination, physiological effort, and tracked movement materially affect performance.",
+          "demand_types": [
+            "balance",
+            "endurance",
+            "sensorimotor_coordination",
+            "physiological_effort",
+            "tracked_movement"
+          ]
+        },
+        "arena": {
+          "status": "supported",
+          "claim_class": "C2",
+          "summary": "Competitors act in local physical stations while avatars share a computational sparring arena. Remote distributed arena equivalence remains unknown."
+        },
+        "distributed_arena_relation": {
+          "status": "not_evidenced",
+          "topology": "co_located_multi_station",
+          "shared_computational_state": "supported",
+          "synchronization_mechanism": "Shared match room and Game Master within the documented event setup.",
+          "calibration_equivalence": "Event calibration procedures are documented; cross-site equivalence is not established.",
+          "officiation_relation": "Software, referees, and event operators administer one shared match state.",
+          "safety_relation": "Local mat, boundary, display, and calibration requirements are documented; remote-site safety equivalence is not."
+        },
+        "sensing_tracking": {
+          "status": "supported",
+          "claim_class": "C3",
+          "summary": "Full-body motion tracking is constitutive."
+        },
+        "measurement": {
+          "status": "supported",
+          "claim_class": "C2",
+          "summary": "The system converts tracked movement into health, damage, and round outcomes."
+        },
+        "comparability": {
+          "status": "partial",
+          "claim_class": "C4",
+          "summary": "Rules and common equipment support comparison, but calibration, patch, and remote latency controls are not fully public."
+        },
+        "officiation": {
+          "status": "supported",
+          "claim_class": "C2",
+          "summary": "Software, referees, and certified match operators jointly administer matches."
+        },
+        "outcome_openness": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Round outcomes depend on live tracked performance."
+        },
+        "consequence_structure": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Round wins, match advancement, and championship medals derive from contest structure."
+        },
+        "operational_spatial_integration": {
+          "overall_status": "supported",
+          "profile_status": "human_reviewed_v0_3",
+          "immersion_present": true,
+          "claim_class": "C4",
+          "summary": "The co-located contest is strongly spatial-athletic. The planned test of geographically distributed performance remains unresolved rather than inferred from global availability.",
+          "functions": [
+            {
+              "role": "represent",
+              "status": "supported",
+              "significance": "constitutive"
+            },
+            {
+              "role": "enable",
+              "status": "supported",
+              "significance": "constitutive"
+            },
+            {
+              "role": "constrain",
+              "status": "supported",
+              "significance": "constitutive"
+            },
+            {
+              "role": "measure",
+              "status": "supported",
+              "significance": "constitutive"
+            },
+            {
+              "role": "compare",
+              "status": "partial",
+              "significance": "supportive"
+            },
+            {
+              "role": "officiate",
+              "status": "supported",
+              "significance": "supportive"
+            }
+          ]
+        },
+        "participatory_actor_relations": [],
+        "human_limits_accessibility": {
+          "source_field": "as3_layer_notes.L9_safety_accessibility",
+          "note": "Non-contact format reduces contact risk but introduces headset and motion risks."
+        }
+      },
+      "source_provisional_finding": {
+        "sport_contest_axis": "sport_like_contest",
+        "category_relation": "spatial_athletic_contest",
+        "claim_class": "C5",
+        "summary": "Virtual Taekwondo supports the Spatial Athletic Contest class for co-located competition. Sprint 5 does not establish a remote distributed arena because current primary evidence does not demonstrate that configuration."
+      },
+      "confidence": "medium",
+      "falsifiability": {
+        "source_field": "what_would_change_judgment",
+        "content": [
+          "Published remote match rules, latency budgets, calibration procedures, and evidence of competitors in different physical sites sharing one match."
+        ]
+      },
+      "evidence_sources": [
+        {
+          "source_title": "VTKD Competitive League and Rule Book",
+          "publisher": "Virtual Taekwondo / Refract Technologies",
+          "url": "https://virtualtkd.gg/compete/",
+          "source_type": "standard_or_sporting_code",
+          "claim_class": "C3",
+          "temporal_status": "current",
+          "publication_or_update_date": null
+        },
+        {
+          "source_title": "Virtual Taekwondo at the Olympic Esports Series finals",
+          "publisher": "World Taekwondo",
+          "url": "https://www.worldtaekwondo.org/competition/view.html?mcd=W02&nid=140192",
+          "source_type": "official_announcement",
+          "claim_class": "C1",
+          "temporal_status": "historical",
+          "publication_or_update_date": "2023"
+        },
+        {
+          "source_title": "First World Taekwondo Virtual Championships",
+          "publisher": "World Taekwondo",
+          "url": "https://m.worldtaekwondo.org/competition/view.html?mcd=N03%2F1000&nid=141655&sc=ne",
+          "source_type": "official_announcement",
+          "claim_class": "C1",
+          "temporal_status": "historical",
+          "publication_or_update_date": "2024"
+        },
+        {
+          "source_title": "VTKD Rule Book Archive — WT Virtual Taekwondo Rules and Regulations (April 2026)",
+          "publisher": "Virtual Taekwondo / World Taekwondo",
+          "url": "https://virtualtkd.gg/rulebooks/",
+          "source_type": "standard_or_sporting_code",
+          "claim_class": "C1",
+          "temporal_status": "current",
+          "publication_or_update_date": "2026-04-11"
+        },
+        {
+          "source_title": "VTKD User Manual 1.2.34",
+          "publisher": "Virtual Taekwondo",
+          "url": "https://virtualtkd.gg/manuals/vtkd-user-manual-1-2-34/",
+          "source_type": "first_party_technical",
+          "claim_class": "C3",
+          "temporal_status": "current",
+          "publication_or_update_date": null
+        },
+        {
+          "source_title": "Virtual Taekwondo Patch Notes",
+          "publisher": "Virtual Taekwondo",
+          "url": "https://virtualtkd.gg/patch-notes/",
+          "source_type": "first_party_technical",
+          "claim_class": "C3",
+          "temporal_status": "current",
+          "publication_or_update_date": "2026-01-13"
+        }
+      ],
+      "provenance_note": "Per-field claim_class and status preserved verbatim from the source case. source_provisional_finding is the corpus's own attributed reading, not a new Atlas verdict. Provider claims live in evidence_sources; Altis interpretation carries C4/C5."
+    },
+    {
+      "atlas_record_id": "ATL-D-016",
+      "source_case_id": "BC-016",
+      "citation_id": "BC-016",
+      "source_dataset": "boundary-cases-001-020.v0.3.json",
+      "source_version": "0.3",
+      "license": "CC-BY-4.0",
+      "license_ref": "DATASET_LICENSE.md",
+      "temporal_status": "provisional",
+      "activity": "MindMotion GO rehabilitation exercise system",
+      "activity_aliases": [
+        "Rehabilitation exercise game",
+        "Virtual rehabilitation"
+      ],
+      "classified_object": {
+        "primary": "spatial_support_system",
+        "secondary": [
+          "product",
+          "experience"
+        ],
+        "notes": "The object is the regulated rehabilitation product and supervised exercise configuration, not stroke rehabilitation as a whole and not a competitive sport."
+      },
+      "dimensions": {
+        "performance_agency": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "The patient must generate goal-directed movement during each exercise; performance agency exists without a competitive opponent.",
+          "agency_modes": [
+            "live_performance",
+            "assisted_performance"
+          ],
+          "human_skill_causally_necessary": true
+        },
+        "performance_interface": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Motion capture and a computer-based interface translate patient movement into interactive tasks and feedback.",
+          "interface_types": [
+            "direct_bodily_action",
+            "tracked_xr_input"
+          ]
+        },
+        "embodied_performance": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Adaptive bodily performance, fine motor control, sensorimotor coordination, and tracked movement are the therapeutic channel.",
+          "demand_types": [
+            "fine_motor",
+            "sensorimotor_coordination",
+            "tracked_movement",
+            "adaptive_bodily_performance"
+          ]
+        },
+        "arena": {
+          "status": "supported",
+          "claim_class": "C2",
+          "summary": "A computer-mediated exercise environment structures targets and feedback but does not constitute a sport arena."
+        },
+        "distributed_arena_relation": {
+          "status": "supported",
+          "topology": "co_located_single_site",
+          "shared_computational_state": "supported",
+          "synchronization_mechanism": "Motion capture and therapeutic software synchronize movement and feedback.",
+          "calibration_equivalence": "Clinical setup and patient-specific calibration govern the exercise.",
+          "officiation_relation": "No sport officiation; clinical supervision governs protocol.",
+          "safety_relation": "Clinical responsibility and patient suitability are central."
+        },
+        "sensing_tracking": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Motion capture detects patient movement."
+        },
+        "measurement": {
+          "status": "supported",
+          "claim_class": "C2",
+          "summary": "Clinical scales and system task data can measure movement and progress."
+        },
+        "comparability": {
+          "status": "partial",
+          "claim_class": "C4",
+          "summary": "Clinical comparison requires protocol, population, dose, assessor, and outcome alignment; product scores alone are insufficient."
+        },
+        "officiation": {
+          "status": "not_applicable",
+          "claim_class": "C4",
+          "summary": "A therapist supervises care, but sport officiation does not apply."
+        },
+        "outcome_openness": {
+          "status": "not_applicable",
+          "claim_class": "C4",
+          "summary": "Therapeutic task completion is not an open competitive outcome."
+        },
+        "consequence_structure": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Functional progress, adherence, fatigue, and clinical risk are meaningful consequences, but not contest consequences."
+        },
+        "operational_spatial_integration": {
+          "overall_status": "supported",
+          "profile_status": "human_reviewed_v0_3",
+          "immersion_present": false,
+          "claim_class": "C4",
+          "summary": "The system is strongly embodied and computationally mediated, but its correct class is Spatial Support System because therapeutic purpose and protocol replace contest structure.",
+          "functions": [
+            {
+              "role": "represent",
+              "status": "supported",
+              "significance": "supportive"
+            },
+            {
+              "role": "enable",
+              "status": "supported",
+              "significance": "constitutive"
+            },
+            {
+              "role": "mediate",
+              "status": "supported",
+              "significance": "constitutive"
+            },
+            {
+              "role": "measure",
+              "status": "supported",
+              "significance": "supportive"
+            }
+          ]
+        },
+        "participatory_actor_relations": [
+          {
+            "relation_id": "PAR-016-01",
+            "actor_type": "operator",
+            "relation_type": "supervisor",
+            "action_window": "Before and during the therapeutic exercise.",
+            "mechanism": "The clinician selects or adjusts protocol parameters and supervises safe execution.",
+            "performance_agency_relation": "indirect_no_execution",
+            "rule_authority_relation": "participatory",
+            "resource_or_constraint_effect": "The supervisor changes task conditions without performing the patient's movement.",
+            "evidence_refs": [
+              0
+            ],
+            "uncertainty": "Clinical roles and software permissions may vary by deployment.",
+            "review_status": "human_reviewed_v0_3"
+          }
+        ],
+        "human_limits_accessibility": {
+          "source_field": "as3_layer_notes.L9_safety_accessibility",
+          "note": "Clinical suitability, fatigue, and impairment variation govern use."
+        }
+      },
+      "source_provisional_finding": {
+        "sport_contest_axis": "training_or_simulation",
+        "category_relation": "spatial_support_system",
+        "claim_class": "C5",
+        "summary": "This case strongly validates the Spatial Support System sibling class: embodied spatial interaction can be clinically meaningful without being sport or contest."
+      },
+      "confidence": "high",
+      "falsifiability": {
+        "source_field": "what_would_change_judgment",
+        "content": [
+          "A separately governed competitive event using the same technical platform with open outcomes and contest rules."
+        ]
+      },
+      "evidence_sources": [
+        {
+          "source_title": "510(k) K173931 — MindMotion GO",
+          "publisher": "U.S. Food and Drug Administration",
+          "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPMN/pmn.cfm?ID=K173931",
+          "source_type": "law_or_regulation",
+          "claim_class": "C1",
+          "temporal_status": "current",
+          "publication_or_update_date": "2018-05-17"
+        },
+        {
+          "source_title": "NCT07534124 — Virtual Reality-Based Upper Limb Rehabilitation in Chronic Stroke",
+          "publisher": "ClinicalTrials.gov / U.S. National Library of Medicine",
+          "url": "https://clinicaltrials.gov/study/NCT07534124",
+          "source_type": "reputable_research",
+          "claim_class": "C1",
+          "temporal_status": "current",
+          "publication_or_update_date": null
+        },
+        {
+          "source_title": "Clinically Meaningful Upper Limb Motor Recovery with MindMotion GO — randomized trial preprint",
+          "publisher": "medRxiv",
+          "url": "https://www.medrxiv.org/content/10.64898/2026.04.27.26351882v1",
+          "source_type": "reputable_research",
+          "claim_class": "C3",
+          "temporal_status": "current",
+          "publication_or_update_date": "2026-04-29"
+        }
+      ],
+      "provenance_note": "Per-field claim_class and status preserved verbatim from the source case. source_provisional_finding is the corpus's own attributed reading, not a new Atlas verdict. Provider claims live in evidence_sources; Altis interpretation carries C4/C5."
+    },
+    {
+      "atlas_record_id": "ATL-D-017",
+      "source_case_id": "BC-017",
+      "citation_id": "BC-017",
+      "source_dataset": "boundary-cases-001-020.v0.3.json",
+      "source_version": "0.3",
+      "license": "CC-BY-4.0",
+      "license_ref": "DATASET_LICENSE.md",
+      "temporal_status": "provisional",
+      "activity": "CYBATHLON Exoskeleton Race",
+      "activity_aliases": [
+        "Exoskeleton-supported competition"
+      ],
+      "classified_object": {
+        "primary": "contest",
+        "secondary": [
+          "athletic_system",
+          "event"
+        ],
+        "notes": "The object is the CYBATHLON EXO contest, where a pilot and exoskeleton complete physical tasks; individual devices may use different control modes."
+      },
+      "dimensions": {
+        "performance_agency": {
+          "status": "partial",
+          "claim_class": "C4",
+          "summary": "Pilot skill and decisions matter, but permitted manual, semi-autonomous, and autonomous modes can shift causal control during tasks.",
+          "agency_modes": [
+            "live_performance",
+            "assisted_performance",
+            "autonomous_execution",
+            "agency_handoff"
+          ],
+          "human_skill_causally_necessary": null
+        },
+        "performance_interface": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "A robotic exoskeleton is an adaptive assistive interface that may interpret input or environment state.",
+          "interface_types": [
+            "adaptive_or_assistive_equipment"
+          ]
+        },
+        "embodied_performance": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Adaptive bodily performance, balance, cognitive control, and assisted locomotion are constitutive.",
+          "demand_types": [
+            "locomotion",
+            "balance",
+            "cognitive",
+            "adaptive_bodily_performance"
+          ]
+        },
+        "arena": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Physical task courses contain variable obstacles and everyday activity challenges."
+        },
+        "distributed_arena_relation": {
+          "status": "not_applicable",
+          "topology": "co_located_single_site",
+          "shared_computational_state": "not_applicable",
+          "synchronization_mechanism": "Not applicable.",
+          "calibration_equivalence": "Device-specific control and assistance remain relevant to comparability, but not as a distributed-arena relation.",
+          "officiation_relation": "Officials evaluate task completion and time on the physical course.",
+          "safety_relation": "Pilot, assistive device, and course safety are local and constitutive."
+        },
+        "sensing_tracking": {
+          "status": "partial",
+          "claim_class": "C1",
+          "summary": "Devices may use environment sensing and intention detection; implementations vary."
+        },
+        "measurement": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Task completion and time are recorded under competition rules."
+        },
+        "comparability": {
+          "status": "partial",
+          "claim_class": "C4",
+          "summary": "Rules create a common task frame, but assistance architectures differ substantially."
+        },
+        "officiation": {
+          "status": "supported",
+          "claim_class": "C2",
+          "summary": "Competition officials administer task completion and results."
+        },
+        "outcome_openness": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Results emerge from pilot–device performance under task constraints."
+        },
+        "consequence_structure": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Task success, time, ranking, and awards follow from competition."
+        },
+        "operational_spatial_integration": {
+          "overall_status": "partial",
+          "profile_status": "human_reviewed_v0_3",
+          "immersion_present": false,
+          "claim_class": "C4",
+          "summary": "The contest is deeply human–machine mediated, but the arena remains physical. Assistance and agency handoff—not computational Spatiality—are the primary analytical pressures.",
+          "functions": [
+            {
+              "role": "mediate",
+              "status": "partial",
+              "significance": "supportive"
+            },
+            {
+              "role": "measure",
+              "status": "supported",
+              "significance": "supportive"
+            }
+          ]
+        },
+        "participatory_actor_relations": [],
+        "human_limits_accessibility": {
+          "source_field": "as3_layer_notes.L9_safety_accessibility",
+          "note": "Safety and disability-specific access are constitutive."
+        }
+      },
+      "source_provisional_finding": {
+        "sport_contest_axis": "research_or_engineering_contest",
+        "category_relation": "outside_core_spatial_athletic_class",
+        "claim_class": "C5",
+        "summary": "The case confirms Assisted Performance Agency but shows that the schema’s summary-level agency modes cannot fully represent when control shifts during a run. Phase-level agency segments are needed before normative attribution."
+      },
+      "confidence": "high",
+      "falsifiability": {
+        "source_field": "what_would_change_judgment",
+        "content": [
+          "Task-level logs identifying control mode, pilot input, autonomous action, and failure at each phase."
+        ]
+      },
+      "evidence_sources": [
+        {
+          "source_title": "Exoskeleton Race",
+          "publisher": "CYBATHLON / ETH Zurich",
+          "url": "https://cybathlon.com/en/event/disciplines/exo",
+          "source_type": "first_party_technical",
+          "claim_class": "C1",
+          "temporal_status": "current",
+          "publication_or_update_date": null
+        },
+        {
+          "source_title": "CYBATHLON 2024",
+          "publisher": "CYBATHLON / ETH Zurich",
+          "url": "https://cybathlon.com/en/events/edition/cybathlon-2024",
+          "source_type": "official_announcement",
+          "claim_class": "C1",
+          "temporal_status": "historical",
+          "publication_or_update_date": "2024-10-25"
+        }
+      ],
+      "provenance_note": "Per-field claim_class and status preserved verbatim from the source case. source_provisional_finding is the corpus's own attributed reading, not a new Atlas verdict. Provider claims live in evidence_sources; Altis interpretation carries C4/C5."
+    },
+    {
+      "atlas_record_id": "ATL-D-018",
+      "source_case_id": "BC-018",
+      "citation_id": "BC-018",
+      "source_dataset": "boundary-cases-001-020.v0.3.json",
+      "source_version": "0.3",
+      "license": "CC-BY-4.0",
+      "license_ref": "DATASET_LICENSE.md",
+      "temporal_status": "provisional",
+      "activity": "CYBATHLON Brain-Computer Interface Race",
+      "activity_aliases": [
+        "Brain-computer-interface competition"
+      ],
+      "classified_object": {
+        "primary": "contest",
+        "secondary": [
+          "computational_contest",
+          "event"
+        ],
+        "notes": "The object is the BCI Race contest in which a pilot uses measured brain activity to control a computer-based vehicle or game process."
+      },
+      "dimensions": {
+        "performance_agency": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "The pilot intentionally generates brain-activity patterns during the race; decoded commands materially influence the vehicle.",
+          "agency_modes": [
+            "live_performance",
+            "assisted_performance"
+          ],
+          "human_skill_causally_necessary": true
+        },
+        "performance_interface": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "A physiological sensing interface measures brain activity and translates it into computer control.",
+          "interface_types": [
+            "physiological_sensing",
+            "intentional_biological_control"
+          ]
+        },
+        "embodied_performance": {
+          "status": "disputed",
+          "claim_class": "C4",
+          "summary": "The performance is biologically generated and cognitively demanding, but conventional motor expression is minimal or absent. Whether this satisfies the Spatial Athletic System embodiment condition remains unresolved.",
+          "demand_types": [
+            "cognitive",
+            "physiological_effort",
+            "intentional_biosignal_control"
+          ]
+        },
+        "arena": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "The race occurs in an animated computational scenario controlled by decoded brain signals."
+        },
+        "distributed_arena_relation": {
+          "status": "not_applicable",
+          "topology": "co_located_single_site",
+          "shared_computational_state": "supported",
+          "synchronization_mechanism": "Common task software and event timing.",
+          "calibration_equivalence": "Participant-specific calibration is material and remains only partially comparable.",
+          "officiation_relation": "Software and officials determine task completion and ranking.",
+          "safety_relation": "Participant fatigue and signal burden are local human limits."
+        },
+        "sensing_tracking": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Brain activity is sensed and classified in real time."
+        },
+        "measurement": {
+          "status": "supported",
+          "claim_class": "C2",
+          "summary": "Decoder output, task completion, and time are measured."
+        },
+        "comparability": {
+          "status": "partial",
+          "claim_class": "C4",
+          "summary": "Signal variability, calibration, classifier design, stress, and participant-specific training complicate comparison."
+        },
+        "officiation": {
+          "status": "supported",
+          "claim_class": "C2",
+          "summary": "Competition software and officials administer task state and results."
+        },
+        "outcome_openness": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Race progress depends on live pilot-generated commands and system decoding."
+        },
+        "consequence_structure": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Task completion, time, ranking, and awards follow from the contest."
+        },
+        "operational_spatial_integration": {
+          "overall_status": "supported",
+          "profile_status": "human_reviewed_v0_3",
+          "immersion_present": true,
+          "claim_class": "C4",
+          "summary": "Operational spatial integration is constitutive, but embodiment is category-disputed because performance is physiological and cognitive rather than conventionally motor.",
+          "functions": [
+            {
+              "role": "represent",
+              "status": "supported",
+              "significance": "constitutive"
+            },
+            {
+              "role": "enable",
+              "status": "supported",
+              "significance": "constitutive"
+            },
+            {
+              "role": "mediate",
+              "status": "supported",
+              "significance": "constitutive"
+            },
+            {
+              "role": "constrain",
+              "status": "supported",
+              "significance": "constitutive"
+            },
+            {
+              "role": "measure",
+              "status": "supported",
+              "significance": "constitutive"
+            },
+            {
+              "role": "compare",
+              "status": "partial",
+              "significance": "supportive"
+            },
+            {
+              "role": "officiate",
+              "status": "supported",
+              "significance": "supportive"
+            }
+          ]
+        },
+        "participatory_actor_relations": [],
+        "human_limits_accessibility": {
+          "source_field": "as3_layer_notes.L9_safety_accessibility",
+          "note": "Designed for severe motor impairment; fatigue and signal burden matter."
+        },
+        "intentional_biological_control": {
+          "status": "supported",
+          "summary": "The pilot intentionally generates brain-activity patterns that are decoded into task commands. This establishes a live bodily-origin performance channel but does not by itself settle Spatial Athletic System membership.",
+          "signal_origin": "brain_activity",
+          "intentional_generation": "supported",
+          "task_coupling": "constitutive",
+          "decoder_mediation": "constitutive",
+          "human_skill_causally_necessary": true,
+          "athletic_embodiment_relation": "unresolved"
+        }
+      },
+      "source_provisional_finding": {
+        "sport_contest_axis": "research_or_engineering_contest",
+        "category_relation": "unresolved",
+        "claim_class": "C5",
+        "summary": "The case cannot be reduced to an ordinary computational contest because the human biological signal is the live performance channel; nor can v0.2 yet assert that this is sufficient Embodied Performance for Spatial Athletic System membership."
+      },
+      "confidence": "medium",
+      "falsifiability": {
+        "source_field": "what_would_change_judgment",
+        "content": [
+          "A defensible category rule distinguishing intentional physiological performance from incidental biosignal measurement."
+        ]
+      },
+      "evidence_sources": [
+        {
+          "source_title": "Brain-Computer Interface Race",
+          "publisher": "CYBATHLON / ETH Zurich",
+          "url": "https://cybathlon.com/en/event/disciplines/bci",
+          "source_type": "first_party_technical",
+          "claim_class": "C1",
+          "temporal_status": "current",
+          "publication_or_update_date": null
+        },
+        {
+          "source_title": "CYBATHLON 2024",
+          "publisher": "CYBATHLON / ETH Zurich",
+          "url": "https://cybathlon.com/en/events/edition/cybathlon-2024",
+          "source_type": "official_announcement",
+          "claim_class": "C1",
+          "temporal_status": "historical",
+          "publication_or_update_date": "2024-10-25"
+        },
+        {
+          "source_title": "Improving motor imagery decoding methods for an EEG-based mobile BCI in CYBATHLON 2024",
+          "publisher": "neuroTUM research team / arXiv",
+          "url": "https://arxiv.org/abs/2511.23384",
+          "source_type": "reputable_research",
+          "claim_class": "C2",
+          "temporal_status": "current",
+          "publication_or_update_date": "2025-11-28"
+        },
+        {
+          "source_title": "Brain-Computer Interface Race Tasks",
+          "publisher": "CYBATHLON / ETH Zurich",
+          "url": "https://cybathlon.com/en/events/challenges/challenges-2024/bci-tasks",
+          "source_type": "first_party_technical",
+          "claim_class": "C1",
+          "temporal_status": "current",
+          "publication_or_update_date": null
+        }
+      ],
+      "provenance_note": "Per-field claim_class and status preserved verbatim from the source case. source_provisional_finding is the corpus's own attributed reading, not a new Atlas verdict. Provider claims live in evidence_sources; Altis interpretation carries C4/C5."
+    },
+    {
+      "atlas_record_id": "ATL-D-019",
+      "source_case_id": "BC-019",
+      "citation_id": "BC-019",
+      "source_dataset": "boundary-cases-001-020.v0.3.json",
+      "source_version": "0.3",
+      "license": "CC-BY-4.0",
+      "license_ref": "DATASET_LICENSE.md",
+      "temporal_status": "provisional",
+      "activity": "DARPA Subterranean Challenge Systems Competition",
+      "activity_aliases": [
+        "Mixed human–AI team competition",
+        "Human–robot team competition"
+      ],
+      "classified_object": {
+        "primary": "contest",
+        "secondary": [
+          "event",
+          "organization"
+        ],
+        "notes": "The object is the physical Systems Competition in which human teams design and supervise autonomous robot teams searching a physical course."
+      },
+      "dimensions": {
+        "performance_agency": {
+          "status": "partial",
+          "claim_class": "C4",
+          "summary": "Human design and supervisory decisions matter, but robots perform substantial autonomous navigation and search during the timed run.",
+          "agency_modes": [
+            "design_engineering",
+            "autonomous_execution",
+            "agency_handoff"
+          ],
+          "human_skill_causally_necessary": null
+        },
+        "performance_interface": {
+          "status": "partial",
+          "claim_class": "C4",
+          "summary": "Humans interact through command systems while autonomous robots act physically in the course.",
+          "interface_types": [
+            "remote_control",
+            "autonomous_agent"
+          ]
+        },
+        "embodied_performance": {
+          "status": "absent",
+          "claim_class": "C4",
+          "summary": "The decisive physical execution is robotic rather than live human bodily performance.",
+          "demand_types": [
+            "none_live_human"
+          ]
+        },
+        "arena": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Physical subterranean courses and computational maps jointly structure robot operation and scoring."
+        },
+        "distributed_arena_relation": {
+          "status": "partial",
+          "topology": "remote_supervision_physical_arena",
+          "shared_computational_state": "supported",
+          "synchronization_mechanism": "Robot telemetry, maps, networking, and command systems connect the command post to the course.",
+          "calibration_equivalence": "Not intended as identical-system calibration; heterogeneous systems are compared through common tasks and scoring.",
+          "officiation_relation": "DARPA validates spatial reports, timing, and ranking from the shared competition infrastructure.",
+          "safety_relation": "Physical separation reduces direct human exposure while robot and course safety remain governed."
+        },
+        "sensing_tracking": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Robots use perception, localization, networking, and mapping to detect artifacts and report locations."
+        },
+        "measurement": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Correct artifact type and location within tolerance produce points; time resolves ranking."
+        },
+        "comparability": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Common courses, report limits, location tolerance, and time frame support comparison, while system architectures vary by design."
+        },
+        "officiation": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "DARPA systems and officials validate artifact reports and scores."
+        },
+        "outcome_openness": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Results emerge through team design, supervision, and autonomous system execution."
+        },
+        "consequence_structure": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Points, time, ranking, and prize awards form the consequence structure."
+        },
+        "operational_spatial_integration": {
+          "overall_status": "supported",
+          "profile_status": "human_reviewed_v0_3",
+          "immersion_present": false,
+          "claim_class": "C4",
+          "summary": "The competition has rich operational spatial integration, but not human athletic embodiment. It is an engineering contest outside the Spatial Athletic core.",
+          "functions": [
+            {
+              "role": "represent",
+              "status": "supported",
+              "significance": "constitutive"
+            },
+            {
+              "role": "enable",
+              "status": "supported",
+              "significance": "constitutive"
+            },
+            {
+              "role": "mediate",
+              "status": "supported",
+              "significance": "constitutive"
+            },
+            {
+              "role": "constrain",
+              "status": "supported",
+              "significance": "constitutive"
+            },
+            {
+              "role": "measure",
+              "status": "supported",
+              "significance": "constitutive"
+            },
+            {
+              "role": "compare",
+              "status": "supported",
+              "significance": "supportive"
+            },
+            {
+              "role": "officiate",
+              "status": "supported",
+              "significance": "supportive"
+            }
+          ]
+        },
+        "participatory_actor_relations": [],
+        "human_limits_accessibility": {
+          "source_field": "as3_layer_notes.L9_safety_accessibility",
+          "note": "Robots enter hazardous spaces to reduce human risk."
+        }
+      },
+      "source_provisional_finding": {
+        "sport_contest_axis": "research_or_engineering_contest",
+        "category_relation": "outside_core_spatial_athletic_class",
+        "claim_class": "C5",
+        "summary": "Operational spatial integration can be very strong without Spatial Athletic System membership. The case also confirms that agency handoff requires phase-level representation rather than one summary list."
+      },
+      "confidence": "high",
+      "falsifiability": {
+        "source_field": "what_would_change_judgment",
+        "content": [
+          "Phase logs showing human commands, autonomous decisions, and causal contribution throughout each run."
+        ]
+      },
+      "evidence_sources": [
+        {
+          "source_title": "DARPA Subterranean Challenge program",
+          "publisher": "Defense Advanced Research Projects Agency",
+          "url": "https://www.darpa.mil/research/programs/darpa-subterranean-challenge",
+          "source_type": "official_announcement",
+          "claim_class": "C1",
+          "temporal_status": "historical",
+          "publication_or_update_date": null
+        },
+        {
+          "source_title": "Subterranean Challenge Final Event",
+          "publisher": "Defense Advanced Research Projects Agency",
+          "url": "https://www.darpa.mil/research/challenges/subterranean",
+          "source_type": "official_announcement",
+          "claim_class": "C1",
+          "temporal_status": "historical",
+          "publication_or_update_date": "2021-09"
+        },
+        {
+          "source_title": "Teams CoSTAR and BARCS Take Top Spots in DARPA SubT Urban Circuit",
+          "publisher": "Defense Advanced Research Projects Agency",
+          "url": "https://www.darpa.mil/news/2020/costar-barcs-subterranean-challenge",
+          "source_type": "official_announcement",
+          "claim_class": "C1",
+          "temporal_status": "historical",
+          "publication_or_update_date": "2020"
+        }
+      ],
+      "provenance_note": "Per-field claim_class and status preserved verbatim from the source case. source_provisional_finding is the corpus's own attributed reading, not a new Atlas verdict. Provider claims live in evidence_sources; Altis interpretation carries C4/C5."
+    },
+    {
+      "atlas_record_id": "ATL-D-020",
+      "source_case_id": "BC-020",
+      "citation_id": "BC-020",
+      "source_dataset": "boundary-cases-001-020.v0.3.json",
+      "source_version": "0.3",
+      "license": "CC-BY-4.0",
+      "license_ref": "DATASET_LICENSE.md",
+      "temporal_status": "provisional",
+      "activity": "Formula E race with FANBOOST",
+      "activity_aliases": [
+        "Spectator-influenced athletic competition",
+        "Formula E FANBOOST"
+      ],
+      "classified_object": {
+        "primary": "contest",
+        "secondary": [
+          "event",
+          "athletic_system"
+        ],
+        "notes": "The object is a historical Formula E race under the FANBOOST rule, not current Formula E and not fan voting in sport generally."
+      },
+      "dimensions": {
+        "performance_agency": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Drivers retain live vehicle-control agency; fan votes allocate an optional power resource but do not execute the driving action.",
+          "agency_modes": [
+            "live_performance",
+            "assisted_performance"
+          ],
+          "human_skill_causally_necessary": true
+        },
+        "performance_interface": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Driver performance is mediated by a regulated racing vehicle and controls.",
+          "interface_types": [
+            "vehicle_control"
+          ]
+        },
+        "embodied_performance": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "Vehicle control, endurance, sensorimotor coordination, cognitive demand, and physiological load remain decisive.",
+          "demand_types": [
+            "endurance",
+            "cognitive",
+            "sensorimotor_coordination",
+            "physiological_effort",
+            "vehicle_control"
+          ]
+        },
+        "arena": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "The racing arena is a physical street circuit. Fan voting occurs outside the arena."
+        },
+        "distributed_arena_relation": {
+          "status": "not_applicable",
+          "topology": "co_located_single_site",
+          "shared_computational_state": "partial",
+          "synchronization_mechanism": "Voting and vehicle systems communicate resource eligibility and deployment.",
+          "calibration_equivalence": "Not applicable to arena distribution.",
+          "officiation_relation": "Officials and vehicle systems administer eligibility and deployment under the rule.",
+          "safety_relation": "Motorsport safety remains separate from the voting mechanism."
+        },
+        "sensing_tracking": {
+          "status": "supported",
+          "claim_class": "C2",
+          "summary": "Vehicle telemetry and race timing measure the physical contest; fan votes determine eligibility for the boost."
+        },
+        "measurement": {
+          "status": "supported",
+          "claim_class": "C2",
+          "summary": "Race timing, position, energy, and results are measured under championship rules."
+        },
+        "comparability": {
+          "status": "partial",
+          "claim_class": "C4",
+          "summary": "The mechanism was declared equally available as a voting process, but popularity produced intentionally unequal assistance."
+        },
+        "officiation": {
+          "status": "supported",
+          "claim_class": "C2",
+          "summary": "Championship officials and vehicle systems administer legal deployment."
+        },
+        "outcome_openness": {
+          "status": "supported",
+          "claim_class": "C4",
+          "summary": "The race result remains open and driver-dependent, although spectators alter available resources."
+        },
+        "consequence_structure": {
+          "status": "supported",
+          "claim_class": "C1",
+          "summary": "Championship points and race results may be affected by the additional power resource."
+        },
+        "operational_spatial_integration": {
+          "overall_status": "absent",
+          "profile_status": "human_reviewed_v0_3",
+          "immersion_present": false,
+          "claim_class": "C4",
+          "summary": "FANBOOST is a digital spectator intervention into resource allocation, not Operational Spatial Integration. L8 participation becomes constitutive without turning spectators into performance agents.",
+          "functions": []
+        },
+        "participatory_actor_relations": [
+          {
+            "relation_id": "PAR-020-01",
+            "actor_type": "spectator_public",
+            "relation_type": "resource_allocator",
+            "action_window": "Official FANBOOST voting period before resource deployment.",
+            "mechanism": "Public votes determine which eligible drivers receive an optional power resource.",
+            "performance_agency_relation": "indirect_no_execution",
+            "rule_authority_relation": "participatory",
+            "resource_or_constraint_effect": "Allocates an optional rule-authorized power resource; the driver retains deployment and driving control.",
+            "evidence_refs": [
+              0,
+              1
+            ],
+            "uncertainty": "The effect on a specific race result is not quantified.",
+            "review_status": "human_reviewed_v0_3"
+          }
+        ],
+        "human_limits_accessibility": {
+          "source_field": "as3_layer_notes.L9_safety_accessibility",
+          "note": "Motorsport safety remains separate from fan voting."
+        }
+      },
+      "source_provisional_finding": {
+        "sport_contest_axis": "sport",
+        "category_relation": "outside_core_spatial_athletic_class",
+        "claim_class": "C5",
+        "summary": "Spectator influence can become constitutive to resource allocation without becoming Performance Agency, officiation, or Spatiality. The ontology needs a participatory rule/resource actor relation."
+      },
+      "confidence": "high",
+      "falsifiability": {
+        "source_field": "what_would_change_judgment",
+        "content": [
+          "A format in which spectators continuously execute skill-dependent actions that directly control the competitive object."
+        ]
+      },
+      "evidence_sources": [
+        {
+          "source_title": "FANBOOST is open — vote to influence Formula E",
+          "publisher": "FIA Formula E",
+          "url": "https://www.fiaformulae.com/en/news/2022",
+          "source_type": "official_announcement",
+          "claim_class": "C1",
+          "temporal_status": "historical",
+          "publication_or_update_date": "2022-07-13"
+        },
+        {
+          "source_title": "Farewell FANBOOST",
+          "publisher": "FIA Formula E",
+          "url": "https://www.fiaformulae.com/en/news/11558",
+          "source_type": "official_announcement",
+          "claim_class": "C1",
+          "temporal_status": "discontinued",
+          "publication_or_update_date": "2022-11-27"
+        }
+      ],
+      "provenance_note": "Per-field claim_class and status preserved verbatim from the source case. source_provisional_finding is the corpus's own attributed reading, not a new Atlas verdict. Provider claims live in evidence_sources; Altis interpretation carries C4/C5."
+    }
+  ]
+}

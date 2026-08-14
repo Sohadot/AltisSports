@@ -40,8 +40,11 @@ jobs:
       - name: Citation registry reproducibility (zero-diff regeneration)
         run: python3 ci_reproducibility_check.py
 
-      - name: Negative controls (validator must reject invalid states)
+      - name: Negative controls — citation registry (validator must reject invalid states)
         run: python3 ci_negative_controls.py
+
+      - name: Negative controls — descriptive atlas (validator must reject invalid states)
+        run: python3 ci_atlas_negative_controls.py
 
       - name: Identifier stability across revisions
         env:
