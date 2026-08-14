@@ -1,0 +1,181 @@
+{
+  "manifest": "AltisSports CI Validation Gate Manifest",
+  "version": "0.1",
+  "status": "Foundation Draft — Not Ratified",
+  "generated": "2026-08-14",
+  "base_commit": "9a6b6f7e0936faeffa7901a0d1c788ba16fab9a2",
+  "purpose": "Explicit, reviewable contract of the validators that compose the hosted reference validation gate, satisfying STANDARDIZATION_READINESS_GATE.md section 5 (validation available in hosted CI or an equivalently reproducible release gate).",
+  "governance_meaning": {
+    "a_passing_gate_means": [
+      "structural integrity of the declared artifacts",
+      "deterministic reproducibility of generated artifacts",
+      "the declared validation contracts in this manifest are satisfied"
+    ],
+    "a_passing_gate_does_not_mean": [
+      "ASR-001 is ratified",
+      "any standard is adopted",
+      "conformance or certification",
+      "external recognition",
+      "LICENSE-ASR-001 is resolved",
+      "publication status has changed"
+    ]
+  },
+  "runtime": {
+    "python": "3.11",
+    "external_dependencies": [],
+    "dependency_note": "All 14 validate_*.py scripts import standard library only; validate_boundary_cases_v0_3.py, validate_corpus_application_v0_3.py, and validate_second_stratum.py import the sibling repo module validate_boundary_cases (not a PyPI package). No pinned third-party dependency is required."
+  },
+  "registration_policy": {
+    "fail_closed": true,
+    "rule": "Every validate_*.py present in the repository root MUST appear in this manifest as a validator script. An unregistered validator causes gate failure; it is never silently ignored. Adding a new validator is therefore a deliberate governance act, not an automatic consequence of file discovery."
+  },
+  "validators": [
+    {
+      "id": "citation-registry",
+      "script": "validate_citation_registry.py",
+      "required": true,
+      "category": "citability",
+      "runtime": "stdlib",
+      "invocations": [ { "args": [] } ]
+    },
+    {
+      "id": "boundary-cases-v0_2",
+      "script": "validate_boundary_cases.py",
+      "required": true,
+      "category": "corpus",
+      "runtime": "stdlib",
+      "invocations": [ { "args": [] } ]
+    },
+    {
+      "id": "boundary-cases-v0_3",
+      "script": "validate_boundary_cases_v0_3.py",
+      "required": true,
+      "category": "corpus",
+      "runtime": "stdlib",
+      "invocations": [ { "args": [] } ]
+    },
+    {
+      "id": "second-stratum",
+      "script": "validate_second_stratum.py",
+      "required": true,
+      "category": "corpus",
+      "runtime": "stdlib",
+      "invocations": [ { "args": [] } ]
+    },
+    {
+      "id": "corpus-application-v0_3",
+      "script": "validate_corpus_application_v0_3.py",
+      "required": true,
+      "category": "corpus",
+      "runtime": "stdlib",
+      "invocations": [ { "args": [] } ]
+    },
+    {
+      "id": "asr-scope",
+      "script": "validate_asr001_scope.py",
+      "required": true,
+      "category": "asr",
+      "runtime": "stdlib",
+      "invocations": [ { "args": [] } ]
+    },
+    {
+      "id": "asr-working-architecture",
+      "script": "validate_asr001_working_architecture.py",
+      "required": true,
+      "category": "asr",
+      "runtime": "stdlib",
+      "invocations": [ { "args": [] } ]
+    },
+    {
+      "id": "asr-working-draft-v0_1",
+      "script": "validate_asr001_working_draft_v0_1.py",
+      "required": true,
+      "category": "asr",
+      "runtime": "stdlib",
+      "invocations": [ { "args": [] } ]
+    },
+    {
+      "id": "asr-internal-trials",
+      "script": "validate_asr001_internal_trials.py",
+      "required": true,
+      "category": "asr",
+      "runtime": "stdlib",
+      "invocations": [ { "args": [] } ]
+    },
+    {
+      "id": "asr-review-activation",
+      "script": "validate_asr001_review_activation.py",
+      "required": true,
+      "category": "asr",
+      "runtime": "stdlib",
+      "invocations": [ { "args": [] } ]
+    },
+    {
+      "id": "asr-named-assignment",
+      "script": "validate_asr001_named_assignment.py",
+      "required": true,
+      "category": "asr",
+      "runtime": "stdlib",
+      "invocations": [ { "args": [] } ]
+    },
+    {
+      "id": "asr-profile-v0_1",
+      "script": "validate_asr001_profile.py",
+      "required": true,
+      "category": "asr-profile",
+      "runtime": "stdlib",
+      "invocation_note": "Version-specific: this validator validates v0.1 profiles and correctly fails on v0.2 profiles. Invoked against the committed v0.1 synthetic profiles.",
+      "invocations": [
+        { "args": ["ASR_001_SYNTHETIC_PROFILE_LOCAL_V0.1.json"] },
+        { "args": ["ASR_001_SYNTHETIC_PROFILE_DISTRIBUTED_V0.1.json"] }
+      ]
+    },
+    {
+      "id": "asr-profile-v0_2",
+      "script": "validate_asr001_profile_v0_2.py",
+      "required": true,
+      "category": "asr-profile",
+      "runtime": "stdlib",
+      "invocation_note": "Validates v0.2 profiles. Invoked against all seven committed v0.2 trial profiles.",
+      "invocations": [
+        { "args": ["ASR_001_TRIAL_PROFILE_TRIAL_01_AUTONOMOUS_V0.2.json"] },
+        { "args": ["ASR_001_TRIAL_PROFILE_TRIAL_02_REHAB_V1_V0.2.json"] },
+        { "args": ["ASR_001_TRIAL_PROFILE_TRIAL_02_REHAB_V2_V0.2.json"] },
+        { "args": ["ASR_001_TRIAL_PROFILE_TRIAL_03_BCI_V0.2.json"] },
+        { "args": ["ASR_001_TRIAL_PROFILE_TRIAL_04_HUMAN_AI_V0.2.json"] },
+        { "args": ["ASR_001_TRIAL_PROFILE_TRIAL_05_AUDIENCE_V0.2.json"] },
+        { "args": ["ASR_001_TRIAL_PROFILE_TRIAL_06_DRONE_V0.2.json"] }
+      ]
+    },
+    {
+      "id": "asr-operator-review-package",
+      "script": "validate_asr001_operator_review_package.py",
+      "required": false,
+      "category": "asr-review",
+      "runtime": "stdlib",
+      "invocations": [ { "args": [] } ],
+      "exclusion": {
+        "blocker_id": "BLOCKER-OPREVIEW-BASELINE-001",
+        "reason": "Pre-existing baseline-integrity defect on base 9a6b6f7. ASR_001_REVIEW_BASELINE_MANIFEST.json records sha256 values that do not match the committed content of five files (ASR_001_WORKING_DRAFT_V0.2.md, ASR_001_CLAUSE_TO_FIELD_MAP_V0.2.json, ASR_001_INTERNAL_TRIAL_RESULTS.md, ASR_001_CLAUSE_FRICTION_REGISTER_V0.1.json, ASR_001_INTERNAL_TRIAL_INDEX_V0.2.json). Worktree equals HEAD, so this is committed drift, not a checkout artifact.",
+        "introduced_commit": "8564121",
+        "why_not_fixed_here": "Re-attesting the ASR-001 review baseline is an owner governance action on ASR review material, outside the scope of establishing the CI gate and outside the governance boundaries set for this task. It is recorded as an open blocker rather than silently skipped or worked around.",
+        "handling": "The gate still RUNS this validator on every invocation and REPORTS its PASS/FAIL, so the defect stays visible. Its result does not fail the gate while required=false.",
+        "resolution_owner": "asset owner"
+      }
+    }
+  ],
+  "open_blockers": [
+    {
+      "blocker_id": "BLOCKER-OPREVIEW-BASELINE-001",
+      "affects": "validate_asr001_operator_review_package.py",
+      "status": "open",
+      "summary": "ASR-001 review baseline manifest hashes do not match five committed files."
+    },
+    {
+      "blocker_id": "LICENSE-ASR-001",
+      "affects": "ASR-001 normative clause identifiers in the Citation Registry",
+      "status": "open",
+      "summary": "DATASET_LICENSE.md does not explicitly license ASR normative clause text; ASR clause identifiers remain non-citable. Not resolved by this CI work."
+    }
+  ]
+}

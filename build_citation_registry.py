@@ -16,7 +16,6 @@ library only, so the same run works inside a hosted CI gate.
 """
 
 import json
-import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -70,15 +69,6 @@ LICENSE_BLOCKERS = [
 
 def read_json(name):
     return json.loads((ROOT / name).read_text(encoding="utf-8"))
-
-
-def source_head():
-    try:
-        return subprocess.check_output(
-            ["git", "rev-parse", "HEAD"], cwd=ROOT, text=True
-        ).strip()
-    except Exception:
-        return None
 
 
 def build_boundary_identifiers():
@@ -189,7 +179,6 @@ def main():
         "generated": "2026-08-14",
         "model_reference": "REFERENCE_AUTHORITY_AND_CITABILITY_MODEL.md",
         "claim_class_scheme": "SOURCE_AND_CLAIM_POLICY.md section 2 (C1-C6)",
-        "source_head": source_head(),
         "identifier_count": len(identifiers),
         "coverage": {
             "boundary_case": len(bc_ids),

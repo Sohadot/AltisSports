@@ -1,0 +1,59 @@
+name: Reference Validation Gate
+
+# Hosted, reproducible, externally inspectable validation gate satisfying
+# STANDARDIZATION_READINESS_GATE.md section 5. A passing run asserts
+# structural integrity, deterministic reproducibility, and satisfaction of the
+# declared validation contracts in CI_VALIDATION_MANIFEST.json ONLY. It does
+# not assert ratification, adoption, conformance, certification, external
+# recognition, or resolution of any open blocker (LICENSE-ASR-001,
+# BLOCKER-OPREVIEW-BASELINE-001).
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+# Least privilege: read the contents, nothing else. No writes, no auto-commit.
+permissions:
+  contents: read
+
+jobs:
+  reference-validation-gate:
+    runs-on: ubuntu-latest
+    steps:
+      # actions/checkout v4.2.2 — full history so the identifier-stability
+      # baseline can resolve the correct base revision.
+      - name: Checkout (full history)
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          fetch-depth: 0
+
+      # actions/setup-python v5.3.0 — explicitly pinned interpreter.
+      - name: Set up Python 3.11
+        uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2b
+        with:
+          python-version: "3.11"
+
+      - name: Registered validators (fail-closed manifest gate)
+        run: python3 run_validation_gate.py
+
+      - name: Citation registry reproducibility (zero-diff regeneration)
+        run: python3 ci_reproducibility_check.py
+
+      - name: Negative controls (validator must reject invalid states)
+        run: python3 ci_negative_controls.py
+
+      - name: Identifier stability across revisions
+        env:
+          GITHUB_EVENT_BEFORE: ${{ github.event.before }}
+        run: python3 ci_baseline_stability.py
+
+      - name: Confirm no working-tree mutation
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "FAIL: validation mutated the working tree:"
+            git status --porcelain
+            git diff
+            exit 1
+          fi
+          echo "PASS: working tree clean after validation."

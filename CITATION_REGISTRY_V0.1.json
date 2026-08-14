@@ -5,7 +5,6 @@
   "generated": "2026-08-14",
   "model_reference": "REFERENCE_AUTHORITY_AND_CITABILITY_MODEL.md",
   "claim_class_scheme": "SOURCE_AND_CLAIM_POLICY.md section 2 (C1-C6)",
-  "source_head": "460d76bb60ef1e5510b8774b14e6a65811c79d87",
   "identifier_count": 69,
   "coverage": {
     "boundary_case": 20,
