@@ -13,11 +13,16 @@ Unless a file or field states otherwise, the following original AltisSports mate
 - Altis-authored case summaries and analytical classifications;
 - original controlled vocabularies;
 - original schema descriptions;
-- original corpus metadata.
+- original corpus metadata;
+- the Altis-authored ASR normative clause text (the candidate normative clause catalogs and clause-to-field maps of the ASR family), as original AltisSports drafting.
 
 The canonical license deed is:
 
 `https://creativecommons.org/licenses/by/4.0/`
+
+### 1.1 Licensing is not publication, ratification, or citation elevation
+
+Licensing the ASR normative clause text under CC BY 4.0 grants reuse rights only. It does **not** publish ASR, ratify it, make it a Public Review Draft, establish conformance or certification, or elevate ASR clause identifiers to canonical externally-citable objects. ASR remains an unpublished Working Draft (claim class C5, provisional). ASR clauses may be reused and referenced with their provisional/unpublished status attached; whether they become registered externally-citable canonical objects tracks a later ASR publication/public-review decision (see `CITE-HOLD-ASR-001`). Reuse must not represent ASR as an adopted or recognized standard.
 
 ## 2. What the License Permits
 

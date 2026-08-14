@@ -16,7 +16,8 @@
       "any standard is adopted",
       "conformance or certification",
       "external recognition",
-      "LICENSE-ASR-001 is resolved",
+      "ASR is published (its clause text is licensed CC-BY-4.0 but ASR remains an unpublished Working Draft)",
+      "ASR clauses are canonical externally-citable objects (held by CITE-HOLD-ASR-001)",
       "publication status has changed"
     ]
   },
@@ -200,8 +201,16 @@
     {
       "blocker_id": "LICENSE-ASR-001",
       "affects": "ASR-001 normative clause identifiers in the Citation Registry",
+      "status": "resolved",
+      "resolution": "ASR-001-LICENSING-DECISION-V0.1 (DEC-019)",
+      "summary": "Resolved: DATASET_LICENSE.md section 1 now explicitly licenses the ASR normative clause text under CC-BY-4.0. Superseded by the citability hold CITE-HOLD-ASR-001 (below)."
+    },
+    {
+      "blocker_id": "CITE-HOLD-ASR-001",
+      "affects": "ASR-001 normative clause identifiers in the Citation Registry",
       "status": "open",
-      "summary": "DATASET_LICENSE.md does not explicitly license ASR normative clause text; ASR clause identifiers remain non-citable. Not resolved by this CI work."
+      "supersedes": "LICENSE-ASR-001",
+      "summary": "ASR clause text is licensed (CC-BY-4.0) but held from canonical external citability while ASR is an unpublished Working Draft (C5, provisional). Clauses are referenceable with their provisional/unpublished status; not registered as externally-citable canonical objects. Lifts on an ASR publication / public-review decision."
     }
   ]
 }

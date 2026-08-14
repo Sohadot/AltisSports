@@ -441,3 +441,23 @@ A four-candidate first wave satisfies the required coverage groups while remaini
 ### Rationale
 
 Forensic reconstruction proved the stored hashes matched no committed state of the affected files, while the generator hashes real bytes deterministically. The truthful, minimal repair is therefore to correct the metadata to reflect the baseline material that was always intended — not to re-hash changed content (none changed) and not to fabricate a new baseline. Retaining the superseded hashes keeps the defect and its correction auditable, satisfying the rule that an active review baseline is never changed silently.
+
+---
+
+## DEC-019 — ASR-001 Licensing and Citability
+
+**Status:** Ratified (owner-delegated)
+**Version:** 1.0
+**Date:** 2026-08-14
+**Evidence basis:** `ASR_001_LICENSING_DECISION_V0.1.md`, `DATASET_LICENSE.md` §1/§1.1, `CITATION_REGISTRY_V0.1.json`
+
+### Decision
+
+1. The Altis-authored ASR normative clause text (candidate normative clause catalogs and clause-to-field maps of the ASR family) is licensed under **CC BY 4.0** by explicit extension of `DATASET_LICENSE.md` §1. This **resolves `LICENSE-ASR-001`**.
+2. ASR clause identifiers remain **not externally citable** as canonical objects, now held by the explicit **`CITE-HOLD-ASR-001`**, because ASR is still an unpublished Working Draft (C5, provisional). The hold lifts only on a later ASR publication / public-review decision.
+3. Licensing and canonical citability are decided as separate gates: the license grants reuse rights; it does not publish, ratify, or elevate ASR, and it does not change the externally-citable set (still 39 = 20 boundary cases + 19 AS³ elements).
+4. No normative clause, scope, profile semantics, review question, or evidentiary meaning changed. `BLOCKER-OPREVIEW-BASELINE-001` remains resolved (DEC-018); no other blocker is affected. `LICENSE-ASR-001` remains on the record as resolved-and-superseded, not deleted.
+
+### Rationale
+
+Open licensing of the reference material strengthens, rather than weakens, reference sovereignty: it lets researchers, engineers, journalists, and AI systems reuse and cite the material while AltisSports remains the canonical origin of definitions, identifiers, versions, provenance, corrections, and claim scope. Tying canonical citability to publication keeps the published/unpublished distinction honest and mirrors the Atlas citation architecture (referenceable is not the same as registered-canonical).

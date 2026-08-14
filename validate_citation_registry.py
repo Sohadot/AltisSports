@@ -183,7 +183,7 @@ def main():
         f"({reg['identifier_count']} active identifiers; "
         f"BC={cov['boundary_case']} ASR={cov['asr_clause']} AS3={cov['as3_element']}; "
         "semantic bindings locked to live corpus; "
-        "LICENSE-ASR-001 gap preserved)."
+        "ASR licensed CC-BY-4.0, held non-citable by CITE-HOLD-ASR-001)."
     )
 
 

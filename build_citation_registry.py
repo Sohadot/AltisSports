@@ -53,16 +53,21 @@ AS3_ELEMENTS = [
 
 LICENSE_BLOCKERS = [
     {
-        "blocker_id": "LICENSE-ASR-001",
+        "blocker_id": "CITE-HOLD-ASR-001",
+        "kind": "citability_hold",
         "affects_kind": "asr_clause",
         "reason": (
-            "DATASET_LICENSE.md section 1 grants CC BY 4.0 to boundary datasets, "
-            "field definitions, case summaries, controlled vocabularies, schema "
-            "descriptions, and corpus metadata. It does not explicitly name the "
-            "ASR normative clause text. The license is not extended by inference."
+            "ASR normative clause text is now licensed under CC BY 4.0 "
+            "(DATASET_LICENSE.md section 1, resolving LICENSE-ASR-001). It remains "
+            "held from canonical external citability because ASR is still an "
+            "unpublished Working Draft (C5, provisional). Clauses are referenceable "
+            "with their provisional/unpublished status; they are not registered as "
+            "externally-citable canonical objects. This hold lifts on an ASR "
+            "publication / public-review decision."
         ),
         "status": "open",
-        "effect": "ASR clause identifiers are recorded but not externally_citable while open.",
+        "supersedes": "LICENSE-ASR-001",
+        "effect": "ASR clause identifiers are licensed but not externally_citable while open.",
     }
 ]
 
@@ -120,9 +125,10 @@ def build_asr_identifiers():
             "provider_claim_separated": True,
             "temporal_status": "provisional",
             "falsifiability_ref": "uncertainty_handling",
-            "license": None,
+            "license": "CC-BY-4.0",
             "license_ref": "DATASET_LICENSE.md",
-            "license_blocker": "LICENSE-ASR-001",
+            "license_blocker": "CITE-HOLD-ASR-001",
+            "non_citable_reason": "licensed_but_unpublished_working_draft",
             "externally_citable": False,
         })
         bindings.append({

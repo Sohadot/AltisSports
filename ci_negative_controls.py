@@ -11,7 +11,7 @@ FAILURE and fails CI.
 
 Controls:
   1. semantic binding drift (BC activity repointed);
-  2. an ASR entry under open blocker LICENSE-ASR-001 marked externally_citable;
+  2. an ASR entry under an open citability hold (CITE-HOLD-ASR-001) marked externally_citable;
   3. coverage gap (a boundary-case identifier dropped);
   4. invalid claim class.
 
