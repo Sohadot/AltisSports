@@ -7,7 +7,9 @@
 
 ## Exact Owner Authorization
 
-> أعتمد المرشحين B. David Ridpath وMallesham Dasari وStephanie Tow وEmma Drake للموجة RW-001، وأصرح بإعداد وإرسال دعوات مكتوبة فردية محكومة لهم فقط. لا يصبح أي منهم مراجعًا قبل القبول الكتابي، وتبقى الخانات الثلاث الأخرى احتياطية مغلقة.
+> أعتمد إسناد مرشّحي الموجة RW-001 إلى الخانات RWS-01 وRWS-03 وRWS-05 وRWS-07، وأصرّح بإعداد وإرسال دعوات مكتوبة فردية محكومة لتلك الخانات فقط. لا يصبح أي منهم مراجعًا قبل القبول الكتابي، وتبقى الخانات الثلاث الأخرى احتياطية مغلقة.
+
+> هوية المرشّحين محفوظة خارج السجل العام وفق `REVIEWER_PRIVACY_BOUNDARY.md`؛ السجل العام يحفظ الخانات والفئات والحالات فقط. (The verbatim named authorization is retained privately.)
 
 ## Machine-Readable Interpretation
 

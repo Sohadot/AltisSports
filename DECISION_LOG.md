@@ -405,7 +405,7 @@ Sprint 12 made the package review-ready. Sprint 13 converts readiness into a gov
 
 ### Decision
 
-1. The owner authorizes first-wave named candidate assignment for Wave RW-001 to B. David Ridpath (RWS-01/RC-01), Mallesham Dasari (RWS-03/RC-03), Stephanie Tow, MD (RWS-05/RC-05), and Emma Drake (RWS-07/RC-07) only.
+1. Four first-wave candidate assignments were authorized against RWS-01 (RC-01), RWS-03 (RC-03), RWS-05 (RC-05), and RWS-07 (RC-07). Candidate identities are maintained outside the public governance record under the reviewer privacy boundary (`REVIEWER_PRIVACY_BOUNDARY.md`).
 2. Before written acceptance, each assigned person is classified solely as `named_candidate_assignee` with candidate_status `selected_not_contacted` until private dispatch occurs.
 3. Controlled individual written invitation release is authorized for those four slots only.
 4. Invitation drafts are prepared for private owner dispatch. Sprint 14 does not transmit messages and does not store personal contact addresses in the public repository.

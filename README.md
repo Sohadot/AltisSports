@@ -14,17 +14,18 @@ The ancient Altis contained sport in physical space. AltisSports defines how spo
 
 ASR-001 remains an unpublished Working Draft. No candidate is a reviewer yet. No invitation has been marked dispatched by repository automation. No public comment channel exists.
 
-## First-Wave Named Candidate Assignees
+## First-Wave Authorized Slots
 
-| Slot | Class | Named candidate assignee |
-| --- | --- | --- |
-| RWS-01 | RC-01 | B. David Ridpath |
-| RWS-03 | RC-03 | Mallesham Dasari |
-| RWS-05 | RC-05 | Stephanie Tow, MD |
-| RWS-07 | RC-07 | Emma Drake |
+| Slot | Class | Candidate identity | Invitation status |
+| --- | --- | --- | --- |
+| RWS-01 | RC-01 | private | `prepared_authorized_awaiting_private_dispatch` |
+| RWS-03 | RC-03 | private | `prepared_authorized_awaiting_private_dispatch` |
+| RWS-05 | RC-05 | private | `prepared_authorized_awaiting_private_dispatch` |
+| RWS-07 | RC-07 | private | `prepared_authorized_awaiting_private_dispatch` |
 
 Classification before written acceptance: `named_candidate_assignee`  
-Candidate status: `selected_not_contacted` until private dispatch
+Candidate status: `selected_not_contacted` until private dispatch  
+Candidate identity is maintained privately under `REVIEWER_PRIVACY_BOUNDARY.md`; the public record holds slots, classes, and states only.
 
 ## Reserve-Closed Slots
 

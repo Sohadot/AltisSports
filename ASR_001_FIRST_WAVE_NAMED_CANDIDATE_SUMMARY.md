@@ -1,26 +1,27 @@
-# ASR-001 First-Wave Named Candidate Summary
+# ASR-001 First-Wave Slot Summary
 
-**Date:** 2026-07-24  
-**Wave:** RW-001  
+**Date:** 2026-07-24
+**Wave:** RW-001
 **Classification before acceptance:** `named_candidate_assignee`
+**Privacy:** candidate identity is maintained privately under `REVIEWER_PRIVACY_BOUNDARY.md`; this public summary records slots, classes, and states only.
 
 ## Authorized first wave
 
-| Slot | Class | Named candidate assignee | Invitation status |
+| Slot | Class | Candidate identity | Invitation status |
 | --- | --- | --- | --- |
-| `RWS-01` | `RC-01` | B. David Ridpath | `prepared_authorized_awaiting_private_dispatch` |
-| `RWS-03` | `RC-03` | Mallesham Dasari | `prepared_authorized_awaiting_private_dispatch` |
-| `RWS-05` | `RC-05` | Stephanie Tow, MD | `prepared_authorized_awaiting_private_dispatch` |
-| `RWS-07` | `RC-07` | Emma Drake | `prepared_authorized_awaiting_private_dispatch` |
+| `RWS-01` | `RC-01` | private | `prepared_authorized_awaiting_private_dispatch` |
+| `RWS-03` | `RC-03` | private | `prepared_authorized_awaiting_private_dispatch` |
+| `RWS-05` | `RC-05` | private | `prepared_authorized_awaiting_private_dispatch` |
+| `RWS-07` | `RC-07` | private | `prepared_authorized_awaiting_private_dispatch` |
 
 ## Reserve-closed
 
-| Slot | Class | Reserve name | Invitation status |
+| Slot | Class | Candidate identity | Invitation status |
 | --- | --- | --- | --- |
-| `RWS-02` | `RC-02` | Sharifa Wilkinson | `not_authorized` |
-| `RWS-04` | `RC-04` | Minsoo Kang | `not_authorized` |
-| `RWS-06` | `RC-06` | Abraham J. Wyner | `not_authorized` |
+| `RWS-02` | `RC-02` | private | `not_authorized` |
+| `RWS-04` | `RC-04` | private | `not_authorized` |
+| `RWS-06` | `RC-06` | private | `not_authorized` |
 
 ## Boundary
 
-No candidate is a reviewer yet. No invitation has been marked dispatched by Sprint 14 automation.
+No candidate is a reviewer yet. No invitation has been marked dispatched by Sprint 14 automation. Candidate identities are not recorded in the public repository.

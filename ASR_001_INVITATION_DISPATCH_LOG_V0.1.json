@@ -7,7 +7,6 @@
     {
       "invitation_package_id": "INV-RW001-RWS-01",
       "slot": "RWS-01",
-      "named_candidate_assignee": "B. David Ridpath",
       "authorization_status": "authorized",
       "dispatch_status": "awaiting_private_dispatch",
       "dispatched_at": null,
@@ -15,12 +14,12 @@
       "dispatch_channel_secret_ref": null,
       "intake_enabled": false,
       "acceptance_status": "not_accepted",
-      "reviewer_status": "not_reviewer"
+      "reviewer_status": "not_reviewer",
+      "candidate_identity": "private_under_reviewer_privacy_boundary"
     },
     {
       "invitation_package_id": "INV-RW001-RWS-03",
       "slot": "RWS-03",
-      "named_candidate_assignee": "Mallesham Dasari",
       "authorization_status": "authorized",
       "dispatch_status": "awaiting_private_dispatch",
       "dispatched_at": null,
@@ -28,12 +27,12 @@
       "dispatch_channel_secret_ref": null,
       "intake_enabled": false,
       "acceptance_status": "not_accepted",
-      "reviewer_status": "not_reviewer"
+      "reviewer_status": "not_reviewer",
+      "candidate_identity": "private_under_reviewer_privacy_boundary"
     },
     {
       "invitation_package_id": "INV-RW001-RWS-05",
       "slot": "RWS-05",
-      "named_candidate_assignee": "Stephanie Tow, MD",
       "authorization_status": "authorized",
       "dispatch_status": "awaiting_private_dispatch",
       "dispatched_at": null,
@@ -41,12 +40,12 @@
       "dispatch_channel_secret_ref": null,
       "intake_enabled": false,
       "acceptance_status": "not_accepted",
-      "reviewer_status": "not_reviewer"
+      "reviewer_status": "not_reviewer",
+      "candidate_identity": "private_under_reviewer_privacy_boundary"
     },
     {
       "invitation_package_id": "INV-RW001-RWS-07",
       "slot": "RWS-07",
-      "named_candidate_assignee": "Emma Drake",
       "authorization_status": "authorized",
       "dispatch_status": "awaiting_private_dispatch",
       "dispatched_at": null,
@@ -54,13 +53,19 @@
       "dispatch_channel_secret_ref": null,
       "intake_enabled": false,
       "acceptance_status": "not_accepted",
-      "reviewer_status": "not_reviewer"
+      "reviewer_status": "not_reviewer",
+      "candidate_identity": "private_under_reviewer_privacy_boundary"
     }
   ],
-  "reserve_slots_blocked": ["RWS-02", "RWS-04", "RWS-06"],
+  "reserve_slots_blocked": [
+    "RWS-02",
+    "RWS-04",
+    "RWS-06"
+  ],
   "notes": [
     "Sprint 14 authorizes private dispatch but does not itself transmit messages.",
     "Owner records dispatched_at only after actual private send.",
-    "No email addresses appear in this log."
-  ]
+    "Candidate identity is not stored in the public log; see REVIEWER_PRIVACY_BOUNDARY.md."
+  ],
+  "privacy_boundary": "REVIEWER_PRIVACY_BOUNDARY.md"
 }
