@@ -419,3 +419,25 @@ Sprint 12 made the package review-ready. Sprint 13 converts readiness into a gov
 ### Rationale
 
 A four-candidate first wave satisfies the required coverage groups while remaining operationally bounded. Separating named-candidate assignment from reviewer status, and authorization-to-send from actual private dispatch, preserves non-endorsement boundaries and prevents contact-data leakage or premature intake opening.
+
+---
+
+## DEC-018 — ASR-001 Operator-Review Baseline Correction 001
+
+**Status:** Ratified
+**Version:** 1.0
+**Date:** 2026-08-14
+**Evidence basis:** `ASR_001_REVIEW_BASELINE_CORRECTION_001.md`, `ASR_001_REVIEW_BASELINE_MANIFEST.json` (correction block), forensic reconstruction across commits `8564121` and `13e6590`
+
+### Decision
+
+1. `BLOCKER-OPREVIEW-BASELINE-001` is classified as **Case A — manifest metadata defect at creation**: five SHA-256 values in `ASR_001_REVIEW_BASELINE_MANIFEST.json` were wrong when the manifest was created in commit `8564121`; the baseline material itself never changed (each affected file has a single commit `13e6590` predating the manifest, and its committed content equals the current content).
+2. The five erroneous hashes are corrected to their historically verified values (the hashes of the committed baseline material), retaining the superseded hashes in an auditable `correction` block. The logical baseline identity (`ASR001-OPERATOR-REVIEW-BASELINE`) and `created_date` are preserved; this is a metadata repair, not a new baseline.
+3. No descriptive or normative content changed (`content_changed = false`). Correcting the baseline does **not** activate operator review: `review_status = prepared_not_activated` and `public_review_status = not_public_review` are unchanged.
+4. `validate_asr001_operator_review_package.py` is promoted to `required = true` in the hosted validation gate with strict hash checking; the operator-review exclusion is removed.
+5. `BLOCKER-OPREVIEW-BASELINE-001` is marked resolved. Its historical existence and resolution remain on the record in `CI_VALIDATION_MANIFEST.json` and this log; the record is not deleted.
+6. `LICENSE-ASR-001`, ASR normative meaning, scope, profile semantics, review questions, Atlas architecture, publication/adoption/certification/conformance status, and evaluative permissions are unchanged by this decision.
+
+### Rationale
+
+Forensic reconstruction proved the stored hashes matched no committed state of the affected files, while the generator hashes real bytes deterministically. The truthful, minimal repair is therefore to correct the metadata to reflect the baseline material that was always intended — not to re-hash changed content (none changed) and not to fabricate a new baseline. Retaining the superseded hashes keeps the defect and its correction auditable, satisfying the rule that an active review baseline is never changed silently.

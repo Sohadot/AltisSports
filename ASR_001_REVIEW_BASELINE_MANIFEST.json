@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "ASR_001_WORKING_DRAFT_V0.2.md",
-      "sha256": "f85fced6304f686c004e66c574de95c0f9ec6bc7a43225dfdcb6e2320bae9cb2",
+      "sha256": "4083a5429b524fc5eeae367b0f779258d13a4df3f51238055a2627fb1e559caf",
       "role": "working_draft_baseline"
     },
     {
@@ -19,7 +19,7 @@
     },
     {
       "path": "ASR_001_CLAUSE_TO_FIELD_MAP_V0.2.json",
-      "sha256": "540c16e04b24bea713ad91307b612bf0435f2e9b081669df1958478cd049de13",
+      "sha256": "e7290e5fa50ae9ad89c3230856af06780e6498414fd9068d27520957c93fb0df",
       "role": "working_draft_baseline"
     },
     {
@@ -34,17 +34,17 @@
     },
     {
       "path": "ASR_001_INTERNAL_TRIAL_RESULTS.md",
-      "sha256": "90c18d7342b966abf389dcf0713eb2af861b037d2c3ca559f50f81856adf518e",
+      "sha256": "88ae1ad900773a9590773ff289eaee526784eb3fef789b3489220805ab53c706",
       "role": "working_draft_baseline"
     },
     {
       "path": "ASR_001_CLAUSE_FRICTION_REGISTER_V0.1.json",
-      "sha256": "7087c2ab32ea3a65b4323faca8c72154eaaa094956e026f775fc9bcd9c54b5ea",
+      "sha256": "adf8b5a3a01d96d7fc68dde68d2fdb110767e4325bc5d3aa9978a3133a83470a",
       "role": "working_draft_baseline"
     },
     {
       "path": "ASR_001_INTERNAL_TRIAL_INDEX_V0.2.json",
-      "sha256": "42a88a161c6efc74468039897266ad452b1f875dcedad3f10f4e9e4281eeb19f",
+      "sha256": "42e587a0e47d712991ebbaceb507f65c8955eb767482442297683d2c86b27c40",
       "role": "working_draft_baseline"
     },
     {
@@ -123,5 +123,45 @@
       "role": "review_package_source"
     }
   ],
-  "interpretation": "Hashes freeze the review reference. Repository visibility does not activate review or create Public Review Draft status."
+  "interpretation": "Hashes freeze the review reference. Repository visibility does not activate review or create Public Review Draft status.",
+  "correction": {
+    "correction_id": "ASR-001-REVIEW-BASELINE-CORRECTION-001",
+    "blocker_id": "BLOCKER-OPREVIEW-BASELINE-001",
+    "correction_record": "ASR_001_REVIEW_BASELINE_CORRECTION_001.md",
+    "classification": "manifest_metadata_defect_at_creation",
+    "content_changed": false,
+    "baseline_material_unchanged": true,
+    "baseline_identity_preserved": true,
+    "review_activated": false,
+    "correction_date": "2026-08-14",
+    "evidence_commit_manifest_created": "8564121",
+    "evidence_commit_baseline_content": "13e6590",
+    "corrected_entries": [
+      {
+        "path": "ASR_001_CLAUSE_FRICTION_REGISTER_V0.1.json",
+        "superseded_sha256": "7087c2ab32ea3a65b4323faca8c72154eaaa094956e026f775fc9bcd9c54b5ea",
+        "corrected_sha256": "adf8b5a3a01d96d7fc68dde68d2fdb110767e4325bc5d3aa9978a3133a83470a"
+      },
+      {
+        "path": "ASR_001_CLAUSE_TO_FIELD_MAP_V0.2.json",
+        "superseded_sha256": "540c16e04b24bea713ad91307b612bf0435f2e9b081669df1958478cd049de13",
+        "corrected_sha256": "e7290e5fa50ae9ad89c3230856af06780e6498414fd9068d27520957c93fb0df"
+      },
+      {
+        "path": "ASR_001_INTERNAL_TRIAL_INDEX_V0.2.json",
+        "superseded_sha256": "42a88a161c6efc74468039897266ad452b1f875dcedad3f10f4e9e4281eeb19f",
+        "corrected_sha256": "42e587a0e47d712991ebbaceb507f65c8955eb767482442297683d2c86b27c40"
+      },
+      {
+        "path": "ASR_001_INTERNAL_TRIAL_RESULTS.md",
+        "superseded_sha256": "90c18d7342b966abf389dcf0713eb2af861b037d2c3ca559f50f81856adf518e",
+        "corrected_sha256": "88ae1ad900773a9590773ff289eaee526784eb3fef789b3489220805ab53c706"
+      },
+      {
+        "path": "ASR_001_WORKING_DRAFT_V0.2.md",
+        "superseded_sha256": "f85fced6304f686c004e66c574de95c0f9ec6bc7a43225dfdcb6e2320bae9cb2",
+        "corrected_sha256": "4083a5429b524fc5eeae367b0f779258d13a4df3f51238055a2627fb1e559caf"
+      }
+    ]
+  }
 }

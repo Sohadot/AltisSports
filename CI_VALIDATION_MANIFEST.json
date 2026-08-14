@@ -174,17 +174,18 @@
     {
       "id": "asr-operator-review-package",
       "script": "validate_asr001_operator_review_package.py",
-      "required": false,
+      "required": true,
       "category": "asr-review",
       "runtime": "stdlib",
       "invocations": [ { "args": [] } ],
-      "exclusion": {
+      "resolved_blocker": {
         "blocker_id": "BLOCKER-OPREVIEW-BASELINE-001",
-        "reason": "Pre-existing baseline-integrity defect on base 9a6b6f7. ASR_001_REVIEW_BASELINE_MANIFEST.json records sha256 values that do not match the committed content of five files (ASR_001_WORKING_DRAFT_V0.2.md, ASR_001_CLAUSE_TO_FIELD_MAP_V0.2.json, ASR_001_INTERNAL_TRIAL_RESULTS.md, ASR_001_CLAUSE_FRICTION_REGISTER_V0.1.json, ASR_001_INTERNAL_TRIAL_INDEX_V0.2.json). Worktree equals HEAD, so this is committed drift, not a checkout artifact.",
-        "introduced_commit": "8564121",
-        "why_not_fixed_here": "Re-attesting the ASR-001 review baseline is an owner governance action on ASR review material, outside the scope of establishing the CI gate and outside the governance boundaries set for this task. It is recorded as an open blocker rather than silently skipped or worked around.",
-        "handling": "The gate still RUNS this validator on every invocation and REPORTS its PASS/FAIL, so the defect stays visible. Its result does not fail the gate while required=false.",
-        "resolution_owner": "asset owner"
+        "resolution": "ASR-001-REVIEW-BASELINE-CORRECTION-001",
+        "classification": "manifest_metadata_defect_at_creation",
+        "resolution_record": "ASR_001_REVIEW_BASELINE_CORRECTION_001.md",
+        "decision": "DEC-018",
+        "content_changed": false,
+        "note": "Five stored SHA-256 values were wrong at manifest creation (8564121); the baseline material never changed (single commit 13e6590 predating the manifest). Corrected to the historically verified hashes with an auditable correction block; validator now required with strict hash checking."
       }
     }
   ],
@@ -192,8 +193,9 @@
     {
       "blocker_id": "BLOCKER-OPREVIEW-BASELINE-001",
       "affects": "validate_asr001_operator_review_package.py",
-      "status": "open",
-      "summary": "ASR-001 review baseline manifest hashes do not match five committed files."
+      "status": "resolved",
+      "resolution": "ASR-001-REVIEW-BASELINE-CORRECTION-001 (DEC-018)",
+      "summary": "Resolved: five baseline manifest hashes were wrong at creation (Case A metadata defect); corrected to the historically verified hashes with an auditable correction block. Baseline material unchanged; review not activated. Validator now required=true."
     },
     {
       "blocker_id": "LICENSE-ASR-001",
