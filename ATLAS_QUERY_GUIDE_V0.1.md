@@ -92,7 +92,9 @@ An Atlas record id such as `ATL-D-018` is a stable handle for retrieval. It is
 
 To cite, use the **source** citation id (the `BC-*` id) under its registered
 terms. Whether Atlas records should themselves become independent citation
-objects is a deliberate, separate governance decision, not assumed here.
+objects is a deliberate, separate governance decision, not assumed here — it is
+recorded in `ATLAS_CITATION_ARCHITECTURE_DECISION_V0.1.md` (for v0.1: `BC-*` is
+the canonical citation identity; `ATL-D-*` is a stable derived reference handle).
 
 ## Result and exit semantics
 

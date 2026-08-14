@@ -164,6 +164,14 @@
       "invocations": [ { "args": [] } ]
     },
     {
+      "id": "atlas-citation-architecture",
+      "script": "validate_atlas_citation_architecture.py",
+      "required": true,
+      "category": "atlas",
+      "runtime": "stdlib",
+      "invocations": [ { "args": [] } ]
+    },
+    {
       "id": "asr-operator-review-package",
       "script": "validate_asr001_operator_review_package.py",
       "required": false,
