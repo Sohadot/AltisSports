@@ -1,0 +1,170 @@
+{
+  "atlas_record_id": "ATL-D-011",
+  "source_case_id": "BC-011",
+  "distribution_version": "0.1",
+  "atlas_source_version": "0.1",
+  "query_contract_version": "0.1",
+  "license": "CC-BY-4.0",
+  "citability": {
+    "atlas_record_citability": "not_independently_registered",
+    "source_citation_id": "BC-011",
+    "source_citation_registered": true,
+    "source_citation_externally_citable": true
+  },
+  "record": {
+    "atlas_record_id": "ATL-D-011",
+    "source_case_id": "BC-011",
+    "citation_id": "BC-011",
+    "source_dataset": "boundary-cases-001-020.v0.3.json",
+    "source_version": "0.3",
+    "license": "CC-BY-4.0",
+    "license_ref": "DATASET_LICENSE.md",
+    "temporal_status": "provisional",
+    "activity": "ISSF competitive shooting",
+    "activity_aliases": [
+      "Competitive shooting",
+      "Sport shooting"
+    ],
+    "classified_object": {
+      "primary": "activity",
+      "secondary": [
+        "athletic_system",
+        "event"
+      ],
+      "notes": "ISSF-governed rifle, pistol, and shotgun competition is used as a low-locomotion embodied sport reference; no single discipline is generalized beyond common structural features."
+    },
+    "dimensions": {
+      "performance_agency": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Athlete precision, timing, posture, and trigger execution materially determine the shot during the firing sequence.",
+        "agency_modes": [
+          "live_performance"
+        ],
+        "human_skill_causally_necessary": true
+      },
+      "performance_interface": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "The body acts through a regulated firearm and shooting position; mediation is conventional equipment rather than a computational arena.",
+        "interface_types": [
+          "direct_bodily_action",
+          "conventional_equipment"
+        ]
+      },
+      "embodied_performance": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Embodiment is fine-motor, balance, respiratory, and sensorimotor rather than locomotor.",
+        "demand_types": [
+          "balance",
+          "fine_motor",
+          "cognitive",
+          "sensorimotor_coordination"
+        ]
+      },
+      "arena": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "A physical range, firing line, target distance, and safety zones structure performance."
+      },
+      "distributed_arena_relation": {
+        "status": "supported",
+        "topology": "co_located_single_site",
+        "shared_computational_state": "partial",
+        "synchronization_mechanism": "Timing, electronic targets, and result systems coordinate event state.",
+        "calibration_equivalence": "Target, equipment, and event-class controls support comparison.",
+        "officiation_relation": "Officials and electronic scoring operate at the range.",
+        "safety_relation": "Range command and safety authority are centralized."
+      },
+      "sensing_tracking": {
+        "status": "partial",
+        "claim_class": "C2",
+        "summary": "Electronic targets and result systems may sense impacts and timing, but computational tracking is not the athlete’s arena."
+      },
+      "measurement": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Shot value and series totals are precisely measured under declared target and timing rules."
+      },
+      "comparability": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Comparability is engineered through event classes, equipment control, target specifications, timing, and officiating."
+      },
+      "officiation": {
+        "status": "supported",
+        "claim_class": "C2",
+        "summary": "Officials and electronic scoring systems jointly administer results and protests."
+      },
+      "outcome_openness": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Scores emerge from athlete execution under constraints."
+      },
+      "consequence_structure": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Ranking, qualification, elimination, and medal outcomes follow from contest structure."
+      },
+      "operational_spatial_integration": {
+        "overall_status": "partial",
+        "profile_status": "human_reviewed_v0_3",
+        "immersion_present": false,
+        "claim_class": "C4",
+        "summary": "Computational systems may support measurement and officiation, but the performance arena remains physical and the spatial-athletic core is not established.",
+        "functions": [
+          {
+            "role": "measure",
+            "status": "supported",
+            "significance": "supportive"
+          },
+          {
+            "role": "officiate",
+            "status": "partial",
+            "significance": "supportive"
+          }
+        ]
+      },
+      "participatory_actor_relations": [],
+      "human_limits_accessibility": {
+        "source_field": "as3_layer_notes.L9_safety_accessibility",
+        "note": "Range safety and equipment governance are central."
+      }
+    },
+    "source_provisional_finding": {
+      "sport_contest_axis": "sport",
+      "category_relation": "outside_core_spatial_athletic_class",
+      "claim_class": "C5",
+      "summary": "A strong embodied sport with little locomotion; it confirms that Embodied Performance must include fine motor, balance, and sensorimotor control without treating physical spatial skill as computational Spatiality."
+    },
+    "confidence": "high",
+    "falsifiability": {
+      "source_field": "what_would_change_judgment",
+      "content": [
+        "A competition in which shared computational geometry directly constrains athlete targeting or movement as a constitutive arena."
+      ]
+    },
+    "evidence_sources": [
+      {
+        "source_title": "ISSF Rules — 2026 Rule Book",
+        "publisher": "International Shooting Sport Federation",
+        "url": "https://www.issf-sports.org/rules",
+        "source_type": "federation_or_league_rules",
+        "claim_class": "C1",
+        "temporal_status": "current",
+        "publication_or_update_date": null
+      },
+      {
+        "source_title": "ISSF announces changes with 2026 Rulebook",
+        "publisher": "International Shooting Sport Federation",
+        "url": "https://www.issf-sports.org/news/4878",
+        "source_type": "official_announcement",
+        "claim_class": "C1",
+        "temporal_status": "current",
+        "publication_or_update_date": "2025-12-10"
+      }
+    ],
+    "provenance_note": "Per-field claim_class and status preserved verbatim from the source case. source_provisional_finding is the corpus's own attributed reading, not a new Atlas verdict. Provider claims live in evidence_sources; Altis interpretation carries C4/C5."
+  }
+}

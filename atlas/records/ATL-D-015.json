@@ -1,0 +1,227 @@
+{
+  "atlas_record_id": "ATL-D-015",
+  "source_case_id": "BC-015",
+  "distribution_version": "0.1",
+  "atlas_source_version": "0.1",
+  "query_contract_version": "0.1",
+  "license": "CC-BY-4.0",
+  "citability": {
+    "atlas_record_citability": "not_independently_registered",
+    "source_citation_id": "BC-015",
+    "source_citation_registered": true,
+    "source_citation_externally_citable": true
+  },
+  "record": {
+    "atlas_record_id": "ATL-D-015",
+    "source_case_id": "BC-015",
+    "citation_id": "BC-015",
+    "source_dataset": "boundary-cases-001-020.v0.3.json",
+    "source_version": "0.3",
+    "license": "CC-BY-4.0",
+    "license_ref": "DATASET_LICENSE.md",
+    "temporal_status": "provisional",
+    "activity": "World Taekwondo Virtual Taekwondo competition",
+    "activity_aliases": [
+      "Remote motion-tracked martial competition",
+      "Virtual Taekwondo"
+    ],
+    "classified_object": {
+      "primary": "contest",
+      "secondary": [
+        "spatial_athletic_contest",
+        "event",
+        "organization"
+      ],
+      "notes": "The object is the World Taekwondo-governed Virtual Taekwondo contest configuration. The preselected remote-distributed hypothesis is retained but marked unresolved because the cited championships were co-located."
+    },
+    "dimensions": {
+      "performance_agency": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Competitors execute kicks and body movement live; tracked speed, timing, and tactical choice affect the virtual opponent state.",
+        "agency_modes": [
+          "live_performance"
+        ],
+        "human_skill_causally_necessary": true
+      },
+      "performance_interface": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "A headset and full-body AXIS motion-tracking nodes convert movement into avatar action.",
+        "interface_types": [
+          "tracked_xr_input"
+        ]
+      },
+      "embodied_performance": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Balance, endurance, sensorimotor coordination, physiological effort, and tracked movement materially affect performance.",
+        "demand_types": [
+          "balance",
+          "endurance",
+          "sensorimotor_coordination",
+          "physiological_effort",
+          "tracked_movement"
+        ]
+      },
+      "arena": {
+        "status": "supported",
+        "claim_class": "C2",
+        "summary": "Competitors act in local physical stations while avatars share a computational sparring arena. Remote distributed arena equivalence remains unknown."
+      },
+      "distributed_arena_relation": {
+        "status": "not_evidenced",
+        "topology": "co_located_multi_station",
+        "shared_computational_state": "supported",
+        "synchronization_mechanism": "Shared match room and Game Master within the documented event setup.",
+        "calibration_equivalence": "Event calibration procedures are documented; cross-site equivalence is not established.",
+        "officiation_relation": "Software, referees, and event operators administer one shared match state.",
+        "safety_relation": "Local mat, boundary, display, and calibration requirements are documented; remote-site safety equivalence is not."
+      },
+      "sensing_tracking": {
+        "status": "supported",
+        "claim_class": "C3",
+        "summary": "Full-body motion tracking is constitutive."
+      },
+      "measurement": {
+        "status": "supported",
+        "claim_class": "C2",
+        "summary": "The system converts tracked movement into health, damage, and round outcomes."
+      },
+      "comparability": {
+        "status": "partial",
+        "claim_class": "C4",
+        "summary": "Rules and common equipment support comparison, but calibration, patch, and remote latency controls are not fully public."
+      },
+      "officiation": {
+        "status": "supported",
+        "claim_class": "C2",
+        "summary": "Software, referees, and certified match operators jointly administer matches."
+      },
+      "outcome_openness": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Round outcomes depend on live tracked performance."
+      },
+      "consequence_structure": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Round wins, match advancement, and championship medals derive from contest structure."
+      },
+      "operational_spatial_integration": {
+        "overall_status": "supported",
+        "profile_status": "human_reviewed_v0_3",
+        "immersion_present": true,
+        "claim_class": "C4",
+        "summary": "The co-located contest is strongly spatial-athletic. The planned test of geographically distributed performance remains unresolved rather than inferred from global availability.",
+        "functions": [
+          {
+            "role": "represent",
+            "status": "supported",
+            "significance": "constitutive"
+          },
+          {
+            "role": "enable",
+            "status": "supported",
+            "significance": "constitutive"
+          },
+          {
+            "role": "constrain",
+            "status": "supported",
+            "significance": "constitutive"
+          },
+          {
+            "role": "measure",
+            "status": "supported",
+            "significance": "constitutive"
+          },
+          {
+            "role": "compare",
+            "status": "partial",
+            "significance": "supportive"
+          },
+          {
+            "role": "officiate",
+            "status": "supported",
+            "significance": "supportive"
+          }
+        ]
+      },
+      "participatory_actor_relations": [],
+      "human_limits_accessibility": {
+        "source_field": "as3_layer_notes.L9_safety_accessibility",
+        "note": "Non-contact format reduces contact risk but introduces headset and motion risks."
+      }
+    },
+    "source_provisional_finding": {
+      "sport_contest_axis": "sport_like_contest",
+      "category_relation": "spatial_athletic_contest",
+      "claim_class": "C5",
+      "summary": "Virtual Taekwondo supports the Spatial Athletic Contest class for co-located competition. Sprint 5 does not establish a remote distributed arena because current primary evidence does not demonstrate that configuration."
+    },
+    "confidence": "medium",
+    "falsifiability": {
+      "source_field": "what_would_change_judgment",
+      "content": [
+        "Published remote match rules, latency budgets, calibration procedures, and evidence of competitors in different physical sites sharing one match."
+      ]
+    },
+    "evidence_sources": [
+      {
+        "source_title": "VTKD Competitive League and Rule Book",
+        "publisher": "Virtual Taekwondo / Refract Technologies",
+        "url": "https://virtualtkd.gg/compete/",
+        "source_type": "standard_or_sporting_code",
+        "claim_class": "C3",
+        "temporal_status": "current",
+        "publication_or_update_date": null
+      },
+      {
+        "source_title": "Virtual Taekwondo at the Olympic Esports Series finals",
+        "publisher": "World Taekwondo",
+        "url": "https://www.worldtaekwondo.org/competition/view.html?mcd=W02&nid=140192",
+        "source_type": "official_announcement",
+        "claim_class": "C1",
+        "temporal_status": "historical",
+        "publication_or_update_date": "2023"
+      },
+      {
+        "source_title": "First World Taekwondo Virtual Championships",
+        "publisher": "World Taekwondo",
+        "url": "https://m.worldtaekwondo.org/competition/view.html?mcd=N03%2F1000&nid=141655&sc=ne",
+        "source_type": "official_announcement",
+        "claim_class": "C1",
+        "temporal_status": "historical",
+        "publication_or_update_date": "2024"
+      },
+      {
+        "source_title": "VTKD Rule Book Archive — WT Virtual Taekwondo Rules and Regulations (April 2026)",
+        "publisher": "Virtual Taekwondo / World Taekwondo",
+        "url": "https://virtualtkd.gg/rulebooks/",
+        "source_type": "standard_or_sporting_code",
+        "claim_class": "C1",
+        "temporal_status": "current",
+        "publication_or_update_date": "2026-04-11"
+      },
+      {
+        "source_title": "VTKD User Manual 1.2.34",
+        "publisher": "Virtual Taekwondo",
+        "url": "https://virtualtkd.gg/manuals/vtkd-user-manual-1-2-34/",
+        "source_type": "first_party_technical",
+        "claim_class": "C3",
+        "temporal_status": "current",
+        "publication_or_update_date": null
+      },
+      {
+        "source_title": "Virtual Taekwondo Patch Notes",
+        "publisher": "Virtual Taekwondo",
+        "url": "https://virtualtkd.gg/patch-notes/",
+        "source_type": "first_party_technical",
+        "claim_class": "C3",
+        "temporal_status": "current",
+        "publication_or_update_date": "2026-01-13"
+      }
+    ],
+    "provenance_note": "Per-field claim_class and status preserved verbatim from the source case. source_provisional_finding is the corpus's own attributed reading, not a new Atlas verdict. Provider claims live in evidence_sources; Altis interpretation carries C4/C5."
+  }
+}

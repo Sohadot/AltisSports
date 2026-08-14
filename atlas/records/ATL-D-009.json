@@ -1,0 +1,169 @@
+{
+  "atlas_record_id": "ATL-D-009",
+  "source_case_id": "BC-009",
+  "distribution_version": "0.1",
+  "atlas_source_version": "0.1",
+  "query_contract_version": "0.1",
+  "license": "CC-BY-4.0",
+  "citability": {
+    "atlas_record_citability": "not_independently_registered",
+    "source_citation_id": "BC-009",
+    "source_citation_registered": true,
+    "source_citation_externally_citable": true
+  },
+  "record": {
+    "atlas_record_id": "ATL-D-009",
+    "source_case_id": "BC-009",
+    "citation_id": "BC-009",
+    "source_dataset": "boundary-cases-001-020.v0.3.json",
+    "source_version": "0.3",
+    "license": "CC-BY-4.0",
+    "license_ref": "DATASET_LICENSE.md",
+    "temporal_status": "provisional",
+    "activity": "Flight Simulation Competition",
+    "activity_aliases": [
+      "Microsoft Flight Simulator racing contests",
+      "Desktop flight-sim skill contests"
+    ],
+    "classified_object": {
+      "primary": "hybrid_unresolved",
+      "secondary": [
+        "product",
+        "event",
+        "experience"
+      ],
+      "notes": "Must separate training simulation, online network flying, and skill contests."
+    },
+    "dimensions": {
+      "performance_agency": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Piloting skill can determine contest outcomes in race formats.",
+        "agency_modes": [
+          "live_performance"
+        ],
+        "human_skill_causally_necessary": true
+      },
+      "performance_interface": {
+        "status": "partial",
+        "claim_class": "C4",
+        "summary": "Typically HOTAS/controller; motion rigs optional and uncommon as requirement.",
+        "interface_types": [
+          "simulation_controls"
+        ]
+      },
+      "embodied_performance": {
+        "status": "partial",
+        "claim_class": "C4",
+        "summary": "Typically HOTAS/controller; motion rigs optional and uncommon as requirement. Migrated as Embodied Performance; demand types are provisional.",
+        "demand_types": [
+          "cognitive",
+          "fine_motor",
+          "sensorimotor_coordination"
+        ]
+      },
+      "arena": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Computational airspace/course is the contest arena."
+      },
+      "distributed_arena_relation": {
+        "status": "unknown",
+        "topology": "unknown",
+        "shared_computational_state": "supported",
+        "synchronization_mechanism": "Simulator or network state can be shared computationally.",
+        "calibration_equivalence": "Hardware and software variance remain material.",
+        "officiation_relation": "Publisher, software, or community administration varies by contest.",
+        "safety_relation": "Physical consequences are limited; local setup and fatigue remain relevant."
+      },
+      "sensing_tracking": {
+        "status": "supported",
+        "claim_class": "C2",
+        "summary": "Simulator state is authoritative for the contest."
+      },
+      "measurement": {
+        "status": "partial",
+        "claim_class": "C4",
+        "summary": "Race times/scores in contest modes; variance across setups."
+      },
+      "comparability": {
+        "status": "absent",
+        "claim_class": "C4",
+        "summary": "Hardware/software variance often large and weakly controlled."
+      },
+      "officiation": {
+        "status": "partial",
+        "claim_class": "C4",
+        "summary": "Contest admins or automatic scoring depending on event."
+      },
+      "outcome_openness": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Skill contests can be open; training flights need not be contests."
+      },
+      "consequence_structure": {
+        "status": "partial",
+        "claim_class": "C3",
+        "summary": "Prizes/reputation in contests; often low outside promotional events."
+      },
+      "operational_spatial_integration": {
+        "overall_status": "partial",
+        "profile_status": "human_reviewed_v0_3",
+        "immersion_present": true,
+        "claim_class": "C4",
+        "summary": "Computational arena operational for contests; athletic embodiment typically weak.",
+        "functions": [
+          {
+            "role": "constrain",
+            "status": "partial",
+            "significance": "supportive"
+          },
+          {
+            "role": "measure",
+            "status": "partial",
+            "significance": "supportive"
+          }
+        ]
+      },
+      "participatory_actor_relations": [],
+      "human_limits_accessibility": {
+        "source_field": "as3_layer_notes.L9_safety_accessibility",
+        "note": "Low physical risk; cognitive load."
+      }
+    },
+    "source_provisional_finding": {
+      "sport_contest_axis": "training_or_simulation",
+      "category_relation": "computational_contest",
+      "claim_class": "C4",
+      "summary": "Function before imagery: simulation/contest hybrid with weak athletic embodiment and governance."
+    },
+    "confidence": "medium",
+    "falsifiability": {
+      "source_field": "what_would_change_judgment",
+      "content": [
+        "Federation-governed championship with athletic-performance claims, comparability protocol, and embodied interface requirements."
+      ]
+    },
+    "evidence_sources": [
+      {
+        "source_title": "Reno Air Racing Series / Microsoft Reno Air Racing Contest rules",
+        "publisher": "Microsoft Flight Simulator",
+        "url": "https://www.flightsimulator.com/reno-air-racing-series/",
+        "source_type": "official_announcement",
+        "claim_class": "C1",
+        "temporal_status": "current",
+        "publication_or_update_date": null
+      },
+      {
+        "source_title": "IVAO - International Virtual Aviation Organisation",
+        "publisher": "IVAO",
+        "url": "https://ivao.aero/",
+        "source_type": "official_announcement",
+        "claim_class": "C3",
+        "temporal_status": "current",
+        "publication_or_update_date": null
+      }
+    ],
+    "provenance_note": "Per-field claim_class and status preserved verbatim from the source case. source_provisional_finding is the corpus's own attributed reading, not a new Atlas verdict. Provider claims live in evidence_sources; Altis interpretation carries C4/C5."
+  }
+}

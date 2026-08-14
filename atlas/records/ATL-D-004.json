@@ -1,0 +1,160 @@
+{
+  "atlas_record_id": "ATL-D-004",
+  "source_case_id": "BC-004",
+  "distribution_version": "0.1",
+  "atlas_source_version": "0.1",
+  "query_contract_version": "0.1",
+  "license": "CC-BY-4.0",
+  "citability": {
+    "atlas_record_citability": "not_independently_registered",
+    "source_citation_id": "BC-004",
+    "source_citation_registered": true,
+    "source_citation_externally_citable": true
+  },
+  "record": {
+    "atlas_record_id": "ATL-D-004",
+    "source_case_id": "BC-004",
+    "citation_id": "BC-004",
+    "source_dataset": "boundary-cases-001-020.v0.3.json",
+    "source_version": "0.3",
+    "license": "CC-BY-4.0",
+    "license_ref": "DATASET_LICENSE.md",
+    "temporal_status": "provisional",
+    "activity": "Para Athletics",
+    "activity_aliases": [
+      "World Para Athletics",
+      "Paralympic athletics"
+    ],
+    "classified_object": {
+      "primary": "activity",
+      "secondary": [
+        "athletic_system",
+        "organization"
+      ],
+      "notes": "Track and field competition under World Para Athletics classification and rules."
+    },
+    "dimensions": {
+      "performance_agency": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Athlete performance remains decisive within sport class.",
+        "agency_modes": [
+          "live_performance",
+          "assisted_performance"
+        ],
+        "human_skill_causally_necessary": true
+      },
+      "performance_interface": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Includes prostheses, racing chairs, throwing frames, guides; adaptive interfaces preserve athletic agency.",
+        "interface_types": [
+          "direct_bodily_action",
+          "adaptive_or_assistive_equipment"
+        ]
+      },
+      "embodied_performance": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Includes prostheses, racing chairs, throwing frames, guides; adaptive interfaces preserve athletic agency. Migrated as Embodied Performance; demand types are provisional.",
+        "demand_types": [
+          "adaptive_bodily_performance",
+          "locomotion",
+          "force",
+          "sensorimotor_coordination"
+        ]
+      },
+      "arena": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Physical track/field with class-specific equipment constraints."
+      },
+      "distributed_arena_relation": {
+        "status": "supported",
+        "topology": "co_located_single_site",
+        "shared_computational_state": "partial",
+        "synchronization_mechanism": "Timing, measurement, and officiating systems coordinate event state.",
+        "calibration_equivalence": "Classification, equipment, and measurement controls support comparison.",
+        "officiation_relation": "Officials and classification governance apply to the event.",
+        "safety_relation": "Venue and event safety responsibility is defined."
+      },
+      "sensing_tracking": {
+        "status": "supported",
+        "claim_class": "C2",
+        "summary": "Standard athletics measurement plus classification evaluation processes."
+      },
+      "measurement": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Times, distances, and placings within class."
+      },
+      "comparability": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Explicitly class-relative comparability; not a defect."
+      },
+      "officiation": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Athletics officiation plus classification governance."
+      },
+      "outcome_openness": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Outcomes depend on performance within class constraints."
+      },
+      "consequence_structure": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Championship results and physical performance costs."
+      },
+      "operational_spatial_integration": {
+        "overall_status": "absent",
+        "profile_status": "human_reviewed_v0_3",
+        "immersion_present": false,
+        "claim_class": "C4",
+        "summary": "Classification is integrity/comparability infrastructure, not computational arena unification.",
+        "functions": []
+      },
+      "participatory_actor_relations": [],
+      "human_limits_accessibility": {
+        "source_field": "as3_layer_notes.L9_safety_accessibility",
+        "note": "Body variation is constitutive."
+      }
+    },
+    "source_provisional_finding": {
+      "sport_contest_axis": "sport",
+      "category_relation": "outside_core_spatial_athletic_class",
+      "claim_class": "C4",
+      "summary": "Preserves sport under body variation; rejects single normative body assumption."
+    },
+    "confidence": "high",
+    "falsifiability": {
+      "source_field": "what_would_change_judgment",
+      "content": [
+        "Hybrid para events whose decisive constraints are computationally constituted shared arenas, evaluated separately from classification."
+      ]
+    },
+    "evidence_sources": [
+      {
+        "source_title": "World Para Athletics Classification & Categories",
+        "publisher": "International Paralympic Committee / World Para Athletics",
+        "url": "https://www.paralympic.org/athletics/classification",
+        "source_type": "federation_or_league_rules",
+        "claim_class": "C1",
+        "temporal_status": "current",
+        "publication_or_update_date": null
+      },
+      {
+        "source_title": "International Standard for Athlete Evaluation",
+        "publisher": "International Paralympic Committee",
+        "url": "https://www.paralympic.org/sites/default/files/2024-04/International%20Standard%20for%20Athlete%20Evaluation_2016.pdf",
+        "source_type": "standard_or_sporting_code",
+        "claim_class": "C1",
+        "temporal_status": "current",
+        "publication_or_update_date": null
+      }
+    ],
+    "provenance_note": "Per-field claim_class and status preserved verbatim from the source case. source_provisional_finding is the corpus's own attributed reading, not a new Atlas verdict. Provider claims live in evidence_sources; Altis interpretation carries C4/C5."
+  }
+}

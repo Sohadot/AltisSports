@@ -156,6 +156,14 @@
       "invocations": [ { "args": [] } ]
     },
     {
+      "id": "atlas-query-surface",
+      "script": "validate_atlas_query_surface.py",
+      "required": true,
+      "category": "atlas",
+      "runtime": "stdlib",
+      "invocations": [ { "args": [] } ]
+    },
+    {
       "id": "asr-operator-review-package",
       "script": "validate_asr001_operator_review_package.py",
       "required": false,

@@ -1,0 +1,164 @@
+{
+  "atlas_record_id": "ATL-D-010",
+  "source_case_id": "BC-010",
+  "distribution_version": "0.1",
+  "atlas_source_version": "0.1",
+  "query_contract_version": "0.1",
+  "license": "CC-BY-4.0",
+  "citability": {
+    "atlas_record_citability": "not_independently_registered",
+    "source_citation_id": "BC-010",
+    "source_citation_registered": true,
+    "source_citation_externally_citable": true
+  },
+  "record": {
+    "atlas_record_id": "ATL-D-010",
+    "source_case_id": "BC-010",
+    "citation_id": "BC-010",
+    "source_dataset": "boundary-cases-001-020.v0.3.json",
+    "source_version": "0.3",
+    "license": "CC-BY-4.0",
+    "license_ref": "DATASET_LICENSE.md",
+    "temporal_status": "provisional",
+    "activity": "Autonomous Robot Competition",
+    "activity_aliases": [
+      "RoboCup Humanoid League",
+      "Autonomous robot soccer"
+    ],
+    "classified_object": {
+      "primary": "event",
+      "secondary": [
+        "organization"
+      ],
+      "notes": "Research/engineering contest; robots are performing agents during play."
+    },
+    "dimensions": {
+      "performance_agency": {
+        "status": "absent",
+        "claim_class": "C1",
+        "summary": "During match play robots act autonomously; human contribution is primarily prior design/engineering.",
+        "agency_modes": [
+          "design_engineering",
+          "autonomous_execution",
+          "agency_handoff"
+        ],
+        "human_skill_causally_necessary": false
+      },
+      "performance_interface": {
+        "status": "absent",
+        "claim_class": "C1",
+        "summary": "No human embodied performance interface during play; handlers are restricted service roles.",
+        "interface_types": [
+          "autonomous_agent"
+        ]
+      },
+      "embodied_performance": {
+        "status": "absent",
+        "claim_class": "C1",
+        "summary": "No human embodied performance interface during play; handlers are restricted service roles. Migrated as Embodied Performance; demand types are provisional.",
+        "demand_types": [
+          "none_live_human"
+        ]
+      },
+      "arena": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Physical field with robot perception/computation stacks."
+      },
+      "distributed_arena_relation": {
+        "status": "supported",
+        "topology": "co_located_single_site",
+        "shared_computational_state": "partial",
+        "synchronization_mechanism": "Onboard sensing and game-control systems coordinate match state.",
+        "calibration_equivalence": "Technical and league rules bound platform conditions.",
+        "officiation_relation": "Human referees and game controllers govern the field.",
+        "safety_relation": "Robot and human safety procedures apply at the venue."
+      },
+      "sensing_tracking": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Onboard sensing is the robots' perception channel; game controller systems support officiation."
+      },
+      "measurement": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Goals, cards, and match records under competition rules."
+      },
+      "comparability": {
+        "status": "partial",
+        "claim_class": "C4",
+        "summary": "Heterogeneous robots across teams except standard-platform leagues."
+      },
+      "officiation": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Human referees and game controller infrastructure."
+      },
+      "outcome_openness": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Match outcomes open among robot policies/hardware under rules."
+      },
+      "consequence_structure": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Competition ranking and research prestige; not athletic human stakes."
+      },
+      "operational_spatial_integration": {
+        "overall_status": "partial",
+        "profile_status": "human_reviewed_v0_3",
+        "immersion_present": false,
+        "claim_class": "C4",
+        "summary": "Operational physical/computational robot space exists, but without live human athletic performance Spatial Sport does not attach.",
+        "functions": [
+          {
+            "role": "constrain",
+            "status": "partial",
+            "significance": "supportive"
+          },
+          {
+            "role": "measure",
+            "status": "partial",
+            "significance": "supportive"
+          },
+          {
+            "role": "officiate",
+            "status": "partial",
+            "significance": "supportive"
+          }
+        ]
+      },
+      "participatory_actor_relations": [],
+      "human_limits_accessibility": {
+        "source_field": "as3_layer_notes.L9_safety_accessibility",
+        "note": "Robot and human safety procedures."
+      }
+    },
+    "source_provisional_finding": {
+      "sport_contest_axis": "research_or_engineering_contest",
+      "category_relation": "outside_core_spatial_athletic_class",
+      "claim_class": "C5",
+      "summary": "Negative control: competitive outcome without live human performance agency."
+    },
+    "confidence": "high",
+    "falsifiability": {
+      "source_field": "what_would_change_judgment",
+      "content": [
+        "Rule sets restoring live human teleoperation as decisive in-match skill channel.",
+        "An explicit Altis subclass for autonomous spectacles that does not claim sport invariants."
+      ]
+    },
+    "evidence_sources": [
+      {
+        "source_title": "RoboCup Soccer Humanoid League Rules 2025",
+        "publisher": "RoboCup Humanoid League",
+        "url": "https://humanoid.robocup.org/wp-content/uploads/RC-HL-2025-Rules.pdf",
+        "source_type": "federation_or_league_rules",
+        "claim_class": "C1",
+        "temporal_status": "current",
+        "publication_or_update_date": null
+      }
+    ],
+    "provenance_note": "Per-field claim_class and status preserved verbatim from the source case. source_provisional_finding is the corpus's own attributed reading, not a new Atlas verdict. Provider claims live in evidence_sources; Altis interpretation carries C4/C5."
+  }
+}

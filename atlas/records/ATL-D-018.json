@@ -1,0 +1,222 @@
+{
+  "atlas_record_id": "ATL-D-018",
+  "source_case_id": "BC-018",
+  "distribution_version": "0.1",
+  "atlas_source_version": "0.1",
+  "query_contract_version": "0.1",
+  "license": "CC-BY-4.0",
+  "citability": {
+    "atlas_record_citability": "not_independently_registered",
+    "source_citation_id": "BC-018",
+    "source_citation_registered": true,
+    "source_citation_externally_citable": true
+  },
+  "record": {
+    "atlas_record_id": "ATL-D-018",
+    "source_case_id": "BC-018",
+    "citation_id": "BC-018",
+    "source_dataset": "boundary-cases-001-020.v0.3.json",
+    "source_version": "0.3",
+    "license": "CC-BY-4.0",
+    "license_ref": "DATASET_LICENSE.md",
+    "temporal_status": "provisional",
+    "activity": "CYBATHLON Brain-Computer Interface Race",
+    "activity_aliases": [
+      "Brain-computer-interface competition"
+    ],
+    "classified_object": {
+      "primary": "contest",
+      "secondary": [
+        "computational_contest",
+        "event"
+      ],
+      "notes": "The object is the BCI Race contest in which a pilot uses measured brain activity to control a computer-based vehicle or game process."
+    },
+    "dimensions": {
+      "performance_agency": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "The pilot intentionally generates brain-activity patterns during the race; decoded commands materially influence the vehicle.",
+        "agency_modes": [
+          "live_performance",
+          "assisted_performance"
+        ],
+        "human_skill_causally_necessary": true
+      },
+      "performance_interface": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "A physiological sensing interface measures brain activity and translates it into computer control.",
+        "interface_types": [
+          "physiological_sensing",
+          "intentional_biological_control"
+        ]
+      },
+      "embodied_performance": {
+        "status": "disputed",
+        "claim_class": "C4",
+        "summary": "The performance is biologically generated and cognitively demanding, but conventional motor expression is minimal or absent. Whether this satisfies the Spatial Athletic System embodiment condition remains unresolved.",
+        "demand_types": [
+          "cognitive",
+          "physiological_effort",
+          "intentional_biosignal_control"
+        ]
+      },
+      "arena": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "The race occurs in an animated computational scenario controlled by decoded brain signals."
+      },
+      "distributed_arena_relation": {
+        "status": "not_applicable",
+        "topology": "co_located_single_site",
+        "shared_computational_state": "supported",
+        "synchronization_mechanism": "Common task software and event timing.",
+        "calibration_equivalence": "Participant-specific calibration is material and remains only partially comparable.",
+        "officiation_relation": "Software and officials determine task completion and ranking.",
+        "safety_relation": "Participant fatigue and signal burden are local human limits."
+      },
+      "sensing_tracking": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Brain activity is sensed and classified in real time."
+      },
+      "measurement": {
+        "status": "supported",
+        "claim_class": "C2",
+        "summary": "Decoder output, task completion, and time are measured."
+      },
+      "comparability": {
+        "status": "partial",
+        "claim_class": "C4",
+        "summary": "Signal variability, calibration, classifier design, stress, and participant-specific training complicate comparison."
+      },
+      "officiation": {
+        "status": "supported",
+        "claim_class": "C2",
+        "summary": "Competition software and officials administer task state and results."
+      },
+      "outcome_openness": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Race progress depends on live pilot-generated commands and system decoding."
+      },
+      "consequence_structure": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Task completion, time, ranking, and awards follow from the contest."
+      },
+      "operational_spatial_integration": {
+        "overall_status": "supported",
+        "profile_status": "human_reviewed_v0_3",
+        "immersion_present": true,
+        "claim_class": "C4",
+        "summary": "Operational spatial integration is constitutive, but embodiment is category-disputed because performance is physiological and cognitive rather than conventionally motor.",
+        "functions": [
+          {
+            "role": "represent",
+            "status": "supported",
+            "significance": "constitutive"
+          },
+          {
+            "role": "enable",
+            "status": "supported",
+            "significance": "constitutive"
+          },
+          {
+            "role": "mediate",
+            "status": "supported",
+            "significance": "constitutive"
+          },
+          {
+            "role": "constrain",
+            "status": "supported",
+            "significance": "constitutive"
+          },
+          {
+            "role": "measure",
+            "status": "supported",
+            "significance": "constitutive"
+          },
+          {
+            "role": "compare",
+            "status": "partial",
+            "significance": "supportive"
+          },
+          {
+            "role": "officiate",
+            "status": "supported",
+            "significance": "supportive"
+          }
+        ]
+      },
+      "participatory_actor_relations": [],
+      "human_limits_accessibility": {
+        "source_field": "as3_layer_notes.L9_safety_accessibility",
+        "note": "Designed for severe motor impairment; fatigue and signal burden matter."
+      },
+      "intentional_biological_control": {
+        "status": "supported",
+        "summary": "The pilot intentionally generates brain-activity patterns that are decoded into task commands. This establishes a live bodily-origin performance channel but does not by itself settle Spatial Athletic System membership.",
+        "signal_origin": "brain_activity",
+        "intentional_generation": "supported",
+        "task_coupling": "constitutive",
+        "decoder_mediation": "constitutive",
+        "human_skill_causally_necessary": true,
+        "athletic_embodiment_relation": "unresolved"
+      }
+    },
+    "source_provisional_finding": {
+      "sport_contest_axis": "research_or_engineering_contest",
+      "category_relation": "unresolved",
+      "claim_class": "C5",
+      "summary": "The case cannot be reduced to an ordinary computational contest because the human biological signal is the live performance channel; nor can v0.2 yet assert that this is sufficient Embodied Performance for Spatial Athletic System membership."
+    },
+    "confidence": "medium",
+    "falsifiability": {
+      "source_field": "what_would_change_judgment",
+      "content": [
+        "A defensible category rule distinguishing intentional physiological performance from incidental biosignal measurement."
+      ]
+    },
+    "evidence_sources": [
+      {
+        "source_title": "Brain-Computer Interface Race",
+        "publisher": "CYBATHLON / ETH Zurich",
+        "url": "https://cybathlon.com/en/event/disciplines/bci",
+        "source_type": "first_party_technical",
+        "claim_class": "C1",
+        "temporal_status": "current",
+        "publication_or_update_date": null
+      },
+      {
+        "source_title": "CYBATHLON 2024",
+        "publisher": "CYBATHLON / ETH Zurich",
+        "url": "https://cybathlon.com/en/events/edition/cybathlon-2024",
+        "source_type": "official_announcement",
+        "claim_class": "C1",
+        "temporal_status": "historical",
+        "publication_or_update_date": "2024-10-25"
+      },
+      {
+        "source_title": "Improving motor imagery decoding methods for an EEG-based mobile BCI in CYBATHLON 2024",
+        "publisher": "neuroTUM research team / arXiv",
+        "url": "https://arxiv.org/abs/2511.23384",
+        "source_type": "reputable_research",
+        "claim_class": "C2",
+        "temporal_status": "current",
+        "publication_or_update_date": "2025-11-28"
+      },
+      {
+        "source_title": "Brain-Computer Interface Race Tasks",
+        "publisher": "CYBATHLON / ETH Zurich",
+        "url": "https://cybathlon.com/en/events/challenges/challenges-2024/bci-tasks",
+        "source_type": "first_party_technical",
+        "claim_class": "C1",
+        "temporal_status": "current",
+        "publication_or_update_date": null
+      }
+    ],
+    "provenance_note": "Per-field claim_class and status preserved verbatim from the source case. source_provisional_finding is the corpus's own attributed reading, not a new Atlas verdict. Provider claims live in evidence_sources; Altis interpretation carries C4/C5."
+  }
+}

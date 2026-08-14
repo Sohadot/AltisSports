@@ -1,0 +1,162 @@
+{
+  "atlas_record_id": "ATL-D-002",
+  "source_case_id": "BC-002",
+  "distribution_version": "0.1",
+  "atlas_source_version": "0.1",
+  "query_contract_version": "0.1",
+  "license": "CC-BY-4.0",
+  "citability": {
+    "atlas_record_citability": "not_independently_registered",
+    "source_citation_id": "BC-002",
+    "source_citation_registered": true,
+    "source_citation_externally_citable": true
+  },
+  "record": {
+    "atlas_record_id": "ATL-D-002",
+    "source_case_id": "BC-002",
+    "citation_id": "BC-002",
+    "source_dataset": "boundary-cases-001-020.v0.3.json",
+    "source_version": "0.3",
+    "license": "CC-BY-4.0",
+    "license_ref": "DATASET_LICENSE.md",
+    "temporal_status": "provisional",
+    "activity": "Chess",
+    "activity_aliases": [
+      "Competitive chess",
+      "Mind sport chess"
+    ],
+    "classified_object": {
+      "primary": "activity",
+      "secondary": [
+        "organization"
+      ],
+      "notes": "Classical competitive chess; online platforms are secondary products."
+    },
+    "dimensions": {
+      "performance_agency": {
+        "status": "supported",
+        "claim_class": "C2",
+        "summary": "Outcomes depend on human cognitive performance under time controls.",
+        "agency_modes": [
+          "live_performance"
+        ],
+        "human_skill_causally_necessary": true
+      },
+      "performance_interface": {
+        "status": "partial",
+        "claim_class": "C4",
+        "summary": "Motor expression is minimal; embodiment is not the primary performance channel.",
+        "interface_types": [
+          "controller_or_discrete_input"
+        ]
+      },
+      "embodied_performance": {
+        "status": "partial",
+        "claim_class": "C4",
+        "summary": "Motor expression is minimal; embodiment is not the primary performance channel. Migrated as Embodied Performance; demand types are provisional.",
+        "demand_types": [
+          "cognitive",
+          "fine_motor"
+        ]
+      },
+      "arena": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Discrete board state is rule-bearing; may be physical or digital."
+      },
+      "distributed_arena_relation": {
+        "status": "unknown",
+        "topology": "unknown",
+        "shared_computational_state": "unknown",
+        "synchronization_mechanism": "Deployment-specific.",
+        "calibration_equivalence": "Time control and platform conditions are deployment-specific.",
+        "officiation_relation": "Arbiter or platform relation varies.",
+        "safety_relation": "Not material to category classification in this record."
+      },
+      "sensing_tracking": {
+        "status": "partial",
+        "claim_class": "C4",
+        "summary": "Full state observability in standard play; platforms add logging and anti-cheat."
+      },
+      "measurement": {
+        "status": "supported",
+        "claim_class": "C2",
+        "summary": "Ratings, results, and pairings provide formal metrics."
+      },
+      "comparability": {
+        "status": "supported",
+        "claim_class": "C2",
+        "summary": "Rating systems and standardized time controls support comparison."
+      },
+      "officiation": {
+        "status": "supported",
+        "claim_class": "C2",
+        "summary": "Arbiters over the board; platform enforcement online."
+      },
+      "outcome_openness": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Result determined by play unless integrity fails."
+      },
+      "consequence_structure": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Rating, title, and elimination consequences; bodily exertion not required."
+      },
+      "operational_spatial_integration": {
+        "overall_status": "absent",
+        "profile_status": "human_reviewed_v0_3",
+        "immersion_present": false,
+        "claim_class": "C4",
+        "summary": "Digital boards represent a discrete state machine; not operational athletic-spatial integration.",
+        "functions": [
+          {
+            "role": "represent",
+            "status": "absent",
+            "significance": "incidental"
+          }
+        ]
+      },
+      "participatory_actor_relations": [],
+      "human_limits_accessibility": {
+        "source_field": "as3_layer_notes.L9_safety_accessibility",
+        "note": "Cognitive fatigue; accessibility differs from contact sport."
+      }
+    },
+    "source_provisional_finding": {
+      "sport_contest_axis": "sport",
+      "category_relation": "outside_core_spatial_athletic_class",
+      "claim_class": "C4",
+      "summary": "Forces separation of sport recognition from embodiment and from Spatial Sport."
+    },
+    "confidence": "high",
+    "falsifiability": {
+      "source_field": "what_would_change_judgment",
+      "content": [
+        "Altis adopts embodiment as necessary for all sport.",
+        "A chess variant where continuous tracked bodily movement in computational space is the performance channel."
+      ]
+    },
+    "evidence_sources": [
+      {
+        "source_title": "About FIDE",
+        "publisher": "International Chess Federation (FIDE)",
+        "url": "https://www.fide.com/about-fide/",
+        "source_type": "official_announcement",
+        "claim_class": "C1",
+        "temporal_status": "current",
+        "publication_or_update_date": null
+      },
+      {
+        "source_title": "Certificate of recognition of FIDE by IOC",
+        "publisher": "FIDE Museum / Open Chess Museum",
+        "url": "https://museum.fide.com/exhibits/certificate-of-recognition-of-fide-by-ioc",
+        "source_type": "official_announcement",
+        "claim_class": "C1",
+        "temporal_status": "current",
+        "publication_or_update_date": null
+      }
+    ],
+    "provenance_note": "Per-field claim_class and status preserved verbatim from the source case. source_provisional_finding is the corpus's own attributed reading, not a new Atlas verdict. Provider claims live in evidence_sources; Altis interpretation carries C4/C5."
+  }
+}

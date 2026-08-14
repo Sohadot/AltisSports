@@ -1,0 +1,206 @@
+{
+  "atlas_record_id": "ATL-D-016",
+  "source_case_id": "BC-016",
+  "distribution_version": "0.1",
+  "atlas_source_version": "0.1",
+  "query_contract_version": "0.1",
+  "license": "CC-BY-4.0",
+  "citability": {
+    "atlas_record_citability": "not_independently_registered",
+    "source_citation_id": "BC-016",
+    "source_citation_registered": true,
+    "source_citation_externally_citable": true
+  },
+  "record": {
+    "atlas_record_id": "ATL-D-016",
+    "source_case_id": "BC-016",
+    "citation_id": "BC-016",
+    "source_dataset": "boundary-cases-001-020.v0.3.json",
+    "source_version": "0.3",
+    "license": "CC-BY-4.0",
+    "license_ref": "DATASET_LICENSE.md",
+    "temporal_status": "provisional",
+    "activity": "MindMotion GO rehabilitation exercise system",
+    "activity_aliases": [
+      "Rehabilitation exercise game",
+      "Virtual rehabilitation"
+    ],
+    "classified_object": {
+      "primary": "spatial_support_system",
+      "secondary": [
+        "product",
+        "experience"
+      ],
+      "notes": "The object is the regulated rehabilitation product and supervised exercise configuration, not stroke rehabilitation as a whole and not a competitive sport."
+    },
+    "dimensions": {
+      "performance_agency": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "The patient must generate goal-directed movement during each exercise; performance agency exists without a competitive opponent.",
+        "agency_modes": [
+          "live_performance",
+          "assisted_performance"
+        ],
+        "human_skill_causally_necessary": true
+      },
+      "performance_interface": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Motion capture and a computer-based interface translate patient movement into interactive tasks and feedback.",
+        "interface_types": [
+          "direct_bodily_action",
+          "tracked_xr_input"
+        ]
+      },
+      "embodied_performance": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Adaptive bodily performance, fine motor control, sensorimotor coordination, and tracked movement are the therapeutic channel.",
+        "demand_types": [
+          "fine_motor",
+          "sensorimotor_coordination",
+          "tracked_movement",
+          "adaptive_bodily_performance"
+        ]
+      },
+      "arena": {
+        "status": "supported",
+        "claim_class": "C2",
+        "summary": "A computer-mediated exercise environment structures targets and feedback but does not constitute a sport arena."
+      },
+      "distributed_arena_relation": {
+        "status": "supported",
+        "topology": "co_located_single_site",
+        "shared_computational_state": "supported",
+        "synchronization_mechanism": "Motion capture and therapeutic software synchronize movement and feedback.",
+        "calibration_equivalence": "Clinical setup and patient-specific calibration govern the exercise.",
+        "officiation_relation": "No sport officiation; clinical supervision governs protocol.",
+        "safety_relation": "Clinical responsibility and patient suitability are central."
+      },
+      "sensing_tracking": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Motion capture detects patient movement."
+      },
+      "measurement": {
+        "status": "supported",
+        "claim_class": "C2",
+        "summary": "Clinical scales and system task data can measure movement and progress."
+      },
+      "comparability": {
+        "status": "partial",
+        "claim_class": "C4",
+        "summary": "Clinical comparison requires protocol, population, dose, assessor, and outcome alignment; product scores alone are insufficient."
+      },
+      "officiation": {
+        "status": "not_applicable",
+        "claim_class": "C4",
+        "summary": "A therapist supervises care, but sport officiation does not apply."
+      },
+      "outcome_openness": {
+        "status": "not_applicable",
+        "claim_class": "C4",
+        "summary": "Therapeutic task completion is not an open competitive outcome."
+      },
+      "consequence_structure": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Functional progress, adherence, fatigue, and clinical risk are meaningful consequences, but not contest consequences."
+      },
+      "operational_spatial_integration": {
+        "overall_status": "supported",
+        "profile_status": "human_reviewed_v0_3",
+        "immersion_present": false,
+        "claim_class": "C4",
+        "summary": "The system is strongly embodied and computationally mediated, but its correct class is Spatial Support System because therapeutic purpose and protocol replace contest structure.",
+        "functions": [
+          {
+            "role": "represent",
+            "status": "supported",
+            "significance": "supportive"
+          },
+          {
+            "role": "enable",
+            "status": "supported",
+            "significance": "constitutive"
+          },
+          {
+            "role": "mediate",
+            "status": "supported",
+            "significance": "constitutive"
+          },
+          {
+            "role": "measure",
+            "status": "supported",
+            "significance": "supportive"
+          }
+        ]
+      },
+      "participatory_actor_relations": [
+        {
+          "relation_id": "PAR-016-01",
+          "actor_type": "operator",
+          "relation_type": "supervisor",
+          "action_window": "Before and during the therapeutic exercise.",
+          "mechanism": "The clinician selects or adjusts protocol parameters and supervises safe execution.",
+          "performance_agency_relation": "indirect_no_execution",
+          "rule_authority_relation": "participatory",
+          "resource_or_constraint_effect": "The supervisor changes task conditions without performing the patient's movement.",
+          "evidence_refs": [
+            0
+          ],
+          "uncertainty": "Clinical roles and software permissions may vary by deployment.",
+          "review_status": "human_reviewed_v0_3"
+        }
+      ],
+      "human_limits_accessibility": {
+        "source_field": "as3_layer_notes.L9_safety_accessibility",
+        "note": "Clinical suitability, fatigue, and impairment variation govern use."
+      }
+    },
+    "source_provisional_finding": {
+      "sport_contest_axis": "training_or_simulation",
+      "category_relation": "spatial_support_system",
+      "claim_class": "C5",
+      "summary": "This case strongly validates the Spatial Support System sibling class: embodied spatial interaction can be clinically meaningful without being sport or contest."
+    },
+    "confidence": "high",
+    "falsifiability": {
+      "source_field": "what_would_change_judgment",
+      "content": [
+        "A separately governed competitive event using the same technical platform with open outcomes and contest rules."
+      ]
+    },
+    "evidence_sources": [
+      {
+        "source_title": "510(k) K173931 — MindMotion GO",
+        "publisher": "U.S. Food and Drug Administration",
+        "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPMN/pmn.cfm?ID=K173931",
+        "source_type": "law_or_regulation",
+        "claim_class": "C1",
+        "temporal_status": "current",
+        "publication_or_update_date": "2018-05-17"
+      },
+      {
+        "source_title": "NCT07534124 — Virtual Reality-Based Upper Limb Rehabilitation in Chronic Stroke",
+        "publisher": "ClinicalTrials.gov / U.S. National Library of Medicine",
+        "url": "https://clinicaltrials.gov/study/NCT07534124",
+        "source_type": "reputable_research",
+        "claim_class": "C1",
+        "temporal_status": "current",
+        "publication_or_update_date": null
+      },
+      {
+        "source_title": "Clinically Meaningful Upper Limb Motor Recovery with MindMotion GO — randomized trial preprint",
+        "publisher": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.04.27.26351882v1",
+        "source_type": "reputable_research",
+        "claim_class": "C3",
+        "temporal_status": "current",
+        "publication_or_update_date": "2026-04-29"
+      }
+    ],
+    "provenance_note": "Per-field claim_class and status preserved verbatim from the source case. source_provisional_finding is the corpus's own attributed reading, not a new Atlas verdict. Provider claims live in evidence_sources; Altis interpretation carries C4/C5."
+  }
+}

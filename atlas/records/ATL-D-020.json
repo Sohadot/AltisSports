@@ -1,0 +1,177 @@
+{
+  "atlas_record_id": "ATL-D-020",
+  "source_case_id": "BC-020",
+  "distribution_version": "0.1",
+  "atlas_source_version": "0.1",
+  "query_contract_version": "0.1",
+  "license": "CC-BY-4.0",
+  "citability": {
+    "atlas_record_citability": "not_independently_registered",
+    "source_citation_id": "BC-020",
+    "source_citation_registered": true,
+    "source_citation_externally_citable": true
+  },
+  "record": {
+    "atlas_record_id": "ATL-D-020",
+    "source_case_id": "BC-020",
+    "citation_id": "BC-020",
+    "source_dataset": "boundary-cases-001-020.v0.3.json",
+    "source_version": "0.3",
+    "license": "CC-BY-4.0",
+    "license_ref": "DATASET_LICENSE.md",
+    "temporal_status": "provisional",
+    "activity": "Formula E race with FANBOOST",
+    "activity_aliases": [
+      "Spectator-influenced athletic competition",
+      "Formula E FANBOOST"
+    ],
+    "classified_object": {
+      "primary": "contest",
+      "secondary": [
+        "event",
+        "athletic_system"
+      ],
+      "notes": "The object is a historical Formula E race under the FANBOOST rule, not current Formula E and not fan voting in sport generally."
+    },
+    "dimensions": {
+      "performance_agency": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Drivers retain live vehicle-control agency; fan votes allocate an optional power resource but do not execute the driving action.",
+        "agency_modes": [
+          "live_performance",
+          "assisted_performance"
+        ],
+        "human_skill_causally_necessary": true
+      },
+      "performance_interface": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Driver performance is mediated by a regulated racing vehicle and controls.",
+        "interface_types": [
+          "vehicle_control"
+        ]
+      },
+      "embodied_performance": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Vehicle control, endurance, sensorimotor coordination, cognitive demand, and physiological load remain decisive.",
+        "demand_types": [
+          "endurance",
+          "cognitive",
+          "sensorimotor_coordination",
+          "physiological_effort",
+          "vehicle_control"
+        ]
+      },
+      "arena": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "The racing arena is a physical street circuit. Fan voting occurs outside the arena."
+      },
+      "distributed_arena_relation": {
+        "status": "not_applicable",
+        "topology": "co_located_single_site",
+        "shared_computational_state": "partial",
+        "synchronization_mechanism": "Voting and vehicle systems communicate resource eligibility and deployment.",
+        "calibration_equivalence": "Not applicable to arena distribution.",
+        "officiation_relation": "Officials and vehicle systems administer eligibility and deployment under the rule.",
+        "safety_relation": "Motorsport safety remains separate from the voting mechanism."
+      },
+      "sensing_tracking": {
+        "status": "supported",
+        "claim_class": "C2",
+        "summary": "Vehicle telemetry and race timing measure the physical contest; fan votes determine eligibility for the boost."
+      },
+      "measurement": {
+        "status": "supported",
+        "claim_class": "C2",
+        "summary": "Race timing, position, energy, and results are measured under championship rules."
+      },
+      "comparability": {
+        "status": "partial",
+        "claim_class": "C4",
+        "summary": "The mechanism was declared equally available as a voting process, but popularity produced intentionally unequal assistance."
+      },
+      "officiation": {
+        "status": "supported",
+        "claim_class": "C2",
+        "summary": "Championship officials and vehicle systems administer legal deployment."
+      },
+      "outcome_openness": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "The race result remains open and driver-dependent, although spectators alter available resources."
+      },
+      "consequence_structure": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Championship points and race results may be affected by the additional power resource."
+      },
+      "operational_spatial_integration": {
+        "overall_status": "absent",
+        "profile_status": "human_reviewed_v0_3",
+        "immersion_present": false,
+        "claim_class": "C4",
+        "summary": "FANBOOST is a digital spectator intervention into resource allocation, not Operational Spatial Integration. L8 participation becomes constitutive without turning spectators into performance agents.",
+        "functions": []
+      },
+      "participatory_actor_relations": [
+        {
+          "relation_id": "PAR-020-01",
+          "actor_type": "spectator_public",
+          "relation_type": "resource_allocator",
+          "action_window": "Official FANBOOST voting period before resource deployment.",
+          "mechanism": "Public votes determine which eligible drivers receive an optional power resource.",
+          "performance_agency_relation": "indirect_no_execution",
+          "rule_authority_relation": "participatory",
+          "resource_or_constraint_effect": "Allocates an optional rule-authorized power resource; the driver retains deployment and driving control.",
+          "evidence_refs": [
+            0,
+            1
+          ],
+          "uncertainty": "The effect on a specific race result is not quantified.",
+          "review_status": "human_reviewed_v0_3"
+        }
+      ],
+      "human_limits_accessibility": {
+        "source_field": "as3_layer_notes.L9_safety_accessibility",
+        "note": "Motorsport safety remains separate from fan voting."
+      }
+    },
+    "source_provisional_finding": {
+      "sport_contest_axis": "sport",
+      "category_relation": "outside_core_spatial_athletic_class",
+      "claim_class": "C5",
+      "summary": "Spectator influence can become constitutive to resource allocation without becoming Performance Agency, officiation, or Spatiality. The ontology needs a participatory rule/resource actor relation."
+    },
+    "confidence": "high",
+    "falsifiability": {
+      "source_field": "what_would_change_judgment",
+      "content": [
+        "A format in which spectators continuously execute skill-dependent actions that directly control the competitive object."
+      ]
+    },
+    "evidence_sources": [
+      {
+        "source_title": "FANBOOST is open — vote to influence Formula E",
+        "publisher": "FIA Formula E",
+        "url": "https://www.fiaformulae.com/en/news/2022",
+        "source_type": "official_announcement",
+        "claim_class": "C1",
+        "temporal_status": "historical",
+        "publication_or_update_date": "2022-07-13"
+      },
+      {
+        "source_title": "Farewell FANBOOST",
+        "publisher": "FIA Formula E",
+        "url": "https://www.fiaformulae.com/en/news/11558",
+        "source_type": "official_announcement",
+        "claim_class": "C1",
+        "temporal_status": "discontinued",
+        "publication_or_update_date": "2022-11-27"
+      }
+    ],
+    "provenance_note": "Per-field claim_class and status preserved verbatim from the source case. source_provisional_finding is the corpus's own attributed reading, not a new Atlas verdict. Provider claims live in evidence_sources; Altis interpretation carries C4/C5."
+  }
+}

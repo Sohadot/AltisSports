@@ -1,0 +1,203 @@
+{
+  "atlas_record_id": "ATL-D-019",
+  "source_case_id": "BC-019",
+  "distribution_version": "0.1",
+  "atlas_source_version": "0.1",
+  "query_contract_version": "0.1",
+  "license": "CC-BY-4.0",
+  "citability": {
+    "atlas_record_citability": "not_independently_registered",
+    "source_citation_id": "BC-019",
+    "source_citation_registered": true,
+    "source_citation_externally_citable": true
+  },
+  "record": {
+    "atlas_record_id": "ATL-D-019",
+    "source_case_id": "BC-019",
+    "citation_id": "BC-019",
+    "source_dataset": "boundary-cases-001-020.v0.3.json",
+    "source_version": "0.3",
+    "license": "CC-BY-4.0",
+    "license_ref": "DATASET_LICENSE.md",
+    "temporal_status": "provisional",
+    "activity": "DARPA Subterranean Challenge Systems Competition",
+    "activity_aliases": [
+      "Mixed human–AI team competition",
+      "Human–robot team competition"
+    ],
+    "classified_object": {
+      "primary": "contest",
+      "secondary": [
+        "event",
+        "organization"
+      ],
+      "notes": "The object is the physical Systems Competition in which human teams design and supervise autonomous robot teams searching a physical course."
+    },
+    "dimensions": {
+      "performance_agency": {
+        "status": "partial",
+        "claim_class": "C4",
+        "summary": "Human design and supervisory decisions matter, but robots perform substantial autonomous navigation and search during the timed run.",
+        "agency_modes": [
+          "design_engineering",
+          "autonomous_execution",
+          "agency_handoff"
+        ],
+        "human_skill_causally_necessary": null
+      },
+      "performance_interface": {
+        "status": "partial",
+        "claim_class": "C4",
+        "summary": "Humans interact through command systems while autonomous robots act physically in the course.",
+        "interface_types": [
+          "remote_control",
+          "autonomous_agent"
+        ]
+      },
+      "embodied_performance": {
+        "status": "absent",
+        "claim_class": "C4",
+        "summary": "The decisive physical execution is robotic rather than live human bodily performance.",
+        "demand_types": [
+          "none_live_human"
+        ]
+      },
+      "arena": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Physical subterranean courses and computational maps jointly structure robot operation and scoring."
+      },
+      "distributed_arena_relation": {
+        "status": "partial",
+        "topology": "remote_supervision_physical_arena",
+        "shared_computational_state": "supported",
+        "synchronization_mechanism": "Robot telemetry, maps, networking, and command systems connect the command post to the course.",
+        "calibration_equivalence": "Not intended as identical-system calibration; heterogeneous systems are compared through common tasks and scoring.",
+        "officiation_relation": "DARPA validates spatial reports, timing, and ranking from the shared competition infrastructure.",
+        "safety_relation": "Physical separation reduces direct human exposure while robot and course safety remain governed."
+      },
+      "sensing_tracking": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Robots use perception, localization, networking, and mapping to detect artifacts and report locations."
+      },
+      "measurement": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Correct artifact type and location within tolerance produce points; time resolves ranking."
+      },
+      "comparability": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Common courses, report limits, location tolerance, and time frame support comparison, while system architectures vary by design."
+      },
+      "officiation": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "DARPA systems and officials validate artifact reports and scores."
+      },
+      "outcome_openness": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Results emerge through team design, supervision, and autonomous system execution."
+      },
+      "consequence_structure": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Points, time, ranking, and prize awards form the consequence structure."
+      },
+      "operational_spatial_integration": {
+        "overall_status": "supported",
+        "profile_status": "human_reviewed_v0_3",
+        "immersion_present": false,
+        "claim_class": "C4",
+        "summary": "The competition has rich operational spatial integration, but not human athletic embodiment. It is an engineering contest outside the Spatial Athletic core.",
+        "functions": [
+          {
+            "role": "represent",
+            "status": "supported",
+            "significance": "constitutive"
+          },
+          {
+            "role": "enable",
+            "status": "supported",
+            "significance": "constitutive"
+          },
+          {
+            "role": "mediate",
+            "status": "supported",
+            "significance": "constitutive"
+          },
+          {
+            "role": "constrain",
+            "status": "supported",
+            "significance": "constitutive"
+          },
+          {
+            "role": "measure",
+            "status": "supported",
+            "significance": "constitutive"
+          },
+          {
+            "role": "compare",
+            "status": "supported",
+            "significance": "supportive"
+          },
+          {
+            "role": "officiate",
+            "status": "supported",
+            "significance": "supportive"
+          }
+        ]
+      },
+      "participatory_actor_relations": [],
+      "human_limits_accessibility": {
+        "source_field": "as3_layer_notes.L9_safety_accessibility",
+        "note": "Robots enter hazardous spaces to reduce human risk."
+      }
+    },
+    "source_provisional_finding": {
+      "sport_contest_axis": "research_or_engineering_contest",
+      "category_relation": "outside_core_spatial_athletic_class",
+      "claim_class": "C5",
+      "summary": "Operational spatial integration can be very strong without Spatial Athletic System membership. The case also confirms that agency handoff requires phase-level representation rather than one summary list."
+    },
+    "confidence": "high",
+    "falsifiability": {
+      "source_field": "what_would_change_judgment",
+      "content": [
+        "Phase logs showing human commands, autonomous decisions, and causal contribution throughout each run."
+      ]
+    },
+    "evidence_sources": [
+      {
+        "source_title": "DARPA Subterranean Challenge program",
+        "publisher": "Defense Advanced Research Projects Agency",
+        "url": "https://www.darpa.mil/research/programs/darpa-subterranean-challenge",
+        "source_type": "official_announcement",
+        "claim_class": "C1",
+        "temporal_status": "historical",
+        "publication_or_update_date": null
+      },
+      {
+        "source_title": "Subterranean Challenge Final Event",
+        "publisher": "Defense Advanced Research Projects Agency",
+        "url": "https://www.darpa.mil/research/challenges/subterranean",
+        "source_type": "official_announcement",
+        "claim_class": "C1",
+        "temporal_status": "historical",
+        "publication_or_update_date": "2021-09"
+      },
+      {
+        "source_title": "Teams CoSTAR and BARCS Take Top Spots in DARPA SubT Urban Circuit",
+        "publisher": "Defense Advanced Research Projects Agency",
+        "url": "https://www.darpa.mil/news/2020/costar-barcs-subterranean-challenge",
+        "source_type": "official_announcement",
+        "claim_class": "C1",
+        "temporal_status": "historical",
+        "publication_or_update_date": "2020"
+      }
+    ],
+    "provenance_note": "Per-field claim_class and status preserved verbatim from the source case. source_provisional_finding is the corpus's own attributed reading, not a new Atlas verdict. Provider claims live in evidence_sources; Altis interpretation carries C4/C5."
+  }
+}

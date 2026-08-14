@@ -46,6 +46,9 @@ jobs:
       - name: Negative controls — descriptive atlas (validator must reject invalid states)
         run: python3 ci_atlas_negative_controls.py
 
+      - name: Negative controls — atlas query surface (validator must reject invalid states)
+        run: python3 ci_atlas_query_negative_controls.py
+
       - name: Identifier stability across revisions
         env:
           GITHUB_EVENT_BEFORE: ${{ github.event.before }}
