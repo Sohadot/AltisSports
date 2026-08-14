@@ -35,6 +35,15 @@
     "distribution": "atlas/ (manifest.json, records/ATL-D-NNN.json, by-atlas-id.json, by-case.json)",
     "identity_model": "ATL-D-NNN are stable derived reference handles; BC-NNN remain the canonical citation identity (ATLAS_CITATION_ARCHITECTURE_DECISION_V0.1.md)."
   },
+  "review": {
+    "wave": "RW-001",
+    "state": "controlled_first_wave_prepared",
+    "invitations_authorized": 4,
+    "invitations_dispatched": 0,
+    "reviewers": 0,
+    "dispatch_log": "ASR_001_INVITATION_DISPATCH_LOG_V0.1.json",
+    "note": "Four invitations are prepared and authorized for owner-private dispatch. None have been dispatched; there are no reviewers yet. Dispatch and acceptance are recorded only after real events."
+  },
   "licensing": {
     "boundary_corpus": "CC-BY-4.0",
     "as3": "CC-BY-4.0",
