@@ -95,6 +95,29 @@ def validate(errors):
     if review.get("reviewers") != reviewers:
         errors.append(f"review.reviewers {review.get('reviewers')} != dispatch log {reviewers}")
 
+    # (6b) semantic / status guards — numeric counts alone must not be able to
+    # drift from the stated review state or prose. Ground truth is the dispatch
+    # log. The future post-dispatch state name is deliberately not invented here:
+    # at the first real dispatch this fails and forces a governed state transition.
+    PREPARED = "controlled_first_wave_prepared"
+    state = review.get("state")
+    ext_layer = next((l for l in profile.get("layers", []) if l.get("layer") == "External operator review"), None)
+    if ext_layer is None:
+        errors.append("profile is missing the 'External operator review' layer")
+    elif ext_layer.get("state") != state:
+        errors.append(f"External operator review layer state {ext_layer.get('state')!r} != review.state {state!r}")
+    if dispatched == 0:
+        if state != PREPARED:
+            errors.append(f"nothing is dispatched but review.state is {state!r} (expected {PREPARED!r})")
+    else:
+        if state == PREPARED:
+            errors.append(f"{dispatched} invitation(s) dispatched but review.state is still {PREPARED!r} — a governed state transition is required")
+    prose = " ".join([str(review.get("note", "")), str((ext_layer or {}).get("detail", ""))]).lower()
+    if dispatched > 0 and "none dispatched" in prose:
+        errors.append("profile prose still says 'none dispatched' after dispatch")
+    if reviewers > 0 and "no reviewers yet" in prose:
+        errors.append("profile prose still says 'no reviewers yet' after acceptance")
+
     # (7) canonical resources exist
     for name, path in profile.get("canonical_resources", {}).items():
         if path.startswith("http"):
