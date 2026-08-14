@@ -1,0 +1,190 @@
+{
+  "atlas_record_id": "ATL-D-008",
+  "source_case_id": "BC-008",
+  "distribution_version": "0.1",
+  "atlas_source_version": "0.1",
+  "query_contract_version": "0.1",
+  "license": "CC-BY-4.0",
+  "citability": {
+    "atlas_record_citability": "not_independently_registered",
+    "source_citation_id": "BC-008",
+    "source_citation_registered": true,
+    "source_citation_externally_citable": true
+  },
+  "record": {
+    "atlas_record_id": "ATL-D-008",
+    "source_case_id": "BC-008",
+    "citation_id": "BC-008",
+    "source_dataset": "boundary-cases-001-020.v0.3.json",
+    "source_version": "0.3",
+    "license": "CC-BY-4.0",
+    "license_ref": "DATASET_LICENSE.md",
+    "temporal_status": "provisional",
+    "activity": "Virtual Cycling with Physical Resistance",
+    "activity_aliases": [
+      "UCI Cycling Esports",
+      "Zwift racing with smart trainer",
+      "Indoor virtual cycling competition"
+    ],
+    "classified_object": {
+      "primary": "athletic_system",
+      "secondary": [
+        "activity",
+        "product"
+      ],
+      "notes": "Championship-style events coupling physiological power to computational course state. Platform is noted narratively, not as a separate classified_object enum value in v0.1."
+    },
+    "dimensions": {
+      "performance_agency": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Human power, pacing, and tactics determine race outcomes.",
+        "agency_modes": [
+          "live_performance",
+          "remote_performance",
+          "assisted_performance"
+        ],
+        "human_skill_causally_necessary": true
+      },
+      "performance_interface": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Bicycle and smart trainer resistance form an embodied machine interface.",
+        "interface_types": [
+          "direct_bodily_action",
+          "resistance_equipment",
+          "tracked_xr_input"
+        ]
+      },
+      "embodied_performance": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Bicycle and smart trainer resistance form an embodied machine interface. Migrated as Embodied Performance; demand types are provisional.",
+        "demand_types": [
+          "endurance",
+          "force",
+          "physiological_effort",
+          "tracked_movement"
+        ]
+      },
+      "arena": {
+        "status": "supported",
+        "claim_class": "C2",
+        "summary": "Computational course geometry (gradients, drafting, position) constrains performance."
+      },
+      "distributed_arena_relation": {
+        "status": "supported",
+        "topology": "remote_synchronous",
+        "shared_computational_state": "supported",
+        "synchronization_mechanism": "Platform position, course state, power input, and event timing synchronize the race.",
+        "calibration_equivalence": "Trainer standardization, power-source rules, and sensor controls support equivalence.",
+        "officiation_relation": "Platform state and event officials jointly administer the race.",
+        "safety_relation": "Each rider's local physical setup remains locally managed while contest governance is centralized."
+      },
+      "sensing_tracking": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Power, cadence, and HR sensing; anti-cheat/data integrity critical."
+      },
+      "measurement": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Power-derived virtual speed/position and race results."
+      },
+      "comparability": {
+        "status": "partial",
+        "claim_class": "C1",
+        "summary": "Explicit trainer standardization used because comparability is fragile."
+      },
+      "officiation": {
+        "status": "supported",
+        "claim_class": "C2",
+        "summary": "Platform adjudication plus event officials."
+      },
+      "outcome_openness": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Race outcomes emerge from performance under constraints."
+      },
+      "consequence_structure": {
+        "status": "supported",
+        "claim_class": "C2",
+        "summary": "World championship stakes and real physiological load."
+      },
+      "operational_spatial_integration": {
+        "overall_status": "supported",
+        "profile_status": "human_reviewed_v0_3",
+        "immersion_present": true,
+        "claim_class": "C4",
+        "summary": "Physical performance and computationally mediated course state are structurally interdependent.",
+        "functions": [
+          {
+            "role": "enable",
+            "status": "supported",
+            "significance": "constitutive"
+          },
+          {
+            "role": "constrain",
+            "status": "supported",
+            "significance": "constitutive"
+          },
+          {
+            "role": "measure",
+            "status": "supported",
+            "significance": "constitutive"
+          },
+          {
+            "role": "compare",
+            "status": "supported",
+            "significance": "constitutive"
+          },
+          {
+            "role": "officiate",
+            "status": "supported",
+            "significance": "constitutive"
+          }
+        ]
+      },
+      "participatory_actor_relations": [],
+      "human_limits_accessibility": {
+        "source_field": "as3_layer_notes.L9_safety_accessibility",
+        "note": "Real load; different crash profile than road."
+      }
+    },
+    "source_provisional_finding": {
+      "sport_contest_axis": "sport_like_contest",
+      "category_relation": "spatial_athletic_system",
+      "claim_class": "C5",
+      "summary": "Best positive Spatial Athletic System candidate in the Sprint 2 sample."
+    },
+    "confidence": "medium",
+    "falsifiability": {
+      "source_field": "what_would_change_judgment",
+      "content": [
+        "Evidence that virtual gradients/drafting are cosmetic only.",
+        "Unresolved systemic incomparability despite hardware controls."
+      ]
+    },
+    "evidence_sources": [
+      {
+        "source_title": "Official partners of the inaugural 2020 UCI Cycling Esports World Championships",
+        "publisher": "Zwift Newsroom",
+        "url": "https://news.zwift.com/en-WW/192755-official-partners-of-the-inaugural-2020-uci-cycling-esports-world-championships-confirmed/",
+        "source_type": "official_announcement",
+        "claim_class": "C1",
+        "temporal_status": "current",
+        "publication_or_update_date": null
+      },
+      {
+        "source_title": "Wahoo becomes Official Smart Trainer Partner of the 2023 UCI Cycling Esports World Championships",
+        "publisher": "Union Cycliste Internationale (UCI)",
+        "url": "https://www.uci.org/pressrelease/wahoo-becomes-official-smart-trainer-partner-of-the-2023-uci-cycling-esports/6LYSgnXJW7De6WAe5fwwGl",
+        "source_type": "official_announcement",
+        "claim_class": "C1",
+        "temporal_status": "current",
+        "publication_or_update_date": null
+      }
+    ],
+    "provenance_note": "Per-field claim_class and status preserved verbatim from the source case. source_provisional_finding is the corpus's own attributed reading, not a new Atlas verdict. Provider claims live in evidence_sources; Altis interpretation carries C4/C5."
+  }
+}

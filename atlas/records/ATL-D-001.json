@@ -1,0 +1,159 @@
+{
+  "atlas_record_id": "ATL-D-001",
+  "source_case_id": "BC-001",
+  "distribution_version": "0.1",
+  "atlas_source_version": "0.1",
+  "query_contract_version": "0.1",
+  "license": "CC-BY-4.0",
+  "citability": {
+    "atlas_record_citability": "not_independently_registered",
+    "source_citation_id": "BC-001",
+    "source_citation_registered": true,
+    "source_citation_externally_citable": true
+  },
+  "record": {
+    "atlas_record_id": "ATL-D-001",
+    "source_case_id": "BC-001",
+    "citation_id": "BC-001",
+    "source_dataset": "boundary-cases-001-020.v0.3.json",
+    "source_version": "0.3",
+    "license": "CC-BY-4.0",
+    "license_ref": "DATASET_LICENSE.md",
+    "temporal_status": "provisional",
+    "activity": "Association Football",
+    "activity_aliases": [
+      "Soccer",
+      "Association football"
+    ],
+    "classified_object": {
+      "primary": "activity",
+      "secondary": [
+        "athletic_system"
+      ],
+      "notes": "Governed match under IFAB Laws; optional VAR treated as adjunct, not definitional."
+    },
+    "dimensions": {
+      "performance_agency": {
+        "status": "supported",
+        "claim_class": "C2",
+        "summary": "Player skill and team performance materially determine match outcomes.",
+        "agency_modes": [
+          "live_performance"
+        ],
+        "human_skill_causally_necessary": true
+      },
+      "performance_interface": {
+        "status": "supported",
+        "claim_class": "C2",
+        "summary": "Primary interface is the human body with conventional equipment mediation.",
+        "interface_types": [
+          "direct_bodily_action",
+          "conventional_equipment"
+        ]
+      },
+      "embodied_performance": {
+        "status": "supported",
+        "claim_class": "C2",
+        "summary": "Primary interface is the human body with conventional equipment mediation. Migrated as Embodied Performance; demand types are provisional.",
+        "demand_types": [
+          "locomotion",
+          "force",
+          "balance",
+          "endurance",
+          "sensorimotor_coordination"
+        ]
+      },
+      "arena": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Physical pitch with rule-bearing lines and goal geometry."
+      },
+      "distributed_arena_relation": {
+        "status": "supported",
+        "topology": "co_located_single_site",
+        "shared_computational_state": "partial",
+        "synchronization_mechanism": "Human and optional officiating systems share match time and event state.",
+        "calibration_equivalence": "Pitch and equipment conditions are governed by the Laws.",
+        "officiation_relation": "Officials operate in the same contest environment.",
+        "safety_relation": "One event safety authority governs the venue."
+      },
+      "sensing_tracking": {
+        "status": "partial",
+        "claim_class": "C2",
+        "summary": "Primarily human perception; optional video/tracking systems in some competitions."
+      },
+      "measurement": {
+        "status": "supported",
+        "claim_class": "C2",
+        "summary": "Goals, time, cards, and competition standings are standardized."
+      },
+      "comparability": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Comparability within competition frameworks; pitch and condition variation bounded by Laws."
+      },
+      "officiation": {
+        "status": "supported",
+        "claim_class": "C2",
+        "summary": "Human refereeing central; technology may assist in some competitions."
+      },
+      "outcome_openness": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Result emerges through performance within Laws, not a fixed script."
+      },
+      "consequence_structure": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Competitive result, ranking effects, and physical cost are non-trivial."
+      },
+      "operational_spatial_integration": {
+        "overall_status": "absent",
+        "profile_status": "human_reviewed_v0_3",
+        "immersion_present": false,
+        "claim_class": "C4",
+        "summary": "Computational systems may assist officiation but do not make the contest a Spatial Athletic System by default.",
+        "functions": []
+      },
+      "participatory_actor_relations": [],
+      "human_limits_accessibility": {
+        "source_field": "as3_layer_notes.L9_safety_accessibility",
+        "note": "Contact, fatigue, medical protocols."
+      }
+    },
+    "source_provisional_finding": {
+      "sport_contest_axis": "sport",
+      "category_relation": "outside_core_spatial_athletic_class",
+      "claim_class": "C4",
+      "summary": "Baseline conventional athletic contest; reference positive for sport invariants and negative for Spatial Sport by default."
+    },
+    "confidence": "high",
+    "falsifiability": {
+      "source_field": "what_would_change_judgment",
+      "content": [
+        "Competitions where computational geometry jointly constrains or officiates a unified physical-computational contest."
+      ]
+    },
+    "evidence_sources": [
+      {
+        "source_title": "Laws of the Game (IFAB portal)",
+        "publisher": "International Football Association Board",
+        "url": "https://theifab.com/",
+        "source_type": "federation_or_league_rules",
+        "claim_class": "C1",
+        "temporal_status": "current",
+        "publication_or_update_date": null
+      },
+      {
+        "source_title": "Laws of the Game application materials",
+        "publisher": "FIFA / IFAB",
+        "url": "https://digitalhub.fifa.com/m/5371a6dcc42fbb44/original/d6g1medsi8jrrd3e4imp-pdf.pdf",
+        "source_type": "federation_or_league_rules",
+        "claim_class": "C1",
+        "temporal_status": "historical",
+        "publication_or_update_date": null
+      }
+    ],
+    "provenance_note": "Per-field claim_class and status preserved verbatim from the source case. source_provisional_finding is the corpus's own attributed reading, not a new Atlas verdict. Provider claims live in evidence_sources; Altis interpretation carries C4/C5."
+  }
+}

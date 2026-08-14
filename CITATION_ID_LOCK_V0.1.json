@@ -1,0 +1,494 @@
+{
+  "lock": "AltisSports Citation Identifier Lock",
+  "version": "0.1",
+  "status": "Foundation Draft — Not Ratified",
+  "generated": "2026-08-14",
+  "purpose": "Prevent semantic identifier reuse. A citation_id may be retired via a tombstone but must never be reassigned to a different meaning.",
+  "binding_count": 69,
+  "bindings": [
+    {
+      "citation_id": "BC-001",
+      "binding_type": "boundary_case_activity",
+      "bound_value": "Association Football",
+      "source_file": "boundary-cases-001-020.v0.3.json",
+      "source_key": "BC-001"
+    },
+    {
+      "citation_id": "BC-002",
+      "binding_type": "boundary_case_activity",
+      "bound_value": "Chess",
+      "source_file": "boundary-cases-001-020.v0.3.json",
+      "source_key": "BC-002"
+    },
+    {
+      "citation_id": "BC-003",
+      "binding_type": "boundary_case_activity",
+      "bound_value": "Formula One",
+      "source_file": "boundary-cases-001-020.v0.3.json",
+      "source_key": "BC-003"
+    },
+    {
+      "citation_id": "BC-004",
+      "binding_type": "boundary_case_activity",
+      "bound_value": "Para Athletics",
+      "source_file": "boundary-cases-001-020.v0.3.json",
+      "source_key": "BC-004"
+    },
+    {
+      "citation_id": "BC-005",
+      "binding_type": "boundary_case_activity",
+      "bound_value": "Drone Racing",
+      "source_file": "boundary-cases-001-020.v0.3.json",
+      "source_key": "BC-005"
+    },
+    {
+      "citation_id": "BC-006",
+      "binding_type": "boundary_case_activity",
+      "bound_value": "Tactical Shooter Esport",
+      "source_file": "boundary-cases-001-020.v0.3.json",
+      "source_key": "BC-006"
+    },
+    {
+      "citation_id": "BC-007",
+      "binding_type": "boundary_case_activity",
+      "bound_value": "VR Boxing",
+      "source_file": "boundary-cases-001-020.v0.3.json",
+      "source_key": "BC-007"
+    },
+    {
+      "citation_id": "BC-008",
+      "binding_type": "boundary_case_activity",
+      "bound_value": "Virtual Cycling with Physical Resistance",
+      "source_file": "boundary-cases-001-020.v0.3.json",
+      "source_key": "BC-008"
+    },
+    {
+      "citation_id": "BC-009",
+      "binding_type": "boundary_case_activity",
+      "bound_value": "Flight Simulation Competition",
+      "source_file": "boundary-cases-001-020.v0.3.json",
+      "source_key": "BC-009"
+    },
+    {
+      "citation_id": "BC-010",
+      "binding_type": "boundary_case_activity",
+      "bound_value": "Autonomous Robot Competition",
+      "source_file": "boundary-cases-001-020.v0.3.json",
+      "source_key": "BC-010"
+    },
+    {
+      "citation_id": "BC-011",
+      "binding_type": "boundary_case_activity",
+      "bound_value": "ISSF competitive shooting",
+      "source_file": "boundary-cases-001-020.v0.3.json",
+      "source_key": "BC-011"
+    },
+    {
+      "citation_id": "BC-012",
+      "binding_type": "boundary_case_activity",
+      "bound_value": "WPA cue sports",
+      "source_file": "boundary-cases-001-020.v0.3.json",
+      "source_key": "BC-012"
+    },
+    {
+      "citation_id": "BC-013",
+      "binding_type": "boundary_case_activity",
+      "bound_value": "Beat Saber World Cup competition",
+      "source_file": "boundary-cases-001-020.v0.3.json",
+      "source_key": "BC-013"
+    },
+    {
+      "citation_id": "BC-014",
+      "binding_type": "boundary_case_activity",
+      "bound_value": "Zero Latency Sol Raiders free-roam competitive experience",
+      "source_file": "boundary-cases-001-020.v0.3.json",
+      "source_key": "BC-014"
+    },
+    {
+      "citation_id": "BC-015",
+      "binding_type": "boundary_case_activity",
+      "bound_value": "World Taekwondo Virtual Taekwondo competition",
+      "source_file": "boundary-cases-001-020.v0.3.json",
+      "source_key": "BC-015"
+    },
+    {
+      "citation_id": "BC-016",
+      "binding_type": "boundary_case_activity",
+      "bound_value": "MindMotion GO rehabilitation exercise system",
+      "source_file": "boundary-cases-001-020.v0.3.json",
+      "source_key": "BC-016"
+    },
+    {
+      "citation_id": "BC-017",
+      "binding_type": "boundary_case_activity",
+      "bound_value": "CYBATHLON Exoskeleton Race",
+      "source_file": "boundary-cases-001-020.v0.3.json",
+      "source_key": "BC-017"
+    },
+    {
+      "citation_id": "BC-018",
+      "binding_type": "boundary_case_activity",
+      "bound_value": "CYBATHLON Brain-Computer Interface Race",
+      "source_file": "boundary-cases-001-020.v0.3.json",
+      "source_key": "BC-018"
+    },
+    {
+      "citation_id": "BC-019",
+      "binding_type": "boundary_case_activity",
+      "bound_value": "DARPA Subterranean Challenge Systems Competition",
+      "source_file": "boundary-cases-001-020.v0.3.json",
+      "source_key": "BC-019"
+    },
+    {
+      "citation_id": "BC-020",
+      "binding_type": "boundary_case_activity",
+      "bound_value": "Formula E race with FANBOOST",
+      "source_file": "boundary-cases-001-020.v0.3.json",
+      "source_key": "BC-020"
+    },
+    {
+      "citation_id": "ASR001-D01-C01",
+      "binding_type": "asr_clause_profile_field_path",
+      "bound_value": "subject.canonical_subject",
+      "source_file": "ASR_001_NORMATIVE_CLAUSE_CATALOG_V0.2.json",
+      "source_key": "ASR001-D01-C01"
+    },
+    {
+      "citation_id": "ASR001-D01-C02",
+      "binding_type": "asr_clause_profile_field_path",
+      "bound_value": "subject.related_objects",
+      "source_file": "ASR_001_NORMATIVE_CLAUSE_CATALOG_V0.2.json",
+      "source_key": "ASR001-D01-C02"
+    },
+    {
+      "citation_id": "ASR001-D02-C01",
+      "binding_type": "asr_clause_profile_field_path",
+      "bound_value": "operating_context",
+      "source_file": "ASR_001_NORMATIVE_CLAUSE_CATALOG_V0.2.json",
+      "source_key": "ASR001-D02-C01"
+    },
+    {
+      "citation_id": "ASR001-D02-C02",
+      "binding_type": "asr_clause_profile_field_path",
+      "bound_value": "system_roles_and_dependencies",
+      "source_file": "ASR_001_NORMATIVE_CLAUSE_CATALOG_V0.2.json",
+      "source_key": "ASR001-D02-C02"
+    },
+    {
+      "citation_id": "ASR001-D03-C01",
+      "binding_type": "asr_clause_profile_field_path",
+      "bound_value": "performance.performance_window",
+      "source_file": "ASR_001_NORMATIVE_CLAUSE_CATALOG_V0.2.json",
+      "source_key": "ASR001-D03-C01"
+    },
+    {
+      "citation_id": "ASR001-D03-C02",
+      "binding_type": "asr_clause_profile_field_path",
+      "bound_value": "performance.agency_segments",
+      "source_file": "ASR_001_NORMATIVE_CLAUSE_CATALOG_V0.2.json",
+      "source_key": "ASR001-D03-C02"
+    },
+    {
+      "citation_id": "ASR001-D04-C01",
+      "binding_type": "asr_clause_profile_field_path",
+      "bound_value": "performance.interface_channels",
+      "source_file": "ASR_001_NORMATIVE_CLAUSE_CATALOG_V0.2.json",
+      "source_key": "ASR001-D04-C01"
+    },
+    {
+      "citation_id": "ASR001-D04-C02",
+      "binding_type": "asr_clause_profile_field_path",
+      "bound_value": "performance.embodied_demand",
+      "source_file": "ASR_001_NORMATIVE_CLAUSE_CATALOG_V0.2.json",
+      "source_key": "ASR001-D04-C02"
+    },
+    {
+      "citation_id": "ASR001-D05-C01",
+      "binding_type": "asr_clause_profile_field_path",
+      "bound_value": "arena.configuration",
+      "source_file": "ASR_001_NORMATIVE_CLAUSE_CATALOG_V0.2.json",
+      "source_key": "ASR001-D05-C01"
+    },
+    {
+      "citation_id": "ASR001-D05-C02",
+      "binding_type": "asr_clause_profile_field_path",
+      "bound_value": "arena.distributed_relation",
+      "source_file": "ASR_001_NORMATIVE_CLAUSE_CATALOG_V0.2.json",
+      "source_key": "ASR001-D05-C02"
+    },
+    {
+      "citation_id": "ASR001-D06-C01",
+      "binding_type": "asr_clause_profile_field_path",
+      "bound_value": "constraints.authoritative_sources",
+      "source_file": "ASR_001_NORMATIVE_CLAUSE_CATALOG_V0.2.json",
+      "source_key": "ASR001-D06-C01"
+    },
+    {
+      "citation_id": "ASR001-D06-C02",
+      "binding_type": "asr_clause_profile_field_path",
+      "bound_value": "constraints.execution",
+      "source_file": "ASR_001_NORMATIVE_CLAUSE_CATALOG_V0.2.json",
+      "source_key": "ASR001-D06-C02"
+    },
+    {
+      "citation_id": "ASR001-D07-C01",
+      "binding_type": "asr_clause_profile_field_path",
+      "bound_value": "sensing.observation_estimation_boundary",
+      "source_file": "ASR_001_NORMATIVE_CLAUSE_CATALOG_V0.2.json",
+      "source_key": "ASR001-D07-C01"
+    },
+    {
+      "citation_id": "ASR001-D07-C02",
+      "binding_type": "asr_clause_profile_field_path",
+      "bound_value": "sensing.failure_and_uncertainty",
+      "source_file": "ASR_001_NORMATIVE_CLAUSE_CATALOG_V0.2.json",
+      "source_key": "ASR001-D07-C02"
+    },
+    {
+      "citation_id": "ASR001-D08-C01",
+      "binding_type": "asr_clause_profile_field_path",
+      "bound_value": "measurement.metrics",
+      "source_file": "ASR_001_NORMATIVE_CLAUSE_CATALOG_V0.2.json",
+      "source_key": "ASR001-D08-C01"
+    },
+    {
+      "citation_id": "ASR001-D08-C02",
+      "binding_type": "asr_clause_profile_field_path",
+      "bound_value": "measurement.comparability_conditions",
+      "source_file": "ASR_001_NORMATIVE_CLAUSE_CATALOG_V0.2.json",
+      "source_key": "ASR001-D08-C02"
+    },
+    {
+      "citation_id": "ASR001-D09-C01",
+      "binding_type": "asr_clause_profile_field_path",
+      "bound_value": "outcome.officiation_and_authority",
+      "source_file": "ASR_001_NORMATIVE_CLAUSE_CATALOG_V0.2.json",
+      "source_key": "ASR001-D09-C01"
+    },
+    {
+      "citation_id": "ASR001-D09-C02",
+      "binding_type": "asr_clause_profile_field_path",
+      "bound_value": "outcome.outcome_and_consequence",
+      "source_file": "ASR_001_NORMATIVE_CLAUSE_CATALOG_V0.2.json",
+      "source_key": "ASR001-D09-C02"
+    },
+    {
+      "citation_id": "ASR001-D10-C01",
+      "binding_type": "asr_clause_profile_field_path",
+      "bound_value": "spatial_integration.functions",
+      "source_file": "ASR_001_NORMATIVE_CLAUSE_CATALOG_V0.2.json",
+      "source_key": "ASR001-D10-C01"
+    },
+    {
+      "citation_id": "ASR001-D10-C02",
+      "binding_type": "asr_clause_profile_field_path",
+      "bound_value": "spatial_integration.failure_effects",
+      "source_file": "ASR_001_NORMATIVE_CLAUSE_CATALOG_V0.2.json",
+      "source_key": "ASR001-D10-C02"
+    },
+    {
+      "citation_id": "ASR001-D11-C01",
+      "binding_type": "asr_clause_profile_field_path",
+      "bound_value": "actors.roles",
+      "source_file": "ASR_001_NORMATIVE_CLAUSE_CATALOG_V0.2.json",
+      "source_key": "ASR001-D11-C01"
+    },
+    {
+      "citation_id": "ASR001-D11-C02",
+      "binding_type": "asr_clause_profile_field_path",
+      "bound_value": "actors.participatory_relations",
+      "source_file": "ASR_001_NORMATIVE_CLAUSE_CATALOG_V0.2.json",
+      "source_key": "ASR001-D11-C02"
+    },
+    {
+      "citation_id": "ASR001-D12-C01",
+      "binding_type": "asr_clause_profile_field_path",
+      "bound_value": "human_factors.disclosures",
+      "source_file": "ASR_001_NORMATIVE_CLAUSE_CATALOG_V0.2.json",
+      "source_key": "ASR001-D12-C01"
+    },
+    {
+      "citation_id": "ASR001-D12-C02",
+      "binding_type": "asr_clause_profile_field_path",
+      "bound_value": "human_factors.operational_responsibility",
+      "source_file": "ASR_001_NORMATIVE_CLAUSE_CATALOG_V0.2.json",
+      "source_key": "ASR001-D12-C02"
+    },
+    {
+      "citation_id": "ASR001-D13-C01",
+      "binding_type": "asr_clause_profile_field_path",
+      "bound_value": "evidence.claims",
+      "source_file": "ASR_001_NORMATIVE_CLAUSE_CATALOG_V0.2.json",
+      "source_key": "ASR001-D13-C01"
+    },
+    {
+      "citation_id": "ASR001-D13-C02",
+      "binding_type": "asr_clause_profile_field_path",
+      "bound_value": "evidence.uncertainty_states",
+      "source_file": "ASR_001_NORMATIVE_CLAUSE_CATALOG_V0.2.json",
+      "source_key": "ASR001-D13-C02"
+    },
+    {
+      "citation_id": "ASR001-D14-C01",
+      "binding_type": "asr_clause_profile_field_path",
+      "bound_value": "governance.authority_and_versions",
+      "source_file": "ASR_001_NORMATIVE_CLAUSE_CATALOG_V0.2.json",
+      "source_key": "ASR001-D14-C01"
+    },
+    {
+      "citation_id": "ASR001-D14-C02",
+      "binding_type": "asr_clause_profile_field_path",
+      "bound_value": "governance.corrections_and_supersession",
+      "source_file": "ASR_001_NORMATIVE_CLAUSE_CATALOG_V0.2.json",
+      "source_key": "ASR001-D14-C02"
+    },
+    {
+      "citation_id": "ASR001-D15-C01",
+      "binding_type": "asr_clause_profile_field_path",
+      "bound_value": "profile_metadata",
+      "source_file": "ASR_001_NORMATIVE_CLAUSE_CATALOG_V0.2.json",
+      "source_key": "ASR001-D15-C01"
+    },
+    {
+      "citation_id": "ASR001-D15-C02",
+      "binding_type": "asr_clause_profile_field_path",
+      "bound_value": "distributions",
+      "source_file": "ASR_001_NORMATIVE_CLAUSE_CATALOG_V0.2.json",
+      "source_key": "ASR001-D15-C02"
+    },
+    {
+      "citation_id": "AS3-L1",
+      "binding_type": "as3_source_key",
+      "bound_value": "L1 — Performance Agency",
+      "source_file": "AS3_STACK.md",
+      "source_key": "AS3-L1"
+    },
+    {
+      "citation_id": "AS3-L2",
+      "binding_type": "as3_source_key",
+      "bound_value": "L2 — Performance Interface and Embodied Demand",
+      "source_file": "AS3_STACK.md",
+      "source_key": "AS3-L2"
+    },
+    {
+      "citation_id": "AS3-L3",
+      "binding_type": "as3_source_key",
+      "bound_value": "L3 — Arena and Spatial State",
+      "source_file": "AS3_STACK.md",
+      "source_key": "AS3-L3"
+    },
+    {
+      "citation_id": "AS3-L4",
+      "binding_type": "as3_source_key",
+      "bound_value": "L4 — Constraint and Rule Execution",
+      "source_file": "AS3_STACK.md",
+      "source_key": "AS3-L4"
+    },
+    {
+      "citation_id": "AS3-L5",
+      "binding_type": "as3_source_key",
+      "bound_value": "L5 — Sensing, Tracking, and State Estimation",
+      "source_file": "AS3_STACK.md",
+      "source_key": "AS3-L5"
+    },
+    {
+      "citation_id": "AS3-L6",
+      "binding_type": "as3_source_key",
+      "bound_value": "L6 — Measurement and Comparability",
+      "source_file": "AS3_STACK.md",
+      "source_key": "AS3-L6"
+    },
+    {
+      "citation_id": "AS3-L7",
+      "binding_type": "as3_source_key",
+      "bound_value": "L7 — Officiation and Outcome",
+      "source_file": "AS3_STACK.md",
+      "source_key": "AS3-L7"
+    },
+    {
+      "citation_id": "AS3-L8",
+      "binding_type": "as3_source_key",
+      "bound_value": "L8 — Presence and Participation",
+      "source_file": "AS3_STACK.md",
+      "source_key": "AS3-L8"
+    },
+    {
+      "citation_id": "AS3-L9",
+      "binding_type": "as3_source_key",
+      "bound_value": "L9 — Safety, Accessibility, and Human Limits",
+      "source_file": "AS3_STACK.md",
+      "source_key": "AS3-L9"
+    },
+    {
+      "citation_id": "AS3-L10",
+      "binding_type": "as3_source_key",
+      "bound_value": "L10 — Governance, Evidence, and Change",
+      "source_file": "AS3_STACK.md",
+      "source_key": "AS3-L10"
+    },
+    {
+      "citation_id": "AS3-OSIP",
+      "binding_type": "as3_source_key",
+      "bound_value": "Operational Spatial Integration Profile",
+      "source_file": "AS3_STACK.md",
+      "source_key": "AS3-OSIP"
+    },
+    {
+      "citation_id": "AS3-XLC-INTEGRITY",
+      "binding_type": "as3_source_key",
+      "bound_value": "Integrity",
+      "source_file": "AS3_STACK.md",
+      "source_key": "AS3-XLC-INTEGRITY"
+    },
+    {
+      "citation_id": "AS3-XLC-AGENCY-HANDOFF",
+      "binding_type": "as3_source_key",
+      "bound_value": "Agency Handoff",
+      "source_file": "AS3_STACK.md",
+      "source_key": "AS3-XLC-AGENCY-HANDOFF"
+    },
+    {
+      "citation_id": "AS3-XLC-DISTRIBUTED-ARENA",
+      "binding_type": "as3_source_key",
+      "bound_value": "Distributed Arena Relation",
+      "source_file": "AS3_STACK.md",
+      "source_key": "AS3-XLC-DISTRIBUTED-ARENA"
+    },
+    {
+      "citation_id": "AS3-XLC-PARTICIPATORY-ACTOR",
+      "binding_type": "as3_source_key",
+      "bound_value": "Participatory Actor Relation",
+      "source_file": "AS3_STACK.md",
+      "source_key": "AS3-XLC-PARTICIPATORY-ACTOR"
+    },
+    {
+      "citation_id": "AS3-XLC-INTENTIONAL-BIO-CONTROL",
+      "binding_type": "as3_source_key",
+      "bound_value": "Intentional Biological Control",
+      "source_file": "AS3_STACK.md",
+      "source_key": "AS3-XLC-INTENTIONAL-BIO-CONTROL"
+    },
+    {
+      "citation_id": "AS3-XLC-COMPARABILITY",
+      "binding_type": "as3_source_key",
+      "bound_value": "Comparability",
+      "source_file": "AS3_STACK.md",
+      "source_key": "AS3-XLC-COMPARABILITY"
+    },
+    {
+      "citation_id": "AS3-XLC-ACCESSIBILITY",
+      "binding_type": "as3_source_key",
+      "bound_value": "Accessibility",
+      "source_file": "AS3_STACK.md",
+      "source_key": "AS3-XLC-ACCESSIBILITY"
+    },
+    {
+      "citation_id": "AS3-XLC-SECURITY-PRIVACY",
+      "binding_type": "as3_source_key",
+      "bound_value": "Security and Privacy",
+      "source_file": "AS3_STACK.md",
+      "source_key": "AS3-XLC-SECURITY-PRIVACY"
+    }
+  ],
+  "tombstones": []
+}

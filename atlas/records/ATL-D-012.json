@@ -1,0 +1,157 @@
+{
+  "atlas_record_id": "ATL-D-012",
+  "source_case_id": "BC-012",
+  "distribution_version": "0.1",
+  "atlas_source_version": "0.1",
+  "query_contract_version": "0.1",
+  "license": "CC-BY-4.0",
+  "citability": {
+    "atlas_record_citability": "not_independently_registered",
+    "source_citation_id": "BC-012",
+    "source_citation_registered": true,
+    "source_citation_externally_citable": true
+  },
+  "record": {
+    "atlas_record_id": "ATL-D-012",
+    "source_case_id": "BC-012",
+    "citation_id": "BC-012",
+    "source_dataset": "boundary-cases-001-020.v0.3.json",
+    "source_version": "0.3",
+    "license": "CC-BY-4.0",
+    "license_ref": "DATASET_LICENSE.md",
+    "temporal_status": "provisional",
+    "activity": "WPA cue sports",
+    "activity_aliases": [
+      "Pool billiards",
+      "Pocket billiards"
+    ],
+    "classified_object": {
+      "primary": "activity",
+      "secondary": [
+        "athletic_system"
+      ],
+      "notes": "Pocket billiards under WPA rules is used as a fine-motor physical-geometry case; the analysis does not generalize to every cue-sport discipline."
+    },
+    "dimensions": {
+      "performance_agency": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Players exercise live aiming, stroke, speed, spin, and positional judgment during each inning.",
+        "agency_modes": [
+          "live_performance"
+        ],
+        "human_skill_causally_necessary": true
+      },
+      "performance_interface": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Direct bodily action is mediated by cue, balls, cloth, rails, and table geometry.",
+        "interface_types": [
+          "direct_bodily_action",
+          "conventional_equipment"
+        ]
+      },
+      "embodied_performance": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Embodiment is predominantly fine-motor and sensorimotor with modest locomotor and physiological demand.",
+        "demand_types": [
+          "fine_motor",
+          "cognitive",
+          "sensorimotor_coordination"
+        ]
+      },
+      "arena": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "A physical table with pockets, rails, spots, and ball positions is rule-bearing space."
+      },
+      "distributed_arena_relation": {
+        "status": "supported",
+        "topology": "co_located_single_site",
+        "shared_computational_state": "absent",
+        "synchronization_mechanism": "The physical table state is directly shared.",
+        "calibration_equivalence": "Table, ball, cue, and match specifications support comparison.",
+        "officiation_relation": "Referee authority is venue-local.",
+        "safety_relation": "Local venue responsibility applies."
+      },
+      "sensing_tracking": {
+        "status": "absent",
+        "claim_class": "C2",
+        "summary": "Standard play does not require computational tracking; human observation is primary."
+      },
+      "measurement": {
+        "status": "supported",
+        "claim_class": "C2",
+        "summary": "Ball state, legally pocketed balls, racks, and match scores are observable and recorded."
+      },
+      "comparability": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Table and equipment specifications plus common rules support comparison, subject to venue conditions."
+      },
+      "officiation": {
+        "status": "supported",
+        "claim_class": "C2",
+        "summary": "Referees apply fouls and resolve disputes in governed events."
+      },
+      "outcome_openness": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "The table state and match result emerge through player execution."
+      },
+      "consequence_structure": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Rack, match, ranking, and elimination effects derive from contest structure."
+      },
+      "operational_spatial_integration": {
+        "overall_status": "absent",
+        "profile_status": "human_reviewed_v0_3",
+        "immersion_present": false,
+        "claim_class": "C4",
+        "summary": "The activity demands sophisticated physical spatial reasoning, but no computationally mediated space is operationally integrated by default.",
+        "functions": []
+      },
+      "participatory_actor_relations": [],
+      "human_limits_accessibility": {
+        "source_field": "as3_layer_notes.L9_safety_accessibility",
+        "note": "Low-contact but posture and accessibility still matter."
+      }
+    },
+    "source_provisional_finding": {
+      "sport_contest_axis": "sport",
+      "category_relation": "outside_core_spatial_athletic_class",
+      "claim_class": "C5",
+      "summary": "Cue sports confirm that spatial skill and rule-bearing physical geometry are not Operational Spatial Integration. “Spatial” in everyday skill language must not be confused with the Altis category term."
+    },
+    "confidence": "high",
+    "falsifiability": {
+      "source_field": "what_would_change_judgment",
+      "content": [
+        "A contest where computational geometry jointly changes legal positions, measurement, or officiation as a constitutive arena."
+      ]
+    },
+    "evidence_sources": [
+      {
+        "source_title": "World Pool Rules",
+        "publisher": "World Pool-Billiard Association",
+        "url": "https://wpapool.com/rules/",
+        "source_type": "federation_or_league_rules",
+        "claim_class": "C1",
+        "temporal_status": "current",
+        "publication_or_update_date": null
+      },
+      {
+        "source_title": "About the WPA",
+        "publisher": "World Pool-Billiard Association",
+        "url": "https://wpapool.com/about/",
+        "source_type": "official_announcement",
+        "claim_class": "C1",
+        "temporal_status": "current",
+        "publication_or_update_date": null
+      }
+    ],
+    "provenance_note": "Per-field claim_class and status preserved verbatim from the source case. source_provisional_finding is the corpus's own attributed reading, not a new Atlas verdict. Provider claims live in evidence_sources; Altis interpretation carries C4/C5."
+  }
+}

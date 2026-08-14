@@ -1,0 +1,201 @@
+{
+  "atlas_record_id": "ATL-D-013",
+  "source_case_id": "BC-013",
+  "distribution_version": "0.1",
+  "atlas_source_version": "0.1",
+  "query_contract_version": "0.1",
+  "license": "CC-BY-4.0",
+  "citability": {
+    "atlas_record_citability": "not_independently_registered",
+    "source_citation_id": "BC-013",
+    "source_citation_registered": true,
+    "source_citation_externally_citable": true
+  },
+  "record": {
+    "atlas_record_id": "ATL-D-013",
+    "source_case_id": "BC-013",
+    "citation_id": "BC-013",
+    "source_dataset": "boundary-cases-001-020.v0.3.json",
+    "source_version": "0.3",
+    "license": "CC-BY-4.0",
+    "license_ref": "DATASET_LICENSE.md",
+    "temporal_status": "provisional",
+    "activity": "Beat Saber World Cup competition",
+    "activity_aliases": [
+      "VR rhythm competition",
+      "Beat Saber esports"
+    ],
+    "classified_object": {
+      "primary": "contest",
+      "secondary": [
+        "spatial_athletic_contest",
+        "computational_contest",
+        "event"
+      ],
+      "notes": "The classified object is the Cube Community Beat Saber World Cup contest format, not Beat Saber as an entire product category or all rhythm games."
+    },
+    "dimensions": {
+      "performance_agency": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Players execute tracked hand and upper-body movements live; in-game score depends on timing and motion during each map.",
+        "agency_modes": [
+          "live_performance"
+        ],
+        "human_skill_causally_necessary": true
+      },
+      "performance_interface": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Headset and tracked controllers translate bodily movement into the game.",
+        "interface_types": [
+          "tracked_xr_input"
+        ]
+      },
+      "embodied_performance": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Tracked movement, sensorimotor coordination, fine motor control, and sustained effort materially affect score.",
+        "demand_types": [
+          "fine_motor",
+          "endurance",
+          "sensorimotor_coordination",
+          "physiological_effort",
+          "tracked_movement"
+        ]
+      },
+      "arena": {
+        "status": "supported",
+        "claim_class": "C3",
+        "summary": "A computational map presents timed targets and obstacles that structure action."
+      },
+      "distributed_arena_relation": {
+        "status": "partial",
+        "topology": "remote_synchronous",
+        "shared_computational_state": "supported",
+        "synchronization_mechanism": "Tournament software, map timing, score submission, and communications coordinate the contest.",
+        "calibration_equivalence": "Hardware and tracking equivalence remain imperfect.",
+        "officiation_relation": "Software and tournament staff administer results and disputes.",
+        "safety_relation": "Physical play-space safety remains local to each competitor."
+      },
+      "sensing_tracking": {
+        "status": "supported",
+        "claim_class": "C3",
+        "summary": "Headset and controller tracking are constitutive inputs."
+      },
+      "measurement": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "The in-game scoring system and tournament aggregation determine map and match results."
+      },
+      "comparability": {
+        "status": "partial",
+        "claim_class": "C4",
+        "summary": "Tournament rules constrain versions and prohibited mods, but hardware, tracking, latency, and map differences remain active comparability risks."
+      },
+      "officiation": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Tournament staff, Tournament Assistant, streams, and published procedures administer matches."
+      },
+      "outcome_openness": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Scores emerge through live performance under map constraints."
+      },
+      "consequence_structure": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Map wins, match progression, placement, and prizes derive from the contest."
+      },
+      "operational_spatial_integration": {
+        "overall_status": "supported",
+        "profile_status": "human_reviewed_v0_3",
+        "immersion_present": true,
+        "claim_class": "C4",
+        "summary": "Embodied live performance and a rule-bearing computational arena are jointly constitutive. Contest governance exists, although it is community- rather than federation-based.",
+        "functions": [
+          {
+            "role": "represent",
+            "status": "supported",
+            "significance": "constitutive"
+          },
+          {
+            "role": "enable",
+            "status": "supported",
+            "significance": "constitutive"
+          },
+          {
+            "role": "constrain",
+            "status": "supported",
+            "significance": "constitutive"
+          },
+          {
+            "role": "measure",
+            "status": "supported",
+            "significance": "constitutive"
+          },
+          {
+            "role": "compare",
+            "status": "partial",
+            "significance": "supportive"
+          },
+          {
+            "role": "officiate",
+            "status": "partial",
+            "significance": "supportive"
+          }
+        ]
+      },
+      "participatory_actor_relations": [],
+      "human_limits_accessibility": {
+        "source_field": "as3_layer_notes.L9_safety_accessibility",
+        "note": "Fatigue, room safety, and hardware access matter."
+      }
+    },
+    "source_provisional_finding": {
+      "sport_contest_axis": "digital_competition_not_settled_as_sport",
+      "category_relation": "spatial_athletic_contest",
+      "claim_class": "C5",
+      "summary": "The contest provisionally satisfies the Spatial Athletic Contest structure even though broader sport recognition remains unsettled. System membership and institutional sport status are separate questions."
+    },
+    "confidence": "medium",
+    "falsifiability": {
+      "source_field": "what_would_change_judgment",
+      "content": [
+        "Evidence that tracked bodily input is incidental rather than causally necessary.",
+        "Rules showing uncontrolled or non-comparable scoring across participants."
+      ]
+    },
+    "evidence_sources": [
+      {
+        "source_title": "Beat Saber World Cup 2026 Rulebook",
+        "publisher": "Cube Community",
+        "url": "https://bs-announcements.vercel.app/",
+        "source_type": "standard_or_sporting_code",
+        "claim_class": "C1",
+        "temporal_status": "current",
+        "publication_or_update_date": "2026-06-06"
+      },
+      {
+        "source_title": "Beat Saber World Cup 2022 — Rules and Match Flow",
+        "publisher": "Cube Community",
+        "url": "https://old.cube.community/main/tournament/bswc2022/info",
+        "source_type": "standard_or_sporting_code",
+        "claim_class": "C1",
+        "temporal_status": "historical",
+        "publication_or_update_date": "2022"
+      },
+      {
+        "source_title": "Beat Saber — official product site",
+        "publisher": "Beat Games",
+        "url": "https://beatsaber.com/",
+        "source_type": "first_party_technical",
+        "claim_class": "C3",
+        "temporal_status": "current",
+        "publication_or_update_date": null
+      }
+    ],
+    "provenance_note": "Per-field claim_class and status preserved verbatim from the source case. source_provisional_finding is the corpus's own attributed reading, not a new Atlas verdict. Provider claims live in evidence_sources; Altis interpretation carries C4/C5."
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "schema": "AltisSports Descriptive Atlas Schema",
+  "version": "0.1",
+  "status": "Foundation Draft — Not Ratified",
+  "governs": "ATLAS_DESCRIPTIVE_V0.1.json",
+  "depends_on": [
+    "boundary-cases-001-020.v0.3.json",
+    "BOUNDARY_CASE_SCHEMA_V0.3.json",
+    "BOUNDARY_CASE_METHOD.md",
+    "QUALITY_GATE.md",
+    "REFERENCE_AUTHORITY_AND_CITABILITY_MODEL.md",
+    "SOURCE_AND_CLAIM_POLICY.md"
+  ],
+  "purpose": "A descriptive-only reference layer derived 1:1 from the boundary-case corpus. It reorganizes what the corpus already records into a citable, machine-processable index. It is NOT ranking, scoring, recommendation, conformance, certification, or a new sport/not-sport verdict.",
+  "governing_principle": "The Atlas must expose what the corpus knows, not manufacture what the corpus does not know.",
+  "derivation_rule": "Every descriptive value MUST be copied from the source boundary case. No value may be inferred, averaged, scored, or re-judged. Per-field claim_class and status are preserved exactly as recorded in the source.",
+  "identifier_policy": {
+    "namespace": "ATL-D-",
+    "format": "ATL-D-NNN where NNN is the zero-padded source boundary-case number",
+    "binding": "Each atlas_record_id binds to exactly one source_case_id (ATL-D-001 -> BC-001). The binding is locked in ATLAS_ID_LOCK_V0.1.json and must not be silently repointed.",
+    "citability": "Atlas records are NOT added to CITATION_REGISTRY_V0.1.json in v0.1. Registry integration (external citability of ATL-D-* ids) is a separate, deliberate governed step; citability is not assumed automatically."
+  },
+  "license": {
+    "identifier": "CC-BY-4.0",
+    "basis": "Derived solely from the CC BY 4.0 licensed boundary-case corpus (DATASET_LICENSE.md). It does not incorporate the blocked ASR normative clause text (LICENSE-ASR-001)."
+  },
+  "record_mandatory_fields": [
+    "atlas_record_id",
+    "source_case_id",
+    "citation_id",
+    "source_dataset",
+    "source_version",
+    "license",
+    "temporal_status",
+    "activity",
+    "classified_object",
+    "dimensions",
+    "source_provisional_finding",
+    "confidence",
+    "falsifiability",
+    "evidence_sources"
+  ],
+  "dimensions_mandatory": [
+    "performance_agency",
+    "performance_interface",
+    "embodied_performance",
+    "arena",
+    "distributed_arena_relation",
+    "sensing_tracking",
+    "measurement",
+    "comparability",
+    "officiation",
+    "outcome_openness",
+    "consequence_structure",
+    "operational_spatial_integration",
+    "participatory_actor_relations",
+    "human_limits_accessibility"
+  ],
+  "dimensions_optional": [
+    "intentional_biological_control"
+  ],
+  "dimension_field_note": "Each status-bearing dimension preserves at least {status, claim_class, summary} plus the source's controlled lists (agency_modes, interface_types, demand_types, operational_spatial_integration.functions). operational_spatial_integration preserves {overall_status, profile_status, immersion_present, functions[]}. human_limits_accessibility preserves the source L9 safety/accessibility note. participatory_actor_relations preserves the source list verbatim (may be empty).",
+  "controlled_values": {
+    "status": ["supported", "partial", "absent", "disputed", "unknown", "not_applicable"],
+    "claim_class": ["C1", "C2", "C3", "C4", "C5", "C6"],
+    "temporal_status": ["provisional"],
+    "confidence": ["low", "medium", "high"]
+  },
+  "provenance_rule": "C1/C2 = documented/synthesized fact; C3 = attributed external/provider claim; C4/C5 = Altis analytical/provisional interpretation; C6 = commercial/forecast. Provider claims are carried in evidence_sources and (where present) the source institutional recognition; Altis interpretation carries C4/C5. source_provisional_finding is the source corpus's own attributed reading, preserved verbatim with its claim_class — it is NOT a new Atlas verdict.",
+  "prohibited_fields": {
+    "rule": "No Atlas-introduced evaluative field may appear anywhere in a record.",
+    "denylisted_key_substrings": ["score", "ranking", "rank", "rating", "grade", "maturity", "readiness", "certif", "tier", "percentile", "points", "superior", "best_"]
+  },
+  "human_readable_derivation": "ATLAS_DESCRIPTIVE_V0.1.md is generated from the same builder and the same records. It must never be hand-edited independently.",
+  "proposed_fields": [],
+  "gaps_and_blockers": [
+    "Atlas v0.1 depends only on the boundary corpus; it does not depend on BLOCKER-OPREVIEW-BASELINE-001 or on the blocked ASR clauses (LICENSE-ASR-001).",
+    "Any future need for a field not present in the corpus must be recorded here as a proposed_field, not silently added to a stable schema."
+  ]
+}

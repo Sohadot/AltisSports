@@ -1,0 +1,178 @@
+{
+  "atlas_record_id": "ATL-D-007",
+  "source_case_id": "BC-007",
+  "distribution_version": "0.1",
+  "atlas_source_version": "0.1",
+  "query_contract_version": "0.1",
+  "license": "CC-BY-4.0",
+  "citability": {
+    "atlas_record_citability": "not_independently_registered",
+    "source_citation_id": "BC-007",
+    "source_citation_registered": true,
+    "source_citation_externally_citable": true
+  },
+  "record": {
+    "atlas_record_id": "ATL-D-007",
+    "source_case_id": "BC-007",
+    "citation_id": "BC-007",
+    "source_dataset": "boundary-cases-001-020.v0.3.json",
+    "source_version": "0.3",
+    "license": "CC-BY-4.0",
+    "license_ref": "DATASET_LICENSE.md",
+    "temporal_status": "provisional",
+    "activity": "VR Boxing",
+    "activity_aliases": [
+      "Creed: Rise to Glory",
+      "VR boxing product family"
+    ],
+    "classified_object": {
+      "primary": "product",
+      "secondary": [
+        "experience",
+        "athletic_system"
+      ],
+      "notes": "Product-centered hybrid; must not silently classify boxing the sport."
+    },
+    "dimensions": {
+      "performance_agency": {
+        "status": "supported",
+        "claim_class": "C3",
+        "summary": "Player motor skill and timing affect in-game outcomes.",
+        "agency_modes": [
+          "live_performance"
+        ],
+        "human_skill_causally_necessary": true
+      },
+      "performance_interface": {
+        "status": "supported",
+        "claim_class": "C3",
+        "summary": "Headset and motion controllers track upper-body actions; legs often weakly represented.",
+        "interface_types": [
+          "direct_bodily_action",
+          "tracked_xr_input"
+        ]
+      },
+      "embodied_performance": {
+        "status": "supported",
+        "claim_class": "C3",
+        "summary": "Headset and motion controllers track upper-body actions; legs often weakly represented. Migrated as Embodied Performance; demand types are provisional.",
+        "demand_types": [
+          "locomotion",
+          "force",
+          "balance",
+          "endurance",
+          "tracked_movement"
+        ]
+      },
+      "arena": {
+        "status": "partial",
+        "claim_class": "C4",
+        "summary": "Virtual ring constrains interaction; physical play space required for safe movement."
+      },
+      "distributed_arena_relation": {
+        "status": "unknown",
+        "topology": "unknown",
+        "shared_computational_state": "unknown",
+        "synchronization_mechanism": "Product- and mode-specific.",
+        "calibration_equivalence": "Cross-device equivalence remains uncertain.",
+        "officiation_relation": "Software resolves events; formal contest authority is weak or mode-specific.",
+        "safety_relation": "Each participant's physical play space has local safety constraints."
+      },
+      "sensing_tracking": {
+        "status": "partial",
+        "claim_class": "C3",
+        "summary": "Controller/headset tracking claimed; independent athletic validation limited in this record."
+      },
+      "measurement": {
+        "status": "partial",
+        "claim_class": "C3",
+        "summary": "In-game hits, stamina, knockouts, fitness targets; cross-device metrics unclear."
+      },
+      "comparability": {
+        "status": "absent",
+        "claim_class": "C4",
+        "summary": "Cross-headset/protocol comparability generally unspecified."
+      },
+      "officiation": {
+        "status": "partial",
+        "claim_class": "C4",
+        "summary": "Software determines outcomes; limited formal athletic officiation."
+      },
+      "outcome_openness": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "PvP modes can produce open contested outcomes."
+      },
+      "consequence_structure": {
+        "status": "partial",
+        "claim_class": "C4",
+        "summary": "Variable: entertainment, fitness, informal ranking."
+      },
+      "operational_spatial_integration": {
+        "overall_status": "partial",
+        "profile_status": "human_reviewed_v0_3",
+        "immersion_present": true,
+        "claim_class": "C4",
+        "summary": "Embodied tracking and computational arena jointly affect performance; immersion alone is insufficient.",
+        "functions": [
+          {
+            "role": "enable",
+            "status": "partial",
+            "significance": "supportive"
+          },
+          {
+            "role": "constrain",
+            "status": "partial",
+            "significance": "supportive"
+          },
+          {
+            "role": "measure",
+            "status": "partial",
+            "significance": "supportive"
+          }
+        ]
+      },
+      "participatory_actor_relations": [],
+      "human_limits_accessibility": {
+        "source_field": "as3_layer_notes.L9_safety_accessibility",
+        "note": "Cybersickness and real-world collision risk."
+      }
+    },
+    "source_provisional_finding": {
+      "sport_contest_axis": "hybrid",
+      "category_relation": "partial_spatial_integration",
+      "claim_class": "C4",
+      "summary": "Spatial athletic system candidate at product level; sport status requires governed contest evidence."
+    },
+    "confidence": "medium",
+    "falsifiability": {
+      "source_field": "what_would_change_judgment",
+      "content": [
+        "Independent tracking validation.",
+        "Published cross-device comparability protocol.",
+        "League/federation-governed VR boxing rules with integrity model."
+      ]
+    },
+    "evidence_sources": [
+      {
+        "source_title": "Creed: Rise to Glory product page",
+        "publisher": "Survios",
+        "url": "https://survios.com/studio/game/creed-rise-to-glory/",
+        "source_type": "first_party_technical",
+        "claim_class": "C3",
+        "temporal_status": "current",
+        "publication_or_update_date": null
+      },
+      {
+        "source_title": "Creed: Rise to Glory Championship Edition site",
+        "publisher": "Survios / Creed Rise to Glory",
+        "url": "https://creedrisetoglory.com/",
+        "source_type": "official_announcement",
+        "claim_class": "C3",
+        "temporal_status": "current",
+        "publication_or_update_date": null
+      }
+    ],
+    "provenance_note": "Per-field claim_class and status preserved verbatim from the source case. source_provisional_finding is the corpus's own attributed reading, not a new Atlas verdict. Provider claims live in evidence_sources; Altis interpretation carries C4/C5."
+  }
+}

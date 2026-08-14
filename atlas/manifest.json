@@ -1,0 +1,140 @@
+{
+  "manifest": "AltisSports Atlas Reference Distribution",
+  "distribution_version": "0.1",
+  "status": "Foundation Draft — Not Ratified",
+  "atlas_source": "ATLAS_DESCRIPTIVE_V0.1.json",
+  "atlas_source_version": "0.1",
+  "query_contract": "ATLAS_QUERY_CONTRACT_V0.1.json",
+  "query_contract_version": "0.1",
+  "schema_reference": "ATLAS_DESCRIPTIVE_SCHEMA_V0.1.json",
+  "license": "CC-BY-4.0",
+  "license_ref": "DATASET_LICENSE.md",
+  "ordering": "records ordered by atlas_record_id ascending",
+  "record_count": 20,
+  "records": [
+    {
+      "atlas_record_id": "ATL-D-001",
+      "source_case_id": "BC-001",
+      "path": "records/ATL-D-001.json",
+      "sha256": "ae81c20affb5f7e2435e9baa1bb61a3efb87b866af945f66970ba39ea1200147"
+    },
+    {
+      "atlas_record_id": "ATL-D-002",
+      "source_case_id": "BC-002",
+      "path": "records/ATL-D-002.json",
+      "sha256": "6a4b97d0a57b6d8128fe579d4f4fce0fb65d939e0edd2777b6398df46f35783e"
+    },
+    {
+      "atlas_record_id": "ATL-D-003",
+      "source_case_id": "BC-003",
+      "path": "records/ATL-D-003.json",
+      "sha256": "ef75ba7f28947c9a8bc28c985ac63d8fd09a9ba9d492640b9a873596046e2d17"
+    },
+    {
+      "atlas_record_id": "ATL-D-004",
+      "source_case_id": "BC-004",
+      "path": "records/ATL-D-004.json",
+      "sha256": "48536f0baad5011ee1f6a0e6c0c72f2d64bf881963cf258e574fcd9fbaa7f5ec"
+    },
+    {
+      "atlas_record_id": "ATL-D-005",
+      "source_case_id": "BC-005",
+      "path": "records/ATL-D-005.json",
+      "sha256": "98ecd3ef4f59c2825c05d34222e0e9d906963e70982b2b885a66f22ee1c38406"
+    },
+    {
+      "atlas_record_id": "ATL-D-006",
+      "source_case_id": "BC-006",
+      "path": "records/ATL-D-006.json",
+      "sha256": "719c73083b17a724043abaf44828b855d7a6faefee04d3605965403cfc83fc9b"
+    },
+    {
+      "atlas_record_id": "ATL-D-007",
+      "source_case_id": "BC-007",
+      "path": "records/ATL-D-007.json",
+      "sha256": "9564391474fde0761ec38666544c8c6aedd2c3ef3b8173920691407faa5a5e4c"
+    },
+    {
+      "atlas_record_id": "ATL-D-008",
+      "source_case_id": "BC-008",
+      "path": "records/ATL-D-008.json",
+      "sha256": "a8a003234643fbba8d584e6193879c77775006e72d11d7a202c6485cae168f8c"
+    },
+    {
+      "atlas_record_id": "ATL-D-009",
+      "source_case_id": "BC-009",
+      "path": "records/ATL-D-009.json",
+      "sha256": "80ea21478efb77ed03fced3c38e266754b9adaa414b16a2430d52773206c9d5d"
+    },
+    {
+      "atlas_record_id": "ATL-D-010",
+      "source_case_id": "BC-010",
+      "path": "records/ATL-D-010.json",
+      "sha256": "d3bdaec774b81e9b0fe527b3584028a25f7f63a4a094616ebfd2d6135fb27bc5"
+    },
+    {
+      "atlas_record_id": "ATL-D-011",
+      "source_case_id": "BC-011",
+      "path": "records/ATL-D-011.json",
+      "sha256": "c043fc883629aac9890cece2bec98ec39d6a24a405ae779c273b9f147595aa42"
+    },
+    {
+      "atlas_record_id": "ATL-D-012",
+      "source_case_id": "BC-012",
+      "path": "records/ATL-D-012.json",
+      "sha256": "7b7012f7569d2b6d9c4401c3d3c436ca22dc58533f334b95f065d732aba407d8"
+    },
+    {
+      "atlas_record_id": "ATL-D-013",
+      "source_case_id": "BC-013",
+      "path": "records/ATL-D-013.json",
+      "sha256": "e8ea667cb8cd3cf4a4033e72e3eed579f3a1a8989d3f3a4a0d0d4f6d4a04f87a"
+    },
+    {
+      "atlas_record_id": "ATL-D-014",
+      "source_case_id": "BC-014",
+      "path": "records/ATL-D-014.json",
+      "sha256": "8c510761cd847dffbcfc3c15335e59e62150d7dfc3298beae987ecba8a3a905d"
+    },
+    {
+      "atlas_record_id": "ATL-D-015",
+      "source_case_id": "BC-015",
+      "path": "records/ATL-D-015.json",
+      "sha256": "47f9cda52e3270bca206d8495d59f7b54f8beef0cf6b7588248f264e8fb17dc2"
+    },
+    {
+      "atlas_record_id": "ATL-D-016",
+      "source_case_id": "BC-016",
+      "path": "records/ATL-D-016.json",
+      "sha256": "853b2aafb0f49f552a0ed5888a7c0d6bbe6a61b778a2fbee1bd1c40ecf770937"
+    },
+    {
+      "atlas_record_id": "ATL-D-017",
+      "source_case_id": "BC-017",
+      "path": "records/ATL-D-017.json",
+      "sha256": "a46473fa2f8f2c352e5e691081ccdcab3fdf5d71d73522bc07e63bcc0c2691d6"
+    },
+    {
+      "atlas_record_id": "ATL-D-018",
+      "source_case_id": "BC-018",
+      "path": "records/ATL-D-018.json",
+      "sha256": "b1ba9af1a0edf173d9aee1f23ffb02dc0a01629e1eaa8254222d19761c60e09c"
+    },
+    {
+      "atlas_record_id": "ATL-D-019",
+      "source_case_id": "BC-019",
+      "path": "records/ATL-D-019.json",
+      "sha256": "323ce067a94149aea4424cb8e9dfda0003c5b0dc6941f6c0217f66e1281fda6c"
+    },
+    {
+      "atlas_record_id": "ATL-D-020",
+      "source_case_id": "BC-020",
+      "path": "records/ATL-D-020.json",
+      "sha256": "9cf28ce2d0c3eebf764377f4956169a7381a039bd35bed1820901b8a036457f8"
+    }
+  ],
+  "indexes": {
+    "by-atlas-id.json": "73dff81b41340c171db0a8800cbd06d2179e9f499d9a867703ed1a87f8af06a5",
+    "by-case.json": "ff6bd977448007d77f797825f44355465c316773badc444beb3e42cda37b5c29"
+  }
+}

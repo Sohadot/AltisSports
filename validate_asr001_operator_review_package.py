@@ -349,6 +349,29 @@ def validate() -> list[str]:
         if entry.get("sha256") != sha256(path):
             errors.append(f"baseline hash mismatch: {path}")
 
+    # If a baseline correction is recorded, it must be truthful and auditable:
+    # the corrected hash must be the active hash and match the file, and the
+    # superseded (erroneous) hash must genuinely differ from the current file.
+    correction = baseline.get("correction")
+    if isinstance(correction, dict):
+        active = {e.get("path"): e.get("sha256") for e in entries}
+        for c in correction.get("corrected_entries", []):
+            path = Path(c.get("path", ""))
+            if not path.exists():
+                errors.append(f"correction references missing file: {path}")
+                continue
+            actual = sha256(path)
+            if c.get("corrected_sha256") != actual:
+                errors.append(f"correction corrected_sha256 does not match file: {path}")
+            if active.get(str(path)) != c.get("corrected_sha256"):
+                errors.append(f"correction not applied to active manifest entry: {path}")
+            if c.get("superseded_sha256") == actual:
+                errors.append(f"correction superseded_sha256 equals current file (no real defect): {path}")
+        if correction.get("content_changed") is not False:
+            errors.append("baseline correction must assert content_changed=false")
+        if correction.get("review_activated") is not False:
+            errors.append("baseline correction must not activate review")
+
     friction = load_json(Path("ASR_001_CLAUSE_FRICTION_REGISTER_V0.1.json"))
     if friction.get("status") != "dispositioned":
         errors.append("Sprint 11 friction register is not dispositioned")

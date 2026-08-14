@@ -1,0 +1,57 @@
+{
+  "contract": "AltisSports Atlas Citation Architecture",
+  "architecture_version": "0.1",
+  "status": "Owner Decision — Ratified for Descriptive Atlas v0.1",
+  "decision_document": "ATLAS_CITATION_ARCHITECTURE_DECISION_V0.1.md",
+  "atlas_version": "0.1",
+  "governing_principle": "One epistemic object should have one canonical citation identity, unless an independently governed derivative becomes a genuinely distinct epistemic object.",
+  "identity_model": {
+    "canonical_citation_namespace": "BC",
+    "derived_view_namespace": "ATL-D",
+    "independent_atlas_citation": false,
+    "atlas_record_citability": "not_independently_registered",
+    "atlas_role": "stable_reference_and_retrieval_handle",
+    "canonical_role": "canonical_citation_identity",
+    "path_is_not_citation_identity": true
+  },
+  "mapping_source": "ATLAS_ID_LOCK_V0.1.json",
+  "citation_registry": "CITATION_REGISTRY_V0.1.json",
+  "atl_d_in_citation_registry": false,
+  "correction_authority": "source-first",
+  "correction_semantics": {
+    "knowledge_or_claim_error": "correct in canonical source BC-* under SOURCE_AND_CLAIM_POLICY.md, then regenerate the Atlas",
+    "derivation_or_distribution_error": "fix the generator/derivation and regenerate, without changing the source claim"
+  },
+  "inheritance_non_elevation": [
+    "claim_class",
+    "license",
+    "temporal_status",
+    "provider_altis_attribution",
+    "falsifiability",
+    "correction_state"
+  ],
+  "reconsideration_triggers": [
+    "atlas record contains Altis-authored synthesis not present in BC",
+    "atlas record merges more than one source case into one object",
+    "atlas record has an independent lifecycle/version history",
+    "atlas record has an independent correction history",
+    "atlas record has an independent falsifier",
+    "an external citation need arises that a BC citation cannot represent precisely",
+    "atlas advances to a new authorized layer differing substantively from a derived descriptive view"
+  ],
+  "insufficient_for_reconsideration": [
+    "having a URL",
+    "being used in the CLI",
+    "having a stable id",
+    "becoming widely used"
+  ],
+  "not_changed_by_this_decision": [
+    "LICENSE-ASR-001",
+    "BLOCKER-OPREVIEW-BASELINE-001",
+    "ASR normative meaning",
+    "corpus claims",
+    "Atlas descriptive content",
+    "general ratification status",
+    "evaluative permissions"
+  ]
+}

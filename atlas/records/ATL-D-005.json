@@ -1,0 +1,174 @@
+{
+  "atlas_record_id": "ATL-D-005",
+  "source_case_id": "BC-005",
+  "distribution_version": "0.1",
+  "atlas_source_version": "0.1",
+  "query_contract_version": "0.1",
+  "license": "CC-BY-4.0",
+  "citability": {
+    "atlas_record_citability": "not_independently_registered",
+    "source_citation_id": "BC-005",
+    "source_citation_registered": true,
+    "source_citation_externally_citable": true
+  },
+  "record": {
+    "atlas_record_id": "ATL-D-005",
+    "source_case_id": "BC-005",
+    "citation_id": "BC-005",
+    "source_dataset": "boundary-cases-001-020.v0.3.json",
+    "source_version": "0.3",
+    "license": "CC-BY-4.0",
+    "license_ref": "DATASET_LICENSE.md",
+    "temporal_status": "provisional",
+    "activity": "Drone Racing",
+    "activity_aliases": [
+      "FAI F9U Drone Racing",
+      "Multicopter racing"
+    ],
+    "classified_object": {
+      "primary": "activity",
+      "secondary": [
+        "athletic_system",
+        "product"
+      ],
+      "notes": "FAI F9U-class racing; craft and FPV stack are products within the athletic system."
+    },
+    "dimensions": {
+      "performance_agency": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Pilot skill during the race is decisive under remote control.",
+        "agency_modes": [
+          "remote_performance"
+        ],
+        "human_skill_causally_necessary": true
+      },
+      "performance_interface": {
+        "status": "partial",
+        "claim_class": "C4",
+        "summary": "Radio control and FPV; human body not co-located with craft.",
+        "interface_types": [
+          "remote_control"
+        ]
+      },
+      "embodied_performance": {
+        "status": "partial",
+        "claim_class": "C4",
+        "summary": "Radio control and FPV; human body not co-located with craft. Migrated as Embodied Performance; demand types are provisional.",
+        "demand_types": [
+          "remote_control",
+          "fine_motor",
+          "sensorimotor_coordination"
+        ]
+      },
+      "arena": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Physical course gates/obstacles; FPV provides mediated sensing of that arena."
+      },
+      "distributed_arena_relation": {
+        "status": "supported",
+        "topology": "remote_supervision_physical_arena",
+        "shared_computational_state": "partial",
+        "synchronization_mechanism": "Radio command, FPV video, timing, and course state connect pilot and aircraft.",
+        "calibration_equivalence": "Equipment classes, frequencies, timing, and course configuration bound comparison.",
+        "officiation_relation": "Officials observe the physical course and results systems.",
+        "safety_relation": "Pilot zones, spectator separation, frequency control, and flyaway procedures govern risk."
+      },
+      "sensing_tracking": {
+        "status": "supported",
+        "claim_class": "C2",
+        "summary": "FPV video, timing, and fail-safe systems."
+      },
+      "measurement": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Lap/race timing and World Cup points."
+      },
+      "comparability": {
+        "status": "partial",
+        "claim_class": "C4",
+        "summary": "Depends on class limits and course setup across events."
+      },
+      "officiation": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Event officiation under FAI sporting structures."
+      },
+      "outcome_openness": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Race outcomes depend on pilot performance and reliability."
+      },
+      "consequence_structure": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Ranking, elimination, crash risk to equipment, safety zones."
+      },
+      "operational_spatial_integration": {
+        "overall_status": "partial",
+        "profile_status": "human_reviewed_v0_3",
+        "immersion_present": true,
+        "claim_class": "C4",
+        "summary": "Remote control coupled to physical course via computational sensing/display; not automatically a computationally constituted arena.",
+        "functions": [
+          {
+            "role": "enable",
+            "status": "partial",
+            "significance": "supportive"
+          },
+          {
+            "role": "constrain",
+            "status": "partial",
+            "significance": "supportive"
+          },
+          {
+            "role": "measure",
+            "status": "partial",
+            "significance": "supportive"
+          }
+        ]
+      },
+      "participatory_actor_relations": [],
+      "human_limits_accessibility": {
+        "source_field": "as3_layer_notes.L9_safety_accessibility",
+        "note": "Flyaway and crowd safety controls."
+      }
+    },
+    "source_provisional_finding": {
+      "sport_contest_axis": "sport_like_contest",
+      "category_relation": "partial_spatial_integration",
+      "claim_class": "C5",
+      "summary": "Remote performance agency over physical course; spatial membership unresolved pending sharper operational-space criteria."
+    },
+    "confidence": "medium",
+    "falsifiability": {
+      "source_field": "what_would_change_judgment",
+      "content": [
+        "Clearer Altis criteria distinguishing remote physical-craft control from computationally constituted arenas.",
+        "Events where digital overlays become rule-bearing in the same contest state."
+      ]
+    },
+    "evidence_sources": [
+      {
+        "source_title": "FAI Drone Racing World Cup documents and rules",
+        "publisher": "World Air Sports Federation (FAI)",
+        "url": "https://www.fai.org/droneracingworldcup-documents-rules",
+        "source_type": "federation_or_league_rules",
+        "claim_class": "C1",
+        "temporal_status": "current",
+        "publication_or_update_date": null
+      },
+      {
+        "source_title": "FAI Sporting Code Volume F9 Drone Sports",
+        "publisher": "FAI / CIAM",
+        "url": "https://www.fai.org/sites/default/files/document/file/SC4_volume_CIAM_F9_Drone_sports_2026.pdf",
+        "source_type": "standard_or_sporting_code",
+        "claim_class": "C1",
+        "temporal_status": "current",
+        "publication_or_update_date": null
+      }
+    ],
+    "provenance_note": "Per-field claim_class and status preserved verbatim from the source case. source_provisional_finding is the corpus's own attributed reading, not a new Atlas verdict. Provider claims live in evidence_sources; Altis interpretation carries C4/C5."
+  }
+}

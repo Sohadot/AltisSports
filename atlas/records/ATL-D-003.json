@@ -1,0 +1,180 @@
+{
+  "atlas_record_id": "ATL-D-003",
+  "source_case_id": "BC-003",
+  "distribution_version": "0.1",
+  "atlas_source_version": "0.1",
+  "query_contract_version": "0.1",
+  "license": "CC-BY-4.0",
+  "citability": {
+    "atlas_record_citability": "not_independently_registered",
+    "source_citation_id": "BC-003",
+    "source_citation_registered": true,
+    "source_citation_externally_citable": true
+  },
+  "record": {
+    "atlas_record_id": "ATL-D-003",
+    "source_case_id": "BC-003",
+    "citation_id": "BC-003",
+    "source_dataset": "boundary-cases-001-020.v0.3.json",
+    "source_version": "0.3",
+    "license": "CC-BY-4.0",
+    "license_ref": "DATASET_LICENSE.md",
+    "temporal_status": "provisional",
+    "activity": "Formula One",
+    "activity_aliases": [
+      "F1",
+      "FIA Formula One World Championship"
+    ],
+    "classified_object": {
+      "primary": "athletic_system",
+      "secondary": [
+        "activity",
+        "organization"
+      ],
+      "notes": "Championship competition under FIA regulations."
+    },
+    "dimensions": {
+      "performance_agency": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Driver must drive alone and unaided; skill materially affects outcomes alongside car/team factors.",
+        "agency_modes": [
+          "live_performance",
+          "assisted_performance"
+        ],
+        "human_skill_causally_necessary": true
+      },
+      "performance_interface": {
+        "status": "supported",
+        "claim_class": "C2",
+        "summary": "Heavily mediated cockpit/vehicle interface with extreme physical load.",
+        "interface_types": [
+          "vehicle_control"
+        ]
+      },
+      "embodied_performance": {
+        "status": "supported",
+        "claim_class": "C2",
+        "summary": "Heavily mediated cockpit/vehicle interface with extreme physical load. Migrated as Embodied Performance; demand types are provisional.",
+        "demand_types": [
+          "vehicle_control",
+          "endurance",
+          "sensorimotor_coordination"
+        ]
+      },
+      "arena": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Physical circuit with track limits, sectors, and marshalling signals."
+      },
+      "distributed_arena_relation": {
+        "status": "supported",
+        "topology": "co_located_single_site",
+        "shared_computational_state": "partial",
+        "synchronization_mechanism": "Timing, marshalling, telemetry, and race-control systems synchronize contest state.",
+        "calibration_equivalence": "Technical regulations and timing systems define comparison conditions.",
+        "officiation_relation": "Race control and stewards govern the shared event.",
+        "safety_relation": "Circuit-wide safety responsibility is centrally governed."
+      },
+      "sensing_tracking": {
+        "status": "supported",
+        "claim_class": "C2",
+        "summary": "Timing, ECU, and marshalling systems provide dense sensing."
+      },
+      "measurement": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Lap times, classification, penalties."
+      },
+      "comparability": {
+        "status": "partial",
+        "claim_class": "C4",
+        "summary": "Within regulated championship; cross-era comparison limited by regulation change."
+      },
+      "officiation": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Race Director, stewards, technical scrutineering."
+      },
+      "outcome_openness": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Race results emerge under uncertainty and performance."
+      },
+      "consequence_structure": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Championship points, risk, and physical demand."
+      },
+      "operational_spatial_integration": {
+        "overall_status": "absent",
+        "profile_status": "human_reviewed_v0_3",
+        "immersion_present": false,
+        "claim_class": "C4",
+        "summary": "Deep computation inside car/timing does not relocate the athletic arena into computationally constituted space.",
+        "functions": [
+          {
+            "role": "measure",
+            "status": "absent",
+            "significance": "incidental"
+          }
+        ]
+      },
+      "participatory_actor_relations": [
+        {
+          "relation_id": "PAR-003-01",
+          "actor_type": "team_engineer",
+          "relation_type": "information_supplier",
+          "action_window": "During authorized team communications and strategy windows.",
+          "mechanism": "Team radio and pit-wall analysis provide information to the driver.",
+          "performance_agency_relation": "indirect_no_execution",
+          "rule_authority_relation": "participatory",
+          "resource_or_constraint_effect": "Information may alter strategy or resource use, but the engineer does not execute vehicle control.",
+          "evidence_refs": [
+            0
+          ],
+          "uncertainty": "The exact causal weight of team information varies by event phase.",
+          "review_status": "human_reviewed_v0_3"
+        }
+      ],
+      "human_limits_accessibility": {
+        "source_field": "as3_layer_notes.L9_safety_accessibility",
+        "note": "Extreme safety regime."
+      }
+    },
+    "source_provisional_finding": {
+      "sport_contest_axis": "sport",
+      "category_relation": "outside_core_spatial_athletic_class",
+      "claim_class": "C4",
+      "summary": "Mediated embodiment preserves sport agency; mediation is not itself Spatial Sport."
+    },
+    "confidence": "high",
+    "falsifiability": {
+      "source_field": "what_would_change_judgment",
+      "content": [
+        "A format where shared computational arena state jointly constrains wheel-to-wheel performance as unified physical-computational contest."
+      ]
+    },
+    "evidence_sources": [
+      {
+        "source_title": "FIA 2026 F1 Regulations - Section B [Sporting]",
+        "publisher": "Federation Internationale de l'Automobile (FIA)",
+        "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf",
+        "source_type": "federation_or_league_rules",
+        "claim_class": "C1",
+        "temporal_status": "current",
+        "publication_or_update_date": null
+      },
+      {
+        "source_title": "The beginner's guide to the 2026 Formula 1 regulations",
+        "publisher": "Formula 1",
+        "url": "https://www.formula1.com/en/latest/article/the-beginners-guide-to-the-2026-regulations.6j0tS0hrHG2T01tpmK6XYz",
+        "source_type": "professional_reporting",
+        "claim_class": "C3",
+        "temporal_status": "current",
+        "publication_or_update_date": null
+      }
+    ],
+    "provenance_note": "Per-field claim_class and status preserved verbatim from the source case. source_provisional_finding is the corpus's own attributed reading, not a new Atlas verdict. Provider claims live in evidence_sources; Altis interpretation carries C4/C5."
+  }
+}

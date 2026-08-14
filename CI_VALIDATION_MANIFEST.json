@@ -1,0 +1,216 @@
+{
+  "manifest": "AltisSports CI Validation Gate Manifest",
+  "version": "0.1",
+  "status": "Foundation Draft — Not Ratified",
+  "generated": "2026-08-14",
+  "base_commit": "9a6b6f7e0936faeffa7901a0d1c788ba16fab9a2",
+  "purpose": "Explicit, reviewable contract of the validators that compose the hosted reference validation gate, satisfying STANDARDIZATION_READINESS_GATE.md section 5 (validation available in hosted CI or an equivalently reproducible release gate).",
+  "governance_meaning": {
+    "a_passing_gate_means": [
+      "structural integrity of the declared artifacts",
+      "deterministic reproducibility of generated artifacts",
+      "the declared validation contracts in this manifest are satisfied"
+    ],
+    "a_passing_gate_does_not_mean": [
+      "ASR-001 is ratified",
+      "any standard is adopted",
+      "conformance or certification",
+      "external recognition",
+      "ASR is published (its clause text is licensed CC-BY-4.0 but ASR remains an unpublished Working Draft)",
+      "ASR clauses are canonical externally-citable objects (held by CITE-HOLD-ASR-001)",
+      "publication status has changed"
+    ]
+  },
+  "runtime": {
+    "python": "3.11",
+    "external_dependencies": [],
+    "dependency_note": "All 14 validate_*.py scripts import standard library only; validate_boundary_cases_v0_3.py, validate_corpus_application_v0_3.py, and validate_second_stratum.py import the sibling repo module validate_boundary_cases (not a PyPI package). No pinned third-party dependency is required."
+  },
+  "registration_policy": {
+    "fail_closed": true,
+    "rule": "Every validate_*.py present in the repository root MUST appear in this manifest as a validator script. An unregistered validator causes gate failure; it is never silently ignored. Adding a new validator is therefore a deliberate governance act, not an automatic consequence of file discovery."
+  },
+  "validators": [
+    {
+      "id": "citation-registry",
+      "script": "validate_citation_registry.py",
+      "required": true,
+      "category": "citability",
+      "runtime": "stdlib",
+      "invocations": [ { "args": [] } ]
+    },
+    {
+      "id": "boundary-cases-v0_2",
+      "script": "validate_boundary_cases.py",
+      "required": true,
+      "category": "corpus",
+      "runtime": "stdlib",
+      "invocations": [ { "args": [] } ]
+    },
+    {
+      "id": "boundary-cases-v0_3",
+      "script": "validate_boundary_cases_v0_3.py",
+      "required": true,
+      "category": "corpus",
+      "runtime": "stdlib",
+      "invocations": [ { "args": [] } ]
+    },
+    {
+      "id": "second-stratum",
+      "script": "validate_second_stratum.py",
+      "required": true,
+      "category": "corpus",
+      "runtime": "stdlib",
+      "invocations": [ { "args": [] } ]
+    },
+    {
+      "id": "corpus-application-v0_3",
+      "script": "validate_corpus_application_v0_3.py",
+      "required": true,
+      "category": "corpus",
+      "runtime": "stdlib",
+      "invocations": [ { "args": [] } ]
+    },
+    {
+      "id": "asr-scope",
+      "script": "validate_asr001_scope.py",
+      "required": true,
+      "category": "asr",
+      "runtime": "stdlib",
+      "invocations": [ { "args": [] } ]
+    },
+    {
+      "id": "asr-working-architecture",
+      "script": "validate_asr001_working_architecture.py",
+      "required": true,
+      "category": "asr",
+      "runtime": "stdlib",
+      "invocations": [ { "args": [] } ]
+    },
+    {
+      "id": "asr-working-draft-v0_1",
+      "script": "validate_asr001_working_draft_v0_1.py",
+      "required": true,
+      "category": "asr",
+      "runtime": "stdlib",
+      "invocations": [ { "args": [] } ]
+    },
+    {
+      "id": "asr-internal-trials",
+      "script": "validate_asr001_internal_trials.py",
+      "required": true,
+      "category": "asr",
+      "runtime": "stdlib",
+      "invocations": [ { "args": [] } ]
+    },
+    {
+      "id": "asr-review-activation",
+      "script": "validate_asr001_review_activation.py",
+      "required": true,
+      "category": "asr",
+      "runtime": "stdlib",
+      "invocations": [ { "args": [] } ]
+    },
+    {
+      "id": "asr-named-assignment",
+      "script": "validate_asr001_named_assignment.py",
+      "required": true,
+      "category": "asr",
+      "runtime": "stdlib",
+      "invocations": [ { "args": [] } ]
+    },
+    {
+      "id": "asr-profile-v0_1",
+      "script": "validate_asr001_profile.py",
+      "required": true,
+      "category": "asr-profile",
+      "runtime": "stdlib",
+      "invocation_note": "Version-specific: this validator validates v0.1 profiles and correctly fails on v0.2 profiles. Invoked against the committed v0.1 synthetic profiles.",
+      "invocations": [
+        { "args": ["ASR_001_SYNTHETIC_PROFILE_LOCAL_V0.1.json"] },
+        { "args": ["ASR_001_SYNTHETIC_PROFILE_DISTRIBUTED_V0.1.json"] }
+      ]
+    },
+    {
+      "id": "asr-profile-v0_2",
+      "script": "validate_asr001_profile_v0_2.py",
+      "required": true,
+      "category": "asr-profile",
+      "runtime": "stdlib",
+      "invocation_note": "Validates v0.2 profiles. Invoked against all seven committed v0.2 trial profiles.",
+      "invocations": [
+        { "args": ["ASR_001_TRIAL_PROFILE_TRIAL_01_AUTONOMOUS_V0.2.json"] },
+        { "args": ["ASR_001_TRIAL_PROFILE_TRIAL_02_REHAB_V1_V0.2.json"] },
+        { "args": ["ASR_001_TRIAL_PROFILE_TRIAL_02_REHAB_V2_V0.2.json"] },
+        { "args": ["ASR_001_TRIAL_PROFILE_TRIAL_03_BCI_V0.2.json"] },
+        { "args": ["ASR_001_TRIAL_PROFILE_TRIAL_04_HUMAN_AI_V0.2.json"] },
+        { "args": ["ASR_001_TRIAL_PROFILE_TRIAL_05_AUDIENCE_V0.2.json"] },
+        { "args": ["ASR_001_TRIAL_PROFILE_TRIAL_06_DRONE_V0.2.json"] }
+      ]
+    },
+    {
+      "id": "descriptive-atlas",
+      "script": "validate_descriptive_atlas.py",
+      "required": true,
+      "category": "atlas",
+      "runtime": "stdlib",
+      "invocations": [ { "args": [] } ]
+    },
+    {
+      "id": "atlas-query-surface",
+      "script": "validate_atlas_query_surface.py",
+      "required": true,
+      "category": "atlas",
+      "runtime": "stdlib",
+      "invocations": [ { "args": [] } ]
+    },
+    {
+      "id": "atlas-citation-architecture",
+      "script": "validate_atlas_citation_architecture.py",
+      "required": true,
+      "category": "atlas",
+      "runtime": "stdlib",
+      "invocations": [ { "args": [] } ]
+    },
+    {
+      "id": "asr-operator-review-package",
+      "script": "validate_asr001_operator_review_package.py",
+      "required": true,
+      "category": "asr-review",
+      "runtime": "stdlib",
+      "invocations": [ { "args": [] } ],
+      "resolved_blocker": {
+        "blocker_id": "BLOCKER-OPREVIEW-BASELINE-001",
+        "resolution": "ASR-001-REVIEW-BASELINE-CORRECTION-001",
+        "classification": "manifest_metadata_defect_at_creation",
+        "resolution_record": "ASR_001_REVIEW_BASELINE_CORRECTION_001.md",
+        "decision": "DEC-018",
+        "content_changed": false,
+        "note": "Five stored SHA-256 values were wrong at manifest creation (8564121); the baseline material never changed (single commit 13e6590 predating the manifest). Corrected to the historically verified hashes with an auditable correction block; validator now required with strict hash checking."
+      }
+    }
+  ],
+  "open_blockers": [
+    {
+      "blocker_id": "BLOCKER-OPREVIEW-BASELINE-001",
+      "affects": "validate_asr001_operator_review_package.py",
+      "status": "resolved",
+      "resolution": "ASR-001-REVIEW-BASELINE-CORRECTION-001 (DEC-018)",
+      "summary": "Resolved: five baseline manifest hashes were wrong at creation (Case A metadata defect); corrected to the historically verified hashes with an auditable correction block. Baseline material unchanged; review not activated. Validator now required=true."
+    },
+    {
+      "blocker_id": "LICENSE-ASR-001",
+      "affects": "ASR-001 normative clause identifiers in the Citation Registry",
+      "status": "resolved",
+      "resolution": "ASR-001-LICENSING-DECISION-V0.1 (DEC-019)",
+      "summary": "Resolved: DATASET_LICENSE.md section 1 now explicitly licenses the ASR normative clause text under CC-BY-4.0. Superseded by the citability hold CITE-HOLD-ASR-001 (below)."
+    },
+    {
+      "blocker_id": "CITE-HOLD-ASR-001",
+      "affects": "ASR-001 normative clause identifiers in the Citation Registry",
+      "status": "open",
+      "supersedes": "LICENSE-ASR-001",
+      "summary": "ASR clause text is licensed (CC-BY-4.0) but held from canonical external citability while ASR is an unpublished Working Draft (C5, provisional). Clauses are referenceable with their provisional/unpublished status; not registered as externally-citable canonical objects. Lifts on an ASR publication / public-review decision."
+    }
+  ]
+}

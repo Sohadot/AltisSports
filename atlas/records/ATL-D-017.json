@@ -1,0 +1,171 @@
+{
+  "atlas_record_id": "ATL-D-017",
+  "source_case_id": "BC-017",
+  "distribution_version": "0.1",
+  "atlas_source_version": "0.1",
+  "query_contract_version": "0.1",
+  "license": "CC-BY-4.0",
+  "citability": {
+    "atlas_record_citability": "not_independently_registered",
+    "source_citation_id": "BC-017",
+    "source_citation_registered": true,
+    "source_citation_externally_citable": true
+  },
+  "record": {
+    "atlas_record_id": "ATL-D-017",
+    "source_case_id": "BC-017",
+    "citation_id": "BC-017",
+    "source_dataset": "boundary-cases-001-020.v0.3.json",
+    "source_version": "0.3",
+    "license": "CC-BY-4.0",
+    "license_ref": "DATASET_LICENSE.md",
+    "temporal_status": "provisional",
+    "activity": "CYBATHLON Exoskeleton Race",
+    "activity_aliases": [
+      "Exoskeleton-supported competition"
+    ],
+    "classified_object": {
+      "primary": "contest",
+      "secondary": [
+        "athletic_system",
+        "event"
+      ],
+      "notes": "The object is the CYBATHLON EXO contest, where a pilot and exoskeleton complete physical tasks; individual devices may use different control modes."
+    },
+    "dimensions": {
+      "performance_agency": {
+        "status": "partial",
+        "claim_class": "C4",
+        "summary": "Pilot skill and decisions matter, but permitted manual, semi-autonomous, and autonomous modes can shift causal control during tasks.",
+        "agency_modes": [
+          "live_performance",
+          "assisted_performance",
+          "autonomous_execution",
+          "agency_handoff"
+        ],
+        "human_skill_causally_necessary": null
+      },
+      "performance_interface": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "A robotic exoskeleton is an adaptive assistive interface that may interpret input or environment state.",
+        "interface_types": [
+          "adaptive_or_assistive_equipment"
+        ]
+      },
+      "embodied_performance": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Adaptive bodily performance, balance, cognitive control, and assisted locomotion are constitutive.",
+        "demand_types": [
+          "locomotion",
+          "balance",
+          "cognitive",
+          "adaptive_bodily_performance"
+        ]
+      },
+      "arena": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Physical task courses contain variable obstacles and everyday activity challenges."
+      },
+      "distributed_arena_relation": {
+        "status": "not_applicable",
+        "topology": "co_located_single_site",
+        "shared_computational_state": "not_applicable",
+        "synchronization_mechanism": "Not applicable.",
+        "calibration_equivalence": "Device-specific control and assistance remain relevant to comparability, but not as a distributed-arena relation.",
+        "officiation_relation": "Officials evaluate task completion and time on the physical course.",
+        "safety_relation": "Pilot, assistive device, and course safety are local and constitutive."
+      },
+      "sensing_tracking": {
+        "status": "partial",
+        "claim_class": "C1",
+        "summary": "Devices may use environment sensing and intention detection; implementations vary."
+      },
+      "measurement": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Task completion and time are recorded under competition rules."
+      },
+      "comparability": {
+        "status": "partial",
+        "claim_class": "C4",
+        "summary": "Rules create a common task frame, but assistance architectures differ substantially."
+      },
+      "officiation": {
+        "status": "supported",
+        "claim_class": "C2",
+        "summary": "Competition officials administer task completion and results."
+      },
+      "outcome_openness": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Results emerge from pilot–device performance under task constraints."
+      },
+      "consequence_structure": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Task success, time, ranking, and awards follow from competition."
+      },
+      "operational_spatial_integration": {
+        "overall_status": "partial",
+        "profile_status": "human_reviewed_v0_3",
+        "immersion_present": false,
+        "claim_class": "C4",
+        "summary": "The contest is deeply human–machine mediated, but the arena remains physical. Assistance and agency handoff—not computational Spatiality—are the primary analytical pressures.",
+        "functions": [
+          {
+            "role": "mediate",
+            "status": "partial",
+            "significance": "supportive"
+          },
+          {
+            "role": "measure",
+            "status": "supported",
+            "significance": "supportive"
+          }
+        ]
+      },
+      "participatory_actor_relations": [],
+      "human_limits_accessibility": {
+        "source_field": "as3_layer_notes.L9_safety_accessibility",
+        "note": "Safety and disability-specific access are constitutive."
+      }
+    },
+    "source_provisional_finding": {
+      "sport_contest_axis": "research_or_engineering_contest",
+      "category_relation": "outside_core_spatial_athletic_class",
+      "claim_class": "C5",
+      "summary": "The case confirms Assisted Performance Agency but shows that the schema’s summary-level agency modes cannot fully represent when control shifts during a run. Phase-level agency segments are needed before normative attribution."
+    },
+    "confidence": "high",
+    "falsifiability": {
+      "source_field": "what_would_change_judgment",
+      "content": [
+        "Task-level logs identifying control mode, pilot input, autonomous action, and failure at each phase."
+      ]
+    },
+    "evidence_sources": [
+      {
+        "source_title": "Exoskeleton Race",
+        "publisher": "CYBATHLON / ETH Zurich",
+        "url": "https://cybathlon.com/en/event/disciplines/exo",
+        "source_type": "first_party_technical",
+        "claim_class": "C1",
+        "temporal_status": "current",
+        "publication_or_update_date": null
+      },
+      {
+        "source_title": "CYBATHLON 2024",
+        "publisher": "CYBATHLON / ETH Zurich",
+        "url": "https://cybathlon.com/en/events/edition/cybathlon-2024",
+        "source_type": "official_announcement",
+        "claim_class": "C1",
+        "temporal_status": "historical",
+        "publication_or_update_date": "2024-10-25"
+      }
+    ],
+    "provenance_note": "Per-field claim_class and status preserved verbatim from the source case. source_provisional_finding is the corpus's own attributed reading, not a new Atlas verdict. Provider claims live in evidence_sources; Altis interpretation carries C4/C5."
+  }
+}

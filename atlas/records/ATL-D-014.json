@@ -1,0 +1,187 @@
+{
+  "atlas_record_id": "ATL-D-014",
+  "source_case_id": "BC-014",
+  "distribution_version": "0.1",
+  "atlas_source_version": "0.1",
+  "query_contract_version": "0.1",
+  "license": "CC-BY-4.0",
+  "citability": {
+    "atlas_record_citability": "not_independently_registered",
+    "source_citation_id": "BC-014",
+    "source_citation_registered": true,
+    "source_citation_externally_citable": true
+  },
+  "record": {
+    "atlas_record_id": "ATL-D-014",
+    "source_case_id": "BC-014",
+    "citation_id": "BC-014",
+    "source_dataset": "boundary-cases-001-020.v0.3.json",
+    "source_version": "0.3",
+    "license": "CC-BY-4.0",
+    "license_ref": "DATASET_LICENSE.md",
+    "temporal_status": "provisional",
+    "activity": "Zero Latency Sol Raiders free-roam competitive experience",
+    "activity_aliases": [
+      "Location-based free-roam VR competition",
+      "Sol Raiders"
+    ],
+    "classified_object": {
+      "primary": "product",
+      "secondary": [
+        "spatial_athletic_system",
+        "experience"
+      ],
+      "notes": "The classified object is the Sol Raiders-enabled free-roam product/experience configuration, not a formal league or all location-based VR."
+    },
+    "dimensions": {
+      "performance_agency": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Players move, aim, coordinate, and make tactical decisions live inside the shared session.",
+        "agency_modes": [
+          "live_performance"
+        ],
+        "human_skill_causally_necessary": true
+      },
+      "performance_interface": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Wireless headset, controllers, and arena tracking translate full-space movement into the experience.",
+        "interface_types": [
+          "tracked_xr_input",
+          "controller_or_discrete_input"
+        ]
+      },
+      "embodied_performance": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Locomotion, balance, sensorimotor coordination, tracked movement, and exertion materially affect play.",
+        "demand_types": [
+          "locomotion",
+          "balance",
+          "endurance",
+          "sensorimotor_coordination",
+          "physiological_effort",
+          "tracked_movement"
+        ]
+      },
+      "arena": {
+        "status": "supported",
+        "claim_class": "C3",
+        "summary": "A large physical arena is aligned with a shared computational environment for multiple players."
+      },
+      "distributed_arena_relation": {
+        "status": "supported",
+        "topology": "co_located_single_site",
+        "shared_computational_state": "supported",
+        "synchronization_mechanism": "Venue tracking and game state synchronize all participants.",
+        "calibration_equivalence": "Venue mapping and tracking calibration must align physical and virtual boundaries.",
+        "officiation_relation": "Software and venue operators administer the session.",
+        "safety_relation": "Venue operator controls collision avoidance, boundaries, and emergency response."
+      },
+      "sensing_tracking": {
+        "status": "supported",
+        "claim_class": "C3",
+        "summary": "Advanced motion tracking and real-time proximity systems are central provider-stated functions."
+      },
+      "measurement": {
+        "status": "partial",
+        "claim_class": "C3",
+        "summary": "The product records competitive performance, but public metric definitions and comparability controls are limited."
+      },
+      "comparability": {
+        "status": "unknown",
+        "claim_class": "C4",
+        "summary": "Cross-venue hardware, calibration, map version, and operational consistency are not sufficiently documented."
+      },
+      "officiation": {
+        "status": "partial",
+        "claim_class": "C3",
+        "summary": "Game code resolves events while venue staff monitor sessions and safety."
+      },
+      "outcome_openness": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "The in-game competitive result is performance-dependent."
+      },
+      "consequence_structure": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Winning, losing, tactical resource use, and session results provide in-game consequence."
+      },
+      "operational_spatial_integration": {
+        "overall_status": "supported",
+        "profile_status": "human_reviewed_v0_3",
+        "immersion_present": true,
+        "claim_class": "C4",
+        "summary": "Physical and computational arenas are jointly operational and safety-coupled. Evidence supports a Spatial Athletic System more strongly than a mature Spatial Athletic Contest.",
+        "functions": [
+          {
+            "role": "represent",
+            "status": "supported",
+            "significance": "constitutive"
+          },
+          {
+            "role": "enable",
+            "status": "supported",
+            "significance": "constitutive"
+          },
+          {
+            "role": "constrain",
+            "status": "supported",
+            "significance": "constitutive"
+          },
+          {
+            "role": "measure",
+            "status": "partial",
+            "significance": "supportive"
+          },
+          {
+            "role": "officiate",
+            "status": "partial",
+            "significance": "supportive"
+          }
+        ]
+      },
+      "participatory_actor_relations": [],
+      "human_limits_accessibility": {
+        "source_field": "as3_layer_notes.L9_safety_accessibility",
+        "note": "Boundary alignment and collision systems are central."
+      }
+    },
+    "source_provisional_finding": {
+      "sport_contest_axis": "digital_competition_not_settled_as_sport",
+      "category_relation": "spatial_athletic_system",
+      "claim_class": "C5",
+      "summary": "The product is a strong Spatial Athletic System candidate because physical and virtual arenas are constitutively coupled, but published evidence is insufficient to establish a mature governed contest class."
+    },
+    "confidence": "medium",
+    "falsifiability": {
+      "source_field": "what_would_change_judgment",
+      "content": [
+        "Public competition rules, metric definitions, cross-venue calibration controls, and appeals procedures."
+      ]
+    },
+    "evidence_sources": [
+      {
+        "source_title": "Zero Latency launches the first truly wireless free-roam VR system",
+        "publisher": "Zero Latency VR",
+        "url": "https://invest.zerolatencyvr.com/news-and-events/next-gen-launch-announcement",
+        "source_type": "official_announcement",
+        "claim_class": "C3",
+        "temporal_status": "current",
+        "publication_or_update_date": "2022-05-19"
+      },
+      {
+        "source_title": "Zero Latency VR FAQ",
+        "publisher": "Zero Latency VR",
+        "url": "https://invest.zerolatencyvr.com/zero-latency-vr-faq",
+        "source_type": "first_party_technical",
+        "claim_class": "C3",
+        "temporal_status": "current",
+        "publication_or_update_date": null
+      }
+    ],
+    "provenance_note": "Per-field claim_class and status preserved verbatim from the source case. source_provisional_finding is the corpus's own attributed reading, not a new Atlas verdict. Provider claims live in evidence_sources; Altis interpretation carries C4/C5."
+  }
+}

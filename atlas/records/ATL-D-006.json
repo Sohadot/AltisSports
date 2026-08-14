@@ -1,0 +1,176 @@
+{
+  "atlas_record_id": "ATL-D-006",
+  "source_case_id": "BC-006",
+  "distribution_version": "0.1",
+  "atlas_source_version": "0.1",
+  "query_contract_version": "0.1",
+  "license": "CC-BY-4.0",
+  "citability": {
+    "atlas_record_citability": "not_independently_registered",
+    "source_citation_id": "BC-006",
+    "source_citation_registered": true,
+    "source_citation_externally_citable": true
+  },
+  "record": {
+    "atlas_record_id": "ATL-D-006",
+    "source_case_id": "BC-006",
+    "citation_id": "BC-006",
+    "source_dataset": "boundary-cases-001-020.v0.3.json",
+    "source_version": "0.3",
+    "license": "CC-BY-4.0",
+    "license_ref": "DATASET_LICENSE.md",
+    "temporal_status": "provisional",
+    "activity": "Tactical Shooter Esport",
+    "activity_aliases": [
+      "Counter-Strike competitive",
+      "CS2 Majors",
+      "tactical FPS esports"
+    ],
+    "classified_object": {
+      "primary": "event",
+      "secondary": [
+        "activity",
+        "product",
+        "organization"
+      ],
+      "notes": "Elite tournament competition (e.g., Valve Majors / ESL Pro Tour); game title is product layer."
+    },
+    "dimensions": {
+      "performance_agency": {
+        "status": "supported",
+        "claim_class": "C2",
+        "summary": "Aim, utility usage, economy, and team tactics materially determine outcomes.",
+        "agency_modes": [
+          "live_performance"
+        ],
+        "human_skill_causally_necessary": true
+      },
+      "performance_interface": {
+        "status": "partial",
+        "claim_class": "C4",
+        "summary": "Hands/eyes via mouse-keyboard or controller; gross athletic locomotion is not the performance channel.",
+        "interface_types": [
+          "controller_or_discrete_input"
+        ]
+      },
+      "embodied_performance": {
+        "status": "partial",
+        "claim_class": "C4",
+        "summary": "Hands/eyes via mouse-keyboard or controller; gross athletic locomotion is not the performance channel. Migrated as Embodied Performance; demand types are provisional.",
+        "demand_types": [
+          "cognitive",
+          "fine_motor",
+          "sensorimotor_coordination"
+        ]
+      },
+      "arena": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Computational maps with rule-bearing zones and line-of-sight geometry."
+      },
+      "distributed_arena_relation": {
+        "status": "partial",
+        "topology": "unknown",
+        "shared_computational_state": "supported",
+        "synchronization_mechanism": "The authoritative game server synchronizes computational contest state.",
+        "calibration_equivalence": "Patch, hardware, settings, and anti-cheat controls are event-specific.",
+        "officiation_relation": "Game code and tournament administrators share authority.",
+        "safety_relation": "Physical-site and online participation risks differ by deployment."
+      },
+      "sensing_tracking": {
+        "status": "supported",
+        "claim_class": "C2",
+        "summary": "Engine state is authoritative; anti-cheat is integrity-critical."
+      },
+      "measurement": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "Rounds, series scores, standings, VRS seeding inputs."
+      },
+      "comparability": {
+        "status": "partial",
+        "claim_class": "C4",
+        "summary": "Requires patch version, settings, hardware, and latency controls."
+      },
+      "officiation": {
+        "status": "supported",
+        "claim_class": "C1",
+        "summary": "In-engine enforcement plus tournament admins/referees."
+      },
+      "outcome_openness": {
+        "status": "supported",
+        "claim_class": "C4",
+        "summary": "Open competitive outcomes under rules."
+      },
+      "consequence_structure": {
+        "status": "supported",
+        "claim_class": "C2",
+        "summary": "Elimination, ranking, prize, reputation."
+      },
+      "operational_spatial_integration": {
+        "overall_status": "partial",
+        "profile_status": "human_reviewed_v0_3",
+        "immersion_present": false,
+        "claim_class": "C4",
+        "summary": "Computational arena is decisive, but athletic embodiment claim for Spatial Athletic Sport is weak.",
+        "functions": [
+          {
+            "role": "constrain",
+            "status": "partial",
+            "significance": "supportive"
+          },
+          {
+            "role": "measure",
+            "status": "partial",
+            "significance": "supportive"
+          },
+          {
+            "role": "officiate",
+            "status": "partial",
+            "significance": "supportive"
+          }
+        ]
+      },
+      "participatory_actor_relations": [],
+      "human_limits_accessibility": {
+        "source_field": "as3_layer_notes.L9_safety_accessibility",
+        "note": "Ergonomic/health issues; not collision sport."
+      }
+    },
+    "source_provisional_finding": {
+      "sport_contest_axis": "digital_competition_not_settled_as_sport",
+      "category_relation": "computational_contest",
+      "claim_class": "C5",
+      "summary": "Skill contest in computational space without athletic embodiment channel claimed by Spatial Athletic Sport."
+    },
+    "confidence": "medium",
+    "falsifiability": {
+      "source_field": "what_would_change_judgment",
+      "content": [
+        "Ratified Altis split between computational contests and Spatial Athletic Sport.",
+        "Or explicit acceptance of non-embodied computational contests as Spatial Sport."
+      ]
+    },
+    "evidence_sources": [
+      {
+        "source_title": "Counter-Strike Major Supplemental Rulebook",
+        "publisher": "Valve Software",
+        "url": "https://github.com/ValveSoftware/counter-strike_rules_and_regs/blob/main/major-supplemental-rulebook.md",
+        "source_type": "federation_or_league_rules",
+        "claim_class": "C1",
+        "temporal_status": "current",
+        "publication_or_update_date": null
+      },
+      {
+        "source_title": "ESL Pro Tour Counter-Strike Rulebook 2026 Update #2 Changelog",
+        "publisher": "ESL Pro Tour",
+        "url": "https://pro.eslgaming.com/tour/2026/07/esl-pro-tour-counter-strike-rulebook-2026-update-2-changelog/",
+        "source_type": "federation_or_league_rules",
+        "claim_class": "C1",
+        "temporal_status": "current",
+        "publication_or_update_date": null
+      }
+    ],
+    "provenance_note": "Per-field claim_class and status preserved verbatim from the source case. source_provisional_finding is the corpus's own attributed reading, not a new Atlas verdict. Provider claims live in evidence_sources; Altis interpretation carries C4/C5."
+  }
+}

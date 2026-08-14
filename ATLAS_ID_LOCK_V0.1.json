@@ -1,0 +1,90 @@
+{
+  "lock": "AltisSports Descriptive Atlas Identifier Lock",
+  "version": "0.1",
+  "status": "Foundation Draft — Not Ratified",
+  "purpose": "Bind each Atlas record id to exactly one source boundary case; prevent silent repointing.",
+  "binding_count": 20,
+  "bindings": [
+    {
+      "atlas_record_id": "ATL-D-001",
+      "source_case_id": "BC-001"
+    },
+    {
+      "atlas_record_id": "ATL-D-002",
+      "source_case_id": "BC-002"
+    },
+    {
+      "atlas_record_id": "ATL-D-003",
+      "source_case_id": "BC-003"
+    },
+    {
+      "atlas_record_id": "ATL-D-004",
+      "source_case_id": "BC-004"
+    },
+    {
+      "atlas_record_id": "ATL-D-005",
+      "source_case_id": "BC-005"
+    },
+    {
+      "atlas_record_id": "ATL-D-006",
+      "source_case_id": "BC-006"
+    },
+    {
+      "atlas_record_id": "ATL-D-007",
+      "source_case_id": "BC-007"
+    },
+    {
+      "atlas_record_id": "ATL-D-008",
+      "source_case_id": "BC-008"
+    },
+    {
+      "atlas_record_id": "ATL-D-009",
+      "source_case_id": "BC-009"
+    },
+    {
+      "atlas_record_id": "ATL-D-010",
+      "source_case_id": "BC-010"
+    },
+    {
+      "atlas_record_id": "ATL-D-011",
+      "source_case_id": "BC-011"
+    },
+    {
+      "atlas_record_id": "ATL-D-012",
+      "source_case_id": "BC-012"
+    },
+    {
+      "atlas_record_id": "ATL-D-013",
+      "source_case_id": "BC-013"
+    },
+    {
+      "atlas_record_id": "ATL-D-014",
+      "source_case_id": "BC-014"
+    },
+    {
+      "atlas_record_id": "ATL-D-015",
+      "source_case_id": "BC-015"
+    },
+    {
+      "atlas_record_id": "ATL-D-016",
+      "source_case_id": "BC-016"
+    },
+    {
+      "atlas_record_id": "ATL-D-017",
+      "source_case_id": "BC-017"
+    },
+    {
+      "atlas_record_id": "ATL-D-018",
+      "source_case_id": "BC-018"
+    },
+    {
+      "atlas_record_id": "ATL-D-019",
+      "source_case_id": "BC-019"
+    },
+    {
+      "atlas_record_id": "ATL-D-020",
+      "source_case_id": "BC-020"
+    }
+  ],
+  "tombstones": []
+}
