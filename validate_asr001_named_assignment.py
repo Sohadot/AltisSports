@@ -57,7 +57,8 @@ def main() -> int:
     if not boundary.exists():
         return fail("REVIEWER_PRIVACY_BOUNDARY.md is required")
     btext = boundary.read_text(encoding="utf-8")
-    for needle in ("Review participation consent", "Public attribution consent"):
+    for needle in ("Review participation consent", "Public attribution consent",
+                   "Correspondence-publication consent"):
         if needle not in btext:
             return fail(f"privacy boundary must distinguish {needle}")
 
@@ -94,16 +95,34 @@ def main() -> int:
             if slot.get(f) is not None:
                 return fail(f"{slot['reviewer_id']} must not carry {f} in the public record")
 
+    # Authorization is frozen; the per-slot lifecycle is state-transition-aware so
+    # a legitimate first dispatch / acceptance does not break the gate. Legal
+    # lifecycle values and their cross-field invariants (per the per-candidate
+    # intake policy) are enforced, not a single frozen snapshot.
+    ROLE = {"named_candidate_assignee", "reviewer"}
+    CAND = {"selected_not_contacted", "invited_awaiting_acceptance", "accepted"}
+    INV = {"prepared_authorized_awaiting_private_dispatch", "dispatched"}
+    INTAKE = {"closed_until_invitation_dispatched", "enabled_for_candidate"}
     for slot_id in ACTIVE:
         slot = by_id[slot_id]
-        if slot.get("role_label") != "named_candidate_assignee":
-            return fail(f"{slot_id} must be named_candidate_assignee")
-        if slot.get("candidate_status") != "selected_not_contacted":
-            return fail(f"{slot_id} candidate_status must be selected_not_contacted")
-        if slot.get("invitation_status") != "prepared_authorized_awaiting_private_dispatch":
-            return fail(f"{slot_id} invitation_status invalid")
-        if slot.get("intake_enablement") != "closed_until_invitation_dispatched":
-            return fail(f"{slot_id} intake_enablement invalid")
+        if slot.get("role_label") not in ROLE:
+            return fail(f"{slot_id} role_label invalid: {slot.get('role_label')!r}")
+        if slot.get("candidate_status") not in CAND:
+            return fail(f"{slot_id} candidate_status invalid: {slot.get('candidate_status')!r}")
+        if slot.get("invitation_status") not in INV:
+            return fail(f"{slot_id} invitation_status invalid: {slot.get('invitation_status')!r}")
+        if slot.get("intake_enablement") not in INTAKE:
+            return fail(f"{slot_id} intake_enablement invalid: {slot.get('intake_enablement')!r}")
+        # invariants: no reviewer before acceptance; pre-dispatch snapshot is coherent.
+        if slot.get("role_label") == "reviewer" and slot.get("candidate_status") != "accepted":
+            return fail(f"{slot_id} cannot be reviewer before written acceptance")
+        if slot.get("invitation_status") == "prepared_authorized_awaiting_private_dispatch":
+            if slot.get("candidate_status") != "selected_not_contacted":
+                return fail(f"{slot_id} pre-dispatch candidate_status must be selected_not_contacted")
+            if slot.get("intake_enablement") != "closed_until_invitation_dispatched":
+                return fail(f"{slot_id} pre-dispatch intake must be closed")
+            if slot.get("role_label") != "named_candidate_assignee":
+                return fail(f"{slot_id} pre-dispatch role must be named_candidate_assignee")
 
     for slot_id in RESERVE:
         slot = by_id[slot_id]
@@ -126,6 +145,11 @@ def main() -> int:
     if "separate" not in tpl.lower() or "public attribution" not in tpl.lower():
         return fail("template must state that participation is not public-attribution consent")
 
+    # Dispatch log — a legal state machine, not a frozen snapshot. A slot may
+    # advance awaiting_private_dispatch -> dispatched (with a real timestamp),
+    # then to reviewer only after written acceptance. This lets the first real
+    # dispatch land without breaking the gate, while still forbidding illegal
+    # states (dispatched without a timestamp, reviewer before acceptance, etc.).
     log = json.loads(Path("ASR_001_INVITATION_DISPATCH_LOG_V0.1.json").read_text(encoding="utf-8"))
     if len(log.get("entries") or []) != 4:
         return fail("dispatch log must contain four authorized entries")
@@ -134,14 +158,31 @@ def main() -> int:
             return fail("dispatch log must not carry candidate identity")
         if entry.get("slot") not in ACTIVE:
             return fail("dispatch log entry has an unexpected slot")
-        if entry.get("dispatch_status") != "awaiting_private_dispatch":
-            return fail("no invitation may be marked dispatched in Sprint 14 automation")
-        if entry.get("dispatched_at") is not None:
-            return fail("dispatched_at must remain null until owner private send")
-        if entry.get("reviewer_status") != "not_reviewer":
-            return fail("reviewer_status must remain not_reviewer")
-        if entry.get("intake_enabled") is not False:
-            return fail("intake_enabled must remain false")
+        if entry.get("authorization_status") != "authorized":
+            return fail(f"{entry.get('slot')} must remain authorized")
+        ds = entry.get("dispatch_status")
+        at = entry.get("dispatched_at")
+        intake = entry.get("intake_enabled")
+        acc = entry.get("acceptance_status")
+        rev = entry.get("reviewer_status")
+        if ds not in {"awaiting_private_dispatch", "dispatched"}:
+            return fail(f"{entry.get('slot')} dispatch_status invalid: {ds!r}")
+        if acc not in {"not_accepted", "accepted"}:
+            return fail(f"{entry.get('slot')} acceptance_status invalid: {acc!r}")
+        if rev not in {"not_reviewer", "reviewer"}:
+            return fail(f"{entry.get('slot')} reviewer_status invalid: {rev!r}")
+        if ds == "awaiting_private_dispatch":
+            if at is not None:
+                return fail(f"{entry.get('slot')} dispatched_at must be null before send")
+            if intake is not False or acc != "not_accepted" or rev != "not_reviewer":
+                return fail(f"{entry.get('slot')} pre-dispatch state incoherent")
+        else:  # dispatched
+            if not (isinstance(at, str) and at.strip()):
+                return fail(f"{entry.get('slot')} dispatched requires a real dispatched_at timestamp")
+        if acc == "accepted" and ds != "dispatched":
+            return fail(f"{entry.get('slot')} cannot be accepted before dispatch")
+        if rev == "reviewer" and not (ds == "dispatched" and acc == "accepted"):
+            return fail(f"{entry.get('slot')} cannot be reviewer before dispatch and written acceptance")
 
     intake = Path("review-intake/README.md").read_text(encoding="utf-8")
     if "CLOSED" not in intake:

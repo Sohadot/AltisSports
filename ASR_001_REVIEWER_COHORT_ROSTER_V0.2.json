@@ -43,9 +43,6 @@
       "role_label": "named_candidate_assignee",
       "candidate_status": "selected_not_contacted",
       "selection_rationale": "Sport governance, compliance, rules, enforcement, and governance-reform expertise relevant to object lock, rule authority, and recognition boundaries.",
-      "evidence_refs": [
-        "EV-CAND-01"
-      ],
       "role_or_organization": "Named candidate assignee — governance/integrity",
       "conflict_declaration_id": "RCD-RW001-01-PENDING",
       "conflict_declaration_status": "pending_request_on_invitation",
@@ -70,7 +67,8 @@
         "CORE",
         "RC-01"
       ],
-      "candidate_identity": "private_under_reviewer_privacy_boundary"
+      "candidate_identity": "private_under_reviewer_privacy_boundary",
+      "selection_evidence_status": "verified_private_record"
     },
     {
       "reviewer_id": "RWS-02",
@@ -80,9 +78,6 @@
       "role_label": "reserve_candidate_not_assigned",
       "candidate_status": "reserve_candidate_not_assigned",
       "selection_rationale": "Reserve only for later wave if operations coverage requires expansion.",
-      "evidence_refs": [
-        "EV-CAND-05"
-      ],
       "role_or_organization": "Reserve candidate — competition operations",
       "conflict_declaration_id": "RCD-RW001-02-RESERVED",
       "conflict_declaration_status": "not_requested",
@@ -108,7 +103,8 @@
         "CORE",
         "RC-02"
       ],
-      "candidate_identity": "private_under_reviewer_privacy_boundary"
+      "candidate_identity": "private_under_reviewer_privacy_boundary",
+      "selection_evidence_status": "verified_private_record"
     },
     {
       "reviewer_id": "RWS-03",
@@ -118,9 +114,6 @@
       "role_label": "named_candidate_assignee",
       "candidate_status": "selected_not_contacted",
       "selection_rationale": "Networked systems and immersive XR / spatial computing research relevant to arena topology, sensing, and operational spatial integration.",
-      "evidence_refs": [
-        "EV-CAND-02"
-      ],
       "role_or_organization": "Named candidate assignee — XR/spatial engineering",
       "conflict_declaration_id": "RCD-RW001-03-PENDING",
       "conflict_declaration_status": "pending_request_on_invitation",
@@ -144,7 +137,8 @@
         "CORE",
         "RC-03"
       ],
-      "candidate_identity": "private_under_reviewer_privacy_boundary"
+      "candidate_identity": "private_under_reviewer_privacy_boundary",
+      "selection_evidence_status": "verified_private_record"
     },
     {
       "reviewer_id": "RWS-04",
@@ -154,9 +148,6 @@
       "role_label": "reserve_candidate_not_assigned",
       "candidate_status": "reserve_candidate_not_assigned",
       "selection_rationale": "Reserve only if measurement-validity depth requires expansion.",
-      "evidence_refs": [
-        "EV-CAND-06"
-      ],
       "role_or_organization": "Reserve candidate — performance measurement",
       "conflict_declaration_id": "RCD-RW001-04-RESERVED",
       "conflict_declaration_status": "not_requested",
@@ -180,7 +171,8 @@
         "CORE",
         "RC-04"
       ],
-      "candidate_identity": "private_under_reviewer_privacy_boundary"
+      "candidate_identity": "private_under_reviewer_privacy_boundary",
+      "selection_evidence_status": "verified_private_record"
     },
     {
       "reviewer_id": "RWS-05",
@@ -190,9 +182,6 @@
       "role_label": "named_candidate_assignee",
       "candidate_status": "selected_not_contacted",
       "selection_rationale": "Adaptive and Para sport classification and athlete-impairment research relevant to accessibility disclosure without converting ASR-001 into clinical certification.",
-      "evidence_refs": [
-        "EV-CAND-03"
-      ],
       "role_or_organization": "Named candidate assignee — accessibility/adaptive sport",
       "conflict_declaration_id": "RCD-RW001-05-PENDING",
       "conflict_declaration_status": "pending_request_on_invitation",
@@ -216,7 +205,8 @@
         "CORE",
         "RC-05"
       ],
-      "candidate_identity": "private_under_reviewer_privacy_boundary"
+      "candidate_identity": "private_under_reviewer_privacy_boundary",
+      "selection_evidence_status": "verified_private_record"
     },
     {
       "reviewer_id": "RWS-06",
@@ -226,9 +216,6 @@
       "role_label": "reserve_candidate_not_assigned",
       "candidate_status": "reserve_candidate_not_assigned",
       "selection_rationale": "Reserve only if methodological challenge volume requires expansion.",
-      "evidence_refs": [
-        "EV-CAND-07"
-      ],
       "role_or_organization": "Reserve candidate — research methodology",
       "conflict_declaration_id": "RCD-RW001-06-RESERVED",
       "conflict_declaration_status": "not_requested",
@@ -253,7 +240,8 @@
         "CORE",
         "RC-06"
       ],
-      "candidate_identity": "private_under_reviewer_privacy_boundary"
+      "candidate_identity": "private_under_reviewer_privacy_boundary",
+      "selection_evidence_status": "verified_private_record"
     },
     {
       "reviewer_id": "RWS-07",
@@ -263,9 +251,6 @@
       "role_label": "named_candidate_assignee",
       "candidate_status": "selected_not_contacted",
       "selection_rationale": "Privacy, risk assessment, and sensitive-data governance relevant to athlete data, biometric signals, retention, and reuse boundaries.",
-      "evidence_refs": [
-        "EV-CAND-04"
-      ],
       "role_or_organization": "Named candidate assignee — evidence/privacy/data governance",
       "conflict_declaration_id": "RCD-RW001-07-PENDING",
       "conflict_declaration_status": "pending_request_on_invitation",
@@ -288,7 +273,8 @@
         "CORE",
         "RC-07"
       ],
-      "candidate_identity": "private_under_reviewer_privacy_boundary"
+      "candidate_identity": "private_under_reviewer_privacy_boundary",
+      "selection_evidence_status": "verified_private_record"
     }
   ],
   "prohibitions": [

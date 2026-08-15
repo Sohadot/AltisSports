@@ -1,13 +1,15 @@
 # Reviewer Privacy Boundary
 
-**Status:** Ratified governance policy
+**Status:** Ratified governance policy (DEC-020)
 **Applies to:** ASR review waves (RW-001 onward)
 
 ## 1. Rule
 
 > Public governance records roles, slots, states, and process. Candidate
-> identity and correspondence remain private until explicit consent to public
-> attribution.
+> identity remains private until explicit public-attribution consent.
+> Correspondence remains private unless separately and explicitly consented for
+> publication; public-attribution consent does not authorize disclosure of
+> correspondence.
 
 The public repository records the **process**: reviewer classes (RC-*), slots
 (RWS-*), coverage rules, methodology, an anonymous invitation template,
@@ -25,18 +27,24 @@ was published as a reviewer candidate before they had heard of the project.
 
 ## 3. Two Distinct Consents
 
-Participation and publication are logically separate. We require **two**
-consents, and one never implies the other:
+Participation, attribution, and correspondence are logically separate. We treat
+them as **three** independent consents, and none ever implies another:
 
 1. **Review participation consent** — written agreement to review under the
    stated boundaries. This transitions a slot to `reviewer`.
 2. **Public attribution consent** — separate, explicit agreement to have one's
    name published in the public record.
+3. **Correspondence-publication consent** — separate, explicit agreement to
+   publish any correspondence. Public-attribution consent does **not** authorize
+   disclosure of correspondence; correspondence stays private unless it is
+   itself explicitly consented for publication.
 
 A person may therefore be a `reviewer` in the public record while still
 identified only by slot (e.g. `RWS-01`), if they have given participation
 consent but not public-attribution consent. Absent public-attribution consent,
-the public record shows the slot, class, and state — never the name.
+the public record shows the slot, class, and state — never the name. Absent
+correspondence-publication consent, no message is published even when the name
+is.
 
 ## 4. Public vs Private
 
