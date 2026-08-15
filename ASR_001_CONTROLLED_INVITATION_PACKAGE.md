@@ -9,14 +9,18 @@
 
 Only these invitation package IDs may be privately dispatched:
 
-| Package ID | Slot | Named candidate assignee | Class |
+| Package ID | Slot | Candidate identity | Class |
 | --- | --- | --- | --- |
-| INV-RW001-RWS-01 | RWS-01 | B. David Ridpath | RC-01 |
-| INV-RW001-RWS-03 | RWS-03 | Mallesham Dasari | RC-03 |
-| INV-RW001-RWS-05 | RWS-05 | Stephanie Tow, MD | RC-05 |
-| INV-RW001-RWS-07 | RWS-07 | Emma Drake | RC-07 |
+| INV-RW001-RWS-01 | RWS-01 | private | RC-01 |
+| INV-RW001-RWS-03 | RWS-03 | private | RC-03 |
+| INV-RW001-RWS-05 | RWS-05 | private | RC-05 |
+| INV-RW001-RWS-07 | RWS-07 | private | RC-07 |
 
 Reserve slots RWS-02 / RWS-04 / RWS-06 are **not authorized**.
+
+The public package records slots only. Candidate identity and the personalized
+invitation letters are maintained privately under `REVIEWER_PRIVACY_BOUNDARY.md`;
+the public invitation is the anonymous `invitations/INV-RW001-TEMPLATE.md`.
 
 ## Dispatch Rules
 

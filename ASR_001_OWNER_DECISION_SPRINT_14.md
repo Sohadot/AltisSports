@@ -5,9 +5,16 @@
 **Wave:** RW-001  
 **Status:** Ratified owner instruction
 
-## Exact Owner Authorization
+## Public Privacy-Redacted Rendering of Owner Authorization
 
-> أعتمد المرشحين B. David Ridpath وMallesham Dasari وStephanie Tow وEmma Drake للموجة RW-001، وأصرح بإعداد وإرسال دعوات مكتوبة فردية محكومة لهم فقط. لا يصبح أي منهم مراجعًا قبل القبول الكتابي، وتبقى الخانات الثلاث الأخرى احتياطية مغلقة.
+_This is the public, privacy-redacted rendering, not the verbatim text. The
+substantive decision is unchanged; candidate identities are redacted per DEC-020
+and the reviewer privacy boundary. The verbatim named authorization is retained
+in the private record._
+
+> أعتمد إسناد مرشّحي الموجة RW-001 إلى الخانات RWS-01 وRWS-03 وRWS-05 وRWS-07، وأصرّح بإعداد وإرسال دعوات مكتوبة فردية محكومة لتلك الخانات فقط. لا يصبح أي منهم مراجعًا قبل القبول الكتابي، وتبقى الخانات الثلاث الأخرى احتياطية مغلقة.
+
+> هوية المرشّحين محفوظة خارج السجل العام وفق `REVIEWER_PRIVACY_BOUNDARY.md`؛ السجل العام يحفظ الخانات والفئات والحالات فقط.
 
 ## Machine-Readable Interpretation
 

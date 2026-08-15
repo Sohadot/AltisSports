@@ -405,7 +405,7 @@ Sprint 12 made the package review-ready. Sprint 13 converts readiness into a gov
 
 ### Decision
 
-1. The owner authorizes first-wave named candidate assignment for Wave RW-001 to B. David Ridpath (RWS-01/RC-01), Mallesham Dasari (RWS-03/RC-03), Stephanie Tow, MD (RWS-05/RC-05), and Emma Drake (RWS-07/RC-07) only.
+1. Four first-wave candidate assignments were authorized against RWS-01 (RC-01), RWS-03 (RC-03), RWS-05 (RC-05), and RWS-07 (RC-07). Candidate identities are maintained outside the public governance record under the reviewer privacy boundary (`REVIEWER_PRIVACY_BOUNDARY.md`). _(Names in this point are redacted as a public privacy projection per DEC-020; the substantive authorization recorded here is unchanged.)_
 2. Before written acceptance, each assigned person is classified solely as `named_candidate_assignee` with candidate_status `selected_not_contacted` until private dispatch occurs.
 3. Controlled individual written invitation release is authorized for those four slots only.
 4. Invitation drafts are prepared for private owner dispatch. Sprint 14 does not transmit messages and does not store personal contact addresses in the public repository.
@@ -461,3 +461,24 @@ Forensic reconstruction proved the stored hashes matched no committed state of t
 ### Rationale
 
 Open licensing of the reference material strengthens, rather than weakens, reference sovereignty: it lets researchers, engineers, journalists, and AI systems reuse and cite the material while AltisSports remains the canonical origin of definitions, identifiers, versions, provenance, corrections, and claim scope. Tying canonical citability to publication keeps the published/unpublished distinction honest and mirrors the Atlas citation architecture (referenceable is not the same as registered-canonical).
+
+---
+
+## DEC-020 — Reviewer Privacy Boundary and Public Redaction Doctrine
+
+**Status:** Ratified
+**Version:** 1.0
+**Date:** 2026-08-14
+**Evidence basis:** `REVIEWER_PRIVACY_BOUNDARY.md`
+
+### Decision
+
+1. The **Reviewer Privacy Boundary** is adopted: the public repository records reviewer roles, slots (`RWS-*`), classes (`RC-*`), states, and process only. Candidate identity is not part of the public state.
+2. **Three independent consents** are distinguished, none implying another: (a) review participation consent, (b) public-attribution consent, (c) correspondence-publication consent. A person may be a `reviewer` in the public record while identified only by slot; public-attribution consent does not authorize disclosure of correspondence.
+3. **Public redaction is a projection, not a rewrite of history.** The current removal of candidate names from `README.md`, `DECISION_LOG.md` DEC-017, the owner decision, the cohort roster, the dispatch log, the controlled invitation package, and the first-wave summary — and the replacement of the four personalized invitations with an anonymous template — are **public privacy projections**. They do **not** change the substance of DEC-017 or the Sprint 14 authorization; the four slot assignments authorized then remain authorized now. The verbatim named authorization and candidate evidence are retained in a private record.
+4. The **people-layer is separated** from the public logic: public code and validators operate on slots and states only and must run without any private names file.
+5. **Git history is left unchanged.** Candidate names appeared publicly during Sprint 14, before this boundary was ratified. A deliberate history purge is reopened only on a named person's request, a legal or reputational trigger, or before AltisSports reaches a level of external distribution that materially increases the exposure of the old history.
+
+### Rationale
+
+Naming a real person publicly as a candidate for our review is information we create, and it can imply a relationship that has not yet been consented to. Recording process publicly while keeping identity and correspondence private protects both the individuals and the credibility of the reference, without erasing the historical governance record. Framing the redactions as projections under an explicit decision preserves the append-only integrity of this log.

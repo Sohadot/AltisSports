@@ -23,7 +23,7 @@ DECISION_TEXT = """
 
 ### Decision
 
-1. The owner authorizes first-wave named candidate assignment for Wave RW-001 to B. David Ridpath (RWS-01/RC-01), Mallesham Dasari (RWS-03/RC-03), Stephanie Tow, MD (RWS-05/RC-05), and Emma Drake (RWS-07/RC-07) only.
+1. Four first-wave candidate assignments were authorized against RWS-01 (RC-01), RWS-03 (RC-03), RWS-05 (RC-05), and RWS-07 (RC-07). Candidate identities are maintained outside the public governance record under the reviewer privacy boundary (`REVIEWER_PRIVACY_BOUNDARY.md`).
 2. Before written acceptance, each assigned person is classified solely as `named_candidate_assignee` with candidate_status `selected_not_contacted` until private dispatch occurs.
 3. Controlled individual written invitation release is authorized for those four slots only.
 4. Invitation drafts are prepared for private owner dispatch. Sprint 14 does not transmit messages and does not store personal contact addresses in the public repository.
@@ -39,19 +39,19 @@ DECISION_TEXT = """
 A four-candidate first wave satisfies the required coverage groups while remaining operationally bounded. Separating named-candidate assignment from reviewer status, and authorization-to-send from actual private dispatch, preserves non-endorsement boundaries and prevents contact-data leakage or premature intake opening.
 """.strip() + "\n"
 
+# Public, identity-free tracked set. Candidate identity and the personalized
+# invitation letters are private under REVIEWER_PRIVACY_BOUNDARY.md and are not
+# tracked here; this script must run without any private names file.
 TRACKED = [
     "ASR_001_OWNER_DECISION_SPRINT_14.md",
     "ASR_001_REVIEWER_COHORT_ROSTER_V0.2.json",
-    "ASR_001_NAMED_CANDIDATE_EVIDENCE_V0.1.md",
     "ASR_001_CONTROLLED_INVITATION_PACKAGE.md",
     "ASR_001_INVITATION_DISPATCH_LOG_V0.1.json",
     "ASR_001_PER_CANDIDATE_INTAKE_POLICY.md",
     "ASR_001_NAMED_ASSIGNMENT_GATE.md",
     "ASR_001_REVIEW_ACTIVATION_RECORD_RW001_S14_SUPPLEMENT.md",
-    "invitations/INV-RW001-RWS-01.md",
-    "invitations/INV-RW001-RWS-03.md",
-    "invitations/INV-RW001-RWS-05.md",
-    "invitations/INV-RW001-RWS-07.md",
+    "REVIEWER_PRIVACY_BOUNDARY.md",
+    "invitations/INV-RW001-TEMPLATE.md",
 ]
 
 
