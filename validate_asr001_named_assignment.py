@@ -184,6 +184,56 @@ def main() -> int:
         if rev == "reviewer" and not (ds == "dispatched" and acc == "accepted"):
             return fail(f"{entry.get('slot')} cannot be reviewer before dispatch and written acceptance")
 
+    # Cross-file invariant: the same RWS-* cannot tell two public stories.
+    # Per ASR_001_PER_CANDIDATE_INTAKE_POLICY.md, awaiting_private_dispatch
+    # matches the pre-send roster snapshot; dispatched + not_accepted matches
+    # invited_awaiting_acceptance; accepted/reviewer appears only after
+    # dispatch and written acceptance.
+    by_slot_entry = {}
+    for entry in log["entries"]:
+        slot_id = entry.get("slot")
+        if slot_id in by_slot_entry:
+            return fail(f"dispatch log has duplicate entry for {slot_id}")
+        by_slot_entry[slot_id] = entry
+    if set(by_slot_entry) != ACTIVE:
+        return fail("dispatch log must contain exactly the four authorized slots")
+
+    for slot_id in ACTIVE:
+        slot = by_id[slot_id]
+        entry = by_slot_entry[slot_id]
+        if slot.get("invitation_package_id") != entry.get("invitation_package_id"):
+            return fail(f"{slot_id} invitation_package_id mismatch between roster and dispatch log")
+        ds = entry.get("dispatch_status")
+        acc = entry.get("acceptance_status")
+        rev = entry.get("reviewer_status")
+        inv = slot.get("invitation_status")
+        cand = slot.get("candidate_status")
+        role = slot.get("role_label")
+        if ds == "awaiting_private_dispatch":
+            if inv != "prepared_authorized_awaiting_private_dispatch":
+                return fail(f"{slot_id} awaiting_private_dispatch requires pre-dispatch invitation_status")
+            if cand != "selected_not_contacted":
+                return fail(f"{slot_id} awaiting_private_dispatch requires selected_not_contacted")
+            if role != "named_candidate_assignee":
+                return fail(f"{slot_id} awaiting_private_dispatch requires named_candidate_assignee")
+        elif ds == "dispatched" and acc == "not_accepted":
+            if inv != "dispatched":
+                return fail(f"{slot_id} dispatched + not_accepted requires invitation_status dispatched")
+            if cand != "invited_awaiting_acceptance":
+                return fail(f"{slot_id} dispatched + not_accepted must match invited_awaiting_acceptance")
+            if role != "named_candidate_assignee":
+                return fail(f"{slot_id} dispatched + not_accepted cannot be reviewer")
+        else:
+            # dispatched + accepted (illegal pre-dispatch acceptance is already rejected above)
+            if ds != "dispatched" or acc != "accepted":
+                return fail(f"{slot_id} accepted/reviewer requires dispatch and written acceptance")
+            if inv != "dispatched":
+                return fail(f"{slot_id} accepted/reviewer requires invitation_status dispatched")
+            if cand != "accepted":
+                return fail(f"{slot_id} written acceptance must appear as candidate_status accepted")
+            if role != "reviewer" or rev != "reviewer":
+                return fail(f"{slot_id} written acceptance must appear as reviewer on roster and dispatch log")
+
     intake = Path("review-intake/README.md").read_text(encoding="utf-8")
     if "CLOSED" not in intake:
         return fail("global review-intake must remain CLOSED")
