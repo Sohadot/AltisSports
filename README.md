@@ -504,6 +504,22 @@ ASR
 
 ---
 
+Cite AltisSports
+
+The frozen public reference publication for the current conceptual and architectural foundation is:
+
+**Jouhari, Soha (2026). _AltisSports: Reference Infrastructure for Spatial Sport — Conceptual and Architectural Foundation_ (Version 0.1). Zenodo.**
+
+**Version DOI:** https://doi.org/10.5281/zenodo.22015549  
+**Concept DOI — all versions:** https://doi.org/10.5281/zenodo.22015548
+
+The GitHub repository remains the canonical working reference.  
+The Zenodo record is a frozen citable publication.
+
+Publication of this foundation does not publish or ratify ASR-001, which remains an unpublished Working Draft.
+
+---
+
 Governing Principle
 
 AltisSports is not trying to become difficult to bypass by declaring itself authoritative.

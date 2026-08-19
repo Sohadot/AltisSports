@@ -482,3 +482,25 @@ Open licensing of the reference material strengthens, rather than weakens, refer
 ### Rationale
 
 Naming a real person publicly as a candidate for our review is information we create, and it can imply a relationship that has not yet been consented to. Recording process publicly while keeping identity and correspondence private protects both the individuals and the credibility of the reference, without erasing the historical governance record. Framing the redactions as projections under an explicit decision preserves the append-only integrity of this log.
+
+---
+
+## DEC-021 — Frozen Citable Foundation Publication and First-Wave Dispatch Recording
+
+**Status:** Ratified
+**Version:** 1.0
+**Date:** 2026-08-19
+**Evidence basis:** Zenodo records `10.5281/zenodo.22015549` (version) and `10.5281/zenodo.22015548` (concept); `CITATION.cff`; `PUBLIC_ASSET_PROFILE.json`; `ASR_001_INVITATION_DISPATCH_LOG_V0.1.json`
+
+### Decision
+
+1. The **frozen public reference publication** for the current conceptual and architectural foundation is Jouhari, Soha (2026), *AltisSports: Reference Infrastructure for Spatial Sport — Conceptual and Architectural Foundation* (Version 0.1), Zenodo. **Version DOI:** `10.5281/zenodo.22015549`. **Concept DOI (all versions):** `10.5281/zenodo.22015548`. Cite v0.1 by the version DOI. Use the concept DOI only as a persistent series link across later versions.
+2. **GitHub remains the canonical working reference.** The Zenodo record is a frozen citable publication, not a second source of truth and not a substitute for the working tree.
+3. **This publication does not publish or ratify ASR-001.** ASR-001 remains an unpublished Working Draft. **`CITE-HOLD-ASR-001` remains open.** The Zenodo record does not mean external validation, adoption, or endorsement.
+4. **v0.1 is not rewritten in place.** Any later substantial change is a new Zenodo version (v0.2 onward) linked through the concept DOI, preserving provenance rather than replacing the past.
+5. Four first-wave invitations (`RWS-01`, `RWS-03`, `RWS-05`, `RWS-07`) are recorded as **privately dispatched**. None are accepted. None are reviewers. The public review-state is `controlled_first_wave_dispatched_awaiting_acceptance`. Dispatch is not review, validation, endorsement, or recognition.
+6. The public citation pin is `CITATION.cff` plus the README Cite section. The public asset profile records the Zenodo object as `kind: external_frozen_publication` with `scope: conceptual_and_architectural_foundation`.
+
+### Rationale
+
+A reference that others can cite must have a frozen, dated object distinct from the working repository. Pinning both DOIs keeps version-specific citation honest while leaving a durable series identifier. Separating that object from ASR-001 keeps the citability hold intact: a DOI for the conceptual foundation must not be read as publication of the unpublished working draft. Recording the first real dispatch on the same date closes the public-state gap the asset-profile gate was built to catch, without advancing anyone to reviewer status.

@@ -115,8 +115,56 @@ def validate(errors):
     prose = " ".join([str(review.get("note", "")), str((ext_layer or {}).get("detail", ""))]).lower()
     if dispatched > 0 and "none dispatched" in prose:
         errors.append("profile prose still says 'none dispatched' after dispatch")
-    if reviewers > 0 and "no reviewers yet" in prose:
-        errors.append("profile prose still says 'no reviewers yet' after acceptance")
+    if reviewers > 0 and "no reviewers" in prose:
+        errors.append("profile prose still says 'no reviewers' after acceptance")
+
+    # (6c) post-dispatch governed state. Dispatch is not review, validation,
+    # endorsement, or recognition. The next name after acceptance is not
+    # invented here: reviewers > 0 while this state remains forces a later
+    # governed transition.
+    DISPATCHED_AWAITING = "controlled_first_wave_dispatched_awaiting_acceptance"
+    if dispatched > 0 and reviewers == 0 and state != DISPATCHED_AWAITING:
+        errors.append(
+            f"{dispatched} invitation(s) dispatched and 0 reviewers but "
+            f"review.state is {state!r} (expected {DISPATCHED_AWAITING!r})"
+        )
+    if reviewers > 0 and state == DISPATCHED_AWAITING:
+        errors.append(
+            f"{reviewers} reviewer(s) recorded but review.state is still "
+            f"{DISPATCHED_AWAITING!r} — a governed state transition is required"
+        )
+
+    # (6d) frozen Zenodo publication is distinct from ASR-001
+    pubs = profile.get("frozen_publications") or []
+    foundation = next(
+        (p for p in pubs if p.get("version_doi") == "10.5281/zenodo.22015549"),
+        None,
+    )
+    if foundation is None:
+        errors.append("profile must record the Zenodo v0.1 frozen publication (10.5281/zenodo.22015549)")
+    else:
+        if foundation.get("concept_doi") != "10.5281/zenodo.22015548":
+            errors.append("frozen publication concept_doi must be 10.5281/zenodo.22015548")
+        if foundation.get("kind") != "external_frozen_publication":
+            errors.append("Zenodo record must be kind external_frozen_publication")
+        if foundation.get("scope") != "conceptual_and_architectural_foundation":
+            errors.append("Zenodo record scope must remain conceptual_and_architectural_foundation")
+        if "ASR-001" not in (foundation.get("does_not_publish") or []):
+            errors.append("frozen publication must explicitly not publish ASR-001")
+        means = " ".join(foundation.get("does_not_mean") or [])
+        for needle in ("CITE-HOLD-ASR-001 is lifted", "external validation", "adoption", "endorsement"):
+            if needle not in means:
+                errors.append(f"frozen publication must state that it does not mean {needle!r}")
+        if foundation.get("version") != "0.1":
+            errors.append("recorded frozen publication version must be 0.1 until a new Zenodo version exists")
+    zenodo_layer = next(
+        (l for l in profile.get("layers", []) if l.get("state") == "external_frozen_publication"),
+        None,
+    )
+    if zenodo_layer is None:
+        errors.append("profile layers must include the Zenodo frozen publication as a distinct layer")
+    elif "does not publish" not in (zenodo_layer.get("detail") or "").lower():
+        errors.append("Zenodo layer must state that it does not publish ASR-001")
 
     # (7) canonical resources exist
     for name, path in profile.get("canonical_resources", {}).items():

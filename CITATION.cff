@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use AltisSports in research, analysis, or reference work, please cite the frozen Zenodo publication in preferred-citation."
+title: "AltisSports"
+type: dataset
+
+authors:
+  - family-names: Jouhari
+    given-names: Soha
+
+repository-code: "https://github.com/Sohadot/AltisSports"
+url: "https://github.com/Sohadot/AltisSports"
+
+preferred-citation:
+  type: generic
+  authors:
+    - family-names: Jouhari
+      given-names: Soha
+  title: "AltisSports: Reference Infrastructure for Spatial Sport — Conceptual and Architectural Foundation"
+  doi: "10.5281/zenodo.22015549"
+  identifiers:
+    - type: doi
+      value: "10.5281/zenodo.22015549"
+      description: "Version DOI for v0.1"
+    - type: doi
+      value: "10.5281/zenodo.22015548"
+      description: "Concept DOI for all versions"
+  publisher:
+    name: Zenodo
+  version: "0.1"
+  date-published: 2026-08-19
+  license: CC-BY-4.0
+  url: "https://doi.org/10.5281/zenodo.22015549"

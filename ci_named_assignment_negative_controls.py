@@ -71,13 +71,27 @@ def dump(sandbox, name, obj):
 
 
 def control_dispatched_while_roster_pre_dispatch(sandbox):
+    # Force the cross-file contradiction: dispatch log says sent; roster still
+    # shows the pre-send snapshot. Works whether the live tree is pre-dispatch
+    # or already dispatched.
     log = load(sandbox, "ASR_001_INVITATION_DISPATCH_LOG_V0.1.json")
     for entry in log["entries"]:
         if entry.get("slot") == "RWS-01":
             entry["dispatch_status"] = "dispatched"
-            entry["dispatched_at"] = "2026-08-15T12:00:00Z"
+            entry["dispatched_at"] = entry.get("dispatched_at") or "2026-08-19"
+            entry["acceptance_status"] = "not_accepted"
+            entry["reviewer_status"] = "not_reviewer"
             break
     dump(sandbox, "ASR_001_INVITATION_DISPATCH_LOG_V0.1.json", log)
+    roster = load(sandbox, "ASR_001_REVIEWER_COHORT_ROSTER_V0.2.json")
+    for slot in roster["slots"]:
+        if slot.get("reviewer_id") == "RWS-01":
+            slot["invitation_status"] = "prepared_authorized_awaiting_private_dispatch"
+            slot["candidate_status"] = "selected_not_contacted"
+            slot["role_label"] = "named_candidate_assignee"
+            slot["intake_enablement"] = "closed_until_invitation_dispatched"
+            break
+    dump(sandbox, "ASR_001_REVIEWER_COHORT_ROSTER_V0.2.json", roster)
 
 
 CONTROLS = [

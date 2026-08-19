@@ -2,14 +2,14 @@
   "profile": "AltisSports Public Asset Profile",
   "profile_version": "0.1",
   "status": "Foundation Draft — Not Ratified",
-  "as_of": "2026-08-14",
+  "as_of": "2026-08-19",
   "purpose": "A governed, machine-readable summary of the AltisSports asset, intended as the source from which public-facing surfaces (e.g. the Sohadot asset dossier) are projected. The website presents the asset; it does not become the source of truth.",
   "asset": {
     "name": "AltisSports",
     "framing": "Reference Infrastructure for Spatial Athletic Systems",
     "one_line": "A governed knowledge and evidence infrastructure for understanding spatial athletic systems across physical, virtual, distributed, human, machine, and hybrid environments.",
     "thesis": "Spatial Sport emerges through disconnected products and practices. AltisSports produces the governed language, evidence structures, reference architecture, and machine-readable objects through which such systems can be described, compared, and governed — not another sports publication.",
-    "current_state": "Reference architecture and descriptive evidence infrastructure. ASR-001 remains an unpublished Working Draft under controlled external-review preparation.",
+    "current_state": "Reference architecture and descriptive evidence infrastructure. A frozen conceptual and architectural foundation is published on Zenodo (v0.1). ASR-001 remains an unpublished Working Draft under CITE-HOLD-ASR-001. First-wave invitations have been privately dispatched; there are no reviewers yet.",
     "owner": "Sohadot"
   },
   "layers": [
@@ -18,8 +18,9 @@
     { "layer": "Descriptive Atlas", "state": "operational", "detail": "v0.1 — 20 descriptive records derived 1:1 from the corpus; no ranking, scoring, or verdict." },
     { "layer": "Query / Reference Surface", "state": "operational", "detail": "v0.1 — deterministic CLI and static distribution over the Atlas." },
     { "layer": "Citation Identifiers", "state": "operational", "detail": "69 stable identifiers with per-field claim class, license, temporal status, and falsifiability." },
+    { "layer": "Frozen conceptual foundation (Zenodo)", "state": "external_frozen_publication", "detail": "v0.1 Conceptual and Architectural Foundation; version DOI 10.5281/zenodo.22015549; concept DOI 10.5281/zenodo.22015548. Does not publish or ratify ASR-001 and does not lift CITE-HOLD-ASR-001." },
     { "layer": "ASR-001 Evidence Profile", "state": "unpublished_working_draft", "detail": "Candidate normative material (C5, provisional); clause text licensed CC BY 4.0 but held from canonical citability." },
-    { "layer": "External operator review", "state": "controlled_first_wave_prepared", "detail": "Wave RW-001 — four invitations prepared and authorized for owner-private dispatch; none dispatched; no reviewers yet." },
+    { "layer": "External operator review", "state": "controlled_first_wave_dispatched_awaiting_acceptance", "detail": "Wave RW-001 — four invitations privately dispatched; none accepted; no reviewers. Dispatch is not review, validation, endorsement, or recognition." },
     { "layer": "Hosted validation gate", "state": "operational", "detail": "Fail-closed CI over corpus, atlas, query surface, citation registry, citation architecture, and operator-review baseline." }
   ],
   "identifiers": {
@@ -37,12 +38,12 @@
   },
   "review": {
     "wave": "RW-001",
-    "state": "controlled_first_wave_prepared",
+    "state": "controlled_first_wave_dispatched_awaiting_acceptance",
     "invitations_authorized": 4,
-    "invitations_dispatched": 0,
+    "invitations_dispatched": 4,
     "reviewers": 0,
     "dispatch_log": "ASR_001_INVITATION_DISPATCH_LOG_V0.1.json",
-    "note": "Four invitations are prepared and authorized for owner-private dispatch. None have been dispatched; there are no reviewers yet. Dispatch and acceptance are recorded only after real events."
+    "note": "Four first-wave invitations were privately dispatched. None have been accepted; there are no reviewers. Dispatch and acceptance are recorded only after real events. This wave is not described as reviewed, validated, endorsed, or recognized."
   },
   "licensing": {
     "boundary_corpus": "CC-BY-4.0",
@@ -70,6 +71,29 @@
     ],
     "decision_log": "DECISION_LOG.md"
   },
+  "frozen_publications": [
+    {
+      "id": "ALTISSPORTS-FOUNDATION-V0.1",
+      "title": "AltisSports: Reference Infrastructure for Spatial Sport — Conceptual and Architectural Foundation",
+      "version": "0.1",
+      "date_published": "2026-08-19",
+      "publisher": "Zenodo",
+      "license": "CC-BY-4.0",
+      "kind": "external_frozen_publication",
+      "scope": "conceptual_and_architectural_foundation",
+      "version_doi": "10.5281/zenodo.22015549",
+      "concept_doi": "10.5281/zenodo.22015548",
+      "url": "https://doi.org/10.5281/zenodo.22015549",
+      "does_not_publish": ["ASR-001"],
+      "does_not_mean": [
+        "ASR-001 is published",
+        "CITE-HOLD-ASR-001 is lifted",
+        "external validation",
+        "adoption",
+        "endorsement"
+      ]
+    }
+  ],
   "audiences": {
     "note": "Stated as capabilities the infrastructure supports, not as a claim that these parties currently use it.",
     "capabilities": [
@@ -89,7 +113,9 @@
     "query_guide": "ATLAS_QUERY_GUIDE_V0.1.md",
     "license": "DATASET_LICENSE.md",
     "reference_authority_model": "REFERENCE_AUTHORITY_AND_CITABILITY_MODEL.md",
-    "decision_log": "DECISION_LOG.md"
+    "decision_log": "DECISION_LOG.md",
+    "citation_file": "CITATION.cff",
+    "frozen_publication": "https://doi.org/10.5281/zenodo.22015549"
   },
   "not": [
     "a sports news publication",

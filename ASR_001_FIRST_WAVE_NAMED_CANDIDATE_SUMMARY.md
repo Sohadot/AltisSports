@@ -9,10 +9,10 @@
 
 | Slot | Class | Candidate identity | Invitation status |
 | --- | --- | --- | --- |
-| `RWS-01` | `RC-01` | private | `prepared_authorized_awaiting_private_dispatch` |
-| `RWS-03` | `RC-03` | private | `prepared_authorized_awaiting_private_dispatch` |
-| `RWS-05` | `RC-05` | private | `prepared_authorized_awaiting_private_dispatch` |
-| `RWS-07` | `RC-07` | private | `prepared_authorized_awaiting_private_dispatch` |
+| `RWS-01` | `RC-01` | private | `dispatched` |
+| `RWS-03` | `RC-03` | private | `dispatched` |
+| `RWS-05` | `RC-05` | private | `dispatched` |
+| `RWS-07` | `RC-07` | private | `dispatched` |
 
 ## Reserve-closed
 
@@ -24,4 +24,4 @@
 
 ## Boundary
 
-No candidate is a reviewer yet. No invitation has been marked dispatched by Sprint 14 automation. Candidate identities are not recorded in the public repository.
+No candidate is a reviewer yet. Four first-wave invitations have been privately dispatched and await written acceptance. Dispatch is not review, validation, endorsement, or recognition. Candidate identities are not recorded in the public repository.
