@@ -504,3 +504,26 @@ Naming a real person publicly as a candidate for our review is information we cr
 ### Rationale
 
 A reference that others can cite must have a frozen, dated object distinct from the working repository. Pinning both DOIs keeps version-specific citation honest while leaving a durable series identifier. Separating that object from ASR-001 keeps the citability hold intact: a DOI for the conceptual foundation must not be read as publication of the unpublished working draft. Recording the first real dispatch on the same date closes the public-state gap the asset-profile gate was built to catch, without advancing anyone to reviewer status.
+
+---
+
+## DEC-022 — Web Surface Gate v0.1
+
+**Status:** Ratified
+**Version:** 1.0
+**Date:** 2026-08-27
+**Evidence basis:** `docs/` public surface; `PUBLIC_ASSET_PROFILE.json`; `CITATION.cff`; DEC-004; DEC-021; `INTERFACE_THESIS.md`; `QUALITY_GATE.md` §2
+
+### Decision
+
+1. **altissports.com is the public reference surface** for Spatial Sport. It presents the governed asset in human-, crawler-, and AI-inspectable HTML. It does **not** become a source of truth.
+2. **GitHub remains the canonical working reference.** **Zenodo v0.1 remains the frozen citable publication** (version DOI `10.5281/zenodo.22015549`; concept DOI `10.5281/zenodo.22015548`). Explanatory writing, including on Substack, is commentary and not a source of truth.
+3. The v0.1 public routes are `/`, `/spatial-sport/`, `/as3/`, `/evidence/`, `/cite/`, `/governance/`, and `404.html`. No reviewer-facing promotional page, buyer logic, monetization copy, or dispatch detail is part of the public surface.
+4. **ASR-001 remains an unpublished Working Draft.** The public surface may name that status. It must not present ASR-001 as a published standard. **`CITE-HOLD-ASR-001` remains open.** Publication of the conceptual foundation still does not publish, ratify, validate, or elevate ASR-001.
+5. The website is a static GitHub Pages projection from `docs/`. Live cutover requires the GitHub Pages source to be `main` / `docs` so working files, invitation records, and monetization boundary documents are not the domain surface. Canonical origin is `https://altissports.com/` (apex, HTTPS).
+6. No ASR-001 normative content is altered by this gate. The frozen Zenodo PDF is not modified.
+
+### Rationale
+
+A reference that others can inspect before they write, cite, or reply must exist as an independent public object, not only as a repository README. Isolating that surface in `docs/` keeps the working tree inspectable on GitHub while preventing the domain from serving operational or private-adjacent files. Encoding DEC-021 in the interface prevents the DOI from being misread as publication of ASR-001.
+

@@ -1,0 +1,14 @@
+# AltisSports public surface
+# Canonical host is the apex HTTPS origin. Do not index the custom 404.
+
+User-agent: *
+Allow: /
+Allow: /spatial-sport/
+Allow: /as3/
+Allow: /evidence/
+Allow: /cite/
+Allow: /governance/
+Allow: /assets/
+Disallow: /404.html
+
+Sitemap: https://altissports.com/sitemap.xml

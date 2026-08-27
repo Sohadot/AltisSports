@@ -10,6 +10,8 @@ It is not a sports publication, a product-ranking system, or a certification aut
 
 It is an attempt to build the language, evidence structures, reference architecture, machine-readable objects, and review discipline needed to examine a field whose boundaries are becoming increasingly difficult to describe with conventional sporting or technological categories alone.
 
+The public reference surface is [altissports.com](https://altissports.com/). It presents the asset. It does not become the source of truth. GitHub remains the canonical working reference. Zenodo v0.1 remains the frozen citable publication.
+
 ---
 
 Why Altis
@@ -515,6 +517,8 @@ The frozen public reference publication for the current conceptual and architect
 
 The GitHub repository remains the canonical working reference.  
 The Zenodo record is a frozen citable publication.
+
+Public citation page: https://altissports.com/cite/
 
 Publication of this foundation does not publish or ratify ASR-001, which remains an unpublished Working Draft.
 

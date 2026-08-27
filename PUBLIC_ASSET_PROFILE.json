@@ -2,14 +2,14 @@
   "profile": "AltisSports Public Asset Profile",
   "profile_version": "0.1",
   "status": "Foundation Draft — Not Ratified",
-  "as_of": "2026-08-19",
+  "as_of": "2026-08-27",
   "purpose": "A governed, machine-readable summary of the AltisSports asset, intended as the source from which public-facing surfaces (e.g. the Sohadot asset dossier) are projected. The website presents the asset; it does not become the source of truth.",
   "asset": {
     "name": "AltisSports",
     "framing": "Reference Infrastructure for Spatial Athletic Systems",
     "one_line": "A governed knowledge and evidence infrastructure for understanding spatial athletic systems across physical, virtual, distributed, human, machine, and hybrid environments.",
     "thesis": "Spatial Sport emerges through disconnected products and practices. AltisSports produces the governed language, evidence structures, reference architecture, and machine-readable objects through which such systems can be described, compared, and governed — not another sports publication.",
-    "current_state": "Reference architecture and descriptive evidence infrastructure. A frozen conceptual and architectural foundation is published on Zenodo (v0.1). ASR-001 remains an unpublished Working Draft under CITE-HOLD-ASR-001. First-wave invitations have been privately dispatched; there are no reviewers yet.",
+    "current_state": "Reference architecture and descriptive evidence infrastructure. A frozen conceptual and architectural foundation is published on Zenodo (v0.1). A public reference website at altissports.com presents the asset without becoming a source of truth. ASR-001 remains an unpublished Working Draft under CITE-HOLD-ASR-001. First-wave invitations have been privately dispatched; there are no reviewers yet.",
     "owner": "Sohadot"
   },
   "layers": [
@@ -18,6 +18,7 @@
     { "layer": "Descriptive Atlas", "state": "operational", "detail": "v0.1 — 20 descriptive records derived 1:1 from the corpus; no ranking, scoring, or verdict." },
     { "layer": "Query / Reference Surface", "state": "operational", "detail": "v0.1 — deterministic CLI and static distribution over the Atlas." },
     { "layer": "Citation Identifiers", "state": "operational", "detail": "69 stable identifiers with per-field claim class, license, temporal status, and falsifiability." },
+    { "layer": "Public web surface", "state": "foundation_public_surface", "detail": "Static site at https://altissports.com/ (Web Surface Gate v0.1). Presents the asset; does not become the source of truth. GitHub remains the canonical working reference." },
     { "layer": "Frozen conceptual foundation (Zenodo)", "state": "external_frozen_publication", "detail": "v0.1 Conceptual and Architectural Foundation; version DOI 10.5281/zenodo.22015549; concept DOI 10.5281/zenodo.22015548. Does not publish or ratify ASR-001 and does not lift CITE-HOLD-ASR-001." },
     { "layer": "ASR-001 Evidence Profile", "state": "unpublished_working_draft", "detail": "Candidate normative material (C5, provisional); clause text licensed CC BY 4.0 but held from canonical citability." },
     { "layer": "External operator review", "state": "controlled_first_wave_dispatched_awaiting_acceptance", "detail": "Wave RW-001 — four invitations privately dispatched; none accepted; no reviewers. Dispatch is not review, validation, endorsement, or recognition." },
@@ -105,6 +106,7 @@
     ]
   },
   "canonical_resources": {
+    "public_web_surface": "https://altissports.com/",
     "repository": "https://github.com/Sohadot/AltisSports",
     "reference_architecture": "AS3_STACK.md",
     "descriptive_atlas": "ATLAS_DESCRIPTIVE_V0.1.json",
