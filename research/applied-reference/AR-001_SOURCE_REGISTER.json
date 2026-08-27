@@ -1,0 +1,523 @@
+{
+  "artifact": "AR-001_SOURCE_REGISTER",
+  "case_id": "AR-001",
+  "corpus_identity": "BC-015",
+  "status": "internal_research",
+  "access_date": "2026-08-27",
+  "claim_policy": "SOURCE_AND_CLAIM_POLICY.md",
+  "notes": "This register records sources examined during Evidence Lock. It does not revise BC-015 evidence arrays. Historical sources remain historical. Provider pages are not converted into independent fact. Direct PDF inspection of WT Rules v4.0 used the WT upload URL linked from the VTKD Rule Book Archive on 2026-08-27.",
+  "edition_finding": {
+    "latest_public_wt_rules_edition_found": "Version 4.0 dated 11 April 2026",
+    "may_30_2025_edition": "Version 3.0 — superseded",
+    "later_than_april_2026_rules_found": false
+  },
+  "sources": [
+    {
+      "source_id": "SRC-001",
+      "title": "WT Virtual Taekwondo Rules and Regulations (Version 4.0)",
+      "publisher": "World Taekwondo",
+      "url": "https://www.worldtaekwondo.org/upload/files/2026/03/d13eb4f4-0c20-46eb-8769-d23c8be348d6.pdf",
+      "discovery_url": "https://virtualtkd.gg/rulebooks/",
+      "publication_or_update_date": "2026-04-11",
+      "access_date": "2026-08-27",
+      "source_type": "standard_or_sporting_code",
+      "temporal_status": "current",
+      "claim_class_default": "C1",
+      "exact_claims_supported": [
+        "Rules apply to WT-promoted and/or recognised Virtual Taekwondo competitions",
+        "Match format: best-of-3, 60-second rounds, 1-minute rest",
+        "Health Bar maximum 1000 HP; knockout at 0 HP",
+        "Draw criteria: headshots, then fewer kicks / higher damage per kick, then last hit",
+        "Scoring areas: above the waist and head; kicks deal damage; punches do not deal damage",
+        "Damage calculated from strike acceleration: Low, Medium, High; insufficient acceleration deals no damage",
+        "Stun: 500 stun points; 3-second immobilisation; kicks and punches fill stun bar; next successful strike stuns",
+        "Block via avatar forearm shields; successful block prevents damage and reduces opponent stun",
+        "Automatic break when avatars are close for 2 seconds",
+        "Court officials: Referee, Game Master, two Technical Operators; TD is ultimate technical decision-maker",
+        "GM creates room, starts match, checks calibration and virtual positions",
+        "TOs inspect nodes/headsets, assist calibration, monitor unnatural movement and equipment failure",
+        "AXIS sensors named in inspection procedure; VR headset with motion-tracking receiver",
+        "FOP: 4m x 4m mats, minimum 2m apart; two start-position options 1m from centre; display and safety distances",
+        "Calibration required before match and between rounds; Referee signals proper calibration",
+        "Disconnection: recoverable restore, or restart if within first 20 seconds, or leading-player assessment after 20 seconds",
+        "Technical timeout card once per coach per match; round reset if issue in first 10 seconds",
+        "Prohibited: manipulating PC/headset/controllers/trackers; leaving play area; physically hitting opponent",
+        "Anti-doping and GAL / MNA registration requirements",
+        "Hijab permitted; street wear subject to inspection"
+      ],
+      "limitations": [
+        "UUID filename on WT upload path; discoverability depends on VTKD archive link",
+        "Does not publish numerical acceleration thresholds or exact HP per damage band",
+        "Does not specify AXIS node count, IMU model, sampling rate, or accuracy",
+        "Does not specify latency budgets",
+        "Does not describe geographically distributed opponents",
+        "Does not lock a VTKD software version",
+        "Diagrams on pages 8–9 were not fully recoverable as text"
+      ]
+    },
+    {
+      "source_id": "SRC-002",
+      "title": "WT Virtual Taekwondo Rules and Regulations (Version 3.0, May 30, 2025)",
+      "publisher": "World Taekwondo",
+      "url": "https://www.worldtaekwondo.org/att_file/documents/WT%20Virtual%20Taekwondo%20Rules%20and%20Regulations%20%28May%2030%2C%202025%29.pdf",
+      "publication_or_update_date": "2025-05-30",
+      "access_date": "2026-08-27",
+      "source_type": "standard_or_sporting_code",
+      "temporal_status": "superseded",
+      "claim_class_default": "C1",
+      "exact_claims_supported": [
+        "Same core scoring, stun, break, disconnection, and official-role structure as v4.0 with older FOP start-position and display wording",
+        "Article 6 opening in v3.0 declared winner of the match after a second offence, unlike v4.0 round wording"
+      ],
+      "limitations": [
+        "Must not be cited as the current governing edition",
+        "Human-readable WT att_file URL remains useful for v3.0 retrieval"
+      ]
+    },
+    {
+      "source_id": "SRC-003",
+      "title": "VTKD Rule Book Archive",
+      "publisher": "Virtual Taekwondo / Virtual TKD Pte. Ltd.",
+      "url": "https://virtualtkd.gg/rulebooks/",
+      "publication_or_update_date": "2026-04-11",
+      "access_date": "2026-08-27",
+      "source_type": "first_party_technical",
+      "temporal_status": "current",
+      "claim_class_default": "C3",
+      "exact_claims_supported": [
+        "Lists April 2026 rules as current, released 11 April 2026",
+        "Publishes v4.0 set-up adjustment notes matching WT v4.0 Article 3",
+        "Lists previous May 2025, September 2024, and June 2024 editions",
+        "Links to WT-hosted PDFs including the v4.0 upload"
+      ],
+      "limitations": [
+        "Provider-hosted archive; WT remains the rule authority",
+        "Endorsement language on the page is promotional"
+      ]
+    },
+    {
+      "source_id": "SRC-004",
+      "title": "VTKD Competitive League / Compete",
+      "publisher": "Virtual Taekwondo / Refract Technologies",
+      "url": "https://virtualtkd.gg/compete/",
+      "publication_or_update_date": null,
+      "access_date": "2026-08-27",
+      "source_type": "official_company_announcement",
+      "temporal_status": "current",
+      "claim_class_default": "C3",
+      "exact_claims_supported": [
+        "Points to WT Virtual Taekwondo Rules and Regulations dated April 11, 2026 as the competitive rule book",
+        "States VTKD is recognised and endorsed by World Taekwondo"
+      ],
+      "limitations": [
+        "Marketing claims about fairness, accuracy, and global force are not independent evidence",
+        "Does not establish remote distributed matches"
+      ]
+    },
+    {
+      "source_id": "SRC-005",
+      "title": "VTKD User Manual 1.3.0",
+      "publisher": "Virtual Taekwondo",
+      "url": "https://virtualtkd.gg/manuals/vtkd-user-manual-1-3-0/",
+      "publication_or_update_date": "2026-08-21",
+      "access_date": "2026-08-27",
+      "source_type": "first_party_technical",
+      "temporal_status": "current",
+      "claim_class_default": "C3",
+      "exact_claims_supported": [
+        "One VTKD court = two VR players",
+        "Required AXIS: 10 nodes for two players (spine, R/L thigh, R/L shin each), docks, dongles, straps",
+        "Compatible headsets: PICO 4 and PICO 4 Ultra",
+        "Dedicated Wi-Fi 6 router, internet, AX3000, 5 GHz only; access-point nodes not recommended",
+        "Physical space 40–50 sqm; 4m x 4m per player with divider",
+        "Magnetometer calibration once before event; in-game calibration during event",
+        "Surface Calibration removed from the 1.3.0 calibration path relative to 1.2.34",
+        "Players join a Game Master room on the same Wi-Fi",
+        "AXIS 2.4 GHz channels; max 10 nodes per channel recommended",
+        "System Operator and Game Master accounts required"
+      ],
+      "limitations": [
+        "Operator manual, not WT rules",
+        "Public HTML extraction was incomplete for later calibration/layout sections",
+        "Does not publish tracking accuracy or damage formula"
+      ]
+    },
+    {
+      "source_id": "SRC-006",
+      "title": "VTKD User Manual 1.2.34",
+      "publisher": "Virtual Taekwondo",
+      "url": "https://virtualtkd.gg/manuals/vtkd-user-manual-1-2-34/",
+      "publication_or_update_date": "2026-01-13",
+      "access_date": "2026-08-27",
+      "source_type": "first_party_technical",
+      "temporal_status": "superseded",
+      "claim_class_default": "C3",
+      "exact_claims_supported": [
+        "Documents Surface Calibration, Legacy Calibration, and in-game T-pose calibration",
+        "States avatar-leg offset > 1 foot is unacceptable",
+        "Documents magnetic-field failure modes of Surface Calibration",
+        "Documents GM room creation, spectator client, and 2-court maximum",
+        "Documents gameplay: 60s rounds, acceleration damage bands, stun 3s, automatic break, optional Boundary Damage"
+      ],
+      "limitations": [
+        "Superseded by 1.3.0 for current software",
+        "Retained because BC-015 cited it and because v1.3.0 explicitly withdraws Surface Calibration"
+      ]
+    },
+    {
+      "source_id": "SRC-007",
+      "title": "VTKD Game Mechanics 1.3.0",
+      "publisher": "Virtual Taekwondo",
+      "url": "https://virtualtkd.gg/manuals/game-mechanics-1-3-0/",
+      "publication_or_update_date": "2026-08-21",
+      "access_date": "2026-08-27",
+      "source_type": "first_party_technical",
+      "temporal_status": "current",
+      "claim_class_default": "C3",
+      "exact_claims_supported": [
+        "Physical movement controls in-game avatars",
+        "AXIS nodes on spine, thighs, and shins especially for kicks",
+        "Head strikes deal double body damage; only kicks cause HP damage",
+        "Stun: punches and kicks build meter; next successful kick activates stun",
+        "Automatic break on proximity or equipment disconnect; GM must resume after disconnect",
+        "Boundary Damage is a toggleable setting",
+        "Draw criteria match the rules order"
+      ],
+      "limitations": [
+        "Provider mechanics page, not independently verified",
+        "Stun activation wording differs from WT Rules v4.0 Article 5.3.1",
+        "Likens VTKD to Street Fighter/Tekken; that analogy is not an Altis classification"
+      ]
+    },
+    {
+      "source_id": "SRC-008",
+      "title": "Virtual Taekwondo Patch Notes (including VTKD v1.3.0)",
+      "publisher": "Virtual Taekwondo",
+      "url": "https://virtualtkd.gg/patch-notes/",
+      "publication_or_update_date": "2026-08-21",
+      "access_date": "2026-08-27",
+      "source_type": "first_party_technical",
+      "temporal_status": "current",
+      "claim_class_default": "C3",
+      "exact_claims_supported": [
+        "v1.3.0 added GM-Timeout when PICO headset/controller or AXIS dongle/node disconnects or powers off",
+        "v1.3.0 withdrew Surface Calibration as unstable across event sites",
+        "v1.3.0: punches no longer trigger stun; punches still build stun meter",
+        "v1.3.0: damage no longer counted from illegal groin kicks",
+        "v1.3.0 improved blocking accuracy for one- or two-arm blocks",
+        "v1.3.0: calibration disabled after match countdown starts",
+        "Earlier notes document Tournament Mode, height calibration, Break/KO bugs, disconnection UI"
+      ],
+      "limitations": [
+        "Declares software behaviour; does not prove on-site championships were on a named build",
+        "Known issues list shows remaining integrity defects in the client"
+      ]
+    },
+    {
+      "source_id": "SRC-009",
+      "title": "Network Setup",
+      "publisher": "Virtual Taekwondo",
+      "url": "https://virtualtkd.gg/manuals/network-setup/",
+      "publication_or_update_date": "2026-04-21",
+      "access_date": "2026-08-27",
+      "source_type": "first_party_technical",
+      "temporal_status": "current",
+      "claim_class_default": "C3",
+      "exact_claims_supported": [
+        "Network links Game Master/Spectator PCs and VR headsets on the play area",
+        "Dedicated router per play area; Wi-Fi 6; 5 GHz transmit only",
+        "AXIS uses 2.4 GHz; preferred dedicated non-overlapping channel per court; max 10 trackers per channel",
+        "Internet 25 Mbps or higher via hybrid wired/wireless"
+      ],
+      "limitations": [
+        "Specifies local court networking, not a WAN opponent architecture",
+        "No latency SLA for geographically separated players"
+      ]
+    },
+    {
+      "source_id": "SRC-010",
+      "title": "Site Assessment Manual",
+      "publisher": "Virtual Taekwondo",
+      "url": "https://virtualtkd.gg/manuals/site-assessment-manual/",
+      "publication_or_update_date": "2025-02-11",
+      "access_date": "2026-08-27",
+      "source_type": "first_party_technical",
+      "temporal_status": "unverified_current_status",
+      "claim_class_default": "C3",
+      "exact_claims_supported": [
+        "Venue assessment required because of technology interference",
+        "No metal structure or electrical cabling within FOP including outer safety boundary",
+        "Walk-test for AXIS drift; acceptable approximately <10 degrees while standing still; unacceptable >10 degrees",
+        "Maximum two courts/FOP with a dedicated router each",
+        "Test uses five AXIS nodes: spine, both thighs, both calves"
+      ],
+      "limitations": [
+        "Dated February 2025; not confirmed reissued for v1.3.0",
+        "Does not quantify magnetic field or publish a tracking-error budget for scoring"
+      ]
+    },
+    {
+      "source_id": "SRC-011",
+      "title": "VIRTUAL TAEKWONDO (WT discipline page)",
+      "publisher": "World Taekwondo",
+      "url": "https://www.worldtaekwondo.org/virtualtaekwondo/contents",
+      "publication_or_update_date": null,
+      "access_date": "2026-08-27",
+      "source_type": "official_announcement",
+      "temporal_status": "current",
+      "claim_class_default": "C3",
+      "exact_claims_supported": [
+        "WT hosts a Virtual Taekwondo page naming an official WT VTKD technology provider",
+        "Contact points include vtkd@worldtaekwondo.org and virtualtkd.gg"
+      ],
+      "limitations": [
+        "Page is promotional and thin on technical rules",
+        "Automated fetch timed out once; archive/search snippets and prior corpus access used as corroboration"
+      ]
+    },
+    {
+      "source_id": "SRC-012",
+      "title": "Official WT VTKD Technology Provider",
+      "publisher": "World Taekwondo",
+      "url": "https://www.worldtaekwondo.org/officialsuppliers/Provider/contents",
+      "publication_or_update_date": null,
+      "access_date": "2026-08-27",
+      "source_type": "official_announcement",
+      "temporal_status": "current",
+      "claim_class_default": "C1",
+      "exact_claims_supported": [
+        "Names Refract Technologies Pte Ltd as official WT VTKD technology provider",
+        "Lists AXIS VTKD motion tracking device components: nodes, holders, straps, charging dock, phone holder, waist belt, AXIS dongle",
+        "Lists VR headset with controllers as part of the provider stack"
+      ],
+      "limitations": [
+        "Does not specify node placement or accuracy",
+        "Automated fetch timed out; identification confirmed via search snippets and BC-015/WT cross-links"
+      ]
+    },
+    {
+      "source_id": "SRC-013",
+      "title": "World Taekwondo Virtual Championships set for spectacular debut in Singapore",
+      "publisher": "World Taekwondo",
+      "url": "https://m.worldtaekwondo.org/competition/view.html?mcd=N03%2F1000&nid=141655&sc=ne",
+      "publication_or_update_date": "2024-11-08",
+      "access_date": "2026-08-27",
+      "source_type": "official_announcement",
+      "temporal_status": "historical",
+      "claim_class_default": "C1",
+      "exact_claims_supported": [
+        "Inaugural World Taekwondo Virtual Championships in Singapore 16–17 November 2024",
+        "More than 120 athletes from 23 countries plus AINs; age categories including mixed",
+        "Uses AXIS motion-tracking by Refract Technologies and a VR headset",
+        "Non-contact sparring; described as inclusive",
+        "Olympic Esports Series 2023 in-person finals in Singapore"
+      ],
+      "limitations": [
+        "Does not document latency, calibration numbers, or remote-site matches",
+        "Inclusion language is institutional claim, not accessibility evidence"
+      ]
+    },
+    {
+      "source_id": "SRC-014",
+      "title": "Virtual Taekwondo at the Olympic Esports Series finals",
+      "publisher": "World Taekwondo",
+      "url": "https://www.worldtaekwondo.org/competition/view.html?mcd=W02&nid=140192",
+      "publication_or_update_date": "2023",
+      "access_date": "2026-08-27",
+      "source_type": "official_announcement",
+      "temporal_status": "historical",
+      "claim_class_default": "C1",
+      "exact_claims_supported": [
+        "Co-located Olympic Esports Series finals appearance retained from BC-015"
+      ],
+      "limitations": [
+        "Live fetch timed out on 2026-08-27; URL retained from governed BC-015 evidence",
+        "Historical event; not current rules"
+      ]
+    },
+    {
+      "source_id": "SRC-015",
+      "title": "World Taekwondo Virtual Championships (event list)",
+      "publisher": "World Taekwondo",
+      "url": "https://www.worldtaekwondo.org/competitions/WMC/WMC_WTVC/list",
+      "publication_or_update_date": null,
+      "access_date": "2026-08-27",
+      "source_type": "official_announcement",
+      "temporal_status": "current",
+      "claim_class_default": "C1",
+      "exact_claims_supported": [
+        "WT lists Singapore 2024 World Championships, Muju 2024 International Open, and Olympic Esports 2023 under Virtual Championships"
+      ],
+      "limitations": [
+        "List page is not a technical specification"
+      ]
+    },
+    {
+      "source_id": "SRC-016",
+      "title": "Traditional Taekwondo vs Virtual Taekwondo – What's The Difference?",
+      "publisher": "Virtual Taekwondo",
+      "url": "https://virtualtkd.gg/traditional-taekwondo-vs-virtual-taekwondo-whats-the-difference/",
+      "publication_or_update_date": "2024-11-05",
+      "access_date": "2026-08-27",
+      "source_type": "official_company_announcement",
+      "temporal_status": "historical",
+      "claim_class_default": "C3",
+      "exact_claims_supported": [
+        "Co-developed by Refract Technologies and World Taekwondo",
+        "Body used as controller via AXIS nodes and VR headset",
+        "Present experience run by participating dojangs or distributors",
+        "Home play described as an aim down the line, not present operation"
+      ],
+      "limitations": [
+        "States 3 rounds of 90 seconds; superseded by 60-second round rules",
+        "Claims strength and age no longer influence outcome; overbroad versus acceleration scoring and age categories",
+        "Must not be treated as current rules"
+      ]
+    },
+    {
+      "source_id": "SRC-017",
+      "title": "Products / VTKD Bundle",
+      "publisher": "Virtual Taekwondo",
+      "url": "https://virtualtkd.gg/products/",
+      "publication_or_update_date": null,
+      "access_date": "2026-08-27",
+      "source_type": "official_company_announcement",
+      "temporal_status": "current",
+      "claim_class_default": "C3",
+      "exact_claims_supported": [
+        "Sells AXIS motion capture plus VTKD platform access",
+        "Claims occlusion-proof, stable, accurate full-body tracking without external setup"
+      ],
+      "limitations": [
+        "Commercial claims; not measurement evidence",
+        "Occlusion-proof and accuracy are unverified"
+      ]
+    },
+    {
+      "source_id": "SRC-018",
+      "title": "AXIS User Manual 1.1",
+      "publisher": "AXIS / Refract Technologies",
+      "url": "https://axisxr.gg/wp-content/uploads/2022/11/AXIS-User-Manual-1.1.pdf",
+      "publication_or_update_date": "2022-11",
+      "access_date": "2026-08-27",
+      "source_type": "first_party_technical",
+      "temporal_status": "historical",
+      "claim_class_default": "C3",
+      "exact_claims_supported": [
+        "AXIS VR mode uses nodes on chest/thighs/calves plus phone at waist in the 2022 general product manual",
+        "Warns that vigorous motion can dislodge nodes; keep clear space"
+      ],
+      "limitations": [
+        "Generic 2022 product manual, not the WT contest configuration",
+        "Node count and waist-phone setup may differ from current VTKD 5-node-per-player layout"
+      ]
+    },
+    {
+      "source_id": "SRC-019",
+      "title": "VTKD Confirmed for the 2026 Asian Games",
+      "publisher": "Virtual Taekwondo",
+      "url": "https://virtualtkd.gg/vtkd-confirmed-for-the-2026-asian-games/",
+      "publication_or_update_date": "2026-06-11",
+      "access_date": "2026-08-27",
+      "source_type": "official_company_announcement",
+      "temporal_status": "announced",
+      "claim_class_default": "C3",
+      "exact_claims_supported": [
+        "Provider states VTKD confirmed for Aichi-Nagoya 2026 Asian Games",
+        "Cites prior Olympic Esports Series 2023 and World Championships 2024"
+      ],
+      "limitations": [
+        "Event announcement, not a technical specification",
+        "Does not prove distributed competition"
+      ]
+    },
+    {
+      "source_id": "SRC-020",
+      "title": "VTKD Chuncheon Open 2026: The Stage Gets Bigger",
+      "publisher": "Virtual Taekwondo",
+      "url": "https://virtualtkd.gg/vtkd-chuncheon-open-2026-the-stage-gets-bigger/",
+      "publication_or_update_date": "2026-07-24",
+      "access_date": "2026-08-27",
+      "source_type": "official_company_announcement",
+      "temporal_status": "historical",
+      "claim_class_default": "C3",
+      "exact_claims_supported": [
+        "Chuncheon, Korea, 18–19 July 2026 described as a hosted competition with 70+ athletes from 10+ countries"
+      ],
+      "limitations": [
+        "Provider recap; co-located venue implied, not a latency study"
+      ]
+    },
+    {
+      "source_id": "SRC-021",
+      "title": "Asian Games goes digital: Virtual taekwondo added for 2026",
+      "publisher": "The Korea Times",
+      "url": "https://www.koreatimes.co.kr/sports/20260616/asian-games-goes-digital-virtual-taekwondo-added-for-2026",
+      "publication_or_update_date": "2026-06-16",
+      "access_date": "2026-08-27",
+      "source_type": "high_quality_professional_reporting",
+      "temporal_status": "announced",
+      "claim_class_default": "C2",
+      "exact_claims_supported": [
+        "Secondary report that virtual taekwondo was added to Aichi-Nagoya 2026 Asian Games programme",
+        "Describes 4-by-4-metre space, VR headsets, five motion sensors, 60-second bouts, best-of-three"
+      ],
+      "limitations": [
+        "Not a primary WT document",
+        "Barrier-removal wording is reporting of institutional claims"
+      ]
+    },
+    {
+      "source_id": "SRC-022",
+      "title": "WT Council meeting news — enactment of Virtual Taekwondo rules",
+      "publisher": "World Taekwondo",
+      "url": "https://m.worldtaekwondo.org/wtnews/view.html?nid=141079&mcd=C13",
+      "publication_or_update_date": null,
+      "access_date": "2026-08-27",
+      "source_type": "official_announcement",
+      "temporal_status": "historical",
+      "claim_class_default": "C1",
+      "exact_claims_supported": [
+        "WT Council approved enactment of Virtual Taekwondo rules and regulations"
+      ],
+      "limitations": [
+        "Does not identify which edition was enacted at that meeting"
+      ]
+    },
+    {
+      "source_id": "SRC-023",
+      "title": "Quick Start Guide 1.3.0 (index entry)",
+      "publisher": "Virtual Taekwondo",
+      "url": "https://virtualtkd.gg/manuals/",
+      "publication_or_update_date": "2026-08-21",
+      "access_date": "2026-08-27",
+      "source_type": "first_party_technical",
+      "temporal_status": "current",
+      "claim_class_default": "C3",
+      "exact_claims_supported": [
+        "Manuals index lists Quick Start Guide 1.3.0, User Manual 1.3.0, and Game Mechanics 1.3.0 dated 21 August 2026"
+      ],
+      "limitations": [
+        "Quick Start Guide body was not fully extracted in this pass"
+      ]
+    },
+    {
+      "source_id": "SRC-024",
+      "title": "BC-015 governed corpus record",
+      "publisher": "AltisSports",
+      "url": "boundary-cases-001-020.v0.3.json",
+      "publication_or_update_date": "2026-07-24",
+      "access_date": "2026-08-27",
+      "source_type": "internal_governed_record",
+      "temporal_status": "provisional",
+      "claim_class_default": "C5",
+      "exact_claims_supported": [
+        "Preserves prior object notes, claim classes, distributed_arena_relation not_evidenced, and C5 provisional finding"
+      ],
+      "limitations": [
+        "Internal Altis record, not an external primary source",
+        "Must not be silently updated by AR-001"
+      ]
+    }
+  ]
+}
