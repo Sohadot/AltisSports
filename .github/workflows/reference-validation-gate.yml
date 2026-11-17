@@ -37,6 +37,9 @@ jobs:
       - name: Registered validators (fail-closed manifest gate)
         run: python3 run_validation_gate.py
 
+      - name: AR-001 public evidence exercise — interaction and export contract
+        run: node --test tests/challenge.test.cjs
+
       - name: Citation registry reproducibility (zero-diff regeneration)
         run: python3 ci_reproducibility_check.py
 
@@ -69,3 +72,4 @@ jobs:
             exit 1
           fi
           echo "PASS: working tree clean after validation."
+
