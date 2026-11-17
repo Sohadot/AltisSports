@@ -20,6 +20,7 @@ PUBLIC_ROUTES = [
     "/cite/",
     "/governance/",
     "/applied/ar-001/",
+    "/challenge/ar-001/",
 ]
 ROUTE_FILES = {
     "/": DOCS / "index.html",
@@ -29,6 +30,7 @@ ROUTE_FILES = {
     "/cite/": DOCS / "cite" / "index.html",
     "/governance/": DOCS / "governance" / "index.html",
     "/applied/ar-001/": DOCS / "applied" / "ar-001" / "index.html",
+    "/challenge/ar-001/": DOCS / "challenge" / "ar-001" / "index.html",
     "/404.html": DOCS / "404.html",
 }
 FORBIDDEN = [
