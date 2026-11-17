@@ -63,3 +63,36 @@ test('public page declares canonical and privacy boundaries without submission f
   assert.doesNotMatch(page, /<form\b/i);
   assert.doesNotMatch(script, /\bfetch\s*\(|\bXMLHttpRequest\b|\blocalStorage\b|\bsessionStorage\b|\bsendBeacon\s*\(/);
 });
+
+test('the canonical web-surface gate and sitemap register exactly one pilot route', () => {
+  const root = path.join(__dirname, '..');
+  const validator = fs.readFileSync(path.join(root, 'tools_validate_web_surface.py'), 'utf8');
+  const sitemap = fs.readFileSync(path.join(root, 'docs', 'sitemap.xml'), 'utf8');
+  assert.equal(fs.existsSync(path.join(root, 'validate_web_surface.py')), false, 'Do not shadow the registered validator');
+  assert.match(validator, /"\/challenge\/ar-001\/"\s*,/);
+  assert.match(validator, /"\/challenge\/ar-001\/": DOCS \/ "challenge" \/ "ar-001" \/ "index\.html"/);
+  assert.equal((sitemap.match(/https:\/\/altissports\.com\/challenge\/ar-001\//g) || []).length, 1);
+});
+
+test('social card matches the current main-site image and accessibility description', () => {
+  const page = fs.readFileSync(route, 'utf8');
+  const image = 'https://altissports.com/assets/img/og-altissports-spatial-2026.jpg?v=20261117a';
+  assert.ok(page.includes(`<meta property="og:image" content="${image}">`));
+  assert.ok(page.includes(`<meta name="twitter:image" content="${image}">`));
+  assert.match(page, /property="og:image:type" content="image\/jpeg"/);
+  assert.match(page, /property="og:image:alt" content="[^"]+"/);
+  assert.match(page, /name="twitter:image:alt" content="[^"]+"/);
+});
+
+test('interactive controls have unique accessible DOM targets', () => {
+  const page = fs.readFileSync(route, 'utf8');
+  const script = fs.readFileSync(path.join(__dirname, '..', 'docs', 'assets', 'js', 'challenge.js'), 'utf8');
+  const ids = Array.from(page.matchAll(/\bid="([^"]+)"/g), (match) => match[1]);
+  assert.equal(new Set(ids).size, ids.length, 'HTML IDs must be unique');
+  const references = Array.from(script.matchAll(/byId\("([^"]+)"\)/g), (match) => match[1]);
+  assert.ok(references.length >= 10, 'The control binding audit must remain meaningful');
+  for (const id of references) assert.ok(ids.includes(id), `Missing interactive element #${id}`);
+  assert.match(page, /<fieldset id="question-options"/);
+  assert.match(page, /<legend class="visually-hidden">Your assessment<\/legend>/);
+  assert.match(page, /<p class="export-status"[^>]*role="status" aria-live="polite"/);
+});
