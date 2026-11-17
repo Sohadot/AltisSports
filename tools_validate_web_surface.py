@@ -145,6 +145,7 @@ def main() -> int:
         DOCS / "assets" / "css" / "site.css",
         DOCS / "assets" / "img" / "favicon.svg",
         DOCS / "assets" / "img" / "og.jpg",
+        DOCS / "assets" / "img" / "og-altissports-spatial-2026.jpg",
         DOCS / "assets" / "img" / "favicon-32.png",
         DOCS / "assets" / "img" / "apple-touch-icon.png",
     ]
@@ -207,6 +208,18 @@ def main() -> int:
         for key in ("twitter:card", "twitter:title", "twitter:image"):
             if key not in page.twitter:
                 errors.append(f"{route} missing {key}")
+        if route != "/404.html":
+            social_image = CANONICAL_ORIGIN + "/assets/img/og-altissports-spatial-2026.jpg"
+            if page.og.get("og:image") != social_image:
+                errors.append(f"{route} must reference the versioned social image")
+            if page.twitter.get("twitter:image") != social_image:
+                errors.append(f"{route} Twitter image differs from Open Graph image")
+            if page.og.get("og:image:type") != "image/jpeg":
+                errors.append(f"{route} missing social image MIME type")
+            if page.og.get("og:image:width") != "1200" or page.og.get("og:image:height") != "630":
+                errors.append(f"{route} incorrect social image dimensions")
+            if not page.og.get("og:image:alt") or not page.twitter.get("twitter:image:alt"):
+                errors.append(f"{route} missing social image alternative text")
         if not page.skip or not page.nav or not page.main:
             errors.append(f"{route} missing skip/nav/main landmarks")
         if route != "/404.html" and not page.json_ld:
@@ -276,3 +289,4 @@ def main() -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
+
