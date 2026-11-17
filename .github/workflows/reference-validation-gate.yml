@@ -72,4 +72,3 @@ jobs:
             exit 1
           fi
           echo "PASS: working tree clean after validation."
-
