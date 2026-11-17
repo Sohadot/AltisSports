@@ -209,7 +209,7 @@ def main() -> int:
             if key not in page.twitter:
                 errors.append(f"{route} missing {key}")
         if route != "/404.html":
-            social_image = CANONICAL_ORIGIN + "/assets/img/og-altissports-spatial-2026.jpg"
+            social_image = CANONICAL_ORIGIN + "/assets/img/og-altissports-spatial-2026.jpg?v=20261117a"
             if page.og.get("og:image") != social_image:
                 errors.append(f"{route} must reference the versioned social image")
             if page.twitter.get("twitter:image") != social_image:
