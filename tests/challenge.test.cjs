@@ -58,6 +58,7 @@ test('public page declares canonical and privacy boundaries without submission f
   const script = fs.readFileSync(path.join(__dirname, '..', 'docs', 'assets', 'js', 'challenge.js'), 'utf8');
   assert.match(page, /rel="canonical" href="https:\/\/altissports\.com\/challenge\/ar-001\/"/);
   assert.match(page, /nothing is sent to AltisSports/i);
+  assert.match(page, /mailto:agent@sohadot\.com/);
   assert.match(page, /not a formal external review/i);
   assert.doesNotMatch(page, /<form\b/i);
   assert.doesNotMatch(script, /\bfetch\s*\(|\bXMLHttpRequest\b|\blocalStorage\b|\bsessionStorage\b|\bsendBeacon\s*\(/);
